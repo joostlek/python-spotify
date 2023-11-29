@@ -1,4 +1,18 @@
 # serializer version: 1
+# name: test_get_devices
+  list([
+    dict({
+      'device_id': '21dac6b0e0a1f181870fdc9749b2656466557687',
+      'device_type': <DeviceType.COMPUTER: 'Computer'>,
+      'is_active': False,
+      'is_private_session': False,
+      'is_restricted': False,
+      'name': 'DESKTOP-BKC5SIK',
+      'supports_volume': True,
+      'volume_percent': 69,
+    }),
+  ])
+# ---
 # name: test_get_playback_state[1]
   dict({
     'context': dict({

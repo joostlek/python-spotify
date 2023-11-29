@@ -83,3 +83,26 @@ async def test_transfer_playback(
         spotify.authenticate("test")
         await spotify.transfer_playback("test")
         await spotify.close()
+
+
+async def test_get_devices(
+    aresponses: ResponsesMockServer,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test transferring playback."""
+    aresponses.add(
+        SPOTIFY_URL,
+        "/v1/me/player/devices",
+        METH_GET,
+        aresponses.Response(
+            status=200,
+            headers={"Content-Type": "application/json"},
+            text=load_fixture("devices.json"),
+        ),
+    )
+    async with aiohttp.ClientSession() as session:
+        spotify = SpotifyClient(session=session)
+        spotify.authenticate("test")
+        devices = await spotify.get_devices()
+        assert devices == snapshot
+        await spotify.close()

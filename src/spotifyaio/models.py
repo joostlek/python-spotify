@@ -30,6 +30,13 @@ class Device(DataClassORJSONMixin):
     supports_volume: bool = True
 
 
+@dataclass
+class Devices(DataClassORJSONMixin):
+    """Devices model."""
+
+    devices: list[Device]
+
+
 class RepeatMode(StrEnum):
     """Repeat mode."""
 
