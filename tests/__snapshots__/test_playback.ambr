@@ -1,0 +1,14 @@
+# serializer version: 1
+# name: test_get_devices
+  dict({
+    'device': dict({
+      'device_id': '21dac6b0e0a1f181870fdc9749b2656466557687',
+      'device_type': 'Computer',
+      'is_active': True,
+      'is_private_session': False,
+      'name': 'DESKTOP-BKC5SIK',
+      'supports_volume': True,
+      'volume_percent': 69,
+    }),
+  })
+# ---
