@@ -11,7 +11,7 @@ from aiohttp.hdrs import METH_GET, METH_PUT
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
-from spotifyaio.models import PlaybackState
+from spotifyaio.models import Device, Devices, PlaybackState
 
 
 @dataclass
@@ -103,6 +103,11 @@ class SpotifyClient:
     async def transfer_playback(self, device_id: str) -> None:
         """Transfer playback."""
         await self._put("v1/me/player", {"device_ids": [device_id]})
+
+    async def get_devices(self) -> list[Device]:
+        """Get devices."""
+        response = await self._get("v1/me/player/devices")
+        return Devices.from_json(response).devices
 
     async def close(self) -> None:
         """Close open client session."""
