@@ -1,14 +1,84 @@
 # serializer version: 1
 # name: test_get_devices
   dict({
+    'context': dict({
+      'context_type': <ContextType.COLLECTION: 'collection'>,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/collection/tracks',
+      }),
+      'href': 'https://api.spotify.com/v1/me/tracks',
+      'uri': 'spotify:user:1112264649:collection',
+    }),
+    'currently_playing_type': 'track',
     'device': dict({
       'device_id': '21dac6b0e0a1f181870fdc9749b2656466557687',
-      'device_type': 'Computer',
+      'device_type': <DeviceType.COMPUTER: 'Computer'>,
       'is_active': True,
       'is_private_session': False,
       'name': 'DESKTOP-BKC5SIK',
       'supports_volume': True,
       'volume_percent': 69,
     }),
+    'is_playing': True,
+    'item': dict({
+      'album': dict({
+        'album_id': '1iasbpTobDPa5BmsK0Rz1f',
+        'album_type': <AlbumType.SINGLE: 'single'>,
+        'artists': list([
+          dict({
+            'artist_id': '6cmp7ut7okJAgJOSaMAVf3',
+            'name': 'Machinae Supremacy',
+            'uri': 'spotify:artist:6cmp7ut7okJAgJOSaMAVf3',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b273326db007f167499d23171722',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e02326db007f167499d23171722',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d00004851326db007f167499d23171722',
+            'width': 64,
+          }),
+        ]),
+        'name': 'WARRIORS, Pt. 1 (Final Stage)',
+        'release_date': '2023-10-20',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 1,
+        'uri': 'spotify:album:1iasbpTobDPa5BmsK0Rz1f',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '6cmp7ut7okJAgJOSaMAVf3',
+          'name': 'Machinae Supremacy',
+          'uri': 'spotify:artist:6cmp7ut7okJAgJOSaMAVf3',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 268525,
+      'explicit': False,
+      'external_ids': dict({
+        'isrc': 'QZTB52388870',
+      }),
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/1FyXbzOlq3dkxaB6iRsETv',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/1FyXbzOlq3dkxaB6iRsETv',
+      'is_local': False,
+      'object_type': 'track',
+      'track_id': '1FyXbzOlq3dkxaB6iRsETv',
+      'track_number': 1,
+      'uri': 'spotify:track:1FyXbzOlq3dkxaB6iRsETv',
+    }),
+    'progress_ms': 225564,
+    'repeat_mode': <RepeatMode.OFF: 'off'>,
+    'shuffle': False,
   })
 # ---
