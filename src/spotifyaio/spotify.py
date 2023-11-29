@@ -7,7 +7,7 @@ from importlib import metadata
 from typing import Any, Awaitable, Callable, Self
 
 from aiohttp import ClientSession
-from aiohttp.hdrs import METH_GET
+from aiohttp.hdrs import METH_GET, METH_PUT
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
@@ -36,6 +36,7 @@ class SpotifyClient:
 
     async def _request(
         self,
+        method: str,
         uri: str,
         *,
         data: dict[str, Any] | None = None,
@@ -63,7 +64,7 @@ class SpotifyClient:
         try:
             async with asyncio.timeout(self.request_timeout):
                 response = await self.session.request(
-                    METH_GET,
+                    method,
                     url,
                     headers=headers,
                     data=data,
@@ -84,10 +85,22 @@ class SpotifyClient:
 
         return await response.text()
 
+    async def _get(self, uri: str) -> str:
+        """Handle a GET request to Spotify."""
+        return await self._request(METH_GET, uri)
+
+    async def _put(self, uri: str, data: dict[str, Any]) -> str:
+        """Handle a PUT request to Spotify."""
+        return await self._request(METH_PUT, uri, data=data)
+
     async def get_playback(self) -> PlaybackState:
-        """Get devices."""
-        response = await self._request("v1/me/player")
+        """Get playback state."""
+        response = await self._get("v1/me/player")
         return PlaybackState.from_json(response)
+
+    async def transfer_playback(self, device_id: str) -> None:
+        """Transfer playback."""
+        await self._put("v1/me/player", {"device_ids": [device_id]})
 
     async def close(self) -> None:
         """Close open client session."""
