@@ -11,7 +11,7 @@ from . import load_fixture
 from .const import SPOTIFY_URL
 
 
-async def test_get_devices(
+async def test_get_playback_state(
     aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
 ) -> None:
@@ -31,6 +31,27 @@ async def test_get_devices(
         spotify.authenticate("test")
         response = await spotify.get_playback()
         assert response == snapshot
+        await spotify.close()
+
+
+async def test_get_no_playback_state(
+    aresponses: ResponsesMockServer,
+) -> None:
+    """Test retrieving devices."""
+    aresponses.add(
+        SPOTIFY_URL,
+        "/v1/me/player",
+        METH_GET,
+        aresponses.Response(
+            status=204,
+            headers={"Content-Type": "application/json"},
+        ),
+    )
+    async with aiohttp.ClientSession() as session:
+        spotify = SpotifyClient(session=session)
+        spotify.authenticate("test")
+        response = await spotify.get_playback()
+        assert response is None
         await spotify.close()
 
 

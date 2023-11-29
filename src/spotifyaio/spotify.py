@@ -93,9 +93,11 @@ class SpotifyClient:
         """Handle a PUT request to Spotify."""
         return await self._request(METH_PUT, uri, data=data)
 
-    async def get_playback(self) -> PlaybackState:
+    async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""
         response = await self._get("v1/me/player")
+        if response == "":
+            return None
         return PlaybackState.from_json(response)
 
     async def transfer_playback(self, device_id: str) -> None:

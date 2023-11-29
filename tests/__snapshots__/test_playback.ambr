@@ -1,5 +1,5 @@
 # serializer version: 1
-# name: test_get_devices
+# name: test_get_playback_state
   dict({
     'context': dict({
       'context_type': <ContextType.COLLECTION: 'collection'>,
