@@ -26,7 +26,7 @@ async def test_own_session(
         aresponses.Response(
             status=200,
             headers={"Content-Type": "application/json"},
-            text=load_fixture("playback.json"),
+            text=load_fixture("playback_1.json"),
         ),
     )
     async with aiohttp.ClientSession() as session:

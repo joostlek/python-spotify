@@ -23,10 +23,11 @@ class Device(DataClassORJSONMixin):
     device_id: str = field(metadata=field_options(alias="id"))
     is_active: bool
     is_private_session: bool
+    is_restricted: bool
     name: str
-    supports_volume: bool
     device_type: DeviceType = field(metadata=field_options(alias="type"))
     volume_percent: int
+    supports_volume: bool = True
 
 
 class RepeatMode(StrEnum):

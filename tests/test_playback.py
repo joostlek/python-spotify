@@ -3,6 +3,7 @@
 import aiohttp
 from aiohttp.hdrs import METH_GET, METH_PUT
 from aresponses import ResponsesMockServer
+import pytest
 
 from spotifyaio.spotify import SpotifyClient
 from syrupy import SnapshotAssertion
@@ -11,9 +12,18 @@ from . import load_fixture
 from .const import SPOTIFY_URL
 
 
+@pytest.mark.parametrize(
+    "playback_id",
+    [
+        1,
+        2,
+        3,
+    ],
+)
 async def test_get_playback_state(
     aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
+    playback_id: int,
 ) -> None:
     """Test retrieving devices."""
     aresponses.add(
@@ -23,7 +33,7 @@ async def test_get_playback_state(
         aresponses.Response(
             status=200,
             headers={"Content-Type": "application/json"},
-            text=load_fixture("playback.json"),
+            text=load_fixture(f"playback_{playback_id}.json"),
         ),
     )
     async with aiohttp.ClientSession() as session:
