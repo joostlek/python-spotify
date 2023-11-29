@@ -4,9 +4,7 @@ from .exceptions import (
     SpotifyConnectionError,
     SpotifyError,
 )
-from .models import (
-    Device, PlaybackState,
-)
+from .models import Device, PlaybackState
 from .spotify import SpotifyClient
 
 __all__ = [
@@ -15,5 +13,5 @@ __all__ = [
     "SpotifyConnectionError",
     "SpotifyAuthenticationFailedError",
     "SpotifyClient",
-    "PlaybackState"
-    ]
+    "PlaybackState",
+]

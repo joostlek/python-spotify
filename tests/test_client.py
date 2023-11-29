@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import asyncio
-import json
 
 import aiohttp
 from aiohttp.hdrs import METH_GET
@@ -10,12 +9,7 @@ from aiohttp.web_request import BaseRequest
 from aresponses import Response, ResponsesMockServer
 import pytest
 
-from spotifyaio import (
-    SpotifyAuthenticationFailedError,
-    SpotifyClient,
-    SpotifyConnectionError,
-    SpotifyError,
-)
+from spotifyaio import SpotifyClient, SpotifyConnectionError, SpotifyError
 
 from . import load_fixture
 from .const import SPOTIFY_URL
@@ -100,4 +94,3 @@ async def test_timeout(aresponses: ResponsesMockServer) -> None:
         with pytest.raises(SpotifyConnectionError):
             assert await spotify.get_playback()
         await spotify.close()
-

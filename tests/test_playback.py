@@ -3,11 +3,10 @@
 import aiohttp
 from aiohttp.hdrs import METH_GET
 from aresponses import ResponsesMockServer
-import pytest
-
-from syrupy import SnapshotAssertion
 
 from spotifyaio.spotify import SpotifyClient
+from syrupy import SnapshotAssertion
+
 from . import load_fixture
 from .const import SPOTIFY_URL
 

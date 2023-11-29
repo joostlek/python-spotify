@@ -1,7 +1,10 @@
+"""Spotify client for handling connections with Spotify."""
+from __future__ import annotations
+
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import Callable, Awaitable, Any, Self
+from typing import Any, Awaitable, Callable, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_GET
