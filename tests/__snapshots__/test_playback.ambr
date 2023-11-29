@@ -1,5 +1,5 @@
 # serializer version: 1
-# name: test_get_playback_state
+# name: test_get_playback_state[1]
   dict({
     'context': dict({
       'context_type': <ContextType.COLLECTION: 'collection'>,
@@ -15,6 +15,7 @@
       'device_type': <DeviceType.COMPUTER: 'Computer'>,
       'is_active': True,
       'is_private_session': False,
+      'is_restricted': False,
       'name': 'DESKTOP-BKC5SIK',
       'supports_volume': True,
       'volume_percent': 69,
@@ -78,6 +79,174 @@
       'uri': 'spotify:track:1FyXbzOlq3dkxaB6iRsETv',
     }),
     'progress_ms': 225564,
+    'repeat_mode': <RepeatMode.OFF: 'off'>,
+    'shuffle': False,
+  })
+# ---
+# name: test_get_playback_state[2]
+  dict({
+    'context': dict({
+      'context_type': <ContextType.PLAYLIST: 'playlist'>,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2r35vbe6hHl6yDSMfjKgmm',
+      }),
+      'href': 'https://api.spotify.com/v1/playlists/2r35vbe6hHl6yDSMfjKgmm',
+      'uri': 'spotify:user:rushofficial:playlist:2r35vbe6hHl6yDSMfjKgmm',
+    }),
+    'currently_playing_type': 'track',
+    'device': dict({
+      'device_id': 'a19f7a03a25aff3e43f457a328a8ba67a8c44789',
+      'device_type': <DeviceType.SPEAKER: 'Speaker'>,
+      'is_active': True,
+      'is_private_session': False,
+      'is_restricted': False,
+      'name': 'Master Bathroom Speaker',
+      'supports_volume': True,
+      'volume_percent': 25,
+    }),
+    'is_playing': True,
+    'item': dict({
+      'album': dict({
+        'album_id': '3nUNxSh2szhmN7iifAKv5i',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '2Hkut4rAAyrQxRdof7FVJq',
+            'name': 'Rush',
+            'uri': 'spotify:artist:2Hkut4rAAyrQxRdof7FVJq',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b27306c0d7ebcabad0c39b566983',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e0206c0d7ebcabad0c39b566983',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d0000485106c0d7ebcabad0c39b566983',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Permanent Waves',
+        'release_date': '1980-01-01',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 6,
+        'uri': 'spotify:album:3nUNxSh2szhmN7iifAKv5i',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '2Hkut4rAAyrQxRdof7FVJq',
+          'name': 'Rush',
+          'uri': 'spotify:artist:2Hkut4rAAyrQxRdof7FVJq',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 296466,
+      'explicit': False,
+      'external_ids': dict({
+        'isrc': 'USMR18070028',
+      }),
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4e9hUiLsN4mx61ARosFi7p',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4e9hUiLsN4mx61ARosFi7p',
+      'is_local': False,
+      'object_type': 'track',
+      'track_id': '4e9hUiLsN4mx61ARosFi7p',
+      'track_number': 1,
+      'uri': 'spotify:track:4e9hUiLsN4mx61ARosFi7p',
+    }),
+    'progress_ms': 249367,
+    'repeat_mode': <RepeatMode.OFF: 'off'>,
+    'shuffle': False,
+  })
+# ---
+# name: test_get_playback_state[3]
+  dict({
+    'context': dict({
+      'context_type': <ContextType.COLLECTION: 'collection'>,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/collection/tracks',
+      }),
+      'href': 'https://api.spotify.com/v1/me/tracks',
+      'uri': 'spotify:user:1112264649:collection',
+    }),
+    'currently_playing_type': 'track',
+    'device': dict({
+      'device_id': None,
+      'device_type': <DeviceType.SPEAKER: 'Speaker'>,
+      'is_active': True,
+      'is_private_session': False,
+      'is_restricted': True,
+      'name': 'Sonos Roam SL',
+      'supports_volume': True,
+      'volume_percent': 34,
+    }),
+    'is_playing': True,
+    'item': dict({
+      'album': dict({
+        'album_id': '3qCsGHHWG6t9izvmsE47jr',
+        'album_type': <AlbumType.SINGLE: 'single'>,
+        'artists': list([
+          dict({
+            'artist_id': '6s5ubAp65wXoTZefE01RNR',
+            'name': 'Joost',
+            'uri': 'spotify:artist:6s5ubAp65wXoTZefE01RNR',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b273ae0956d669aca836c4fb5a0c',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e02ae0956d669aca836c4fb5a0c',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d00004851ae0956d669aca836c4fb5a0c',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Ome Robert',
+        'release_date': '2018-04-26',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 1,
+        'uri': 'spotify:album:3qCsGHHWG6t9izvmsE47jr',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '6s5ubAp65wXoTZefE01RNR',
+          'name': 'Joost',
+          'uri': 'spotify:artist:6s5ubAp65wXoTZefE01RNR',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 152500,
+      'explicit': True,
+      'external_ids': dict({
+        'isrc': 'NLG661800442',
+      }),
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/3TE49HXyoNczZk2IBhP87z',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/3TE49HXyoNczZk2IBhP87z',
+      'is_local': False,
+      'object_type': 'track',
+      'track_id': '3TE49HXyoNczZk2IBhP87z',
+      'track_number': 1,
+      'uri': 'spotify:track:3TE49HXyoNczZk2IBhP87z',
+    }),
+    'progress_ms': 7919,
     'repeat_mode': <RepeatMode.OFF: 'off'>,
     'shuffle': False,
   })
