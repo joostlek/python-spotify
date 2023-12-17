@@ -4,7 +4,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import Any, Awaitable, Callable, Self
+from typing import Any, Awaitable, Callable, Self, List
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_GET, METH_PUT
@@ -40,6 +40,7 @@ class SpotifyClient:
         uri: str,
         *,
         data: dict[str, Any] | None = None,
+        params: dict[str, str] | None = None,
     ) -> str:
         """Handle a request to Spotify."""
         version = metadata.version(__package__)
@@ -68,6 +69,7 @@ class SpotifyClient:
                     url,
                     headers=headers,
                     data=data,
+                    params=params,
                 )
         except asyncio.TimeoutError as exception:
             msg = "Timeout occurred while connecting to Spotify"
@@ -89,9 +91,9 @@ class SpotifyClient:
         """Handle a GET request to Spotify."""
         return await self._request(METH_GET, uri)
 
-    async def _put(self, uri: str, data: dict[str, Any]) -> str:
+    async def _put(self, uri: str, data: dict[str, Any], params: dict[str, str] | None = None) -> str:
         """Handle a PUT request to Spotify."""
-        return await self._request(METH_PUT, uri, data=data)
+        return await self._request(METH_PUT, uri, data=data, params=params)
 
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""
@@ -115,6 +117,25 @@ class SpotifyClient:
         """Get devices."""
         response = await self._get("v1/me/player/devices")
         return Devices.from_json(response).devices
+
+    async def start_playback(self, *, device_id: str | None = None, context_uri: str | None = None, uris: List[str] | None = None, position_offset: int | None = None, uri_offset: str | None = None, position: int | None = 0) -> None:
+        """Start playback."""
+        payload: dict[str, Any] = {
+            "position_ms": position
+        }
+        if context_uri:
+            payload["context_uri"] = context_uri
+        if uris:
+            payload["uris"] = uris
+        if position_offset:
+            payload["offset"] = {"position": position_offset}
+        if uri_offset:
+            payload["offset"] = {"uri": uri_offset}
+        params = {}
+        if device_id:
+            params["device_id"] = device_id
+        await self._put("v1/me/player/play", payload, params=params)
+
 
     async def close(self) -> None:
         """Close open client session."""

@@ -150,3 +150,24 @@ async def test_get_no_current_playing_state(
         response = await spotify.get_current_playing()
         assert response is None
         await spotify.close()
+
+
+async def test_resume_playback(
+    aresponses: ResponsesMockServer,
+) -> None:
+    """Test resuming playback."""
+    aresponses.add(
+        SPOTIFY_URL,
+        "/v1/me/player/play",
+        METH_PUT,
+        aresponses.Response(
+            status=204,
+            headers={"Content-Type": "application/json"},
+        ),
+    )
+    async with aiohttp.ClientSession() as session:
+        spotify = SpotifyClient(session=session)
+        spotify.authenticate("test")
+        response = await spotify.start_playback()
+        assert response is None
+        await spotify.close()
