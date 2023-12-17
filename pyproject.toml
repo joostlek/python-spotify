@@ -54,13 +54,11 @@ Changelog = "https://github.com/joostlek/python-spotify/releases"
 
 [tool.coverage.report]
 show_missing = true
+fail_under = 50
 
 [tool.coverage.run]
 plugins = ["covdefaults"]
 source = ["spotifyaio"]
-
-[tool.coverage.cov]
-fail_under = 50
 
 [tool.mypy]
 # Specify the target platform details in config, so your developers are
