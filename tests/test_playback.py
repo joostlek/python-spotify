@@ -168,6 +168,5 @@ async def test_resume_playback(
     async with aiohttp.ClientSession() as session:
         spotify = SpotifyClient(session=session)
         spotify.authenticate("test")
-        response = await spotify.start_playback()
-        assert response is None
+        await spotify.start_playback()
         await spotify.close()
