@@ -1,6 +1,5 @@
 """Asynchronous Python client for Spotify."""
 
-import aiohttp
 from aiohttp.hdrs import METH_GET, METH_PUT
 from aresponses import ResponsesMockServer
 import pytest
@@ -24,6 +23,7 @@ async def test_get_playback_state(
     aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
     playback_id: int,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving playback state."""
     aresponses.add(
@@ -36,16 +36,13 @@ async def test_get_playback_state(
             text=load_fixture(f"playback_{playback_id}.json"),
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        response = await spotify.get_playback()
-        assert response == snapshot
-        await spotify.close()
+    response = await authenticated_client.get_playback()
+    assert response == snapshot
 
 
 async def test_get_no_playback_state(
     aresponses: ResponsesMockServer,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving no playback state."""
     aresponses.add(
@@ -57,16 +54,13 @@ async def test_get_no_playback_state(
             headers={"Content-Type": "application/json"},
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        response = await spotify.get_playback()
-        assert response is None
-        await spotify.close()
+    response = await authenticated_client.get_playback()
+    assert response is None
 
 
 async def test_transfer_playback(
     aresponses: ResponsesMockServer,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test transferring playback."""
     aresponses.add(
@@ -78,16 +72,13 @@ async def test_transfer_playback(
             headers={"Content-Type": "application/json"},
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        await spotify.transfer_playback("test")
-        await spotify.close()
+    await authenticated_client.transfer_playback("test")
 
 
 async def test_get_devices(
     aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving devices."""
     aresponses.add(
@@ -100,17 +91,14 @@ async def test_get_devices(
             text=load_fixture("devices.json"),
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        devices = await spotify.get_devices()
-        assert devices == snapshot
-        await spotify.close()
+    devices = await authenticated_client.get_devices()
+    assert devices == snapshot
 
 
 async def test_get_current_playing(
     aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving current playing."""
     aresponses.add(
@@ -123,16 +111,13 @@ async def test_get_current_playing(
             text=load_fixture("current_playing_track.json"),
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        response = await spotify.get_current_playing()
-        assert response == snapshot
-        await spotify.close()
+    response = await authenticated_client.get_current_playing()
+    assert response == snapshot
 
 
 async def test_get_no_current_playing_state(
     aresponses: ResponsesMockServer,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving no current playing state."""
     aresponses.add(
@@ -144,16 +129,13 @@ async def test_get_no_current_playing_state(
             headers={"Content-Type": "application/json"},
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        response = await spotify.get_current_playing()
-        assert response is None
-        await spotify.close()
+    response = await authenticated_client.get_current_playing()
+    assert response is None
 
 
 async def test_resume_playback(
     aresponses: ResponsesMockServer,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test resuming playback."""
     aresponses.add(
@@ -165,8 +147,4 @@ async def test_resume_playback(
             headers={"Content-Type": "application/json"},
         ),
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session)
-        spotify.authenticate("test")
-        await spotify.start_playback()
-        await spotify.close()
+    await authenticated_client.start_playback()
