@@ -25,7 +25,7 @@ async def test_get_playback_state(
     snapshot: SnapshotAssertion,
     playback_id: int,
 ) -> None:
-    """Test retrieving devices."""
+    """Test retrieving playback state."""
     aresponses.add(
         SPOTIFY_URL,
         "/v1/me/player",
@@ -47,7 +47,7 @@ async def test_get_playback_state(
 async def test_get_no_playback_state(
     aresponses: ResponsesMockServer,
 ) -> None:
-    """Test retrieving devices."""
+    """Test retrieving no playback state."""
     aresponses.add(
         SPOTIFY_URL,
         "/v1/me/player",
@@ -89,7 +89,7 @@ async def test_get_devices(
     aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
 ) -> None:
-    """Test transferring playback."""
+    """Test retrieving devices."""
     aresponses.add(
         SPOTIFY_URL,
         "/v1/me/player/devices",
@@ -105,4 +105,48 @@ async def test_get_devices(
         spotify.authenticate("test")
         devices = await spotify.get_devices()
         assert devices == snapshot
+        await spotify.close()
+
+
+async def test_get_current_playing(
+    aresponses: ResponsesMockServer,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test retrieving current playing."""
+    aresponses.add(
+        SPOTIFY_URL,
+        "/v1/me/player/currently-playing",
+        METH_GET,
+        aresponses.Response(
+            status=200,
+            headers={"Content-Type": "application/json"},
+            text=load_fixture("current_playing_track.json"),
+        ),
+    )
+    async with aiohttp.ClientSession() as session:
+        spotify = SpotifyClient(session=session)
+        spotify.authenticate("test")
+        response = await spotify.get_current_playing()
+        assert response == snapshot
+        await spotify.close()
+
+
+async def test_get_no_current_playing_state(
+    aresponses: ResponsesMockServer,
+) -> None:
+    """Test retrieving no current playing state."""
+    aresponses.add(
+        SPOTIFY_URL,
+        "/v1/me/player/currently-playing",
+        METH_GET,
+        aresponses.Response(
+            status=204,
+            headers={"Content-Type": "application/json"},
+        ),
+    )
+    async with aiohttp.ClientSession() as session:
+        spotify = SpotifyClient(session=session)
+        spotify.authenticate("test")
+        response = await spotify.get_current_playing()
+        assert response is None
         await spotify.close()

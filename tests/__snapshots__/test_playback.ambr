@@ -1,4 +1,76 @@
 # serializer version: 1
+# name: test_get_current_playing
+  dict({
+    'context': dict({
+      'context_type': <ContextType.ARTIST: 'artist'>,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/6mS5GeFyhea6w9OKo8PO3p',
+      }),
+      'href': 'https://api.spotify.com/v1/artists/6mS5GeFyhea6w9OKo8PO3p',
+      'uri': 'spotify:artist:6mS5GeFyhea6w9OKo8PO3p',
+    }),
+    'currently_playing_type': 'track',
+    'is_playing': True,
+    'item': dict({
+      'album': dict({
+        'album_id': '1LorgdkFY2zgE6NbDdY19k',
+        'album_type': <AlbumType.SINGLE: 'single'>,
+        'artists': list([
+          dict({
+            'artist_id': '6mS5GeFyhea6w9OKo8PO3p',
+            'name': 'Goldband',
+            'uri': 'spotify:artist:6mS5GeFyhea6w9OKo8PO3p',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2731de89c5340be36804e01fdf2',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e021de89c5340be36804e01fdf2',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048511de89c5340be36804e01fdf2',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Dun Smeren Geld Verdienen',
+        'release_date': '2019-05-13',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 6,
+        'uri': 'spotify:album:1LorgdkFY2zgE6NbDdY19k',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '6mS5GeFyhea6w9OKo8PO3p',
+          'name': 'Goldband',
+          'uri': 'spotify:artist:6mS5GeFyhea6w9OKo8PO3p',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 245581,
+      'explicit': True,
+      'external_ids': dict({
+        'isrc': 'GBMJG1909751',
+      }),
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4sIkwgf9bU7rQPvsA37rVQ',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4sIkwgf9bU7rQPvsA37rVQ',
+      'is_local': False,
+      'object_type': 'track',
+      'track_id': '4sIkwgf9bU7rQPvsA37rVQ',
+      'track_number': 6,
+      'uri': 'spotify:track:4sIkwgf9bU7rQPvsA37rVQ',
+    }),
+    'progress_ms': 134749,
+  })
+# ---
 # name: test_get_devices
   list([
     dict({
