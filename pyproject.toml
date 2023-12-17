@@ -59,6 +59,9 @@ show_missing = true
 plugins = ["covdefaults"]
 source = ["spotifyaio"]
 
+[tool.coverage.cov]
+fail_under = 50
+
 [tool.mypy]
 # Specify the target platform details in config, so your developers are
 # free to run mypy on Windows, Linux, or macOS and get consistent
