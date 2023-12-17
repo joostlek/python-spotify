@@ -92,7 +92,10 @@ class SpotifyClient:
         return await self._request(METH_GET, uri)
 
     async def _put(
-        self, uri: str, data: dict[str, Any], params: dict[str, str] | None = None
+        self,
+        uri: str,
+        data: dict[str, Any],
+        params: dict[str, str] | None = None,
     ) -> str:
         """Handle a PUT request to Spotify."""
         return await self._request(METH_PUT, uri, data=data, params=params)

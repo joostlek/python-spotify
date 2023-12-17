@@ -118,6 +118,7 @@ disable = [
   "format",
   "unsubscriptable-object",
   "too-many-instance-attributes",
+  "too-many-arguments",
   "wrong-import-order",
 ]
 
@@ -140,6 +141,7 @@ ignore = [
   "D213", # Conflicts with other rules
   "D417", # False positives in some occasions
   "PLR2004", # Just annoying, not really useful
+  "PLR0913", # Too many arguments
 ]
 select = ["ALL"]
 
