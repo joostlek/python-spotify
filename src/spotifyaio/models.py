@@ -143,14 +143,20 @@ class Track(DataClassORJSONMixin):
 
 
 @dataclass
-class PlaybackState(DataClassORJSONMixin):
-    """Playback state model."""
+class CurrentPlaying(DataClassORJSONMixin):
+    """Current playing model."""
 
-    device: Device
-    shuffle: bool = field(metadata=field_options(alias="shuffle_state"))
-    repeat_mode: RepeatMode = field(metadata=field_options(alias="repeat_state"))
     context: Context | None
     progress_ms: int | None
     is_playing: bool
     item: Track | None
     currently_playing_type: str | None
+
+
+@dataclass
+class PlaybackState(CurrentPlaying):
+    """Playback state model."""
+
+    device: Device
+    shuffle: bool = field(metadata=field_options(alias="shuffle_state"))
+    repeat_mode: RepeatMode = field(metadata=field_options(alias="repeat_state"))
