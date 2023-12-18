@@ -13,6 +13,7 @@ from yarl import URL
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
 from spotifyaio.models import (
     BasePlaylist,
+    BaseUserProfile,
     CategoryPlaylistResponse,
     CurrentPlaying,
     Device,
@@ -22,6 +23,7 @@ from spotifyaio.models import (
     Playlist,
     PlaylistResponse,
     RepeatMode,
+    UserProfile,
 )
 
 
@@ -244,6 +246,16 @@ class SpotifyClient:
             params=params,
         )
         return CategoryPlaylistResponse.from_json(response).playlists.items
+
+    async def get_current_user(self) -> UserProfile:
+        """Get current user."""
+        response = await self._get("v1/me")
+        return UserProfile.from_json(response)
+
+    async def get_user(self, user_id: str) -> BaseUserProfile:
+        """Get user."""
+        response = await self._get(f"v1/users/{user_id}")
+        return BaseUserProfile.from_json(response)
 
     async def close(self) -> None:
         """Close open client session."""

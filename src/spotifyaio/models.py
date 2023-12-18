@@ -227,3 +227,29 @@ class CategoryPlaylistResponse(DataClassORJSONMixin):
     """Category playlist response model."""
 
     playlists: PlaylistResponse
+
+
+class ProductType(StrEnum):
+    """Product type."""
+
+    PREMIUM = "premium"
+    FREE = "free"
+
+
+@dataclass
+class BaseUserProfile(DataClassORJSONMixin):
+    """Base user profile model."""
+
+    display_name: str
+    user_id: str = field(metadata=field_options(alias="id"))
+    images: list[Image]
+    object_type: str = field(metadata=field_options(alias="type"))
+    uri: str
+
+
+@dataclass
+class UserProfile(BaseUserProfile):
+    """User profile model."""
+
+    email: str
+    product: ProductType
