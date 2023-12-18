@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "spotifyaio"
-version = "0.0.1"
+version = "0.2.0"
 description = "Asynchronous Python client for Spotify."
 authors = ["Joost Lekkerkerker <joostlek@outlook.com>"]
 maintainers = ["Joost Lekkerkerker <joostlek@outlook.com>"]
