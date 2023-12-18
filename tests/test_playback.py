@@ -1,14 +1,14 @@
 """Asynchronous Python client for Spotify."""
 
 from aiohttp.hdrs import METH_GET, METH_PUT
-from aresponses import ResponsesMockServer
+from aioresponses import aioresponses
 import pytest
 
 from spotifyaio.spotify import SpotifyClient
 from syrupy import SnapshotAssertion
 
 from . import load_fixture
-from .const import SPOTIFY_URL
+from .const import HEADERS, SPOTIFY_URL
 
 
 @pytest.mark.parametrize(
@@ -20,131 +20,142 @@ from .const import SPOTIFY_URL
     ],
 )
 async def test_get_playback_state(
-    aresponses: ResponsesMockServer,
+    responses: aioresponses,
     snapshot: SnapshotAssertion,
     playback_id: int,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving playback state."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player",
-        METH_GET,
-        aresponses.Response(
-            status=200,
-            headers={"Content-Type": "application/json"},
-            text=load_fixture(f"playback_{playback_id}.json"),
-        ),
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player",
+        status=200,
+        body=load_fixture(f"playback_{playback_id}.json"),
     )
     response = await authenticated_client.get_playback()
     assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
 
 
 async def test_get_no_playback_state(
-    aresponses: ResponsesMockServer,
     authenticated_client: SpotifyClient,
+    responses: aioresponses,
 ) -> None:
     """Test retrieving no playback state."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player",
-        METH_GET,
-        aresponses.Response(
-            status=204,
-            headers={"Content-Type": "application/json"},
-        ),
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player",
+        status=204,
     )
     response = await authenticated_client.get_playback()
     assert response is None
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player",
+        METH_GET,
+        headers=HEADERS,
+        data=None,
+        params=None,
+    )
 
 
 async def test_transfer_playback(
-    aresponses: ResponsesMockServer,
     authenticated_client: SpotifyClient,
+    responses: aioresponses,
 ) -> None:
     """Test transferring playback."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player",
-        METH_PUT,
-        aresponses.Response(
-            status=200,
-            headers={"Content-Type": "application/json"},
-        ),
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/player",
+        status=204,
     )
     await authenticated_client.transfer_playback("test")
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player",
+        METH_PUT,
+        headers=HEADERS,
+        data={"device_ids": ["test"]},
+        params=None,
+    )
 
 
 async def test_get_devices(
-    aresponses: ResponsesMockServer,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
+    responses: aioresponses,
 ) -> None:
     """Test retrieving devices."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player/devices",
-        METH_GET,
-        aresponses.Response(
-            status=200,
-            headers={"Content-Type": "application/json"},
-            text=load_fixture("devices.json"),
-        ),
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player/devices",
+        status=200,
+        body=load_fixture("devices.json"),
     )
     devices = await authenticated_client.get_devices()
     assert devices == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/devices",
+        headers=HEADERS,
+        data=None,
+        params=None,
+    )
 
 
 async def test_get_current_playing(
-    aresponses: ResponsesMockServer,
+    responses: aioresponses,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving current playing."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player/currently-playing",
-        METH_GET,
-        aresponses.Response(
-            status=200,
-            headers={"Content-Type": "application/json"},
-            text=load_fixture("current_playing_track.json"),
-        ),
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player/currently-playing",
+        status=200,
+        body=load_fixture("current_playing_track.json"),
     )
     response = await authenticated_client.get_current_playing()
     assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/currently-playing",
+        headers=HEADERS,
+        data=None,
+        params=None,
+    )
 
 
 async def test_get_no_current_playing_state(
-    aresponses: ResponsesMockServer,
+    responses: aioresponses,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving no current playing state."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player/currently-playing",
-        METH_GET,
-        aresponses.Response(
-            status=204,
-            headers={"Content-Type": "application/json"},
-        ),
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player/currently-playing",
+        status=204,
     )
     response = await authenticated_client.get_current_playing()
     assert response is None
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/currently-playing",
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
 
 
 async def test_resume_playback(
-    aresponses: ResponsesMockServer,
+    responses: aioresponses,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test resuming playback."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player/play",
-        METH_PUT,
-        aresponses.Response(
-            status=204,
-            headers={"Content-Type": "application/json"},
-        ),
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/player/play",
+        status=204,
     )
     await authenticated_client.start_playback()
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/play",
+        METH_PUT,
+        headers=HEADERS,
+        params={},
+        data={"position_ms": 0},
+    )
