@@ -7,11 +7,11 @@ from importlib import metadata
 from typing import Any, Awaitable, Callable, Self
 
 from aiohttp import ClientSession
-from aiohttp.hdrs import METH_GET, METH_PUT
+from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
-from spotifyaio.models import CurrentPlaying, Device, Devices, PlaybackState
+from spotifyaio.models import CurrentPlaying, Device, Devices, PlaybackState, RepeatMode
 
 
 @dataclass
@@ -40,7 +40,7 @@ class SpotifyClient:
         uri: str,
         *,
         data: dict[str, Any] | None = None,
-        params: dict[str, str] | None = None,
+        params: dict[str, Any] | None = None,
     ) -> str:
         """Handle a request to Spotify."""
         version = metadata.version(__package__)
@@ -91,11 +91,20 @@ class SpotifyClient:
         """Handle a GET request to Spotify."""
         return await self._request(METH_GET, uri)
 
+    async def _post(
+        self,
+        uri: str,
+        data: dict[str, Any] | None = None,
+        params: dict[str, Any] | None = None,
+    ) -> str:
+        """Handle a POST request to Spotify."""
+        return await self._request(METH_POST, uri, data=data, params=params)
+
     async def _put(
         self,
         uri: str,
-        data: dict[str, Any],
-        params: dict[str, str] | None = None,
+        data: dict[str, Any] | None = None,
+        params: dict[str, Any] | None = None,
     ) -> str:
         """Handle a PUT request to Spotify."""
         return await self._request(METH_PUT, uri, data=data, params=params)
@@ -149,6 +158,55 @@ class SpotifyClient:
         if device_id:
             params["device_id"] = device_id
         await self._put("v1/me/player/play", payload, params=params)
+
+    async def pause_playback(self, device_id: str | None = None) -> None:
+        """Pause playback."""
+        params = {}
+        if device_id:
+            params["device_id"] = device_id
+        await self._put("v1/me/player/pause", params=params)
+
+    async def next_track(self, device_id: str | None = None) -> None:
+        """Next track."""
+        params: dict[str, str] = {}
+        if device_id:
+            params["device_id"] = device_id
+        await self._post("v1/me/player/next", params=params)
+
+    async def previous_track(self, device_id: str | None = None) -> None:
+        """Previous track."""
+        params: dict[str, str] = {}
+        if device_id:
+            params["device_id"] = device_id
+        await self._post("v1/me/player/previous", params=params)
+
+    async def seek_track(self, position: int, device_id: str | None = None) -> None:
+        """Seek track."""
+        params: dict[str, Any] = {"position_ms": position}
+        if device_id:
+            params["device_id"] = device_id
+        await self._put("v1/me/player/seek", params=params)
+
+    async def set_repeat(self, state: RepeatMode, device_id: str | None = None) -> None:
+        """Set repeat."""
+        params: dict[str, str] = {"state": state}
+        if device_id:
+            params["device_id"] = device_id
+        await self._put("v1/me/player/repeat", params=params)
+
+    async def set_volume(self, volume: int, device_id: str | None = None) -> None:
+        """Set volume."""
+        params: dict[str, Any] = {"volume_percent": volume}
+        if device_id:
+            params["device_id"] = device_id
+        await self._put("v1/me/player/volume", params=params)
+
+    async def set_shuffle(self, *, state: bool, device_id: str | None = None) -> None:
+        """Set shuffle."""
+        params: dict[str, Any] = {"state": str(state).lower()}
+        if device_id:
+            params["device_id"] = device_id
+        await self._put("v1/me/player/shuffle", params=params)
 
     async def close(self) -> None:
         """Close open client session."""
