@@ -2,11 +2,10 @@
 from __future__ import annotations
 
 import asyncio
+from typing import Any
 
 import aiohttp
-from aiohttp.hdrs import METH_GET
-from aiohttp.web_request import BaseRequest
-from aresponses import Response, ResponsesMockServer
+from aioresponses import CallbackResult, aioresponses
 import pytest
 
 from spotifyaio import SpotifyClient, SpotifyConnectionError, SpotifyError
@@ -15,25 +14,41 @@ from . import load_fixture
 from .const import SPOTIFY_URL
 
 
-async def test_own_session(
-    aresponses: ResponsesMockServer,
+async def test_putting_in_own_session(
+    responses: aioresponses,
 ) -> None:
-    """Test creating own session."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player",
-        METH_GET,
-        aresponses.Response(
-            status=200,
-            headers={"Content-Type": "application/json"},
-            text=load_fixture("playback_1.json"),
-        ),
+    """Test putting in own session."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player",
+        status=200,
+        body=load_fixture("playback_1.json"),
     )
     async with aiohttp.ClientSession() as session:
         spotify = SpotifyClient(session=session)
         spotify.authenticate("test")
         await spotify.get_playback()
         assert spotify.session is not None
+        assert not spotify.session.closed
+        await spotify.close()
+        assert not spotify.session.closed
+
+
+async def test_creating_own_session(
+    responses: aioresponses,
+) -> None:
+    """Test creating own session."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player",
+        status=200,
+        body=load_fixture("playback_1.json"),
+    )
+    spotify = SpotifyClient()
+    spotify.authenticate("test")
+    await spotify.get_playback()
+    assert spotify.session is not None
+    assert not spotify.session.closed
+    await spotify.close()
+    assert spotify.session.closed
 
 
 async def test_refresh_token() -> None:
@@ -54,43 +69,35 @@ async def test_refresh_token() -> None:
 
 
 async def test_unexpected_server_response(
-    aresponses: ResponsesMockServer,
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
 ) -> None:
     """Test handling unexpected response."""
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player",
-        METH_GET,
-        aresponses.Response(
-            status=200,
-            headers={"Content-Type": "plain/text"},
-            text="Yes",
-        ),
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player",
+        status=200,
+        headers={"Content-Type": "plain/text"},
+        body="Yes",
     )
-    async with SpotifyClient() as spotify:
-        spotify.authenticate("test")
-        with pytest.raises(SpotifyError):
-            assert await spotify.get_playback()
+    with pytest.raises(SpotifyError):
+        assert await authenticated_client.get_playback()
 
 
-async def test_timeout(aresponses: ResponsesMockServer) -> None:
+async def test_timeout(
+    responses: aioresponses,
+) -> None:
     """Test request timeout."""
 
     # Faking a timeout by sleeping
-    async def response_handler(_: BaseRequest) -> Response:
+    async def response_handler(_: str, **_kwargs: Any) -> CallbackResult:
         """Response handler for this test."""
         await asyncio.sleep(2)
-        return aresponses.Response(body="Goodmorning!")
+        return CallbackResult(body="Goodmorning!")
 
-    aresponses.add(
-        SPOTIFY_URL,
-        "/v1/me/player",
-        METH_GET,
-        response_handler,
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player",
+        callback=response_handler,
     )
-    async with aiohttp.ClientSession() as session:
-        spotify = SpotifyClient(session=session, request_timeout=1)
-        spotify.authenticate("test")
+    async with SpotifyClient(request_timeout=1) as spotify:
         with pytest.raises(SpotifyConnectionError):
             assert await spotify.get_playback()
-        await spotify.close()

@@ -1,7 +1,8 @@
 """Asynchronous Python client for Spotify."""
-from typing import AsyncGenerator
+from typing import AsyncGenerator, Generator
 
 import aiohttp
+from aioresponses import aioresponses
 import pytest
 
 from spotifyaio import SpotifyClient
@@ -32,3 +33,10 @@ async def authenticated_client(
     """Return an authenticated Spotify client."""
     spotify_client.authenticate("test")
     return spotify_client
+
+
+@pytest.fixture(name="responses")
+def aioresponses_fixture() -> Generator[aioresponses, None, None]:
+    """Return aioresponses fixture."""
+    with aioresponses() as mocked_responses:
+        yield mocked_responses

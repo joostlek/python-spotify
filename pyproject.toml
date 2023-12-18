@@ -30,9 +30,9 @@ aiohttp = ">=3.0.0"
 yarl = ">=1.6.0"
 mashumaro = "^3.11"
 orjson = "^3.9.10"
+aioresponses = "^0.7.6"
 
 [tool.poetry.group.dev.dependencies]
-aresponses = "2.1.6"
 codespell = "2.2.6"
 covdefaults = "2.3.0"
 coverage = {version = "7.3.3", extras = ["toml"]}
