@@ -1,0 +1,733 @@
+{
+  "message": "Popular Playlists",
+  "playlists": {
+    "href": "https://api.spotify.com/v1/browse/featured-playlists?country=NL&timestamp=2023-12-18T18%3A35%3A35&offset=0&limit=20",
+    "items": [
+      {
+        "collaborative": false,
+        "description": "De ideale playlist voor het fijne kerstgevoel bij de boom!",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4dopZ9vOp1t"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4dopZ9vOp1t",
+        "id": "37i9dQZF1DX4dopZ9vOp1t",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000037d14c267b8ee5fea2246a8fe",
+            "width": null
+          }
+        ],
+        "name": "Kerst Hits 2023",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjU2ODI4MSwwMDAwMDAwMDE1ZGRiNzI3OGY4OGU2MzA1MWNkZGMyNTdmNDUwMTc1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4dopZ9vOp1t/tracks",
+          "total": 298
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX4dopZ9vOp1t"
+      },
+      {
+        "collaborative": false,
+        "description": "De 50 populairste hits van Nederland. Cover: Jack Harlow",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSBi5svWQ9Nk"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSBi5svWQ9Nk",
+        "id": "37i9dQZF1DWSBi5svWQ9Nk",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003f7b99051789611a49101c1cf",
+            "width": null
+          }
+        ],
+        "name": "Top Hits NL",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjU5NDgwMCwwMDAwMDAwMDU4NWY2MTE4NmU4NmIwMDdlMGE4ZGRkOTZkN2U2MzAx",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSBi5svWQ9Nk/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWSBi5svWQ9Nk"
+      },
+      {
+        "collaborative": false,
+        "description": "The biggest Christmas songs of all time.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0Yxoavh5qJV"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0Yxoavh5qJV",
+        "id": "37i9dQZF1DX0Yxoavh5qJV",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003ef53563c4fa1187c7537f13f",
+            "width": null
+          }
+        ],
+        "name": "Christmas Hits",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjg3OTA0NSwwMDAwMDAwMDRmOTM2YTk5ODgwNmYyZjEyYjlhMDRhOWM4M2Q4ZGZi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0Yxoavh5qJV/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX0Yxoavh5qJV"
+      },
+      {
+        "collaborative": false,
+        "description": "Luister de Radio 2 Top 2000 - 2023 - Editie 25!",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTmvXBN4DgpA"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTmvXBN4DgpA",
+        "id": "37i9dQZF1DWTmvXBN4DgpA",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000034a3550dfb857569735d6c5ab",
+            "width": null
+          }
+        ],
+        "name": "Top 2000",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjY1NzMwMiwwMDAwMDAwMGQzZjA0ODY5YTQ5N2E0OWNkOTUwMzJhOGI5OTdhODlm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTmvXBN4DgpA/tracks",
+          "total": 1996
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWTmvXBN4DgpA"
+      },
+      {
+        "collaborative": false,
+        "description": "Lekker rustig aan doen op zondag met deze zachte pop liedjes.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZpGSuzrdTXg"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZpGSuzrdTXg",
+        "id": "37i9dQZF1DWZpGSuzrdTXg",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000034203ab0c15f6a3243fea16d8",
+            "width": null
+          }
+        ],
+        "name": "Easy On Sunday",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjYzOTE4OCwwMDAwMDAwMDNkMTdjMGZmOWI0Y2EyZjhjMWQyNGYyMzMzMmZmNzAy",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZpGSuzrdTXg/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWZpGSuzrdTXg"
+      },
+      {
+        "collaborative": false,
+        "description": "Timeless heart-warming classics from 1940- 1980 for the holiday season.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6R7QUWePReA"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6R7QUWePReA",
+        "id": "37i9dQZF1DX6R7QUWePReA",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003b70e0f51ac4cf9d62cee4977",
+            "width": null
+          }
+        ],
+        "name": "Christmas Classics",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMTk3MzE4OCwwMDAwMDAwMDYwMzE0MjZjOTdjMWE1NTU0MzRjYTA5M2Y4ZWFmNzgz",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6R7QUWePReA/tracks",
+          "total": 75
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX6R7QUWePReA"
+      },
+      {
+        "collaborative": false,
+        "description": "De beste Nederlandse hits van vroeger en nu. Cover: Tino Martin & Mart Hoogkamer",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdKMCnEhDnDL"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdKMCnEhDnDL",
+        "id": "37i9dQZF1DXdKMCnEhDnDL",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003d93ec9896683ab78fa949391",
+            "width": null
+          }
+        ],
+        "name": "Beste van NL",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjg5NDI1OSwwMDAwMDAwMDQ3YzU2NjYwMTNlMTRjMDAzZDc2YzM5Mjc0NzU5NTQ1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdKMCnEhDnDL/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DXdKMCnEhDnDL"
+      },
+      {
+        "collaborative": false,
+        "description": "Reanny & King Ocho op de cover van Woordenschat!",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX19xRtMyA5LM"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX19xRtMyA5LM",
+        "id": "37i9dQZF1DX19xRtMyA5LM",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003f90ad1550abb0e50440cc032",
+            "width": null
+          }
+        ],
+        "name": "Woordenschat",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjU5NDgwMCwwMDAwMDAwMDc0NDA3YzkyM2IyZDcxYjUzZjNhZjQyOTU2MWRhZTQ1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX19xRtMyA5LM/tracks",
+          "total": 60
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX19xRtMyA5LM"
+      },
+      {
+        "collaborative": false,
+        "description": "Koffie met gemoedelijke muziek op de achtergrond.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYPwGkJoztcR"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYPwGkJoztcR",
+        "id": "37i9dQZF1DWYPwGkJoztcR",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f0000000358e9793722274f9d7b7e85e6",
+            "width": null
+          }
+        ],
+        "name": "'t Koffiehuis",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjU5NDgwMCwwMDAwMDAwMDVlMGY0N2JiZmI5ODQ3MWYwMGYyMTkwZDJhYzQwMjIx",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYPwGkJoztcR/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWYPwGkJoztcR"
+      },
+      {
+        "collaborative": false,
+        "description": "De grootste hits uit de kroeg in één playlist.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUppGmuwT9c7"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUppGmuwT9c7",
+        "id": "37i9dQZF1DWUppGmuwT9c7",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003d307684e485446632dce60ab",
+            "width": null
+          }
+        ],
+        "name": "Kroegenhits",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjg5NDQwNywwMDAwMDAwMDE5YWY2MDAzNjc2NDU3MWYxZjM1NGViOTQ4MTEyYTI1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUppGmuwT9c7/tracks",
+          "total": 80
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWUppGmuwT9c7"
+      },
+      {
+        "collaborative": false,
+        "description": "Niks aan te doen, Winter 2023 is coming! ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcx1szy2g67M"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcx1szy2g67M",
+        "id": "37i9dQZF1DXcx1szy2g67M",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003f2338153122480fcf814c326",
+            "width": null
+          }
+        ],
+        "name": "Winter '23",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjU4MDE3MywwMDAwMDAwMGEyOWQ1NDNkYTAzMjBmODdkZjQ3YTAwOGYwYmFlZDVi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcx1szy2g67M/tracks",
+          "total": 99
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DXcx1szy2g67M"
+      },
+      {
+        "collaborative": false,
+        "description": "Kick back to the best new and recent chill hits.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4WYpdgoIcn6",
+        "id": "37i9dQZF1DX4WYpdgoIcn6",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f0000000385a267af7eab188ae99105ad",
+            "width": null
+          }
+        ],
+        "name": "Chill Hits",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjA2MDYxNCwwMDAwMDAwMGNlYmUyZDIxM2M2Zjg2NzU3OTc2YjgxMTNjNTViMGY3",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4WYpdgoIcn6/tracks",
+          "total": 130
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX4WYpdgoIcn6"
+      },
+      {
+        "collaborative": false,
+        "description": "Mitski is on top of the Hottest 50!",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        "id": "37i9dQZF1DXcBWIGoYBM5M",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000037ac0d0713aa7b5a4fb38e273",
+            "width": null
+          }
+        ],
+        "name": "Today’s Top Hits",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjYxNjQwMCwwMDAwMDAwMDlkOTJiMzliYjhlNTQ0OWJiZWIwNjAyNjc1N2FlNWUw",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+      },
+      {
+        "collaborative": false,
+        "description": "Warm instrumental versions of your favorite Christmas songs.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWU0r6G8OGirN"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU0r6G8OGirN",
+        "id": "37i9dQZF1DWU0r6G8OGirN",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003c3196f5150c18abb9ce7db75",
+            "width": null
+          }
+        ],
+        "name": "Cozy Christmas Jazz",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjM4NTY1OCwwMDAwMDAwMDRkMzUzYzA0Y2U2YzNjZDg0MjI1MGI5NmNkZjU2M2I4",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU0r6G8OGirN/tracks",
+          "total": 83
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWU0r6G8OGirN"
+      },
+      {
+        "collaborative": false,
+        "description": "De meest gestreamde tracks van 2023 in Nederland. Cover: Maan",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZ58KqXkQf1S"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZ58KqXkQf1S",
+        "id": "37i9dQZF1DWZ58KqXkQf1S",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003f1590ccbee8af2a83ef32d73",
+            "width": null
+          }
+        ],
+        "name": "Top Tracks 2023 NL",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMTI2MDE2MCwwMDAwMDAwMGZiNDY1ZWQzMzU2ODE1ZDYwM2ZhZjhmNTUyNTFlNTRm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZ58KqXkQf1S/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWZ58KqXkQf1S"
+      },
+      {
+        "collaborative": false,
+        "description": "De beste en nieuwste dance hits. Cover: David Guetta & Kim Petras",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTwCImwcYjDL"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTwCImwcYjDL",
+        "id": "37i9dQZF1DWTwCImwcYjDL",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003c0aa04aa9a5a82b6471e3d01",
+            "width": null
+          }
+        ],
+        "name": "360 Dance",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjU3NzQ4MCwwMDAwMDAwMDAwNmMyM2FiMzlhYTA0N2FiNDBhOTAyZTcyNjZlYmUx",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTwCImwcYjDL/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWTwCImwcYjDL"
+      },
+      {
+        "collaborative": false,
+        "description": "De nieuwste releases elke vrijdag op Spotify! Cover: SERA, YouNotUs",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXb5BKLTO7ULa"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXb5BKLTO7ULa",
+        "id": "37i9dQZF1DXb5BKLTO7ULa",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000038cd883983a21f8d91b6324c0",
+            "width": null
+          }
+        ],
+        "name": "New Music Friday NL",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjYzNDE0OCwwMDAwMDAwMDNiOWUwZmFmYzUwZjk5YTA4MzgwNjNhYWJkZDc0MTE3",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXb5BKLTO7ULa/tracks",
+          "total": 63
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DXb5BKLTO7ULa"
+      },
+      {
+        "collaborative": false,
+        "description": "Motion, fissa & good vibes! Cover: J Balvin",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXHyhanaNMoy"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXHyhanaNMoy",
+        "id": "37i9dQZF1DWXHyhanaNMoy",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003d469349e5325224b9f84c79c",
+            "width": null
+          }
+        ],
+        "name": "La Vida Loca",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjg5NTQ4OSwwMDAwMDAwMDEwZjVjZTQ2ZGUxZGIxOWEyZGIwMjQyODUzMTkzNWZm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXHyhanaNMoy/tracks",
+          "total": 60
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWXHyhanaNMoy"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWMOmoXKqHTD"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWMOmoXKqHTD",
+        "id": "37i9dQZF1DWWMOmoXKqHTD",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003ffa215be1a4c64e3cbf59d1e",
+            "width": null
+          }
+        ],
+        "name": "Songs to Sing in the Car",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMTQ1Mzg3MSwwMDAwMDAwMGY3NTUyMTczOTI4MDk2MGYxNTYyMzhjOTMzMWY3ODli",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWMOmoXKqHTD/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWWMOmoXKqHTD"
+      },
+      {
+        "collaborative": false,
+        "description": "Peaceful piano to help you slow down, breathe, and relax. ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4sWSpwq3LiO",
+        "id": "37i9dQZF1DX4sWSpwq3LiO",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003d073e656e546e43bc387ad79",
+            "width": null
+          }
+        ],
+        "name": "Peaceful Piano",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTcwMjg5NzM3MSwwMDAwMDAwMGU0OTEwYTRkZmExYmM1MGJjMDQ5ZjBlZTkyNGY1MjBi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4sWSpwq3LiO/tracks",
+          "total": 227
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX4sWSpwq3LiO"
+      }
+    ],
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/browse/featured-playlists?country=NL&timestamp=2023-12-18T18%3A35%3A35&offset=20&limit=20",
+    "offset": 0,
+    "previous": null,
+    "total": 24
+  }
+}

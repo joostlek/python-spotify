@@ -11,7 +11,18 @@ from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
-from spotifyaio.models import CurrentPlaying, Device, Devices, PlaybackState, RepeatMode
+from spotifyaio.models import (
+    BasePlaylist,
+    CategoryPlaylistResponse,
+    CurrentPlaying,
+    Device,
+    Devices,
+    FeaturedPlaylistResponse,
+    PlaybackState,
+    Playlist,
+    PlaylistResponse,
+    RepeatMode,
+)
 
 
 @dataclass
@@ -87,9 +98,9 @@ class SpotifyClient:
 
         return await response.text()
 
-    async def _get(self, uri: str) -> str:
+    async def _get(self, uri: str, params: dict[str, Any] | None = None) -> str:
         """Handle a GET request to Spotify."""
-        return await self._request(METH_GET, uri)
+        return await self._request(METH_GET, uri, params=params)
 
     async def _post(
         self,
@@ -207,6 +218,32 @@ class SpotifyClient:
         if device_id:
             params["device_id"] = device_id
         await self._put("v1/me/player/shuffle", params=params)
+
+    async def get_playlist(self, playlist_id: str) -> Playlist:
+        """Get playlist."""
+        response = await self._get(f"v1/playlists/{playlist_id}")
+        return Playlist.from_json(response)
+
+    async def get_playlists_for_current_user(self) -> list[BasePlaylist]:
+        """Get playlists."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/playlists", params=params)
+        return PlaylistResponse.from_json(response).items
+
+    async def get_featured_playlists(self) -> list[BasePlaylist]:
+        """Get featured playlists."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/browse/featured-playlists", params=params)
+        return FeaturedPlaylistResponse.from_json(response).playlists.items
+
+    async def get_category_playlists(self, category_id: str) -> list[BasePlaylist]:
+        """Get category playlists."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get(
+            f"v1/browse/categories/{category_id}/playlists",
+            params=params,
+        )
+        return CategoryPlaylistResponse.from_json(response).playlists.items
 
     async def close(self) -> None:
         """Close open client session."""
