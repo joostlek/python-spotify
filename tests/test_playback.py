@@ -367,6 +367,10 @@ async def test_seek_track(
         ({"state": RepeatMode.OFF}, {"state": "off"}),
         ({"state": RepeatMode.TRACK}, {"state": "track"}),
         ({"state": RepeatMode.CONTEXT}, {"state": "context"}),
+        (
+            {"state": RepeatMode.CONTEXT, "device_id": "123qwe"},
+            {"state": "context", "device_id": "123qwe"},
+        ),
     ],
 )
 async def test_set_repeat(
@@ -390,6 +394,82 @@ async def test_set_repeat(
     await authenticated_client.set_repeat(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/repeat",
+        METH_PUT,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({"volume": 50}, {"volume_percent": 50}),
+        (
+            {"volume": 50, "device_id": "123qwe"},
+            {"volume_percent": 50, "device_id": "123qwe"},
+        ),
+    ],
+)
+async def test_set_volume(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test setting volume."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/volume",
+        query=expected_params,
+    )
+    responses.put(
+        url,
+        status=204,
+    )
+    await authenticated_client.set_volume(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/volume",
+        METH_PUT,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({"state": True}, {"state": "true"}),
+        (
+            {"state": False, "device_id": "123qwe"},
+            {"state": "false", "device_id": "123qwe"},
+        ),
+    ],
+)
+async def test_set_shuffle(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test setting shuffle."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/shuffle",
+        query=expected_params,
+    )
+    responses.put(
+        url,
+        status=204,
+    )
+    await authenticated_client.set_shuffle(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/shuffle",
         METH_PUT,
         headers=HEADERS,
         params=expected_params,

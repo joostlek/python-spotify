@@ -203,7 +203,7 @@ class SpotifyClient:
 
     async def set_shuffle(self, *, state: bool, device_id: str | None = None) -> None:
         """Set shuffle."""
-        params: dict[str, Any] = {"state": state}
+        params: dict[str, Any] = {"state": str(state).lower()}
         if device_id:
             params["device_id"] = device_id
         await self._put("v1/me/player/shuffle", params=params)
