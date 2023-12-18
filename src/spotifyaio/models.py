@@ -136,6 +136,7 @@ class Track(DataClassORJSONMixin):
     external_ids: dict[str, str]
     external_urls: dict[str, str]
     href: str
+    name: str
     is_local: bool
     track_number: int
     object_type: str = field(metadata=field_options(alias="type"))
