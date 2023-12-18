@@ -3,10 +3,12 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 
-from aiohttp.hdrs import METH_GET, METH_PUT
+from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
 from aioresponses import aioresponses
 import pytest
 from yarl import URL
+
+from spotifyaio.models import RepeatMode
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
@@ -213,4 +215,183 @@ async def test_resume_playback(
         headers=HEADERS,
         params=expected_params,
         data=expected_data,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({}, {}),
+        ({"device_id": "123qwe"}, {"device_id": "123qwe"}),
+    ],
+)
+async def test_pause_playback(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test pausing playback."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/pause",
+        query=expected_params,
+    )
+    responses.put(
+        url,
+        status=204,
+    )
+    await authenticated_client.pause_playback(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/pause",
+        METH_PUT,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({}, {}),
+        ({"device_id": "123qwe"}, {"device_id": "123qwe"}),
+    ],
+)
+async def test_next_track(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test next track."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/next",
+        query=expected_params,
+    )
+    responses.post(
+        url,
+        status=204,
+    )
+    await authenticated_client.next_track(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/next",
+        METH_POST,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({}, {}),
+        ({"device_id": "123qwe"}, {"device_id": "123qwe"}),
+    ],
+)
+async def test_previous_track(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test previous track."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/previous",
+        query=expected_params,
+    )
+    responses.post(
+        url,
+        status=204,
+    )
+    await authenticated_client.previous_track(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/previous",
+        METH_POST,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({"position": 5000}, {"position_ms": 5000}),
+        (
+            {"position": 5000, "device_id": "123qwe"},
+            {"device_id": "123qwe", "position_ms": 5000},
+        ),
+    ],
+)
+async def test_seek_track(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test seeking track."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/seek",
+        query=expected_params,
+    )
+    responses.put(
+        url,
+        status=204,
+    )
+    await authenticated_client.seek_track(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/seek",
+        METH_PUT,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("arguments", "expected_params"),
+    [
+        ({"state": RepeatMode.OFF}, {"state": "off"}),
+        ({"state": RepeatMode.TRACK}, {"state": "track"}),
+        ({"state": RepeatMode.CONTEXT}, {"state": "context"}),
+    ],
+)
+async def test_set_repeat(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+) -> None:
+    """Test setting repeat."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/repeat",
+        query=expected_params,
+    )
+    responses.put(
+        url,
+        status=204,
+    )
+    await authenticated_client.set_repeat(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/repeat",
+        METH_PUT,
+        headers=HEADERS,
+        params=expected_params,
+        data=None,
     )
