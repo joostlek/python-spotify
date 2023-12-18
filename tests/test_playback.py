@@ -1,14 +1,19 @@
 """Asynchronous Python client for Spotify."""
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Any
 
 from aiohttp.hdrs import METH_GET, METH_PUT
 from aioresponses import aioresponses
 import pytest
-
-from spotifyaio.spotify import SpotifyClient
-from syrupy import SnapshotAssertion
+from yarl import URL
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
+
+if TYPE_CHECKING:
+    from spotifyaio.spotify import SpotifyClient
+    from syrupy import SnapshotAssertion
 
 
 @pytest.mark.parametrize(
@@ -142,20 +147,70 @@ async def test_get_no_current_playing_state(
     )
 
 
+@pytest.mark.parametrize(
+    ("arguments", "expected_params", "expected_data"),
+    [
+        ({}, {}, {"position_ms": 0}),
+        ({"device_id": "123qwe"}, {"device_id": "123qwe"}, {"position_ms": 0}),
+        (
+            {"context_uri": "spotify:artist:6cmp7ut7okJAgJOSaMAVf3"},
+            {},
+            {"position_ms": 0, "context_uri": "spotify:artist:6cmp7ut7okJAgJOSaMAVf3"},
+        ),
+        (
+            {
+                "uris": [
+                    "spotify:track:1FyXbzOlq3dkxaB6iRsETv",
+                    "spotify:track:4e9hUiLsN4mx61ARosFi7p",
+                ],
+                "uri_offset": "spotify:track:4e9hUiLsN4mx61ARosFi7p",
+            },
+            {},
+            {
+                "position_ms": 0,
+                "uris": [
+                    "spotify:track:1FyXbzOlq3dkxaB6iRsETv",
+                    "spotify:track:4e9hUiLsN4mx61ARosFi7p",
+                ],
+                "offset": {"uri": "spotify:track:4e9hUiLsN4mx61ARosFi7p"},
+            },
+        ),
+        (
+            {"uris": ["spotify:artist:6cmp7ut7okJAgJOSaMAVf3"], "position_offset": 5},
+            {},
+            {
+                "position_ms": 0,
+                "uris": ["spotify:artist:6cmp7ut7okJAgJOSaMAVf3"],
+                "offset": {"position": 5},
+            },
+        ),
+        ({"position": 5000}, {}, {"position_ms": 5000}),
+    ],
+)
 async def test_resume_playback(
     responses: aioresponses,
     authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_params: dict[str, Any],
+    expected_data: dict[str, Any],
 ) -> None:
     """Test resuming playback."""
+    url = URL.build(
+        scheme="https",
+        host="api.spotify.com",
+        port=443,
+        path="/v1/me/player/play",
+        query=expected_params,
+    )
     responses.put(
-        f"{SPOTIFY_URL}/v1/me/player/play",
+        url,
         status=204,
     )
-    await authenticated_client.start_playback()
+    await authenticated_client.start_playback(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/play",
         METH_PUT,
         headers=HEADERS,
-        params={},
-        data={"position_ms": 0},
+        params=expected_params,
+        data=expected_data,
     )
