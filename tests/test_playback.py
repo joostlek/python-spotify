@@ -8,13 +8,13 @@ from aioresponses import aioresponses
 import pytest
 from yarl import URL
 
-from spotifyaio.models import RepeatMode
+from spotifyaio import RepeatMode
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
 
 if TYPE_CHECKING:
-    from spotifyaio.spotify import SpotifyClient
+    from spotifyaio import SpotifyClient
     from syrupy import SnapshotAssertion
 
 

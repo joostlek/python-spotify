@@ -10,7 +10,7 @@ from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
 
 if TYPE_CHECKING:
-    from spotifyaio.spotify import SpotifyClient
+    from spotifyaio import SpotifyClient
     from syrupy import SnapshotAssertion
 
 
