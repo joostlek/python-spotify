@@ -4,9 +4,29 @@ from .exceptions import (
     SpotifyConnectionError,
     SpotifyError,
 )
-from .models import Device, PlaybackState, DeviceType, RepeatMode, ContextType, Context, AlbumType, Image, \
-    ReleaseDatePrecision, SimplifiedArtist, Album, Artist, Track, CurrentPlaying, PlaylistOwnerType, PlaylistOwner, \
-    Playlist, BasePlaylist, ProductType, BaseUserProfile, UserProfile
+from .models import (
+    Album,
+    AlbumType,
+    Artist,
+    BasePlaylist,
+    BaseUserProfile,
+    Context,
+    ContextType,
+    CurrentPlaying,
+    Device,
+    DeviceType,
+    Image,
+    PlaybackState,
+    Playlist,
+    PlaylistOwner,
+    PlaylistOwnerType,
+    ProductType,
+    ReleaseDatePrecision,
+    RepeatMode,
+    SimplifiedArtist,
+    Track,
+    UserProfile,
+)
 from .spotify import SpotifyClient
 
 __all__ = [
