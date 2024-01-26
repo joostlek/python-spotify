@@ -4,10 +4,12 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import Any, Awaitable, Callable, Self
+import sys
+from typing import Any, Awaitable, Callable
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
+from typing_extensions import Self
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
@@ -25,6 +27,11 @@ from spotifyaio.models import (
     RepeatMode,
     UserProfile,
 )
+
+if sys.version_info >= (3, 11):
+    from asyncio import timeout
+else:
+    from async_timeout import timeout
 
 
 @dataclass
@@ -76,7 +83,7 @@ class SpotifyClient:
             self._close_session = True
 
         try:
-            async with asyncio.timeout(self.request_timeout):
+            async with timeout(self.request_timeout):
                 response = await self.session.request(
                     method,
                     url,

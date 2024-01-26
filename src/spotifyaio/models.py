@@ -2,10 +2,16 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from enum import StrEnum
+import sys
+from typing import Optional
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
+
+if sys.version_info >= (3, 11):
+    from enum import StrEnum
+else:
+    from backports.strenum import StrEnum
 
 
 class DeviceType(StrEnum):
@@ -77,8 +83,8 @@ class AlbumType(StrEnum):
 class Image(DataClassORJSONMixin):
     """Image model."""
 
-    height: int | None
-    width: int | None
+    height: Optional[int]
+    width: Optional[int]
     url: str
 
 
@@ -147,11 +153,11 @@ class Track(DataClassORJSONMixin):
 class CurrentPlaying(DataClassORJSONMixin):
     """Current playing model."""
 
-    context: Context | None
-    progress_ms: int | None
+    context: Optional[Context]
+    progress_ms: Optional[int]
     is_playing: bool
-    item: Track | None
-    currently_playing_type: str | None
+    item: Optional[Track]
+    currently_playing_type: Optional[str]
 
 
 @dataclass
@@ -186,13 +192,13 @@ class BasePlaylist(DataClassORJSONMixin):
     """Base playlist model."""
 
     collaborative: bool
-    description: str | None
+    description: Optional[str]
     external_urls: dict[str, str]
     playlist_id: str = field(metadata=field_options(alias="id"))
     images: list[Image]
     name: str
     owner: PlaylistOwner
-    public: bool | None
+    public: Optional[bool]
     object_type: str = field(metadata=field_options(alias="type"))
     uri: str
 
@@ -209,9 +215,9 @@ class PlaylistResponse(DataClassORJSONMixin):
     href: str
     items: list[BasePlaylist]
     limit: int
-    next_list: str | None = field(metadata=field_options(alias="next"))
+    next_list: Optional[str] = field(metadata=field_options(alias="next"))
     offset: int
-    previous_list: str | None = field(metadata=field_options(alias="previous"))
+    previous_list: Optional[str] = field(metadata=field_options(alias="previous"))
     total: int
 
 
