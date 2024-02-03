@@ -23,7 +23,7 @@ from spotifyaio.models import (
     Playlist,
     PlaylistResponse,
     RepeatMode,
-    UserProfile,
+    UserProfile, Album,
 )
 
 
@@ -121,6 +121,11 @@ class SpotifyClient:
     ) -> str:
         """Handle a PUT request to Spotify."""
         return await self._request(METH_PUT, uri, data=data, params=params)
+
+    async def get_album(self, album_id: str) -> Album:
+        """Get album."""
+        response = await self._get(f"v1/albums/{album_id}")
+        return Album.from_json(response)
 
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""

@@ -123,12 +123,12 @@ class Artist(DataClassORJSONMixin):
     uri: str
 
 
+
 @dataclass
-class Track(DataClassORJSONMixin):
-    """Track model."""
+class SimplifiedTrack(DataClassORJSONMixin):
+    """SimplifiedTrack model."""
 
     track_id: str = field(metadata=field_options(alias="id"))
-    album: Album
     artists: list[Artist]
     disc_number: int
     duration_ms: int
@@ -141,6 +141,13 @@ class Track(DataClassORJSONMixin):
     track_number: int
     object_type: str = field(metadata=field_options(alias="type"))
     uri: str
+
+
+@dataclass
+class Track(SimplifiedTrack):
+    """Track model."""
+
+    album: Album
 
 
 @dataclass

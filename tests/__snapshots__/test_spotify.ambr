@@ -1,0 +1,36 @@
+# serializer version: 1
+# name: test_get_album
+  dict({
+    'album_id': '3IqzqH6ShrRtie9Yd2ODyG',
+    'album_type': <AlbumType.ALBUM: 'album'>,
+    'artists': list([
+      dict({
+        'artist_id': '3jULn43a6xfzqleyeFjPIq',
+        'name': 'Area 11',
+        'uri': 'spotify:artist:3jULn43a6xfzqleyeFjPIq',
+      }),
+    ]),
+    'images': list([
+      dict({
+        'height': 640,
+        'url': 'https://i.scdn.co/image/ab67616d0000b273a61a28c2f084761f8833bce6',
+        'width': 640,
+      }),
+      dict({
+        'height': 300,
+        'url': 'https://i.scdn.co/image/ab67616d00001e02a61a28c2f084761f8833bce6',
+        'width': 300,
+      }),
+      dict({
+        'height': 64,
+        'url': 'https://i.scdn.co/image/ab67616d00004851a61a28c2f084761f8833bce6',
+        'width': 64,
+      }),
+    ]),
+    'name': 'SINGLARITY',
+    'release_date': '2020-12-18',
+    'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+    'total_tracks': 11,
+    'uri': 'spotify:album:3IqzqH6ShrRtie9Yd2ODyG',
+  })
+# ---
