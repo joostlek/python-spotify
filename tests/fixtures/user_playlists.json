@@ -1,0 +1,1916 @@
+{
+  "href": "https://api.spotify.com/v1/users/1225547921/playlists?offset=0&limit=48&locale=en-US%2Cen%3Bq%3D0.9",
+  "limit": 48,
+  "next": "https://api.spotify.com/v1/users/1225547921/playlists?offset=48&limit=48&locale=en-US%2Cen%3Bq%3D0.9",
+  "offset": 0,
+  "previous": null,
+  "total": 86,
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7cbqIFbAQh3PpLSBvo0oPs"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7cbqIFbAQh3PpLSBvo0oPs",
+      "id": "7cbqIFbAQh3PpLSBvo0oPs",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e025f4c9262d32be3019e1dda3e",
+          "width": null
+        }
+      ],
+      "name": "I'm not ok...",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NCxjOTM3ZGJiZTFmMzcwYTFmOWQyYmNkMTM5YjdkYjkyN2U5ZmY4NGRm",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7cbqIFbAQh3PpLSBvo0oPs/tracks",
+        "total": 3
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7cbqIFbAQh3PpLSBvo0oPs"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6gIvfWwyPQCKYPKGuPHKQH"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6gIvfWwyPQCKYPKGuPHKQH",
+      "id": "6gIvfWwyPQCKYPKGuPHKQH",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8467b66d3c6c9a22c875e0ee7d",
+          "width": null
+        }
+      ],
+      "name": "Lost Lands 2022",
+      "owner": {
+        "display_name": "Aidan Keogh",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12123782773"
+        },
+        "href": "https://api.spotify.com/v1/users/12123782773",
+        "id": "12123782773",
+        "type": "user",
+        "uri": "spotify:user:12123782773"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "Mjg4LGVmYTlhNTVmNTFhNDI2YjE4YzQzMDQ0MDdjODE0MzZmNzQ5N2E5Mjc=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6gIvfWwyPQCKYPKGuPHKQH/tracks",
+        "total": 352
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6gIvfWwyPQCKYPKGuPHKQH"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1laxleWQIu0lrbtuAgg0Tp"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1laxleWQIu0lrbtuAgg0Tp",
+      "id": "1laxleWQIu0lrbtuAgg0Tp",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e028a061f967468b3aaa0ece736",
+          "width": null
+        }
+      ],
+      "name": "Big Gigantic – Nocturnal",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "Myw2MjUzYWUyMmE3Yzk4ZTA2ODMwM2M0MjU5OTZjYTQ3ZGE2NGIyOThj",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1laxleWQIu0lrbtuAgg0Tp/tracks",
+        "total": 23
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1laxleWQIu0lrbtuAgg0Tp"
+    },
+    {
+      "collaborative": false,
+      "description": "feel it all. Cover: Taking Back Sunday",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9wa6XirBPv8"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9wa6XirBPv8",
+      "id": "37i9dQZF1DX9wa6XirBPv8",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000002b7cdcf7375e1650ee0f8a75a",
+          "width": null
+        }
+      ],
+      "name": "Emo Forever",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTcwNjI4OTA2MSwwMDAwMDAwMGEzZTgwMDU3OTY1YzkzNWI0NTA2Y2VkNzViN2RlOTA1",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9wa6XirBPv8/tracks",
+        "total": 125
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX9wa6XirBPv8"
+    },
+    {
+      "collaborative": false,
+      "description": "chill beats, lofi vibes, new tracks every week... ",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWQRwui0ExPn",
+      "id": "37i9dQZF1DWWQRwui0ExPn",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037",
+          "width": null
+        }
+      ],
+      "name": "lofi beats",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTcxMTA2NTY2MCwwMDAwMDAwMGY4MzY3ZmM2MGJhZGQyZjEzNTk4ZGI3MGEwMWUxMGVm",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWQRwui0ExPn/tracks",
+        "total": 750
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DWWQRwui0ExPn"
+    },
+    {
+      "collaborative": false,
+      "description": "Updated setlist playlist of Shinedown, Papa Roach and Spiritbox going on The Revolutions Live Tour in September - October 2023. Updated with tour sets Oct 16, 2023. #Shinedown #PapaRoach #Spiritbox #SetlistGuy @Shinedown @PapaRoach @Spiritbox @SetlistGuy",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7I2sGhKV8718nsmpouHStG"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7I2sGhKV8718nsmpouHStG",
+      "id": "7I2sGhKV8718nsmpouHStG",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i2o.scdn.co/image/ab67706c0000cfa3fc81e07ab98b44348d842200",
+          "width": null
+        }
+      ],
+      "name": "SHINEDOWN / PAPA ROACH The Revolutions Live Tour 2023 Setlist Playlist",
+      "owner": {
+        "display_name": "Setlist Guy - Follow @SetlistGuy",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/126507256"
+        },
+        "href": "https://api.spotify.com/v1/users/126507256",
+        "id": "126507256",
+        "type": "user",
+        "uri": "spotify:user:126507256"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjIsNjdlNjJjZjJhYjNkNzM1MTY4MDUwZTQ1MjZmYjg4ZGNmZWQ5NGQyYQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7I2sGhKV8718nsmpouHStG/tracks",
+        "total": 34
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7I2sGhKV8718nsmpouHStG"
+    },
+    {
+      "collaborative": false,
+      "description": "Big rock tracks from 2009. Cover: Thirty Seconds To Mars",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5ew6WQQfG5f"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5ew6WQQfG5f",
+      "id": "37i9dQZF1DX5ew6WQQfG5f",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000002b9edc3fd1804ad3fff66a809",
+          "width": null
+        }
+      ],
+      "name": "Best of Rock: 2009",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTY4NjgzNjMxMCwwMDAwMDAwMGUyNTU3YzExZTczZmE2YzM3NGFiNWY4OWE3YWM1NzY2",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5ew6WQQfG5f/tracks",
+        "total": 100
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX5ew6WQQfG5f"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3T1PTxjlX5cH8c8kXvuqz0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3T1PTxjlX5cH8c8kXvuqz0",
+      "id": "3T1PTxjlX5cH8c8kXvuqz0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0226e6b6f666ef40b6b8365e3eab67616d00001e02781369aabc39c792cc55604fab67616d00001e02ca41a947c13b78749c4953b1ab67616d00001e02dce45359981d62e087a29e6f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0226e6b6f666ef40b6b8365e3eab67616d00001e02781369aabc39c792cc55604fab67616d00001e02ca41a947c13b78749c4953b1ab67616d00001e02dce45359981d62e087a29e6f",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0226e6b6f666ef40b6b8365e3eab67616d00001e02781369aabc39c792cc55604fab67616d00001e02ca41a947c13b78749c4953b1ab67616d00001e02dce45359981d62e087a29e6f",
+          "width": 60
+        }
+      ],
+      "name": "Tool 2023",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTEsNGI4MTdjY2U4NTMxYTUyOTExNWFjMjEyNDFhNmRlMGJiNjU5MTczNg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3T1PTxjlX5cH8c8kXvuqz0/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3T1PTxjlX5cH8c8kXvuqz0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7FVetL99JfWob48SVpen8f"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7FVetL99JfWob48SVpen8f",
+      "id": "7FVetL99JfWob48SVpen8f",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e023241825a01981e70e71a5685ab67616d00001e0238ad65f0aee427a14e231b47ab67616d00001e0280caf18e0ad32956cd798510ab67616d00001e02d23c71c684a6e4d669e8deff",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e023241825a01981e70e71a5685ab67616d00001e0238ad65f0aee427a14e231b47ab67616d00001e0280caf18e0ad32956cd798510ab67616d00001e02d23c71c684a6e4d669e8deff",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e023241825a01981e70e71a5685ab67616d00001e0238ad65f0aee427a14e231b47ab67616d00001e0280caf18e0ad32956cd798510ab67616d00001e02d23c71c684a6e4d669e8deff",
+          "width": 60
+        }
+      ],
+      "name": "Psychotherapy Session - Fiddlers Green Wishlist",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjQsNjk2ZjdjNDM1YWU1NDFlMTZkYjc3ODM1NDczY2I1ZmQxMzMxOGU4ZA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7FVetL99JfWob48SVpen8f/tracks",
+        "total": 23
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7FVetL99JfWob48SVpen8f"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3ydJa2xPFRmv4ANG4QqXR6"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3ydJa2xPFRmv4ANG4QqXR6",
+      "id": "3ydJa2xPFRmv4ANG4QqXR6",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f035622d8fdf777b23e9a834",
+          "width": null
+        }
+      ],
+      "name": "Wedding Songs - Mother-Son dance",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NSw0NTc5MTdhMzNkZTliMzg3MDdjMWFjZjAyZmE2OTRkOTk1ZGE4NWM3",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3ydJa2xPFRmv4ANG4QqXR6/tracks",
+        "total": 3
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3ydJa2xPFRmv4ANG4QqXR6"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7wyBnq2uXTG9F0xS36W6gj"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7wyBnq2uXTG9F0xS36W6gj",
+      "id": "7wyBnq2uXTG9F0xS36W6gj",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d965d29d7dcf46ade5a8a7e4",
+          "width": null
+        }
+      ],
+      "name": "Wedding Songs - Reception",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MywxNWMzYmRjY2NiMDY0ZGI1MGMxMzM4YTQyYTVmZGVmMDFhMTEyZGZj",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7wyBnq2uXTG9F0xS36W6gj/tracks",
+        "total": 2
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7wyBnq2uXTG9F0xS36W6gj"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4xMXiY7LpVYF1mxjWMCmuG"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4xMXiY7LpVYF1mxjWMCmuG",
+      "id": "4xMXiY7LpVYF1mxjWMCmuG",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e026543c2a26a931019be03cbe9",
+          "width": null
+        }
+      ],
+      "name": "Wedding Songs - Procession",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MiwwNTA2NzFjNDNhYmRjNWMwNTU5YWQ0NTM0YWM3NDQzOGM3ZDE5ZjQy",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4xMXiY7LpVYF1mxjWMCmuG/tracks",
+        "total": 1
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4xMXiY7LpVYF1mxjWMCmuG"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0rKkRfGOn7WLt06GQHe8Pi"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0rKkRfGOn7WLt06GQHe8Pi",
+      "id": "0rKkRfGOn7WLt06GQHe8Pi",
+      "images": null,
+      "name": "Wedding songs - Karaoke",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MSxhMTc3NGIxN2Q0ZGRjZjFlZjExYjY2MGJjMzBjYzAyYThkMTFiOWY3",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0rKkRfGOn7WLt06GQHe8Pi/tracks",
+        "total": 0
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0rKkRfGOn7WLt06GQHe8Pi"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/28ybBPimuJWQoLTcQAKiz0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/28ybBPimuJWQoLTcQAKiz0",
+      "id": "28ybBPimuJWQoLTcQAKiz0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e023dea4a2ccd58ad1f8e4dbb03ab67616d00001e0294c9217a398f5174757c0c78ab67616d00001e02ba5db46f4b838ef6027e6f96ab67616d00001e02d08209944468440145f01524",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e023dea4a2ccd58ad1f8e4dbb03ab67616d00001e0294c9217a398f5174757c0c78ab67616d00001e02ba5db46f4b838ef6027e6f96ab67616d00001e02d08209944468440145f01524",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e023dea4a2ccd58ad1f8e4dbb03ab67616d00001e0294c9217a398f5174757c0c78ab67616d00001e02ba5db46f4b838ef6027e6f96ab67616d00001e02d08209944468440145f01524",
+          "width": 60
+        }
+      ],
+      "name": "Wedding songs - first dance",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OSw0ZDVjZDQxYWY0NWM2ZGEwMGFiZTAxNTFiMTMzNmUzMTI2YjY1OGZk",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/28ybBPimuJWQoLTcQAKiz0/tracks",
+        "total": 6
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:28ybBPimuJWQoLTcQAKiz0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3oQx4UJGBGaveF9R1SCbKt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3oQx4UJGBGaveF9R1SCbKt",
+      "id": "3oQx4UJGBGaveF9R1SCbKt",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842907bf797dbf84ea0fe8f7aa",
+          "width": null
+        }
+      ],
+      "name": "SAM SMITH - UNHOLY  [2024]",
+      "owner": {
+        "display_name": "BRYAN JEEVES",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/qz0p337pcyz31fnr5wzixleno"
+        },
+        "href": "https://api.spotify.com/v1/users/qz0p337pcyz31fnr5wzixleno",
+        "id": "qz0p337pcyz31fnr5wzixleno",
+        "type": "user",
+        "uri": "spotify:user:qz0p337pcyz31fnr5wzixleno"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTMyLDkwMDFlYmFlZWFhOTY0NGQxYzFkZDQ3YTY3Y2RlNWY5OWJkNjMxZWY=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3oQx4UJGBGaveF9R1SCbKt/tracks",
+        "total": 102
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3oQx4UJGBGaveF9R1SCbKt"
+    },
+    {
+      "collaborative": false,
+      "description": "Spotify Wrapped presents the songs that you loved most this year.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1F0sijgNaJdgit"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1F0sijgNaJdgit",
+      "id": "37i9dQZF1F0sijgNaJdgit",
+      "images": [
+        {
+          "height": null,
+          "url": "https://wrapped-images.spotifycdn.com/image/yts-2022/default/your-top-songs-2022_default_en.jpg",
+          "width": null
+        }
+      ],
+      "name": "Your Top Songs 2022",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2OTkwODk2MiwwMDAwMDAwMGIwYjY1YjMyNjI3ZDRjNzIzZjlkOGYyMzVkY2RjNzc5",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1F0sijgNaJdgit/tracks",
+        "total": 101
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1F0sijgNaJdgit"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2KvQAKoUXGWT8CwY2ZG9gr"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2KvQAKoUXGWT8CwY2ZG9gr",
+      "id": "2KvQAKoUXGWT8CwY2ZG9gr",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02436132f24b5a9ff1605b86bbab67616d00001e02d57915095d17d43214c92863ab67616d00001e02d658a02ba8931985bdc4e0daab67616d00001e02f5e7b2e5adaa87430a3eccff",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02436132f24b5a9ff1605b86bbab67616d00001e02d57915095d17d43214c92863ab67616d00001e02d658a02ba8931985bdc4e0daab67616d00001e02f5e7b2e5adaa87430a3eccff",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02436132f24b5a9ff1605b86bbab67616d00001e02d57915095d17d43214c92863ab67616d00001e02d658a02ba8931985bdc4e0daab67616d00001e02f5e7b2e5adaa87430a3eccff",
+          "width": 60
+        }
+      ],
+      "name": "Neurodivergent ✨🎧 ✨",
+      "owner": {
+        "display_name": "Kat",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/ransomkat"
+        },
+        "href": "https://api.spotify.com/v1/users/ransomkat",
+        "id": "ransomkat",
+        "type": "user",
+        "uri": "spotify:user:ransomkat"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OTgsMDNlYTAxZGUwNDM1YjVhMDcwYTE0NDI2MjFjNjFmM2Q2NDhkYzk3Nw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2KvQAKoUXGWT8CwY2ZG9gr/tracks",
+        "total": 72
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2KvQAKoUXGWT8CwY2ZG9gr"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5FpaRFYpbfMxhyE2mAesCl"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5FpaRFYpbfMxhyE2mAesCl",
+      "id": "5FpaRFYpbfMxhyE2mAesCl",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0257aa198b8ef643dd218a3b53ab67616d00001e026f0aa95ced1d50fc4e871d2fab67616d00001e028802bb3c6dfa4e4f10f9ea3cab67616d00001e02c39ad09e55cf56bce2536fdc",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0257aa198b8ef643dd218a3b53ab67616d00001e026f0aa95ced1d50fc4e871d2fab67616d00001e028802bb3c6dfa4e4f10f9ea3cab67616d00001e02c39ad09e55cf56bce2536fdc",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0257aa198b8ef643dd218a3b53ab67616d00001e026f0aa95ced1d50fc4e871d2fab67616d00001e028802bb3c6dfa4e4f10f9ea3cab67616d00001e02c39ad09e55cf56bce2536fdc",
+          "width": 60
+        }
+      ],
+      "name": "",
+      "owner": {
+        "display_name": "_thesaltysunflower 🌻",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/h.newcombe"
+        },
+        "href": "https://api.spotify.com/v1/users/h.newcombe",
+        "id": "h.newcombe",
+        "type": "user",
+        "uri": "spotify:user:h.newcombe"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDksNmUyYTFmMTVkNDgyOThkZWY3YmViOGM1YzI4ODQ4ODQwOTY1ZWU5Zg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5FpaRFYpbfMxhyE2mAesCl/tracks",
+        "total": 43
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5FpaRFYpbfMxhyE2mAesCl"
+    },
+    {
+      "collaborative": false,
+      "description": "This is Ice Nine Kills. The essential tracks, all in one playlist.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO2Xw214"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO2Xw214",
+      "id": "37i9dQZF1DZ06evO2Xw214",
+      "images": [
+        {
+          "height": null,
+          "url": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2Xw214-default.jpg",
+          "width": null
+        }
+      ],
+      "name": "This Is Ice Nine Kills",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "Mjg1MjcxNjAsMDAwMDAwMDA4MzAzNjE1NzIwZTU2MWFjMDE3YzQ5NTk4ZThlOGI3OA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO2Xw214/tracks",
+        "total": 44
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DZ06evO2Xw214"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6o5r6vfY9lmimqfwr5GFHh"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6o5r6vfY9lmimqfwr5GFHh",
+      "id": "6o5r6vfY9lmimqfwr5GFHh",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02161679cdf0820df7ea1f2095ab67616d00001e021c229cb7c9851fb0c67e2af8ab67616d00001e0250d216aebaf98e8ac9947fd5ab67616d00001e0267b097c11348179a60c0866d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02161679cdf0820df7ea1f2095ab67616d00001e021c229cb7c9851fb0c67e2af8ab67616d00001e0250d216aebaf98e8ac9947fd5ab67616d00001e0267b097c11348179a60c0866d",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02161679cdf0820df7ea1f2095ab67616d00001e021c229cb7c9851fb0c67e2af8ab67616d00001e0250d216aebaf98e8ac9947fd5ab67616d00001e0267b097c11348179a60c0866d",
+          "width": 60
+        }
+      ],
+      "name": "Korn, Evanescence",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDYsZDNjZGM4ZDczZjUyYjYxZjBkY2VkMTU2NDM4Mzk5YTZjZDBiYTRiYQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6o5r6vfY9lmimqfwr5GFHh/tracks",
+        "total": 39
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6o5r6vfY9lmimqfwr5GFHh"
+    },
+    {
+      "collaborative": false,
+      "description": "Monday, August 15th - Mission Ballroom in Denver, CO",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4O4e2p1d1k8DuIaS5TWzq7"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4O4e2p1d1k8DuIaS5TWzq7",
+      "id": "4O4e2p1d1k8DuIaS5TWzq7",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0202d6b55ef9205dae5f2089ceab67616d00001e02ac2fcdb8f2bff35ec09d0397ab67616d00001e02cd74cc90e0ddcba74ed62bceab67616d00001e02e6ad282cddfe572bbe339f2d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0202d6b55ef9205dae5f2089ceab67616d00001e02ac2fcdb8f2bff35ec09d0397ab67616d00001e02cd74cc90e0ddcba74ed62bceab67616d00001e02e6ad282cddfe572bbe339f2d",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0202d6b55ef9205dae5f2089ceab67616d00001e02ac2fcdb8f2bff35ec09d0397ab67616d00001e02cd74cc90e0ddcba74ed62bceab67616d00001e02e6ad282cddfe572bbe339f2d",
+          "width": 60
+        }
+      ],
+      "name": "Three Days Grace, Wage War, Zero 9:36",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDMsNjY2NTQ2MGYwNWJmNjE4MjAxNDU1ZGNhYWIzYmIxNDc1MDRkOTBmYg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4O4e2p1d1k8DuIaS5TWzq7/tracks",
+        "total": 40
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4O4e2p1d1k8DuIaS5TWzq7"
+    },
+    {
+      "collaborative": false,
+      "description": "Tuesday, August 30th - Red Rocks in Morrison, CO",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2eLU8sT6WzviE06uSbmvpS"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2eLU8sT6WzviE06uSbmvpS",
+      "id": "2eLU8sT6WzviE06uSbmvpS",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0248fbb2aab19d588bb9153580ab67616d00001e026408df24a5f0d804f26bb4c0ab67616d00001e0266b9bf56e2e057eed8ba6297ab67616d00001e02eb2826b3e23703d6e1d1bd0a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0248fbb2aab19d588bb9153580ab67616d00001e026408df24a5f0d804f26bb4c0ab67616d00001e0266b9bf56e2e057eed8ba6297ab67616d00001e02eb2826b3e23703d6e1d1bd0a",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0248fbb2aab19d588bb9153580ab67616d00001e026408df24a5f0d804f26bb4c0ab67616d00001e0266b9bf56e2e057eed8ba6297ab67616d00001e02eb2826b3e23703d6e1d1bd0a",
+          "width": 60
+        }
+      ],
+      "name": "In This Moment, Ice Nine Kills, Motionless in White, Black Veil Brides setlist",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDIsMjA4OGM0ODRlNmI1MDFhNmFmODhjMjA3OTIyYjZmN2I1OTRlYzAzNg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2eLU8sT6WzviE06uSbmvpS/tracks",
+        "total": 38
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2eLU8sT6WzviE06uSbmvpS"
+    },
+    {
+      "collaborative": false,
+      "description": "This is Our Last Night. The essential tracks, all in one playlist.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evNZW79T3"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evNZW79T3",
+      "id": "37i9dQZF1DZ06evNZW79T3",
+      "images": [
+        {
+          "height": null,
+          "url": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evNZW79T3-default.jpg",
+          "width": null
+        }
+      ],
+      "name": "This Is Our Last Night",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "Mjg1MjcxNjAsMDAwMDAwMDBiYWM0ZGVkZWVlMmYyN2QyOTc5MmM5NmZkNDdkYWNlYQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evNZW79T3/tracks",
+        "total": 52
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DZ06evNZW79T3"
+    },
+    {
+      "collaborative": false,
+      "description": "Setlist from the Denver 10-13-21 show at the Mission Ballroom.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/59heiW7K1jcMzBWr8J1vTu"
+      },
+      "href": "https://api.spotify.com/v1/playlists/59heiW7K1jcMzBWr8J1vTu",
+      "id": "59heiW7K1jcMzBWr8J1vTu",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e89bfef165b207facf5965ce",
+          "width": null
+        }
+      ],
+      "name": "A Day to Remember, Asking Alexandria, and Point North",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NTgsYTU0NzA2ZmFmN2FhMTA3ZmM3OGU0N2NjZGY3ZDUzZjM5MGZhMWQ2Yw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/59heiW7K1jcMzBWr8J1vTu/tracks",
+        "total": 35
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:59heiW7K1jcMzBWr8J1vTu"
+    },
+    {
+      "collaborative": false,
+      "description": "Songs for camping trips",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3AsRsd8brl1Gp1b027ViOG"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3AsRsd8brl1Gp1b027ViOG",
+      "id": "3AsRsd8brl1Gp1b027ViOG",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e026d07ac77f37c4e83f2d19972ab67616d00001e02bbd081a355b3acd631d226d4ab67616d00001e02daefcd34358ce2cc4bcc2cb9ab67616d00001e02dc1886ac54cb45a8843404d7",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e026d07ac77f37c4e83f2d19972ab67616d00001e02bbd081a355b3acd631d226d4ab67616d00001e02daefcd34358ce2cc4bcc2cb9ab67616d00001e02dc1886ac54cb45a8843404d7",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e026d07ac77f37c4e83f2d19972ab67616d00001e02bbd081a355b3acd631d226d4ab67616d00001e02daefcd34358ce2cc4bcc2cb9ab67616d00001e02dc1886ac54cb45a8843404d7",
+          "width": 60
+        }
+      ],
+      "name": "Camping",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTQzLDVmNDFlMGY0ZWQ4NWQ1Y2IzNmUzYjY5Yjc0MGRkZjQ3NGYyMmU5YTc=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3AsRsd8brl1Gp1b027ViOG/tracks",
+        "total": 165
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3AsRsd8brl1Gp1b027ViOG"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7fat1f7rJSEurkskKEjGp7"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7fat1f7rJSEurkskKEjGp7",
+      "id": "7fat1f7rJSEurkskKEjGp7",
+      "images": null,
+      "name": "My Playlist #32",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "Myw2YjJkMTA4ODE3MDhiZTRkM2E4ODgxNzZhMzBkZWJmMmM2NjNiOTg5",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7fat1f7rJSEurkskKEjGp7/tracks",
+        "total": 0
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7fat1f7rJSEurkskKEjGp7"
+    },
+    {
+      "collaborative": false,
+      "description": "The best of today's funk. Cover: TWRP\n",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZgauS5j6pMv"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZgauS5j6pMv",
+      "id": "37i9dQZF1DWZgauS5j6pMv",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f0000000274e44c31b4fa552aac676b46",
+          "width": null
+        }
+      ],
+      "name": "Nu-Funk",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTcxMTA4MDA2MCwwMDAwMDAwMDQ2MzQ2NDg1NTg5NjZlY2Y2ODdkMzY3ZDc3YjhmNDY0",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZgauS5j6pMv/tracks",
+        "total": 102
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DWZgauS5j6pMv"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5iaI6O6gBvCW4vKAuuAvmt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5iaI6O6gBvCW4vKAuuAvmt",
+      "id": "5iaI6O6gBvCW4vKAuuAvmt",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e020ed73f81d0b600af5b6211e9ab67616d00001e0281fe29370220b0d33037c8f3ab67616d00001e02daa2db47df9ac6265e3773b7ab67616d00001e02ebe556c9e58894c67e163fe7",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e020ed73f81d0b600af5b6211e9ab67616d00001e0281fe29370220b0d33037c8f3ab67616d00001e02daa2db47df9ac6265e3773b7ab67616d00001e02ebe556c9e58894c67e163fe7",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e020ed73f81d0b600af5b6211e9ab67616d00001e0281fe29370220b0d33037c8f3ab67616d00001e02daa2db47df9ac6265e3773b7ab67616d00001e02ebe556c9e58894c67e163fe7",
+          "width": 60
+        }
+      ],
+      "name": "Liked from Radio",
+      "owner": {
+        "display_name": "Briana Kimball",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/21wlkn54jb4fg3escqdg4bava"
+        },
+        "href": "https://api.spotify.com/v1/users/21wlkn54jb4fg3escqdg4bava",
+        "id": "21wlkn54jb4fg3escqdg4bava",
+        "type": "user",
+        "uri": "spotify:user:21wlkn54jb4fg3escqdg4bava"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjQ0LGU3YWY2NzVhMmM5MDI1ZGZiOTQwZmRkNTBkYjFkZDhmYTJhNGI3NDU=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5iaI6O6gBvCW4vKAuuAvmt/tracks",
+        "total": 233
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5iaI6O6gBvCW4vKAuuAvmt"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0BknoRXPW6gOC6UPAd0SRu"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0BknoRXPW6gOC6UPAd0SRu",
+      "id": "0BknoRXPW6gOC6UPAd0SRu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0222cf06089dc7304bb41b7217ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e029d6bc9b25fb5a666d0f8ff03ab67616d00001e02a47ee7a49c53ccdcb38dc874",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0222cf06089dc7304bb41b7217ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e029d6bc9b25fb5a666d0f8ff03ab67616d00001e02a47ee7a49c53ccdcb38dc874",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0222cf06089dc7304bb41b7217ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e029d6bc9b25fb5a666d0f8ff03ab67616d00001e02a47ee7a49c53ccdcb38dc874",
+          "width": 60
+        }
+      ],
+      "name": "chill",
+      "owner": {
+        "display_name": "Briana Kimball",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/21wlkn54jb4fg3escqdg4bava"
+        },
+        "href": "https://api.spotify.com/v1/users/21wlkn54jb4fg3escqdg4bava",
+        "id": "21wlkn54jb4fg3escqdg4bava",
+        "type": "user",
+        "uri": "spotify:user:21wlkn54jb4fg3escqdg4bava"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDYsMzVhY2FhYjg5NmNmMzkzYTM1YjM1OTllOTc2NDc2ODg1NGQwNjM4OQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0BknoRXPW6gOC6UPAd0SRu/tracks",
+        "total": 45
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0BknoRXPW6gOC6UPAd0SRu"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/44unv1h0muXlblPVf1N0C0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/44unv1h0muXlblPVf1N0C0",
+      "id": "44unv1h0muXlblPVf1N0C0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e025e90ff76fd49a23f7333de76ab67616d00001e02902ac1ff07e025f4e26391a9ab67616d00001e02e5a42501120257e90069616aab67616d00001e02e8d206ee3bff67cfca883634",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e025e90ff76fd49a23f7333de76ab67616d00001e02902ac1ff07e025f4e26391a9ab67616d00001e02e5a42501120257e90069616aab67616d00001e02e8d206ee3bff67cfca883634",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e025e90ff76fd49a23f7333de76ab67616d00001e02902ac1ff07e025f4e26391a9ab67616d00001e02e5a42501120257e90069616aab67616d00001e02e8d206ee3bff67cfca883634",
+          "width": 60
+        }
+      ],
+      "name": "EDM",
+      "owner": {
+        "display_name": "Briana Kimball",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/21wlkn54jb4fg3escqdg4bava"
+        },
+        "href": "https://api.spotify.com/v1/users/21wlkn54jb4fg3escqdg4bava",
+        "id": "21wlkn54jb4fg3escqdg4bava",
+        "type": "user",
+        "uri": "spotify:user:21wlkn54jb4fg3escqdg4bava"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NTksNGJkNzUzMTljNzU1MDFiZGRlZGIxMGUyYzVmMjJkYTI0NDA4OGQzNQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/44unv1h0muXlblPVf1N0C0/tracks",
+        "total": 57
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:44unv1h0muXlblPVf1N0C0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3eCL1EhVXApfotyuF2luHG"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3eCL1EhVXApfotyuF2luHG",
+      "id": "3eCL1EhVXApfotyuF2luHG",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022066a381ebbbb1f8312764e7ab67616d00001e0237ff72b6a2a77d850c02ac73ab67616d00001e02844c2527b8254266a3d8d300ab67616d00001e0287546c53660f666c8440ac18",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022066a381ebbbb1f8312764e7ab67616d00001e0237ff72b6a2a77d850c02ac73ab67616d00001e02844c2527b8254266a3d8d300ab67616d00001e0287546c53660f666c8440ac18",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022066a381ebbbb1f8312764e7ab67616d00001e0237ff72b6a2a77d850c02ac73ab67616d00001e02844c2527b8254266a3d8d300ab67616d00001e0287546c53660f666c8440ac18",
+          "width": 60
+        }
+      ],
+      "name": "",
+      "owner": {
+        "display_name": "arthurzinho2205",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/arthurzinho2205"
+        },
+        "href": "https://api.spotify.com/v1/users/arthurzinho2205",
+        "id": "arthurzinho2205",
+        "type": "user",
+        "uri": "spotify:user:arthurzinho2205"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjY4NywyZmM5MGZmNjI1YmNmMzA4YTYyZGYwZDMxODZiZWFjMDQ3Y2Y0MGFj",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3eCL1EhVXApfotyuF2luHG/tracks",
+        "total": 92
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3eCL1EhVXApfotyuF2luHG"
+    },
+    {
+      "collaborative": false,
+      "description": "Start 2019 by broadening your horizons. We've made you a playlist of songs from genres and artists you don't normally explore  - and we think you'll like it.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1EiRcmRYwWlGhZ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EiRcmRYwWlGhZ",
+      "id": "37i9dQZF1EiRcmRYwWlGhZ",
+      "images": [
+        {
+          "height": null,
+          "url": "https://lineup-images.scdn.co/tastebreakers_DEFAULT-en.jpg",
+          "width": null
+        }
+      ],
+      "name": "Tastebreakers",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjU3MzMwMjUsMDAwMDAwMDBkMTY2NzhlN2VmZDUzNGQ0OTBmZjY3ZjU4OWRmYzhjMw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EiRcmRYwWlGhZ/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1EiRcmRYwWlGhZ"
+    },
+    {
+      "collaborative": false,
+      "description": "Silky sounds for the sheets.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVGy1YP1ojM5"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVGy1YP1ojM5",
+      "id": "37i9dQZF1DWVGy1YP1ojM5",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000002871ab3b0849a1ec9a37e0c20",
+          "width": null
+        }
+      ],
+      "name": "Silk Sheets",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTcwOTI3ODc1NiwwMDAwMDAwMDFiMjNiNGQ1OGNjY2RiMzQ1MzhmYjdkMWRmYjhhNmRi",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVGy1YP1ojM5/tracks",
+        "total": 75
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DWVGy1YP1ojM5"
+    },
+    {
+      "collaborative": false,
+      "description": "For all suggestions, submissions and inquiries DM @radioenvy on Instagram",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2dwG0QDlDM0qIdxQSKWZhn"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2dwG0QDlDM0qIdxQSKWZhn",
+      "id": "2dwG0QDlDM0qIdxQSKWZhn",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84b773ee75dfd8966fe5524721",
+          "width": null
+        }
+      ],
+      "name": "Dig Bick Breakdowns",
+      "owner": {
+        "display_name": "RadioEnvy",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/lzcfbq773f4dobf6ugmwy8w7u"
+        },
+        "href": "https://api.spotify.com/v1/users/lzcfbq773f4dobf6ugmwy8w7u",
+        "id": "lzcfbq773f4dobf6ugmwy8w7u",
+        "type": "user",
+        "uri": "spotify:user:lzcfbq773f4dobf6ugmwy8w7u"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OTc3LGQ4MGYyNjY2ZGRiYTNjZTUwZDMxNzhiMDYyMzVhYjY3ODZjYTMzNjg=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2dwG0QDlDM0qIdxQSKWZhn/tracks",
+        "total": 309
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2dwG0QDlDM0qIdxQSKWZhn"
+    },
+    {
+      "collaborative": false,
+      "description": "Reveille, Papa Roach, Nonpoint and more",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1E37IAovz4eypm"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E37IAovz4eypm",
+      "id": "37i9dQZF1E37IAovz4eypm",
+      "images": [
+        {
+          "height": null,
+          "url": "https://dailymix-images.scdn.co/v2/img/5b3e37d411d178885d12ac43aff9ad060a0cd264/6/en/default",
+          "width": null
+        }
+      ],
+      "name": "Daily Mix 6",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MCwwMDAwMDAwMDIxYzA3MDJhMDgzMmQ1ZDZlNTRjZTE4YzE3NjBkMDIz",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E37IAovz4eypm/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1E37IAovz4eypm"
+    },
+    {
+      "collaborative": false,
+      "description": "Excision, ILLENIUM, Black Tiger Sex Machine and more",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1E39NJDYkTwreQ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E39NJDYkTwreQ",
+      "id": "37i9dQZF1E39NJDYkTwreQ",
+      "images": [
+        {
+          "height": null,
+          "url": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb11d1a065d36d1577fbe82ffa/4/en/default",
+          "width": null
+        }
+      ],
+      "name": "Daily Mix 4",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MCwwMDAwMDAwMDdhMzUzNjAyYTkwNmYwZWZhZWJjZDBkYTRlYmRmYTVj",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E39NJDYkTwreQ/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1E39NJDYkTwreQ"
+    },
+    {
+      "collaborative": false,
+      "description": "Lamb of God, Emarosa, Puscifer and more",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1E35PPakyKlCDG"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E35PPakyKlCDG",
+      "id": "37i9dQZF1E35PPakyKlCDG",
+      "images": [
+        {
+          "height": null,
+          "url": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebb943a08242864dc3364a9478/1/en/default",
+          "width": null
+        }
+      ],
+      "name": "Daily Mix 1",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MCwwMDAwMDAwMDkwYjMwODU2MTM5NzM0MDAxYzE3YTFjOGQxNWNhZWUw",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E35PPakyKlCDG/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1E35PPakyKlCDG"
+    },
+    {
+      "collaborative": false,
+      "description": "Time for Your Summer Rewind! We’ve made you a new playlist featuring your old summer favorites.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1CAfHX045gcIjt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1CAfHX045gcIjt",
+      "id": "37i9dQZF1CAfHX045gcIjt",
+      "images": [
+        {
+          "height": null,
+          "url": "https://lineup-images.scdn.co/summer-rewind-2020_DEFAULT-en.jpg",
+          "width": null
+        }
+      ],
+      "name": "Your Summer Rewind",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjY1NDgxNjcsMDAwMDAwMDBjYTdjYTcxODZmNTliNmIzZjIwZWNkOWY5ZjE0YThiYw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1CAfHX045gcIjt/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1CAfHX045gcIjt"
+    },
+    {
+      "collaborative": false,
+      "description": "With Møme, Fakear, Shallou and more",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1E4AJ7APsyMVAt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E4AJ7APsyMVAt",
+      "id": "37i9dQZF1E4AJ7APsyMVAt",
+      "images": [
+        {
+          "height": null,
+          "url": "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/6gK1Uct5FEdaUWRWpU4Cl2/en",
+          "width": null
+        }
+      ],
+      "name": "Petit Biscuit Radio",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTcxMTYzNTg0MywwMDAwMDAwMGE3ZjhhMzc0ZDg3NTc3NjhhZGU5OTg2ODQ4NjQ3N2Rl",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E4AJ7APsyMVAt/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1E4AJ7APsyMVAt"
+    },
+    {
+      "collaborative": false,
+      "description": "Big riffs and pounding drums to help you strut the streets.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1tyCD9QhIWF"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1tyCD9QhIWF",
+      "id": "37i9dQZF1DX1tyCD9QhIWF",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f0000000291f9c00775a1981920fb0ed8",
+          "width": null
+        }
+      ],
+      "name": "Walk Like A Badass",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTY5MDI0NDA5NywwMDAwMDAwMDgzNWQ2OWU3N2M2MDBmZmVkYTIzYWIxMTNiOWViMTZi",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1tyCD9QhIWF/tracks",
+        "total": 75
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX1tyCD9QhIWF"
+    },
+    {
+      "collaborative": false,
+      "description": "Burn off all those beers from last night.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbFRZSqP41al"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbFRZSqP41al",
+      "id": "37i9dQZF1DXbFRZSqP41al",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f000000020971305af7bbf885cfa8565f",
+          "width": null
+        }
+      ],
+      "name": "One More Rep",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": "#ffffff",
+      "public": true,
+      "snapshot_id": "MTcwNDI3NTcxOCwwMDAwMDAwMGE0NTJhNjAyNmRlMzQxYWE3YTRmNDgxNTU2ZmU0MDUy",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbFRZSqP41al/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DXbFRZSqP41al"
+    },
+    {
+      "collaborative": false,
+      "description": "Here&#x27;s all of the songs that I was able to find going off of the list of tracks on Tunefind&#x27;s list. I&#x27;ll be updating as new seasons come out.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/20xgXX3yquAGsmhvQpkSCW"
+      },
+      "href": "https://api.spotify.com/v1/playlists/20xgXX3yquAGsmhvQpkSCW",
+      "id": "20xgXX3yquAGsmhvQpkSCW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022e4fc0ca95ffaab0d31d94beab67616d00001e02732c07e1156f7a8bf7b189eeab67616d00001e0273f5a45eff9d694cfdb8f454ab67616d00001e02e922434d1b2756d9093543cc",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022e4fc0ca95ffaab0d31d94beab67616d00001e02732c07e1156f7a8bf7b189eeab67616d00001e0273f5a45eff9d694cfdb8f454ab67616d00001e02e922434d1b2756d9093543cc",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022e4fc0ca95ffaab0d31d94beab67616d00001e02732c07e1156f7a8bf7b189eeab67616d00001e0273f5a45eff9d694cfdb8f454ab67616d00001e02e922434d1b2756d9093543cc",
+          "width": 60
+        }
+      ],
+      "name": "Letterkenny S1-S6",
+      "owner": {
+        "display_name": "its_just_tj",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/its_just_tj"
+        },
+        "href": "https://api.spotify.com/v1/users/its_just_tj",
+        "id": "its_just_tj",
+        "type": "user",
+        "uri": "spotify:user:its_just_tj"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTMzLDg1NjljNTQ4MzBkMDlhMjUwMTRiOGFhODYxMDg0ZjA0MmYyYjBhNDI=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/20xgXX3yquAGsmhvQpkSCW/tracks",
+        "total": 109
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:20xgXX3yquAGsmhvQpkSCW"
+    },
+    {
+      "collaborative": false,
+      "description": "The sounds of the series",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6rgijopGbsMwhrNz3Y4okl"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6rgijopGbsMwhrNz3Y4okl",
+      "id": "6rgijopGbsMwhrNz3Y4okl",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0273f5a45eff9d694cfdb8f454ab67616d00001e02a88556d365931e9d08666d53ab67616d00001e02d8ce97034cfc5f02f11211d3ab67616d00001e02e922434d1b2756d9093543cc",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0273f5a45eff9d694cfdb8f454ab67616d00001e02a88556d365931e9d08666d53ab67616d00001e02d8ce97034cfc5f02f11211d3ab67616d00001e02e922434d1b2756d9093543cc",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0273f5a45eff9d694cfdb8f454ab67616d00001e02a88556d365931e9d08666d53ab67616d00001e02d8ce97034cfc5f02f11211d3ab67616d00001e02e922434d1b2756d9093543cc",
+          "width": 60
+        }
+      ],
+      "name": "Letterkenny",
+      "owner": {
+        "display_name": "MGx424",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/mgx424"
+        },
+        "href": "https://api.spotify.com/v1/users/mgx424",
+        "id": "mgx424",
+        "type": "user",
+        "uri": "spotify:user:mgx424"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTkxLDhmYmFhMjdjMzViMGZiODdiYjI2NjZmNDQ2ODkxMWVhMjYwZDdiZjU=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6rgijopGbsMwhrNz3Y4okl/tracks",
+        "total": 114
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6rgijopGbsMwhrNz3Y4okl"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1UIksk5jmO0Fo8VPXEj1W4"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1UIksk5jmO0Fo8VPXEj1W4",
+      "id": "1UIksk5jmO0Fo8VPXEj1W4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02394871f10feb6f0bffc26aabab67616d00001e0287c94c73e33b95d75eff8c0fab67616d00001e0297ea8cd106d06260c2c76cd6ab67616d00001e02b0222d2ff7d5f263639c9548",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02394871f10feb6f0bffc26aabab67616d00001e0287c94c73e33b95d75eff8c0fab67616d00001e0297ea8cd106d06260c2c76cd6ab67616d00001e02b0222d2ff7d5f263639c9548",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02394871f10feb6f0bffc26aabab67616d00001e0287c94c73e33b95d75eff8c0fab67616d00001e0297ea8cd106d06260c2c76cd6ab67616d00001e02b0222d2ff7d5f263639c9548",
+          "width": 60
+        }
+      ],
+      "name": "Horde mode",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NiwzMzVkMWZiODM0MGIyZjYzNjc1NzQ5YTFjZjQ2NDk5YjEyM2M5OGIz",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1UIksk5jmO0Fo8VPXEj1W4/tracks",
+        "total": 5
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1UIksk5jmO0Fo8VPXEj1W4"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/20QSinDJm5rt6uPaKMHnQN"
+      },
+      "href": "https://api.spotify.com/v1/playlists/20QSinDJm5rt6uPaKMHnQN",
+      "id": "20QSinDJm5rt6uPaKMHnQN",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0239dbe1fe892c20498ff44ba2ab67616d00001e02708b420d0de80525f3d63206ab67616d00001e028d96c127e5d0666f9090d445ab67616d00001e02fad5360938f28493a9544145",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0239dbe1fe892c20498ff44ba2ab67616d00001e02708b420d0de80525f3d63206ab67616d00001e028d96c127e5d0666f9090d445ab67616d00001e02fad5360938f28493a9544145",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0239dbe1fe892c20498ff44ba2ab67616d00001e02708b420d0de80525f3d63206ab67616d00001e028d96c127e5d0666f9090d445ab67616d00001e02fad5360938f28493a9544145",
+          "width": 60
+        }
+      ],
+      "name": "Bass",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTksNmFlMTBiYWJjNjhkNmZkOTEyNTJmNjQ0ZTQ2MWVhYzFjM2ZjNWUwZg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/20QSinDJm5rt6uPaKMHnQN/tracks",
+        "total": 17
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:20QSinDJm5rt6uPaKMHnQN"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5jWXVeix3FxGoBvfTXcbK9"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5jWXVeix3FxGoBvfTXcbK9",
+      "id": "5jWXVeix3FxGoBvfTXcbK9",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e024f5a64292379a257827829ce",
+          "width": null
+        }
+      ],
+      "name": "Jaroslav Beck – Beat Saber (Original Game Soundtrack)",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "Myw4Nzc3YmQ4M2NkYjM1YTViNzQ0ZTlkM2E0NTFjY2MwMjEyMmQyZWZm",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5jWXVeix3FxGoBvfTXcbK9/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5jWXVeix3FxGoBvfTXcbK9"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5KWf8H2pM0tlVd7niMtqeU"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5KWf8H2pM0tlVd7niMtqeU",
+      "id": "5KWf8H2pM0tlVd7niMtqeU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022d79c8f92d7f5ee936a1531bab67616d00001e0275ee41910183cb6f984fcc60ab67616d00001e02b2b7bf6ceec51ea3c80c560cab67616d00001e02b2ee76c9ad709cf00460a7e1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022d79c8f92d7f5ee936a1531bab67616d00001e0275ee41910183cb6f984fcc60ab67616d00001e02b2b7bf6ceec51ea3c80c560cab67616d00001e02b2ee76c9ad709cf00460a7e1",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022d79c8f92d7f5ee936a1531bab67616d00001e0275ee41910183cb6f984fcc60ab67616d00001e02b2b7bf6ceec51ea3c80c560cab67616d00001e02b2ee76c9ad709cf00460a7e1",
+          "width": 60
+        }
+      ],
+      "name": "",
+      "owner": {
+        "display_name": "phillysblunt",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/phillysblunt"
+        },
+        "href": "https://api.spotify.com/v1/users/phillysblunt",
+        "id": "phillysblunt",
+        "type": "user",
+        "uri": "spotify:user:phillysblunt"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NjksNjQxMDI5MmYxM2UxZGQzMGQzNjdhNjAxMmM0YjI3MzRiZWQ4NDJkNQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5KWf8H2pM0tlVd7niMtqeU/tracks",
+        "total": 49
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5KWf8H2pM0tlVd7niMtqeU"
+    },
+    {
+      "collaborative": false,
+      "description": "Playlist of bands for Red Rocks May 29th 2018 concert",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2diQgeACO0ldlkovwDRQzK"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2diQgeACO0ldlkovwDRQzK",
+      "id": "2diQgeACO0ldlkovwDRQzK",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e021522bd2a4ea3d69e17f19429ab67616d00001e02353504127a55a603352a32edab67616d00001e025aa75a47afe2804e280bd149ab67616d00001e02a6780d9c98263297fdeb544f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e021522bd2a4ea3d69e17f19429ab67616d00001e02353504127a55a603352a32edab67616d00001e025aa75a47afe2804e280bd149ab67616d00001e02a6780d9c98263297fdeb544f",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e021522bd2a4ea3d69e17f19429ab67616d00001e02353504127a55a603352a32edab67616d00001e025aa75a47afe2804e280bd149ab67616d00001e02a6780d9c98263297fdeb544f",
+          "width": 60
+        }
+      ],
+      "name": "Concert Playlist",
+      "owner": {
+        "display_name": "Nick Bissel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1225547921"
+        },
+        "href": "https://api.spotify.com/v1/users/1225547921",
+        "id": "1225547921",
+        "type": "user",
+        "uri": "spotify:user:1225547921"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjksMDhmMTRhMmRhOTRhZTNlODg2NjI5ZDQ4Njg2MzAyMGRhY2FlOWI3MQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2diQgeACO0ldlkovwDRQzK/tracks",
+        "total": 43
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2diQgeACO0ldlkovwDRQzK"
+    }
+  ]
+}
