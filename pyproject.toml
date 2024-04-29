@@ -42,7 +42,7 @@ pylint = "3.1.0"
 pytest = "8.2.0"
 pytest-asyncio = "0.23.6"
 pytest-cov = "4.1.0"
-ruff = "0.2.2"
+ruff = "0.4.2"
 safety = "3.1.0"
 yamllint = "1.35.1"
 syrupy = "4.6.1"
@@ -138,9 +138,11 @@ ignore = [
   "ANN101", # Self... explanatory
   "ANN102", # cls... just as useless
   "ANN401", # Opinioated warning on disallowing dynamically typed expressions
+  "COM812", # Conflicts with formatter
   "D203", # Conflicts with other rules
   "D213", # Conflicts with other rules
   "D417", # False positives in some occasions
+  "ISC001", # Conflicts with formatter
   "PLR2004", # Just annoying, not really useful
   "PLR0913", # Too many arguments
 ]

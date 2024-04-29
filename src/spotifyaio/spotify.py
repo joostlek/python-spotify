@@ -1,4 +1,5 @@
 """Spotify client for handling connections with Spotify."""
+
 from __future__ import annotations
 
 import asyncio
