@@ -138,9 +138,11 @@ ignore = [
   "ANN101", # Self... explanatory
   "ANN102", # cls... just as useless
   "ANN401", # Opinioated warning on disallowing dynamically typed expressions
+  "COM812", # Conflicts with formatter
   "D203", # Conflicts with other rules
   "D213", # Conflicts with other rules
   "D417", # False positives in some occasions
+  "ISC001", # Conflicts with formatter
   "PLR2004", # Just annoying, not really useful
   "PLR0913", # Too many arguments
 ]

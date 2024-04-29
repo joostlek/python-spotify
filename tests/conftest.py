@@ -1,4 +1,5 @@
 """Asynchronous Python client for Spotify."""
+
 from typing import AsyncGenerator, Generator
 
 import aiohttp

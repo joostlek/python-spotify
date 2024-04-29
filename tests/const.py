@@ -1,4 +1,5 @@
 """Constants for tests."""
+
 from importlib import metadata
 
 SPOTIFY_URL = "https://api.spotify.com:443"

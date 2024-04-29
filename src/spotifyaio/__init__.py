@@ -1,4 +1,5 @@
 """Asynchronous Python client for Spotify."""
+
 from .exceptions import (
     SpotifyAuthenticationFailedError,
     SpotifyConnectionError,
