@@ -4,9 +4,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import StrEnum
+from typing import Any
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
+from mashumaro.types import SerializationStrategy
 
 
 class DeviceType(StrEnum):
@@ -100,8 +102,19 @@ class SimplifiedArtist(DataClassORJSONMixin):
     uri: str
 
 
+class TracksSerializationStrategy(SerializationStrategy):
+    """Serialization strategy for optional strings."""
+
+    def serialize(self, value: list) -> list:
+        """Serialize optional string."""
+        return value
+
+    def deserialize(self, value: dict[str, Any]) -> list:
+        """Deserialize optional string."""
+        return value.get("items", [])
+
 @dataclass
-class Album(DataClassORJSONMixin):
+class SimplifiedAlbum(DataClassORJSONMixin):
     """Album model."""
 
     album_type: AlbumType
@@ -114,6 +127,15 @@ class Album(DataClassORJSONMixin):
     uri: str
     artists: list[SimplifiedArtist]
 
+@dataclass
+class Album(SimplifiedAlbum):
+    """Album model."""
+
+    tracks: list[SimplifiedTrack] = field(
+        metadata=field_options(
+            serialization_strategy=TracksSerializationStrategy()
+        )
+    )
 
 @dataclass
 class Artist(DataClassORJSONMixin):
@@ -134,13 +156,11 @@ class SimplifiedTrack(DataClassORJSONMixin):
     disc_number: int
     duration_ms: int
     explicit: bool
-    external_ids: dict[str, str]
     external_urls: dict[str, str]
     href: str
     name: str
     is_local: bool
     track_number: int
-    object_type: str = field(metadata=field_options(alias="type"))
     uri: str
 
 
@@ -148,7 +168,7 @@ class SimplifiedTrack(DataClassORJSONMixin):
 class Track(SimplifiedTrack):
     """Track model."""
 
-    album: Album
+    album: SimplifiedAlbum
 
 
 @dataclass

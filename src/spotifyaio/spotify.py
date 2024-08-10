@@ -13,6 +13,7 @@ from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
 from spotifyaio.models import (
+    Album,
     BasePlaylist,
     BaseUserProfile,
     CategoryPlaylistResponse,
@@ -24,7 +25,7 @@ from spotifyaio.models import (
     Playlist,
     PlaylistResponse,
     RepeatMode,
-    UserProfile, Album,
+    UserProfile,
 )
 
 
