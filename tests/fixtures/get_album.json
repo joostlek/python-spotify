@@ -1,0 +1,389 @@
+{
+  "album_type": "album",
+  "artists": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+      },
+      "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+      "id": "3jULn43a6xfzqleyeFjPIq",
+      "name": "Area 11",
+      "type": "artist",
+      "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+    }
+  ],
+  "available_markets": [],
+  "copyrights": [
+    {
+      "text": "2020 Smihilism Records",
+      "type": "C"
+    },
+    {
+      "text": "2020 Smihilism Records",
+      "type": "P"
+    }
+  ],
+  "external_ids": {
+    "upc": "195916707034"
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/album/3IqzqH6ShrRtie9Yd2ODyG"
+  },
+  "genres": [],
+  "href": "https://api.spotify.com/v1/albums/3IqzqH6ShrRtie9Yd2ODyG",
+  "id": "3IqzqH6ShrRtie9Yd2ODyG",
+  "images": [
+    {
+      "height": 640,
+      "url": "https://i.scdn.co/image/ab67616d0000b273a61a28c2f084761f8833bce6",
+      "width": 640
+    },
+    {
+      "height": 300,
+      "url": "https://i.scdn.co/image/ab67616d00001e02a61a28c2f084761f8833bce6",
+      "width": 300
+    },
+    {
+      "height": 64,
+      "url": "https://i.scdn.co/image/ab67616d00004851a61a28c2f084761f8833bce6",
+      "width": 64
+    }
+  ],
+  "label": "Smihilism Records",
+  "name": "SINGLARITY",
+  "popularity": 29,
+  "release_date": "2020-12-18",
+  "release_date_precision": "day",
+  "total_tracks": 11,
+  "tracks": {
+    "href": "https://api.spotify.com/v1/albums/3IqzqH6ShrRtie9Yd2ODyG/tracks?offset=0&limit=50&locale=en-US,en;q=0.5",
+    "items": [
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 260372,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6akJGriy4njdP8fZTPGjwz"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6akJGriy4njdP8fZTPGjwz",
+        "id": "6akJGriy4njdP8fZTPGjwz",
+        "is_local": false,
+        "name": "All Your Friends",
+        "preview_url": "https://p.scdn.co/mp3-preview/484344e579edfdb8e8f872d73299aff2c3d0369d?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:6akJGriy4njdP8fZTPGjwz"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 206613,
+        "explicit": true,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7N02bJK1amhplZ8yAapRS5"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7N02bJK1amhplZ8yAapRS5",
+        "id": "7N02bJK1amhplZ8yAapRS5",
+        "is_local": false,
+        "name": "New Magiks",
+        "preview_url": "https://p.scdn.co/mp3-preview/b59a5a73ed2e9a61be471822993e91210d5f255a?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:7N02bJK1amhplZ8yAapRS5"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 237266,
+        "explicit": true,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6wcBBzmaXHTfg6xNWtjhal"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6wcBBzmaXHTfg6xNWtjhal",
+        "id": "6wcBBzmaXHTfg6xNWtjhal",
+        "is_local": false,
+        "name": "Everybody Gets a Piece",
+        "preview_url": "https://p.scdn.co/mp3-preview/f188217a17a942136908535dcb6bfa7dd2055006?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:6wcBBzmaXHTfg6xNWtjhal"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 244813,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6S1fviwvPfMGD7kk6oAZQN"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6S1fviwvPfMGD7kk6oAZQN",
+        "id": "6S1fviwvPfMGD7kk6oAZQN",
+        "is_local": false,
+        "name": "Curtain Fall",
+        "preview_url": "https://p.scdn.co/mp3-preview/8d123660acba414d4f711dc88df31b57bbc18d92?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:6S1fviwvPfMGD7kk6oAZQN"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 227517,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0HeSCiPSm1d6V7b4CMHPo3"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0HeSCiPSm1d6V7b4CMHPo3",
+        "id": "0HeSCiPSm1d6V7b4CMHPo3",
+        "is_local": false,
+        "name": "Tear Up",
+        "preview_url": "https://p.scdn.co/mp3-preview/211cc8b80b81c5c7b9a58a78458637b0d9b322f1?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:0HeSCiPSm1d6V7b4CMHPo3"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 231891,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/72Q66d8akZekf6AQH414nc"
+        },
+        "href": "https://api.spotify.com/v1/tracks/72Q66d8akZekf6AQH414nc",
+        "id": "72Q66d8akZekf6AQH414nc",
+        "is_local": false,
+        "name": "ØCULIST",
+        "preview_url": "https://p.scdn.co/mp3-preview/9acf7326540f41097d24055d0bd36bfb88489efa?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:72Q66d8akZekf6AQH414nc"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 235540,
+        "explicit": true,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2X34r3wmh9KhM1LrohGotI"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2X34r3wmh9KhM1LrohGotI",
+        "id": "2X34r3wmh9KhM1LrohGotI",
+        "is_local": false,
+        "name": "Kaleidoscope",
+        "preview_url": "https://p.scdn.co/mp3-preview/e1aff7e222df30e25b1e7019bc2570e88b9e0f46?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:2X34r3wmh9KhM1LrohGotI"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 264000,
+        "explicit": true,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4QGWwmBFhq38PpGj0jRBZg"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4QGWwmBFhq38PpGj0jRBZg",
+        "id": "4QGWwmBFhq38PpGj0jRBZg",
+        "is_local": false,
+        "name": "Desaturate",
+        "preview_url": "https://p.scdn.co/mp3-preview/bd9144d2c92d9edd0a978bcb5ce1acf8a687ea1c?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 8,
+        "type": "track",
+        "uri": "spotify:track:4QGWwmBFhq38PpGj0jRBZg"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 234493,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1DPGkXCZA2j9Eu98rrNcoj"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1DPGkXCZA2j9Eu98rrNcoj",
+        "id": "1DPGkXCZA2j9Eu98rrNcoj",
+        "is_local": false,
+        "name": "(Break) In Case Of...",
+        "preview_url": "https://p.scdn.co/mp3-preview/2aa50019c9bc8d4fcf0ec1c1bbd09aee51c35b06?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 9,
+        "type": "track",
+        "uri": "spotify:track:1DPGkXCZA2j9Eu98rrNcoj"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 267080,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6FcIiMd7sJSCNweLf6ZRsk"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6FcIiMd7sJSCNweLf6ZRsk",
+        "id": "6FcIiMd7sJSCNweLf6ZRsk",
+        "is_local": false,
+        "name": "Dancing on the Head of a Pin",
+        "preview_url": "https://p.scdn.co/mp3-preview/e6be7af11ef6041639b3d9a5402c90228b5cc0e4?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 10,
+        "type": "track",
+        "uri": "spotify:track:6FcIiMd7sJSCNweLf6ZRsk"
+      },
+      {
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jULn43a6xfzqleyeFjPIq"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jULn43a6xfzqleyeFjPIq",
+            "id": "3jULn43a6xfzqleyeFjPIq",
+            "name": "Area 11",
+            "type": "artist",
+            "uri": "spotify:artist:3jULn43a6xfzqleyeFjPIq"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 288493,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/49i0yyGEPxP19NpGhNhsTv"
+        },
+        "href": "https://api.spotify.com/v1/tracks/49i0yyGEPxP19NpGhNhsTv",
+        "id": "49i0yyGEPxP19NpGhNhsTv",
+        "is_local": false,
+        "name": "Singularity",
+        "preview_url": "https://p.scdn.co/mp3-preview/cb60391551d8cdea6d0f8359eaa912c9a3320349?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 11,
+        "type": "track",
+        "uri": "spotify:track:49i0yyGEPxP19NpGhNhsTv"
+      }
+    ],
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 11
+  },
+  "type": "album",
+  "uri": "spotify:album:3IqzqH6ShrRtie9Yd2ODyG"
+}
