@@ -113,6 +113,7 @@ class TracksSerializationStrategy(SerializationStrategy):
         """Deserialize optional string."""
         return cast(list[Any], value.get("items", []))
 
+
 @dataclass
 class SimplifiedAlbum(DataClassORJSONMixin):
     """Album model."""
@@ -127,15 +128,15 @@ class SimplifiedAlbum(DataClassORJSONMixin):
     uri: str
     artists: list[SimplifiedArtist]
 
+
 @dataclass
 class Album(SimplifiedAlbum):
     """Album model."""
 
     tracks: list[SimplifiedTrack] = field(
-        metadata=field_options(
-            serialization_strategy=TracksSerializationStrategy()
-        )
+        metadata=field_options(serialization_strategy=TracksSerializationStrategy())
     )
+
 
 @dataclass
 class Artist(DataClassORJSONMixin):
@@ -144,7 +145,6 @@ class Artist(DataClassORJSONMixin):
     artist_id: str = field(metadata=field_options(alias="id"))
     name: str
     uri: str
-
 
 
 @dataclass
