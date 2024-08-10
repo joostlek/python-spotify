@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import StrEnum
-from typing import Any
+from typing import Any, cast
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
@@ -105,13 +105,13 @@ class SimplifiedArtist(DataClassORJSONMixin):
 class TracksSerializationStrategy(SerializationStrategy):
     """Serialization strategy for optional strings."""
 
-    def serialize(self, value: list) -> list:
+    def serialize(self, value: list[Any]) -> list[Any]:
         """Serialize optional string."""
         return value
 
-    def deserialize(self, value: dict[str, Any]) -> list:
+    def deserialize(self, value: dict[str, Any]) -> list[Any]:
         """Deserialize optional string."""
-        return value.get("items", [])
+        return cast(list[Any], value.get("items", []))
 
 @dataclass
 class SimplifiedAlbum(DataClassORJSONMixin):
