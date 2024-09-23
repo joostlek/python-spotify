@@ -2,7 +2,7 @@
 
 from importlib import metadata
 
-SPOTIFY_URL = "https://api.spotify.com:443"
+SPOTIFY_URL = "https://api.spotify.com"
 
 version = metadata.version("spotifyaio")
 
