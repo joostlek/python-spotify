@@ -17,6 +17,7 @@ from spotifyaio.models import (
     ArtistResponse,
     BasePlaylist,
     BaseUserProfile,
+    Category,
     CategoryPlaylistResponse,
     CurrentPlaying,
     Device,
@@ -277,6 +278,11 @@ class SpotifyClient:
         params: dict[str, Any] = {"limit": 48}
         response = await self._get("v1/browse/featured-playlists", params=params)
         return FeaturedPlaylistResponse.from_json(response).playlists.items
+
+    async def get_category(self, category_id: str) -> Category:
+        """Get category."""
+        response = await self._get(f"v1/browse/categories/{category_id}")
+        return Category.from_json(response)
 
     async def get_saved_albums(self) -> list[SavedAlbum]:
         """Get saved albums."""

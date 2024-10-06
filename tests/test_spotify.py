@@ -982,3 +982,25 @@ async def test_get_top_tracks(
         params={"limit": 48},
         data=None,
     )
+
+
+async def test_get_category(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a category."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/browse/categories/dinner",
+        status=200,
+        body=load_fixture("category.json"),
+    )
+    response = await authenticated_client.get_category("dinner")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/browse/categories/dinner",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
