@@ -1,0 +1,890 @@
+{
+  "href": "https://api.spotify.com/v1/shows/0e30iIgSffe6xJhFKe35Db/episodes?offset=0&limit=20&locale=en-US,en;q%3D0.5",
+  "items": [
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/2O4OLlf7wsvLzCeUbNB3UK/clip_1204000_1256300.mp3",
+      "description": "The Great War of 2077 and how the Fallout world diverged from our own.Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecastBuy cool stuff and support the show!Fallout 76: https://amzn.to/3h99B3UFallout Cookbook: https://amzn.to/3aGjeodFallout Boardgame: https://amzn.to/2EgmBq3The Art of Fallout 4: https://amzn.to/3gfQST3Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zGFallout Funco Pop Figures: https://amzn.to/3gcYsOcLinks: Live Shows every Monday Night and game streams: twitch.tv/robotsradioFallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hubTalk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhMStay plugged in on Twitter: twitter.com/falloutlorecastRobots Radio Youtube: youtube.com/c/r0b0tsSend me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2117616,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/3ssmxnilHYaKhwRWoBGMbU"
+      },
+      "href": "https://api.spotify.com/v1/episodes/3ssmxnilHYaKhwRWoBGMbU",
+      "html_description": "<p>The Great War of 2077 and how the Fallout world diverged from our own.</p><p>Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast</p><p>Buy cool stuff and support the show!</p><p>Fallout 76: https://amzn.to/3h99B3U</p><p>Fallout Cookbook: https://amzn.to/3aGjeod</p><p>Fallout Boardgame: https://amzn.to/2EgmBq3</p><p>The Art of Fallout 4: https://amzn.to/3gfQST3</p><p>Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG</p><p>Fallout Funco Pop Figures: https://amzn.to/3gcYsOc</p><p>Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio</p><p>Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub</p><p>Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM</p><p>Stay plugged in on Twitter: twitter.com/falloutlorecast</p><p>Robots Radio Youtube: youtube.com/c/r0b0ts</p><p>Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "3ssmxnilHYaKhwRWoBGMbU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8af44e9ef63c2d6fb44cb0c9bf",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1ff44e9ef63c2d6fb44cb0c9bf",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68df44e9ef63c2d6fb44cb0c9bf",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "The Great War - Fallout Lorecast EP 1",
+      "release_date": "2019-01-09",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:3ssmxnilHYaKhwRWoBGMbU"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0PGDORXTYiO2Til9131l6X/clip_310950_371500.mp3",
+      "description": "Support the show to keep it going, plus get great rewards at patreon.com/falloutlorecast Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2376881,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1bbj9aqeeZ3UMUlcWN0S03"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1bbj9aqeeZ3UMUlcWN0S03",
+      "html_description": "<p>Support the show to keep it going, plus get great rewards at patreon.com/falloutlorecast Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1bbj9aqeeZ3UMUlcWN0S03",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a655b54a66471089d27dbb03f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f655b54a66471089d27dbb03f",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d655b54a66471089d27dbb03f",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Who Dropped the First Bomb?",
+      "release_date": "2019-01-15",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1bbj9aqeeZ3UMUlcWN0S03"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0N5EO40BNQtEz6zjhFsbW6/clip_762300_807200.mp3",
+      "description": "The lore behind Vault-Tec Corporation. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2163252,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/4zui8zWBisCfnTkZ1vgIc0"
+      },
+      "href": "https://api.spotify.com/v1/episodes/4zui8zWBisCfnTkZ1vgIc0",
+      "html_description": "<p>The lore behind Vault-Tec Corporation. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "4zui8zWBisCfnTkZ1vgIc0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8ac2181d67c5a5072353f70cc5",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1fc2181d67c5a5072353f70cc5",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68dc2181d67c5a5072353f70cc5",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault-Tec Corporation",
+      "release_date": "2019-01-22",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:4zui8zWBisCfnTkZ1vgIc0"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/5ypTLYoEXp2qOat0QB14M9/clip_295200_367000.mp3",
+      "description": "Support the show to keep it going, plus get great rewards at patreon.com/falloutlorecast Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 499968,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/7wH4iaoceRIympxiLVZPHF"
+      },
+      "href": "https://api.spotify.com/v1/episodes/7wH4iaoceRIympxiLVZPHF",
+      "html_description": "<p>Support the show to keep it going, plus get great rewards at patreon.com/falloutlorecast Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "7wH4iaoceRIympxiLVZPHF",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a7c3370eabc0c6db7b2936fe2",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f7c3370eabc0c6db7b2936fe2",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d7c3370eabc0c6db7b2936fe2",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 3 A Fiendish Finish",
+      "release_date": "2019-01-24",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:7wH4iaoceRIympxiLVZPHF"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/6Mn9KUpeg00hZ11xvnp8Pu/clip_586200_651600.mp3",
+      "description": "The lore behind Vault 8 and Vault City. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 713586,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/4Z2MUOz9GBHzHsEIAc5Ltl"
+      },
+      "href": "https://api.spotify.com/v1/episodes/4Z2MUOz9GBHzHsEIAc5Ltl",
+      "html_description": "<p>The lore behind Vault 8 and Vault City. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "4Z2MUOz9GBHzHsEIAc5Ltl",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8ab3e39f9b402368fc2698dedb",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1fb3e39f9b402368fc2698dedb",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68db3e39f9b402368fc2698dedb",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 8 & Vault City",
+      "release_date": "2019-01-26",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:4Z2MUOz9GBHzHsEIAc5Ltl"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/3L2qzz2eb1IzQE0FJtl3So/clip_1584700_1652600.mp3",
+      "description": "The origins of the Brotherhood of Steel and Roger Maxson. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2211631,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/24IzdUok36xLkgQEjOjS6V"
+      },
+      "href": "https://api.spotify.com/v1/episodes/24IzdUok36xLkgQEjOjS6V",
+      "html_description": "<p>The origins of the Brotherhood of Steel and Roger Maxson. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "24IzdUok36xLkgQEjOjS6V",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a7cc679b360d6c0b7088890c5",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f7cc679b360d6c0b7088890c5",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d7cc679b360d6c0b7088890c5",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "The Brotherhood of Steel (Origin)",
+      "release_date": "2019-01-28",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:24IzdUok36xLkgQEjOjS6V"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/5uUtfiFrXSmP7c0TxhE3Rm/clip_454900_514100.mp3",
+      "description": "The lore behind Vault 11 and the dilemma of self-preservation versus morality. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 737593,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/6fUziggVu74s6JwZ0lsIjX"
+      },
+      "href": "https://api.spotify.com/v1/episodes/6fUziggVu74s6JwZ0lsIjX",
+      "html_description": "<p>The lore behind Vault 11 and the dilemma of self-preservation versus morality. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "6fUziggVu74s6JwZ0lsIjX",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a302e925456f7ac2727bc1d63",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f302e925456f7ac2727bc1d63",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d302e925456f7ac2727bc1d63",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 11 The Sacrifice",
+      "release_date": "2019-01-31",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:6fUziggVu74s6JwZ0lsIjX"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/6ALp31KeoyF99qnSC0bnwP/clip_307200_365000.mp3",
+      "description": "The lore behind Vault 12 and the origins of a ghoulish city. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 529606,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1pYEeMveLHGbbIo10G34dx"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1pYEeMveLHGbbIo10G34dx",
+      "html_description": "<p>The lore behind Vault 12 and the origins of a ghoulish city. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1pYEeMveLHGbbIo10G34dx",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a3e610ca700324f3bef0a48cc",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f3e610ca700324f3bef0a48cc",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d3e610ca700324f3bef0a48cc",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 12 A Ghoulish Experience",
+      "release_date": "2019-02-02",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1pYEeMveLHGbbIo10G34dx"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0C9ff8UGuNmSgJ3HbWhMRN/clip_1536400_1588550.mp3",
+      "description": "The origins and ideology of the Enclave. Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 1996538,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1h69SINnBwMCqfEXjPAVIl"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1h69SINnBwMCqfEXjPAVIl",
+      "html_description": "<p>The origins and ideology of the Enclave. Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1h69SINnBwMCqfEXjPAVIl",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a848643fae2be31bac82cc05a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f848643fae2be31bac82cc05a",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d848643fae2be31bac82cc05a",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "The Enclave (Origin)",
+      "release_date": "2019-02-04",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1h69SINnBwMCqfEXjPAVIl"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0AYDYfGlCTAVLJUEaiggyy/clip_734450_782400.mp3",
+      "description": "The lore behind Vault 13 and an invasion by intelligent deathclaws. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 930638,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/33UquUg4oftJ4ereH4nrNO"
+      },
+      "href": "https://api.spotify.com/v1/episodes/33UquUg4oftJ4ereH4nrNO",
+      "html_description": "<p>The lore behind Vault 13 and an invasion by intelligent deathclaws. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "33UquUg4oftJ4ereH4nrNO",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a87fd9a8d362fd30aaab4e9d5",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f87fd9a8d362fd30aaab4e9d5",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d87fd9a8d362fd30aaab4e9d5",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 13 & Intelligent Deathclaws",
+      "release_date": "2019-02-07",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:33UquUg4oftJ4ereH4nrNO"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/5qA3U8POTyVLtrcyZULbCs/clip_563900_618800.mp3",
+      "description": "Get an early listen to the 1st episode of the upcoming Elder Scrolls Lorecast! Brought to you by: Storyblocks.com: Storyblocks.com/robotsradio Gamefly Game Rentals FREE for 30 Days! Click here: https://www.dpbolvw.net/click-100173810-10495782?sid=flore 15% off Loot Crate click: https://www.dpbolvw.net/click-100173810-13902093?sid=flore and use coupon code: ROBOTSRADIO Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/esolorecast Check out live streams most evenings on Twitch: twitch.tv/robotsradio Send me a note! Email: elderscrollslorecast@gmail.com Get a cool shirt, hat, or sticker, and support the show. Merch: https://robotsradio.net/store/ Dsicover more Robots Radio shows at robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2282187,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/5nkbQDDCKSH4CwYalm62er"
+      },
+      "href": "https://api.spotify.com/v1/episodes/5nkbQDDCKSH4CwYalm62er",
+      "html_description": "<p>Get an early listen to the 1st episode of the upcoming Elder Scrolls Lorecast! Brought to you by: Storyblocks.com: Storyblocks.com/robotsradio Gamefly Game Rentals FREE for 30 Days! Click here: https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore 15% off Loot Crate click: https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore and use coupon code: ROBOTSRADIO Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/esolorecast Check out live streams most evenings on Twitch: twitch.tv/robotsradio Send me a note! Email: elderscrollslorecast&#64;gmail.com Get a cool shirt, hat, or sticker, and support the show. Merch: https://robotsradio.net/store/ Dsicover more Robots Radio shows at robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "5nkbQDDCKSH4CwYalm62er",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8ab123bf90e3b34c113ab95837",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1fb123bf90e3b34c113ab95837",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68db123bf90e3b34c113ab95837",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "[SNEAK PEEK] - Elder Scrolls Lorecast First Episode",
+      "release_date": "2019-02-11",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:5nkbQDDCKSH4CwYalm62er"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/5NWGfkeWYPfLHOqtZWi3T4/clip_2174788_2232762.mp3",
+      "description": "Duke from Out of the Vault joins me to discuss our thoughts on Power Armor. www.outofthevaultshow.com Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 4648594,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/18tLLTavfPIPoJxau3xDQJ"
+      },
+      "href": "https://api.spotify.com/v1/episodes/18tLLTavfPIPoJxau3xDQJ",
+      "html_description": "<p>Duke from Out of the Vault joins me to discuss our thoughts on Power Armor. www.outofthevaultshow.com Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "18tLLTavfPIPoJxau3xDQJ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a28474d982684a3bd43d68198",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f28474d982684a3bd43d68198",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d28474d982684a3bd43d68198",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Power Armor w/ Duke from Out of the Vault",
+      "release_date": "2019-02-13",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:18tLLTavfPIPoJxau3xDQJ"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0HBrSsJ1Z073A9OqxEzQfS/clip_362300_410000.mp3",
+      "description": "The lore behind Vault 15 and it's connection to Shady Sands and 3 of the most vile groups of raiders in the wasteland. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 716591,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1EQ6z4eaCRs6kJeVXjWIcm"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1EQ6z4eaCRs6kJeVXjWIcm",
+      "html_description": "<p>The lore behind Vault 15 and it&#39;s connection to Shady Sands and 3 of the most vile groups of raiders in the wasteland. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1EQ6z4eaCRs6kJeVXjWIcm",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a7d1afb3118607dba3602faff",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f7d1afb3118607dba3602faff",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d7d1afb3118607dba3602faff",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 15 The Origin of The Khans",
+      "release_date": "2019-02-16",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1EQ6z4eaCRs6kJeVXjWIcm"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/1sa5nDUBgakALt6SSJHw1f/clip_387600_449450.mp3",
+      "description": "In this episode, we discuss the origin, research, and importance of West Tek. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2103248,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/5ia7J0CaNRhuxsB0yVxdcn"
+      },
+      "href": "https://api.spotify.com/v1/episodes/5ia7J0CaNRhuxsB0yVxdcn",
+      "html_description": "<p>In this episode, we discuss the origin, research, and importance of West Tek. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "5ia7J0CaNRhuxsB0yVxdcn",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8af2608bb76816d3baffba9fd1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1ff2608bb76816d3baffba9fd1",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68df2608bb76816d3baffba9fd1",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "West Tek - FEV & Power Armor",
+      "release_date": "2019-02-20",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:5ia7J0CaNRhuxsB0yVxdcn"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/6Tw1tZqW6owjO74bDIrGI6/clip_471100_549400.mp3",
+      "description": "In this minisode we discuss the lore behind Vault 19 and the psychology of tribalism. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 786625,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1rzpxakE5YSwvSX6rXlG1V"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1rzpxakE5YSwvSX6rXlG1V",
+      "html_description": "<p>In this minisode we discuss the lore behind Vault 19 and the psychology of tribalism. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1rzpxakE5YSwvSX6rXlG1V",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a7f0006d898957db4dacc948b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f7f0006d898957db4dacc948b",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d7f0006d898957db4dacc948b",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 19 Red vs Blue (or On Tribalism)",
+      "release_date": "2019-02-25",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1rzpxakE5YSwvSX6rXlG1V"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/2p7VgDrRBXBRkOQTeKnoSk/clip_457300_517115.mp3",
+      "description": "Super Mutants. Nuff said. Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2156747,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1PI4CPzbfD5HFEMWlaNQAV"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1PI4CPzbfD5HFEMWlaNQAV",
+      "html_description": "<p>Super Mutants. Nuff said. Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1PI4CPzbfD5HFEMWlaNQAV",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a30f58504d487e1f3bb5a9595",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f30f58504d487e1f3bb5a9595",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d30f58504d487e1f3bb5a9595",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Super Mutants",
+      "release_date": "2019-02-27",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1PI4CPzbfD5HFEMWlaNQAV"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/25oWNJeJgArtHjwKZHDbLi/clip_1135685_1189735.mp3",
+      "description": "Welcome Dave from the Vault Boys WV to the show. We chat about Fallout 76, West Virginia, and what got him into the series. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2779715,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/4CZKdqqXWP5ez2rOzT5eL6"
+      },
+      "href": "https://api.spotify.com/v1/episodes/4CZKdqqXWP5ez2rOzT5eL6",
+      "html_description": "<p>Welcome Dave from the Vault Boys WV to the show. We chat about Fallout 76, West Virginia, and what got him into the series. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "4CZKdqqXWP5ez2rOzT5eL6",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a9c2656a3e5f340dfa5f7e82c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f9c2656a3e5f340dfa5f7e82c",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d9c2656a3e5f340dfa5f7e82c",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "West Virginia and Fallout 76 w/ Dave from Vault Boys WV",
+      "release_date": "2019-03-06",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:4CZKdqqXWP5ez2rOzT5eL6"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/77KkRvNXx3ijVZI48Y4syV/clip_1014450_1064800.mp3",
+      "description": "This episode we discuss Ghouls! Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2051500,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/1SOZlOQl3FYwatj6Zvfrsj"
+      },
+      "href": "https://api.spotify.com/v1/episodes/1SOZlOQl3FYwatj6Zvfrsj",
+      "html_description": "<p>This episode we discuss Ghouls! Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "1SOZlOQl3FYwatj6Zvfrsj",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a3a68fdbc55e15ba2b6a720b6",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f3a68fdbc55e15ba2b6a720b6",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d3a68fdbc55e15ba2b6a720b6",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Ghouls!",
+      "release_date": "2019-03-13",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:1SOZlOQl3FYwatj6Zvfrsj"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/16tB6P4M27YKbKgSrJC7iy/clip_1728000_1778800.mp3",
+      "description": "Vault 21, where everything was determined randomly. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 1923134,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/16hX5oaM52mREneUOHdBiA"
+      },
+      "href": "https://api.spotify.com/v1/episodes/16hX5oaM52mREneUOHdBiA",
+      "html_description": "<p>Vault 21, where everything was determined randomly. Sponsors: Storyblocks.com: Storyblocks.com/robotsradio Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "16hX5oaM52mREneUOHdBiA",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a605e65537b9b382e2161d602",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f605e65537b9b382e2161d602",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d605e65537b9b382e2161d602",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Vault 21 - A Roll of the Dice",
+      "release_date": "2019-03-20",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:16hX5oaM52mREneUOHdBiA"
+    },
+    {
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0Yl9WsFCwR3Ar6fp8XBkvX/clip_1135650_1183000.mp3",
+      "description": "This episode is all about Deathclaws, plus a great question from our Patron Emily G. and reviews. Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid=flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid=flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid=flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid=flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid=flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom & others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast@gmail.com www.robotsradio.netOur Sponsors:* Check out  Bandai Namco: unknown9.com/FALLOUTLOREAdvertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy",
+      "duration_ms": 2674024,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/2qvIReQpMaGK9OEeuW47VS"
+      },
+      "href": "https://api.spotify.com/v1/episodes/2qvIReQpMaGK9OEeuW47VS",
+      "html_description": "<p>This episode is all about Deathclaws, plus a great question from our Patron Emily G. and reviews. Sponsors: Patreon: Become a patron! https://patreon.com/falloutlorecast Audiobooks.com - Get 3 FREE Audiobooks! https://www.dpbolvw.net/click-100173810-11099382?sid&#61;flore Gamefly - Want 2 months of rentals for the price of 1 at Gamefly? https://www.dpbolvw.net/click-100173810-10495782?sid&#61;flore Loot Crate - 15% off Loot Crate. Click the link and use coupon code: ROBOTSRADIO https://www.dpbolvw.net/click-100173810-13902093?sid&#61;flore GreenMan Gaming - Get awesome discounts on games. https://www.dpbolvw.net/click-100173810-13764551?sid&#61;flore NordVPN - Stay Safe on the Internet and get 68% off. https://www.dpbolvw.net/click-100173810-12814552?sid&#61;flore Buy cool stuff and support the show! Fallout 76: https://amzn.to/3h99B3U Fallout Cookbook: https://amzn.to/3aGjeod Fallout Boardgame: https://amzn.to/2EgmBq3 The Art of Fallout 4: https://amzn.to/3gfQST3 Get a REAL Nuca-Cola Quantum! https://amzn.to/322O3zG Fallout Funco Pop Figures: https://amzn.to/3gcYsOc Links: Live Shows every Monday Night and game streams: twitch.tv/robotsradio Fallout Hub Podcast w/ Tom &amp; others: https://anchor.fm/the-fallout-hub Talk Fallout and join the Robots Radio fam: Discord: discord.gg/JXKfVhM Stay plugged in on Twitter: twitter.com/falloutlorecast Robots Radio Youtube: youtube.com/c/r0b0ts Send me a note! Email: falloutlorecast&#64;gmail.com www.robotsradio.net</p><br /><br />Our Sponsors:<br />* Check out  Bandai Namco: unknown9.com/FALLOUTLORE<br /><br /><br />Advertising Inquiries: <a href=\"https://redcircle.com/brands\" rel=\"nofollow\">https://redcircle.com/brands</a><br /><br />Privacy &amp; Opt-Out: <a href=\"https://redcircle.com/privacy\" rel=\"nofollow\">https://redcircle.com/privacy</a>",
+      "id": "2qvIReQpMaGK9OEeuW47VS",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6765630000ba8a2a75dc2b800ef5d83571ac27",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67656300005f1f2a75dc2b800ef5d83571ac27",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab6765630000f68d2a75dc2b800ef5d83571ac27",
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Deathclaws",
+      "release_date": "2019-03-28",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:2qvIReQpMaGK9OEeuW47VS"
+    }
+  ],
+  "limit": 20,
+  "next": "https://api.spotify.com/v1/shows/0e30iIgSffe6xJhFKe35Db/episodes?offset=20&limit=20&locale=en-US,en;q%3D0.5",
+  "offset": 0,
+  "previous": null,
+  "total": 323
+}

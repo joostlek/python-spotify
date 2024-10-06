@@ -1070,3 +1070,25 @@ async def test_get_artist_albums(
         params={"limit": 48},
         data=None,
     )
+
+
+async def test_get_show_episodes(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving episodes of a show."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/shows/0e30iIgSffe6xJhFKe35Db/episodes?limit=48",
+        status=200,
+        body=load_fixture("show_episodes.json"),
+    )
+    response = await authenticated_client.get_show_episodes("0e30iIgSffe6xJhFKe35Db")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/shows/0e30iIgSffe6xJhFKe35Db/episodes",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        data=None,
+    )

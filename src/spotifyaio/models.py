@@ -465,6 +465,13 @@ class SimplifiedEpisode(DataClassORJSONMixin):
 
 
 @dataclass
+class ShowEpisodesResponse(DataClassORJSONMixin):
+    """ShowEpisodes response model."""
+
+    items: list[SimplifiedEpisode]
+
+
+@dataclass
 class Episode(SimplifiedEpisode, Item):
     """Episode model."""
 
