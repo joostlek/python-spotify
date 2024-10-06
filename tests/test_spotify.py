@@ -938,3 +938,47 @@ async def test_get_recently_played_tracks(
         params={"limit": 48},
         data=None,
     )
+
+
+async def test_get_top_artists(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving top artists."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/top/artists?limit=48",
+        status=200,
+        body=load_fixture("top_artists.json"),
+    )
+    response = await authenticated_client.get_top_artists()
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/top/artists",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        data=None,
+    )
+
+
+async def test_get_top_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving top tracks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/top/tracks?limit=48",
+        status=200,
+        body=load_fixture("top_tracks.json"),
+    )
+    response = await authenticated_client.get_top_tracks()
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/top/tracks",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        data=None,
+    )

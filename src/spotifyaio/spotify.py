@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import Any, Awaitable, Callable, Self
+from typing import TYPE_CHECKING, Any, Awaitable, Callable, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
@@ -37,8 +37,13 @@ from spotifyaio.models import (
     SavedTrackResponse,
     Show,
     SimplifiedArtist,
+    TopArtistsResponse,
+    TopTracksResponse,
     UserProfile,
 )
+
+if TYPE_CHECKING:
+    from spotifyaio import Artist, Track
 
 
 @dataclass
@@ -305,6 +310,18 @@ class SpotifyClient:
             params=params,
         )
         return CategoryPlaylistResponse.from_json(response).playlists.items
+
+    async def get_top_artists(self) -> list[Artist]:
+        """Get top artists."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/top/artists", params=params)
+        return TopArtistsResponse.from_json(response).items
+
+    async def get_top_tracks(self) -> list[Track]:
+        """Get top tracks."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/top/tracks", params=params)
+        return TopTracksResponse.from_json(response).items
 
     async def get_episode(self, episode_id: str) -> Episode:
         """Get episode."""
