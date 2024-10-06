@@ -175,6 +175,14 @@ class ItemType(StrEnum):
 class Item(DataClassORJSONMixin):
     """Item model."""
 
+    type: ItemType
+    uri: str
+    explicit: bool
+    duration_ms: int
+    external_urls: dict[str, str]
+    href: str
+    name: str
+
 
 @dataclass
 class Track(SimplifiedTrack, Item):
