@@ -634,6 +634,35 @@ async def test_get_current_users_playlists(
     )
 
 
+@pytest.mark.parametrize(
+    "playlist_id",
+    [
+        "37i9dQZF1DXcBWIGoYBM5M",
+        "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M",
+        "spotify:user:chilledcow:playlist:37i9dQZF1DXcBWIGoYBM5M",
+    ],
+)
+async def test_get_playlist_variation(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    playlist_id: str,
+) -> None:
+    """Test retrieving playlist with different inputs."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        status=200,
+        body=load_fixture("playlist.json"),
+    )
+    await authenticated_client.get_playlist(playlist_id)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
+
+
 async def test_get_featured_playlists(
     responses: aioresponses,
     snapshot: SnapshotAssertion,

@@ -230,7 +230,8 @@ class SpotifyClient:
 
     async def get_playlist(self, playlist_id: str) -> Playlist:
         """Get playlist."""
-        response = await self._get(f"v1/playlists/{playlist_id}")
+        identifier = playlist_id.split(":")[-1]
+        response = await self._get(f"v1/playlists/{identifier}")
         return Playlist.from_json(response)
 
     async def get_playlists_for_current_user(self) -> list[BasePlaylist]:
