@@ -24,6 +24,8 @@ from spotifyaio.models import (
     Episode,
     FeaturedPlaylistResponse,
     PlaybackState,
+    PlayedTrack,
+    PlayedTrackResponse,
     Playlist,
     PlaylistResponse,
     RepeatMode,
@@ -288,6 +290,12 @@ class SpotifyClient:
         params: dict[str, Any] = {"limit": 48}
         response = await self._get("v1/me/shows", params=params)
         return SavedShowResponse.from_json(response).items
+
+    async def get_recently_played_tracks(self) -> list[PlayedTrack]:
+        """Get recently played tracks."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/player/recently-played", params=params)
+        return PlayedTrackResponse.from_json(response).items
 
     async def get_category_playlists(self, category_id: str) -> list[BasePlaylist]:
         """Get category playlists."""
