@@ -382,6 +382,16 @@ class CategoryPlaylistResponse(DataClassORJSONMixin):
     playlists: PlaylistResponse
 
 
+@dataclass
+class Category(DataClassORJSONMixin):
+    """Category model."""
+
+    category_id: str = field(metadata=field_options(alias="id"))
+    name: str
+    href: str
+    icons: list[Image]
+
+
 class ProductType(StrEnum):
     """Product type."""
 
