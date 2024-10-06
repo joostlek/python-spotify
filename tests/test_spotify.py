@@ -569,6 +569,40 @@ async def test_set_shuffle(
     )
 
 
+@pytest.mark.parametrize(
+    ("arguments", "expected_data"),
+    [
+        (
+            {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv"},
+            {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv"},
+        ),
+        (
+            {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv", "device_id": "123qwe"},
+            {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv", "device_id": "123qwe"},
+        ),
+    ],
+)
+async def test_add_to_queue(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    arguments: dict[str, Any],
+    expected_data: dict[str, Any],
+) -> None:
+    """Test adding to queue."""
+    responses.post(
+        f"{SPOTIFY_URL}/v1/me/player/queue",
+        status=204,
+    )
+    await authenticated_client.add_to_queue(**arguments)
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/queue",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        data=expected_data,
+    )
+
+
 async def test_get_album(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
