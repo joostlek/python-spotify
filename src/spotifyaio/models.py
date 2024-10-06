@@ -172,6 +172,20 @@ class SavedAlbumResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class NewReleasesResponse(DataClassORJSONMixin):
+    """NewReleases response model."""
+
+    albums: NewReleasesResponseInner
+
+
+@dataclass
+class NewReleasesResponseInner(DataClassORJSONMixin):
+    """NewReleases response model."""
+
+    items: list[SimplifiedAlbum]
+
+
+@dataclass
 class SavedShow(DataClassORJSONMixin):
     """Saved Show model."""
 

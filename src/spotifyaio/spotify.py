@@ -24,6 +24,7 @@ from spotifyaio.models import (
     Devices,
     Episode,
     FeaturedPlaylistResponse,
+    NewReleasesResponse,
     PlaybackState,
     PlayedTrack,
     PlayedTrackResponse,
@@ -44,7 +45,7 @@ from spotifyaio.models import (
 )
 
 if TYPE_CHECKING:
-    from spotifyaio import Artist, Track
+    from spotifyaio import Artist, SimplifiedAlbum, Track
 
 
 @dataclass
@@ -316,6 +317,12 @@ class SpotifyClient:
             params=params,
         )
         return CategoryPlaylistResponse.from_json(response).playlists.items
+
+    async def get_new_releases(self) -> list[SimplifiedAlbum]:
+        """Get new releases."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/browse/new-releases", params=params)
+        return NewReleasesResponse.from_json(response).albums.items
 
     async def get_top_artists(self) -> list[Artist]:
         """Get top artists."""
