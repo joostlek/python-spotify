@@ -133,7 +133,9 @@ class SpotifyClient:
 
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""
-        response = await self._get("v1/me/player")
+        response = await self._get(
+            "v1/me/player", params={"additional_types": "track,episode"}
+        )
         if response == "":
             return None
         return PlaybackState.from_json(response)
