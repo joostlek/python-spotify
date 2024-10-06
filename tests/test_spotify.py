@@ -916,3 +916,25 @@ async def test_get_saved_shows(
         params={"limit": 48},
         data=None,
     )
+
+
+async def test_get_recently_played_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving recently played tracks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player/recently-played?limit=48",
+        status=200,
+        body=load_fixture("recently_played_tracks.json"),
+    )
+    response = await authenticated_client.get_recently_played_tracks()
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/player/recently-played",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        data=None,
+    )

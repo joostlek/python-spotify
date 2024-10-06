@@ -2803,6 +2803,1445 @@
     'uri': 'spotify:playlist:3cEYpjA9oz9GiPac4AsH4n',
   })
 # ---
+# name: test_get_recently_played_tracks
+  list([
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 18, 9, 18, 556000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6Ab1VSoMD5fvlagOW2QDOJ',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+              'name': 'Karen O',
+              'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+            }),
+            dict({
+              'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+              'name': 'Danger Mouse',
+              'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273cdac047e7894fb56a0dfdcde',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02cdac047e7894fb56a0dfdcde',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851cdac047e7894fb56a0dfdcde',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Super Breath',
+          'release_date': '2024-07-24',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:6Ab1VSoMD5fvlagOW2QDOJ',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+            'name': 'Karen O',
+            'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+          }),
+          dict({
+            'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+            'name': 'Danger Mouse',
+            'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 211800,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/71dMjqJ8UJV700zYs5YZCh',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/71dMjqJ8UJV700zYs5YZCh',
+        'is_local': False,
+        'name': 'Super Breath',
+        'track_id': '71dMjqJ8UJV700zYs5YZCh',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:71dMjqJ8UJV700zYs5YZCh',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 18, 5, 33, 902000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6Ab1VSoMD5fvlagOW2QDOJ',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+              'name': 'Karen O',
+              'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+            }),
+            dict({
+              'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+              'name': 'Danger Mouse',
+              'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273cdac047e7894fb56a0dfdcde',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02cdac047e7894fb56a0dfdcde',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851cdac047e7894fb56a0dfdcde',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Super Breath',
+          'release_date': '2024-07-24',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:6Ab1VSoMD5fvlagOW2QDOJ',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+            'name': 'Karen O',
+            'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+          }),
+          dict({
+            'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+            'name': 'Danger Mouse',
+            'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 211800,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/71dMjqJ8UJV700zYs5YZCh',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/71dMjqJ8UJV700zYs5YZCh',
+        'is_local': False,
+        'name': 'Super Breath',
+        'track_id': '71dMjqJ8UJV700zYs5YZCh',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:71dMjqJ8UJV700zYs5YZCh',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 18, 2, 0, 146000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6Ab1VSoMD5fvlagOW2QDOJ',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+              'name': 'Karen O',
+              'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+            }),
+            dict({
+              'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+              'name': 'Danger Mouse',
+              'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273cdac047e7894fb56a0dfdcde',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02cdac047e7894fb56a0dfdcde',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851cdac047e7894fb56a0dfdcde',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Super Breath',
+          'release_date': '2024-07-24',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:6Ab1VSoMD5fvlagOW2QDOJ',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+            'name': 'Karen O',
+            'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+          }),
+          dict({
+            'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+            'name': 'Danger Mouse',
+            'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 211800,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/71dMjqJ8UJV700zYs5YZCh',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/71dMjqJ8UJV700zYs5YZCh',
+        'is_local': False,
+        'name': 'Super Breath',
+        'track_id': '71dMjqJ8UJV700zYs5YZCh',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:71dMjqJ8UJV700zYs5YZCh',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 58, 21, 425000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6Ab1VSoMD5fvlagOW2QDOJ',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+              'name': 'Karen O',
+              'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+            }),
+            dict({
+              'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+              'name': 'Danger Mouse',
+              'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273cdac047e7894fb56a0dfdcde',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02cdac047e7894fb56a0dfdcde',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851cdac047e7894fb56a0dfdcde',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Super Breath',
+          'release_date': '2024-07-24',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:6Ab1VSoMD5fvlagOW2QDOJ',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+            'name': 'Karen O',
+            'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+          }),
+          dict({
+            'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+            'name': 'Danger Mouse',
+            'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 211800,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/71dMjqJ8UJV700zYs5YZCh',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/71dMjqJ8UJV700zYs5YZCh',
+        'is_local': False,
+        'name': 'Super Breath',
+        'track_id': '71dMjqJ8UJV700zYs5YZCh',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:71dMjqJ8UJV700zYs5YZCh',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 54, 39, 34000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6Ab1VSoMD5fvlagOW2QDOJ',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+              'name': 'Karen O',
+              'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+            }),
+            dict({
+              'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+              'name': 'Danger Mouse',
+              'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273cdac047e7894fb56a0dfdcde',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02cdac047e7894fb56a0dfdcde',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851cdac047e7894fb56a0dfdcde',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Super Breath',
+          'release_date': '2024-07-24',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:6Ab1VSoMD5fvlagOW2QDOJ',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6emHCSoB4tJxTVXakbrpPz',
+            'name': 'Karen O',
+            'uri': 'spotify:artist:6emHCSoB4tJxTVXakbrpPz',
+          }),
+          dict({
+            'artist_id': '2dBj3prW7gP9bCCOIQeDUf',
+            'name': 'Danger Mouse',
+            'uri': 'spotify:artist:2dBj3prW7gP9bCCOIQeDUf',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 211800,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/71dMjqJ8UJV700zYs5YZCh',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/71dMjqJ8UJV700zYs5YZCh',
+        'is_local': False,
+        'name': 'Super Breath',
+        'track_id': '71dMjqJ8UJV700zYs5YZCh',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:71dMjqJ8UJV700zYs5YZCh',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 51, 7, 248000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '5LASDBDtLLEt3QqVtgOoaM',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '0vTVU0KH0CVzijsoKGsTPl',
+              'name': "Barry Can't Swim",
+              'uri': 'spotify:artist:0vTVU0KH0CVzijsoKGsTPl',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27316bc57c40991e6d3267765ab',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0216bc57c40991e6d3267765ab',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485116bc57c40991e6d3267765ab',
+              'width': 64,
+            }),
+          ]),
+          'name': 'When Will We Land?',
+          'release_date': '2023-10-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 11,
+          'uri': 'spotify:album:5LASDBDtLLEt3QqVtgOoaM',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '0vTVU0KH0CVzijsoKGsTPl',
+            'name': "Barry Can't Swim",
+            'uri': 'spotify:artist:0vTVU0KH0CVzijsoKGsTPl',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 138951,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3NZz7DWeVQesSOn6mO39F7',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3NZz7DWeVQesSOn6mO39F7',
+        'is_local': False,
+        'name': 'How It Feels',
+        'track_id': '3NZz7DWeVQesSOn6mO39F7',
+        'track_number': 4,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3NZz7DWeVQesSOn6mO39F7',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 48, 48, 298000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '27vIEhBrsAL30xLMS41ZyA',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '2D7akgJBXcsp8Y2FKdPJCh',
+              'name': 'Jasper Tygner',
+              'uri': 'spotify:artist:2D7akgJBXcsp8Y2FKdPJCh',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27344f6ff8137cffe1d614054ec',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0244f6ff8137cffe1d614054ec',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485144f6ff8137cffe1d614054ec',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Things to Come',
+          'release_date': '2024-07-05',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 4,
+          'uri': 'spotify:album:27vIEhBrsAL30xLMS41ZyA',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '2D7akgJBXcsp8Y2FKdPJCh',
+            'name': 'Jasper Tygner',
+            'uri': 'spotify:artist:2D7akgJBXcsp8Y2FKdPJCh',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 163944,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/23DvufvHJAr0OUPfrB7g2J',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/23DvufvHJAr0OUPfrB7g2J',
+        'is_local': False,
+        'name': 'All I Need',
+        'track_id': '23DvufvHJAr0OUPfrB7g2J',
+        'track_number': 2,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:23DvufvHJAr0OUPfrB7g2J',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 46, 4, 386000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '1BuWrjAiFiHMHtCYHuUIKM',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '6zsJjoCtL1WByG0VsuFWzR',
+              'name': 'BLOND:ISH',
+              'uri': 'spotify:artist:6zsJjoCtL1WByG0VsuFWzR',
+            }),
+            dict({
+              'artist_id': '5qMHOzLlXeOEjOncWYtRfZ',
+              'name': 'Stevie Appleton',
+              'uri': 'spotify:artist:5qMHOzLlXeOEjOncWYtRfZ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2736d31b666cc828a16d3d54612',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e026d31b666cc828a16d3d54612',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048516d31b666cc828a16d3d54612',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Never Walk Alone',
+          'release_date': '2024-08-02',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:1BuWrjAiFiHMHtCYHuUIKM',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6zsJjoCtL1WByG0VsuFWzR',
+            'name': 'BLOND:ISH',
+            'uri': 'spotify:artist:6zsJjoCtL1WByG0VsuFWzR',
+          }),
+          dict({
+            'artist_id': '5qMHOzLlXeOEjOncWYtRfZ',
+            'name': 'Stevie Appleton',
+            'uri': 'spotify:artist:5qMHOzLlXeOEjOncWYtRfZ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 188360,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/4HB7ECLzrbgapiZyLlFbxz',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/4HB7ECLzrbgapiZyLlFbxz',
+        'is_local': False,
+        'name': 'Never Walk Alone',
+        'track_id': '4HB7ECLzrbgapiZyLlFbxz',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:4HB7ECLzrbgapiZyLlFbxz',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 42, 56, 29000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '5sGYMMmqW6bcKWdmC7Jd2S',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '2kLa7JZu4Ijdz1Gle2khZh',
+              'name': 'TSHA',
+              'uri': 'spotify:artist:2kLa7JZu4Ijdz1Gle2khZh',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27307906cf33511dbe1b58f4872',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0207906cf33511dbe1b58f4872',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485107906cf33511dbe1b58f4872',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Sad Girl',
+          'release_date': '2024-09-27',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:5sGYMMmqW6bcKWdmC7Jd2S',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '2kLa7JZu4Ijdz1Gle2khZh',
+            'name': 'TSHA',
+            'uri': 'spotify:artist:2kLa7JZu4Ijdz1Gle2khZh',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 224606,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3Xz2ZcQlQRA7rqbj7tYsL3',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3Xz2ZcQlQRA7rqbj7tYsL3',
+        'is_local': False,
+        'name': 'In The Night',
+        'track_id': '3Xz2ZcQlQRA7rqbj7tYsL3',
+        'track_number': 3,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3Xz2ZcQlQRA7rqbj7tYsL3',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 39, 11, 454000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '4nXpTQXjFGtB5n3vC76IBR',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '5PlfkPxwCpRRWQJBxCa0By',
+              'name': 'HUGEL',
+              'uri': 'spotify:artist:5PlfkPxwCpRRWQJBxCa0By',
+            }),
+            dict({
+              'artist_id': '5fMUXHkw8R8eOP2RNVYEZX',
+              'name': 'Diplo',
+              'uri': 'spotify:artist:5fMUXHkw8R8eOP2RNVYEZX',
+            }),
+            dict({
+              'artist_id': '5mU7ohKXRejACFS8eZIixp',
+              'name': 'Malou',
+              'uri': 'spotify:artist:5mU7ohKXRejACFS8eZIixp',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27388e0a2ae3b138aad267aae2b',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0288e0a2ae3b138aad267aae2b',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485188e0a2ae3b138aad267aae2b',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Forever (feat. Malou & Yuna)',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:4nXpTQXjFGtB5n3vC76IBR',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '5PlfkPxwCpRRWQJBxCa0By',
+            'name': 'HUGEL',
+            'uri': 'spotify:artist:5PlfkPxwCpRRWQJBxCa0By',
+          }),
+          dict({
+            'artist_id': '5fMUXHkw8R8eOP2RNVYEZX',
+            'name': 'Diplo',
+            'uri': 'spotify:artist:5fMUXHkw8R8eOP2RNVYEZX',
+          }),
+          dict({
+            'artist_id': '5mU7ohKXRejACFS8eZIixp',
+            'name': 'Malou',
+            'uri': 'spotify:artist:5mU7ohKXRejACFS8eZIixp',
+          }),
+          dict({
+            'artist_id': '3kHVioJpVxlazAAKQ64pC1',
+            'name': 'Yuna',
+            'uri': 'spotify:artist:3kHVioJpVxlazAAKQ64pC1',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 140500,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/0WS1qLcXKsCGt5e3dqq30S',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/0WS1qLcXKsCGt5e3dqq30S',
+        'is_local': False,
+        'name': 'Forever (feat. Malou & Yuna)',
+        'track_id': '0WS1qLcXKsCGt5e3dqq30S',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:0WS1qLcXKsCGt5e3dqq30S',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 36, 50, 942000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '1xL7LvJtJlAjWPrtA7Aj0v',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '0nnF48t4C8uqGS5HPnCN3F',
+              'name': '49th & Main',
+              'uri': 'spotify:artist:0nnF48t4C8uqGS5HPnCN3F',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2737be6c8bdc25b79bf8d95f0f0',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e027be6c8bdc25b79bf8d95f0f0',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048517be6c8bdc25b79bf8d95f0f0',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Self Sabotage',
+          'release_date': '2024-03-28',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:1xL7LvJtJlAjWPrtA7Aj0v',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '0nnF48t4C8uqGS5HPnCN3F',
+            'name': '49th & Main',
+            'uri': 'spotify:artist:0nnF48t4C8uqGS5HPnCN3F',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 145074,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/7yYur6YhUetXZj6b2CnWrE',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/7yYur6YhUetXZj6b2CnWrE',
+        'is_local': False,
+        'name': 'Self Sabotage',
+        'track_id': '7yYur6YhUetXZj6b2CnWrE',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:7yYur6YhUetXZj6b2CnWrE',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 34, 25, 873000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '3UT1EXRpoX808v8dtCz172',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '0vTVU0KH0CVzijsoKGsTPl',
+              'name': "Barry Can't Swim",
+              'uri': 'spotify:artist:0vTVU0KH0CVzijsoKGsTPl',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2730d8d33cfa46fce3e1bbf66e4',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e020d8d33cfa46fce3e1bbf66e4',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048510d8d33cfa46fce3e1bbf66e4',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Still Riding',
+          'release_date': '2024-09-24',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 3,
+          'uri': 'spotify:album:3UT1EXRpoX808v8dtCz172',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '0vTVU0KH0CVzijsoKGsTPl',
+            'name': "Barry Can't Swim",
+            'uri': 'spotify:artist:0vTVU0KH0CVzijsoKGsTPl',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 219152,
+        'explicit': True,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/1DQYCwZG5DOXXSTXluYQam',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/1DQYCwZG5DOXXSTXluYQam',
+        'is_local': False,
+        'name': 'Still Riding',
+        'track_id': '1DQYCwZG5DOXXSTXluYQam',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:1DQYCwZG5DOXXSTXluYQam',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 30, 46, 715000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+          dict({
+            'artist_id': '2Q4FR4Ss0mh6EvbiQBHEOU',
+            'name': 'Oona Doherty',
+            'uri': 'spotify:artist:2Q4FR4Ss0mh6EvbiQBHEOU',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 337414,
+        'explicit': True,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/08Jhu8OZ6gCIGWQn6vP3uI',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/08Jhu8OZ6gCIGWQn6vP3uI',
+        'is_local': False,
+        'name': 'Falling Together',
+        'track_id': '08Jhu8OZ6gCIGWQn6vP3uI',
+        'track_number': 12,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:08Jhu8OZ6gCIGWQn6vP3uI',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 25, 10, 544000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 71680,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/1wpcJ6TCrKpH6KdBmrp9yN',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/1wpcJ6TCrKpH6KdBmrp9yN',
+        'is_local': False,
+        'name': 'Every Single Weekend - Interlude',
+        'track_id': '1wpcJ6TCrKpH6KdBmrp9yN',
+        'track_number': 11,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:1wpcJ6TCrKpH6KdBmrp9yN',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 23, 57, 950000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+          dict({
+            'artist_id': '3C8RpaI3Go0yFF9whvKoED',
+            'name': 'The Avalanches',
+            'uri': 'spotify:artist:3C8RpaI3Go0yFF9whvKoED',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 254142,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3cfgisz6DhZmooQk08P4Eu',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3cfgisz6DhZmooQk08P4Eu',
+        'is_local': False,
+        'name': 'All You Children',
+        'track_id': '3cfgisz6DhZmooQk08P4Eu',
+        'track_number': 10,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3cfgisz6DhZmooQk08P4Eu',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 19, 43, 477000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 376918,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/6pOzbdJKEr4hvXkX7VkfY6',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/6pOzbdJKEr4hvXkX7VkfY6',
+        'is_local': False,
+        'name': 'Breather',
+        'track_id': '6pOzbdJKEr4hvXkX7VkfY6',
+        'track_number': 9,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:6pOzbdJKEr4hvXkX7VkfY6',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 13, 26, 609000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 222365,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/7gb0pekqHQYTGo6NWLBvT5',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/7gb0pekqHQYTGo6NWLBvT5',
+        'is_local': False,
+        'name': 'The Feeling I Get From You',
+        'track_id': '7gb0pekqHQYTGo6NWLBvT5',
+        'track_number': 8,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:7gb0pekqHQYTGo6NWLBvT5',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 9, 44, 240000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+          dict({
+            'artist_id': '6UE7nl9mha6s8z0wFQFIZ2',
+            'name': 'Robyn',
+            'uri': 'spotify:artist:6UE7nl9mha6s8z0wFQFIZ2',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 202648,
+        'explicit': True,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/0pMj03SiaZ9bkFlXQWNhtZ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/0pMj03SiaZ9bkFlXQWNhtZ',
+        'is_local': False,
+        'name': 'Life',
+        'track_id': '0pMj03SiaZ9bkFlXQWNhtZ',
+        'track_number': 7,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:0pMj03SiaZ9bkFlXQWNhtZ',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 6, 21, 659000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 205638,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/27D9YN3uHPD3PTXvzNtbto',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/27D9YN3uHPD3PTXvzNtbto',
+        'is_local': False,
+        'name': 'Still Summer',
+        'track_id': '27D9YN3uHPD3PTXvzNtbto',
+        'track_number': 6,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:27D9YN3uHPD3PTXvzNtbto',
+      }),
+    }),
+    dict({
+      'context': dict({
+        'context_type': <ContextType.ALBUM: 'album'>,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
+        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+      }),
+      'played_at': datetime.datetime(2024, 10, 6, 17, 2, 56, 22000, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '57MSBg5pBQZH5bfLVDmeuP',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733126a95bb7ed4146a80c7fc6',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023126a95bb7ed4146a80c7fc6',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513126a95bb7ed4146a80c7fc6',
+              'width': 64,
+            }),
+          ]),
+          'name': 'In Waves',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+          dict({
+            'artist_id': '0fEfMW5bypHZ0A8eLnhwj5',
+            'name': 'Kelsey Lu',
+            'uri': 'spotify:artist:0fEfMW5bypHZ0A8eLnhwj5',
+          }),
+          dict({
+            'artist_id': '0FNfiTQCR5o3ounOlWzm1d',
+            'name': 'John Glacier',
+            'uri': 'spotify:artist:0FNfiTQCR5o3ounOlWzm1d',
+          }),
+          dict({
+            'artist_id': '1R84VlXnFFULOsWWV8IrCQ',
+            'name': 'Panda Bear',
+            'uri': 'spotify:artist:1R84VlXnFFULOsWWV8IrCQ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 212339,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/1gRMKwvMvp6LcQVMpMXQg2',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/1gRMKwvMvp6LcQVMpMXQg2',
+        'is_local': False,
+        'name': 'Dafodil',
+        'track_id': '1gRMKwvMvp6LcQVMpMXQg2',
+        'track_number': 5,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:1gRMKwvMvp6LcQVMpMXQg2',
+      }),
+    }),
+  ])
+# ---
 # name: test_get_saved_albums
   list([
     dict({

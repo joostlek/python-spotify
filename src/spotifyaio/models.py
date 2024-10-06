@@ -185,6 +185,22 @@ class SavedTrackResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class PlayedTrackResponse(DataClassORJSONMixin):
+    """PlayedTrack response model."""
+
+    items: list[PlayedTrack]
+
+
+@dataclass
+class PlayedTrack(DataClassORJSONMixin):
+    """Played track model."""
+
+    played_at: datetime
+    track: Track
+    context: Context
+
+
+@dataclass
 class ArtistResponse(DataClassORJSONMixin):
     """Artist response model."""
 
