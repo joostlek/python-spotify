@@ -41,7 +41,6 @@ from spotifyaio.models import (
     SavedTrackResponse,
     Show,
     ShowEpisodesResponse,
-    SimplifiedArtist,
     SimplifiedEpisode,
     TopArtistsResponse,
     TopTracksResponse,
@@ -285,7 +284,7 @@ class SpotifyClient:
         response = await self._get("v1/me/playlists", params=params)
         return PlaylistResponse.from_json(response).items
 
-    async def get_followed_artists(self) -> list[SimplifiedArtist]:
+    async def get_followed_artists(self) -> list[Artist]:
         """Get followed artists."""
         params: dict[str, Any] = {"limit": 48, "type": "artist"}
         response = await self._get("v1/me/following", params=params)
