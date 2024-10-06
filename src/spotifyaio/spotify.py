@@ -257,7 +257,7 @@ class SpotifyClient:
         """Get followed artists."""
         params: dict[str, Any] = {"limit": 48, "type": "artist"}
         response = await self._get("v1/me/following", params=params)
-        return ArtistResponse.from_json(response).artists
+        return ArtistResponse.from_json(response).artists.items
 
     async def get_featured_playlists(self) -> list[BasePlaylist]:
         """Get featured playlists."""

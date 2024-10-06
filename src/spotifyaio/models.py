@@ -142,18 +142,19 @@ class Album(SimplifiedAlbum):
 class ArtistResponse(DataClassORJSONMixin):
     """Artist response model."""
 
-    artists: list[SimplifiedArtist] = field(
-        metadata=field_options(serialization_strategy=ItemsSerializationStrategy())
-    )
+    artists: ArtistResponseItem
 
 
 @dataclass
-class Artist(DataClassORJSONMixin):
-    """Artist model."""
+class ArtistResponseItem(DataClassORJSONMixin):
+    """Artist response model."""
 
-    artist_id: str = field(metadata=field_options(alias="id"))
-    name: str
-    uri: str
+    items: list[SimplifiedArtist]
+
+
+@dataclass
+class Artist(SimplifiedArtist):
+    """Artist model."""
 
 
 @dataclass
