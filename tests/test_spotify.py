@@ -756,7 +756,7 @@ async def test_get_episode(
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
-    """Test retrieving user."""
+    """Test retrieving episode."""
     responses.get(
         f"{SPOTIFY_URL}/v1/episodes/3o0RYoo5iOMKSmEbunsbvW",
         status=200,
@@ -766,6 +766,28 @@ async def test_get_episode(
     assert response == snapshot
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/episodes/3o0RYoo5iOMKSmEbunsbvW",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
+
+
+async def test_get_show(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving show."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/shows/1Y9ExMgMxoBVrgrfU7u0nD",
+        status=200,
+        body=load_fixture("show.json"),
+    )
+    response = await authenticated_client.get_show("1Y9ExMgMxoBVrgrfU7u0nD")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/shows/1Y9ExMgMxoBVrgrfU7u0nD",
         METH_GET,
         headers=HEADERS,
         params=None,

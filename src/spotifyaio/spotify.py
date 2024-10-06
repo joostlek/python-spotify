@@ -26,6 +26,7 @@ from spotifyaio.models import (
     Playlist,
     PlaylistResponse,
     RepeatMode,
+    Show,
     UserProfile,
 )
 
@@ -261,6 +262,12 @@ class SpotifyClient:
         identifier = episode_id.split(":")[-1]
         response = await self._get(f"v1/episodes/{identifier}")
         return Episode.from_json(response)
+
+    async def get_show(self, show_id: str) -> Show:
+        """Get show."""
+        identifier = show_id.split(":")[-1]
+        response = await self._get(f"v1/shows/{identifier}")
+        return Show.from_json(response)
 
     async def get_current_user(self) -> UserProfile:
         """Get current user."""
