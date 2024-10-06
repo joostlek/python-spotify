@@ -40,7 +40,9 @@ from spotifyaio.models import (
     SavedTrack,
     SavedTrackResponse,
     Show,
+    ShowEpisodesResponse,
     SimplifiedArtist,
+    SimplifiedEpisode,
     TopArtistsResponse,
     TopTracksResponse,
     UserProfile,
@@ -317,6 +319,13 @@ class SpotifyClient:
         params: dict[str, Any] = {"limit": 48}
         response = await self._get("v1/me/shows", params=params)
         return SavedShowResponse.from_json(response).items
+
+    async def get_show_episodes(self, show_id: str) -> list[SimplifiedEpisode]:
+        """Get show episodes."""
+        identifier = show_id.split(":")[-1]
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get(f"v1/shows/{identifier}/episodes", params=params)
+        return ShowEpisodesResponse.from_json(response).items
 
     async def get_recently_played_tracks(self) -> list[PlayedTrack]:
         """Get recently played tracks."""
