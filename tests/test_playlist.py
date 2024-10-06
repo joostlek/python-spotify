@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING
 
 from aiohttp.hdrs import METH_GET
 from aioresponses import aioresponses
+import pytest
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
@@ -28,6 +29,35 @@ async def test_get_playlist(
     )
     response = await authenticated_client.get_playlist("37i9dQZF1DXcBWIGoYBM5M")
     assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
+
+
+@pytest.mark.parametrize(
+    "playlist_id",
+    [
+        "37i9dQZF1DXcBWIGoYBM5M",
+        "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M",
+        "spotify:user:chilledcow:playlist:37i9dQZF1DXcBWIGoYBM5M",
+    ],
+)
+async def test_get_playlist_variation(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    playlist_id: str,
+) -> None:
+    """Test retrieving playlist with different inputs."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        status=200,
+        body=load_fixture("playlist.json"),
+    )
+    await authenticated_client.get_playlist(playlist_id)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
         METH_GET,
