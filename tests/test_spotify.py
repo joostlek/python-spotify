@@ -1026,3 +1026,25 @@ async def test_get_category(
         params=None,
         data=None,
     )
+
+
+async def test_get_artist(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving an artist."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg",
+        status=200,
+        body=load_fixture("artist.json"),
+    )
+    response = await authenticated_client.get_artist("0TnOYISbd1XYRBk9myaseg")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )

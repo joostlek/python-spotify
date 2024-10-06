@@ -14,6 +14,7 @@ from yarl import URL
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
 from spotifyaio.models import (
     Album,
+    Artist,
     ArtistResponse,
     BasePlaylist,
     BaseUserProfile,
@@ -45,7 +46,7 @@ from spotifyaio.models import (
 )
 
 if TYPE_CHECKING:
-    from spotifyaio import Artist, SimplifiedAlbum, Track
+    from spotifyaio import SimplifiedAlbum, Track
 
 
 @dataclass
@@ -147,6 +148,12 @@ class SpotifyClient:
         """Get album."""
         response = await self._get(f"v1/albums/{album_id}")
         return Album.from_json(response)
+
+    async def get_artist(self, artist_id: str) -> Artist:
+        """Get artist."""
+        identifier = artist_id.split(":")[-1]
+        response = await self._get(f"v1/artists/{identifier}")
+        return Artist.from_json(response)
 
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""

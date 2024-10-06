@@ -366,6 +366,13 @@
     'uri': 'spotify:album:3IqzqH6ShrRtie9Yd2ODyG',
   })
 # ---
+# name: test_get_artist
+  dict({
+    'artist_id': '0TnOYISbd1XYRBk9myaseg',
+    'name': 'Pitbull',
+    'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+  })
+# ---
 # name: test_get_category
   dict({
     'category_id': '0JQ5DAqbMKFRY5ok2pxXJ0',
