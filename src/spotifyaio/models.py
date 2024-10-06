@@ -242,12 +242,14 @@ class ArtistResponse(DataClassORJSONMixin):
 class ArtistResponseItem(DataClassORJSONMixin):
     """Artist response model."""
 
-    items: list[SimplifiedArtist]
+    items: list[Artist]
 
 
 @dataclass
 class Artist(SimplifiedArtist):
     """Artist model."""
+
+    images: list[Image]
 
 
 @dataclass
@@ -269,7 +271,7 @@ class SimplifiedTrack(DataClassORJSONMixin):
     """SimplifiedTrack model."""
 
     track_id: str = field(metadata=field_options(alias="id"))
-    artists: list[Artist]
+    artists: list[SimplifiedArtist]
     disc_number: int
     duration_ms: int
     explicit: bool
