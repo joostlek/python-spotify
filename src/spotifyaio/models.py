@@ -12,6 +12,18 @@ from mashumaro.mixins.orjson import DataClassORJSONMixin
 from mashumaro.types import Discriminator, SerializationStrategy
 
 
+class LowercaseAlbumTypeSerializationStrategy(SerializationStrategy):
+    """Serialization strategy for objects encapsulated in items."""
+
+    def serialize(self, value: AlbumType) -> str:
+        """Serialize optional string."""
+        return value
+
+    def deserialize(self, value: str) -> AlbumType:
+        """Deserialize optional string."""
+        return AlbumType(value.lower())
+
+
 class DeviceType(StrEnum):
     """Device type."""
 
@@ -73,6 +85,7 @@ class AlbumType(StrEnum):
     """Album type."""
 
     ALBUM = "album"
+    EP = "ep"
     SINGLE = "single"
     COMPILATION = "compilation"
 
@@ -119,7 +132,11 @@ class ItemsSerializationStrategy(SerializationStrategy):
 class SimplifiedAlbum(DataClassORJSONMixin):
     """Album model."""
 
-    album_type: AlbumType
+    album_type: AlbumType = field(
+        metadata=field_options(
+            serialization_strategy=LowercaseAlbumTypeSerializationStrategy()
+        )
+    )
     total_tracks: int
     album_id: str = field(metadata=field_options(alias="id"))
     images: list[Image]
@@ -217,6 +234,20 @@ class ArtistResponseItem(DataClassORJSONMixin):
 @dataclass
 class Artist(SimplifiedArtist):
     """Artist model."""
+
+
+@dataclass
+class TopArtistsResponse(DataClassORJSONMixin):
+    """Top artists response model."""
+
+    items: list[Artist]
+
+
+@dataclass
+class TopTracksResponse(DataClassORJSONMixin):
+    """Top tracks response model."""
+
+    items: list[Track]
 
 
 @dataclass
