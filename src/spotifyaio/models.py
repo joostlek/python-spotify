@@ -155,6 +155,21 @@ class SavedAlbumResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class SavedShow(DataClassORJSONMixin):
+    """Saved Show model."""
+
+    added_at: datetime
+    show: SimplifiedShow
+
+
+@dataclass
+class SavedShowResponse(DataClassORJSONMixin):
+    """SavedShow response model."""
+
+    items: list[SavedShow]
+
+
+@dataclass
 class SavedTrack(DataClassORJSONMixin):
     """Saved track model."""
 

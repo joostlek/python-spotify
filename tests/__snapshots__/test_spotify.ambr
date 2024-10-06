@@ -35641,6 +35641,330 @@
     }),
   ])
 # ---
+# name: test_get_saved_shows
+  list([
+    dict({
+      'added_at': datetime.datetime(2023, 8, 10, 8, 17, 9, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'We’ll all giggle along at naughty jokes, your dating horror stories and give questionable recommendations on movies, food and relationships. This podcast is hot, fun garbage and we (Toni Lodge and Ryan Jon here in Melbourne, Australia) would love you to climb aboard and be our friends. Hosted on Acast. See acast.com/privacy for more information.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/5OzkclFjD6iAjtAuo7aIYt',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/5OzkclFjD6iAjtAuo7aIYt',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68db5f65a943ef4f707bf79949b',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fb5f65a943ef4f707bf79949b',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8ab5f65a943ef4f707bf79949b',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Toni and Ryan',
+        'publisher': 'Toni Lodge and Ryan Jon',
+        'show_id': '5OzkclFjD6iAjtAuo7aIYt',
+        'total_episodes': 741,
+        'uri': 'spotify:show:5OzkclFjD6iAjtAuo7aIYt',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2022, 9, 15, 23, 48, 23, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'Welcome to BLAST Push To Talk, Counter-Strike like you’ve never heard it before.Join our host Moses and our field reporters Scrawny and Launders as they interview pro players, share their hot takes on the latest and greatest news in the CS world courtesy of EPOS.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/6XYRres0KZtnTqKcLavWR2',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/6XYRres0KZtnTqKcLavWR2',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68d5fccb05c5685c081d5c2ad9c',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1f5fccb05c5685c081d5c2ad9c',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8a5fccb05c5685c081d5c2ad9c',
+            'width': 640,
+          }),
+        ]),
+        'name': 'BLAST Push To Talk',
+        'publisher': 'BLAST Premier',
+        'show_id': '6XYRres0KZtnTqKcLavWR2',
+        'total_episodes': 19,
+        'uri': 'spotify:show:6XYRres0KZtnTqKcLavWR2',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2022, 8, 14, 11, 59, 6, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': "In the top 0.5% of podcasts globally and the most popular Fallout podcast, this series fills in all the details about the Fallout world beginning with the Great War in 2077 and progressing through major world events, factions, creatures, technology, and each vault. We'll explore what we know, and speculate about what might be. This show begins as a solo production, detailing specific topics, and grows into so much more. Get awesome rewards & support the show: patreon.com/falloutlorecast Watch live at youtube.com/c/robotsradio Advertise with us & business inquiries: robotsnetwork@gmail.comSponsored by:Unknown 9: Awakening releases on October 18, 2024 for PS4, PS5, Xbox One, Xbox Series X and S, and PC. Pre-order your copy today and learn more about the Unknown 9 universe at\xa0unknown9.com/{YOUR SHOW CODE}.",
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/0e30iIgSffe6xJhFKe35Db',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/0e30iIgSffe6xJhFKe35Db',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68d16322099db1ec89c2f6107b2',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1f16322099db1ec89c2f6107b2',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8a16322099db1ec89c2f6107b2',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Fallout Lorecast - The Fallout Video Game & TV Lore Podcast',
+        'publisher': 'Robots Radio',
+        'show_id': '0e30iIgSffe6xJhFKe35Db',
+        'total_episodes': 323,
+        'uri': 'spotify:show:0e30iIgSffe6xJhFKe35Db',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2021, 3, 7, 14, 12, 29, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'This is the official Taskmaster podcast, hosted by former champion and chickpea lover, Ed Gamble. Each week, released straight after the show is broadcast on Channel 4, Ed will be joined by a special guest to dissect and discuss the latest episode. Past contestants, little Alex Horne, and even the Taskmaster himself will feature in this brand-new podcast from the producers of the BAFTA-winning comedy show.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/4BZc9sOdNilJJ8irsuOzdg',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/4BZc9sOdNilJJ8irsuOzdg',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68d940dfd502920d407436baca2',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1f940dfd502920d407436baca2',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8a940dfd502920d407436baca2',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Taskmaster The Podcast',
+        'publisher': 'Avalon ',
+        'show_id': '4BZc9sOdNilJJ8irsuOzdg',
+        'total_episodes': 181,
+        'uri': 'spotify:show:4BZc9sOdNilJJ8irsuOzdg',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2021, 3, 6, 0, 14, 9, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': "Comedians Ed Gamble and James Acaster invite special guests into their magical restaurant to each choose their favourite starter, main course, side dish, dessert and drink. Ever wanted to eat your dream meal? It's time to order Off Menu. Hosted on Acast. See acast.com/privacy for more information.",
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/0azMejb7zrmAqctVsUSAdq',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/0azMejb7zrmAqctVsUSAdq',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68d35641b80c9d83f6717c2452c',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1f35641b80c9d83f6717c2452c',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8a35641b80c9d83f6717c2452c',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Off Menu with Ed Gamble and James Acaster',
+        'publisher': 'Plosive',
+        'show_id': '0azMejb7zrmAqctVsUSAdq',
+        'total_episodes': 298,
+        'uri': 'spotify:show:0azMejb7zrmAqctVsUSAdq',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2021, 3, 6, 0, 13, 55, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'Ed & Matthew (aka Crunch & Crumble) are bringing top quality comedy to your Sunday mornings (8am - 11am). Tune in for film reviews, sports news, phone-ins, excuses, puns, quizzes, facts about catfish, and an education in heavy metal. No, really. It’s like a proper weekend breakfast show, but presented by two comedians with relatively little radio experience. But it’s better than it sounds.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/4CNsZjGkK371UAnyQgX9jV',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/4CNsZjGkK371UAnyQgX9jV',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68d2a9c9d9ffd893edf7a43c758',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1f2a9c9d9ffd893edf7a43c758',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8a2a9c9d9ffd893edf7a43c758',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Ed Gamble & Matthew Crosby on Radio X',
+        'publisher': 'Global',
+        'show_id': '4CNsZjGkK371UAnyQgX9jV',
+        'total_episodes': 286,
+        'uri': 'spotify:show:4CNsZjGkK371UAnyQgX9jV',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2020, 12, 29, 1, 21, 38, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': "We're your new best friends. In our weekly podcast we dive into female friendships, current events, and what's going on in our lives. Come sit with us, and enjoy!",
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/6xglolTDhKYA8OKyM8IgZQ',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/6xglolTDhKYA8OKyM8IgZQ',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68db30e55906de336b15c499308',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fb30e55906de336b15c499308',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8ab30e55906de336b15c499308',
+            'width': 640,
+          }),
+        ]),
+        'name': 'You Can Sit With Us',
+        'publisher': 'The Try Guys & Ramble',
+        'show_id': '6xglolTDhKYA8OKyM8IgZQ',
+        'total_episodes': 222,
+        'uri': 'spotify:show:6xglolTDhKYA8OKyM8IgZQ',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2020, 12, 29, 1, 21, 21, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'The Try Guys have swam with sharks, survived in the wild, shocked themselves with birthing simulators, and risked their lives for their videos. In this weekly podcast they dissect their experiences as internet creators and best friends who have made a living failing upwards.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/3qCNuzujMoeNsMHp8c79dJ',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/3qCNuzujMoeNsMHp8c79dJ',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68de7770dd365b1590f761809fe',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fe7770dd365b1590f761809fe',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8ae7770dd365b1590f761809fe',
+            'width': 640,
+          }),
+        ]),
+        'name': 'The TryPod',
+        'publisher': 'The Try Guys & Ramble',
+        'show_id': '3qCNuzujMoeNsMHp8c79dJ',
+        'total_episodes': 287,
+        'uri': 'spotify:show:3qCNuzujMoeNsMHp8c79dJ',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2020, 11, 6, 13, 38, 49, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'The Office co-stars and best friends, Jenna Fischer and Angela Kinsey, are doing the ultimate The Office re-watch podcast for you. Each week Jenna and Angela will break down an episode of The Office and give exclusive behind the scene stories that only two people who were there, can tell you.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/3OHCFs84lqizjkL4C9bNTA',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/3OHCFs84lqizjkL4C9bNTA',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68db227bbd2d93a8882a8ebb1b0',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fb227bbd2d93a8882a8ebb1b0',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8ab227bbd2d93a8882a8ebb1b0',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Office Ladies',
+        'publisher': 'Audacy & Jenna Fischer and Angela Kinsey',
+        'show_id': '3OHCFs84lqizjkL4C9bNTA',
+        'total_episodes': 264,
+        'uri': 'spotify:show:3OHCFs84lqizjkL4C9bNTA',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2020, 8, 20, 6, 52, 51, tzinfo=datetime.timezone.utc),
+      'show': dict({
+        'description': 'Welkom bij Wat een week, de podcast van Maxim Hartman en Willem Treur. Hier posten we iedere donderdag een nieuwe aflevering, om je te helpen om het nieuws van afgelopen week te verteren, zonder er aan onderdoor te gaan. In samenwerking met Dag en Nacht Media.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/6AeemTu3AwFDGkM50OtnbI',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/6AeemTu3AwFDGkM50OtnbI',
+        'images': list([
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68db94dc44503877dcac0a5df9f',
+            'width': 64,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fb94dc44503877dcac0a5df9f',
+            'width': 300,
+          }),
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8ab94dc44503877dcac0a5df9f',
+            'width': 640,
+          }),
+        ]),
+        'name': 'Wat een week!',
+        'publisher': 'Maxim Hartman & Willem Treur',
+        'show_id': '6AeemTu3AwFDGkM50OtnbI',
+        'total_episodes': 404,
+        'uri': 'spotify:show:6AeemTu3AwFDGkM50OtnbI',
+      }),
+    }),
+  ])
+# ---
 # name: test_get_saved_tracks
   list([
     dict({
