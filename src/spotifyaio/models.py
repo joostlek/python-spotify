@@ -282,3 +282,35 @@ class UserProfile(BaseUserProfile):
 
     email: str
     product: ProductType
+
+
+@dataclass
+class Show(DataClassORJSONMixin):
+    """Show model."""
+
+    show_id: str = field(metadata=field_options(alias="id"))
+    name: str
+    uri: str
+    images: list[Image]
+    external_urls: dict[str, str]
+    href: str
+    publisher: str
+    description: str
+
+
+@dataclass
+class Episode(DataClassORJSONMixin):
+    """Episode model."""
+
+    episode_id: str = field(metadata=field_options(alias="id"))
+    name: str
+    uri: str
+    images: list[Image]
+    external_urls: dict[str, str]
+    href: str
+    duration_ms: int
+    explicit: bool
+    release_date: str
+    release_date_precision: ReleaseDatePrecision
+    description: str
+    show: Show

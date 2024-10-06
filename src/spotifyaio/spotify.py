@@ -20,6 +20,7 @@ from spotifyaio.models import (
     CurrentPlaying,
     Device,
     Devices,
+    Episode,
     FeaturedPlaylistResponse,
     PlaybackState,
     Playlist,
@@ -254,6 +255,12 @@ class SpotifyClient:
             params=params,
         )
         return CategoryPlaylistResponse.from_json(response).playlists.items
+
+    async def get_episode(self, episode_id: str) -> Episode:
+        """Get episode."""
+        identifier = episode_id.split(":")[-1]
+        response = await self._get(f"v1/episodes/{identifier}")
+        return Episode.from_json(response)
 
     async def get_current_user(self) -> UserProfile:
         """Get current user."""
