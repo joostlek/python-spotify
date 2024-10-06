@@ -35641,6 +35641,1310 @@
     }),
   ])
 # ---
+# name: test_get_saved_tracks
+  list([
+    dict({
+      'added_at': datetime.datetime(2024, 10, 6, 11, 35, 2, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '3BYf1IG8EqDbhzdpljcFWY',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+              'name': 'Maribou State',
+              'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+            }),
+            dict({
+              'artist_id': '5vssQp6TyMHsx4mihKVAsC',
+              'name': 'Holly Walker',
+              'uri': 'spotify:artist:5vssQp6TyMHsx4mihKVAsC',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273ac9dd449e38e5e8952fd22ad',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02ac9dd449e38e5e8952fd22ad',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851ac9dd449e38e5e8952fd22ad',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Otherside',
+          'release_date': '2024-10-02',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 2,
+          'uri': 'spotify:album:3BYf1IG8EqDbhzdpljcFWY',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+            'name': 'Maribou State',
+            'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+          }),
+          dict({
+            'artist_id': '5vssQp6TyMHsx4mihKVAsC',
+            'name': 'Holly Walker',
+            'uri': 'spotify:artist:5vssQp6TyMHsx4mihKVAsC',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 233211,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/2pj2A25YQK4uMxhZheNx7R',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/2pj2A25YQK4uMxhZheNx7R',
+        'is_local': False,
+        'name': 'Otherside',
+        'track_id': '2pj2A25YQK4uMxhZheNx7R',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:2pj2A25YQK4uMxhZheNx7R',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 10, 6, 7, 37, 53, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '1ElP3WFqq5sgMcc3ScIR4l',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '0HHa7ZJZxUQlg5l2mB0N0f',
+              'name': 'Marlon Hoffstadt',
+              'uri': 'spotify:artist:0HHa7ZJZxUQlg5l2mB0N0f',
+            }),
+            dict({
+              'artist_id': '68sTQgQtPe9e4Bb7OtoqET',
+              'name': 'Crybaby',
+              'uri': 'spotify:artist:68sTQgQtPe9e4Bb7OtoqET',
+            }),
+            dict({
+              'artist_id': '4lBSzo2LS8asEzoePv6VLM',
+              'name': 'DJ Daddy Trance',
+              'uri': 'spotify:artist:4lBSzo2LS8asEzoePv6VLM',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2733d710ab088ff797e80cc5aed',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e023d710ab088ff797e80cc5aed',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048513d710ab088ff797e80cc5aed',
+              'width': 64,
+            }),
+          ]),
+          'name': 'I Think I Need A DJ',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:1ElP3WFqq5sgMcc3ScIR4l',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '0HHa7ZJZxUQlg5l2mB0N0f',
+            'name': 'Marlon Hoffstadt',
+            'uri': 'spotify:artist:0HHa7ZJZxUQlg5l2mB0N0f',
+          }),
+          dict({
+            'artist_id': '68sTQgQtPe9e4Bb7OtoqET',
+            'name': 'Crybaby',
+            'uri': 'spotify:artist:68sTQgQtPe9e4Bb7OtoqET',
+          }),
+          dict({
+            'artist_id': '4lBSzo2LS8asEzoePv6VLM',
+            'name': 'DJ Daddy Trance',
+            'uri': 'spotify:artist:4lBSzo2LS8asEzoePv6VLM',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 155000,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/2lKOI1nwP5qZtZC7TGQVY8',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/2lKOI1nwP5qZtZC7TGQVY8',
+        'is_local': False,
+        'name': 'I Think I Need A DJ',
+        'track_id': '2lKOI1nwP5qZtZC7TGQVY8',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:2lKOI1nwP5qZtZC7TGQVY8',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 10, 6, 7, 14, 7, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '5aKEa6uPolubhdjPpBujA4',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '0EdUwJSqkMmsH6Agg3G8Ls',
+              'name': 'Marten Hørger',
+              'uri': 'spotify:artist:0EdUwJSqkMmsH6Agg3G8Ls',
+            }),
+            dict({
+              'artist_id': '2nm38smINjms1LtczR0Cei',
+              'name': 'Goodboys',
+              'uri': 'spotify:artist:2nm38smINjms1LtczR0Cei',
+            }),
+            dict({
+              'artist_id': '4STmXOXUF3UieHU46NWLVt',
+              'name': 'Poppy Baskcomb',
+              'uri': 'spotify:artist:4STmXOXUF3UieHU46NWLVt',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273ab8c14282c2b7335f647f714',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02ab8c14282c2b7335f647f714',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851ab8c14282c2b7335f647f714',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Keep On Pushing',
+          'release_date': '2024-10-04',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:5aKEa6uPolubhdjPpBujA4',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '0EdUwJSqkMmsH6Agg3G8Ls',
+            'name': 'Marten Hørger',
+            'uri': 'spotify:artist:0EdUwJSqkMmsH6Agg3G8Ls',
+          }),
+          dict({
+            'artist_id': '2nm38smINjms1LtczR0Cei',
+            'name': 'Goodboys',
+            'uri': 'spotify:artist:2nm38smINjms1LtczR0Cei',
+          }),
+          dict({
+            'artist_id': '4STmXOXUF3UieHU46NWLVt',
+            'name': 'Poppy Baskcomb',
+            'uri': 'spotify:artist:4STmXOXUF3UieHU46NWLVt',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 191818,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3hxESOoUq0tc9NrI3yfKaE',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3hxESOoUq0tc9NrI3yfKaE',
+        'is_local': False,
+        'name': 'Keep On Pushing',
+        'track_id': '3hxESOoUq0tc9NrI3yfKaE',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3hxESOoUq0tc9NrI3yfKaE',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 10, 5, 12, 38, 37, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '1fIhC9q6hrlU3TUIKcUEVD',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '17IDrizGUiveZm4P77Kkio',
+              'name': 'Icarus',
+              'uri': 'spotify:artist:17IDrizGUiveZm4P77Kkio',
+            }),
+            dict({
+              'artist_id': '6F5RA03n6HZYIWB7SsqCtI',
+              'name': 'Quelle T',
+              'uri': 'spotify:artist:6F5RA03n6HZYIWB7SsqCtI',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2737b49ecd18eb7dbe560b64fae',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e027b49ecd18eb7dbe560b64fae',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048517b49ecd18eb7dbe560b64fae',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Gravity',
+          'release_date': '2024-09-17',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 3,
+          'uri': 'spotify:album:1fIhC9q6hrlU3TUIKcUEVD',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '17IDrizGUiveZm4P77Kkio',
+            'name': 'Icarus',
+            'uri': 'spotify:artist:17IDrizGUiveZm4P77Kkio',
+          }),
+          dict({
+            'artist_id': '6F5RA03n6HZYIWB7SsqCtI',
+            'name': 'Quelle T',
+            'uri': 'spotify:artist:6F5RA03n6HZYIWB7SsqCtI',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 192129,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/4ikKo7qGunFFuTKhWNQm8f',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/4ikKo7qGunFFuTKhWNQm8f',
+        'is_local': False,
+        'name': 'Gravity',
+        'track_id': '4ikKo7qGunFFuTKhWNQm8f',
+        'track_number': 2,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:4ikKo7qGunFFuTKhWNQm8f',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 10, 1, 11, 23, 15, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '7dPYE1Uoic9mBMFgwcqPaR',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '7uGeDBa1LJ7T1X4fpl8mwk',
+              'name': 'Bad Computer',
+              'uri': 'spotify:artist:7uGeDBa1LJ7T1X4fpl8mwk',
+            }),
+            dict({
+              'artist_id': '22TzutcnmM3B1e7mWLY0f7',
+              'name': 'Ryan Coss',
+              'uri': 'spotify:artist:22TzutcnmM3B1e7mWLY0f7',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273b53ceefc28ae70e4189fbcdc',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02b53ceefc28ae70e4189fbcdc',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851b53ceefc28ae70e4189fbcdc',
+              'width': 64,
+            }),
+          ]),
+          'name': '4D',
+          'release_date': '2024-01-08',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:7dPYE1Uoic9mBMFgwcqPaR',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7uGeDBa1LJ7T1X4fpl8mwk',
+            'name': 'Bad Computer',
+            'uri': 'spotify:artist:7uGeDBa1LJ7T1X4fpl8mwk',
+          }),
+          dict({
+            'artist_id': '22TzutcnmM3B1e7mWLY0f7',
+            'name': 'Ryan Coss',
+            'uri': 'spotify:artist:22TzutcnmM3B1e7mWLY0f7',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 176250,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/2v4bGopODBEOQqWzg31R2s',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/2v4bGopODBEOQqWzg31R2s',
+        'is_local': False,
+        'name': '4D',
+        'track_id': '2v4bGopODBEOQqWzg31R2s',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:2v4bGopODBEOQqWzg31R2s',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 29, 9, 59, 34, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6V1NUr8mrDpCPNinJeyNfZ',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '2oAPxiUkLs3EdFAtYX4Qr5',
+              'name': 'Clarke 99',
+              'uri': 'spotify:artist:2oAPxiUkLs3EdFAtYX4Qr5',
+            }),
+            dict({
+              'artist_id': '0aUMVkR8QV0LSdv9VZOATn',
+              'name': 'TEKKNO',
+              'uri': 'spotify:artist:0aUMVkR8QV0LSdv9VZOATn',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273ef63fb7204e1c55217b8a74c',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02ef63fb7204e1c55217b8a74c',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851ef63fb7204e1c55217b8a74c',
+              'width': 64,
+            }),
+          ]),
+          'name': 'ART DECO - TEKKNO',
+          'release_date': '2024-04-16',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:6V1NUr8mrDpCPNinJeyNfZ',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '2oAPxiUkLs3EdFAtYX4Qr5',
+            'name': 'Clarke 99',
+            'uri': 'spotify:artist:2oAPxiUkLs3EdFAtYX4Qr5',
+          }),
+          dict({
+            'artist_id': '0aUMVkR8QV0LSdv9VZOATn',
+            'name': 'TEKKNO',
+            'uri': 'spotify:artist:0aUMVkR8QV0LSdv9VZOATn',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 198400,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/5wr2qcL5WxTMQyiEzQvANe',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/5wr2qcL5WxTMQyiEzQvANe',
+        'is_local': False,
+        'name': 'ART DECO - (TEKKNO)',
+        'track_id': '5wr2qcL5WxTMQyiEzQvANe',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:5wr2qcL5WxTMQyiEzQvANe',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 24, 17, 32, 9, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6IgSZ5VJ7m1dP5zeaWBUWh',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '33KABng8GO42ojFJVcABxQ',
+              'name': 'Eefje de Visser',
+              'uri': 'spotify:artist:33KABng8GO42ojFJVcABxQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27350a44227286817c71bb97caa',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0250a44227286817c71bb97caa',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485150a44227286817c71bb97caa',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Heimwee',
+          'release_date': '2024-09-13',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:6IgSZ5VJ7m1dP5zeaWBUWh',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '33KABng8GO42ojFJVcABxQ',
+            'name': 'Eefje de Visser',
+            'uri': 'spotify:artist:33KABng8GO42ojFJVcABxQ',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 224341,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/5vs5pCSQ8tzS94nsTwKcrL',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/5vs5pCSQ8tzS94nsTwKcrL',
+        'is_local': False,
+        'name': 'Weekenden',
+        'track_id': '5vs5pCSQ8tzS94nsTwKcrL',
+        'track_number': 4,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:5vs5pCSQ8tzS94nsTwKcrL',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 24, 15, 30, 27, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '7CRD6yQGeaAmA5AVXluBul',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '59oA5WbbQvomJz2BuRG071',
+              'name': 'Jungle',
+              'uri': 'spotify:artist:59oA5WbbQvomJz2BuRG071',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27315ecd6926b2b357a546b02fc',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0215ecd6926b2b357a546b02fc',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485115ecd6926b2b357a546b02fc',
+              'width': 64,
+            }),
+          ]),
+          'name': "Let's Go Back",
+          'release_date': '2024-09-04',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:7CRD6yQGeaAmA5AVXluBul',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '59oA5WbbQvomJz2BuRG071',
+            'name': 'Jungle',
+            'uri': 'spotify:artist:59oA5WbbQvomJz2BuRG071',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 169651,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3fvZo45Y28ly1QBo05pujJ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3fvZo45Y28ly1QBo05pujJ',
+        'is_local': False,
+        'name': "Let's Go Back",
+        'track_id': '3fvZo45Y28ly1QBo05pujJ',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3fvZo45Y28ly1QBo05pujJ',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 23, 20, 29, 47, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '1jWcipGHDLJ94RMB2XUhgK',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '2WBJQGf1bT1kxuoqziH5g4',
+              'name': 'Purple Disco Machine',
+              'uri': 'spotify:artist:2WBJQGf1bT1kxuoqziH5g4',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273fffecb767fcfa6c02c6987f3',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02fffecb767fcfa6c02c6987f3',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851fffecb767fcfa6c02c6987f3',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Paradise',
+          'release_date': '2024-09-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 15,
+          'uri': 'spotify:album:1jWcipGHDLJ94RMB2XUhgK',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '2WBJQGf1bT1kxuoqziH5g4',
+            'name': 'Purple Disco Machine',
+            'uri': 'spotify:artist:2WBJQGf1bT1kxuoqziH5g4',
+          }),
+          dict({
+            'artist_id': '4WUGQykLBGFfsl0Qjl6TDM',
+            'name': 'The Magician',
+            'uri': 'spotify:artist:4WUGQykLBGFfsl0Qjl6TDM',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 202935,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/6NOlVkuAFtqTiBInHuqlrs',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/6NOlVkuAFtqTiBInHuqlrs',
+        'is_local': False,
+        'name': 'All My Life',
+        'track_id': '6NOlVkuAFtqTiBInHuqlrs',
+        'track_number': 14,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:6NOlVkuAFtqTiBInHuqlrs',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 19, 15, 55, 57, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '3NusFNH0u0wmIiKZqoHt6p',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '0bUZrFj7rstq07E4iAJHgZ',
+              'name': 'KC Lights',
+              'uri': 'spotify:artist:0bUZrFj7rstq07E4iAJHgZ',
+            }),
+            dict({
+              'artist_id': '4hlzEVQyBgze0kLOLwTV2r',
+              'name': 'Welt',
+              'uri': 'spotify:artist:4hlzEVQyBgze0kLOLwTV2r',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273f792f45a66a0193016e5843f',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02f792f45a66a0193016e5843f',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851f792f45a66a0193016e5843f',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Fly',
+          'release_date': '2024-07-12',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 2,
+          'uri': 'spotify:album:3NusFNH0u0wmIiKZqoHt6p',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '0bUZrFj7rstq07E4iAJHgZ',
+            'name': 'KC Lights',
+            'uri': 'spotify:artist:0bUZrFj7rstq07E4iAJHgZ',
+          }),
+          dict({
+            'artist_id': '4hlzEVQyBgze0kLOLwTV2r',
+            'name': 'Welt',
+            'uri': 'spotify:artist:4hlzEVQyBgze0kLOLwTV2r',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 168189,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/4hB6Riwyg06VWFVgOTiKWz',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/4hB6Riwyg06VWFVgOTiKWz',
+        'is_local': False,
+        'name': 'Fly',
+        'track_id': '4hB6Riwyg06VWFVgOTiKWz',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:4hB6Riwyg06VWFVgOTiKWz',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 14, 15, 19, 51, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '1Mo92916G2mmG7ajpmSVrc',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '6M2wZ9GZgrQXHCFfjv46we',
+              'name': 'Dua Lipa',
+              'uri': 'spotify:artist:6M2wZ9GZgrQXHCFfjv46we',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02778c1e4660aa23f6728b32a1',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851778c1e4660aa23f6728b32a1',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Radical Optimism',
+          'release_date': '2024-05-03',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 11,
+          'uri': 'spotify:album:1Mo92916G2mmG7ajpmSVrc',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6M2wZ9GZgrQXHCFfjv46we',
+            'name': 'Dua Lipa',
+            'uri': 'spotify:artist:6M2wZ9GZgrQXHCFfjv46we',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 198198,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/6bAkr9wkQyPM4IDrP4tuwR',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/6bAkr9wkQyPM4IDrP4tuwR',
+        'is_local': False,
+        'name': 'Whatcha Doing',
+        'track_id': '6bAkr9wkQyPM4IDrP4tuwR',
+        'track_number': 5,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:6bAkr9wkQyPM4IDrP4tuwR',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 13, 13, 8, 40, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '4wCx7hQCIOVtuN3DkNGhYm',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '1l9d7B8W0IHy3LqWsxP2SH',
+              'name': 'Phantogram',
+              'uri': 'spotify:artist:1l9d7B8W0IHy3LqWsxP2SH',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27356f72c3ee8aca5233000f7b0',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0256f72c3ee8aca5233000f7b0',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485156f72c3ee8aca5233000f7b0',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Come Alive',
+          'release_date': '2024-08-23',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:4wCx7hQCIOVtuN3DkNGhYm',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '1l9d7B8W0IHy3LqWsxP2SH',
+            'name': 'Phantogram',
+            'uri': 'spotify:artist:1l9d7B8W0IHy3LqWsxP2SH',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 253698,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/2TvwhdrUqEDUg0Z7LOmUOd',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/2TvwhdrUqEDUg0Z7LOmUOd',
+        'is_local': False,
+        'name': 'Come Alive',
+        'track_id': '2TvwhdrUqEDUg0Z7LOmUOd',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:2TvwhdrUqEDUg0Z7LOmUOd',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 9, 20, 10, 14, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '3QcgmERUy859oM1YDj9hAT',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '7dupCiguCFkYZRisA3foPu',
+              'name': 'Monie Love',
+              'uri': 'spotify:artist:7dupCiguCFkYZRisA3foPu',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27320729e6b97543c7aff4545b0',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0220729e6b97543c7aff4545b0',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485120729e6b97543c7aff4545b0',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Down to Earth',
+          'release_date': '1990-10-20',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 18,
+          'uri': 'spotify:album:3QcgmERUy859oM1YDj9hAT',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7dupCiguCFkYZRisA3foPu',
+            'name': 'Monie Love',
+            'uri': 'spotify:artist:7dupCiguCFkYZRisA3foPu',
+          }),
+          dict({
+            'artist_id': '5rWgwZwzlVQb3Ltn6NnIVj',
+            'name': 'True Image',
+            'uri': 'spotify:artist:5rWgwZwzlVQb3Ltn6NnIVj',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 222840,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/6ir6C7AHGMVLGQN7hv7gTA',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/6ir6C7AHGMVLGQN7hv7gTA',
+        'is_local': False,
+        'name': "It's a Shame (My Sister)",
+        'track_id': '6ir6C7AHGMVLGQN7hv7gTA',
+        'track_number': 2,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:6ir6C7AHGMVLGQN7hv7gTA',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 8, 14, 24, 25, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '7Gsu8XlxWUsQbFZGajdxdC',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '2CpLIMBoE2ZzyY3ZBCRZ7j',
+              'name': 'BUNT.',
+              'uri': 'spotify:artist:2CpLIMBoE2ZzyY3ZBCRZ7j',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273de9b66fc971d8d7d2fea4fb2',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02de9b66fc971d8d7d2fea4fb2',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851de9b66fc971d8d7d2fea4fb2',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Crown',
+          'release_date': '2024-08-30',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:7Gsu8XlxWUsQbFZGajdxdC',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '2CpLIMBoE2ZzyY3ZBCRZ7j',
+            'name': 'BUNT.',
+            'uri': 'spotify:artist:2CpLIMBoE2ZzyY3ZBCRZ7j',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 240937,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/48HjuSOCti5mGKg6rUjAfB',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/48HjuSOCti5mGKg6rUjAfB',
+        'is_local': False,
+        'name': 'Crown',
+        'track_id': '48HjuSOCti5mGKg6rUjAfB',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:48HjuSOCti5mGKg6rUjAfB',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 8, 14, 6, 7, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '5mBSawja8ThkqKHqMagoCk',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+              'name': 'Jamie xx',
+              'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2736d59f0706b0e4a8fbc0908fe',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e026d59f0706b0e4a8fbc0908fe',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048516d59f0706b0e4a8fbc0908fe',
+              'width': 64,
+            }),
+          ]),
+          'name': 'All You Children',
+          'release_date': '2024-07-30',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 3,
+          'uri': 'spotify:album:5mBSawja8ThkqKHqMagoCk',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7A0awCXkE1FtSU8B0qwOJQ',
+            'name': 'Jamie xx',
+            'uri': 'spotify:artist:7A0awCXkE1FtSU8B0qwOJQ',
+          }),
+          dict({
+            'artist_id': '3C8RpaI3Go0yFF9whvKoED',
+            'name': 'The Avalanches',
+            'uri': 'spotify:artist:3C8RpaI3Go0yFF9whvKoED',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 254142,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/1zYuc5YFYlFfSSq6IslHVY',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/1zYuc5YFYlFfSSq6IslHVY',
+        'is_local': False,
+        'name': 'All You Children',
+        'track_id': '1zYuc5YFYlFfSSq6IslHVY',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:1zYuc5YFYlFfSSq6IslHVY',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 8, 13, 24, 33, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '3DQueEd1Ft9PHWgovDzPKh',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '4oLeXFyACqeem2VImYeBFe',
+              'name': 'Fred again..',
+              'uri': 'spotify:artist:4oLeXFyACqeem2VImYeBFe',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2736b8a4828e057b7dc1c4a4d39',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e026b8a4828e057b7dc1c4a4d39',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048516b8a4828e057b7dc1c4a4d39',
+              'width': 64,
+            }),
+          ]),
+          'name': 'ten days',
+          'release_date': '2024-09-06',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 20,
+          'uri': 'spotify:album:3DQueEd1Ft9PHWgovDzPKh',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '4oLeXFyACqeem2VImYeBFe',
+            'name': 'Fred again..',
+            'uri': 'spotify:artist:4oLeXFyACqeem2VImYeBFe',
+          }),
+          dict({
+            'artist_id': '3IunaFjvNKj98JW89JYv9u',
+            'name': 'The Japanese House',
+            'uri': 'spotify:artist:3IunaFjvNKj98JW89JYv9u',
+          }),
+          dict({
+            'artist_id': '6M98IZJK2tx6x2YVyHua9K',
+            'name': 'Scott Hardkiss',
+            'uri': 'spotify:artist:6M98IZJK2tx6x2YVyHua9K',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 314007,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/61pyjiweMDS1h930OgS0XO',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/61pyjiweMDS1h930OgS0XO',
+        'is_local': False,
+        'name': 'backseat',
+        'track_id': '61pyjiweMDS1h930OgS0XO',
+        'track_number': 20,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:61pyjiweMDS1h930OgS0XO',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 8, 13, 6, 11, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '0K7hOcNhAGs54ANFnXw6uM',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '1np8xozf7ATJZDi9JX8Dx5',
+              'name': 'salute',
+              'uri': 'spotify:artist:1np8xozf7ATJZDi9JX8Dx5',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273f38ea35a4cbce6ef51f2a176',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02f38ea35a4cbce6ef51f2a176',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851f38ea35a4cbce6ef51f2a176',
+              'width': 64,
+            }),
+          ]),
+          'name': 'TRUE MAGIC',
+          'release_date': '2024-07-12',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 14,
+          'uri': 'spotify:album:0K7hOcNhAGs54ANFnXw6uM',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '1np8xozf7ATJZDi9JX8Dx5',
+            'name': 'salute',
+            'uri': 'spotify:artist:1np8xozf7ATJZDi9JX8Dx5',
+          }),
+          dict({
+            'artist_id': '2KEqzdPS7M5YwGmiuPTdr5',
+            'name': 'Rina Sawayama',
+            'uri': 'spotify:artist:2KEqzdPS7M5YwGmiuPTdr5',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 210785,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/5s54Ts1rJwUwaxQqoTC4jQ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/5s54Ts1rJwUwaxQqoTC4jQ',
+        'is_local': False,
+        'name': 'saving flowers',
+        'track_id': '5s54Ts1rJwUwaxQqoTC4jQ',
+        'track_number': 2,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:5s54Ts1rJwUwaxQqoTC4jQ',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 8, 11, 56, 12, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '5D3qYKt4IFBEQENqzzlh1Y',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '5nki7yRhxgM509M5ADlN1p',
+              'name': 'Oliver Heldens',
+              'uri': 'spotify:artist:5nki7yRhxgM509M5ADlN1p',
+            }),
+            dict({
+              'artist_id': '1Cs0zKBU1kc0i8ypK3B9ai',
+              'name': 'David Guetta',
+              'uri': 'spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai',
+            }),
+            dict({
+              'artist_id': '56Qz2XwGj7FxnNKrfkWjnb',
+              'name': 'FAST BOY',
+              'uri': 'spotify:artist:56Qz2XwGj7FxnNKrfkWjnb',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273a37595d03e9df79b71a9640f',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02a37595d03e9df79b71a9640f',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851a37595d03e9df79b71a9640f',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Chills (Feel My Love)',
+          'release_date': '2024-07-26',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 1,
+          'uri': 'spotify:album:5D3qYKt4IFBEQENqzzlh1Y',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '5nki7yRhxgM509M5ADlN1p',
+            'name': 'Oliver Heldens',
+            'uri': 'spotify:artist:5nki7yRhxgM509M5ADlN1p',
+          }),
+          dict({
+            'artist_id': '1Cs0zKBU1kc0i8ypK3B9ai',
+            'name': 'David Guetta',
+            'uri': 'spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai',
+          }),
+          dict({
+            'artist_id': '56Qz2XwGj7FxnNKrfkWjnb',
+            'name': 'FAST BOY',
+            'uri': 'spotify:artist:56Qz2XwGj7FxnNKrfkWjnb',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 163399,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/0jjE8w7Rtu3NCImWhKKX8x',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/0jjE8w7Rtu3NCImWhKKX8x',
+        'is_local': False,
+        'name': 'Chills (Feel My Love)',
+        'track_id': '0jjE8w7Rtu3NCImWhKKX8x',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:0jjE8w7Rtu3NCImWhKKX8x',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 8, 11, 22, 23, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '5iEtQfZATfimid3Ogvce5m',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '67hb7towEyKvt5Z8Bx306c',
+              'name': 'Empire Of The Sun',
+              'uri': 'spotify:artist:67hb7towEyKvt5Z8Bx306c',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273539b85bf093856207373e138',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02539b85bf093856207373e138',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851539b85bf093856207373e138',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Ask That God',
+          'release_date': '2024-07-26',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 12,
+          'uri': 'spotify:album:5iEtQfZATfimid3Ogvce5m',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '67hb7towEyKvt5Z8Bx306c',
+            'name': 'Empire Of The Sun',
+            'uri': 'spotify:artist:67hb7towEyKvt5Z8Bx306c',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 207587,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/7eqIZPAPLQhkjSVTzBT7UR',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/7eqIZPAPLQhkjSVTzBT7UR',
+        'is_local': False,
+        'name': 'Cherry Blossom',
+        'track_id': '7eqIZPAPLQhkjSVTzBT7UR',
+        'track_number': 2,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:7eqIZPAPLQhkjSVTzBT7UR',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2024, 9, 6, 20, 46, 53, tzinfo=datetime.timezone.utc),
+      'track': dict({
+        'album': dict({
+          'album_id': '6DExt1eX4lflLacVjHHbOs',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '4MVyzYMgTwdP7Z49wAZHx0',
+              'name': 'Lynyrd Skynyrd',
+              'uri': 'spotify:artist:4MVyzYMgTwdP7Z49wAZHx0',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273128450651c9f0442780d8eb8',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02128450651c9f0442780d8eb8',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851128450651c9f0442780d8eb8',
+              'width': 64,
+            }),
+          ]),
+          'name': "Pronounced' Leh-'Nerd 'Skin-'Nerd",
+          'release_date': '1973-01-01',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 8,
+          'uri': 'spotify:album:6DExt1eX4lflLacVjHHbOs',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '4MVyzYMgTwdP7Z49wAZHx0',
+            'name': 'Lynyrd Skynyrd',
+            'uri': 'spotify:artist:4MVyzYMgTwdP7Z49wAZHx0',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 547106,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/5EWPGh7jbTNO2wakv8LjUI',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/5EWPGh7jbTNO2wakv8LjUI',
+        'is_local': False,
+        'name': 'Free Bird',
+        'track_id': '5EWPGh7jbTNO2wakv8LjUI',
+        'track_number': 8,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:5EWPGh7jbTNO2wakv8LjUI',
+      }),
+    }),
+  ])
+# ---
 # name: test_get_show
   dict({
     'description': 'Safety Third is a weekly show hosted by William Osman, NileRed, The Backyard Scientist, Allen Pan, and a couple other YouTube "Scientists". Sometimes we have guests, sometimes it\'s just us, but always: safety is our number three priority.',

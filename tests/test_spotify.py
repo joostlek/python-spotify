@@ -872,3 +872,25 @@ async def test_get_saved_albums(
         params={"limit": 48},
         data=None,
     )
+
+
+async def test_get_saved_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving saved tracks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/tracks?limit=48",
+        status=200,
+        body=load_fixture("saved_tracks.json"),
+    )
+    response = await authenticated_client.get_saved_tracks()
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/tracks",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        data=None,
+    )
