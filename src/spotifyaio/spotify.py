@@ -26,6 +26,7 @@ from spotifyaio.models import (
     Episode,
     FeaturedPlaylistResponse,
     NewReleasesResponse,
+    NewReleasesResponseInner,
     PlaybackState,
     PlayedTrack,
     PlayedTrackResponse,
@@ -154,6 +155,13 @@ class SpotifyClient:
         identifier = artist_id.split(":")[-1]
         response = await self._get(f"v1/artists/{identifier}")
         return Artist.from_json(response)
+
+    async def get_artist_albums(self, artist_id: str) -> list[SimplifiedAlbum]:
+        """Get artist albums."""
+        params: dict[str, Any] = {"limit": 48}
+        identifier = artist_id.split(":")[-1]
+        response = await self._get(f"v1/artists/{identifier}/albums", params=params)
+        return NewReleasesResponseInner.from_json(response).items
 
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""
