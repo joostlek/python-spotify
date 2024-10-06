@@ -285,8 +285,8 @@ class UserProfile(BaseUserProfile):
 
 
 @dataclass
-class Show(DataClassORJSONMixin):
-    """Show model."""
+class SimplifiedShow(DataClassORJSONMixin):
+    """SimplifiedShow model."""
 
     show_id: str = field(metadata=field_options(alias="id"))
     name: str
@@ -296,11 +296,12 @@ class Show(DataClassORJSONMixin):
     href: str
     publisher: str
     description: str
+    total_episodes: int
 
 
 @dataclass
-class Episode(DataClassORJSONMixin):
-    """Episode model."""
+class SimplifiedEpisode(DataClassORJSONMixin):
+    """SimplifiedEpisode model."""
 
     episode_id: str = field(metadata=field_options(alias="id"))
     name: str
@@ -313,4 +314,19 @@ class Episode(DataClassORJSONMixin):
     release_date: str
     release_date_precision: ReleaseDatePrecision
     description: str
-    show: Show
+
+
+@dataclass
+class Episode(SimplifiedEpisode):
+    """Episode model."""
+
+    show: SimplifiedShow
+
+
+@dataclass
+class Show(SimplifiedShow):
+    """Show model."""
+
+    episodes: list[SimplifiedEpisode] = field(
+        metadata=field_options(serialization_strategy=TracksSerializationStrategy())
+    )
