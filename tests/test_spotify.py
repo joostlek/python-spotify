@@ -828,3 +828,25 @@ async def test_get_show(
         params=None,
         data=None,
     )
+
+
+async def test_get_following_artists(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving show."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/following?type=artist&limit=48",
+        status=200,
+        body=load_fixture("followed_artists.json"),
+    )
+    response = await authenticated_client.get_followed_artists()
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/following",
+        METH_GET,
+        headers=HEADERS,
+        params={"type": "artist", "limit": 48},
+        data=None,
+    )

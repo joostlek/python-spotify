@@ -2334,6 +2334,110 @@
     }),
   ])
 # ---
+# name: test_get_following_artists
+  list([
+    dict({
+      'artist_id': '0lLY20XpZ9yDobkbHI7u1y',
+      'name': 'Pegboard Nerds',
+      'uri': 'spotify:artist:0lLY20XpZ9yDobkbHI7u1y',
+    }),
+    dict({
+      'artist_id': '0p4nmQO2msCgU4IF37Wi3j',
+      'name': 'Avril Lavigne',
+      'uri': 'spotify:artist:0p4nmQO2msCgU4IF37Wi3j',
+    }),
+    dict({
+      'artist_id': '0rEuaTPLMhlViNCJrg3NEH',
+      'name': 'Beast In Black',
+      'uri': 'spotify:artist:0rEuaTPLMhlViNCJrg3NEH',
+    }),
+    dict({
+      'artist_id': '0uBVyPbLZRDNEBiA4fZUlp',
+      'name': 'Froukje',
+      'uri': 'spotify:artist:0uBVyPbLZRDNEBiA4fZUlp',
+    }),
+    dict({
+      'artist_id': '10GT4yz8c6xjjnPGtGPI1l',
+      'name': 'Franc Moody',
+      'uri': 'spotify:artist:10GT4yz8c6xjjnPGtGPI1l',
+    }),
+    dict({
+      'artist_id': '17IDrizGUiveZm4P77Kkio',
+      'name': 'Icarus',
+      'uri': 'spotify:artist:17IDrizGUiveZm4P77Kkio',
+    }),
+    dict({
+      'artist_id': '1A6zWJwn4XmdZZgob3wYPM',
+      'name': 'Blaudzun',
+      'uri': 'spotify:artist:1A6zWJwn4XmdZZgob3wYPM',
+    }),
+    dict({
+      'artist_id': '1BAdSa5cdtCNLbvT7gWmtJ',
+      'name': 'Conro',
+      'uri': 'spotify:artist:1BAdSa5cdtCNLbvT7gWmtJ',
+    }),
+    dict({
+      'artist_id': '1Cs0zKBU1kc0i8ypK3B9ai',
+      'name': 'David Guetta',
+      'uri': 'spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai',
+    }),
+    dict({
+      'artist_id': '1DbXVMdQqNejIYLU2xsIMi',
+      'name': 'Ryan Ritual',
+      'uri': 'spotify:artist:1DbXVMdQqNejIYLU2xsIMi',
+    }),
+    dict({
+      'artist_id': '1GLtl8uqKmnyCWxHmw9tL4',
+      'name': 'The Kooks',
+      'uri': 'spotify:artist:1GLtl8uqKmnyCWxHmw9tL4',
+    }),
+    dict({
+      'artist_id': '1LOB7jTeEV14pHai6EXSzF',
+      'name': 'Cash Cash',
+      'uri': 'spotify:artist:1LOB7jTeEV14pHai6EXSzF',
+    }),
+    dict({
+      'artist_id': '1QOHbhVRpDoNtRkz79si6b',
+      'name': 'Karen Harding',
+      'uri': 'spotify:artist:1QOHbhVRpDoNtRkz79si6b',
+    }),
+    dict({
+      'artist_id': '1eK59pkylGGka9wRUEKVXt',
+      'name': 'Chris Brochu',
+      'uri': 'spotify:artist:1eK59pkylGGka9wRUEKVXt',
+    }),
+    dict({
+      'artist_id': '1ho3p0XM4jDk7n9NUOekbp',
+      'name': 'Inthelittlewood',
+      'uri': 'spotify:artist:1ho3p0XM4jDk7n9NUOekbp',
+    }),
+    dict({
+      'artist_id': '1kDGbuxWknIKx4FlgWxiSp',
+      'name': 'Nothing But Thieves',
+      'uri': 'spotify:artist:1kDGbuxWknIKx4FlgWxiSp',
+    }),
+    dict({
+      'artist_id': '1vCWHaC5f2uS3yhpwWbIA6',
+      'name': 'Avicii',
+      'uri': 'spotify:artist:1vCWHaC5f2uS3yhpwWbIA6',
+    }),
+    dict({
+      'artist_id': '1yqxFtPHKcGcv6SXZNdyT9',
+      'name': 'MK',
+      'uri': 'spotify:artist:1yqxFtPHKcGcv6SXZNdyT9',
+    }),
+    dict({
+      'artist_id': '23fqKkggKUBHNkbKtXEls4',
+      'name': 'Kygo',
+      'uri': 'spotify:artist:23fqKkggKUBHNkbKtXEls4',
+    }),
+    dict({
+      'artist_id': '2NZMqINcyfepvLxQJdzcZk',
+      'name': 'Lensko',
+      'uri': 'spotify:artist:2NZMqINcyfepvLxQJdzcZk',
+    }),
+  ])
+# ---
 # name: test_get_playback_state[playback_1.json]
   dict({
     'context': dict({

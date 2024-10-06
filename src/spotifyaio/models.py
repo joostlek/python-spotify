@@ -102,8 +102,8 @@ class SimplifiedArtist(DataClassORJSONMixin):
     uri: str
 
 
-class TracksSerializationStrategy(SerializationStrategy):
-    """Serialization strategy for optional strings."""
+class ItemsSerializationStrategy(SerializationStrategy):
+    """Serialization strategy for objects encapsulated in items."""
 
     def serialize(self, value: list[Any]) -> list[Any]:
         """Serialize optional string."""
@@ -134,17 +134,27 @@ class Album(SimplifiedAlbum):
     """Album model."""
 
     tracks: list[SimplifiedTrack] = field(
-        metadata=field_options(serialization_strategy=TracksSerializationStrategy())
+        metadata=field_options(serialization_strategy=ItemsSerializationStrategy())
     )
 
 
 @dataclass
-class Artist(DataClassORJSONMixin):
-    """Artist model."""
+class ArtistResponse(DataClassORJSONMixin):
+    """Artist response model."""
 
-    artist_id: str = field(metadata=field_options(alias="id"))
-    name: str
-    uri: str
+    artists: ArtistResponseItem
+
+
+@dataclass
+class ArtistResponseItem(DataClassORJSONMixin):
+    """Artist response model."""
+
+    items: list[SimplifiedArtist]
+
+
+@dataclass
+class Artist(SimplifiedArtist):
+    """Artist model."""
 
 
 @dataclass
@@ -350,5 +360,5 @@ class Show(SimplifiedShow):
     """Show model."""
 
     episodes: list[SimplifiedEpisode] = field(
-        metadata=field_options(serialization_strategy=TracksSerializationStrategy())
+        metadata=field_options(serialization_strategy=ItemsSerializationStrategy())
     )
