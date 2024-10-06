@@ -232,6 +232,13 @@ class SpotifyClient:
             params["device_id"] = device_id
         await self._put("v1/me/player/shuffle", params=params)
 
+    async def add_to_queue(self, uri: str, device_id: str | None = None) -> None:
+        """Add to queue."""
+        data: dict[str, str] = {"uri": uri}
+        if device_id:
+            data["device_id"] = device_id
+        await self._post("v1/me/player/queue", data=data)
+
     async def get_playlist(self, playlist_id: str) -> Playlist:
         """Get playlist."""
         identifier = playlist_id.split(":")[-1]
