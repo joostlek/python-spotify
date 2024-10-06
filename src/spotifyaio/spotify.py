@@ -29,6 +29,8 @@ from spotifyaio.models import (
     RepeatMode,
     SavedAlbum,
     SavedAlbumResponse,
+    SavedTrack,
+    SavedTrackResponse,
     Show,
     SimplifiedArtist,
     UserProfile,
@@ -272,6 +274,12 @@ class SpotifyClient:
         params: dict[str, Any] = {"limit": 48}
         response = await self._get("v1/me/albums", params=params)
         return SavedAlbumResponse.from_json(response).items
+
+    async def get_saved_tracks(self) -> list[SavedTrack]:
+        """Get saved tracks."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/tracks", params=params)
+        return SavedTrackResponse.from_json(response).items
 
     async def get_category_playlists(self, category_id: str) -> list[BasePlaylist]:
         """Get category playlists."""
