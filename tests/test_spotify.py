@@ -749,3 +749,25 @@ async def test_get_user(
         params=None,
         data=None,
     )
+
+
+async def test_get_episode(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving user."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/episodes/3o0RYoo5iOMKSmEbunsbvW",
+        status=200,
+        body=load_fixture("episode.json"),
+    )
+    response = await authenticated_client.get_episode("3o0RYoo5iOMKSmEbunsbvW")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/episodes/3o0RYoo5iOMKSmEbunsbvW",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        data=None,
+    )
