@@ -25,7 +25,7 @@ async def test_putting_in_own_session(
 ) -> None:
     """Test putting in own session."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/player",
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
         status=200,
         body=load_fixture("playback_1.json"),
     )
@@ -44,7 +44,7 @@ async def test_creating_own_session(
 ) -> None:
     """Test creating own session."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/player",
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
         status=200,
         body=load_fixture("playback_1.json"),
     )
@@ -80,7 +80,7 @@ async def test_unexpected_server_response(
 ) -> None:
     """Test handling unexpected response."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/player",
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
         status=200,
         headers={"Content-Type": "plain/text"},
         body="Yes",
@@ -101,7 +101,7 @@ async def test_timeout(
         return CallbackResult(body="Goodmorning!")
 
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/player",
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
         callback=response_handler,
     )
     async with SpotifyClient(request_timeout=1) as spotify:
@@ -110,24 +110,25 @@ async def test_timeout(
 
 
 @pytest.mark.parametrize(
-    "playback_id",
+    "playback_fixture",
     [
-        1,
-        2,
-        3,
+        "playback_1.json",
+        "playback_2.json",
+        "playback_3.json",
+        "playback_episode_1.json",
     ],
 )
 async def test_get_playback_state(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
-    playback_id: int,
+    playback_fixture: str,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving playback state."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/player",
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
         status=200,
-        body=load_fixture(f"playback_{playback_id}.json"),
+        body=load_fixture(playback_fixture),
     )
     response = await authenticated_client.get_playback()
     assert response == snapshot
@@ -135,7 +136,7 @@ async def test_get_playback_state(
         f"{SPOTIFY_URL}/v1/me/player",
         METH_GET,
         headers=HEADERS,
-        params=None,
+        params={"additional_types": "track,episode"},
         data=None,
     )
 
@@ -146,7 +147,7 @@ async def test_get_no_playback_state(
 ) -> None:
     """Test retrieving no playback state."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/player",
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
         status=204,
     )
     response = await authenticated_client.get_playback()
@@ -155,8 +156,8 @@ async def test_get_no_playback_state(
         f"{SPOTIFY_URL}/v1/me/player",
         METH_GET,
         headers=HEADERS,
+        params={"additional_types": "track,episode"},
         data=None,
-        params=None,
     )
 
 

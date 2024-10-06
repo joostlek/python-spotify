@@ -4,11 +4,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import StrEnum
-from typing import Any, cast
+from typing import Annotated, Any, cast
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
-from mashumaro.types import SerializationStrategy
+from mashumaro.types import Discriminator, SerializationStrategy
 
 
 class DeviceType(StrEnum):
@@ -164,10 +164,23 @@ class SimplifiedTrack(DataClassORJSONMixin):
     uri: str
 
 
+class ItemType(StrEnum):
+    """Item type."""
+
+    TRACK = "track"
+    EPISODE = "episode"
+
+
 @dataclass
-class Track(SimplifiedTrack):
+class Item(DataClassORJSONMixin):
+    """Item model."""
+
+
+@dataclass
+class Track(SimplifiedTrack, Item):
     """Track model."""
 
+    type = ItemType.TRACK
     album: SimplifiedAlbum
 
 
@@ -178,7 +191,7 @@ class CurrentPlaying(DataClassORJSONMixin):
     context: Context | None
     progress_ms: int | None
     is_playing: bool
-    item: Track | None
+    item: Annotated[Item, Discriminator(field="type", include_subtypes=True)] | None
     currently_playing_type: str | None
 
 
@@ -317,9 +330,10 @@ class SimplifiedEpisode(DataClassORJSONMixin):
 
 
 @dataclass
-class Episode(SimplifiedEpisode):
+class Episode(SimplifiedEpisode, Item):
     """Episode model."""
 
+    type = ItemType.EPISODE
     show: SimplifiedShow
 
 
