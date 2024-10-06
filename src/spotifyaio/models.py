@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from datetime import datetime  # noqa: TCH003
 from enum import StrEnum
 from typing import Annotated, Any, cast
 
@@ -136,6 +137,21 @@ class Album(SimplifiedAlbum):
     tracks: list[SimplifiedTrack] = field(
         metadata=field_options(serialization_strategy=ItemsSerializationStrategy())
     )
+
+
+@dataclass
+class SavedAlbum(DataClassORJSONMixin):
+    """Saved album model."""
+
+    added_at: datetime
+    album: Album
+
+
+@dataclass
+class SavedAlbumResponse(DataClassORJSONMixin):
+    """SavedAlbum response model."""
+
+    items: list[SavedAlbum]
 
 
 @dataclass
