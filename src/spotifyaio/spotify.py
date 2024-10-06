@@ -14,6 +14,7 @@ from yarl import URL
 from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
 from spotifyaio.models import (
     Album,
+    ArtistResponse,
     BasePlaylist,
     BaseUserProfile,
     CategoryPlaylistResponse,
@@ -27,6 +28,7 @@ from spotifyaio.models import (
     PlaylistResponse,
     RepeatMode,
     Show,
+    SimplifiedArtist,
     UserProfile,
 )
 
@@ -250,6 +252,12 @@ class SpotifyClient:
         params: dict[str, Any] = {"limit": 48}
         response = await self._get("v1/me/playlists", params=params)
         return PlaylistResponse.from_json(response).items
+
+    async def get_followed_artists(self) -> list[SimplifiedArtist]:
+        """Get followed artists."""
+        params: dict[str, Any] = {"limit": 48, "type": "artist"}
+        response = await self._get("v1/me/following", params=params)
+        return ArtistResponse.from_json(response).artists
 
     async def get_featured_playlists(self) -> list[BasePlaylist]:
         """Get featured playlists."""

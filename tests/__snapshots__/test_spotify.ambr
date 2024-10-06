@@ -2334,6 +2334,746 @@
     }),
   ])
 # ---
+# name: test_get_following_artists
+  list([
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/0lLY20XpZ9yDobkbHI7u1y',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 349437,
+      }),
+      'genres': list([
+        'brostep',
+        'complextro',
+        'danish electronic',
+        'edm',
+        'electro house',
+        'glitch',
+        'speedrun',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/0lLY20XpZ9yDobkbHI7u1y',
+      'id': '0lLY20XpZ9yDobkbHI7u1y',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb0fb1220e7e3ace47ebad023e',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab676161000051740fb1220e7e3ace47ebad023e',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f1780fb1220e7e3ace47ebad023e',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Pegboard Nerds',
+      'popularity': 52,
+      'type': 'artist',
+      'uri': 'spotify:artist:0lLY20XpZ9yDobkbHI7u1y',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/0p4nmQO2msCgU4IF37Wi3j',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 11296082,
+      }),
+      'genres': list([
+        'canadian pop',
+        'candy pop',
+        'dance pop',
+        'pop',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/0p4nmQO2msCgU4IF37Wi3j',
+      'id': '0p4nmQO2msCgU4IF37Wi3j',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb5c3349ddba6b8e064c1bab16',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab676161000051745c3349ddba6b8e064c1bab16',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f1785c3349ddba6b8e064c1bab16',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Avril Lavigne',
+      'popularity': 78,
+      'type': 'artist',
+      'uri': 'spotify:artist:0p4nmQO2msCgU4IF37Wi3j',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/0rEuaTPLMhlViNCJrg3NEH',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 328873,
+      }),
+      'genres': list([
+        'finnish heavy metal',
+        'finnish power metal',
+        'power metal',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/0rEuaTPLMhlViNCJrg3NEH',
+      'id': '0rEuaTPLMhlViNCJrg3NEH',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb7b60ba4ab40815357c713dc2',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab676161000051747b60ba4ab40815357c713dc2',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f1787b60ba4ab40815357c713dc2',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Beast In Black',
+      'popularity': 62,
+      'type': 'artist',
+      'uri': 'spotify:artist:0rEuaTPLMhlViNCJrg3NEH',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/0uBVyPbLZRDNEBiA4fZUlp',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 106750,
+      }),
+      'genres': list([
+        'dutch indie',
+        'dutch pop',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/0uBVyPbLZRDNEBiA4fZUlp',
+      'id': '0uBVyPbLZRDNEBiA4fZUlp',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebf6cb4b106fe956c95d243a1f',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174f6cb4b106fe956c95d243a1f',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178f6cb4b106fe956c95d243a1f',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Froukje',
+      'popularity': 61,
+      'type': 'artist',
+      'uri': 'spotify:artist:0uBVyPbLZRDNEBiA4fZUlp',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/10GT4yz8c6xjjnPGtGPI1l',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 167671,
+      }),
+      'genres': list([
+        'funktronica',
+        'indie soul',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/10GT4yz8c6xjjnPGtGPI1l',
+      'id': '10GT4yz8c6xjjnPGtGPI1l',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebb0debcb6b7015f1a7a1bfaa0',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174b0debcb6b7015f1a7a1bfaa0',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178b0debcb6b7015f1a7a1bfaa0',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Franc Moody',
+      'popularity': 56,
+      'type': 'artist',
+      'uri': 'spotify:artist:10GT4yz8c6xjjnPGtGPI1l',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/17IDrizGUiveZm4P77Kkio',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 5293,
+      }),
+      'genres': list([
+        'popwave',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/17IDrizGUiveZm4P77Kkio',
+      'id': '17IDrizGUiveZm4P77Kkio',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb712d292bff8648aa62c2dad4',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174712d292bff8648aa62c2dad4',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178712d292bff8648aa62c2dad4',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Icarus',
+      'popularity': 30,
+      'type': 'artist',
+      'uri': 'spotify:artist:17IDrizGUiveZm4P77Kkio',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1A6zWJwn4XmdZZgob3wYPM',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 43271,
+      }),
+      'genres': list([
+        'dutch indie',
+        'dutch pop',
+        'dutch rock',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1A6zWJwn4XmdZZgob3wYPM',
+      'id': '1A6zWJwn4XmdZZgob3wYPM',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb5022973615b58f2756ab3ff3',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab676161000051745022973615b58f2756ab3ff3',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f1785022973615b58f2756ab3ff3',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Blaudzun',
+      'popularity': 36,
+      'type': 'artist',
+      'uri': 'spotify:artist:1A6zWJwn4XmdZZgob3wYPM',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1BAdSa5cdtCNLbvT7gWmtJ',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 56685,
+      }),
+      'genres': list([
+        'canadian electronic',
+        'future bass',
+        'pop edm',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1BAdSa5cdtCNLbvT7gWmtJ',
+      'id': '1BAdSa5cdtCNLbvT7gWmtJ',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebbfa0f25d3d775e4892e0add3',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174bfa0f25d3d775e4892e0add3',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178bfa0f25d3d775e4892e0add3',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Conro',
+      'popularity': 48,
+      'type': 'artist',
+      'uri': 'spotify:artist:1BAdSa5cdtCNLbvT7gWmtJ',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 26253660,
+      }),
+      'genres': list([
+        'big room',
+        'dance pop',
+        'edm',
+        'pop',
+        'pop dance',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1Cs0zKBU1kc0i8ypK3B9ai',
+      'id': '1Cs0zKBU1kc0i8ypK3B9ai',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebf150017ca69c8793503c2d4f',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178f150017ca69c8793503c2d4f',
+          'width': 160,
+        }),
+      ]),
+      'name': 'David Guetta',
+      'popularity': 90,
+      'type': 'artist',
+      'uri': 'spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1DbXVMdQqNejIYLU2xsIMi',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 966,
+      }),
+      'genres': list([
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1DbXVMdQqNejIYLU2xsIMi',
+      'id': '1DbXVMdQqNejIYLU2xsIMi',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb9b0c0d5e5e4f43a21b19f7e8',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab676161000051749b0c0d5e5e4f43a21b19f7e8',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f1789b0c0d5e5e4f43a21b19f7e8',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Ryan Ritual',
+      'popularity': 15,
+      'type': 'artist',
+      'uri': 'spotify:artist:1DbXVMdQqNejIYLU2xsIMi',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1GLtl8uqKmnyCWxHmw9tL4',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 2572687,
+      }),
+      'genres': list([
+        'brighton indie',
+        'garage rock',
+        'modern rock',
+        'rock',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1GLtl8uqKmnyCWxHmw9tL4',
+      'id': '1GLtl8uqKmnyCWxHmw9tL4',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebd263e0042b36fd357c8c7cdb',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174d263e0042b36fd357c8c7cdb',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178d263e0042b36fd357c8c7cdb',
+          'width': 160,
+        }),
+      ]),
+      'name': 'The Kooks',
+      'popularity': 69,
+      'type': 'artist',
+      'uri': 'spotify:artist:1GLtl8uqKmnyCWxHmw9tL4',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1LOB7jTeEV14pHai6EXSzF',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 689740,
+      }),
+      'genres': list([
+        'dance pop',
+        'edm',
+        'electro house',
+        'electropowerpop',
+        'pop dance',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1LOB7jTeEV14pHai6EXSzF',
+      'id': '1LOB7jTeEV14pHai6EXSzF',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebc6b0d99b1a736712a1653d6a',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174c6b0d99b1a736712a1653d6a',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178c6b0d99b1a736712a1653d6a',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Cash Cash',
+      'popularity': 60,
+      'type': 'artist',
+      'uri': 'spotify:artist:1LOB7jTeEV14pHai6EXSzF',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1QOHbhVRpDoNtRkz79si6b',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 58781,
+      }),
+      'genres': list([
+        'house',
+        'pop dance',
+        'uk dance',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1QOHbhVRpDoNtRkz79si6b',
+      'id': '1QOHbhVRpDoNtRkz79si6b',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb403bad456309541432feb79b',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174403bad456309541432feb79b',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178403bad456309541432feb79b',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Karen Harding',
+      'popularity': 57,
+      'type': 'artist',
+      'uri': 'spotify:artist:1QOHbhVRpDoNtRkz79si6b',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1eK59pkylGGka9wRUEKVXt',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 10195,
+      }),
+      'genres': list([
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1eK59pkylGGka9wRUEKVXt',
+      'id': '1eK59pkylGGka9wRUEKVXt',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb7b6e73b581c807a49a146eb6',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab676161000051747b6e73b581c807a49a146eb6',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f1787b6e73b581c807a49a146eb6',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Chris Brochu',
+      'popularity': 31,
+      'type': 'artist',
+      'uri': 'spotify:artist:1eK59pkylGGka9wRUEKVXt',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1ho3p0XM4jDk7n9NUOekbp',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 11632,
+      }),
+      'genres': list([
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1ho3p0XM4jDk7n9NUOekbp',
+      'id': '1ho3p0XM4jDk7n9NUOekbp',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab67616d0000b2736d5999b6e7e2dd2fd19f88f8',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab67616d00001e026d5999b6e7e2dd2fd19f88f8',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab67616d000048516d5999b6e7e2dd2fd19f88f8',
+          'width': 64,
+        }),
+      ]),
+      'name': 'Inthelittlewood',
+      'popularity': 11,
+      'type': 'artist',
+      'uri': 'spotify:artist:1ho3p0XM4jDk7n9NUOekbp',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 1222077,
+      }),
+      'genres': list([
+        'alternative pop rock',
+        'modern alternative rock',
+        'modern rock',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp',
+      'id': '1kDGbuxWknIKx4FlgWxiSp',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb065faf07b0343e97bf3fba57',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174065faf07b0343e97bf3fba57',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178065faf07b0343e97bf3fba57',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Nothing But Thieves',
+      'popularity': 67,
+      'type': 'artist',
+      'uri': 'spotify:artist:1kDGbuxWknIKx4FlgWxiSp',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 23051614,
+      }),
+      'genres': list([
+        'dance pop',
+        'edm',
+        'pop',
+        'pop dance',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6',
+      'id': '1vCWHaC5f2uS3yhpwWbIA6',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebae07171f989fb39736674113',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178ae07171f989fb39736674113',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Avicii',
+      'popularity': 82,
+      'type': 'artist',
+      'uri': 'spotify:artist:1vCWHaC5f2uS3yhpwWbIA6',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/1yqxFtPHKcGcv6SXZNdyT9',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 305516,
+      }),
+      'genres': list([
+        'house',
+        'pop dance',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/1yqxFtPHKcGcv6SXZNdyT9',
+      'id': '1yqxFtPHKcGcv6SXZNdyT9',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebffa0888ff64a510cbf665855',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174ffa0888ff64a510cbf665855',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178ffa0888ff64a510cbf665855',
+          'width': 160,
+        }),
+      ]),
+      'name': 'MK',
+      'popularity': 68,
+      'type': 'artist',
+      'uri': 'spotify:artist:1yqxFtPHKcGcv6SXZNdyT9',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 8458659,
+      }),
+      'genres': list([
+        'edm',
+        'pop',
+        'pop dance',
+        'tropical house',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4',
+      'id': '23fqKkggKUBHNkbKtXEls4',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebe5ea1aa1404629c12ad86658',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174e5ea1aa1404629c12ad86658',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178e5ea1aa1404629c12ad86658',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Kygo',
+      'popularity': 82,
+      'type': 'artist',
+      'uri': 'spotify:artist:23fqKkggKUBHNkbKtXEls4',
+    }),
+    dict({
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/artist/2NZMqINcyfepvLxQJdzcZk',
+      }),
+      'followers': dict({
+        'href': None,
+        'total': 52774,
+      }),
+      'genres': list([
+        'gaming edm',
+      ]),
+      'href': 'https://api.spotify.com/v1/artists/2NZMqINcyfepvLxQJdzcZk',
+      'id': '2NZMqINcyfepvLxQJdzcZk',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb96b6d4d0d0f43bd50216f22e',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab6761610000517496b6d4d0d0f43bd50216f22e',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f17896b6d4d0d0f43bd50216f22e',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Lensko',
+      'popularity': 41,
+      'type': 'artist',
+      'uri': 'spotify:artist:2NZMqINcyfepvLxQJdzcZk',
+    }),
+  ])
+# ---
 # name: test_get_playback_state[playback_1.json]
   dict({
     'context': dict({
