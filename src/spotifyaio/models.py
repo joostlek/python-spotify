@@ -369,6 +369,22 @@ class BasePlaylist(DataClassORJSONMixin):
 class Playlist(BasePlaylist):
     """Playlist model."""
 
+    tracks: PlaylistTracks
+
+
+@dataclass
+class PlaylistTracks(DataClassORJSONMixin):
+    """PlaylistTracks model."""
+
+    items: list[PlaylistTrack]
+
+
+@dataclass
+class PlaylistTrack(DataClassORJSONMixin):
+    """PlaylistTrack model."""
+
+    track: Track
+
 
 @dataclass
 class PlaylistResponse(DataClassORJSONMixin):
