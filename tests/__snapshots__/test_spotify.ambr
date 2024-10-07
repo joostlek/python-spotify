@@ -2003,7 +2003,7 @@
     'user_id': '1112264649',
   })
 # ---
-# name: test_get_current_users_playlists
+# name: test_get_current_users_playlists[current_user_playlist_1.json]
   list([
     dict({
       'collaborative': False,
@@ -2631,6 +2631,1638 @@
       'playlist_id': '40bvnxNQlivxZ02DmDzNxy',
       'public': False,
       'uri': 'spotify:playlist:40bvnxNQlivxZ02DmDzNxy',
+    }),
+  ])
+# ---
+# name: test_get_current_users_playlists[current_user_playlist_2.json]
+  list([
+    dict({
+      'collaborative': False,
+      'description': 'You listened to <a href="spotify:playlist:37i9dQZF1EIgrtU6YDkEQE">freedom</a> and <a href="spotify:playlist:37i9dQZF1EIdpo5I50ibyV">vibing</a> on Mondays in the morning. Here\'s some: <a href="spotify:playlist:37i9dQZF1EIdec6qRjNYma">melodic techno</a>, <a href="spotify:playlist:37i9dQZF1EQpoj8u9Hn81e">house</a>, <a href="spotify:playlist:37i9dQZF1EIhEAiEhIniSC">fraternity</a>, <a href="spotify:playlist:37i9dQZF1EIdJGESPytB8N">130 bpm</a>, <a href="spotify:playlist:37i9dQZF1EIftxQNa49o4y">doof doof</a> and <a href="spotify:playlist:37i9dQZF1EIe1dCdpWzpql">electric</a>',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EP6YuccBxUcC1',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://daylist.spotifycdn.com/playlist-covers-mix/en/morning_default.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'daylist • melodic techno house monday morning',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EP6YuccBxUcC1',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EP6YuccBxUcC1',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'A Blend of music for Joost and Cheyenne. Updates daily.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EJvpyGjPopYtd',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-azure-pink-en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'Cheyenne + Joost',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EJvpyGjPopYtd',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EJvpyGjPopYtd',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '100% good vibes.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1DWYMroOc5KTTh',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67706f0000000253a4d12c459c3cd2d265dfa2',
+          'width': None,
+        }),
+      ]),
+      'name': 'Serotonin',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1DWYMroOc5KTTh',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1DWYMroOc5KTTh',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5t75uJ5vBvEdbbvs5uIqXJ',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e0205c6f48cceeb832778012b21',
+          'width': None,
+        }),
+      ]),
+      'name': 'Sweet',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '5t75uJ5vBvEdbbvs5uIqXJ',
+      'public': True,
+      'uri': 'spotify:playlist:5t75uJ5vBvEdbbvs5uIqXJ',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0pM0KTMXM7K5qr3sL2DPw1',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02991e1b6c088e2abc38f584c8',
+          'width': None,
+        }),
+      ]),
+      'name': 'Pain',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '0pM0KTMXM7K5qr3sL2DPw1',
+      'public': True,
+      'uri': 'spotify:playlist:0pM0KTMXM7K5qr3sL2DPw1',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4WkWJ0EjHEFASDevhM8oPw',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02d061f5bfae8d38558f3698c1',
+          'width': None,
+        }),
+      ]),
+      'name': 'Hyper',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '4WkWJ0EjHEFASDevhM8oPw',
+      'public': True,
+      'uri': 'spotify:playlist:4WkWJ0EjHEFASDevhM8oPw',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'A Blend of music for Joost and Christel. Updates daily.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EJwDEkXAeJkCv',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-forest-pink-en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'Christel + Joost',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EJwDEkXAeJkCv',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EJwDEkXAeJkCv',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1RHirWgH1weMsBLi4KOK9d',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Ain’t got shit on me',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Rensie',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/317g2sbpe3ccycu45fes6lfr5lpe',
+        }),
+        'href': 'https://api.spotify.com/v1/users/317g2sbpe3ccycu45fes6lfr5lpe',
+        'object_type': 'user',
+        'owner_id': '317g2sbpe3ccycu45fes6lfr5lpe',
+        'uri': 'spotify:user:317g2sbpe3ccycu45fes6lfr5lpe',
+      }),
+      'playlist_id': '1RHirWgH1weMsBLi4KOK9d',
+      'public': True,
+      'uri': 'spotify:playlist:1RHirWgH1weMsBLi4KOK9d',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'A Blend of music for Joost and kosmik. Updates daily.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EJDyIuS82b8FD',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-maroon-red-en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'kosmik + Joost',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EJDyIuS82b8FD',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EJDyIuS82b8FD',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2ZfissHhjQnhlmD54h6elH',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020f0e63e38a0ea92314ab9d7fab67616d00001e027622b889949b07f15c6b57e2ab67616d00001e02a871bc3a84418ad1240a5d4eab67616d00001e02f56d363d03630bf3ee50b705',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020f0e63e38a0ea92314ab9d7fab67616d00001e027622b889949b07f15c6b57e2ab67616d00001e02a871bc3a84418ad1240a5d4eab67616d00001e02f56d363d03630bf3ee50b705',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020f0e63e38a0ea92314ab9d7fab67616d00001e027622b889949b07f15c6b57e2ab67616d00001e02a871bc3a84418ad1240a5d4eab67616d00001e02f56d363d03630bf3ee50b705',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Billie (interlude)',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '2ZfissHhjQnhlmD54h6elH',
+      'public': True,
+      'uri': 'spotify:playlist:2ZfissHhjQnhlmD54h6elH',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Missing: Metrik - Techtonic;  GAJATE - Baile Funk',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1vOHEgZ5UszkWycPjnG2Uo',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84dce297c9b2a3b46d3c0a41fb',
+          'width': None,
+        }),
+      ]),
+      'name': 'Forza Horizon 5 Bass Arena',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'SylveonTribe',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/rwilming',
+        }),
+        'href': 'https://api.spotify.com/v1/users/rwilming',
+        'object_type': 'user',
+        'owner_id': 'rwilming',
+        'uri': 'spotify:user:rwilming',
+      }),
+      'playlist_id': '1vOHEgZ5UszkWycPjnG2Uo',
+      'public': True,
+      'uri': 'spotify:playlist:1vOHEgZ5UszkWycPjnG2Uo',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4hQFqB1AtOpzsAv01E8n6c',
+      }),
+      'images': list([
+      ]),
+      'name': 'My Playlist #63',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '4hQFqB1AtOpzsAv01E8n6c',
+      'public': True,
+      'uri': 'spotify:playlist:4hQFqB1AtOpzsAv01E8n6c',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0Jgs7FxHX86twpgCDehAHv',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e0285d230a79a0f0081bff1f102ab67616d00001e02e014060de62f2809a3d16ac7ab67616d00001e02eb9d3cba22cfa81c14fb8f0b',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e0285d230a79a0f0081bff1f102ab67616d00001e02e014060de62f2809a3d16ac7ab67616d00001e02eb9d3cba22cfa81c14fb8f0b',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e0285d230a79a0f0081bff1f102ab67616d00001e02e014060de62f2809a3d16ac7ab67616d00001e02eb9d3cba22cfa81c14fb8f0b',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Crème',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '0Jgs7FxHX86twpgCDehAHv',
+      'public': True,
+      'uri': 'spotify:playlist:0Jgs7FxHX86twpgCDehAHv',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Spotify Wrapped presents the songs that you loved most this year.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1F0sijgNaJdgit',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://wrapped-images.spotifycdn.com/image/yts-2022/default/your-top-songs-2022_default_en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'Your Top Songs 2022',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1F0sijgNaJdgit',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1F0sijgNaJdgit',
+    }),
+    dict({
+      'collaborative': False,
+      'description': "The UK's biggest rock playlist. Cover: Circa Waves",
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1DX4DZAVUAwHMT',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67706f00000002460587c8418f9e99ddfa0464',
+          'width': None,
+        }),
+      ]),
+      'name': 'The Rock List',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1DX4DZAVUAwHMT',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1DX4DZAVUAwHMT',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6fHmmdjd2Urd7DAhb4bqOB',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020389027010b78a5e7dce426bab67616d00001e022b8ac52203215122968d4d6aab67616d00001e029eec33b045d88f87b9b06e67ab67616d00001e02ce70170f863e670be6a3874c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020389027010b78a5e7dce426bab67616d00001e022b8ac52203215122968d4d6aab67616d00001e029eec33b045d88f87b9b06e67ab67616d00001e02ce70170f863e670be6a3874c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020389027010b78a5e7dce426bab67616d00001e022b8ac52203215122968d4d6aab67616d00001e029eec33b045d88f87b9b06e67ab67616d00001e02ce70170f863e670be6a3874c',
+          'width': 60,
+        }),
+      ]),
+      'name': 'My Shazam Tracks',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '6fHmmdjd2Urd7DAhb4bqOB',
+      'public': True,
+      'uri': 'spotify:playlist:6fHmmdjd2Urd7DAhb4bqOB',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5H2U7tZb9dMSHPwi20XcuD',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020aa31b3fb95f3e6bc48312d9ab67616d00001e027adbe35f4bcb61b4e9aa910cab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02fe8c4d2d61fa92202800947c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020aa31b3fb95f3e6bc48312d9ab67616d00001e027adbe35f4bcb61b4e9aa910cab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02fe8c4d2d61fa92202800947c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020aa31b3fb95f3e6bc48312d9ab67616d00001e027adbe35f4bcb61b4e9aa910cab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02fe8c4d2d61fa92202800947c',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Likes',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '5H2U7tZb9dMSHPwi20XcuD',
+      'public': True,
+      'uri': 'spotify:playlist:5H2U7tZb9dMSHPwi20XcuD',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZEVXcGYKTerf9omc',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/MJeySCHFAx31LmEuBGrG55letD5TLIXTCpfiZIWMsjHdcjZvNf1UcE4luVIM0bpDom7FKHJoeHt974AcHaBpQ48B7uzwdGQSm9Owdb0FtNk=/MjA6NjQ6ODBUNTEtMDEtNA==',
+          'width': None,
+        }),
+      ]),
+      'name': 'Discover Weekly',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZEVXcGYKTerf9omc',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZEVXcGYKTerf9omc',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Catch all the latest music from artists you follow, plus new singles picked for you. Updates every Friday.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZEVXbsfxNSCNXcqe',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb9e528993a2820267b97f6aae/en',
+          'width': None,
+        }),
+      ]),
+      'name': 'Release Radar',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZEVXbsfxNSCNXcqe',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZEVXbsfxNSCNXcqe',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/709T4OzANnUi2lKQLlVkrE',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0212b78e0955d7be6bd6e9084aab67616d00001e02336a313426983a122d8ed70cab67616d00001e028fae0b49fa2872779be1e77cab67616d00001e029b90e4ccf55c0a23a13f4eae',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0212b78e0955d7be6bd6e9084aab67616d00001e02336a313426983a122d8ed70cab67616d00001e028fae0b49fa2872779be1e77cab67616d00001e029b90e4ccf55c0a23a13f4eae',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0212b78e0955d7be6bd6e9084aab67616d00001e02336a313426983a122d8ed70cab67616d00001e028fae0b49fa2872779be1e77cab67616d00001e029b90e4ccf55c0a23a13f4eae',
+          'width': 60,
+        }),
+      ]),
+      'name': "March '22",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '709T4OzANnUi2lKQLlVkrE',
+      'public': True,
+      'uri': 'spotify:playlist:709T4OzANnUi2lKQLlVkrE',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/57ZuuAVl0eAZvhisoFP3SC',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027f500193535d8fe6d4cb398fab67616d00001e02ca964f2c3c069b3fb9ec11be',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027f500193535d8fe6d4cb398fab67616d00001e02ca964f2c3c069b3fb9ec11be',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027f500193535d8fe6d4cb398fab67616d00001e02ca964f2c3c069b3fb9ec11be',
+          'width': 60,
+        }),
+      ]),
+      'name': "February '22",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '57ZuuAVl0eAZvhisoFP3SC',
+      'public': True,
+      'uri': 'spotify:playlist:57ZuuAVl0eAZvhisoFP3SC',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4OI1xDCLFlEcfgaeyowpEu',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d',
+          'width': 60,
+        }),
+      ]),
+      'name': "January '22",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '4OI1xDCLFlEcfgaeyowpEu',
+      'public': True,
+      'uri': 'spotify:playlist:4OI1xDCLFlEcfgaeyowpEu',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4NsY2DKzQIjaajal5L25Kt',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e02a0a1e3d999ccb049ab3af5eaab67616d00001e02d7d88c479133a202690899d6',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e02a0a1e3d999ccb049ab3af5eaab67616d00001e02d7d88c479133a202690899d6',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e02a0a1e3d999ccb049ab3af5eaab67616d00001e02d7d88c479133a202690899d6',
+          'width': 60,
+        }),
+      ]),
+      'name': "December '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '4NsY2DKzQIjaajal5L25Kt',
+      'public': True,
+      'uri': 'spotify:playlist:4NsY2DKzQIjaajal5L25Kt',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5dV0IeLCysOP6qEDGzhHw0',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9',
+          'width': 60,
+        }),
+      ]),
+      'name': "November '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '5dV0IeLCysOP6qEDGzhHw0',
+      'public': True,
+      'uri': 'spotify:playlist:5dV0IeLCysOP6qEDGzhHw0',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/40bvnxNQlivxZ02DmDzNxy',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e02fa244f6c5c40c2052d4c5408ab67616d00001e02feeecb5afca011822a371efe',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e02fa244f6c5c40c2052d4c5408ab67616d00001e02feeecb5afca011822a371efe',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e02fa244f6c5c40c2052d4c5408ab67616d00001e02feeecb5afca011822a371efe',
+          'width': 60,
+        }),
+      ]),
+      'name': "October '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '40bvnxNQlivxZ02DmDzNxy',
+      'public': True,
+      'uri': 'spotify:playlist:40bvnxNQlivxZ02DmDzNxy',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2ExZs1G4AOluuEwg3q5M1v',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020a097bf1204c74abd760e3aeab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02913a6d7587d853e1dd4c1580',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020a097bf1204c74abd760e3aeab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02913a6d7587d853e1dd4c1580',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020a097bf1204c74abd760e3aeab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02913a6d7587d853e1dd4c1580',
+          'width': 60,
+        }),
+      ]),
+      'name': "September '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '2ExZs1G4AOluuEwg3q5M1v',
+      'public': True,
+      'uri': 'spotify:playlist:2ExZs1G4AOluuEwg3q5M1v',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'de soms niet zo casual weird vibe playlist',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4jNUJLnkZJ32nuFE1PjkGu',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02395ee31df8ad9108f5775b1cab67616d00001e0269a6e28f64890d2ed52d5094ab67616d00001e029433432ccc03bf5e6b7837d2ab67616d00001e02f2486b438645e97b523e4f90',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02395ee31df8ad9108f5775b1cab67616d00001e0269a6e28f64890d2ed52d5094ab67616d00001e029433432ccc03bf5e6b7837d2ab67616d00001e02f2486b438645e97b523e4f90',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02395ee31df8ad9108f5775b1cab67616d00001e0269a6e28f64890d2ed52d5094ab67616d00001e029433432ccc03bf5e6b7837d2ab67616d00001e02f2486b438645e97b523e4f90',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Slumpmässiga',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'xleanne_',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/xleanne_',
+        }),
+        'href': 'https://api.spotify.com/v1/users/xleanne_',
+        'object_type': 'user',
+        'owner_id': 'xleanne_',
+        'uri': 'spotify:user:xleanne_',
+      }),
+      'playlist_id': '4jNUJLnkZJ32nuFE1PjkGu',
+      'public': True,
+      'uri': 'spotify:playlist:4jNUJLnkZJ32nuFE1PjkGu',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/700dVjBihCDj2HwyhYDTRp',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e029071131306eee200e8de2783ab67616d00001e02f7fb699c69d6529d4495766d',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e029071131306eee200e8de2783ab67616d00001e02f7fb699c69d6529d4495766d',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e029071131306eee200e8de2783ab67616d00001e02f7fb699c69d6529d4495766d',
+          'width': 60,
+        }),
+      ]),
+      'name': "August '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '700dVjBihCDj2HwyhYDTRp',
+      'public': True,
+      'uri': 'spotify:playlist:700dVjBihCDj2HwyhYDTRp',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6B5dmWX7pK2LHHtS6ph265',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02b98892f41cd5ab918c34daa9ab67616d00001e02ebea6d997f62d17e9c4eab6c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02b98892f41cd5ab918c34daa9ab67616d00001e02ebea6d997f62d17e9c4eab6c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02b98892f41cd5ab918c34daa9ab67616d00001e02ebea6d997f62d17e9c4eab6c',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Discover Weekly Archive',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '6B5dmWX7pK2LHHtS6ph265',
+      'public': True,
+      'uri': 'spotify:playlist:6B5dmWX7pK2LHHtS6ph265',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0ISThPpDv4JBNeHdptcK6i',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0293aa4d55db0e53466971c07fab67616d00001e02bffd2fc0fd4c3b09d3cd2616ab67616d00001e02c3647b02a2dba464fa7a739bab67616d00001e02f4956c3ceefc6fa1cffc6da6',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0293aa4d55db0e53466971c07fab67616d00001e02bffd2fc0fd4c3b09d3cd2616ab67616d00001e02c3647b02a2dba464fa7a739bab67616d00001e02f4956c3ceefc6fa1cffc6da6',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0293aa4d55db0e53466971c07fab67616d00001e02bffd2fc0fd4c3b09d3cd2616ab67616d00001e02c3647b02a2dba464fa7a739bab67616d00001e02f4956c3ceefc6fa1cffc6da6',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Dance vibes',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '0ISThPpDv4JBNeHdptcK6i',
+      'public': True,
+      'uri': 'spotify:playlist:0ISThPpDv4JBNeHdptcK6i',
+    }),
+    dict({
+      'collaborative': True,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2ElmM8s9Um1XSP07hADX9s',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab',
+          'width': 60,
+        }),
+      ]),
+      'name': 'goeien numertjs',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '2ElmM8s9Um1XSP07hADX9s',
+      'public': True,
+      'uri': 'spotify:playlist:2ElmM8s9Um1XSP07hADX9s',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0DRUBqBUSFJH1a7FvBIsGg',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e023d197fe39ea86e8b4ac05f28ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e02e6d896d0369324af77f47e9a',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e023d197fe39ea86e8b4ac05f28ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e02e6d896d0369324af77f47e9a',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e023d197fe39ea86e8b4ac05f28ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e02e6d896d0369324af77f47e9a',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Summer vibes',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '0DRUBqBUSFJH1a7FvBIsGg',
+      'public': True,
+      'uri': 'spotify:playlist:0DRUBqBUSFJH1a7FvBIsGg',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4PSXSX9WhxdjAzSjU175od',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02ef24c3fdbf856340d55cfeb2ab67616d00001e02fa091c156c618ffd26ed2356',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02ef24c3fdbf856340d55cfeb2ab67616d00001e02fa091c156c618ffd26ed2356',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02ef24c3fdbf856340d55cfeb2ab67616d00001e02fa091c156c618ffd26ed2356',
+          'width': 60,
+        }),
+      ]),
+      'name': "July '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '4PSXSX9WhxdjAzSjU175od',
+      'public': True,
+      'uri': 'spotify:playlist:4PSXSX9WhxdjAzSjU175od',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'A Blend of music for Joost and xleanne_. Updates daily.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EJADo3CBlOCly',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-royal-azure-en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'xleanne_ + Joost',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EJADo3CBlOCly',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EJADo3CBlOCly',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1XKSZRcsYP6VTkObunDIjQ',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8',
+          'width': 60,
+        }),
+      ]),
+      'name': "June '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '1XKSZRcsYP6VTkObunDIjQ',
+      'public': True,
+      'uri': 'spotify:playlist:1XKSZRcsYP6VTkObunDIjQ',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'This is a playlist of some of the songs in the Keinemusik set during the beach party in the Cayo Perico mission in Grand Theft Auto 5 ',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3uCD1EyW3JRx8SV1QnA3Zm',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848e09c57d7b2ef2a17e853d4c',
+          'width': None,
+        }),
+      ]),
+      'name': 'GTA Cayo Perico Beach Party: Keinemusik Set',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Austin Martinez',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/127651589',
+        }),
+        'href': 'https://api.spotify.com/v1/users/127651589',
+        'object_type': 'user',
+        'owner_id': '127651589',
+        'uri': 'spotify:user:127651589',
+      }),
+      'playlist_id': '3uCD1EyW3JRx8SV1QnA3Zm',
+      'public': True,
+      'uri': 'spotify:playlist:3uCD1EyW3JRx8SV1QnA3Zm',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'A Blend of music for Joost and Marc. Updates daily.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EJBr22FUQwTGS',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-azure-yellow-en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'Marc + Joost',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EJBr22FUQwTGS',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EJBr22FUQwTGS',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3yPujxZ9OiB4By8COZaxaK',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02a1035156496a35002a9deeb5',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02a1035156496a35002a9deeb5',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02a1035156496a35002a9deeb5',
+          'width': 60,
+        }),
+      ]),
+      'name': "May '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '3yPujxZ9OiB4By8COZaxaK',
+      'public': True,
+      'uri': 'spotify:playlist:3yPujxZ9OiB4By8COZaxaK',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4A31OO75jaLCV2r7bvbQUa',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19',
+          'width': 60,
+        }),
+      ]),
+      'name': "April '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '4A31OO75jaLCV2r7bvbQUa',
+      'public': True,
+      'uri': 'spotify:playlist:4A31OO75jaLCV2r7bvbQUa',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'HYPERTECHNO | TECHNO |  SLAP HOUSE | BRAZILIAN BASS | BASS HOUSE | EDM | BASS BOOSTED CAR MUSIC |  FUTURE HOUSE | FUTURE BOUNCE | GYM MOTIVATION',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6JbGAAe70bKTA3yfddjWTK',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da849fa7c9ddef714003c524c89c',
+          'width': None,
+        }),
+      ]),
+      'name': 'BASS BOOSTED CAR MUSIC 2023',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'LIZOT',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/max.kleinschmidt',
+        }),
+        'href': 'https://api.spotify.com/v1/users/max.kleinschmidt',
+        'object_type': 'user',
+        'owner_id': 'max.kleinschmidt',
+        'uri': 'spotify:user:max.kleinschmidt',
+      }),
+      'playlist_id': '6JbGAAe70bKTA3yfddjWTK',
+      'public': True,
+      'uri': 'spotify:playlist:6JbGAAe70bKTA3yfddjWTK',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6lVbphMrnxl1vIlfPhdA8i',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e0216faab065323874331824083ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02cf6a74cdef3c4e0d828c4057',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e0216faab065323874331824083ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02cf6a74cdef3c4e0d828c4057',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e0216faab065323874331824083ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02cf6a74cdef3c4e0d828c4057',
+          'width': 60,
+        }),
+      ]),
+      'name': "March '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '6lVbphMrnxl1vIlfPhdA8i',
+      'public': True,
+      'uri': 'spotify:playlist:6lVbphMrnxl1vIlfPhdA8i',
+    }),
+    dict({
+      'collaborative': False,
+      'description': "Unlock the Beats of ADE 2024! Prepare for an unforgettable experience as we spotlight the electrifying tracks from 2,500+ artists who will define this year's 1,000+ ADE events. This is your exclusive sneak peek into this years’ line-up! ",
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1DX3FNkD0kDpDV',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67706f00000002f9923c344f94fc95547da337',
+          'width': None,
+        }),
+      ]),
+      'name': 'ADE Guest List',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1DX3FNkD0kDpDV',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1DX3FNkD0kDpDV',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3l0iA85qv43y9aMWztVIHu',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07',
+          'width': 60,
+        }),
+      ]),
+      'name': "February '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '3l0iA85qv43y9aMWztVIHu',
+      'public': True,
+      'uri': 'spotify:playlist:3l0iA85qv43y9aMWztVIHu',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2jp4GK1k1l7I1X67f2EbmD',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0236c95d8631f465e6898bccc8ab67616d00001e02808bcc3151a05dbd4805f340ab67616d00001e028cffb7c6c40759eaf8a5a142ab67616d00001e02a11119d93d213de96081c6e7',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0236c95d8631f465e6898bccc8ab67616d00001e02808bcc3151a05dbd4805f340ab67616d00001e028cffb7c6c40759eaf8a5a142ab67616d00001e02a11119d93d213de96081c6e7',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0236c95d8631f465e6898bccc8ab67616d00001e02808bcc3151a05dbd4805f340ab67616d00001e028cffb7c6c40759eaf8a5a142ab67616d00001e02a11119d93d213de96081c6e7',
+          'width': 60,
+        }),
+      ]),
+      'name': "January '21",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '2jp4GK1k1l7I1X67f2EbmD',
+      'public': True,
+      'uri': 'spotify:playlist:2jp4GK1k1l7I1X67f2EbmD',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'The songs you loved most this year, all wrapped up.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EM9phQOPnbiB6',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://lineup-images.scdn.co/wrapped-2020-top100_DEFAULT-en.jpg',
+          'width': None,
+        }),
+      ]),
+      'name': 'Your Top Songs 2020',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '37i9dQZF1EM9phQOPnbiB6',
+      'public': True,
+      'uri': 'spotify:playlist:37i9dQZF1EM9phQOPnbiB6',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/027kb6scBKg9y9dE5nPPTv',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c',
+          'width': 60,
+        }),
+      ]),
+      'name': "December '20",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '027kb6scBKg9y9dE5nPPTv',
+      'public': True,
+      'uri': 'spotify:playlist:027kb6scBKg9y9dE5nPPTv',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1lX3M3MvpNmQGzuh7tVi15',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020f8c3812f2ce29f1feadcf94ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02d632291b4714c9b1a7ef2d02',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020f8c3812f2ce29f1feadcf94ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02d632291b4714c9b1a7ef2d02',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020f8c3812f2ce29f1feadcf94ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02d632291b4714c9b1a7ef2d02',
+          'width': 60,
+        }),
+      ]),
+      'name': "November '20",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Joost Lekkerkerker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'object_type': 'user',
+        'owner_id': '1112264649',
+        'uri': 'spotify:user:1112264649',
+      }),
+      'playlist_id': '1lX3M3MvpNmQGzuh7tVi15',
+      'public': True,
+      'uri': 'spotify:playlist:1lX3M3MvpNmQGzuh7tVi15',
     }),
   ])
 # ---

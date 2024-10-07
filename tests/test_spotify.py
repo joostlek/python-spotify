@@ -606,16 +606,24 @@ async def test_get_playlist(
     )
 
 
+@pytest.mark.parametrize(
+    "fixture",
+    [
+        "current_user_playlist_1.json",
+        "current_user_playlist_2.json",
+    ],
+)
 async def test_get_current_users_playlists(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
+    fixture: str,
 ) -> None:
     """Test retrieving playback state."""
     responses.get(
         f"{SPOTIFY_URL}/v1/me/playlists?limit=48",
         status=200,
-        body=load_fixture("current_user_playlist.json"),
+        body=load_fixture(fixture),
     )
     response = await authenticated_client.get_playlists_for_current_user()
     assert response == snapshot
