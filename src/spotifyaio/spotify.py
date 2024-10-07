@@ -11,7 +11,7 @@ from aiohttp import ClientSession
 from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
 from yarl import URL
 
-from spotifyaio.exceptions import SpotifyConnectionError, SpotifyError
+from spotifyaio.exceptions import SpotifyConnectionError
 from spotifyaio.models import (
     Album,
     Artist,
@@ -113,15 +113,8 @@ class SpotifyClient:
             msg = "Timeout occurred while connecting to Spotify"
             raise SpotifyConnectionError(msg) from exception
 
-        content_type = response.headers.get("Content-Type", "")
-
-        if "application/json" not in content_type:
-            text = await response.text()
-            msg = "Unexpected response from Spotify"
-            raise SpotifyError(
-                msg,
-                {"Content-Type": content_type, "response": text},
-            )
+        if response.status == 204:
+            return ""
 
         return await response.text()
 

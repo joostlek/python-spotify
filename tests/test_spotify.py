@@ -11,7 +11,7 @@ from aioresponses import CallbackResult, aioresponses
 import pytest
 from yarl import URL
 
-from spotifyaio import RepeatMode, SpotifyClient, SpotifyConnectionError, SpotifyError
+from spotifyaio import RepeatMode, SpotifyClient, SpotifyConnectionError
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
@@ -72,21 +72,6 @@ async def test_refresh_token() -> None:
         await spotify.refresh_token()
 
         assert spotify._token == "token"  # pylint: disable=protected-access
-
-
-async def test_unexpected_server_response(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test handling unexpected response."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
-        status=200,
-        headers={"Content-Type": "plain/text"},
-        body="Yes",
-    )
-    with pytest.raises(SpotifyError):
-        assert await authenticated_client.get_playback()
 
 
 async def test_timeout(
@@ -167,8 +152,7 @@ async def test_transfer_playback(
 ) -> None:
     """Test transferring playback."""
     responses.put(
-        f"{SPOTIFY_URL}/v1/me/player",
-        status=204,
+        f"{SPOTIFY_URL}/v1/me/player", status=200, body="3o0RYoo5iOMKSmEbunsbvW"
     )
     await authenticated_client.transfer_playback("test")
     responses.assert_called_once_with(
@@ -296,10 +280,7 @@ async def test_resume_playback(
         path="/v1/me/player/play",
         query=expected_params,
     )
-    responses.put(
-        url,
-        status=204,
-    )
+    responses.put(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.start_playback(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/play",
@@ -331,10 +312,7 @@ async def test_pause_playback(
         path="/v1/me/player/pause",
         query=expected_params,
     )
-    responses.put(
-        url,
-        status=204,
-    )
+    responses.put(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.pause_playback(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/pause",
@@ -366,10 +344,7 @@ async def test_next_track(
         path="/v1/me/player/next",
         query=expected_params,
     )
-    responses.post(
-        url,
-        status=204,
-    )
+    responses.post(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.next_track(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/next",
@@ -401,10 +376,7 @@ async def test_previous_track(
         path="/v1/me/player/previous",
         query=expected_params,
     )
-    responses.post(
-        url,
-        status=204,
-    )
+    responses.post(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.previous_track(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/previous",
@@ -439,10 +411,7 @@ async def test_seek_track(
         path="/v1/me/player/seek",
         query=expected_params,
     )
-    responses.put(
-        url,
-        status=204,
-    )
+    responses.put(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.seek_track(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/seek",
@@ -479,10 +448,7 @@ async def test_set_repeat(
         path="/v1/me/player/repeat",
         query=expected_params,
     )
-    responses.put(
-        url,
-        status=204,
-    )
+    responses.put(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.set_repeat(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/repeat",
@@ -517,10 +483,7 @@ async def test_set_volume(
         path="/v1/me/player/volume",
         query=expected_params,
     )
-    responses.put(
-        url,
-        status=204,
-    )
+    responses.put(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.set_volume(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/volume",
@@ -555,10 +518,7 @@ async def test_set_shuffle(
         path="/v1/me/player/shuffle",
         query=expected_params,
     )
-    responses.put(
-        url,
-        status=204,
-    )
+    responses.put(url, status=200, body="3o0RYoo5iOMKSmEbunsbvW")
     await authenticated_client.set_shuffle(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/shuffle",
@@ -590,8 +550,7 @@ async def test_add_to_queue(
 ) -> None:
     """Test adding to queue."""
     responses.post(
-        f"{SPOTIFY_URL}/v1/me/player/queue",
-        status=204,
+        f"{SPOTIFY_URL}/v1/me/player/queue", status=200, body="3o0RYoo5iOMKSmEbunsbvW"
     )
     await authenticated_client.add_to_queue(**arguments)
     responses.assert_called_once_with(
