@@ -364,6 +364,13 @@ class BasePlaylist(DataClassORJSONMixin):
     object_type: str = field(metadata=field_options(alias="type"))
     uri: str
 
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        if d.get("images") is None:
+            d["images"] = []
+        return d
+
 
 @dataclass
 class Playlist(BasePlaylist):
