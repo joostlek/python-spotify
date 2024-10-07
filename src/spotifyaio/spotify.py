@@ -113,6 +113,9 @@ class SpotifyClient:
             msg = "Timeout occurred while connecting to Spotify"
             raise SpotifyConnectionError(msg) from exception
 
+        if response.status == 204:
+            return ""
+
         content_type = response.headers.get("Content-Type", "")
 
         if "application/json" not in content_type:
