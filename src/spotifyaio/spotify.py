@@ -50,6 +50,8 @@ from spotifyaio.models import (
 if TYPE_CHECKING:
     from spotifyaio import SimplifiedAlbum, Track
 
+VERSION = metadata.version(__package__)
+
 
 @dataclass
 class SpotifyClient:
@@ -80,7 +82,6 @@ class SpotifyClient:
         params: dict[str, Any] | None = None,
     ) -> str:
         """Handle a request to Spotify."""
-        version = metadata.version(__package__)
         url = URL.build(
             scheme="https",
             host=self.api_host,
@@ -90,7 +91,7 @@ class SpotifyClient:
         await self.refresh_token()
 
         headers = {
-            "User-Agent": f"AioSpotify/{version}",
+            "User-Agent": f"AioSpotify/{VERSION}",
             "Accept": "application/json, text/plain, */*",
             "Authorization": f"Bearer {self._token}",
         }
