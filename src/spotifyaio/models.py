@@ -228,7 +228,7 @@ class PlayedTrack(DataClassORJSONMixin):
 
     played_at: datetime
     track: Track
-    context: Context
+    context: Context | None = None
 
 
 @dataclass

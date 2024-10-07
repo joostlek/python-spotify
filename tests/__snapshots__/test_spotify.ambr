@@ -6692,14 +6692,7 @@
 # name: test_get_recently_played_tracks
   list([
     dict({
-      'context': dict({
-        'context_type': <ContextType.ALBUM: 'album'>,
-        'external_urls': dict({
-          'spotify': 'https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP',
-        }),
-        'href': 'https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP',
-        'uri': 'spotify:album:57MSBg5pBQZH5bfLVDmeuP',
-      }),
+      'context': None,
       'played_at': datetime.datetime(2024, 10, 6, 18, 9, 18, 556000, tzinfo=datetime.timezone.utc),
       'track': dict({
         'album': dict({
