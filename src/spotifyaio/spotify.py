@@ -107,7 +107,7 @@ class SpotifyClient:
                     method,
                     url,
                     headers=headers,
-                    data=data,
+                    json=data,
                     params=params,
                 )
         except asyncio.TimeoutError as exception:

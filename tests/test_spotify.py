@@ -122,7 +122,7 @@ async def test_get_playback_state(
         METH_GET,
         headers=HEADERS,
         params={"additional_types": "track,episode"},
-        data=None,
+        json=None,
     )
 
 
@@ -142,7 +142,7 @@ async def test_get_no_playback_state(
         METH_GET,
         headers=HEADERS,
         params={"additional_types": "track,episode"},
-        data=None,
+        json=None,
     )
 
 
@@ -159,7 +159,7 @@ async def test_transfer_playback(
         f"{SPOTIFY_URL}/v1/me/player",
         METH_PUT,
         headers=HEADERS,
-        data={"device_ids": ["test"]},
+        json={"device_ids": ["test"]},
         params=None,
     )
 
@@ -180,7 +180,7 @@ async def test_get_devices(
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/devices",
         headers=HEADERS,
-        data=None,
+        json=None,
         params=None,
     )
 
@@ -201,7 +201,7 @@ async def test_get_current_playing(
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/currently-playing",
         headers=HEADERS,
-        data=None,
+        json=None,
         params=None,
     )
 
@@ -221,7 +221,7 @@ async def test_get_no_current_playing_state(
         f"{SPOTIFY_URL}/v1/me/player/currently-playing",
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -287,7 +287,7 @@ async def test_resume_playback(
         METH_PUT,
         headers=HEADERS,
         params=expected_params,
-        data=expected_data,
+        json=expected_data,
     )
 
 
@@ -319,7 +319,7 @@ async def test_pause_playback(
         METH_PUT,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -351,7 +351,7 @@ async def test_next_track(
         METH_POST,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -383,7 +383,7 @@ async def test_previous_track(
         METH_POST,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -418,7 +418,7 @@ async def test_seek_track(
         METH_PUT,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -455,7 +455,7 @@ async def test_set_repeat(
         METH_PUT,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -490,7 +490,7 @@ async def test_set_volume(
         METH_PUT,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -525,7 +525,7 @@ async def test_set_shuffle(
         METH_PUT,
         headers=HEADERS,
         params=expected_params,
-        data=None,
+        json=None,
     )
 
 
@@ -558,7 +558,7 @@ async def test_add_to_queue(
         METH_POST,
         headers=HEADERS,
         params=None,
-        data=expected_data,
+        json=expected_data,
     )
 
 
@@ -580,7 +580,7 @@ async def test_get_album(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -602,7 +602,7 @@ async def test_get_playlist(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -632,7 +632,7 @@ async def test_get_current_users_playlists(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -661,7 +661,7 @@ async def test_get_playlist_variation(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -683,7 +683,7 @@ async def test_get_featured_playlists(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -705,7 +705,7 @@ async def test_get_category_playlists(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -727,7 +727,7 @@ async def test_get_current_user(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -749,7 +749,7 @@ async def test_get_user(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -771,7 +771,7 @@ async def test_get_episode(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -793,7 +793,7 @@ async def test_get_show(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -815,7 +815,7 @@ async def test_get_following_artists(
         METH_GET,
         headers=HEADERS,
         params={"type": "artist", "limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -837,7 +837,7 @@ async def test_get_saved_albums(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -859,7 +859,7 @@ async def test_get_saved_tracks(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -881,7 +881,7 @@ async def test_get_saved_shows(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -903,7 +903,7 @@ async def test_get_recently_played_tracks(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -925,7 +925,7 @@ async def test_get_top_artists(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -947,7 +947,7 @@ async def test_get_top_tracks(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -969,7 +969,7 @@ async def test_get_new_releases(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -991,7 +991,7 @@ async def test_get_category(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -1013,7 +1013,7 @@ async def test_get_artist(
         METH_GET,
         headers=HEADERS,
         params=None,
-        data=None,
+        json=None,
     )
 
 
@@ -1035,7 +1035,7 @@ async def test_get_artist_albums(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -1057,7 +1057,7 @@ async def test_get_show_episodes(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
 
 
@@ -1079,5 +1079,5 @@ async def test_get_categories(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        data=None,
+        json=None,
     )
