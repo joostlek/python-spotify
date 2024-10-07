@@ -471,14 +471,7 @@
         "uri": "spotify:track:71dMjqJ8UJV700zYs5YZCh"
       },
       "played_at": "2024-10-06T18:09:18.556Z",
-      "context": {
-        "type": "album",
-        "href": "https://api.spotify.com/v1/albums/57MSBg5pBQZH5bfLVDmeuP",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/57MSBg5pBQZH5bfLVDmeuP"
-        },
-        "uri": "spotify:album:57MSBg5pBQZH5bfLVDmeuP"
-      }
+      "context": null
     },
     {
       "track": {
