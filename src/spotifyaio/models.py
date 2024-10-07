@@ -9,7 +9,7 @@ from typing import Annotated, Any
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
-from mashumaro.types import Discriminator, SerializationStrategy
+from mashumaro.types import Discriminator  # noqa: TCH002
 
 
 class DeviceType(StrEnum):
