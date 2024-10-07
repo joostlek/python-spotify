@@ -399,6 +399,20 @@ class CategoryPlaylistResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class CategoriesResponse(DataClassORJSONMixin):
+    """Categories response model."""
+
+    categories: CategoriesResponseInner
+
+
+@dataclass
+class CategoriesResponseInner(DataClassORJSONMixin):
+    """Categories response model."""
+
+    items: list[Category]
+
+
+@dataclass
 class Category(DataClassORJSONMixin):
     """Category model."""
 
