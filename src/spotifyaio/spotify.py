@@ -143,7 +143,8 @@ class SpotifyClient:
 
     async def get_album(self, album_id: str) -> Album:
         """Get album."""
-        response = await self._get(f"v1/albums/{album_id}")
+        identifier = album_id.split(":")[-1]
+        response = await self._get(f"v1/albums/{identifier}")
         return Album.from_json(response)
 
     async def get_artist(self, artist_id: str) -> Artist:
