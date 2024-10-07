@@ -170,6 +170,12 @@ class SavedAlbumResponse(DataClassORJSONMixin):
 
     items: list[SavedAlbum]
 
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["items"] if item is not None]
+        return {"items": items}
+
 
 @dataclass
 class NewReleasesResponse(DataClassORJSONMixin):
