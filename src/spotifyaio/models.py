@@ -430,8 +430,8 @@ class BaseUserProfile(DataClassORJSONMixin):
 class UserProfile(BaseUserProfile):
     """User profile model."""
 
-    email: str
     product: ProductType
+    email: str | None = None
 
 
 @dataclass
