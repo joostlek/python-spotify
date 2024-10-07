@@ -5,11 +5,11 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime  # noqa: TCH003
 from enum import StrEnum
-from typing import Annotated, Any, cast
+from typing import Annotated, Any
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
-from mashumaro.types import Discriminator, SerializationStrategy
+from mashumaro.types import Discriminator  # noqa: TCH002
 
 
 class DeviceType(StrEnum):
@@ -104,18 +104,6 @@ class SimplifiedArtist(DataClassORJSONMixin):
     uri: str
 
 
-class ItemsSerializationStrategy(SerializationStrategy):
-    """Serialization strategy for objects encapsulated in items."""
-
-    def serialize(self, value: list[Any]) -> list[Any]:
-        """Serialize optional string."""
-        return value
-
-    def deserialize(self, value: dict[str, Any]) -> list[Any]:
-        """Deserialize optional string."""
-        return cast(list[Any], value.get("items", []))
-
-
 @dataclass
 class SimplifiedAlbum(DataClassORJSONMixin):
     """Album model."""
@@ -143,9 +131,13 @@ class SimplifiedAlbum(DataClassORJSONMixin):
 class Album(SimplifiedAlbum):
     """Album model."""
 
-    tracks: list[SimplifiedTrack] = field(
-        metadata=field_options(serialization_strategy=ItemsSerializationStrategy())
-    )
+    tracks: list[SimplifiedTrack]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        tracks = d.get("tracks", {}).pop("items", [])
+        return {**d, "tracks": tracks}
 
 
 @dataclass
@@ -520,6 +512,10 @@ class Episode(SimplifiedEpisode, Item):
 class Show(SimplifiedShow):
     """Show model."""
 
-    episodes: list[SimplifiedEpisode] = field(
-        metadata=field_options(serialization_strategy=ItemsSerializationStrategy())
-    )
+    episodes: list[SimplifiedEpisode]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        episodes = d.get("episodes", {}).pop("items", [])
+        return {**d, "episodes": episodes}
