@@ -176,7 +176,17 @@ class SpotifyClient:
         response = await self._get("v1/me/albums", params=params)
         return SavedAlbumResponse.from_json(response).items
 
-    # Save an album
+    async def save_albums(self, album_ids: list[str]) -> None:
+        """Save albums."""
+        if not album_ids:
+            return
+        if len(album_ids) > 50:
+            msg = "Maximum of 50 albums can be saved at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in album_ids])
+        }
+        await self._put("v1/me/albums", params=params)
 
     # Remove an album
 
