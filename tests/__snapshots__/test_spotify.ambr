@@ -1,4 +1,11 @@
 # serializer version: 1
+# name: test_checking_saved_albums
+  dict({
+    '1A2GTWGtFfWp7KSQTwWOyo': False,
+    '2noRn2Aes5aoNVsU6iWTh': True,
+    '3IqzqH6ShrRtie9Yd2ODyG': True,
+  })
+# ---
 # name: test_get_album
   dict({
     'album_id': '3IqzqH6ShrRtie9Yd2ODyG',
