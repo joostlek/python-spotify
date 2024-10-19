@@ -519,3 +519,10 @@ class Show(SimplifiedShow):
         """Pre deserialize hook."""
         episodes = d.get("episodes", {}).pop("items", [])
         return {**d, "episodes": episodes}
+
+
+@dataclass
+class AlbumsResponse(DataClassORJSONMixin):
+    """Albums response model."""
+
+    albums: list[Album]

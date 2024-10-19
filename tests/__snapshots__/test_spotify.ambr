@@ -267,6 +267,1019 @@
     'uri': 'spotify:album:3IqzqH6ShrRtie9Yd2ODyG',
   })
 # ---
+# name: test_get_albums
+  list([
+    dict({
+      'album_id': '382ObEPsp2rxGrnsizN5TX',
+      'album_type': <AlbumType.ALBUM: 'album'>,
+      'artists': list([
+        dict({
+          'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+          'name': 'Daft Punk',
+          'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+        }),
+      ]),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab67616d0000b27326597c053b38c9cf93f8f3a9',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab67616d00001e0226597c053b38c9cf93f8f3a9',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab67616d0000485126597c053b38c9cf93f8f3a9',
+          'width': 64,
+        }),
+      ]),
+      'name': 'TRON: Legacy Reconfigured',
+      'release_date': '2011-01-01',
+      'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+      'total_tracks': 15,
+      'tracks': list([
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '3a9qv6NLHnsVxJUtKOMHvD',
+              'name': 'The Glitch Mob',
+              'uri': 'spotify:artist:3a9qv6NLHnsVxJUtKOMHvD',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 262240,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/4lteJuSjb9Jt9W1W7PIU2U',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/4lteJuSjb9Jt9W1W7PIU2U',
+          'is_local': False,
+          'name': 'Derezzed - Remixed by The Glitch Mob',
+          'track_id': '4lteJuSjb9Jt9W1W7PIU2U',
+          'track_number': 1,
+          'uri': 'spotify:track:4lteJuSjb9Jt9W1W7PIU2U',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '4CecgT3PfTiMzdO3pFCDNP',
+              'name': 'M83 VS Big Black Delta',
+              'uri': 'spotify:artist:4CecgT3PfTiMzdO3pFCDNP',
+            }),
+            dict({
+              'artist_id': '63MQldklfxkjYDoUE4Tppz',
+              'name': 'M83',
+              'uri': 'spotify:artist:63MQldklfxkjYDoUE4Tppz',
+            }),
+            dict({
+              'artist_id': '2TXpVEw5FbzDh93tLoDm0i',
+              'name': 'Big Black Delta',
+              'uri': 'spotify:artist:2TXpVEw5FbzDh93tLoDm0i',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 234986,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/66uVqkmHAc0MBUzoPhIypN',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/66uVqkmHAc0MBUzoPhIypN',
+          'is_local': False,
+          'name': 'Fall - Remixed by M83 VS Big Black Delta',
+          'track_id': '66uVqkmHAc0MBUzoPhIypN',
+          'track_number': 2,
+          'uri': 'spotify:track:66uVqkmHAc0MBUzoPhIypN',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '5eKLa1xyHLq8ERWmT1CRHj',
+              'name': 'The Crystal Method',
+              'uri': 'spotify:artist:5eKLa1xyHLq8ERWmT1CRHj',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 267786,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/4OEnpg5ubhg6OQ4M2ZjtsL',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/4OEnpg5ubhg6OQ4M2ZjtsL',
+          'is_local': False,
+          'name': 'The Grid - Remixed by The Crystal Method',
+          'track_id': '4OEnpg5ubhg6OQ4M2ZjtsL',
+          'track_number': 3,
+          'uri': 'spotify:track:4OEnpg5ubhg6OQ4M2ZjtsL',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '3gqv1kgivAc92KnUm4elKv',
+              'name': 'Teddybears',
+              'uri': 'spotify:artist:3gqv1kgivAc92KnUm4elKv',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 334346,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/2EyK6JBWqftJlxAuqd0Dsq',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/2EyK6JBWqftJlxAuqd0Dsq',
+          'is_local': False,
+          'name': 'Adagio for TRON - Remixed by Teddybears',
+          'track_id': '2EyK6JBWqftJlxAuqd0Dsq',
+          'track_number': 4,
+          'uri': 'spotify:track:2EyK6JBWqftJlxAuqd0Dsq',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '1mB4aweE1XGdjbFVFC8i5m',
+              'name': 'Ki:Theory',
+              'uri': 'spotify:artist:1mB4aweE1XGdjbFVFC8i5m',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 291506,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/1TT6gRprLQ5vSWgoWpyKfR',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/1TT6gRprLQ5vSWgoWpyKfR',
+          'is_local': False,
+          'name': 'The Son of Flynn - Remixed by Ki:Theory',
+          'track_id': '1TT6gRprLQ5vSWgoWpyKfR',
+          'track_number': 5,
+          'uri': 'spotify:track:1TT6gRprLQ5vSWgoWpyKfR',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '5MO2kbaGGA2a8kL4c9qqHq',
+              'name': 'Paul Oakenfold',
+              'uri': 'spotify:artist:5MO2kbaGGA2a8kL4c9qqHq',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 275266,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/6hEvTmmvby9ZTkSdfmPW3m',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/6hEvTmmvby9ZTkSdfmPW3m',
+          'is_local': False,
+          'name': 'C.L.U. - Remixed by Paul Oakenfold',
+          'track_id': '6hEvTmmvby9ZTkSdfmPW3m',
+          'track_number': 6,
+          'uri': 'spotify:track:6hEvTmmvby9ZTkSdfmPW3m',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '3OsRAKCvk37zwYcnzRf5XF',
+              'name': 'Moby',
+              'uri': 'spotify:artist:3OsRAKCvk37zwYcnzRf5XF',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 392293,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/03uOJUuuTgaFFI1Efal1no',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/03uOJUuuTgaFFI1Efal1no',
+          'is_local': False,
+          'name': 'The Son of Flynn - Remixed by Moby',
+          'track_id': '03uOJUuuTgaFFI1Efal1no',
+          'track_number': 7,
+          'uri': 'spotify:track:03uOJUuuTgaFFI1Efal1no',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '62k5LKMhymqlDNo2DWOvvv',
+              'name': 'Boys Noize',
+              'uri': 'spotify:artist:62k5LKMhymqlDNo2DWOvvv',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 340186,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/3YYnfKM02WkygOwg6ozfrL',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/3YYnfKM02WkygOwg6ozfrL',
+          'is_local': False,
+          'name': 'End of Line - Remixed by Boys Noize',
+          'track_id': '3YYnfKM02WkygOwg6ozfrL',
+          'track_number': 8,
+          'uri': 'spotify:track:3YYnfKM02WkygOwg6ozfrL',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '6TQj5BFPooTa08A7pk8AQ1',
+              'name': 'Kaskade',
+              'uri': 'spotify:artist:6TQj5BFPooTa08A7pk8AQ1',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 412440,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/2jFLd9OdNcLsblpv4fDTRn',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/2jFLd9OdNcLsblpv4fDTRn',
+          'is_local': False,
+          'name': 'Rinzler - Remixed by Kaskade',
+          'track_id': '2jFLd9OdNcLsblpv4fDTRn',
+          'track_number': 9,
+          'uri': 'spotify:track:2jFLd9OdNcLsblpv4fDTRn',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '2wouN3QXejYa5tKetYdcVX',
+              'name': 'Com Truise',
+              'uri': 'spotify:artist:2wouN3QXejYa5tKetYdcVX',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 292093,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/3SL3UavpjRKNMM9UVlE9Bx',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/3SL3UavpjRKNMM9UVlE9Bx',
+          'is_local': False,
+          'name': 'Encom Part 2 - Remixed by Com Truise',
+          'track_id': '3SL3UavpjRKNMM9UVlE9Bx',
+          'track_number': 10,
+          'uri': 'spotify:track:3SL3UavpjRKNMM9UVlE9Bx',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '3hXDMlrPegHRO0zUvBsRSI',
+              'name': 'Photek',
+              'uri': 'spotify:artist:3hXDMlrPegHRO0zUvBsRSI',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 318720,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/2UBYw2qf9PkvoKQ610ocft',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/2UBYw2qf9PkvoKQ610ocft',
+          'is_local': False,
+          'name': 'End of Line - Remixed by Photek',
+          'track_id': '2UBYw2qf9PkvoKQ610ocft',
+          'track_number': 11,
+          'uri': 'spotify:track:2UBYw2qf9PkvoKQ610ocft',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '5F8v5xSIGtfukNxq0Jqgwh',
+              'name': 'The Japanese Popstars',
+              'uri': 'spotify:artist:5F8v5xSIGtfukNxq0Jqgwh',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 367720,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/7irNlzUSPNgCDtEyQuS3lm',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/7irNlzUSPNgCDtEyQuS3lm',
+          'is_local': False,
+          'name': 'Arena - Remixed by The Japanese Popstars',
+          'track_id': '7irNlzUSPNgCDtEyQuS3lm',
+          'track_number': 12,
+          'uri': 'spotify:track:7irNlzUSPNgCDtEyQuS3lm',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '1vCWHaC5f2uS3yhpwWbIA6',
+              'name': 'Avicii',
+              'uri': 'spotify:artist:1vCWHaC5f2uS3yhpwWbIA6',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 303946,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/1rn6JIHBuBZiwvA57jeoOB',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/1rn6JIHBuBZiwvA57jeoOB',
+          'is_local': False,
+          'name': 'Derezzed - Remixed by Avicii',
+          'track_id': '1rn6JIHBuBZiwvA57jeoOB',
+          'track_number': 13,
+          'uri': 'spotify:track:1rn6JIHBuBZiwvA57jeoOB',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '4iVhFmG8YCCEHANGeUUS9q',
+              'name': 'Pretty Lights',
+              'uri': 'spotify:artist:4iVhFmG8YCCEHANGeUUS9q',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 272853,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/4OgB6TRmIGBRT4NoFxxIQd',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/4OgB6TRmIGBRT4NoFxxIQd',
+          'is_local': False,
+          'name': 'Solar Sailer - Remixed by Pretty Lights',
+          'track_id': '4OgB6TRmIGBRT4NoFxxIQd',
+          'track_number': 14,
+          'uri': 'spotify:track:4OgB6TRmIGBRT4NoFxxIQd',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+            dict({
+              'artist_id': '3CfH3WZPzbk5mNDWXpGIy6',
+              'name': 'Sander Kleinenberg',
+              'uri': 'spotify:artist:3CfH3WZPzbk5mNDWXpGIy6',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 304466,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/1Nv1h7ANN9E4rAjLP4OfgA',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/1Nv1h7ANN9E4rAjLP4OfgA',
+          'is_local': False,
+          'name': 'TRON Legacy (End Titles) - Remixed by Sander Kleinenberg',
+          'track_id': '1Nv1h7ANN9E4rAjLP4OfgA',
+          'track_number': 15,
+          'uri': 'spotify:track:1Nv1h7ANN9E4rAjLP4OfgA',
+        }),
+      ]),
+      'uri': 'spotify:album:382ObEPsp2rxGrnsizN5TX',
+    }),
+    dict({
+      'album_id': '1A2GTWGtFfWp7KSQTwWOyo',
+      'album_type': <AlbumType.ALBUM: 'album'>,
+      'artists': list([
+        dict({
+          'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+          'name': 'Daft Punk',
+          'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+        }),
+      ]),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab67616d0000b273d8601e15fa1b4351fe1fc6ae',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02d8601e15fa1b4351fe1fc6ae',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab67616d00004851d8601e15fa1b4351fe1fc6ae',
+          'width': 64,
+        }),
+      ]),
+      'name': 'Human After All',
+      'release_date': '2005-03-14',
+      'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+      'total_tracks': 10,
+      'tracks': list([
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 319879,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/3aByRUC2BVL6Fs1zI723sd',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/3aCKAkMx3yfaj3AO5Gz47e',
+          'is_local': False,
+          'name': 'Human After All',
+          'track_id': '3aCKAkMx3yfaj3AO5Gz47e',
+          'track_number': 1,
+          'uri': 'spotify:track:3aCKAkMx3yfaj3AO5Gz47e',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 263240,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/2ABpuao3ZbTjP2cSiX9KZc',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/0UZRFYMoz9xmeE2AQUhTDl',
+          'is_local': False,
+          'name': 'The Prime Time of Your Life',
+          'track_id': '0UZRFYMoz9xmeE2AQUhTDl',
+          'track_number': 2,
+          'uri': 'spotify:track:0UZRFYMoz9xmeE2AQUhTDl',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 287720,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/4zu9wo2FXoBSsKjO6tRB3R',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/7LL40F6YdZgeiQ6en1c7Lk',
+          'is_local': False,
+          'name': 'Robot Rock',
+          'track_id': '7LL40F6YdZgeiQ6en1c7Lk',
+          'track_number': 3,
+          'uri': 'spotify:track:7LL40F6YdZgeiQ6en1c7Lk',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 321186,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/07KtTNn0wZndtN5NOYdBWR',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/60HSQkYSlJVtdRdHgzRsXz',
+          'is_local': False,
+          'name': 'Steam Machine',
+          'track_id': '60HSQkYSlJVtdRdHgzRsXz',
+          'track_number': 4,
+          'uri': 'spotify:track:60HSQkYSlJVtdRdHgzRsXz',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 289680,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/1WnXCfO6oIxG0TbJj29MqR',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/4ABWPP59ItFKykdaDF09K5',
+          'is_local': False,
+          'name': 'Make Love',
+          'track_id': '4ABWPP59ItFKykdaDF09K5',
+          'track_number': 5,
+          'uri': 'spotify:track:4ABWPP59ItFKykdaDF09K5',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 248400,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/61qwHnU8dyMqPemGzopDcp',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/73MAeHX5sqLYfuYclsrvHc',
+          'is_local': False,
+          'name': 'The Brainwasher',
+          'track_id': '73MAeHX5sqLYfuYclsrvHc',
+          'track_number': 6,
+          'uri': 'spotify:track:73MAeHX5sqLYfuYclsrvHc',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 19200,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/0cV1dl2k19YoGbxTKDb0rH',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/3dWxT7lAv6lmXEW2AEZyPQ',
+          'is_local': False,
+          'name': 'On / Off',
+          'track_id': '3dWxT7lAv6lmXEW2AEZyPQ',
+          'track_number': 7,
+          'uri': 'spotify:track:3dWxT7lAv6lmXEW2AEZyPQ',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 287840,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/73mTIDCNKGfUF4MiFfR3b5',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/37M8nuFfSrlKfTR0AAp7gK',
+          'is_local': False,
+          'name': 'Television Rules the Nation',
+          'track_id': '37M8nuFfSrlKfTR0AAp7gK',
+          'track_number': 8,
+          'uri': 'spotify:track:37M8nuFfSrlKfTR0AAp7gK',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 284280,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/0LSLM0zuWRkEYemF7JcfEE',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/1iNeZGJsoC0D7ZyJTdIbDS',
+          'is_local': False,
+          'name': 'Technologic',
+          'track_id': '1iNeZGJsoC0D7ZyJTdIbDS',
+          'track_number': 9,
+          'uri': 'spotify:track:1iNeZGJsoC0D7ZyJTdIbDS',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 417320,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/3PsJ6zisndTa3F9eOjBfCc',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/0Dezmoeb373GNcYBjLVAMH',
+          'is_local': False,
+          'name': 'Emotion',
+          'track_id': '0Dezmoeb373GNcYBjLVAMH',
+          'track_number': 10,
+          'uri': 'spotify:track:0Dezmoeb373GNcYBjLVAMH',
+        }),
+      ]),
+      'uri': 'spotify:album:1A2GTWGtFfWp7KSQTwWOyo',
+    }),
+    dict({
+      'album_id': '2noRn2Aes5aoNVsU6iWThc',
+      'album_type': <AlbumType.ALBUM: 'album'>,
+      'artists': list([
+        dict({
+          'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+          'name': 'Daft Punk',
+          'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+        }),
+      ]),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab67616d0000b2736610c21366e613bfd9f5d197',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab67616d00001e026610c21366e613bfd9f5d197',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab67616d000048516610c21366e613bfd9f5d197',
+          'width': 64,
+        }),
+      ]),
+      'name': 'Discovery',
+      'release_date': '2001-03-12',
+      'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+      'total_tracks': 14,
+      'tracks': list([
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 320357,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/0DiWol3AO6WpXZgp0goxAV',
+          'is_local': False,
+          'name': 'One More Time',
+          'track_id': '0DiWol3AO6WpXZgp0goxAV',
+          'track_number': 1,
+          'uri': 'spotify:track:0DiWol3AO6WpXZgp0goxAV',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 212546,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/3H3cOQ6LBLSvmcaV7QkZEu',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/3H3cOQ6LBLSvmcaV7QkZEu',
+          'is_local': False,
+          'name': 'Aerodynamic',
+          'track_id': '3H3cOQ6LBLSvmcaV7QkZEu',
+          'track_number': 2,
+          'uri': 'spotify:track:3H3cOQ6LBLSvmcaV7QkZEu',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 301373,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/2VEZx7NWsZ1D0eJ4uv5Fym',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/2VEZx7NWsZ1D0eJ4uv5Fym',
+          'is_local': False,
+          'name': 'Digital Love',
+          'track_id': '2VEZx7NWsZ1D0eJ4uv5Fym',
+          'track_number': 3,
+          'uri': 'spotify:track:2VEZx7NWsZ1D0eJ4uv5Fym',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 226413,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/5W3cjX2J3tjhG8zb6u0qHn',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/5W3cjX2J3tjhG8zb6u0qHn',
+          'is_local': False,
+          'name': 'Harder, Better, Faster, Stronger',
+          'track_id': '5W3cjX2J3tjhG8zb6u0qHn',
+          'track_number': 4,
+          'uri': 'spotify:track:5W3cjX2J3tjhG8zb6u0qHn',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 211640,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/6vuPZX9fWESg5js2JFTQRJ',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/6vuPZX9fWESg5js2JFTQRJ',
+          'is_local': False,
+          'name': 'Crescendolls',
+          'track_id': '6vuPZX9fWESg5js2JFTQRJ',
+          'track_number': 5,
+          'uri': 'spotify:track:6vuPZX9fWESg5js2JFTQRJ',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 104466,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/63JXZZRbmzooashakb0zbu',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/63JXZZRbmzooashakb0zbu',
+          'is_local': False,
+          'name': 'Nightvision',
+          'track_id': '63JXZZRbmzooashakb0zbu',
+          'track_number': 6,
+          'uri': 'spotify:track:63JXZZRbmzooashakb0zbu',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 237800,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/186hvCTyrni4KT9nwIQ7zS',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/186hvCTyrni4KT9nwIQ7zS',
+          'is_local': False,
+          'name': 'Superheroes',
+          'track_id': '186hvCTyrni4KT9nwIQ7zS',
+          'track_number': 7,
+          'uri': 'spotify:track:186hvCTyrni4KT9nwIQ7zS',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 201800,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/098ttCNmncrO4YvqWUNMvn',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/098ttCNmncrO4YvqWUNMvn',
+          'is_local': False,
+          'name': 'High Life',
+          'track_id': '098ttCNmncrO4YvqWUNMvn',
+          'track_number': 8,
+          'uri': 'spotify:track:098ttCNmncrO4YvqWUNMvn',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 232666,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/1NeLwFETswx8Fzxl2AFl91',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/1NeLwFETswx8Fzxl2AFl91',
+          'is_local': False,
+          'name': 'Something About Us',
+          'track_id': '1NeLwFETswx8Fzxl2AFl91',
+          'track_number': 9,
+          'uri': 'spotify:track:1NeLwFETswx8Fzxl2AFl91',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 227866,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/7cMFjxhbXBpOlais7KMF3j',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/7cMFjxhbXBpOlais7KMF3j',
+          'is_local': False,
+          'name': 'Voyager',
+          'track_id': '7cMFjxhbXBpOlais7KMF3j',
+          'track_number': 10,
+          'uri': 'spotify:track:7cMFjxhbXBpOlais7KMF3j',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 345186,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/2LD2gT7gwAurzdQDQtILds',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/2LD2gT7gwAurzdQDQtILds',
+          'is_local': False,
+          'name': 'Veridis Quo',
+          'track_id': '2LD2gT7gwAurzdQDQtILds',
+          'track_number': 11,
+          'uri': 'spotify:track:2LD2gT7gwAurzdQDQtILds',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 206866,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/4npMbTuxrUA3Wd7edACZ2L',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/4npMbTuxrUA3Wd7edACZ2L',
+          'is_local': False,
+          'name': 'Short Circuit',
+          'track_id': '4npMbTuxrUA3Wd7edACZ2L',
+          'track_number': 12,
+          'uri': 'spotify:track:4npMbTuxrUA3Wd7edACZ2L',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 240173,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/7v9Q0dAb9t7h8gJOkcJHay',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/7v9Q0dAb9t7h8gJOkcJHay',
+          'is_local': False,
+          'name': 'Face to Face',
+          'track_id': '7v9Q0dAb9t7h8gJOkcJHay',
+          'track_number': 13,
+          'uri': 'spotify:track:7v9Q0dAb9t7h8gJOkcJHay',
+        }),
+        dict({
+          'artists': list([
+            dict({
+              'artist_id': '4tZwfgrHOc3mvqYlEYSvVi',
+              'name': 'Daft Punk',
+              'uri': 'spotify:artist:4tZwfgrHOc3mvqYlEYSvVi',
+            }),
+          ]),
+          'disc_number': 1,
+          'duration_ms': 600293,
+          'explicit': False,
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/track/3zMvotMEQK3xvH01vA9wAP',
+          }),
+          'href': 'https://api.spotify.com/v1/tracks/3zMvotMEQK3xvH01vA9wAP',
+          'is_local': False,
+          'name': 'Too Long',
+          'track_id': '3zMvotMEQK3xvH01vA9wAP',
+          'track_number': 14,
+          'uri': 'spotify:track:3zMvotMEQK3xvH01vA9wAP',
+        }),
+      ]),
+      'uri': 'spotify:album:2noRn2Aes5aoNVsU6iWThc',
+    }),
+  ])
+# ---
 # name: test_get_artist
   dict({
     'artist_id': '0TnOYISbd1XYRBk9myaseg',

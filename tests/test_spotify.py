@@ -94,6 +94,58 @@ async def test_timeout(
             assert await spotify.get_playback()
 
 
+async def test_get_albums(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving albums."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+        body=load_fixture("albums.json"),
+    )
+    response = await authenticated_client.get_albums(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/albums",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_get_no_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving no albums."""
+    response = await authenticated_client.get_albums([])
+    assert response == []
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_too_many_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving too many albums."""
+    with pytest.raises(
+        ValueError, match="Maximum of 20 albums can be requested at once"
+    ):
+        await authenticated_client.get_albums(["abc"] * 21)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 @pytest.mark.parametrize(
     "playback_fixture",
     [
