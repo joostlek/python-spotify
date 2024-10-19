@@ -6182,6 +6182,106 @@
     'shuffle': False,
   })
 # ---
+# name: test_get_playback_state[playback_audiobook_1.json]
+  dict({
+    'context': dict({
+      'context_type': <ContextType.SHOW: 'show'>,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/show/58cFIY8IT7yGqR3kHnKqzV',
+      }),
+      'href': 'https://api.spotify.com/v1/shows/58cFIY8IT7yGqR3kHnKqzV',
+      'uri': 'spotify:show:58cFIY8IT7yGqR3kHnKqzV',
+    }),
+    'currently_playing_type': 'episode',
+    'device': dict({
+      'device_id': '9e3c475ee7d51dbebb4547dbc5b57e35ee6707f8',
+      'device_type': <DeviceType.SMARTPHONE: 'Smartphone'>,
+      'is_active': True,
+      'is_private_session': False,
+      'is_restricted': False,
+      'name': 'Nothing phone (1)',
+      'supports_volume': False,
+      'volume_percent': 100,
+    }),
+    'is_playing': True,
+    'item': dict({
+      'description': '',
+      'duration_ms': 249652,
+      'episode_id': '3NW4BmIOG0qzQZgtLgsydR',
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/3NW4BmIOG0qzQZgtLgsydR',
+      }),
+      'href': 'https://api.spotify.com/v1/episodes/3NW4BmIOG0qzQZgtLgsydR',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'name': 'Track 1',
+      'release_date': '0000',
+      'release_date_precision': <ReleaseDatePrecision.YEAR: 'year'>,
+      'show': dict({
+        'description': '''
+          Author(s): Anya Niewierra
+          Narrator(s): Nienke Brinkhuis, Cees van Ede, Mattijn Hartemink
+          <p>Na het succes van de bestsellers <i>Het bloemenmeisje</i> en <i>De Camino</i> komt Anya Niewierra met <i>De nomade</i>. Een aangrijpende thriller over vaderliefde en een verborgen verleden.</p>
+          <p>De 37-jarige documentairemaker Olga Liebke woont met haar zonderlinge vader in het Harz-gebergte. Olga heeft een innige band met de inmiddels dementerende man. Haar moeder stierf in het kraambed en ze heeft verder geen familie. Tenminste, zo is het verhaal.</p>
+          <p>Maar dan vertelt haar vader herinneringen die niet rijmen met de geschiedenis zoals zij die kent. Ze gaat twijfelen over haar achtergrond en ontdekt documenten uit de voormalige Sovjet-Unie.</p>
+          <p>Olga reist naar de driehoek Polen, Litouwen en Belarus en stuit op een huiveringwekkend geheim.</p>
+          <br>
+          <p>‘Anya Niewierra heeft met <i>De nomade</i> weer een magnifiek boek afgeleverd, dat mogelijk nog indrukwekkender is dan <i>De Camino</i>.’<br>
+          Heleen Spanjaard, <i>Margriet</i></p>
+          <p>‘Verrassend, meeslepend en bloedstollend. <i>De nomade</i> is een waardige opvolger van <i>De Camino</i>.’<br>
+          Rob Cobben, cultuurverslaggever <i>Dagblad De Limburger</i></p>
+        ''',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/58cFIY8IT7yGqR3kHnKqzV',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/58cFIY8IT7yGqR3kHnKqzV',
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+            'width': 64,
+          }),
+        ]),
+        'name': 'De nomade',
+        'publisher': 'Anya Niewierra',
+        'show_id': '58cFIY8IT7yGqR3kHnKqzV',
+        'total_episodes': None,
+        'uri': 'spotify:show:58cFIY8IT7yGqR3kHnKqzV',
+      }),
+      'type': <ItemType.EPISODE: 'episode'>,
+      'uri': 'spotify:episode:3NW4BmIOG0qzQZgtLgsydR',
+    }),
+    'progress_ms': 15611,
+    'repeat_mode': <RepeatMode.OFF: 'off'>,
+    'shuffle': False,
+  })
+# ---
 # name: test_get_playback_state[playback_episode_1.json]
   dict({
     'context': dict({

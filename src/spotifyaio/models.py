@@ -473,7 +473,7 @@ class SimplifiedShow(DataClassORJSONMixin):
     href: str
     publisher: str
     description: str
-    total_episodes: int
+    total_episodes: int | None
 
 
 @dataclass
