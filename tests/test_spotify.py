@@ -260,6 +260,55 @@ async def test_removing_too_many_saved_albums(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+async def test_checking_saved_albums(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved albums."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/albums/contains?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+        body=load_fixture("album_saved.json"),
+    )
+    response = await authenticated_client.are_albums_saved(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/albums/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_checking_no_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking no saved albums."""
+    await authenticated_client.are_albums_saved([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_checking_too_many_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking too many saved albums."""
+    with pytest.raises(ValueError, match="Maximum of 20 albums can be checked at once"):
+        await authenticated_client.are_albums_saved(["abc"] * 21)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 @pytest.mark.parametrize(
     "playback_fixture",
     [

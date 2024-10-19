@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING, Any, Awaitable, Callable, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
+import orjson
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError
@@ -209,7 +210,18 @@ class SpotifyClient:
         }
         await self._delete("v1/me/albums", params=params)
 
-    # Check if one or more albums is already saved
+    async def are_albums_saved(self, album_ids: list[str]) -> dict[str, bool]:
+        """Check if albums are saved."""
+        if not album_ids:
+            return {}
+        if len(album_ids) > 20:
+            msg = "Maximum of 20 albums can be checked at once"
+            raise ValueError(msg)
+        identifiers = [get_identifier(i) for i in album_ids]
+        params: dict[str, Any] = {"ids": ",".join(identifiers)}
+        response = await self._get("v1/me/albums/contains", params=params)
+        body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
+        return dict(zip(identifiers, body))
 
     async def get_new_releases(self) -> list[SimplifiedAlbum]:
         """Get new releases."""
