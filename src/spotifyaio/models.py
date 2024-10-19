@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import datetime  # noqa: TCH003
-from enum import StrEnum
+from enum import IntEnum, StrEnum
 from typing import Annotated, Any
 
 from mashumaro import field_options
@@ -533,3 +533,55 @@ class AlbumTracksResponse(DataClassORJSONMixin):
     """Album tracks response model."""
 
     items: list[SimplifiedTrack]
+
+
+class Key(IntEnum):
+    """Key of a track."""
+
+    C = 0
+    C_SHARP = 1
+    D = 2
+    D_SHARP = 3
+    E = 4
+    F = 5
+    F_SHARP = 6
+    G = 7
+    G_SHARP = 8
+    A = 9
+    A_SHARP = 10
+    B = 11
+
+
+class Mode(IntEnum):
+    """Mode of a track."""
+
+    MINOR = 0
+    MAJOR = 1
+
+
+class TimeSignature(IntEnum):
+    """Time signature of a track."""
+
+    THREE_FOUR = 3
+    FOUR_FOUR = 4
+    FIVE_FOUR = 5
+    SIX_FOUR = 6
+    SEVEN_FOUR = 7
+
+
+@dataclass
+class AudioFeatures(DataClassORJSONMixin):
+    """Audio features model."""
+
+    danceability: float
+    energy: float
+    key: Key | None
+    loudness: float
+    mode: Mode
+    speechiness: float
+    acousticness: float
+    instrumentalness: float
+    liveness: float
+    valence: float
+    tempo: float
+    time_signature: TimeSignature

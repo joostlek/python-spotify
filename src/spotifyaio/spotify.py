@@ -19,6 +19,7 @@ from spotifyaio.models import (
     AlbumTracksResponse,
     Artist,
     ArtistResponse,
+    AudioFeatures,
     BasePlaylist,
     BaseUserProfile,
     CategoriesResponse,
@@ -503,7 +504,11 @@ class SpotifyClient:
 
     # Get audio features for several tracks
 
-    # Get audio features for a track
+    async def get_audio_features(self, track_id: str) -> AudioFeatures:
+        """Get audio features."""
+        identifier = get_identifier(track_id)
+        response = await self._get(f"v1/audio-features/{identifier}")
+        return AudioFeatures.from_json(response)
 
     # Get audio analysis for a track
 
