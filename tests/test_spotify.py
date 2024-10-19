@@ -146,6 +146,28 @@ async def test_get_too_many_albums(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+async def test_get_album_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving tracks of an album."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/albums/4aawyAB9vmqN3uQ7FjRGTy/tracks?limit=48",
+        status=200,
+        body=load_fixture("album_tracks.json"),
+    )
+    response = await authenticated_client.get_album_tracks("4aawyAB9vmqN3uQ7FjRGTy")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/albums/4aawyAB9vmqN3uQ7FjRGTy/tracks",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        json=None,
+    )
+
+
 @pytest.mark.parametrize(
     "playback_fixture",
     [
