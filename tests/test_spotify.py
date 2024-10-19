@@ -101,6 +101,7 @@ async def test_timeout(
         "playback_2.json",
         "playback_3.json",
         "playback_episode_1.json",
+        "playback_audiobook_1.json",
     ],
 )
 async def test_get_playback_state(
