@@ -14,6 +14,7 @@ from yarl import URL
 from spotifyaio.exceptions import SpotifyConnectionError
 from spotifyaio.models import (
     Album,
+    AlbumsResponse,
     Artist,
     ArtistResponse,
     BasePlaylist,
@@ -47,6 +48,7 @@ from spotifyaio.models import (
     TopTracksResponse,
     UserProfile,
 )
+from spotifyaio.util import get_identifier
 
 if TYPE_CHECKING:
     from spotifyaio import SimplifiedAlbum, Track
@@ -143,11 +145,22 @@ class SpotifyClient:
 
     async def get_album(self, album_id: str) -> Album:
         """Get album."""
-        identifier = album_id.split(":")[-1]
+        identifier = get_identifier(album_id)
         response = await self._get(f"v1/albums/{identifier}")
         return Album.from_json(response)
 
-    # Get a list of albums
+    async def get_albums(self, album_ids: list[str]) -> list[Album]:
+        """Get albums."""
+        if not album_ids:
+            return []
+        if len(album_ids) > 20:
+            msg = "Maximum of 20 albums can be requested at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in album_ids])
+        }
+        response = await self._get("v1/albums", params=params)
+        return AlbumsResponse.from_json(response).albums
 
     # Get an album's tracks
 
