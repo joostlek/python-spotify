@@ -1297,3 +1297,25 @@ async def test_get_categories(
         params={"limit": 48},
         json=None,
     )
+
+
+async def test_get_audio_features(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving audio features."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/audio-features/11dFghVXANMlKmJXsNCbNl",
+        status=200,
+        body=load_fixture("audio_features.json"),
+    )
+    response = await authenticated_client.get_audio_features("11dFghVXANMlKmJXsNCbNl")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/audio-features/11dFghVXANMlKmJXsNCbNl",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
