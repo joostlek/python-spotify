@@ -6,7 +6,7 @@ import asyncio
 from typing import TYPE_CHECKING, Any
 
 import aiohttp
-from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
+from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 from aioresponses import CallbackResult, aioresponses
 import pytest
 from yarl import URL
@@ -211,6 +211,52 @@ async def test_save_too_many_albums(
     """Test saving too many albums."""
     with pytest.raises(ValueError, match="Maximum of 50 albums can be saved at once"):
         await authenticated_client.save_albums(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_removing_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test deleting saved albums."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+    )
+    await authenticated_client.remove_saved_albums(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/albums",
+        METH_DELETE,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_removing_no_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing no saved albums."""
+    await authenticated_client.remove_saved_albums([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_removing_too_many_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing too many saved albums."""
+    with pytest.raises(ValueError, match="Maximum of 50 albums can be removed at once"):
+        await authenticated_client.remove_saved_albums(["abc"] * 51)
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 

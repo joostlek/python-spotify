@@ -8,7 +8,7 @@ from importlib import metadata
 from typing import TYPE_CHECKING, Any, Awaitable, Callable, Self
 
 from aiohttp import ClientSession
-from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
+from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 from yarl import URL
 
 from spotifyaio.exceptions import SpotifyConnectionError
@@ -144,6 +144,15 @@ class SpotifyClient:
         """Handle a PUT request to Spotify."""
         return await self._request(METH_PUT, uri, data=data, params=params)
 
+    async def _delete(
+        self,
+        uri: str,
+        data: dict[str, Any] | None = None,
+        params: dict[str, Any] | None = None,
+    ) -> str:
+        """Handle a DELETE request to Spotify."""
+        return await self._request(METH_DELETE, uri, data=data, params=params)
+
     async def get_album(self, album_id: str) -> Album:
         """Get album."""
         identifier = get_identifier(album_id)
@@ -188,7 +197,17 @@ class SpotifyClient:
         }
         await self._put("v1/me/albums", params=params)
 
-    # Remove an album
+    async def remove_saved_albums(self, album_ids: list[str]) -> None:
+        """Remove saved albums."""
+        if not album_ids:
+            return
+        if len(album_ids) > 50:
+            msg = "Maximum of 50 albums can be removed at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in album_ids])
+        }
+        await self._delete("v1/me/albums", params=params)
 
     # Check if one or more albums is already saved
 
