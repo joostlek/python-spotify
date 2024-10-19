@@ -526,3 +526,10 @@ class AlbumsResponse(DataClassORJSONMixin):
     """Albums response model."""
 
     albums: list[Album]
+
+
+@dataclass
+class AlbumTracksResponse(DataClassORJSONMixin):
+    """Album tracks response model."""
+
+    items: list[SimplifiedTrack]

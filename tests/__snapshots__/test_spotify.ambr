@@ -267,6 +267,503 @@
     'uri': 'spotify:album:3IqzqH6ShrRtie9Yd2ODyG',
   })
 # ---
+# name: test_get_album_tracks
+  list([
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '7iJrDbKM5fEkGdm5kpjFzS',
+          'name': 'Sensato',
+          'uri': 'spotify:artist:7iJrDbKM5fEkGdm5kpjFzS',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 85400,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/6OmhkSOpvYBokMKQxpIGx2',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/6OmhkSOpvYBokMKQxpIGx2',
+      'is_local': False,
+      'name': 'Global Warming (feat. Sensato)',
+      'track_id': '6OmhkSOpvYBokMKQxpIGx2',
+      'track_number': 1,
+      'uri': 'spotify:track:6OmhkSOpvYBokMKQxpIGx2',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '2L8yW8GIoirHEdeW4bWQXq',
+          'name': 'TJR',
+          'uri': 'spotify:artist:2L8yW8GIoirHEdeW4bWQXq',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 206120,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/2iblMMIgSznA464mNov7A8',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/2iblMMIgSznA464mNov7A8',
+      'is_local': False,
+      'name': "Don't Stop the Party (feat. TJR)",
+      'track_id': '2iblMMIgSznA464mNov7A8',
+      'track_number': 2,
+      'uri': 'spotify:track:2iblMMIgSznA464mNov7A8',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '1l7ZsJRRS8wlW3WfJfPfNS',
+          'name': 'Christina Aguilera',
+          'uri': 'spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 229506,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4yOn1TEcfsKHUJCL2h1r8I',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4yOn1TEcfsKHUJCL2h1r8I',
+      'is_local': False,
+      'name': 'Feel This Moment (feat. Christina Aguilera)',
+      'track_id': '4yOn1TEcfsKHUJCL2h1r8I',
+      'track_number': 3,
+      'uri': 'spotify:track:4yOn1TEcfsKHUJCL2h1r8I',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 207440,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/7fmpKF0rLGPnP7kcQ5ZMm7',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/7fmpKF0rLGPnP7kcQ5ZMm7',
+      'is_local': False,
+      'name': 'Back in Time - featured in "Men In Black 3"',
+      'track_id': '7fmpKF0rLGPnP7kcQ5ZMm7',
+      'track_number': 4,
+      'uri': 'spotify:track:7fmpKF0rLGPnP7kcQ5ZMm7',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '7bXgB6jMjp9ATFy66eO08Z',
+          'name': 'Chris Brown',
+          'uri': 'spotify:artist:7bXgB6jMjp9ATFy66eO08Z',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 221133,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/3jStb2imKd6oUoBT1zq5lp',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/3jStb2imKd6oUoBT1zq5lp',
+      'is_local': False,
+      'name': 'Hope We Meet Again (feat. Chris Brown)',
+      'track_id': '3jStb2imKd6oUoBT1zq5lp',
+      'track_number': 5,
+      'uri': 'spotify:track:3jStb2imKd6oUoBT1zq5lp',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '23zg3TcAtWQy7J6upgbUnj',
+          'name': 'USHER',
+          'uri': 'spotify:artist:23zg3TcAtWQy7J6upgbUnj',
+        }),
+        dict({
+          'artist_id': '4D75GcNG95ebPtNvoNVXhz',
+          'name': 'AFROJACK',
+          'uri': 'spotify:artist:4D75GcNG95ebPtNvoNVXhz',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 243160,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/6Q4PYJtrq8CBx7YCY5IyRN',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/6Q4PYJtrq8CBx7YCY5IyRN',
+      'is_local': False,
+      'name': "Party Ain't Over (feat. Usher & Afrojack)",
+      'track_id': '6Q4PYJtrq8CBx7YCY5IyRN',
+      'track_number': 6,
+      'uri': 'spotify:track:6Q4PYJtrq8CBx7YCY5IyRN',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '2DlGxzQSjYe5N6G9nkYghR',
+          'name': 'Jennifer Lopez',
+          'uri': 'spotify:artist:2DlGxzQSjYe5N6G9nkYghR',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 196920,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/0QTVwqcOsYd73AOkYkk0Hg',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/0QTVwqcOsYd73AOkYkk0Hg',
+      'is_local': False,
+      'name': 'Drinks for You (Ladies Anthem) (feat. J. Lo)',
+      'track_id': '0QTVwqcOsYd73AOkYkk0Hg',
+      'track_number': 7,
+      'uri': 'spotify:track:0QTVwqcOsYd73AOkYkk0Hg',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '2NhdGz9EDv2FeUw6udu2g1',
+          'name': 'The Wanted',
+          'uri': 'spotify:artist:2NhdGz9EDv2FeUw6udu2g1',
+        }),
+        dict({
+          'artist_id': '4D75GcNG95ebPtNvoNVXhz',
+          'name': 'AFROJACK',
+          'uri': 'spotify:artist:4D75GcNG95ebPtNvoNVXhz',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 244920,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/10Sydb6AAFPdgCzCKOSZuI',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/10Sydb6AAFPdgCzCKOSZuI',
+      'is_local': False,
+      'name': 'Have Some Fun (feat. The Wanted & Afrojack)',
+      'track_id': '10Sydb6AAFPdgCzCKOSZuI',
+      'track_number': 8,
+      'uri': 'spotify:track:10Sydb6AAFPdgCzCKOSZuI',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '0e9P96siQmxphVXAwTy2pa',
+          'name': 'Danny Mercer',
+          'uri': 'spotify:artist:0e9P96siQmxphVXAwTy2pa',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 206800,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4k61iDqmtX9nI7RfLmp9aq',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4k61iDqmtX9nI7RfLmp9aq',
+      'is_local': False,
+      'name': 'Outta Nowhere (feat. Danny Mercer)',
+      'track_id': '4k61iDqmtX9nI7RfLmp9aq',
+      'track_number': 9,
+      'uri': 'spotify:track:4k61iDqmtX9nI7RfLmp9aq',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '7qG3b048QCHVRO5Pv1T5lw',
+          'name': 'Enrique Iglesias',
+          'uri': 'spotify:artist:7qG3b048QCHVRO5Pv1T5lw',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 205800,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/7oGRkL31ElVMcevQDceT99',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/7oGRkL31ElVMcevQDceT99',
+      'is_local': False,
+      'name': 'Tchu Tchu Tcha (feat. Enrique Iglesias)',
+      'track_id': '7oGRkL31ElVMcevQDceT99',
+      'track_number': 10,
+      'uri': 'spotify:track:7oGRkL31ElVMcevQDceT99',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '4D75GcNG95ebPtNvoNVXhz',
+          'name': 'AFROJACK',
+          'uri': 'spotify:artist:4D75GcNG95ebPtNvoNVXhz',
+        }),
+        dict({
+          'artist_id': '1EVWYRr2obCRDoSoD6KSuM',
+          'name': 'Havana Brown',
+          'uri': 'spotify:artist:1EVWYRr2obCRDoSoD6KSuM',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 219600,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/60xPqMqnHZl7Jfiu6E9q8X',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/60xPqMqnHZl7Jfiu6E9q8X',
+      'is_local': False,
+      'name': 'Last Night (feat. Afrojack & Havana Brown)',
+      'track_id': '60xPqMqnHZl7Jfiu6E9q8X',
+      'track_number': 11,
+      'uri': 'spotify:track:60xPqMqnHZl7Jfiu6E9q8X',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 197520,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/1jAdXqOSICyXYLaW9ioSur',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/1jAdXqOSICyXYLaW9ioSur',
+      'is_local': False,
+      'name': "I'm Off That",
+      'track_id': '1jAdXqOSICyXYLaW9ioSur',
+      'track_number': 12,
+      'uri': 'spotify:track:1jAdXqOSICyXYLaW9ioSur',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '5F2Bwl7Is7KVwTbNbMclIS',
+          'name': 'Papayo',
+          'uri': 'spotify:artist:5F2Bwl7Is7KVwTbNbMclIS',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 196440,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/0fjRYHFz9ealui1lfnN8it',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/0fjRYHFz9ealui1lfnN8it',
+      'is_local': False,
+      'name': "Echa Pa'lla (Manos Pa'rriba) (feat. Papayo)",
+      'track_id': '0fjRYHFz9ealui1lfnN8it',
+      'track_number': 13,
+      'uri': 'spotify:track:0fjRYHFz9ealui1lfnN8it',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '0z4gvV4rjIZ9wHck67ucSV',
+          'name': 'Akon',
+          'uri': 'spotify:artist:0z4gvV4rjIZ9wHck67ucSV',
+        }),
+        dict({
+          'artist_id': '5IqWDVLGThjmkm22e3oBU3',
+          'name': 'David Rush',
+          'uri': 'spotify:artist:5IqWDVLGThjmkm22e3oBU3',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 257613,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/7of35ktwTbL906Z1i3mT4K',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/7of35ktwTbL906Z1i3mT4K',
+      'is_local': False,
+      'name': 'Everybody Fucks (feat. Akon & David Rush)',
+      'track_id': '7of35ktwTbL906Z1i3mT4K',
+      'track_number': 14,
+      'uri': 'spotify:track:7of35ktwTbL906Z1i3mT4K',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '0EmeFodog0BfCgMzAIvKQp',
+          'name': 'Shakira',
+          'uri': 'spotify:artist:0EmeFodog0BfCgMzAIvKQp',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 245920,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/2JA6A6Y5f4m7PawM58U2Op',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/2JA6A6Y5f4m7PawM58U2Op',
+      'is_local': False,
+      'name': 'Get It Started (feat. Shakira)',
+      'track_id': '2JA6A6Y5f4m7PawM58U2Op',
+      'track_number': 15,
+      'uri': 'spotify:track:2JA6A6Y5f4m7PawM58U2Op',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '3BnF35ARlp8mMeyXTjUZsr',
+          'name': 'Vein',
+          'uri': 'spotify:artist:3BnF35ARlp8mMeyXTjUZsr',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 217680,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/726qZxwhP0jVyIA0ujnnhb',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/726qZxwhP0jVyIA0ujnnhb',
+      'is_local': False,
+      'name': '11:59 (feat. Vein)',
+      'track_id': '726qZxwhP0jVyIA0ujnnhb',
+      'track_number': 16,
+      'uri': 'spotify:track:726qZxwhP0jVyIA0ujnnhb',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '4wLXwxDeWQ8mtUIRPxGiD6',
+          'name': 'Marc Anthony',
+          'uri': 'spotify:artist:4wLXwxDeWQ8mtUIRPxGiD6',
+        }),
+        dict({
+          'artist_id': '4MHssKddnziCghmwBHRiEY',
+          'name': 'Alle',
+          'uri': 'spotify:artist:4MHssKddnziCghmwBHRiEY',
+        }),
+        dict({
+          'artist_id': '4Ws2otunReOa6BbwxxpCt6',
+          'name': 'Benny Benassi',
+          'uri': 'spotify:artist:4Ws2otunReOa6BbwxxpCt6',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 316480,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/6GPER1Sx8MrBiwWxdulg5Q',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/6GPER1Sx8MrBiwWxdulg5Q',
+      'is_local': False,
+      'name': 'Rain Over Me (feat. Marc Anthony) - Benny Benassi Remix',
+      'track_id': '6GPER1Sx8MrBiwWxdulg5Q',
+      'track_number': 17,
+      'uri': 'spotify:track:6GPER1Sx8MrBiwWxdulg5Q',
+    }),
+    dict({
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '7bXgB6jMjp9ATFy66eO08Z',
+          'name': 'Chris Brown',
+          'uri': 'spotify:artist:7bXgB6jMjp9ATFy66eO08Z',
+        }),
+        dict({
+          'artist_id': '5I7l0lSOyusetwCv1aQPMf',
+          'name': 'Jump Smokers',
+          'uri': 'spotify:artist:5I7l0lSOyusetwCv1aQPMf',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 309626,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4TWgcICXXfGty8MHGWJ4Ne',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4TWgcICXXfGty8MHGWJ4Ne',
+      'is_local': False,
+      'name': 'International Love (feat. Chris Brown) - Jump Smokers Extended Mix',
+      'track_id': '4TWgcICXXfGty8MHGWJ4Ne',
+      'track_number': 18,
+      'uri': 'spotify:track:4TWgcICXXfGty8MHGWJ4Ne',
+    }),
+  ])
+# ---
 # name: test_get_albums
   list([
     dict({

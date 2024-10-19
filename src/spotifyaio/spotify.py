@@ -15,6 +15,7 @@ from spotifyaio.exceptions import SpotifyConnectionError
 from spotifyaio.models import (
     Album,
     AlbumsResponse,
+    AlbumTracksResponse,
     Artist,
     ArtistResponse,
     BasePlaylist,
@@ -51,7 +52,7 @@ from spotifyaio.models import (
 from spotifyaio.util import get_identifier
 
 if TYPE_CHECKING:
-    from spotifyaio import SimplifiedAlbum, Track
+    from spotifyaio import SimplifiedAlbum, SimplifiedTrack, Track
 
 VERSION = metadata.version(__package__)
 
@@ -162,7 +163,12 @@ class SpotifyClient:
         response = await self._get("v1/albums", params=params)
         return AlbumsResponse.from_json(response).albums
 
-    # Get an album's tracks
+    async def get_album_tracks(self, album_id: str) -> list[SimplifiedTrack]:
+        """Get album tracks."""
+        identifier = get_identifier(album_id)
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get(f"v1/albums/{identifier}/tracks", params=params)
+        return AlbumTracksResponse.from_json(response).items
 
     async def get_saved_albums(self) -> list[SavedAlbum]:
         """Get saved albums."""
