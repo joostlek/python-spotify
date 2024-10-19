@@ -168,6 +168,52 @@ async def test_get_album_tracks(
     )
 
 
+async def test_save_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving albums."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+    )
+    await authenticated_client.save_albums(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/albums",
+        METH_PUT,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_save_no_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving no albums."""
+    await authenticated_client.save_albums([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_save_too_many_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving too many albums."""
+    with pytest.raises(ValueError, match="Maximum of 50 albums can be saved at once"):
+        await authenticated_client.save_albums(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 @pytest.mark.parametrize(
     "playback_fixture",
     [
