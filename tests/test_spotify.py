@@ -309,6 +309,36 @@ async def test_checking_too_many_saved_albums(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+async def test_get_audiobooks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving audiobooks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/audiobooks?ids=3o0RYoo5iOMKSmEbunsbvW%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+        body=load_fixture("audiobooks.json"),
+    )
+    response = await authenticated_client.get_audiobooks(
+        [
+            "spotify:episode:3o0RYoo5iOMKSmEbunsbvW",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/audiobooks",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "3o0RYoo5iOMKSmEbunsbvW,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
 @pytest.mark.parametrize(
     "playback_fixture",
     [

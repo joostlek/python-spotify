@@ -585,3 +585,73 @@ class AudioFeatures(DataClassORJSONMixin):
     valence: float
     tempo: float
     time_signature: TimeSignature
+
+
+@dataclass
+class Chapter(DataClassORJSONMixin):
+    """Chapter model."""
+
+    chapter_id: str = field(metadata=field_options(alias="id"))
+    chapter_number: int
+    duration_ms: int
+    images: list[Image]
+    languages: list[str]
+    name: str
+    explicit: bool
+    type: str
+    uri: str
+    external_urls: dict[str, str]
+
+
+@dataclass
+class Author(DataClassORJSONMixin):
+    """Author model."""
+
+    name: str
+
+
+@dataclass
+class Narrator(DataClassORJSONMixin):
+    """Narrator model."""
+
+    name: str
+
+
+@dataclass
+class Audiobook(DataClassORJSONMixin):
+    """Audiobook model."""
+
+    authors: list[Author]
+    chapters: list[Chapter]
+    description: str
+    edition: str
+    external_urls: dict[str, str]
+    explicit: bool
+    html_description: str
+    audiobook_id: str = field(metadata=field_options(alias="id"))
+    images: list[Image]
+    languages: list[str]
+    name: str
+    narrators: list[Narrator]
+    publisher: str
+    total_chapters: int
+    type: str
+    uri: str
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        return {**d, "chapters": d.get("chapters", {}).pop("items", [])}
+
+
+@dataclass
+class AudiobooksResponse(DataClassORJSONMixin):
+    """Audiobooks response model."""
+
+    audiobooks: list[Audiobook]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["audiobooks"] if item is not None]
+        return {"audiobooks": items}
