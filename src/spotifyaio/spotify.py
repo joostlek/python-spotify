@@ -19,6 +19,8 @@ from spotifyaio.models import (
     AlbumTracksResponse,
     Artist,
     ArtistResponse,
+    Audiobook,
+    AudiobooksResponse,
     AudioFeatures,
     BasePlaylist,
     BaseUserProfile,
@@ -251,7 +253,12 @@ class SpotifyClient:
 
     # Get audiobook
 
-    # Get several audiobooks
+    async def get_audiobooks(self, audiobook_ids: list[str]) -> list[Audiobook]:
+        """Get audiobooks."""
+        identifiers = [get_identifier(i) for i in audiobook_ids]
+        params: dict[str, Any] = {"ids": ",".join(identifiers)}
+        response = await self._get("v1/audiobooks", params=params)
+        return AudiobooksResponse.from_json(response).audiobooks
 
     # Get an audiobook's episodes
 
