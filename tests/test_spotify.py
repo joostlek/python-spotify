@@ -6,7 +6,7 @@ import asyncio
 from typing import TYPE_CHECKING, Any
 
 import aiohttp
-from aiohttp.hdrs import METH_GET, METH_POST, METH_PUT
+from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 from aioresponses import CallbackResult, aioresponses
 import pytest
 from yarl import URL
@@ -92,6 +92,221 @@ async def test_timeout(
     async with SpotifyClient(request_timeout=1) as spotify:
         with pytest.raises(SpotifyConnectionError):
             assert await spotify.get_playback()
+
+
+async def test_get_albums(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving albums."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+        body=load_fixture("albums.json"),
+    )
+    response = await authenticated_client.get_albums(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/albums",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_get_no_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving no albums."""
+    response = await authenticated_client.get_albums([])
+    assert response == []
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_too_many_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving too many albums."""
+    with pytest.raises(
+        ValueError, match="Maximum of 20 albums can be requested at once"
+    ):
+        await authenticated_client.get_albums(["abc"] * 21)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_album_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving tracks of an album."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/albums/4aawyAB9vmqN3uQ7FjRGTy/tracks?limit=48",
+        status=200,
+        body=load_fixture("album_tracks.json"),
+    )
+    response = await authenticated_client.get_album_tracks("4aawyAB9vmqN3uQ7FjRGTy")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/albums/4aawyAB9vmqN3uQ7FjRGTy/tracks",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        json=None,
+    )
+
+
+async def test_save_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving albums."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+    )
+    await authenticated_client.save_albums(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/albums",
+        METH_PUT,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_save_no_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving no albums."""
+    await authenticated_client.save_albums([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_save_too_many_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving too many albums."""
+    with pytest.raises(ValueError, match="Maximum of 50 albums can be saved at once"):
+        await authenticated_client.save_albums(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_removing_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test deleting saved albums."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+    )
+    await authenticated_client.remove_saved_albums(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/albums",
+        METH_DELETE,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_removing_no_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing no saved albums."""
+    await authenticated_client.remove_saved_albums([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_removing_too_many_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing too many saved albums."""
+    with pytest.raises(ValueError, match="Maximum of 50 albums can be removed at once"):
+        await authenticated_client.remove_saved_albums(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_checking_saved_albums(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved albums."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/albums/contains?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
+        status=200,
+        body=load_fixture("album_saved.json"),
+    )
+    response = await authenticated_client.are_albums_saved(
+        [
+            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
+            "1A2GTWGtFfWp7KSQTwWOyo",
+            "2noRn2Aes5aoNVsU6iWTh",
+        ]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/albums/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
+        },
+        json=None,
+    )
+
+
+async def test_checking_no_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking no saved albums."""
+    await authenticated_client.are_albums_saved([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_checking_too_many_saved_albums(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking too many saved albums."""
+    with pytest.raises(ValueError, match="Maximum of 20 albums can be checked at once"):
+        await authenticated_client.are_albums_saved(["abc"] * 21)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
 @pytest.mark.parametrize(
@@ -1080,5 +1295,27 @@ async def test_get_categories(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
+        json=None,
+    )
+
+
+async def test_get_audio_features(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving audio features."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/audio-features/11dFghVXANMlKmJXsNCbNl",
+        status=200,
+        body=load_fixture("audio_features.json"),
+    )
+    response = await authenticated_client.get_audio_features("11dFghVXANMlKmJXsNCbNl")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/audio-features/11dFghVXANMlKmJXsNCbNl",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
         json=None,
     )
