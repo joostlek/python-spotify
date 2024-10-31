@@ -16,6 +16,7 @@ class DeviceType(StrEnum):
     """Device type."""
 
     AUTOMOBILE = "Automobile"
+    CAST_VIDEO = "CastVideo"
     COMPUTER = "Computer"
     SMARTPHONE = "Smartphone"
     SPEAKER = "Speaker"
