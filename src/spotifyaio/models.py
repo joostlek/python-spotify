@@ -17,6 +17,7 @@ class DeviceType(StrEnum):
 
     AUDIO_DONGLE = "AudioDongle"
     AUTOMOBILE = "Automobile"
+    CAST_VIDEO = "CastVideo"
     COMPUTER = "Computer"
     SMARTPHONE = "Smartphone"
     SPEAKER = "Speaker"
