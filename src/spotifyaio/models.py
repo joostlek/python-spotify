@@ -15,6 +15,7 @@ from mashumaro.types import Discriminator  # noqa: TCH002
 class DeviceType(StrEnum):
     """Device type."""
 
+    AUDIO_DONGLE = "AudioDongle"
     AUTOMOBILE = "Automobile"
     COMPUTER = "Computer"
     SMARTPHONE = "Smartphone"
