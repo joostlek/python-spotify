@@ -542,16 +542,16 @@ class Key(IntEnum):
     """Key of a track."""
 
     C = 0
-    C_SHARP = 1
+    C_SHARP_D_FLAT = 1
     D = 2
-    D_SHARP = 3
+    D_SHARP_E_FLAT = 3
     E = 4
     F = 5
-    F_SHARP = 6
+    F_SHARP_G_FLAT = 6
     G = 7
-    G_SHARP = 8
+    G_SHARP_A_FLAT = 8
     A = 9
-    A_SHARP = 10
+    A_SHARP_B_FLAT = 10
     B = 11
 
 
