@@ -16,12 +16,14 @@ class DeviceType(StrEnum):
     """Device type."""
 
     AUDIO_DONGLE = "AudioDongle"
+    AUDIO_VIDEO_RECEIVER = "AVR"
     AUTOMOBILE = "Automobile"
     CAST_AUDIO = "CastAudio"
     CAST_VIDEO = "CastVideo"
     COMPUTER = "Computer"
     SMARTPHONE = "Smartphone"
     SPEAKER = "Speaker"
+    TV = "TV"
 
 
 @dataclass
