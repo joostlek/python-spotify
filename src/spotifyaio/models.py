@@ -23,6 +23,7 @@ class DeviceType(StrEnum):
     COMPUTER = "Computer"
     SMARTPHONE = "Smartphone"
     SPEAKER = "Speaker"
+    TABLET = "Tablet"
     TV = "TV"
 
 
