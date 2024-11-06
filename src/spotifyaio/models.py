@@ -22,6 +22,7 @@ class DeviceType(StrEnum):
     CAST_VIDEO = "CastVideo"
     COMPUTER = "Computer"
     SMARTPHONE = "Smartphone"
+    SMARTWATCH = "Smartwatch"
     SPEAKER = "Speaker"
     TABLET = "Tablet"
     TV = "TV"
