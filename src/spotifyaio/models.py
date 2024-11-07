@@ -24,6 +24,7 @@ class DeviceType(StrEnum):
     SMARTPHONE = "Smartphone"
     SMARTWATCH = "Smartwatch"
     SPEAKER = "Speaker"
+    STB = "Set-Top Box"
     TABLET = "Tablet"
     TV = "TV"
 
