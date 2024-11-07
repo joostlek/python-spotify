@@ -569,6 +569,7 @@ class Mode(IntEnum):
 class TimeSignature(IntEnum):
     """Time signature of a track."""
 
+    ONE_FOUR = 1
     THREE_FOUR = 3
     FOUR_FOUR = 4
     FIVE_FOUR = 5
