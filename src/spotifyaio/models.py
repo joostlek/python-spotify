@@ -27,6 +27,7 @@ class DeviceType(StrEnum):
     SPEAKER = "Speaker"
     TABLET = "Tablet"
     TV = "TV"
+    UNKNOWN = "Unknown"
 
 
 @dataclass
