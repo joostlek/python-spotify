@@ -322,6 +322,13 @@ class CurrentPlaying(DataClassORJSONMixin):
     item: Annotated[Item, Discriminator(field="type", include_subtypes=True)] | None
     currently_playing_type: str | None
 
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        if (item := d.get("item")) is not None and item.get("is_local"):
+            return {**d, "item": None}
+        return d
+
 
 @dataclass
 class PlaybackState(CurrentPlaying):
@@ -385,6 +392,12 @@ class PlaylistTracks(DataClassORJSONMixin):
     """PlaylistTracks model."""
 
     items: list[PlaylistTrack]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["items"] if not item["is_local"]]
+        return {"items": items}
 
 
 @dataclass
