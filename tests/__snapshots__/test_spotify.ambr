@@ -4117,7 +4117,6 @@
       'description': '''
         Author(s): Frank Herbert
         Narrator(s): Scott Brick, Orlagh Cassidy, Euan Morton, Ilyana Kadushin, Simon Vance
-
         <p><b>NOW A MAJOR MOTION PICTURE directed by Denis Villeneuve, starring Timothée Chalamet, Zendaya, Rebecca Ferguson, Javier Bardem, Josh Brolin, Austin Butler, Florence Pugh, Dave Bautista, Christopher Walken, Léa Seydoux, Stellan Skarsgård, and Charlotte Rampling<br></b><br>Set on the desert planet Arrakis, <i>Dune</i> is the story of the boy Paul Atreides, who would become the mysterious man known as Muad'dib. He would avenge the traitorous plot against his noble family—and would bring to fruition humankind's most ancient and unattainable dream.<br><br>A stunning blend of adventure and mysticism, environmentalism and politics, <i>Dune</i> won the first Nebula Award, shared the Hugo Award, and formed the basis of what is undoubtedly the grandest epic in science fiction. Frank Herbert's death in 1986 was a tragic loss, yet the astounding legacy of his visionary fiction will live forever.</p>
       ''',
       'edition': 'Unabridged',
@@ -9383,6 +9382,27 @@
     'shuffle': False,
   })
 # ---
+# name: test_get_playback_state[playback_4.json]
+  dict({
+    'context': None,
+    'currently_playing_type': 'track',
+    'device': dict({
+      'device_id': 'aee274e4bbe6b44cf3b22ad3b68eca3a6954a701',
+      'device_type': <DeviceType.COMPUTER: 'Computer'>,
+      'is_active': True,
+      'is_private_session': False,
+      'is_restricted': False,
+      'name': 'Joost’s MacBook Pro',
+      'supports_volume': True,
+      'volume_percent': 67,
+    }),
+    'is_playing': True,
+    'item': None,
+    'progress_ms': 22215,
+    'repeat_mode': <RepeatMode.OFF: 'off'>,
+    'shuffle': False,
+  })
+# ---
 # name: test_get_playback_state[playback_audiobook_1.json]
   dict({
     'context': dict({
@@ -9571,7 +9591,7 @@
     'shuffle': False,
   })
 # ---
-# name: test_get_playlist
+# name: test_get_playlist[playlist_1.json]
   dict({
     'collaborative': False,
     'description': 'A playlist for testing pourposes',
@@ -9889,6 +9909,98 @@
       ]),
     }),
     'uri': 'spotify:playlist:3cEYpjA9oz9GiPac4AsH4n',
+  })
+# ---
+# name: test_get_playlist[playlist_2.json]
+  dict({
+    'collaborative': False,
+    'description': '',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/3toMXYM91T55pKzuysH5Ph',
+    }),
+    'images': list([
+      dict({
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67616d00001e022f9b47bdc2b1c7cae7b014af',
+        'width': None,
+      }),
+    ]),
+    'name': 'Starred',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'chadandcaren',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/chadandcaren',
+      }),
+      'href': 'https://api.spotify.com/v1/users/chadandcaren',
+      'object_type': 'user',
+      'owner_id': 'chadandcaren',
+      'uri': 'spotify:user:chadandcaren',
+    }),
+    'playlist_id': '3toMXYM91T55pKzuysH5Ph',
+    'public': True,
+    'tracks': dict({
+      'items': list([
+        dict({
+          'track': dict({
+            'album': dict({
+              'album_id': '3KVfMVtOmoVCgihLE4HoBr',
+              'album_type': <AlbumType.ALBUM: 'album'>,
+              'artists': list([
+                dict({
+                  'artist_id': '2vm8GdHyrJh2O2MfbQFYG0',
+                  'name': 'Ingrid Michaelson',
+                  'uri': 'spotify:artist:2vm8GdHyrJh2O2MfbQFYG0',
+                }),
+              ]),
+              'images': list([
+                dict({
+                  'height': 640,
+                  'url': 'https://i.scdn.co/image/ab67616d0000b273866dc0fd5fbfd51fd4c50919',
+                  'width': 640,
+                }),
+                dict({
+                  'height': 300,
+                  'url': 'https://i.scdn.co/image/ab67616d00001e02866dc0fd5fbfd51fd4c50919',
+                  'width': 300,
+                }),
+                dict({
+                  'height': 64,
+                  'url': 'https://i.scdn.co/image/ab67616d00004851866dc0fd5fbfd51fd4c50919',
+                  'width': 64,
+                }),
+              ]),
+              'name': 'Be OK',
+              'release_date': '2008-01-01',
+              'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+              'total_tracks': 11,
+              'uri': 'spotify:album:3KVfMVtOmoVCgihLE4HoBr',
+            }),
+            'artists': list([
+              dict({
+                'artist_id': '2vm8GdHyrJh2O2MfbQFYG0',
+                'name': 'Ingrid Michaelson',
+                'uri': 'spotify:artist:2vm8GdHyrJh2O2MfbQFYG0',
+              }),
+            ]),
+            'disc_number': 1,
+            'duration_ms': 148706,
+            'explicit': False,
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/track/4oeRfmp9XpKWym6YD1WvBP',
+            }),
+            'href': 'https://api.spotify.com/v1/tracks/4oeRfmp9XpKWym6YD1WvBP',
+            'is_local': False,
+            'name': 'You and I',
+            'track_id': '4oeRfmp9XpKWym6YD1WvBP',
+            'track_number': 10,
+            'type': <ItemType.TRACK: 'track'>,
+            'uri': 'spotify:track:4oeRfmp9XpKWym6YD1WvBP',
+          }),
+        }),
+      ]),
+    }),
+    'uri': 'spotify:playlist:3toMXYM91T55pKzuysH5Ph',
   })
 # ---
 # name: test_get_recently_played_tracks
