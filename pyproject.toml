@@ -6,9 +6,9 @@ authors = ["Joost Lekkerkerker <joostlek@outlook.com>"]
 maintainers = ["Joost Lekkerkerker <joostlek@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/joostlek/python-withings"
-repository = "https://github.com/joostlek/python-withings"
-documentation = "https://github.com/joostlek/python-withings"
+homepage = "https://github.com/joostlek/python-spotify"
+repository = "https://github.com/joostlek/python-spotify"
+documentation = "https://github.com/joostlek/python-spotify"
 keywords = ["Spotify", "api", "async", "client"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
