@@ -1,6 +1,6 @@
 """Asynchronous Python client for Spotify."""
 
-from typing import AsyncGenerator, Generator
+from collections.abc import AsyncGenerator, Generator
 
 import aiohttp
 from aioresponses import aioresponses
@@ -21,9 +21,12 @@ def snapshot_assertion(snapshot: SnapshotAssertion) -> SnapshotAssertion:
 @pytest.fixture(name="spotify_client")
 async def client() -> AsyncGenerator[SpotifyClient, None]:
     """Return a Spotify client."""
-    async with aiohttp.ClientSession() as session, SpotifyClient(
-        session=session,
-    ) as spotify_client:
+    async with (
+        aiohttp.ClientSession() as session,
+        SpotifyClient(
+            session=session,
+        ) as spotify_client,
+    ):
         yield spotify_client
 
 
