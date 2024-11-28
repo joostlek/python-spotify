@@ -1,6 +1,7 @@
 {
   "href": "https://api.spotify.com/v1/users/1112264649/playlists?offset=0&limit=20",
   "items": [
+      null,
     {
       "collaborative": false,
       "description": "",
