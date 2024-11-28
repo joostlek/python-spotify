@@ -419,6 +419,12 @@ class PlaylistResponse(DataClassORJSONMixin):
     previous_list: str | None = field(metadata=field_options(alias="previous"))
     total: int
 
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["items"] if item is not None]
+        return {**d, "items": items}
+
 
 @dataclass
 class FeaturedPlaylistResponse(DataClassORJSONMixin):
