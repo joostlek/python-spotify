@@ -836,6 +836,7 @@ async def test_get_album(
     [
         "playlist_1.json",
         "playlist_2.json",
+        "playlist_3.json",
     ],
 )
 async def test_get_playlist(
