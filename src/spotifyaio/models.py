@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime  # noqa: TC003
+from datetime import datetime
 from enum import IntEnum, StrEnum
 from typing import Annotated, Any
 
@@ -404,7 +404,7 @@ class PlaylistTracks(DataClassORJSONMixin):
 class PlaylistTrack(DataClassORJSONMixin):
     """PlaylistTrack model."""
 
-    track: Annotated[Item, Discriminator(field="type", include_subtypes=True)] | None
+    track: Annotated[Item, Discriminator(field="type", include_subtypes=True)]
 
 
 @dataclass
