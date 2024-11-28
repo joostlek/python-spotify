@@ -345,6 +345,7 @@ async def test_get_audiobooks(
         "playback_1.json",
         "playback_2.json",
         "playback_3.json",
+        "playback_4.json",
         "playback_episode_1.json",
         "playback_audiobook_1.json",
     ],
@@ -833,8 +834,8 @@ async def test_get_album(
 @pytest.mark.parametrize(
     "fixture",
     [
-        "playlist.json",
-        "playlist_with_podcast.json",
+        "playlist_1.json",
+        "playlist_2.json",
     ],
 )
 async def test_get_playlist(
@@ -907,7 +908,7 @@ async def test_get_playlist_variation(
     responses.get(
         f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
         status=200,
-        body=load_fixture("playlist.json"),
+        body=load_fixture("playlist_1.json"),
     )
     await authenticated_client.get_playlist(playlist_id)
     responses.assert_called_once_with(
