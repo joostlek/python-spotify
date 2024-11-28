@@ -404,7 +404,7 @@ class PlaylistTracks(DataClassORJSONMixin):
 class PlaylistTrack(DataClassORJSONMixin):
     """PlaylistTrack model."""
 
-    track: Track
+    track: Annotated[Item, Discriminator(field="type", include_subtypes=True)] | None
 
 
 @dataclass
