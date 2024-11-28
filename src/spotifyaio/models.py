@@ -3,13 +3,13 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime  # noqa: TCH003
+from datetime import datetime  # noqa: TC003
 from enum import IntEnum, StrEnum
 from typing import Annotated, Any
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
-from mashumaro.types import Discriminator  # noqa: TCH002
+from mashumaro.types import Discriminator
 
 
 class DeviceType(StrEnum):
