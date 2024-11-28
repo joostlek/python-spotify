@@ -424,7 +424,9 @@ class SpotifyClient:
     async def get_playlist(self, playlist_id: str) -> Playlist:
         """Get playlist."""
         identifier = playlist_id.split(":")[-1]
-        response = await self._get(f"v1/playlists/{identifier}")
+        response = await self._get(
+            f"v1/playlists/{identifier}", params={"additional_types": "track,episode"}
+        )
         return Playlist.from_json(response)
 
     # Update playlist details

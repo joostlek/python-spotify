@@ -847,7 +847,7 @@ async def test_get_playlist(
 ) -> None:
     """Test retrieving playlist."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M?additional_types=track,episode",
         status=200,
         body=load_fixture(fixture),
     )
@@ -857,7 +857,7 @@ async def test_get_playlist(
         f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
         METH_GET,
         headers=HEADERS,
-        params=None,
+        params={"additional_types": "track,episode"},
         json=None,
     )
 
@@ -907,7 +907,7 @@ async def test_get_playlist_variation(
 ) -> None:
     """Test retrieving playlist with different inputs."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M?additional_types=track,episode",
         status=200,
         body=load_fixture("playlist_1.json"),
     )
@@ -916,7 +916,7 @@ async def test_get_playlist_variation(
         f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
         METH_GET,
         headers=HEADERS,
-        params=None,
+        params={"additional_types": "track,episode"},
         json=None,
     )
 
