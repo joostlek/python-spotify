@@ -35,7 +35,7 @@ class DeviceType(StrEnum):
 class Device(DataClassORJSONMixin):
     """Device model."""
 
-    device_id: str = field(metadata=field_options(alias="id"))
+    device_id: str | None = field(metadata=field_options(alias="id"))
     is_active: bool
     is_private_session: bool
     is_restricted: bool
