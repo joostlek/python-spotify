@@ -3,13 +3,13 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime  # noqa: TCH003
+from datetime import datetime  # noqa: TC003
 from enum import IntEnum, StrEnum
 from typing import Annotated, Any
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
-from mashumaro.types import Discriminator  # noqa: TCH002
+from mashumaro.types import Discriminator
 
 
 class DeviceType(StrEnum):
@@ -418,6 +418,12 @@ class PlaylistResponse(DataClassORJSONMixin):
     offset: int
     previous_list: str | None = field(metadata=field_options(alias="previous"))
     total: int
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["items"] if item is not None]
+        return {**d, "items": items}
 
 
 @dataclass

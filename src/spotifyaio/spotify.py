@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import TYPE_CHECKING, Any, Awaitable, Callable, Self
+from typing import TYPE_CHECKING, Any, Callable, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
@@ -56,6 +56,8 @@ from spotifyaio.models import (
 from spotifyaio.util import get_identifier
 
 if TYPE_CHECKING:
+    from collections.abc import Awaitable
+
     from spotifyaio import SimplifiedAlbum, SimplifiedTrack, Track
 
 VERSION = metadata.version(__package__)
