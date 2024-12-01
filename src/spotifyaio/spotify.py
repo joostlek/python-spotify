@@ -12,7 +12,7 @@ from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 import orjson
 from yarl import URL
 
-from spotifyaio.exceptions import SpotifyConnectionError
+from spotifyaio.exceptions import SpotifyConnectionError, SpotifyNotFoundError
 from spotifyaio.models import (
     Album,
     AlbumsResponse,
@@ -126,7 +126,13 @@ class SpotifyClient:
         if response.status == 204:
             return ""
 
-        return await response.text()
+        text = await response.text()
+
+        if '"status": 404' in text:
+            msg = f"Resource not found: {uri}"
+            raise SpotifyNotFoundError(msg)
+
+        return text
 
     async def _get(self, uri: str, params: dict[str, Any] | None = None) -> str:
         """Handle a GET request to Spotify."""

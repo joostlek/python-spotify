@@ -11,3 +11,7 @@ class SpotifyConnectionError(SpotifyError):
 
 class SpotifyAuthenticationFailedError(SpotifyError):
     """Spotify authentication failed exception."""
+
+
+class SpotifyNotFoundError(SpotifyError):
+    """Spotify not found exception."""
