@@ -4,6 +4,7 @@ from .exceptions import (
     SpotifyAuthenticationFailedError,
     SpotifyConnectionError,
     SpotifyError,
+    SpotifyNotFoundError,
 )
 from .models import (
     Album,
@@ -66,6 +67,7 @@ __all__ = [
     "SpotifyClient",
     "SpotifyConnectionError",
     "SpotifyError",
+    "SpotifyNotFoundError",
     "Track",
     "UserProfile",
 ]

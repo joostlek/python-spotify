@@ -11,7 +11,12 @@ from aioresponses import CallbackResult, aioresponses
 import pytest
 from yarl import URL
 
-from spotifyaio import RepeatMode, SpotifyClient, SpotifyConnectionError
+from spotifyaio import (
+    RepeatMode,
+    SpotifyClient,
+    SpotifyConnectionError,
+    SpotifyNotFoundError,
+)
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
@@ -860,6 +865,23 @@ async def test_get_playlist(
         params={"additional_types": "track,episode"},
         json=None,
     )
+
+
+async def test_get_not_found_playlist(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving not found playlist."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M?additional_types=track,episode",
+        status=200,
+        body=load_fixture("playlist_not_found.json"),
+    )
+    with pytest.raises(
+        SpotifyNotFoundError,
+        match="Resource not found: v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+    ):
+        await authenticated_client.get_playlist("37i9dQZF1DXcBWIGoYBM5M")
 
 
 @pytest.mark.parametrize(
