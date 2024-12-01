@@ -12,7 +12,11 @@ from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 import orjson
 from yarl import URL
 
-from spotifyaio.exceptions import SpotifyConnectionError, SpotifyNotFoundError
+from spotifyaio.exceptions import (
+    SpotifyConnectionError,
+    SpotifyNotFoundError,
+    SpotifyRateLimitError,
+)
 from spotifyaio.models import (
     Album,
     AlbumsResponse,
@@ -131,6 +135,10 @@ class SpotifyClient:
         if '"status": 404' in text:
             msg = f"Resource not found: {uri}"
             raise SpotifyNotFoundError(msg)
+
+        if '"status": 429' in text:
+            msg = "Ratelimit exceeded"
+            raise SpotifyRateLimitError(msg)
 
         return text
 

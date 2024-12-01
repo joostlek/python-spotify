@@ -15,3 +15,7 @@ class SpotifyAuthenticationFailedError(SpotifyError):
 
 class SpotifyNotFoundError(SpotifyError):
     """Spotify not found exception."""
+
+
+class SpotifyRateLimitError(SpotifyError):
+    """Spotify rate limit exception."""

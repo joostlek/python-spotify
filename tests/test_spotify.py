@@ -16,6 +16,7 @@ from spotifyaio import (
     SpotifyClient,
     SpotifyConnectionError,
     SpotifyNotFoundError,
+    SpotifyRateLimitError,
 )
 
 from . import load_fixture
@@ -880,6 +881,23 @@ async def test_get_not_found_playlist(
     with pytest.raises(
         SpotifyNotFoundError,
         match="Resource not found: v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+    ):
+        await authenticated_client.get_playlist("37i9dQZF1DXcBWIGoYBM5M")
+
+
+async def test_rate_limit(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test raising rate limit exception."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M?additional_types=track,episode",
+        status=200,
+        body=load_fixture("rate_limit.json"),
+    )
+    with pytest.raises(
+        SpotifyRateLimitError,
+        match="Ratelimit exceeded",
     ):
         await authenticated_client.get_playlist("37i9dQZF1DXcBWIGoYBM5M")
 
