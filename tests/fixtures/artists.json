@@ -1,0 +1,117 @@
+{
+  "artists": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2CIMQHirSU0MQqyYHq0eOx"
+      },
+      "followers": {
+        "href": null,
+        "total": 2835004
+      },
+      "genres": [
+        "edm",
+        "progressive house",
+        "dubstep"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2CIMQHirSU0MQqyYHq0eOx?locale=en-US%2Cen%3Bq%3D0.5",
+      "id": "2CIMQHirSU0MQqyYHq0eOx",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6761610000e5eb89ffabe57a25cedeca3309e7",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7",
+          "height": 320,
+          "width": 320
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6761610000f17889ffabe57a25cedeca3309e7",
+          "height": 160,
+          "width": 160
+        }
+      ],
+      "name": "deadmau5",
+      "popularity": 66,
+      "type": "artist",
+      "uri": "spotify:artist:2CIMQHirSU0MQqyYHq0eOx"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/57dN52uHvrHOxijzpIgu3E"
+      },
+      "followers": {
+        "href": null,
+        "total": 601117
+      },
+      "genres": [
+        "indietronica",
+        "electronic rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/57dN52uHvrHOxijzpIgu3E?locale=en-US%2Cen%3Bq%3D0.5",
+      "id": "57dN52uHvrHOxijzpIgu3E",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/2f0c6c465a83cd196e651e3d4e7625ba799a6f60",
+          "height": 693,
+          "width": 1000
+        },
+        {
+          "url": "https://i.scdn.co/image/4e3e13c8b993bde9898e49509fb9ae121636e05f",
+          "height": 444,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/dc68dd24b45b74ecce9d4ed486423673d683ced3",
+          "height": 139,
+          "width": 200
+        },
+        {
+          "url": "https://i.scdn.co/image/4e55ca05d4f336a2fa0e3062a7ec9778a201e8bc",
+          "height": 44,
+          "width": 63
+        }
+      ],
+      "name": "Ratatat",
+      "popularity": 64,
+      "type": "artist",
+      "uri": "spotify:artist:57dN52uHvrHOxijzpIgu3E"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6"
+      },
+      "followers": {
+        "href": null,
+        "total": 23344428
+      },
+      "genres": [
+        "edm"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6?locale=en-US%2Cen%3Bq%3D0.5",
+      "id": "1vCWHaC5f2uS3yhpwWbIA6",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6761610000e5ebae07171f989fb39736674113",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113",
+          "height": 320,
+          "width": 320
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6761610000f178ae07171f989fb39736674113",
+          "height": 160,
+          "width": 160
+        }
+      ],
+      "name": "Avicii",
+      "popularity": 83,
+      "type": "artist",
+      "uri": "spotify:artist:1vCWHaC5f2uS3yhpwWbIA6"
+    }
+  ]
+}

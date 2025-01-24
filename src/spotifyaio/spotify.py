@@ -12,11 +12,7 @@ from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 import orjson
 from yarl import URL
 
-from spotifyaio.exceptions import (
-    SpotifyConnectionError,
-    SpotifyNotFoundError,
-    SpotifyRateLimitError,
-)
+from spotifyaio.exceptions import SpotifyConnectionError, SpotifyNotFoundError
 from spotifyaio.models import (
     Album,
     AlbumsResponse,
@@ -36,6 +32,7 @@ from spotifyaio.models import (
     Devices,
     Episode,
     FeaturedPlaylistResponse,
+    FollowedArtistResponse,
     NewReleasesResponse,
     NewReleasesResponseInner,
     PlaybackState,
@@ -135,10 +132,6 @@ class SpotifyClient:
         if '"status": 404' in text:
             msg = f"Resource not found: {uri}"
             raise SpotifyNotFoundError(msg)
-
-        if '"status": 429' in text:
-            msg = "Ratelimit exceeded"
-            raise SpotifyRateLimitError(msg)
 
         return text
 
@@ -254,7 +247,18 @@ class SpotifyClient:
         response = await self._get(f"v1/artists/{identifier}")
         return Artist.from_json(response)
 
-    # Get several artists
+    async def get_artists(self, artist_ids: list[str]) -> list[Artist]:
+        """Get several artists."""
+        if not artist_ids:
+            return []
+        if len(artist_ids) > 50:
+            msg = "Maximum of 50 artists can be requested at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in artist_ids])
+        }
+        response = await self._get("v1/artists", params=params)
+        return ArtistResponse.from_json(response).artists
 
     async def get_artist_albums(self, artist_id: str) -> list[SimplifiedAlbum]:
         """Get artist albums."""
@@ -569,7 +573,7 @@ class SpotifyClient:
         """Get followed artists."""
         params: dict[str, Any] = {"limit": 48, "type": "artist"}
         response = await self._get("v1/me/following", params=params)
-        return ArtistResponse.from_json(response).artists.items
+        return FollowedArtistResponse.from_json(response).artists.items
 
     # Follow an artist or user
 
