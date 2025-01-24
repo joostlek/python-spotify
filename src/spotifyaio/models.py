@@ -646,7 +646,7 @@ class AudioFeatures(DataClassORJSONMixin):
 
 
 @dataclass
-class Chapter(DataClassORJSONMixin):
+class SimplifiedChapter(DataClassORJSONMixin):
     """Chapter model."""
 
     chapter_id: str = field(metadata=field_options(alias="id"))
@@ -662,10 +662,17 @@ class Chapter(DataClassORJSONMixin):
 
 
 @dataclass
+class Chapter(SimplifiedChapter):
+    """Chapter model."""
+
+    audiobook: SimplifiedAudiobook
+
+
+@dataclass
 class AudiobookChapterResponse(DataClassORJSONMixin):
     """Audiobook chapter response model."""
 
-    items: list[Chapter]
+    items: list[SimplifiedChapter]
 
 
 @dataclass
@@ -707,7 +714,7 @@ class SimplifiedAudiobook(DataClassORJSONMixin):
 class Audiobook(SimplifiedAudiobook):
     """Audiobook model."""
 
-    chapters: list[Chapter]
+    chapters: list[SimplifiedChapter]
 
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
