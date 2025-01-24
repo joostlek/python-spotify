@@ -1569,6 +1569,27 @@ async def test_check_saved_audiobooks(
     )
 
 
+async def test_check_no_saved_audiobooks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking no saved audiobooks."""
+    assert await authenticated_client.are_audiobooks_saved([]) == {}
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_check_too_many_saved_audiobooks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking too many saved audiobooks."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 audiobooks can be checked at once"
+    ):
+        await authenticated_client.are_audiobooks_saved(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 async def test_get_show_episodes(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
