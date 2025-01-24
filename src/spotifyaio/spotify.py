@@ -306,7 +306,17 @@ class SpotifyClient:
         response = await self._get("v1/me/audiobooks", params=params)
         return SavedAudiobookResponse.from_json(response).items
 
-    # Save an audiobook
+    async def save_audiobooks(self, audiobook_ids: list[str]) -> None:
+        """Save audiobooks."""
+        if not audiobook_ids:
+            return
+        if len(audiobook_ids) > 50:
+            msg = "Maximum of 50 audiobooks can be saved at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in audiobook_ids])
+        }
+        await self._put("v1/me/audiobooks", params=params)
 
     # Remove an audiobook
 
