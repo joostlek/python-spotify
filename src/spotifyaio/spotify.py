@@ -318,7 +318,17 @@ class SpotifyClient:
         }
         await self._put("v1/me/audiobooks", params=params)
 
-    # Remove an audiobook
+    async def remove_saved_audiobooks(self, audiobook_ids: list[str]) -> None:
+        """Remove saved audiobooks."""
+        if not audiobook_ids:
+            return
+        if len(audiobook_ids) > 50:
+            msg = "Maximum of 50 audiobooks can be removed at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in audiobook_ids])
+        }
+        await self._delete("v1/me/audiobooks", params=params)
 
     # Check if one or more audiobooks is already saved
 
