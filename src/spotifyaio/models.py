@@ -275,6 +275,13 @@ class TopTracksResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class ArtistTopTracksResponse(DataClassORJSONMixin):
+    """Artist top tracks response model."""
+
+    tracks: list[Track]
+
+
+@dataclass
 class SimplifiedTrack(DataClassORJSONMixin):
     """SimplifiedTrack model."""
 

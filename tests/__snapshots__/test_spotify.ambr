@@ -2487,6 +2487,615 @@
     }),
   ])
 # ---
+# name: test_get_artist_top_tracks
+  list([
+    dict({
+      'album': dict({
+        'album_id': '4rG0MhkU6UojACJxkMHIXB',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Planet Pit (Deluxe Version)',
+        'release_date': '2011-06-17',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 16,
+        'uri': 'spotify:album:4rG0MhkU6UojACJxkMHIXB',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '4D75GcNG95ebPtNvoNVXhz',
+          'name': 'AFROJACK',
+          'uri': 'spotify:artist:4D75GcNG95ebPtNvoNVXhz',
+        }),
+        dict({
+          'artist_id': '21E3waRsmPlU7jZsS13rcj',
+          'name': 'Ne-Yo',
+          'uri': 'spotify:artist:21E3waRsmPlU7jZsS13rcj',
+        }),
+        dict({
+          'artist_id': '1ruutHJcECI7cos2n5TqpO',
+          'name': 'Nayer',
+          'uri': 'spotify:artist:1ruutHJcECI7cos2n5TqpO',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 252306,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4QNpBfC0zvjKqPJcyqBy9W',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4QNpBfC0zvjKqPJcyqBy9W',
+      'is_local': False,
+      'name': 'Give Me Everything (feat. Nayer)',
+      'track_id': '4QNpBfC0zvjKqPJcyqBy9W',
+      'track_number': 2,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:4QNpBfC0zvjKqPJcyqBy9W',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '2F7tejLHzTqFq2XLol9ZGy',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b273f2486b438645e97b523e4f90',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e02f2486b438645e97b523e4f90',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d00004851f2486b438645e97b523e4f90',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Global Warming: Meltdown (Deluxe Version)',
+        'release_date': '2012',
+        'release_date_precision': <ReleaseDatePrecision.YEAR: 'year'>,
+        'total_tracks': 17,
+        'uri': 'spotify:album:2F7tejLHzTqFq2XLol9ZGy',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '6LqNN22kT3074XbTVUrhzX',
+          'name': 'Kesha',
+          'uri': 'spotify:artist:6LqNN22kT3074XbTVUrhzX',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 204160,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/3cHyrEgdyYRjgJKSOiOtcS',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/3cHyrEgdyYRjgJKSOiOtcS',
+      'is_local': False,
+      'name': 'Timber',
+      'track_id': '3cHyrEgdyYRjgJKSOiOtcS',
+      'track_number': 13,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:3cHyrEgdyYRjgJKSOiOtcS',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '6A1F3Fkq5dYeYYNkXflcTX',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '23zg3TcAtWQy7J6upgbUnj',
+            'name': 'USHER',
+            'uri': 'spotify:artist:23zg3TcAtWQy7J6upgbUnj',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b27386b0c9728ad3ed338eaeea79',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e0286b0c9728ad3ed338eaeea79',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d0000485186b0c9728ad3ed338eaeea79',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Raymond v Raymond (Expanded Edition)',
+        'release_date': '2010-03-30',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 22,
+        'uri': 'spotify:album:6A1F3Fkq5dYeYYNkXflcTX',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '23zg3TcAtWQy7J6upgbUnj',
+          'name': 'USHER',
+          'uri': 'spotify:artist:23zg3TcAtWQy7J6upgbUnj',
+        }),
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 220800,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4356Typ82hUiFAynbLYbPn',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4356Typ82hUiFAynbLYbPn',
+      'is_local': False,
+      'name': "DJ Got Us Fallin' In Love (feat. Pitbull)",
+      'track_id': '4356Typ82hUiFAynbLYbPn',
+      'track_number': 16,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:4356Typ82hUiFAynbLYbPn',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '4EUf4YyNjuXypWY6W5wEDm',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Globalization',
+        'release_date': '2014-11-21',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 11,
+        'uri': 'spotify:album:4EUf4YyNjuXypWY6W5wEDm',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '21E3waRsmPlU7jZsS13rcj',
+          'name': 'Ne-Yo',
+          'uri': 'spotify:artist:21E3waRsmPlU7jZsS13rcj',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 229360,
+      'explicit': True,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/2bJvI42r8EF3wxjOuDav4r',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/2bJvI42r8EF3wxjOuDav4r',
+      'is_local': False,
+      'name': 'Time of Our Lives',
+      'track_id': '2bJvI42r8EF3wxjOuDav4r',
+      'track_number': 4,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:2bJvI42r8EF3wxjOuDav4r',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '4rG0MhkU6UojACJxkMHIXB',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Planet Pit (Deluxe Version)',
+        'release_date': '2011-06-17',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 16,
+        'uri': 'spotify:album:4rG0MhkU6UojACJxkMHIXB',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '7bXgB6jMjp9ATFy66eO08Z',
+          'name': 'Chris Brown',
+          'uri': 'spotify:artist:7bXgB6jMjp9ATFy66eO08Z',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 227280,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/62zFEHfAYl5kdHYOivj4BC',
+      'is_local': False,
+      'name': 'International Love (feat. Chris Brown)',
+      'track_id': '62zFEHfAYl5kdHYOivj4BC',
+      'track_number': 8,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:62zFEHfAYl5kdHYOivj4BC',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '2F7tejLHzTqFq2XLol9ZGy',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b273f2486b438645e97b523e4f90',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e02f2486b438645e97b523e4f90',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d00004851f2486b438645e97b523e4f90',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Global Warming: Meltdown (Deluxe Version)',
+        'release_date': '2012',
+        'release_date_precision': <ReleaseDatePrecision.YEAR: 'year'>,
+        'total_tracks': 17,
+        'uri': 'spotify:album:2F7tejLHzTqFq2XLol9ZGy',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '1l7ZsJRRS8wlW3WfJfPfNS',
+          'name': 'Christina Aguilera',
+          'uri': 'spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 229506,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/0Hf4aIJpsN4Os2f0y0VqWl',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/0Hf4aIJpsN4Os2f0y0VqWl',
+      'is_local': False,
+      'name': 'Feel This Moment (feat. Christina Aguilera)',
+      'track_id': '0Hf4aIJpsN4Os2f0y0VqWl',
+      'track_number': 3,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:0Hf4aIJpsN4Os2f0y0VqWl',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '4RaAjieYFIZRF8uh6GY43r',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b273a511f69870fa68e7ba78c099',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e02a511f69870fa68e7ba78c099',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d00004851a511f69870fa68e7ba78c099',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Pitbull Starring In Rebelution',
+        'release_date': '2009-08-27',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 14,
+        'uri': 'spotify:album:4RaAjieYFIZRF8uh6GY43r',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 237600,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/0OPyDgTRuIdCJ9B4bYSths',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/0OPyDgTRuIdCJ9B4bYSths',
+      'is_local': False,
+      'name': 'Hotel Room Service',
+      'track_id': '0OPyDgTRuIdCJ9B4bYSths',
+      'track_number': 8,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:0OPyDgTRuIdCJ9B4bYSths',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '4EUf4YyNjuXypWY6W5wEDm',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Globalization',
+        'release_date': '2014-11-21',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 11,
+        'uri': 'spotify:album:4EUf4YyNjuXypWY6W5wEDm',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '3s73tswJycj6HTBNNN393z',
+          'name': 'John Ryan',
+          'uri': 'spotify:artist:3s73tswJycj6HTBNNN393z',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 236200,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/4Y7XAxTANhu3lmnLAzhWJW',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/4Y7XAxTANhu3lmnLAzhWJW',
+      'is_local': False,
+      'name': 'Fireball (feat. John Ryan)',
+      'track_id': '4Y7XAxTANhu3lmnLAzhWJW',
+      'track_number': 3,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:4Y7XAxTANhu3lmnLAzhWJW',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '4rG0MhkU6UojACJxkMHIXB',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '0TnOYISbd1XYRBk9myaseg',
+            'name': 'Pitbull',
+            'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Planet Pit (Deluxe Version)',
+        'release_date': '2011-06-17',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 16,
+        'uri': 'spotify:album:4rG0MhkU6UojACJxkMHIXB',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+        dict({
+          'artist_id': '3aQeKQSyrW4qWr35idm0cy',
+          'name': 'T-Pain',
+          'uri': 'spotify:artist:3aQeKQSyrW4qWr35idm0cy',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 234453,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/3rfhI32Il2hVRKDkuGeeen',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/3rfhI32Il2hVRKDkuGeeen',
+      'is_local': False,
+      'name': 'Hey Baby (Drop It to the Floor) (feat. T-Pain)',
+      'track_id': '3rfhI32Il2hVRKDkuGeeen',
+      'track_number': 4,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:3rfhI32Il2hVRKDkuGeeen',
+    }),
+    dict({
+      'album': dict({
+        'album_id': '3V2ApPxUSquOkjLQU3wmjh',
+        'album_type': <AlbumType.ALBUM: 'album'>,
+        'artists': list([
+          dict({
+            'artist_id': '52iwsT98xCoGgiGntTiR7K',
+            'name': 'Quevedo',
+            'uri': 'spotify:artist:52iwsT98xCoGgiGntTiR7K',
+          }),
+        ]),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab67616d0000b2734b690afba75a356fcdad526e',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67616d00001e024b690afba75a356fcdad526e',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab67616d000048514b690afba75a356fcdad526e',
+            'width': 64,
+          }),
+        ]),
+        'name': 'BUENAS NOCHES',
+        'release_date': '2024-11-22',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'total_tracks': 18,
+        'uri': 'spotify:album:3V2ApPxUSquOkjLQU3wmjh',
+      }),
+      'artists': list([
+        dict({
+          'artist_id': '52iwsT98xCoGgiGntTiR7K',
+          'name': 'Quevedo',
+          'uri': 'spotify:artist:52iwsT98xCoGgiGntTiR7K',
+        }),
+        dict({
+          'artist_id': '0TnOYISbd1XYRBk9myaseg',
+          'name': 'Pitbull',
+          'uri': 'spotify:artist:0TnOYISbd1XYRBk9myaseg',
+        }),
+      ]),
+      'disc_number': 1,
+      'duration_ms': 165762,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/track/67LKV40NfSSGIJnm0xz6fi',
+      }),
+      'href': 'https://api.spotify.com/v1/tracks/67LKV40NfSSGIJnm0xz6fi',
+      'is_local': False,
+      'name': 'MR. MOONDIAL',
+      'track_id': '67LKV40NfSSGIJnm0xz6fi',
+      'track_number': 10,
+      'type': <ItemType.TRACK: 'track'>,
+      'uri': 'spotify:track:67LKV40NfSSGIJnm0xz6fi',
+    }),
+  ])
+# ---
 # name: test_get_audio_features
   dict({
     'acousticness': 0.011,

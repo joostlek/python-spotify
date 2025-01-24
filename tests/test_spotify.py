@@ -1366,6 +1366,30 @@ async def test_get_artist_albums(
     )
 
 
+async def test_get_artist_top_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving top tracks of an artist."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks",
+        status=200,
+        body=load_fixture("artist_top_tracks.json"),
+    )
+    response = await authenticated_client.get_artist_top_tracks(
+        "0TnOYISbd1XYRBk9myaseg"
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
 async def test_get_show_episodes(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
