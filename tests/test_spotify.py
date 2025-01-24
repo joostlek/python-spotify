@@ -1584,6 +1584,28 @@ async def test_get_categories(
     )
 
 
+async def test_get_chapter(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving chapter."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/chapters/3NW4BmIOG0qzQZgtLgsydR",
+        status=200,
+        body=load_fixture("chapter.json"),
+    )
+    response = await authenticated_client.get_chapter("3NW4BmIOG0qzQZgtLgsydR")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/chapters/3NW4BmIOG0qzQZgtLgsydR",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
 async def test_get_audio_features(
     responses: aioresponses,
     snapshot: SnapshotAssertion,

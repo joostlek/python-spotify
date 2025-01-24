@@ -54,6 +54,7 @@ from spotifyaio.models import (
     Show,
     ShowEpisodesResponse,
     SimplifiedAudiobook,
+    SimplifiedChapter,
     SimplifiedEpisode,
     TopArtistsResponse,
     TopTracksResponse,
@@ -291,7 +292,9 @@ class SpotifyClient:
         response = await self._get("v1/audiobooks", params=params)
         return AudiobooksResponse.from_json(response).audiobooks
 
-    async def get_audiobook_chapters(self, audiobook_id: str) -> list[Chapter]:
+    async def get_audiobook_chapters(
+        self, audiobook_id: str
+    ) -> list[SimplifiedChapter]:
         """Get audiobook chapters."""
         identifier = get_identifier(audiobook_id)
         params: dict[str, Any] = {"limit": 50}
@@ -343,7 +346,11 @@ class SpotifyClient:
         response = await self._get(f"v1/browse/categories/{category_id}")
         return Category.from_json(response)
 
-    # Get chapter
+    async def get_chapter(self, chapter_id: str) -> Chapter:
+        """Get chapter."""
+        identifier = chapter_id.split(":")[-1]
+        response = await self._get(f"v1/chapters/{identifier}")
+        return Chapter.from_json(response)
 
     # Get several chapters
 
