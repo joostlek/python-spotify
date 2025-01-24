@@ -233,10 +233,17 @@ class PlayedTrack(DataClassORJSONMixin):
 
 
 @dataclass
-class ArtistResponse(DataClassORJSONMixin):
+class FollowedArtistResponse(DataClassORJSONMixin):
     """Artist response model."""
 
     artists: ArtistResponseItem
+
+
+@dataclass
+class ArtistResponse(DataClassORJSONMixin):
+    """Artist response model."""
+
+    artists: list[Artist]
 
 
 @dataclass

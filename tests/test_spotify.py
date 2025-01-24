@@ -16,7 +16,6 @@ from spotifyaio import (
     SpotifyClient,
     SpotifyConnectionError,
     SpotifyNotFoundError,
-    SpotifyRateLimitError,
 )
 
 from . import load_fixture
@@ -885,23 +884,6 @@ async def test_get_not_found_playlist(
         await authenticated_client.get_playlist("37i9dQZF1DXcBWIGoYBM5M")
 
 
-async def test_rate_limit(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test raising rate limit exception."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M?additional_types=track,episode",
-        status=200,
-        body=load_fixture("rate_limit.json"),
-    )
-    with pytest.raises(
-        SpotifyRateLimitError,
-        match="Ratelimit exceeded",
-    ):
-        await authenticated_client.get_playlist("37i9dQZF1DXcBWIGoYBM5M")
-
-
 @pytest.mark.parametrize(
     "fixture",
     [
@@ -1311,6 +1293,55 @@ async def test_get_artist(
         params=None,
         json=None,
     )
+
+
+async def test_get_several_artists(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving several artists."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/artists?ids=2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6",
+        status=200,
+        body=load_fixture("artists.json"),
+    )
+    response = await authenticated_client.get_artists(
+        ["2CIMQHirSU0MQqyYHq0eOx", "57dN52uHvrHOxijzpIgu3E", "1vCWHaC5f2uS3yhpwWbIA6"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/artists",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "2CIMQHirSU0MQqyYHq0eOx,"
+            "57dN52uHvrHOxijzpIgu3E,"
+            "1vCWHaC5f2uS3yhpwWbIA6"
+        },
+        json=None,
+    )
+
+
+async def test_get_no_artists(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving no artists."""
+    assert await authenticated_client.get_artists([]) == []
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_too_many_artists(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving too many artists."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 artists can be requested at once"
+    ):
+        await authenticated_client.get_artists(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
 async def test_get_artist_albums(

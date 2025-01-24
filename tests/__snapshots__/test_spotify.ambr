@@ -18367,6 +18367,81 @@
     }),
   ])
 # ---
+# name: test_get_several_artists
+  list([
+    dict({
+      'artist_id': '2CIMQHirSU0MQqyYHq0eOx',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5eb89ffabe57a25cedeca3309e7',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f17889ffabe57a25cedeca3309e7',
+          'width': 160,
+        }),
+      ]),
+      'name': 'deadmau5',
+      'uri': 'spotify:artist:2CIMQHirSU0MQqyYHq0eOx',
+    }),
+    dict({
+      'artist_id': '57dN52uHvrHOxijzpIgu3E',
+      'images': list([
+        dict({
+          'height': 693,
+          'url': 'https://i.scdn.co/image/2f0c6c465a83cd196e651e3d4e7625ba799a6f60',
+          'width': 1000,
+        }),
+        dict({
+          'height': 444,
+          'url': 'https://i.scdn.co/image/4e3e13c8b993bde9898e49509fb9ae121636e05f',
+          'width': 640,
+        }),
+        dict({
+          'height': 139,
+          'url': 'https://i.scdn.co/image/dc68dd24b45b74ecce9d4ed486423673d683ced3',
+          'width': 200,
+        }),
+        dict({
+          'height': 44,
+          'url': 'https://i.scdn.co/image/4e55ca05d4f336a2fa0e3062a7ec9778a201e8bc',
+          'width': 63,
+        }),
+      ]),
+      'name': 'Ratatat',
+      'uri': 'spotify:artist:57dN52uHvrHOxijzpIgu3E',
+    }),
+    dict({
+      'artist_id': '1vCWHaC5f2uS3yhpwWbIA6',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6761610000e5ebae07171f989fb39736674113',
+          'width': 640,
+        }),
+        dict({
+          'height': 320,
+          'url': 'https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113',
+          'width': 320,
+        }),
+        dict({
+          'height': 160,
+          'url': 'https://i.scdn.co/image/ab6761610000f178ae07171f989fb39736674113',
+          'width': 160,
+        }),
+      ]),
+      'name': 'Avicii',
+      'uri': 'spotify:artist:1vCWHaC5f2uS3yhpwWbIA6',
+    }),
+  ])
+# ---
 # name: test_get_show
   dict({
     'description': 'Safety Third is a weekly show hosted by William Osman, NileRed, The Backyard Scientist, Allen Pan, and a couple other YouTube "Scientists". Sometimes we have guests, sometimes it\'s just us, but always: safety is our number three priority.',
