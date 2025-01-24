@@ -19,6 +19,7 @@ from spotifyaio.models import (
     AlbumTracksResponse,
     Artist,
     ArtistResponse,
+    ArtistTopTracksResponse,
     Audiobook,
     AudiobooksResponse,
     AudioFeatures,
@@ -267,7 +268,11 @@ class SpotifyClient:
         response = await self._get(f"v1/artists/{identifier}/albums", params=params)
         return NewReleasesResponseInner.from_json(response).items
 
-    # Get an artist's top tracks
+    async def get_artist_top_tracks(self, artist_id: str) -> list[Track]:
+        """Get artist top tracks."""
+        identifier = artist_id.split(":")[-1]
+        response = await self._get(f"v1/artists/{identifier}/top-tracks")
+        return ArtistTopTracksResponse.from_json(response).tracks
 
     # Get an artist's related artists
 
