@@ -330,7 +330,18 @@ class SpotifyClient:
         }
         await self._delete("v1/me/audiobooks", params=params)
 
-    # Check if one or more audiobooks is already saved
+    async def are_audiobooks_saved(self, audiobook_ids: list[str]) -> dict[str, bool]:
+        """Check if audiobooks are saved."""
+        if not audiobook_ids:
+            return {}
+        if len(audiobook_ids) > 50:
+            msg = "Maximum of 50 audiobooks can be checked at once"
+            raise ValueError(msg)
+        identifiers = [get_identifier(i) for i in audiobook_ids]
+        params: dict[str, Any] = {"ids": ",".join(identifiers)}
+        response = await self._get("v1/me/audiobooks/contains", params=params)
+        body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
+        return dict(zip(identifiers, body))
 
     async def get_categories(self) -> list[Category]:
         """Get list of categories."""

@@ -1540,6 +1540,35 @@ async def test_remove_too_many_audiobooks(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+async def test_check_saved_audiobooks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved audiobooks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/audiobooks/contains?ids=18yVqkdbdRvS24c0Ilj2ci,"
+        f"1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe",
+        status=200,
+        body=load_fixture("audiobooks_saved.json"),
+    )
+    response = await authenticated_client.are_audiobooks_saved(
+        ["18yVqkdbdRvS24c0Ilj2ci", "1HGw3J3NxZO1TP1BTtVhpZ", "7iHfbu1YPACw6oZPAFJtqe"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/audiobooks/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "ids": "18yVqkdbdRvS24c0Ilj2ci,"
+            "1HGw3J3NxZO1TP1BTtVhpZ,"
+            "7iHfbu1YPACw6oZPAFJtqe"
+        },
+        json=None,
+    )
+
+
 async def test_get_show_episodes(
     responses: aioresponses,
     snapshot: SnapshotAssertion,

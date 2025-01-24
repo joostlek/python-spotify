@@ -1,4 +1,11 @@
 # serializer version: 1
+# name: test_check_saved_audiobooks
+  dict({
+    '18yVqkdbdRvS24c0Ilj2ci': False,
+    '1HGw3J3NxZO1TP1BTtVhpZ': False,
+    '7iHfbu1YPACw6oZPAFJtqe': False,
+  })
+# ---
 # name: test_checking_saved_albums
   dict({
     '1A2GTWGtFfWp7KSQTwWOyo': False,
