@@ -649,6 +649,13 @@ class Chapter(DataClassORJSONMixin):
 
 
 @dataclass
+class AudiobookChapterResponse(DataClassORJSONMixin):
+    """Audiobook chapter response model."""
+
+    items: list[Chapter]
+
+
+@dataclass
 class Author(DataClassORJSONMixin):
     """Author model."""
 
