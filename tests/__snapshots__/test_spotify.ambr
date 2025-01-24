@@ -4742,6 +4742,650 @@
     'uri': 'spotify:show:58cFIY8IT7yGqR3kHnKqzV',
   })
 # ---
+# name: test_get_audiobook_chapters
+  list([
+    dict({
+      'chapter_id': '3NW4BmIOG0qzQZgtLgsydR',
+      'chapter_number': 0,
+      'duration_ms': 249652,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/3NW4BmIOG0qzQZgtLgsydR',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 1',
+      'type': 'chapter',
+      'uri': 'spotify:episode:3NW4BmIOG0qzQZgtLgsydR',
+    }),
+    dict({
+      'chapter_id': '49TZsjpPPA4jEuAJ8bJbGf',
+      'chapter_number': 1,
+      'duration_ms': 565942,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/49TZsjpPPA4jEuAJ8bJbGf',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 2',
+      'type': 'chapter',
+      'uri': 'spotify:episode:49TZsjpPPA4jEuAJ8bJbGf',
+    }),
+    dict({
+      'chapter_id': '0rPuWNlTx3j4E2NJxat2rP',
+      'chapter_number': 2,
+      'duration_ms': 974132,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/0rPuWNlTx3j4E2NJxat2rP',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 3',
+      'type': 'chapter',
+      'uri': 'spotify:episode:0rPuWNlTx3j4E2NJxat2rP',
+    }),
+    dict({
+      'chapter_id': '2E1Wk1N4bigyTVSg1tI0No',
+      'chapter_number': 3,
+      'duration_ms': 485590,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/2E1Wk1N4bigyTVSg1tI0No',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 4',
+      'type': 'chapter',
+      'uri': 'spotify:episode:2E1Wk1N4bigyTVSg1tI0No',
+    }),
+    dict({
+      'chapter_id': '6tK38pBz4ZzcdeVlIRkRUM',
+      'chapter_number': 4,
+      'duration_ms': 523466,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/6tK38pBz4ZzcdeVlIRkRUM',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 5',
+      'type': 'chapter',
+      'uri': 'spotify:episode:6tK38pBz4ZzcdeVlIRkRUM',
+    }),
+    dict({
+      'chapter_id': '4qQ7jT2GhcIat2pQFFxQA9',
+      'chapter_number': 5,
+      'duration_ms': 1022066,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/4qQ7jT2GhcIat2pQFFxQA9',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 6',
+      'type': 'chapter',
+      'uri': 'spotify:episode:4qQ7jT2GhcIat2pQFFxQA9',
+    }),
+    dict({
+      'chapter_id': '0QNX88urT0YDlKxp9UWOWX',
+      'chapter_number': 6,
+      'duration_ms': 1602481,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/0QNX88urT0YDlKxp9UWOWX',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 7',
+      'type': 'chapter',
+      'uri': 'spotify:episode:0QNX88urT0YDlKxp9UWOWX',
+    }),
+    dict({
+      'chapter_id': '2KgZ8UnDbdKFUHflP9AotL',
+      'chapter_number': 7,
+      'duration_ms': 1412075,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/2KgZ8UnDbdKFUHflP9AotL',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 8',
+      'type': 'chapter',
+      'uri': 'spotify:episode:2KgZ8UnDbdKFUHflP9AotL',
+    }),
+    dict({
+      'chapter_id': '4L1Y0jWKgrGfMB0HptLkQB',
+      'chapter_number': 8,
+      'duration_ms': 782497,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/4L1Y0jWKgrGfMB0HptLkQB',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 9',
+      'type': 'chapter',
+      'uri': 'spotify:episode:4L1Y0jWKgrGfMB0HptLkQB',
+    }),
+    dict({
+      'chapter_id': '0b2UnulIuw17qtiyTb2AwM',
+      'chapter_number': 9,
+      'duration_ms': 670223,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/0b2UnulIuw17qtiyTb2AwM',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 10',
+      'type': 'chapter',
+      'uri': 'spotify:episode:0b2UnulIuw17qtiyTb2AwM',
+    }),
+    dict({
+      'chapter_id': '6LrdmEqBMm6Y3HG9DPkZGc',
+      'chapter_number': 10,
+      'duration_ms': 1212630,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/6LrdmEqBMm6Y3HG9DPkZGc',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 11',
+      'type': 'chapter',
+      'uri': 'spotify:episode:6LrdmEqBMm6Y3HG9DPkZGc',
+    }),
+    dict({
+      'chapter_id': '3XmAaccmDwQaCc63PlbSHu',
+      'chapter_number': 11,
+      'duration_ms': 952267,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/3XmAaccmDwQaCc63PlbSHu',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 12',
+      'type': 'chapter',
+      'uri': 'spotify:episode:3XmAaccmDwQaCc63PlbSHu',
+    }),
+    dict({
+      'chapter_id': '09SfB2ZdMpJ0Horyvgb7uz',
+      'chapter_number': 12,
+      'duration_ms': 685061,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/09SfB2ZdMpJ0Horyvgb7uz',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 13',
+      'type': 'chapter',
+      'uri': 'spotify:episode:09SfB2ZdMpJ0Horyvgb7uz',
+    }),
+    dict({
+      'chapter_id': '2XA4dwf0ToQ9iVySpHTZ4D',
+      'chapter_number': 13,
+      'duration_ms': 986148,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/2XA4dwf0ToQ9iVySpHTZ4D',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 14',
+      'type': 'chapter',
+      'uri': 'spotify:episode:2XA4dwf0ToQ9iVySpHTZ4D',
+    }),
+    dict({
+      'chapter_id': '0HdNqeQP9PF97GlIUKT2e6',
+      'chapter_number': 14,
+      'duration_ms': 347689,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/0HdNqeQP9PF97GlIUKT2e6',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 15',
+      'type': 'chapter',
+      'uri': 'spotify:episode:0HdNqeQP9PF97GlIUKT2e6',
+    }),
+    dict({
+      'chapter_id': '4EgGjPK9EyWvuS4pb0JfVn',
+      'chapter_number': 15,
+      'duration_ms': 249678,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/4EgGjPK9EyWvuS4pb0JfVn',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 16',
+      'type': 'chapter',
+      'uri': 'spotify:episode:4EgGjPK9EyWvuS4pb0JfVn',
+    }),
+    dict({
+      'chapter_id': '0QW159PFdnfSo4jwofmh94',
+      'chapter_number': 16,
+      'duration_ms': 793338,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/0QW159PFdnfSo4jwofmh94',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 17',
+      'type': 'chapter',
+      'uri': 'spotify:episode:0QW159PFdnfSo4jwofmh94',
+    }),
+    dict({
+      'chapter_id': '6dhG5dwyxkMJ3o6c7VyMa9',
+      'chapter_number': 17,
+      'duration_ms': 774870,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/6dhG5dwyxkMJ3o6c7VyMa9',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 18',
+      'type': 'chapter',
+      'uri': 'spotify:episode:6dhG5dwyxkMJ3o6c7VyMa9',
+    }),
+    dict({
+      'chapter_id': '7LQHbg3sUq9hcWLXFjtor9',
+      'chapter_number': 18,
+      'duration_ms': 524800,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/7LQHbg3sUq9hcWLXFjtor9',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 19',
+      'type': 'chapter',
+      'uri': 'spotify:episode:7LQHbg3sUq9hcWLXFjtor9',
+    }),
+    dict({
+      'chapter_id': '6M0DmXvWGbIktNcxruSPaC',
+      'chapter_number': 19,
+      'duration_ms': 777769,
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/6M0DmXvWGbIktNcxruSPaC',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab676663000022a8ecf13d909d494c02ba057feb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab6766630000db5becf13d909d494c02ba057feb',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6766630000703becf13d909d494c02ba057feb',
+          'width': 64,
+        }),
+      ]),
+      'languages': list([
+        '',
+      ]),
+      'name': 'Track 20',
+      'type': 'chapter',
+      'uri': 'spotify:episode:6M0DmXvWGbIktNcxruSPaC',
+    }),
+  ])
+# ---
 # name: test_get_audiobooks
   list([
     dict({
