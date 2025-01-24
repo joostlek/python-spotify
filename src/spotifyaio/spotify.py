@@ -46,12 +46,14 @@ from spotifyaio.models import (
     RepeatMode,
     SavedAlbum,
     SavedAlbumResponse,
+    SavedAudiobookResponse,
     SavedShow,
     SavedShowResponse,
     SavedTrack,
     SavedTrackResponse,
     Show,
     ShowEpisodesResponse,
+    SimplifiedAudiobook,
     SimplifiedEpisode,
     TopArtistsResponse,
     TopTracksResponse,
@@ -298,7 +300,11 @@ class SpotifyClient:
         )
         return AudiobookChapterResponse.from_json(response).items
 
-    # Get saved audiobooks
+    async def get_saved_audiobooks(self) -> list[SimplifiedAudiobook]:
+        """Get saved audiobooks."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/audiobooks", params=params)
+        return SavedAudiobookResponse.from_json(response).items
 
     # Save an audiobook
 
