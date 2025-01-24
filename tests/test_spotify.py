@@ -1390,6 +1390,28 @@ async def test_get_artist_top_tracks(
     )
 
 
+async def test_get_audiobook(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving audiobook."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/audiobooks/0TnOYISbd1XYRBk9myaseg",
+        status=200,
+        body=load_fixture("audiobook.json"),
+    )
+    response = await authenticated_client.get_audiobook("0TnOYISbd1XYRBk9myaseg")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/audiobooks/0TnOYISbd1XYRBk9myaseg",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
 async def test_get_show_episodes(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
