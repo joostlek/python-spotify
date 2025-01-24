@@ -274,9 +274,11 @@ class SpotifyClient:
         response = await self._get(f"v1/artists/{identifier}/top-tracks")
         return ArtistTopTracksResponse.from_json(response).tracks
 
-    # Get an artist's related artists
-
-    # Get audiobook
+    async def get_audiobook(self, audiobook_id: str) -> Audiobook:
+        """Get audiobook."""
+        identifier = get_identifier(audiobook_id)
+        response = await self._get(f"v1/audiobooks/{identifier}")
+        return Audiobook.from_json(response)
 
     async def get_audiobooks(self, audiobook_ids: list[str]) -> list[Audiobook]:
         """Get audiobooks."""
