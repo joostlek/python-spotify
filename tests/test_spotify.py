@@ -1458,6 +1458,47 @@ async def test_get_saved_audiobooks(
     )
 
 
+async def test_save_audiobooks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving an audiobook."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/audiobooks?ids=0TnOYISbd1XYRBk9myaseg",
+        status=200,
+        body="",
+    )
+    await authenticated_client.save_audiobooks(["0TnOYISbd1XYRBk9myaseg"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/audiobooks",
+        METH_PUT,
+        headers=HEADERS,
+        params={"ids": "0TnOYISbd1XYRBk9myaseg"},
+        json=None,
+    )
+
+
+async def test_save_no_audiobooks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving no audiobooks."""
+    await authenticated_client.save_audiobooks([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_save_too_many_audiobooks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving too many audiobooks."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 audiobooks can be saved at once"
+    ):
+        await authenticated_client.save_audiobooks(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 async def test_get_show_episodes(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
