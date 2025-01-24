@@ -173,6 +173,19 @@ class SavedAlbumResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class SavedAudiobookResponse(DataClassORJSONMixin):
+    """Saved audiobook response model."""
+
+    items: list[SimplifiedAudiobook]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["items"] if item is not None]
+        return {"items": items}
+
+
+@dataclass
 class NewReleasesResponse(DataClassORJSONMixin):
     """NewReleases response model."""
 
@@ -670,25 +683,31 @@ class Narrator(DataClassORJSONMixin):
 
 
 @dataclass
-class Audiobook(DataClassORJSONMixin):
-    """Audiobook model."""
+class SimplifiedAudiobook(DataClassORJSONMixin):
+    """SimplifiedAudiobook model."""
 
     authors: list[Author]
-    chapters: list[Chapter]
     description: str
     edition: str
+    html_description: str
     external_urls: dict[str, str]
     explicit: bool
-    html_description: str
     audiobook_id: str = field(metadata=field_options(alias="id"))
     images: list[Image]
-    languages: list[str]
     name: str
+    uri: str
+    languages: list[str]
     narrators: list[Narrator]
     publisher: str
     total_chapters: int
     type: str
-    uri: str
+
+
+@dataclass
+class Audiobook(SimplifiedAudiobook):
+    """Audiobook model."""
+
+    chapters: list[Chapter]
 
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
