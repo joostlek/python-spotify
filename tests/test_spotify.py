@@ -1656,6 +1656,51 @@ async def test_get_chapter(
     )
 
 
+async def test_get_several_chapters(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving several chapters."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/chapters?ids=3NW4BmIOG0qzQZgtLgsydR%2C0TnOYISbd1XYRBk9myaseg",
+        status=200,
+        body=load_fixture("chapters.json"),
+    )
+    response = await authenticated_client.get_chapters(
+        ["3NW4BmIOG0qzQZgtLgsydR", "0TnOYISbd1XYRBk9myaseg"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/chapters",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "3NW4BmIOG0qzQZgtLgsydR,0TnOYISbd1XYRBk9myaseg"},
+        json=None,
+    )
+
+
+async def test_get_no_chapters(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving no chapters."""
+    assert await authenticated_client.get_chapters([]) == []
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_too_many_chapters(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving too many chapters."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 chapters can be requested at once"
+    ):
+        await authenticated_client.get_chapters(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 async def test_get_audio_features(
     responses: aioresponses,
     snapshot: SnapshotAssertion,

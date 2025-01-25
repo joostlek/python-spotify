@@ -669,6 +669,19 @@ class Chapter(SimplifiedChapter):
 
 
 @dataclass
+class ChaptersResponse(DataClassORJSONMixin):
+    """Chapters response model."""
+
+    chapters: list[Chapter]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["chapters"] if item is not None]
+        return {"chapters": items}
+
+
+@dataclass
 class AudiobookChapterResponse(DataClassORJSONMixin):
     """Audiobook chapter response model."""
 
