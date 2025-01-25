@@ -30,6 +30,7 @@ from spotifyaio.models import (
     Category,
     CategoryPlaylistResponse,
     Chapter,
+    ChaptersResponse,
     CurrentPlaying,
     Device,
     Devices,
@@ -363,7 +364,18 @@ class SpotifyClient:
         response = await self._get(f"v1/chapters/{identifier}")
         return Chapter.from_json(response)
 
-    # Get several chapters
+    async def get_chapters(self, chapter_ids: list[str]) -> list[Chapter]:
+        """Get chapters."""
+        if not chapter_ids:
+            return []
+        if len(chapter_ids) > 50:
+            msg = "Maximum of 50 chapters can be requested at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in chapter_ids])
+        }
+        response = await self._get("v1/chapters", params=params)
+        return ChaptersResponse.from_json(response).chapters
 
     async def get_episode(self, episode_id: str) -> Episode:
         """Get episode."""
