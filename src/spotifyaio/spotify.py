@@ -35,6 +35,7 @@ from spotifyaio.models import (
     Device,
     Devices,
     Episode,
+    EpisodesResponse,
     FeaturedPlaylistResponse,
     FollowedArtistResponse,
     NewReleasesResponse,
@@ -48,6 +49,8 @@ from spotifyaio.models import (
     SavedAlbum,
     SavedAlbumResponse,
     SavedAudiobookResponse,
+    SavedEpisode,
+    SavedEpisodeResponse,
     SavedShow,
     SavedShowResponse,
     SavedTrack,
@@ -383,15 +386,61 @@ class SpotifyClient:
         response = await self._get(f"v1/episodes/{identifier}")
         return Episode.from_json(response)
 
-    # Get several episodes
+    async def get_episodes(self, episode_ids: list[str]) -> list[Episode]:
+        """Get episodes."""
+        if not episode_ids:
+            return []
+        if len(episode_ids) > 50:
+            msg = "Maximum of 50 episodes can be requested at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in episode_ids])
+        }
+        response = await self._get("v1/episodes", params=params)
+        return EpisodesResponse.from_json(response).episodes
 
-    # Get saved episodes
+    async def get_saved_episodes(self) -> list[SavedEpisode]:
+        """Get saved episodes."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/episodes", params=params)
+        return SavedEpisodeResponse.from_json(response).items
 
-    # Save an episode
+    async def save_episodes(self, episode_ids: list[str]) -> None:
+        """Save episodes."""
+        if not episode_ids:
+            return
+        if len(episode_ids) > 50:
+            msg = "Maximum of 50 episodes can be saved at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in episode_ids])
+        }
+        await self._put("v1/me/episodes", params=params)
 
-    # Remove an episode
+    async def remove_saved_episodes(self, episode_ids: list[str]) -> None:
+        """Remove saved episodes."""
+        if not episode_ids:
+            return
+        if len(episode_ids) > 50:
+            msg = "Maximum of 50 episodes can be removed at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in episode_ids])
+        }
+        await self._delete("v1/me/episodes", params=params)
 
-    # Check if one or more episodes is already saved
+    async def are_episodes_saved(self, episode_ids: list[str]) -> dict[str, bool]:
+        """Check if episodes are saved."""
+        if not episode_ids:
+            return {}
+        if len(episode_ids) > 50:
+            msg = "Maximum of 50 episodes can be checked at once"
+            raise ValueError(msg)
+        identifiers = [get_identifier(i) for i in episode_ids]
+        params: dict[str, Any] = {"ids": ",".join(identifiers)}
+        response = await self._get("v1/me/episodes/contains", params=params)
+        body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
+        return dict(zip(identifiers, body))
 
     # Get genre seeds
 
