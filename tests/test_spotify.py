@@ -1701,6 +1701,198 @@ async def test_get_too_many_chapters(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+async def test_get_episodes(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving episodes."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/episodes?ids=3o0RYoo5iOMKSmEbunsbvW%2C3o0RYoo5iOMKSmEbunsbvW",
+        status=200,
+        body=load_fixture("episodes.json"),
+    )
+    response = await authenticated_client.get_episodes(
+        ["3o0RYoo5iOMKSmEbunsbvW", "3o0RYoo5iOMKSmEbunsbvW"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/episodes",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "3o0RYoo5iOMKSmEbunsbvW,3o0RYoo5iOMKSmEbunsbvW"},
+        json=None,
+    )
+
+
+async def test_get_no_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving no episodes."""
+    assert await authenticated_client.get_episodes([]) == []
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_too_many_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving too many episodes."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 episodes can be requested at once"
+    ):
+        await authenticated_client.get_episodes(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_saved_episodes(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving saved episodes."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/episodes?limit=48",
+        status=200,
+        body=load_fixture("saved_episodes.json"),
+    )
+    response = await authenticated_client.get_saved_episodes()
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/episodes",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        json=None,
+    )
+
+
+async def test_save_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving episodes."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/episodes?ids=3o0RYoo5iOMKSmEbunsbvW",
+        status=200,
+        body="",
+    )
+    await authenticated_client.save_episodes(["3o0RYoo5iOMKSmEbunsbvW"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/episodes",
+        METH_PUT,
+        headers=HEADERS,
+        params={"ids": "3o0RYoo5iOMKSmEbunsbvW"},
+        json=None,
+    )
+
+
+async def test_save_no_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving no episodes."""
+    await authenticated_client.save_episodes([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_save_too_many_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving too many episodes."""
+    with pytest.raises(ValueError, match="Maximum of 50 episodes can be saved at once"):
+        await authenticated_client.save_episodes(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_remove_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing episodes."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/episodes?ids=3o0RYoo5iOMKSmEbunsbvW",
+        status=200,
+        body="",
+    )
+    await authenticated_client.remove_saved_episodes(["3o0RYoo5iOMKSmEbunsbvW"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/episodes",
+        METH_DELETE,
+        headers=HEADERS,
+        params={"ids": "3o0RYoo5iOMKSmEbunsbvW"},
+        json=None,
+    )
+
+
+async def test_remove_no_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing no episodes."""
+    await authenticated_client.remove_saved_episodes([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_remove_too_many_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing too many episodes."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 episodes can be removed at once"
+    ):
+        await authenticated_client.remove_saved_episodes(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_check_saved_episodes(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved episodes."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/episodes/contains?ids=3o0RYoo5iOMKSmEbunsbvW%2C3o0RYoo5iOMKSmEbunsbvW",
+        status=200,
+        body=load_fixture("episode_saved.json"),
+    )
+    response = await authenticated_client.are_episodes_saved(
+        ["3o0RYoo5iOMKSmEbunsbvW", "3o0RYoo5iOMKSmEbunsbvW"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/episodes/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "3o0RYoo5iOMKSmEbunsbvW,3o0RYoo5iOMKSmEbunsbvW"},
+        json=None,
+    )
+
+
+async def test_check_no_saved_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking no saved episodes."""
+    assert await authenticated_client.are_episodes_saved([]) == {}
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_check_too_many_saved_episodes(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking too many saved episodes."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 episodes can be checked at once"
+    ):
+        await authenticated_client.are_episodes_saved(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
 async def test_get_audio_features(
     responses: aioresponses,
     snapshot: SnapshotAssertion,

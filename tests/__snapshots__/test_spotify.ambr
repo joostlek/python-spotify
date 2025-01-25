@@ -6,6 +6,11 @@
     '7iHfbu1YPACw6oZPAFJtqe': False,
   })
 # ---
+# name: test_check_saved_episodes
+  dict({
+    '3o0RYoo5iOMKSmEbunsbvW': False,
+  })
+# ---
 # name: test_checking_saved_albums
   dict({
     '1A2GTWGtFfWp7KSQTwWOyo': False,
@@ -10426,6 +10431,71 @@
     'uri': 'spotify:episode:3o0RYoo5iOMKSmEbunsbvW',
   })
 # ---
+# name: test_get_episodes
+  list([
+    dict({
+      'description': 'Patreon: https://www.patreon.com/safetythirdMerch: https://safetythird.shopYouTube: https://www.youtube.com/@safetythird/Advertising Inquiries: https://redcircle.com/brandsPrivacy & Opt-Out: https://redcircle.com/privacy',
+      'duration_ms': 3690161,
+      'episode_id': '3o0RYoo5iOMKSmEbunsbvW',
+      'explicit': False,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/episode/3o0RYoo5iOMKSmEbunsbvW',
+      }),
+      'href': 'https://api.spotify.com/v1/episodes/3o0RYoo5iOMKSmEbunsbvW',
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab6765630000ba8ac7bedd27a4413b1abf926d8a',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://i.scdn.co/image/ab67656300005f1fc7bedd27a4413b1abf926d8a',
+          'width': 300,
+        }),
+        dict({
+          'height': 64,
+          'url': 'https://i.scdn.co/image/ab6765630000f68dc7bedd27a4413b1abf926d8a',
+          'width': 64,
+        }),
+      ]),
+      'name': 'My Squirrel Has Brain Damage - Safety Third 119',
+      'release_date': '2024-07-26',
+      'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+      'show': dict({
+        'description': 'Safety Third is a weekly show hosted by William Osman, NileRed, The Backyard Scientist, Allen Pan, and a couple other YouTube "Scientists". Sometimes we have guests, sometimes it\'s just us, but always: safety is our number three priority.',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/show/1Y9ExMgMxoBVrgrfU7u0nD',
+        }),
+        'href': 'https://api.spotify.com/v1/shows/1Y9ExMgMxoBVrgrfU7u0nD',
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8ac7bedd27a4413b1abf926d8a',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fc7bedd27a4413b1abf926d8a',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68dc7bedd27a4413b1abf926d8a',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Safety Third',
+        'publisher': 'Safety Third ',
+        'show_id': '1Y9ExMgMxoBVrgrfU7u0nD',
+        'total_episodes': 122,
+        'uri': 'spotify:show:1Y9ExMgMxoBVrgrfU7u0nD',
+      }),
+      'type': <ItemType.EPISODE: 'episode'>,
+      'uri': 'spotify:episode:3o0RYoo5iOMKSmEbunsbvW',
+    }),
+  ])
+# ---
 # name: test_get_featured_playlists
   list([
     dict({
@@ -19780,6 +19850,74 @@
       'total_chapters': 49,
       'type': 'audiobook',
       'uri': 'spotify:show:58cFIY8IT7yGqR3kHnKqzV',
+    }),
+  ])
+# ---
+# name: test_get_saved_episodes
+  list([
+    dict({
+      'added_at': datetime.datetime(2021, 4, 1, 23, 21, 46, tzinfo=datetime.timezone.utc),
+      'episode': dict({
+        'description': "This week on the podcast Ed is joined by actor, writer and Series 10 contestant, Katherine Parkinson. As well as discussing the new line up and this week's tasks they go back to Series 10 and talk about Katherine's time on the show - expect chat about clay masks, marble runs, spiders and THAT fart noise. You can watch Series 11 of Taskmaster each Thursday on Channel 4 at 9pm.Watch Taskmaster Bleeped on All 4Get in touch with Ed and future guests:taskmasterpodcast@gmail.com\xa0Visit the Taskmaster Youtube channelwww.youtube.com/taskmaster\xa0For all your Taskmaster goodies visit\xa0www.taskmasterstore.com\xa0\xa0Taskmaster the podcast is produced by Daisy Knight for Avalon Television Ltd",
+        'duration_ms': 3724303,
+        'episode_id': '0x25dVaCtjWMmcjDJyuMM5',
+        'explicit': True,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/0x25dVaCtjWMmcjDJyuMM5',
+        }),
+        'href': 'https://api.spotify.com/v1/episodes/0x25dVaCtjWMmcjDJyuMM5',
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab6765630000ba8aee2ef0ad038698401b200131',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab67656300005f1fee2ef0ad038698401b200131',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6765630000f68dee2ef0ad038698401b200131',
+            'width': 64,
+          }),
+        ]),
+        'name': 'Ep 26. Katherine Parkinson - S11 Ep.3',
+        'release_date': '2021-04-01',
+        'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+        'show': dict({
+          'description': 'This is the official Taskmaster podcast, hosted by former champion and chickpea lover, Ed Gamble. Each week, released straight after the show is broadcast on Channel 4, Ed will be joined by a special guest to dissect and discuss the latest episode. Past contestants, little Alex Horne, and even the Taskmaster himself will feature in this brand-new podcast from the producers of the BAFTA-winning comedy show.',
+          'external_urls': dict({
+            'spotify': 'https://open.spotify.com/show/4BZc9sOdNilJJ8irsuOzdg',
+          }),
+          'href': 'https://api.spotify.com/v1/shows/4BZc9sOdNilJJ8irsuOzdg',
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab6765630000ba8a940dfd502920d407436baca2',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67656300005f1f940dfd502920d407436baca2',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab6765630000f68d940dfd502920d407436baca2',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Taskmaster The Podcast',
+          'publisher': 'Avalon ',
+          'show_id': '4BZc9sOdNilJJ8irsuOzdg',
+          'total_episodes': 200,
+          'uri': 'spotify:show:4BZc9sOdNilJJ8irsuOzdg',
+        }),
+        'type': <ItemType.EPISODE: 'episode'>,
+        'uri': 'spotify:episode:0x25dVaCtjWMmcjDJyuMM5',
+      }),
     }),
   ])
 # ---

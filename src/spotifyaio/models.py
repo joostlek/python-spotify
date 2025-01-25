@@ -558,11 +558,51 @@ class ShowEpisodesResponse(DataClassORJSONMixin):
 
 
 @dataclass
+class SavedEpisode(DataClassORJSONMixin):
+    """Saved episode model."""
+
+    added_at: datetime
+    episode: Episode
+
+
+@dataclass
+class SavedEpisodeResponse(DataClassORJSONMixin):
+    """Saved episodes response model."""
+
+    items: list[SavedEpisode]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        return {
+            **d,
+            "items": [
+                item
+                for item in d["items"]
+                if item.get("episode", {}).get("id") is not None
+            ],
+        }
+
+
+@dataclass
 class Episode(SimplifiedEpisode, Item):
     """Episode model."""
 
     type = ItemType.EPISODE
     show: SimplifiedShow
+
+
+@dataclass
+class EpisodesResponse(DataClassORJSONMixin):
+    """Episodes response model."""
+
+    episodes: list[Episode]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["episodes"] if item is not None]
+        return {"episodes": items}
 
 
 @dataclass
