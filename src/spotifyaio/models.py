@@ -877,3 +877,10 @@ class SearchResult(DataClassORJSONMixin):
                 if item is not None
             ],
         }
+
+
+class FollowType(StrEnum):
+    """Follow type."""
+
+    ARTIST = "artist"
+    USER = "user"

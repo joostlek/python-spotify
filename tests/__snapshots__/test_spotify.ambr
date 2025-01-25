@@ -1,4 +1,10 @@
 # serializer version: 1
+# name: test_are_accounts_followed
+  dict({
+    'spotify': True,
+    'spotifyartists': False,
+  })
+# ---
 # name: test_check_saved_audiobooks
   dict({
     '18yVqkdbdRvS24c0Ilj2ci': False,

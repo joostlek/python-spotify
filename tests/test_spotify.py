@@ -17,7 +17,7 @@ from spotifyaio import (
     SpotifyConnectionError,
     SpotifyNotFoundError,
 )
-from spotifyaio.models import SearchType
+from spotifyaio.models import FollowType, SearchType
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
@@ -2487,3 +2487,193 @@ async def test_check_too_many_saved_tracks(
     with pytest.raises(ValueError, match="Maximum of 50 tracks can be checked at once"):
         await authenticated_client.are_tracks_saved(["abc"] * 51)
     responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_follow_playlist(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test following a playlist."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/followers",
+        status=200,
+        body="",
+    )
+    await authenticated_client.follow_playlist("37i9dQZF1DXcBWIGoYBM5M")
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/followers",
+        METH_PUT,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
+async def test_unfollow_playlist(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test unfollowing a playlist."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/followers",
+        status=200,
+        body="",
+    )
+    await authenticated_client.unfollow_playlist("37i9dQZF1DXcBWIGoYBM5M")
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/followers",
+        METH_DELETE,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
+async def test_follow_account(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test following an account."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/following?ids=spotify&type=user",
+        status=200,
+        body="",
+    )
+    await authenticated_client.follow_account(FollowType.USER, ["spotify"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/following",
+        METH_PUT,
+        headers=HEADERS,
+        params={"type": "user", "ids": "spotify"},
+        json=None,
+    )
+
+
+async def test_follow_no_account(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test following no account."""
+    await authenticated_client.follow_account(FollowType.USER, [])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_follow_too_many_accounts(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test following too many accounts."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 accounts can be followed at once"
+    ):
+        await authenticated_client.follow_account(FollowType.USER, ["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_unfollow_account(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test unfollowing an account."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/following?ids=spotify&type=user",
+        status=200,
+        body="",
+    )
+    await authenticated_client.unfollow_account(FollowType.USER, ["spotify"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/following",
+        METH_DELETE,
+        headers=HEADERS,
+        params={"type": "user", "ids": "spotify"},
+        json=None,
+    )
+
+
+async def test_unfollow_no_account(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test unfollowing no account."""
+    await authenticated_client.unfollow_account(FollowType.USER, [])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_unfollow_too_many_accounts(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test unfollowing too many accounts."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 accounts can be unfollowed at once"
+    ):
+        await authenticated_client.unfollow_account(FollowType.USER, ["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_are_accounts_followed(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking if accounts are followed."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/following/contains?type=user&ids=spotify%2Cspotifyartists",
+        status=200,
+        body=load_fixture("accounts_followed.json"),
+    )
+    response = await authenticated_client.are_accounts_followed(
+        FollowType.USER, ["spotify", "spotifyartists"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/following/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={"type": "user", "ids": "spotify,spotifyartists"},
+        json=None,
+    )
+
+
+async def test_are_no_accounts_followed(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking if no accounts are followed."""
+    assert await authenticated_client.are_accounts_followed(FollowType.USER, []) == {}
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_are_too_many_accounts_followed(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking if too many accounts are followed."""
+    with pytest.raises(
+        ValueError, match="Maximum of 50 accounts can be checked at once"
+    ):
+        await authenticated_client.are_accounts_followed(FollowType.USER, ["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_is_following_playlist(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking if a playlist is followed."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/followers/contains",
+        status=200,
+        body="[true]",
+    )
+    response = await authenticated_client.is_following_playlist(
+        "37i9dQZF1DXcBWIGoYBM5M"
+    )
+    assert response is True
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/followers/contains",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )

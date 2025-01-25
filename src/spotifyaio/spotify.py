@@ -39,6 +39,7 @@ from spotifyaio.models import (
     EpisodesResponse,
     FeaturedPlaylistResponse,
     FollowedArtistResponse,
+    FollowType,
     Image,
     ModifyPlaylistResponse,
     NewReleasesResponse,
@@ -858,9 +859,15 @@ class SpotifyClient:
         response = await self._get(f"v1/users/{user_id}")
         return BaseUserProfile.from_json(response)
 
-    # Follow a playlist
+    async def follow_playlist(self, playlist_id: str) -> None:
+        """Follow a playlist."""
+        identifier = get_identifier(playlist_id)
+        await self._put(f"v1/playlists/{identifier}/followers")
 
-    # Unfollow a playlist
+    async def unfollow_playlist(self, playlist_id: str) -> None:
+        """Unfollow a playlist."""
+        identifier = get_identifier(playlist_id)
+        await self._delete(f"v1/playlists/{identifier}/followers")
 
     async def get_followed_artists(self) -> list[Artist]:
         """Get followed artists."""
@@ -868,13 +875,52 @@ class SpotifyClient:
         response = await self._get("v1/me/following", params=params)
         return FollowedArtistResponse.from_json(response).artists.items
 
-    # Follow an artist or user
+    async def follow_account(self, follow_type: FollowType, ids: list[str]) -> None:
+        """Follow an artist or user."""
+        if not ids:
+            return
+        if len(ids) > 50:
+            msg = "Maximum of 50 accounts can be followed at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "type": follow_type,
+            "ids": ",".join([get_identifier(i) for i in ids]),
+        }
+        await self._put("v1/me/following", params=params)
 
-    # Unfollow an artist or user
+    async def unfollow_account(self, follow_type: FollowType, ids: list[str]) -> None:
+        """Unfollow an artist or user."""
+        if not ids:
+            return
+        if len(ids) > 50:
+            msg = "Maximum of 50 accounts can be unfollowed at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "type": follow_type,
+            "ids": ",".join([get_identifier(i) for i in ids]),
+        }
+        await self._delete("v1/me/following", params=params)
 
-    # Check if a user is following an artist or user
+    async def are_accounts_followed(
+        self, follow_type: FollowType, ids: list[str]
+    ) -> dict[str, bool]:
+        """Check if artists or users are followed."""
+        if not ids:
+            return {}
+        if len(ids) > 50:
+            msg = "Maximum of 50 accounts can be checked at once"
+            raise ValueError(msg)
+        identifiers = [get_identifier(i) for i in ids]
+        params: dict[str, Any] = {"type": follow_type, "ids": ",".join(identifiers)}
+        response = await self._get("v1/me/following/contains", params=params)
+        body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
+        return dict(zip(identifiers, body))
 
-    # Check if a user is following a playlist
+    async def is_following_playlist(self, playlist_id: str) -> bool:
+        """Check if playlist is followed."""
+        identifier = get_identifier(playlist_id)
+        response = await self._get(f"v1/playlists/{identifier}/followers/contains")
+        return bool(orjson.loads(response)[0])  # pylint: disable=no-member
 
     async def close(self) -> None:
         """Close open client session."""
