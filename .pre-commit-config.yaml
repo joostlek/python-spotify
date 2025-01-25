@@ -73,7 +73,7 @@ repos:
         exclude: ^poetry\.lock$
         entry: poetry run codespell
         args:
-          - --ignore-words-list=doen,te,ons,Racoon,Crate,Ede,succes,alle
+          - --ignore-words-list=doen,te,ons,Racoon,Crate,Ede,succes,alle,Theis,serie,wel,somme,affraid,programm,earnin,couldnt,beter,als,bord,wil,hart,thuis,voight
       - id: detect-private-key
         name: 🕵️  Detect Private Keys
         language: system

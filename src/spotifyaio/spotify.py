@@ -60,6 +60,8 @@ from spotifyaio.models import (
     SavedShowResponse,
     SavedTrack,
     SavedTrackResponse,
+    SearchResult,
+    SearchType,
     Show,
     ShowEpisodesResponse,
     SimplifiedAudiobook,
@@ -715,7 +717,13 @@ class SpotifyClient:
 
     # Upload a custom playlist cover image
 
-    # Search for an item
+    async def search(
+        self, query: str, types: list[SearchType], *, limit: int = 48
+    ) -> SearchResult:
+        """Search."""
+        params: dict[str, Any] = {"q": query, "limit": limit, "type": ",".join(types)}
+        response = await self._get("v1/search", params=params)
+        return SearchResult.from_json(response)
 
     async def get_show(self, show_id: str) -> Show:
         """Get show."""

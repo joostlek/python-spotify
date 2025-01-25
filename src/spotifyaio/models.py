@@ -812,3 +812,68 @@ class AudiobooksResponse(DataClassORJSONMixin):
         """Pre deserialize hook."""
         items = [item for item in d["audiobooks"] if item is not None]
         return {"audiobooks": items}
+
+
+class SearchType(StrEnum):
+    """Search types."""
+
+    ALBUM = "album"
+    ARTIST = "artist"
+    AUDIOBOOK = "audiobook"
+    EPISODE = "episode"
+    PLAYLIST = "playlist"
+    SHOW = "show"
+    TRACK = "track"
+
+
+@dataclass
+class SearchResult(DataClassORJSONMixin):
+    """Search result model."""
+
+    albums: list[SimplifiedAlbum] | None = field(default=None)
+    artists: list[SimplifiedArtist] | None = field(default=None)
+    audiobooks: list[SimplifiedAudiobook] | None = field(default=None)
+    episodes: list[SimplifiedEpisode] | None = field(default=None)
+    playlists: list[BasePlaylist] | None = field(default=None)
+    shows: list[SimplifiedShow] | None = field(default=None)
+    tracks: list[SimplifiedTrack] | None = field(default=None)
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        return {
+            **d,
+            "albums": [
+                item
+                for item in d.get("albums", {}).get("items", [])
+                if item is not None
+            ],
+            "artists": [
+                item
+                for item in d.get("artists", {}).get("items", [])
+                if item is not None
+            ],
+            "audiobooks": [
+                item
+                for item in d.get("audiobooks", {}).get("items", [])
+                if item is not None
+            ],
+            "episodes": [
+                item
+                for item in d.get("episodes", {}).get("items", [])
+                if item is not None
+            ],
+            "playlists": [
+                item
+                for item in d.get("playlists", {}).get("items", [])
+                if item is not None
+            ],
+            "shows": [
+                item for item in d.get("shows", {}).get("items", []) if item is not None
+            ],
+            "tracks": [
+                item
+                for item in d.get("tracks", {}).get("items", [])
+                if item is not None
+            ],
+        }
