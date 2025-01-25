@@ -2366,3 +2366,124 @@ async def test_check_too_many_saved_shows(
     with pytest.raises(ValueError, match="Maximum of 50 shows can be checked at once"):
         await authenticated_client.are_shows_saved(["abc"] * 51)
     responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_save_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving tracks."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/tracks?ids=0TnOYISbd1XYRBk9myaseg",
+        status=200,
+        body="",
+    )
+    await authenticated_client.save_tracks(["0TnOYISbd1XYRBk9myaseg"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/tracks",
+        METH_PUT,
+        headers=HEADERS,
+        params={"ids": "0TnOYISbd1XYRBk9myaseg"},
+        json=None,
+    )
+
+
+async def test_save_no_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving no tracks."""
+    await authenticated_client.save_tracks([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_save_too_many_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving too many tracks."""
+    with pytest.raises(ValueError, match="Maximum of 50 tracks can be saved at once"):
+        await authenticated_client.save_tracks(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_remove_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing tracks."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/tracks?ids=0TnOYISbd1XYRBk9myaseg",
+        status=200,
+        body="",
+    )
+    await authenticated_client.remove_saved_tracks(["0TnOYISbd1XYRBk9myaseg"])
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/tracks",
+        METH_DELETE,
+        headers=HEADERS,
+        params={"ids": "0TnOYISbd1XYRBk9myaseg"},
+        json=None,
+    )
+
+
+async def test_remove_no_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing no tracks."""
+    await authenticated_client.remove_saved_tracks([])
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_remove_too_many_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing too many tracks."""
+    with pytest.raises(ValueError, match="Maximum of 50 tracks can be removed at once"):
+        await authenticated_client.remove_saved_tracks(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_check_saved_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved tracks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/tracks/contains?ids=18yVqkdbdRvS24c0Ilj2ci%2C1HGw3J3NxZO1TP1BTtVhpZ",
+        status=200,
+        body=load_fixture("tracks_saved.json"),
+    )
+    response = await authenticated_client.are_tracks_saved(
+        ["18yVqkdbdRvS24c0Ilj2ci", "1HGw3J3NxZO1TP1BTtVhpZ"]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/tracks/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ"},
+        json=None,
+    )
+
+
+async def test_check_no_saved_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking no saved tracks."""
+    assert await authenticated_client.are_tracks_saved([]) == {}
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_check_too_many_saved_tracks(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking too many saved tracks."""
+    with pytest.raises(ValueError, match="Maximum of 50 tracks can be checked at once"):
+        await authenticated_client.are_tracks_saved(["abc"] * 51)
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
