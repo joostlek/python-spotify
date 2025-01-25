@@ -17,6 +17,7 @@ from spotifyaio import (
     SpotifyConnectionError,
     SpotifyNotFoundError,
 )
+from spotifyaio.models import SearchType
 
 from . import load_fixture
 from .const import HEADERS, SPOTIFY_URL
@@ -2196,6 +2197,30 @@ async def test_get_playlist_cover_image(
         METH_GET,
         headers=HEADERS,
         params=None,
+        json=None,
+    )
+
+
+async def test_search(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test searching for tracks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/search?limit=48&q=Never+Gonna+Give+You+Up&type=track",
+        status=200,
+        body=load_fixture("search.json"),
+    )
+    response = await authenticated_client.search(
+        "Never Gonna Give You Up", [SearchType.TRACK]
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/search",
+        METH_GET,
+        headers=HEADERS,
+        params={"q": "Never Gonna Give You Up", "type": "track", "limit": 48},
         json=None,
     )
 
