@@ -1855,19 +1855,19 @@ async def test_check_saved_episodes(
 ) -> None:
     """Test checking saved episodes."""
     responses.get(
-        f"{SPOTIFY_URL}/v1/me/episodes/contains?ids=3o0RYoo5iOMKSmEbunsbvW%2C3o0RYoo5iOMKSmEbunsbvW",
+        f"{SPOTIFY_URL}/v1/me/episodes/contains?ids=3o0RYoo5iOMKSmEbunsbvW%2C3o0RYoo5iOMKSmEbunsbvX",
         status=200,
         body=load_fixture("episode_saved.json"),
     )
     response = await authenticated_client.are_episodes_saved(
-        ["3o0RYoo5iOMKSmEbunsbvW", "3o0RYoo5iOMKSmEbunsbvW"]
+        ["3o0RYoo5iOMKSmEbunsbvW", "3o0RYoo5iOMKSmEbunsbvX"]
     )
     assert response == snapshot
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/episodes/contains",
         METH_GET,
         headers=HEADERS,
-        params={"ids": "3o0RYoo5iOMKSmEbunsbvW,3o0RYoo5iOMKSmEbunsbvW"},
+        params={"ids": "3o0RYoo5iOMKSmEbunsbvW,3o0RYoo5iOMKSmEbunsbvX"},
         json=None,
     )
 

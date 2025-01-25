@@ -8,7 +8,8 @@
 # ---
 # name: test_check_saved_episodes
   dict({
-    '3o0RYoo5iOMKSmEbunsbvW': False,
+    '3o0RYoo5iOMKSmEbunsbvW': True,
+    '3o0RYoo5iOMKSmEbunsbvX': False,
   })
 # ---
 # name: test_checking_saved_albums
