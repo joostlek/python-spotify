@@ -746,11 +746,42 @@ class SpotifyClient:
         response = await self._get("v1/me/shows", params=params)
         return SavedShowResponse.from_json(response).items
 
-    # Save a show
+    async def save_shows(self, show_ids: list[str]) -> None:
+        """Save shows."""
+        if not show_ids:
+            return
+        if len(show_ids) > 50:
+            msg = "Maximum of 50 shows can be saved at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in show_ids])
+        }
+        await self._put("v1/me/shows", params=params)
 
-    # Remove a show
+    async def remove_saved_shows(self, show_ids: list[str]) -> None:
+        """Remove saved shows."""
+        if not show_ids:
+            return
+        if len(show_ids) > 50:
+            msg = "Maximum of 50 shows can be removed at once"
+            raise ValueError(msg)
+        params: dict[str, Any] = {
+            "ids": ",".join([get_identifier(i) for i in show_ids])
+        }
+        await self._delete("v1/me/shows", params=params)
 
-    # Check if one or more shows is already saved
+    async def are_shows_saved(self, show_ids: list[str]) -> dict[str, bool]:
+        """Check if shows are saved."""
+        if not show_ids:
+            return {}
+        if len(show_ids) > 50:
+            msg = "Maximum of 50 shows can be checked at once"
+            raise ValueError(msg)
+        identifiers = [get_identifier(i) for i in show_ids]
+        params: dict[str, Any] = {"ids": ",".join(identifiers)}
+        response = await self._get("v1/me/shows/contains", params=params)
+        body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
+        return dict(zip(identifiers, body))
 
     # Get a track
 

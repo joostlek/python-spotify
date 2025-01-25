@@ -12,6 +12,12 @@
     '3o0RYoo5iOMKSmEbunsbvX': False,
   })
 # ---
+# name: test_check_saved_shows
+  dict({
+    '18yVqkdbdRvS24c0Ilj2ci': True,
+    '1HGw3J3NxZO1TP1BTtVhpZ': False,
+  })
+# ---
 # name: test_checking_saved_albums
   dict({
     '1A2GTWGtFfWp7KSQTwWOyo': False,
