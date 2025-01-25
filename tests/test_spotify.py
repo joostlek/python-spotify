@@ -1893,6 +1893,313 @@ async def test_check_too_many_saved_episodes(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+@pytest.mark.parametrize(
+    "kwargs",
+    [
+        {"name": "New Name"},
+        {"description": "New Description"},
+        {"public": False},
+        {"collaborative": True},
+        {
+            "name": "New Name",
+            "description": "New Description",
+            "public": False,
+            "collaborative": True,
+        },
+    ],
+)
+async def test_update_playlist_details(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    kwargs: dict[str, Any],
+) -> None:
+    """Test updating a playlist."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        status=200,
+        body="",
+    )
+    await authenticated_client.update_playlist_details(
+        "37i9dQZF1DXcBWIGoYBM5M", **kwargs
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+        METH_PUT,
+        headers=HEADERS,
+        params=None,
+        json=kwargs,
+    )
+
+
+async def test_get_playlist_tracks(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlist tracks."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks?limit=48",
+        status=200,
+        body=load_fixture("playlist_items.json"),
+    )
+    response = await authenticated_client.get_playlist_items("37i9dQZF1DXcBWIGoYBM5M")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        json=None,
+    )
+
+
+@pytest.mark.parametrize(
+    "kwargs",
+    [
+        {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]},
+        {
+            "uris": [
+                "spotify:track:4iV5W9uYEdYUVa79Axb7Rh",
+                "spotify:track:1301WleyT98MSxVHPZCA6M",
+            ]
+        },
+        {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"], "range_start": 5},
+        {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"], "range_length": 10},
+        {
+            "uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"],
+            "range_start": 5,
+            "range_length": 10,
+        },
+        {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"], "insert_before": 10},
+        {
+            "uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"],
+            "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
+        },
+    ],
+)
+async def test_update_playlist_items(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    kwargs: dict[str, Any],
+) -> None:
+    """Test updating playlist items."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        status=200,
+        body=load_fixture("playlist_update_items.json"),
+    )
+    assert (
+        await authenticated_client.update_playlist_items(
+            "37i9dQZF1DXcBWIGoYBM5M", **kwargs
+        )
+        == "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        METH_PUT,
+        headers=HEADERS,
+        params=None,
+        json=kwargs,
+    )
+
+
+@pytest.mark.parametrize(
+    "kwargs",
+    [
+        {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]},
+        {
+            "uris": [
+                "spotify:track:4iV5W9uYEdYUVa79Axb7Rh",
+                "spotify:track:1301WleyT98MSxVHPZCA6M",
+            ],
+            "position": 5,
+        },
+    ],
+)
+async def test_add_playlist_items(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    kwargs: dict[str, Any],
+) -> None:
+    """Test adding playlist items."""
+    responses.post(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        status=201,
+        body=load_fixture("playlist_update_items.json"),
+    )
+    assert (
+        await authenticated_client.add_playlist_items(
+            "37i9dQZF1DXcBWIGoYBM5M", **kwargs
+        )
+        == "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        json=kwargs,
+    )
+
+
+async def test_add_too_many_playlist_items(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test adding too many playlist items."""
+    with pytest.raises(ValueError, match="Maximum of 100 tracks can be added at once"):
+        await authenticated_client.add_playlist_items(
+            "37i9dQZF1DXcBWIGoYBM5M", uris=["abc"] * 101
+        )
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "expected_json"),
+    [
+        (
+            {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]},
+            {"tracks": [{"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]},
+        ),
+        (
+            {
+                "uris": [
+                    "spotify:track:4iV5W9uYEdYUVa79Axb7Rh",
+                    "spotify:track:1301WleyT98MSxVHPZCA6M",
+                ],
+                "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
+            },
+            {
+                "tracks": [
+                    {"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"},
+                    {"uri": "spotify:track:1301WleyT98MSxVHPZCA6M"},
+                ],
+                "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
+            },
+        ),
+    ],
+)
+async def test_remove_playlist_items(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    kwargs: dict[str, Any],
+    expected_json: dict[str, Any],
+) -> None:
+    """Test removing playlist items."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        status=200,
+        body=load_fixture("playlist_update_items.json"),
+    )
+    assert (
+        await authenticated_client.remove_playlist_items(
+            "37i9dQZF1DXcBWIGoYBM5M", **kwargs
+        )
+        == "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+        METH_DELETE,
+        headers=HEADERS,
+        params=None,
+        json=expected_json,
+    )
+
+
+async def test_remove_too_many_playlist_items(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing too many playlist items."""
+    with pytest.raises(
+        ValueError, match="Maximum of 100 tracks can be removed at once"
+    ):
+        await authenticated_client.remove_playlist_items(
+            "37i9dQZF1DXcBWIGoYBM5M", uris=["abc"] * 101
+        )
+    responses.assert_not_called()  # type: ignore[no-untyped-call]
+
+
+async def test_get_playlists_for_user(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlists for a user."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/user/smedjan/playlists?limit=48",
+        status=200,
+        body=load_fixture("user_playlist.json"),
+    )
+    response = await authenticated_client.get_playlists_for_user("smedjan")
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/user/smedjan/playlists",
+        METH_GET,
+        headers=HEADERS,
+        params={"limit": 48},
+        json=None,
+    )
+
+
+@pytest.mark.parametrize(
+    "kwargs",
+    [
+        {"description": "New Playlist"},
+        {"public": False},
+        {"collaborative": True},
+        {"public": False, "collaborative": True},
+    ],
+)
+async def test_create_playlist(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    snapshot: SnapshotAssertion,
+    kwargs: dict[str, Any],
+) -> None:
+    """Test creating a playlist."""
+    responses.post(
+        f"{SPOTIFY_URL}/v1/users/smedjan/playlists",
+        status=201,
+        body=load_fixture("new_playlist.json"),
+    )
+    assert (
+        await authenticated_client.create_playlist("smedjan", "My Playlist", **kwargs)
+        == snapshot
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/users/smedjan/playlists",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        json={"name": "My Playlist"} | kwargs,
+    )
+
+
+async def test_get_playlist_cover_image(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlist cover image."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/images",
+        status=200,
+        body=load_fixture("playlist_cover_image.json"),
+    )
+    response = await authenticated_client.get_playlist_cover_image(
+        "37i9dQZF1DXcBWIGoYBM5M"
+    )
+    assert response == snapshot
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/images",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
 async def test_get_audio_features(
     responses: aioresponses,
     snapshot: SnapshotAssertion,

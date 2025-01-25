@@ -52,6 +52,16 @@ class Devices(DataClassORJSONMixin):
     devices: list[Device]
 
 
+@dataclass
+class AddedBy(DataClassORJSONMixin):
+    """Added by model."""
+
+    external_urls: dict[str, str]
+    href: str
+    user_id: str = field(metadata=field_options(alias="id"))
+    uri: str
+
+
 class RepeatMode(StrEnum):
     """Repeat mode."""
 
@@ -431,7 +441,23 @@ class PlaylistTracks(DataClassORJSONMixin):
 class PlaylistTrack(DataClassORJSONMixin):
     """PlaylistTrack model."""
 
+    added_at: datetime
+    added_by: AddedBy
     track: Annotated[Item, Discriminator(field="type", include_subtypes=True)]
+
+
+@dataclass
+class PlaylistTrackResponse(DataClassORJSONMixin):
+    """PlaylistTrack response model."""
+
+    items: list[PlaylistTrack]
+
+
+@dataclass
+class ModifyPlaylistResponse(DataClassORJSONMixin):
+    """Modify playlist response model."""
+
+    snapshot_id: str
 
 
 @dataclass

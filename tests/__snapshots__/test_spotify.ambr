@@ -19,6 +19,126 @@
     '3IqzqH6ShrRtie9Yd2ODyG': True,
   })
 # ---
+# name: test_create_playlist[kwargs0]
+  dict({
+    'collaborative': False,
+    'description': 'New playlist description',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB',
+    }),
+    'images': list([
+    ]),
+    'name': 'New Playlist',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'None',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/1112264649',
+      }),
+      'href': 'https://api.spotify.com/v1/users/1112264649',
+      'object_type': 'user',
+      'owner_id': '1112264649',
+      'uri': 'spotify:user:1112264649',
+    }),
+    'playlist_id': '2dGgoMPWpapXYA6rX7ZbbB',
+    'public': False,
+    'tracks': dict({
+      'items': list([
+      ]),
+    }),
+    'uri': 'spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB',
+  })
+# ---
+# name: test_create_playlist[kwargs1]
+  dict({
+    'collaborative': False,
+    'description': 'New playlist description',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB',
+    }),
+    'images': list([
+    ]),
+    'name': 'New Playlist',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'None',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/1112264649',
+      }),
+      'href': 'https://api.spotify.com/v1/users/1112264649',
+      'object_type': 'user',
+      'owner_id': '1112264649',
+      'uri': 'spotify:user:1112264649',
+    }),
+    'playlist_id': '2dGgoMPWpapXYA6rX7ZbbB',
+    'public': False,
+    'tracks': dict({
+      'items': list([
+      ]),
+    }),
+    'uri': 'spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB',
+  })
+# ---
+# name: test_create_playlist[kwargs2]
+  dict({
+    'collaborative': False,
+    'description': 'New playlist description',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB',
+    }),
+    'images': list([
+    ]),
+    'name': 'New Playlist',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'None',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/1112264649',
+      }),
+      'href': 'https://api.spotify.com/v1/users/1112264649',
+      'object_type': 'user',
+      'owner_id': '1112264649',
+      'uri': 'spotify:user:1112264649',
+    }),
+    'playlist_id': '2dGgoMPWpapXYA6rX7ZbbB',
+    'public': False,
+    'tracks': dict({
+      'items': list([
+      ]),
+    }),
+    'uri': 'spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB',
+  })
+# ---
+# name: test_create_playlist[kwargs3]
+  dict({
+    'collaborative': False,
+    'description': 'New playlist description',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB',
+    }),
+    'images': list([
+    ]),
+    'name': 'New Playlist',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'None',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/1112264649',
+      }),
+      'href': 'https://api.spotify.com/v1/users/1112264649',
+      'object_type': 'user',
+      'owner_id': '1112264649',
+      'uri': 'spotify:user:1112264649',
+    }),
+    'playlist_id': '2dGgoMPWpapXYA6rX7ZbbB',
+    'public': False,
+    'tracks': dict({
+      'items': list([
+      ]),
+    }),
+    'uri': 'spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB',
+  })
+# ---
 # name: test_get_album
   dict({
     'album_id': '3IqzqH6ShrRtie9Yd2ODyG',
@@ -12675,6 +12795,15 @@
     'tracks': dict({
       'items': list([
         dict({
+          'added_at': datetime.datetime(2015, 1, 15, 12, 39, 22, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/jmperezperez',
+            }),
+            'href': 'https://api.spotify.com/v1/users/jmperezperez',
+            'uri': 'spotify:user:jmperezperez',
+            'user_id': 'jmperezperez',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '2pANdqPvxInB0YvcDiw4ko',
@@ -12732,6 +12861,15 @@
           }),
         }),
         dict({
+          'added_at': datetime.datetime(2015, 1, 15, 12, 40, 3, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/jmperezperez',
+            }),
+            'href': 'https://api.spotify.com/v1/users/jmperezperez',
+            'uri': 'spotify:user:jmperezperez',
+            'user_id': 'jmperezperez',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '6nlfkk5GoXRL1nktlATNsy',
@@ -12789,6 +12927,15 @@
           }),
         }),
         dict({
+          'added_at': datetime.datetime(2015, 1, 15, 12, 22, 30, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/jmperezperez',
+            }),
+            'href': 'https://api.spotify.com/v1/users/jmperezperez',
+            'uri': 'spotify:user:jmperezperez',
+            'user_id': 'jmperezperez',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '4hnqM0JK4CM1phwfq1Ldyz',
@@ -12846,6 +12993,15 @@
           }),
         }),
         dict({
+          'added_at': datetime.datetime(2015, 1, 15, 12, 40, 35, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/jmperezperez',
+            }),
+            'href': 'https://api.spotify.com/v1/users/jmperezperez',
+            'uri': 'spotify:user:jmperezperez',
+            'user_id': 'jmperezperez',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '2usKFntxa98WHMcyW6xJBz',
@@ -12903,6 +13059,15 @@
           }),
         }),
         dict({
+          'added_at': datetime.datetime(2015, 1, 15, 12, 41, 10, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/jmperezperez',
+            }),
+            'href': 'https://api.spotify.com/v1/users/jmperezperez',
+            'uri': 'spotify:user:jmperezperez',
+            'user_id': 'jmperezperez',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '0ivM6kSawaug0j3tZVusG2',
@@ -12995,6 +13160,15 @@
     'tracks': dict({
       'items': list([
         dict({
+          'added_at': datetime.datetime(2013, 1, 19, 22, 16, 8, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/chadandcaren',
+            }),
+            'href': 'https://api.spotify.com/v1/users/chadandcaren',
+            'uri': 'spotify:user:chadandcaren',
+            'user_id': 'chadandcaren',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '3KVfMVtOmoVCgihLE4HoBr',
@@ -13087,6 +13261,15 @@
     'tracks': dict({
       'items': list([
         dict({
+          'added_at': datetime.datetime(2024, 5, 16, 20, 46, 24, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/1112264649',
+            }),
+            'href': 'https://api.spotify.com/v1/users/1112264649',
+            'uri': 'spotify:user:1112264649',
+            'user_id': '1112264649',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '5iuJo58XqIENkyviBJ4dil',
@@ -13144,6 +13327,15 @@
           }),
         }),
         dict({
+          'added_at': datetime.datetime(2024, 5, 16, 20, 53, 44, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/1112264649',
+            }),
+            'href': 'https://api.spotify.com/v1/users/1112264649',
+            'uri': 'spotify:user:1112264649',
+            'user_id': '1112264649',
+          }),
           'track': dict({
             'album': dict({
               'album_id': '4stVgm9xx3cSNYddv8oTcL',
@@ -13201,6 +13393,15 @@
           }),
         }),
         dict({
+          'added_at': datetime.datetime(2024, 11, 28, 10, 18, 44, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/1112264649',
+            }),
+            'href': 'https://api.spotify.com/v1/users/1112264649',
+            'uri': 'spotify:user:1112264649',
+            'user_id': '1112264649',
+          }),
           'track': dict({
             'description': 'HAPPYYYYY SEMEN DAY!!!!!! Love you xoxoxCheck out our Patreon at patreon.com/ToniandRyan, and make sure you join our Facebook Group!\xa0Find #ToniAndRyan on Instagram @tonilodge and @ryan.jon OR on TikTok @toniandryanpodcast Hosted on Acast. See acast.com/privacy for more information.',
             'duration_ms': 2071013,
@@ -13267,6 +13468,3452 @@
     }),
     'uri': 'spotify:playlist:0pM0KTMXM7K5qr3sL2DPw1',
   })
+# ---
+# name: test_get_playlist_cover_image
+  list([
+    dict({
+      'height': None,
+      'url': 'https://image-cdn-fa.spotifycdn.com/image/ab67706c0000bebb8d0ce13d55f634e290f744ba',
+      'width': None,
+    }),
+  ])
+# ---
+# name: test_get_playlist_tracks
+  list([
+    dict({
+      'added_at': datetime.datetime(2015, 1, 15, 12, 39, 22, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jmperezperez',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jmperezperez',
+        'uri': 'spotify:user:jmperezperez',
+        'user_id': 'jmperezperez',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '2pANdqPvxInB0YvcDiw4ko',
+          'album_type': <AlbumType.COMPILATION: 'compilation'>,
+          'artists': list([
+            dict({
+              'artist_id': '0LyfQWJT6nXafLPZqxe9Of',
+              'name': 'Various Artists',
+              'uri': 'spotify:artist:0LyfQWJT6nXafLPZqxe9Of',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273ce6d0eef0c1ce77e5f95bbbc',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02ce6d0eef0c1ce77e5f95bbbc',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851ce6d0eef0c1ce77e5f95bbbc',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Progressive Psy Trance Picks Vol.8',
+          'release_date': '2012-04-02',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 20,
+          'uri': 'spotify:album:2pANdqPvxInB0YvcDiw4ko',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '6eSdhw46riw2OUHgMwR8B5',
+            'name': 'Odiseo',
+            'uri': 'spotify:artist:6eSdhw46riw2OUHgMwR8B5',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 376000,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/4rzfv0JLZfVhOhbSQ8o5jZ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/4rzfv0JLZfVhOhbSQ8o5jZ',
+        'is_local': False,
+        'name': 'Api',
+        'track_id': '4rzfv0JLZfVhOhbSQ8o5jZ',
+        'track_number': 10,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:4rzfv0JLZfVhOhbSQ8o5jZ',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2015, 1, 15, 12, 40, 3, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jmperezperez',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jmperezperez',
+        'uri': 'spotify:user:jmperezperez',
+        'user_id': 'jmperezperez',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '6nlfkk5GoXRL1nktlATNsy',
+          'album_type': <AlbumType.COMPILATION: 'compilation'>,
+          'artists': list([
+            dict({
+              'artist_id': '0LyfQWJT6nXafLPZqxe9Of',
+              'name': 'Various Artists',
+              'uri': 'spotify:artist:0LyfQWJT6nXafLPZqxe9Of',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273aa2ff29970d9a63a49dfaeb2',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02aa2ff29970d9a63a49dfaeb2',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851aa2ff29970d9a63a49dfaeb2',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Wellness & Dreaming Source',
+          'release_date': '2015-01-09',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 25,
+          'uri': 'spotify:album:6nlfkk5GoXRL1nktlATNsy',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '5VQE4WOzPu9h3HnGLuBoA6',
+            'name': 'Vlasta Marek',
+            'uri': 'spotify:artist:5VQE4WOzPu9h3HnGLuBoA6',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 730066,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/5o3jMYOSbaVz3tkgwhELSV',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/5o3jMYOSbaVz3tkgwhELSV',
+        'is_local': False,
+        'name': 'Is',
+        'track_id': '5o3jMYOSbaVz3tkgwhELSV',
+        'track_number': 21,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:5o3jMYOSbaVz3tkgwhELSV',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2015, 1, 15, 12, 22, 30, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jmperezperez',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jmperezperez',
+        'uri': 'spotify:user:jmperezperez',
+        'user_id': 'jmperezperez',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '4hnqM0JK4CM1phwfq1Ldyz',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '066X20Nz7iquqkkCW6Jxy6',
+              'name': 'LCD Soundsystem',
+              'uri': 'spotify:artist:066X20Nz7iquqkkCW6Jxy6',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b273ee0d0dce888c6c8a70db6e8b',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e02ee0d0dce888c6c8a70db6e8b',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d00004851ee0d0dce888c6c8a70db6e8b',
+              'width': 64,
+            }),
+          ]),
+          'name': 'This Is Happening',
+          'release_date': '2010-05-17',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 9,
+          'uri': 'spotify:album:4hnqM0JK4CM1phwfq1Ldyz',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '066X20Nz7iquqkkCW6Jxy6',
+            'name': 'LCD Soundsystem',
+            'uri': 'spotify:artist:066X20Nz7iquqkkCW6Jxy6',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 401440,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/4Cy0NHJ8Gh0xMdwyM9RkQm',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/4Cy0NHJ8Gh0xMdwyM9RkQm',
+        'is_local': False,
+        'name': 'All I Want',
+        'track_id': '4Cy0NHJ8Gh0xMdwyM9RkQm',
+        'track_number': 4,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:4Cy0NHJ8Gh0xMdwyM9RkQm',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2015, 1, 15, 12, 40, 35, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jmperezperez',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jmperezperez',
+        'uri': 'spotify:user:jmperezperez',
+        'user_id': 'jmperezperez',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '2usKFntxa98WHMcyW6xJBz',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '272ArH9SUAlslQqsSgPJA2',
+              'name': 'Glenn Horiuchi Trio',
+              'uri': 'spotify:artist:272ArH9SUAlslQqsSgPJA2',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2738b7447ac3daa1da18811cf7b',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e028b7447ac3daa1da18811cf7b',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048518b7447ac3daa1da18811cf7b',
+              'width': 64,
+            }),
+          ]),
+          'name': 'Glenn Horiuchi Trio / Gelenn Horiuchi Quartet: Mercy / Jump Start / Endpoints / Curl Out / Earthworks / Mind Probe / Null Set / Another Space (A)',
+          'release_date': '2011-04-01',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 8,
+          'uri': 'spotify:album:2usKFntxa98WHMcyW6xJBz',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '272ArH9SUAlslQqsSgPJA2',
+            'name': 'Glenn Horiuchi Trio',
+            'uri': 'spotify:artist:272ArH9SUAlslQqsSgPJA2',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 358760,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/6hvFrZNocdt2FcKGCSY5NI',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/6hvFrZNocdt2FcKGCSY5NI',
+        'is_local': False,
+        'name': 'Endpoints',
+        'track_id': '6hvFrZNocdt2FcKGCSY5NI',
+        'track_number': 2,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:6hvFrZNocdt2FcKGCSY5NI',
+      }),
+    }),
+    dict({
+      'added_at': datetime.datetime(2015, 1, 15, 12, 41, 10, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jmperezperez',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jmperezperez',
+        'uri': 'spotify:user:jmperezperez',
+        'user_id': 'jmperezperez',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '0ivM6kSawaug0j3tZVusG2',
+          'album_type': <AlbumType.ALBUM: 'album'>,
+          'artists': list([
+            dict({
+              'artist_id': '2KftmGt9sk1yLjsAoloC3M',
+              'name': 'Zucchero',
+              'uri': 'spotify:artist:2KftmGt9sk1yLjsAoloC3M',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b27304e57d181ff062f8339d6c71',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e0204e57d181ff062f8339d6c71',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d0000485104e57d181ff062f8339d6c71',
+              'width': 64,
+            }),
+          ]),
+          'name': 'All The Best (Spanish Version)',
+          'release_date': '2007-01-01',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 18,
+          'uri': 'spotify:album:0ivM6kSawaug0j3tZVusG2',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '2KftmGt9sk1yLjsAoloC3M',
+            'name': 'Zucchero',
+            'uri': 'spotify:artist:2KftmGt9sk1yLjsAoloC3M',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 176093,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/2E2znCPaS8anQe21GLxcvJ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/2E2znCPaS8anQe21GLxcvJ',
+        'is_local': False,
+        'name': 'You Are So Beautiful',
+        'track_id': '2E2znCPaS8anQe21GLxcvJ',
+        'track_number': 18,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:2E2znCPaS8anQe21GLxcvJ',
+      }),
+    }),
+  ])
+# ---
+# name: test_get_playlists_for_user
+  list([
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1CBGDKGM8kekBPfAG5jPZt',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022910c6fc625b0d5ae2eed26aab67616d00001e023dc315e27e5cae6e5519823aab67616d00001e02d272c37389bd3d9c20564166ab67616d00001e02d5bb99cd52da195675b2f2cd',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022910c6fc625b0d5ae2eed26aab67616d00001e023dc315e27e5cae6e5519823aab67616d00001e02d272c37389bd3d9c20564166ab67616d00001e02d5bb99cd52da195675b2f2cd',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022910c6fc625b0d5ae2eed26aab67616d00001e023dc315e27e5cae6e5519823aab67616d00001e02d272c37389bd3d9c20564166ab67616d00001e02d5bb99cd52da195675b2f2cd',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Starred',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '1CBGDKGM8kekBPfAG5jPZt',
+      'public': True,
+      'uri': 'spotify:playlist:1CBGDKGM8kekBPfAG5jPZt',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'A mish mash of a bunch of songs that you can maybe dance to. Curated by <a href="https://twitter.com/nicktoumpelis">Nick Toumpelis</a>. Photography by <a href="https://www.instagram.com/nicktoumpelis/">Nick Toumpelis</a>. ',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3tT3E3Q4u5Xd0v3ySPLR1O',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f8496493a06aec2c3eda1a42',
+          'width': None,
+        }),
+      ]),
+      'name': 'dance fusion',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Nick Toumpelis',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1226836970',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1226836970',
+        'object_type': 'user',
+        'owner_id': '1226836970',
+        'uri': 'spotify:user:1226836970',
+      }),
+      'playlist_id': '3tT3E3Q4u5Xd0v3ySPLR1O',
+      'public': True,
+      'uri': 'spotify:playlist:3tT3E3Q4u5Xd0v3ySPLR1O',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/41R1UENL6yUDiRR2riptb7',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02087ae01edc17b3fbe0f44b28ab67616d00001e02722ee6054732c347e335cb35ab67616d00001e027d4287bed60bfc5f13d96644ab67616d00001e02bef76218c65153abaed75e6e',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02087ae01edc17b3fbe0f44b28ab67616d00001e02722ee6054732c347e335cb35ab67616d00001e027d4287bed60bfc5f13d96644ab67616d00001e02bef76218c65153abaed75e6e',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02087ae01edc17b3fbe0f44b28ab67616d00001e02722ee6054732c347e335cb35ab67616d00001e027d4287bed60bfc5f13d96644ab67616d00001e02bef76218c65153abaed75e6e',
+          'width': 60,
+        }),
+      ]),
+      'name': 'covers and under covers',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '41R1UENL6yUDiRR2riptb7',
+      'public': True,
+      'uri': 'spotify:playlist:41R1UENL6yUDiRR2riptb7',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Bombastic tunes -- in some way or another',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6dSh5StaaE1XbIF5s7Lxng',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020dd350beeb5ac73672ad6e80ab67616d00001e02341b1e5f0395b17821491c7dab67616d00001e024ccb64f022a53d3e8ec84a20ab67616d00001e02e477610ef54781d751a9e319',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020dd350beeb5ac73672ad6e80ab67616d00001e02341b1e5f0395b17821491c7dab67616d00001e024ccb64f022a53d3e8ec84a20ab67616d00001e02e477610ef54781d751a9e319',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020dd350beeb5ac73672ad6e80ab67616d00001e02341b1e5f0395b17821491c7dab67616d00001e024ccb64f022a53d3e8ec84a20ab67616d00001e02e477610ef54781d751a9e319',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Fläskiga låtar',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '6dSh5StaaE1XbIF5s7Lxng',
+      'public': True,
+      'uri': 'spotify:playlist:6dSh5StaaE1XbIF5s7Lxng',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Migo',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6hBpet9cW4cVgn96xBJ5Ay',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02578f1ac435ac326e48334f66ab67616d00001e02722ee6054732c347e335cb35ab67616d00001e02810168d54f85d48f07389237ab67616d00001e02e477610ef54781d751a9e319',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02578f1ac435ac326e48334f66ab67616d00001e02722ee6054732c347e335cb35ab67616d00001e02810168d54f85d48f07389237ab67616d00001e02e477610ef54781d751a9e319',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02578f1ac435ac326e48334f66ab67616d00001e02722ee6054732c347e335cb35ab67616d00001e02810168d54f85d48f07389237ab67616d00001e02e477610ef54781d751a9e319',
+          'width': 60,
+        }),
+      ]),
+      'name': 'migo1',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '6hBpet9cW4cVgn96xBJ5Ay',
+      'public': True,
+      'uri': 'spotify:playlist:6hBpet9cW4cVgn96xBJ5Ay',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/47s8Pj6MjV5UWYEaHIe9ZH',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e023a2d2b9621ef645380c63c16ab67616d00001e02ba4c798ab356b8adb64bb2fcab67616d00001e02ba6132f887666a2627eb8a56ab67616d00001e02dbe9c4609ec382dcc0391e62',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e023a2d2b9621ef645380c63c16ab67616d00001e02ba4c798ab356b8adb64bb2fcab67616d00001e02ba6132f887666a2627eb8a56ab67616d00001e02dbe9c4609ec382dcc0391e62',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e023a2d2b9621ef645380c63c16ab67616d00001e02ba4c798ab356b8adb64bb2fcab67616d00001e02ba6132f887666a2627eb8a56ab67616d00001e02dbe9c4609ec382dcc0391e62',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Dance I Said',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Michelle Kadir',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/michellekadir',
+        }),
+        'href': 'https://api.spotify.com/v1/users/michellekadir',
+        'object_type': 'user',
+        'owner_id': 'michellekadir',
+        'uri': 'spotify:user:michellekadir',
+      }),
+      'playlist_id': '47s8Pj6MjV5UWYEaHIe9ZH',
+      'public': True,
+      'uri': 'spotify:playlist:47s8Pj6MjV5UWYEaHIe9ZH',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/13XT3kKAKOuhKV1IdgQxzf',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0242165edf668b41cb531722b0ab67616d00001e02599dfe976032830e5ec68945ab67616d00001e0297a9ac8888b636959cd8353cab67616d00001e029d2ff3fc2590549e13f17670',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0242165edf668b41cb531722b0ab67616d00001e02599dfe976032830e5ec68945ab67616d00001e0297a9ac8888b636959cd8353cab67616d00001e029d2ff3fc2590549e13f17670',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0242165edf668b41cb531722b0ab67616d00001e02599dfe976032830e5ec68945ab67616d00001e0297a9ac8888b636959cd8353cab67616d00001e029d2ff3fc2590549e13f17670',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Instrumental',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '13XT3kKAKOuhKV1IdgQxzf',
+      'public': True,
+      'uri': 'spotify:playlist:13XT3kKAKOuhKV1IdgQxzf',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/70lIZA6kTENcryaoGNIPaA',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02d3c8ce1e6e072e0e70dfdf17',
+          'width': None,
+        }),
+      ]),
+      'name': 'Steve Via - The Story of Light',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '70lIZA6kTENcryaoGNIPaA',
+      'public': True,
+      'uri': 'spotify:playlist:70lIZA6kTENcryaoGNIPaA',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6FTrJV6xPwAxEGNsIDG5Uj',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0210a9b88453d9d4a3aeb55a18ab67616d00001e0266c35697a32e5437811bb5ffab67616d00001e02a0ef2b3fa19f6d2a03149dcaab67616d00001e02a1fc113a6858d0824d9aaf38',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0210a9b88453d9d4a3aeb55a18ab67616d00001e0266c35697a32e5437811bb5ffab67616d00001e02a0ef2b3fa19f6d2a03149dcaab67616d00001e02a1fc113a6858d0824d9aaf38',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0210a9b88453d9d4a3aeb55a18ab67616d00001e0266c35697a32e5437811bb5ffab67616d00001e02a0ef2b3fa19f6d2a03149dcaab67616d00001e02a1fc113a6858d0824d9aaf38',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Pulp Fiction (approximate)',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '6FTrJV6xPwAxEGNsIDG5Uj',
+      'public': True,
+      'uri': 'spotify:playlist:6FTrJV6xPwAxEGNsIDG5Uj',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2tiFrJw4jgaQEDTGkNY4Lt',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e021d7f86bc0a6c0cab4503aa17',
+          'width': None,
+        }),
+      ]),
+      'name': 'friday',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '2tiFrJw4jgaQEDTGkNY4Lt',
+      'public': True,
+      'uri': 'spotify:playlist:2tiFrJw4jgaQEDTGkNY4Lt',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0EDdjGp3CRtWBWesrDv45e',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84046a80315ca7366b7e337a0f',
+          'width': None,
+        }),
+      ]),
+      'name': '07:42',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'robin',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/robbanrapp',
+        }),
+        'href': 'https://api.spotify.com/v1/users/robbanrapp',
+        'object_type': 'user',
+        'owner_id': 'robbanrapp',
+        'uri': 'spotify:user:robbanrapp',
+      }),
+      'playlist_id': '0EDdjGp3CRtWBWesrDv45e',
+      'public': True,
+      'uri': 'spotify:playlist:0EDdjGp3CRtWBWesrDv45e',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/29e81WfoAsVIwEzXpSv2KT',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0240c7f05b85afeda3c365a03eab67616d00001e029a5a33aa7954b5519feb5692ab67616d00001e02aa7d2641af0fa4c1f76fafbfab67616d00001e02b3591763154a27326b3f431a',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0240c7f05b85afeda3c365a03eab67616d00001e029a5a33aa7954b5519feb5692ab67616d00001e02aa7d2641af0fa4c1f76fafbfab67616d00001e02b3591763154a27326b3f431a',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0240c7f05b85afeda3c365a03eab67616d00001e029a5a33aa7954b5519feb5692ab67616d00001e02aa7d2641af0fa4c1f76fafbfab67616d00001e02b3591763154a27326b3f431a',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Top 100 Tracks of 2011',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Pitchfork',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/pitchfork',
+        }),
+        'href': 'https://api.spotify.com/v1/users/pitchfork',
+        'object_type': 'user',
+        'owner_id': 'pitchfork',
+        'uri': 'spotify:user:pitchfork',
+      }),
+      'playlist_id': '29e81WfoAsVIwEzXpSv2KT',
+      'public': True,
+      'uri': 'spotify:playlist:29e81WfoAsVIwEzXpSv2KT',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6sjcAKwplYdvNVmXuVWqYK',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84c421935777d6aa97ca36f613',
+          'width': None,
+        }),
+      ]),
+      'name': 'Kanye West - The Samples',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Starfish & Coffee',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/125214440',
+        }),
+        'href': 'https://api.spotify.com/v1/users/125214440',
+        'object_type': 'user',
+        'owner_id': '125214440',
+        'uri': 'spotify:user:125214440',
+      }),
+      'playlist_id': '6sjcAKwplYdvNVmXuVWqYK',
+      'public': True,
+      'uri': 'spotify:playlist:6sjcAKwplYdvNVmXuVWqYK',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'The official <a href="http://www.billboard.com/charts/hot-100">Billboard Hot 100</a> features this week\'s most popular songs across all genres, ranked by radio airplay monitored by Nielsen BDS, download sales tracked by Nielsen SoundScan and streaming activity data provided by leading online music services. For more information go to <a href="http://Billboard.com">Billboard.com</a>.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6UeSakyzhiEt4NB3UAd6NQ',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843bd5501a335b265807df34db',
+          'width': None,
+        }),
+      ]),
+      'name': 'Billboard Hot 100',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Billboard',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/billboard.com',
+        }),
+        'href': 'https://api.spotify.com/v1/users/billboard.com',
+        'object_type': 'user',
+        'owner_id': 'billboard.com',
+        'uri': 'spotify:user:billboard.com',
+      }),
+      'playlist_id': '6UeSakyzhiEt4NB3UAd6NQ',
+      'public': True,
+      'uri': 'spotify:playlist:6UeSakyzhiEt4NB3UAd6NQ',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Ta det lugnt &amp; koppla av till vårmysiga &amp; behagliga låtar. Kärlekssånger, sköna hits, svenska klassiker, akustiska låtar &amp; vackra ballader.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4tIypOcGSBi4GPlXbbNBmf',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84bd5af3266f629da301350735',
+          'width': None,
+        }),
+      ]),
+      'name': 'LUGNA LÅTAR 2025 🌼 lugn & mysig musik',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Filtr Sweden',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/sonymusicentertainment',
+        }),
+        'href': 'https://api.spotify.com/v1/users/sonymusicentertainment',
+        'object_type': 'user',
+        'owner_id': 'sonymusicentertainment',
+        'uri': 'spotify:user:sonymusicentertainment',
+      }),
+      'playlist_id': '4tIypOcGSBi4GPlXbbNBmf',
+      'public': True,
+      'uri': 'spotify:playlist:4tIypOcGSBi4GPlXbbNBmf',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Sveriges största och bästa svenska klassiker, sånger och hits genom tiderna. Sommarhits och klassiska favoriter – svensk musik sommaren 2025.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/26uqIdWqPakRB3c6Lw8I7C',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8416ee66851f6fc81d954cc240',
+          'width': None,
+        }),
+      ]),
+      'name': 'Svenska låtar & klassiker alla kan! 🇸🇪',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Filtr Sweden',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/sonymusicentertainment',
+        }),
+        'href': 'https://api.spotify.com/v1/users/sonymusicentertainment',
+        'object_type': 'user',
+        'owner_id': 'sonymusicentertainment',
+        'uri': 'spotify:user:sonymusicentertainment',
+      }),
+      'playlist_id': '26uqIdWqPakRB3c6Lw8I7C',
+      'public': True,
+      'uri': 'spotify:playlist:26uqIdWqPakRB3c6Lw8I7C',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Världens bästa och mest tidlösa rockmusik i en mix av klassiska &amp; nya rockhits från Judas Priest, Ozzy Osbourne, AC/DC, Scorpions, Bruce Springsteen med flera.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1sNULKBP0MR5SCDhoTUGT1',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844a3cbf9b6b1eeb03701cfae4',
+          'width': None,
+        }),
+      ]),
+      'name': 'Rock Hits ⚡️',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Filtr Legacy Sweden',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/legacysweden',
+        }),
+        'href': 'https://api.spotify.com/v1/users/legacysweden',
+        'object_type': 'user',
+        'owner_id': 'legacysweden',
+        'uri': 'spotify:user:legacysweden',
+      }),
+      'playlist_id': '1sNULKBP0MR5SCDhoTUGT1',
+      'public': True,
+      'uri': 'spotify:playlist:1sNULKBP0MR5SCDhoTUGT1',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'Summer chill beach vibes playlist all genres 2000s - 2024.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4u4WSPyfvZ4RrpWWnmjIYY',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c59e76846e27ba7f51db46ae5',
+          'width': None,
+        }),
+      ]),
+      'name': 'Beach Vibes 🌴 Summertime Hits 2025',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Beach Vibes',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jhsizemore',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jhsizemore',
+        'object_type': 'user',
+        'owner_id': 'jhsizemore',
+        'uri': 'spotify:user:jhsizemore',
+      }),
+      'playlist_id': '4u4WSPyfvZ4RrpWWnmjIYY',
+      'public': True,
+      'uri': 'spotify:playlist:4u4WSPyfvZ4RrpWWnmjIYY',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1jiWNIRgT9whCQZMGDzsZU',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02396bcd4043a871d830c848a3ab67616d00001e02678bfbaf23b8dfa454017b0bab67616d00001e02c40c3ae9c8d60ccf0a4baa8bab67616d00001e02e202fd7dbb4262a37b85a644',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02396bcd4043a871d830c848a3ab67616d00001e02678bfbaf23b8dfa454017b0bab67616d00001e02c40c3ae9c8d60ccf0a4baa8bab67616d00001e02e202fd7dbb4262a37b85a644',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02396bcd4043a871d830c848a3ab67616d00001e02678bfbaf23b8dfa454017b0bab67616d00001e02c40c3ae9c8d60ccf0a4baa8bab67616d00001e02e202fd7dbb4262a37b85a644',
+          'width': 60,
+        }),
+      ]),
+      'name': 'RS Playlist',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Rolling Stone',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/rsedit',
+        }),
+        'href': 'https://api.spotify.com/v1/users/rsedit',
+        'object_type': 'user',
+        'owner_id': 'rsedit',
+        'uri': 'spotify:user:rsedit',
+      }),
+      'playlist_id': '1jiWNIRgT9whCQZMGDzsZU',
+      'public': True,
+      'uri': 'spotify:playlist:1jiWNIRgT9whCQZMGDzsZU',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7JbyZrk837zNSgRRzMZITA',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0213cbe3e4dfa81fe5b91f2f1cab67616d00001e029d6e136c3a0298fb0c53abeaab67616d00001e02dac4efc0ebdfd9d92f127129ab67616d00001e02df2f41d27d037e13bdd56333',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0213cbe3e4dfa81fe5b91f2f1cab67616d00001e029d6e136c3a0298fb0c53abeaab67616d00001e02dac4efc0ebdfd9d92f127129ab67616d00001e02df2f41d27d037e13bdd56333',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0213cbe3e4dfa81fe5b91f2f1cab67616d00001e029d6e136c3a0298fb0c53abeaab67616d00001e02dac4efc0ebdfd9d92f127129ab67616d00001e02df2f41d27d037e13bdd56333',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Eighties',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '7JbyZrk837zNSgRRzMZITA',
+      'public': True,
+      'uri': 'spotify:playlist:7JbyZrk837zNSgRRzMZITA',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6bUIofrj5PWNIeb67DbUqf',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021b6c907fea6271ab06a852e1ab67616d00001e026c7112082b63beefffe40151ab67616d00001e028175dd850d192b76ec494d90ab67616d00001e02bdc7f3b01de89cf5ce73bb32',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021b6c907fea6271ab06a852e1ab67616d00001e026c7112082b63beefffe40151ab67616d00001e028175dd850d192b76ec494d90ab67616d00001e02bdc7f3b01de89cf5ce73bb32',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021b6c907fea6271ab06a852e1ab67616d00001e026c7112082b63beefffe40151ab67616d00001e028175dd850d192b76ec494d90ab67616d00001e02bdc7f3b01de89cf5ce73bb32',
+          'width': 60,
+        }),
+      ]),
+      'name': 'While You Work (@whileyouwork)',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Eli Feghali',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/efeghali',
+        }),
+        'href': 'https://api.spotify.com/v1/users/efeghali',
+        'object_type': 'user',
+        'owner_id': 'efeghali',
+        'uri': 'spotify:user:efeghali',
+      }),
+      'playlist_id': '6bUIofrj5PWNIeb67DbUqf',
+      'public': True,
+      'uri': 'spotify:playlist:6bUIofrj5PWNIeb67DbUqf',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/12G6dXVYRBSvVktGXrKK43',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e023992c7ab57975935b29fa22bab67616d00001e02e73283547df6735c5db0ba45ab67616d00001e02fb00f7be0eca020bb5c05911ab67616d00001e02fe24dcd263c08c6dd84b6e8c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e023992c7ab57975935b29fa22bab67616d00001e02e73283547df6735c5db0ba45ab67616d00001e02fb00f7be0eca020bb5c05911ab67616d00001e02fe24dcd263c08c6dd84b6e8c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e023992c7ab57975935b29fa22bab67616d00001e02e73283547df6735c5db0ba45ab67616d00001e02fb00f7be0eca020bb5c05911ab67616d00001e02fe24dcd263c08c6dd84b6e8c',
+          'width': 60,
+        }),
+      ]),
+      'name': "60's, 70's & similar",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'hammond',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/hammond',
+        }),
+        'href': 'https://api.spotify.com/v1/users/hammond',
+        'object_type': 'user',
+        'owner_id': 'hammond',
+        'uri': 'spotify:user:hammond',
+      }),
+      'playlist_id': '12G6dXVYRBSvVktGXrKK43',
+      'public': True,
+      'uri': 'spotify:playlist:12G6dXVYRBSvVktGXrKK43',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '<a href="https://web.archive.org/web/20100212234214/http://www.1000recordings.com/the-list">Old version of official site</a>.',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4KQDdglJ7HGcqNozbJTlM3',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bfff770712a44bacaf1abdf2',
+          'width': None,
+        }),
+      ]),
+      'name': '1000 Recordings to Hear Before You Die (Tom Moon): Album Index',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': "Ulysses' Classical",
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/ulyssestone',
+        }),
+        'href': 'https://api.spotify.com/v1/users/ulyssestone',
+        'object_type': 'user',
+        'owner_id': 'ulyssestone',
+        'uri': 'spotify:user:ulyssestone',
+      }),
+      'playlist_id': '4KQDdglJ7HGcqNozbJTlM3',
+      'public': True,
+      'uri': 'spotify:playlist:4KQDdglJ7HGcqNozbJTlM3',
+    }),
+    dict({
+      'collaborative': False,
+      'description': "This soulful soundtrack is packed with groovy soul &amp; funk with artists like Sam Cooke, The O'Jays, Leon Bridges, The Delfonics, Raphael Saadiq",
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3Rc7qAgZf9f0vskwzFBMHL',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da846325e8713786c11f229cd64e',
+          'width': None,
+        }),
+      ]),
+      'name': 'Hipster Soul',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Filtr Legacy Sweden',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/legacysweden',
+        }),
+        'href': 'https://api.spotify.com/v1/users/legacysweden',
+        'object_type': 'user',
+        'owner_id': 'legacysweden',
+        'uri': 'spotify:user:legacysweden',
+      }),
+      'playlist_id': '3Rc7qAgZf9f0vskwzFBMHL',
+      'public': True,
+      'uri': 'spotify:playlist:3Rc7qAgZf9f0vskwzFBMHL',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/284on3DVWeAxWkgVuzZKGt',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e020480c65d154f38c816048c85ab67616d00001e026b69568c80e688e8eb0e07a7ab67616d00001e029a7c18d05c03b002aad78110ab67616d00001e02b2bb7a473fd1b3d502278fea',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e020480c65d154f38c816048c85ab67616d00001e026b69568c80e688e8eb0e07a7ab67616d00001e029a7c18d05c03b002aad78110ab67616d00001e02b2bb7a473fd1b3d502278fea',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e020480c65d154f38c816048c85ab67616d00001e026b69568c80e688e8eb0e07a7ab67616d00001e029a7c18d05c03b002aad78110ab67616d00001e02b2bb7a473fd1b3d502278fea',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Bra skit',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Johan Liesén',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/liesen',
+        }),
+        'href': 'https://api.spotify.com/v1/users/liesen',
+        'object_type': 'user',
+        'owner_id': 'liesen',
+        'uri': 'spotify:user:liesen',
+      }),
+      'playlist_id': '284on3DVWeAxWkgVuzZKGt',
+      'public': True,
+      'uri': 'spotify:playlist:284on3DVWeAxWkgVuzZKGt',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2nXRzr40InzvYIpCUfPhUP',
+      }),
+      'images': list([
+      ]),
+      'name': 'Le testing',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '2nXRzr40InzvYIpCUfPhUP',
+      'public': True,
+      'uri': 'spotify:playlist:2nXRzr40InzvYIpCUfPhUP',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1l1OW7GMacBhrSlW1nlO1K',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02b55861c30a8eb7ece3f02aee',
+          'width': None,
+        }),
+      ]),
+      'name': 'Awesome stuff',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '1l1OW7GMacBhrSlW1nlO1K',
+      'public': True,
+      'uri': 'spotify:playlist:1l1OW7GMacBhrSlW1nlO1K',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3Av66ptxyIoUggHF7kCBYX',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e023c757f61859e3619bc862e0cab67616d00001e02430faa3759ab2c69b351b8d9ab67616d00001e02abafafd88eafdb505136be21ab67616d00001e02ed717b9fe8ead59ec2f2e600',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e023c757f61859e3619bc862e0cab67616d00001e02430faa3759ab2c69b351b8d9ab67616d00001e02abafafd88eafdb505136be21ab67616d00001e02ed717b9fe8ead59ec2f2e600',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e023c757f61859e3619bc862e0cab67616d00001e02430faa3759ab2c69b351b8d9ab67616d00001e02abafafd88eafdb505136be21ab67616d00001e02ed717b9fe8ead59ec2f2e600',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Söndagsregn 2010-10-24',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Jon Åslund',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/jon',
+        }),
+        'href': 'https://api.spotify.com/v1/users/jon',
+        'object_type': 'user',
+        'owner_id': 'jon',
+        'uri': 'spotify:user:jon',
+      }),
+      'playlist_id': '3Av66ptxyIoUggHF7kCBYX',
+      'public': True,
+      'uri': 'spotify:playlist:3Av66ptxyIoUggHF7kCBYX',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1s1281yGD8FWEwr5EC1L3i',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02ab647295c0c97446c1f1a3b5ab67616d00001e02b3acf13890f0bc4e3d6b6faeab67616d00001e02c08d5fa5c0f1a834acef5100ab67616d00001e02c17e2f804d61d7c6feff082d',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02ab647295c0c97446c1f1a3b5ab67616d00001e02b3acf13890f0bc4e3d6b6faeab67616d00001e02c08d5fa5c0f1a834acef5100ab67616d00001e02c17e2f804d61d7c6feff082d',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02ab647295c0c97446c1f1a3b5ab67616d00001e02b3acf13890f0bc4e3d6b6faeab67616d00001e02c08d5fa5c0f1a834acef5100ab67616d00001e02c17e2f804d61d7c6feff082d',
+          'width': 60,
+        }),
+      ]),
+      'name': 'lördag 2010-12-11',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '1s1281yGD8FWEwr5EC1L3i',
+      'public': True,
+      'uri': 'spotify:playlist:1s1281yGD8FWEwr5EC1L3i',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0Xo8zJCdKx2vDyqk4o6p5C',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e0238e6fb5d88c75c017093ead3',
+          'width': None,
+        }),
+      ]),
+      'name': 'aaaa',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '0Xo8zJCdKx2vDyqk4o6p5C',
+      'public': True,
+      'uri': 'spotify:playlist:0Xo8zJCdKx2vDyqk4o6p5C',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/52foD1Dr3GjooeyKuygmVB',
+      }),
+      'images': list([
+      ]),
+      'name': 'sfasdf',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '52foD1Dr3GjooeyKuygmVB',
+      'public': True,
+      'uri': 'spotify:playlist:52foD1Dr3GjooeyKuygmVB',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5reoN3Jf8wMl3NtikgVwaC',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022ac93e41d74e138cf5740b9eab67616d00001e02482be3c0abad6a3c2bcd2efdab67616d00001e026d88028a85c771f37374c8eaab67616d00001e02f2d2adaa21ad616df6241e7d',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022ac93e41d74e138cf5740b9eab67616d00001e02482be3c0abad6a3c2bcd2efdab67616d00001e026d88028a85c771f37374c8eaab67616d00001e02f2d2adaa21ad616df6241e7d',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022ac93e41d74e138cf5740b9eab67616d00001e02482be3c0abad6a3c2bcd2efdab67616d00001e026d88028a85c771f37374c8eaab67616d00001e02f2d2adaa21ad616df6241e7d',
+          'width': 60,
+        }),
+      ]),
+      'name': 'xmas',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5reoN3Jf8wMl3NtikgVwaC',
+      'public': True,
+      'uri': 'spotify:playlist:5reoN3Jf8wMl3NtikgVwaC',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/46DwpEgx5I7m1Nw3DaWvmV',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e0222ebe325082a93efb47fbad9',
+          'width': None,
+        }),
+      ]),
+      'name': 'offline synk 96k test',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '46DwpEgx5I7m1Nw3DaWvmV',
+      'public': True,
+      'uri': 'spotify:playlist:46DwpEgx5I7m1Nw3DaWvmV',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4buZT5WKFuhpgLI14UTj83',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e022a81ff34f4346f9da93b32ff',
+          'width': None,
+        }),
+      ]),
+      'name': 'mos',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '4buZT5WKFuhpgLI14UTj83',
+      'public': True,
+      'uri': 'spotify:playlist:4buZT5WKFuhpgLI14UTj83',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7hKns5sIoqFjQHSAw3J2FF',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e022a81ff34f4346f9da93b32ff',
+          'width': None,
+        }),
+      ]),
+      'name': 'Little Bird',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '7hKns5sIoqFjQHSAw3J2FF',
+      'public': True,
+      'uri': 'spotify:playlist:7hKns5sIoqFjQHSAw3J2FF',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/30qKa2i4EbDYhvbrMhxAw0',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022cdc4b4e178dabf49c002280ab67616d00001e024f87f14089217e3f70a5f39eab67616d00001e0279606c79fde418c0bc458abbab67616d00001e02ff186ce2c8d8cdfe4e65d710',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022cdc4b4e178dabf49c002280ab67616d00001e024f87f14089217e3f70a5f39eab67616d00001e0279606c79fde418c0bc458abbab67616d00001e02ff186ce2c8d8cdfe4e65d710',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022cdc4b4e178dabf49c002280ab67616d00001e024f87f14089217e3f70a5f39eab67616d00001e0279606c79fde418c0bc458abbab67616d00001e02ff186ce2c8d8cdfe4e65d710',
+          'width': 60,
+        }),
+      ]),
+      'name': 'this is the real shi',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '30qKa2i4EbDYhvbrMhxAw0',
+      'public': True,
+      'uri': 'spotify:playlist:30qKa2i4EbDYhvbrMhxAw0',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1ycFHQsEQy1LDyrPyZnGsG',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02b7f5f38651637f858e69f479',
+          'width': None,
+        }),
+      ]),
+      'name': 'Dance',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '1ycFHQsEQy1LDyrPyZnGsG',
+      'public': True,
+      'uri': 'spotify:playlist:1ycFHQsEQy1LDyrPyZnGsG',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4LuBtXVct4y7fKW7TxvxmC',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02e2b82066b6e43424650667bd',
+          'width': None,
+        }),
+      ]),
+      'name': 'Hot Chip – Made in the Dark',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '4LuBtXVct4y7fKW7TxvxmC',
+      'public': True,
+      'uri': 'spotify:playlist:4LuBtXVct4y7fKW7TxvxmC',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7q4Qgg67nbQxURn8CK6SxJ',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e023e6139ca94ae5e3d6c3c4818ab67616d00001e024b54c6f083e52b1f83d761afab67616d00001e02746602eeb55e4816bcab30feab67616d00001e02e8ea46a9ca2a56ea60f79152',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e023e6139ca94ae5e3d6c3c4818ab67616d00001e024b54c6f083e52b1f83d761afab67616d00001e02746602eeb55e4816bcab30feab67616d00001e02e8ea46a9ca2a56ea60f79152',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e023e6139ca94ae5e3d6c3c4818ab67616d00001e024b54c6f083e52b1f83d761afab67616d00001e02746602eeb55e4816bcab30feab67616d00001e02e8ea46a9ca2a56ea60f79152',
+          'width': 60,
+        }),
+      ]),
+      'name': 'wutangtastic',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '7q4Qgg67nbQxURn8CK6SxJ',
+      'public': True,
+      'uri': 'spotify:playlist:7q4Qgg67nbQxURn8CK6SxJ',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2EYCsp3uvM2GYuhSpnTWCL',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02828cfb835d229a32720bc6afab67616d00001e028688e410538bc27972791f4cab67616d00001e02c0f16d3c653999907e74e5baab67616d00001e02f05438406a5201bb8cedba3b',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02828cfb835d229a32720bc6afab67616d00001e028688e410538bc27972791f4cab67616d00001e02c0f16d3c653999907e74e5baab67616d00001e02f05438406a5201bb8cedba3b',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02828cfb835d229a32720bc6afab67616d00001e028688e410538bc27972791f4cab67616d00001e02c0f16d3c653999907e74e5baab67616d00001e02f05438406a5201bb8cedba3b',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Poison (Remastered)',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '2EYCsp3uvM2GYuhSpnTWCL',
+      'public': True,
+      'uri': 'spotify:playlist:2EYCsp3uvM2GYuhSpnTWCL',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6NPlWibAzOTmBl4vVTk3ce',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02d1d06d587afd9243ba7a4cd8',
+          'width': None,
+        }),
+      ]),
+      'name': 'The Stone Roses – The Stone Roses',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '6NPlWibAzOTmBl4vVTk3ce',
+      'public': True,
+      'uri': 'spotify:playlist:6NPlWibAzOTmBl4vVTk3ce',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/32x6m7Tkh7stmqBUFMSJAg',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02730ed5d84d1d98c4d16ed47e',
+          'width': None,
+        }),
+      ]),
+      'name': 'Clark',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '32x6m7Tkh7stmqBUFMSJAg',
+      'public': True,
+      'uri': 'spotify:playlist:32x6m7Tkh7stmqBUFMSJAg',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0HQPDWVwnZOgAPKYpb22Oa',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02e8ea46a9ca2a56ea60f79152',
+          'width': None,
+        }),
+      ]),
+      'name': 'Down In Mexico',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '0HQPDWVwnZOgAPKYpb22Oa',
+      'public': True,
+      'uri': 'spotify:playlist:0HQPDWVwnZOgAPKYpb22Oa',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5uLiqU8UnZZMexCQ7aX5Av',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02e55e182ab6209a335a5cfacb',
+          'width': None,
+        }),
+      ]),
+      'name': 'spotify:user:jamesds:playlist:3MVqxQY9orcSGiTxsiCR9l',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5uLiqU8UnZZMexCQ7aX5Av',
+      'public': True,
+      'uri': 'spotify:playlist:5uLiqU8UnZZMexCQ7aX5Av',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1ntWxtDOHfK4e529dwSW19',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e020947f8018fbb25c91d7c7525',
+          'width': None,
+        }),
+      ]),
+      'name': 'Can-Can From Orpheus In The Underworld',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '1ntWxtDOHfK4e529dwSW19',
+      'public': True,
+      'uri': 'spotify:playlist:1ntWxtDOHfK4e529dwSW19',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4sPehjI8DC6jffWbu7N2J3',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02a511f69870fa68e7ba78c099',
+          'width': None,
+        }),
+      ]),
+      'name': 'I Know You Want Me - Radio Edit Cold',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '4sPehjI8DC6jffWbu7N2J3',
+      'public': True,
+      'uri': 'spotify:playlist:4sPehjI8DC6jffWbu7N2J3',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/47u5ZfJ5EhJp9SKfPnSVXl',
+      }),
+      'images': list([
+      ]),
+      'name': '-',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '47u5ZfJ5EhJp9SKfPnSVXl',
+      'public': True,
+      'uri': 'spotify:playlist:47u5ZfJ5EhJp9SKfPnSVXl',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7jY1F22qFIEYzPEncPHdci',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02a7d400b4159f7cfc0c9ccae7',
+          'width': None,
+        }),
+      ]),
+      'name': 'pineapple',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '7jY1F22qFIEYzPEncPHdci',
+      'public': True,
+      'uri': 'spotify:playlist:7jY1F22qFIEYzPEncPHdci',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7ulnJeIjwdYXl9ZwmQWx1X',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0238217b2b2873090ab46fe0c6ab67616d00001e02599dfe976032830e5ec68945ab67616d00001e02d1bac93adf4492db2e6ff9f8ab67616d00001e02e9eb91ae8241234cb7aaaa4c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0238217b2b2873090ab46fe0c6ab67616d00001e02599dfe976032830e5ec68945ab67616d00001e02d1bac93adf4492db2e6ff9f8ab67616d00001e02e9eb91ae8241234cb7aaaa4c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0238217b2b2873090ab46fe0c6ab67616d00001e02599dfe976032830e5ec68945ab67616d00001e02d1bac93adf4492db2e6ff9f8ab67616d00001e02e9eb91ae8241234cb7aaaa4c',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Mostafa',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '7ulnJeIjwdYXl9ZwmQWx1X',
+      'public': True,
+      'uri': 'spotify:playlist:7ulnJeIjwdYXl9ZwmQWx1X',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5wnFYJsx0Kh4aIRdfpyYK5',
+      }),
+      'images': list([
+      ]),
+      'name': 'Bäst!',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5wnFYJsx0Kh4aIRdfpyYK5',
+      'public': True,
+      'uri': 'spotify:playlist:5wnFYJsx0Kh4aIRdfpyYK5',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3f1xEfhUOtolv3leBeLFjt',
+      }),
+      'images': list([
+      ]),
+      'name': 'Träning',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3f1xEfhUOtolv3leBeLFjt',
+      'public': True,
+      'uri': 'spotify:playlist:3f1xEfhUOtolv3leBeLFjt',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3OMEP4nmg7BhxHiIkWG6QE',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e02fec1b815bb3c50a64a90fd10',
+          'width': None,
+        }),
+      ]),
+      'name': 'vadim vs jigga',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3OMEP4nmg7BhxHiIkWG6QE',
+      'public': True,
+      'uri': 'spotify:playlist:3OMEP4nmg7BhxHiIkWG6QE',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6zVS95BwB86w9dTG7ItO6E',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e021a26e142095e1c7ba5015218',
+          'width': None,
+        }),
+      ]),
+      'name': 'A Man From Argentina',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '6zVS95BwB86w9dTG7ItO6E',
+      'public': True,
+      'uri': 'spotify:playlist:6zVS95BwB86w9dTG7ItO6E',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5ziOTIewSR9pfiLgd96ZTf',
+      }),
+      'images': list([
+      ]),
+      'name': 'asd',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5ziOTIewSR9pfiLgd96ZTf',
+      'public': True,
+      'uri': 'spotify:playlist:5ziOTIewSR9pfiLgd96ZTf',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4JUoTcdkgYS8KSCBb5GPCe',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02188099f301c32148ab07a557ab67616d00001e029700390e9c33c62cfcd915ceab67616d00001e02db7edd97763bd68d265f432eab67616d00001e02fec1b815bb3c50a64a90fd10',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02188099f301c32148ab07a557ab67616d00001e029700390e9c33c62cfcd915ceab67616d00001e02db7edd97763bd68d265f432eab67616d00001e02fec1b815bb3c50a64a90fd10',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02188099f301c32148ab07a557ab67616d00001e029700390e9c33c62cfcd915ceab67616d00001e02db7edd97763bd68d265f432eab67616d00001e02fec1b815bb3c50a64a90fd10',
+          'width': 60,
+        }),
+      ]),
+      'name': 'saturday',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '4JUoTcdkgYS8KSCBb5GPCe',
+      'public': True,
+      'uri': 'spotify:playlist:4JUoTcdkgYS8KSCBb5GPCe',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2HXTsgk72ydbN7XLZpIK4R',
+      }),
+      'images': list([
+      ]),
+      'name': 'sad',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '2HXTsgk72ydbN7XLZpIK4R',
+      'public': True,
+      'uri': 'spotify:playlist:2HXTsgk72ydbN7XLZpIK4R',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3gRWqRUsL6iokkSVsls518',
+      }),
+      'images': list([
+      ]),
+      'name': 'Tom spellista',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3gRWqRUsL6iokkSVsls518',
+      'public': True,
+      'uri': 'spotify:playlist:3gRWqRUsL6iokkSVsls518',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6LFapHF3M01mY4mfeSckru',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e027f69c9b102d628bcfbf68ef8',
+          'width': None,
+        }),
+      ]),
+      'name': 'The Twilight Zone',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '6LFapHF3M01mY4mfeSckru',
+      'public': True,
+      'uri': 'spotify:playlist:6LFapHF3M01mY4mfeSckru',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4rau8iRVYD6wdzcJm2nkkI',
+      }),
+      'images': list([
+      ]),
+      'name': 'iPod management',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '4rau8iRVYD6wdzcJm2nkkI',
+      'public': True,
+      'uri': 'spotify:playlist:4rau8iRVYD6wdzcJm2nkkI',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3Tvcf1N8s4KL7etqpFxcIb',
+      }),
+      'images': list([
+      ]),
+      'name': 'Test list',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3Tvcf1N8s4KL7etqpFxcIb',
+      'public': True,
+      'uri': 'spotify:playlist:3Tvcf1N8s4KL7etqpFxcIb',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6mNzfuOGykfZWdVU7ujqsk',
+      }),
+      'images': list([
+      ]),
+      'name': 'Golden Years [Soundtrack Version]',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '6mNzfuOGykfZWdVU7ujqsk',
+      'public': True,
+      'uri': 'spotify:playlist:6mNzfuOGykfZWdVU7ujqsk',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3yUqbmlNjdqYDAviSwv0Gg',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e024152eb1f853ff285508aca35ab67616d00001e0287e51905aaafd4b2e46e9121ab67616d00001e02d61b1aba42e5583551eaeeacab67616d00001e02e59861190fc754988c0c4392',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e024152eb1f853ff285508aca35ab67616d00001e0287e51905aaafd4b2e46e9121ab67616d00001e02d61b1aba42e5583551eaeeacab67616d00001e02e59861190fc754988c0c4392',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e024152eb1f853ff285508aca35ab67616d00001e0287e51905aaafd4b2e46e9121ab67616d00001e02d61b1aba42e5583551eaeeacab67616d00001e02e59861190fc754988c0c4392',
+          'width': 60,
+        }),
+      ]),
+      'name': 'BÄSTA LÅTARNA.exe',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3yUqbmlNjdqYDAviSwv0Gg',
+      'public': True,
+      'uri': 'spotify:playlist:3yUqbmlNjdqYDAviSwv0Gg',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/347Nk3N6F8QgQuaIEtcYVI',
+      }),
+      'images': list([
+      ]),
+      'name': 'bajs',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '347Nk3N6F8QgQuaIEtcYVI',
+      'public': True,
+      'uri': 'spotify:playlist:347Nk3N6F8QgQuaIEtcYVI',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7uhdePGKRSRKm2QPaU0uSP',
+      }),
+      'images': list([
+      ]),
+      'name': 'fredagar',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '7uhdePGKRSRKm2QPaU0uSP',
+      'public': True,
+      'uri': 'spotify:playlist:7uhdePGKRSRKm2QPaU0uSP',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2i5sGOD9e96p2PpmkXYhDd',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02293e8055dd8814fcdf4742f7ab67616d00001e0259211e56a493ac4509457babab67616d00001e02b6d4566db0d12894a1a3b7a2ab67616d00001e02e2f039481babe23658fc719a',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02293e8055dd8814fcdf4742f7ab67616d00001e0259211e56a493ac4509457babab67616d00001e02b6d4566db0d12894a1a3b7a2ab67616d00001e02e2f039481babe23658fc719a',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02293e8055dd8814fcdf4742f7ab67616d00001e0259211e56a493ac4509457babab67616d00001e02b6d4566db0d12894a1a3b7a2ab67616d00001e02e2f039481babe23658fc719a',
+          'width': 60,
+        }),
+      ]),
+      'name': 'bara warner',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '2i5sGOD9e96p2PpmkXYhDd',
+      'public': True,
+      'uri': 'spotify:playlist:2i5sGOD9e96p2PpmkXYhDd',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/4CHtsKuGmoVYC2JCkHAMBs',
+      }),
+      'images': list([
+      ]),
+      'name': 'Spelmusik',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '4CHtsKuGmoVYC2JCkHAMBs',
+      'public': True,
+      'uri': 'spotify:playlist:4CHtsKuGmoVYC2JCkHAMBs',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/371DcQ6pwFUdQPKUK6b9Gy',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0205c7a2f4acca8f1dd00683f0ab67616d00001e020fbb5046ac2211a4aab5ecfaab67616d00001e0286b0c9728ad3ed338eaeea79ab67616d00001e02de1d3e2a7ea73430c2a77555',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0205c7a2f4acca8f1dd00683f0ab67616d00001e020fbb5046ac2211a4aab5ecfaab67616d00001e0286b0c9728ad3ed338eaeea79ab67616d00001e02de1d3e2a7ea73430c2a77555',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0205c7a2f4acca8f1dd00683f0ab67616d00001e020fbb5046ac2211a4aab5ecfaab67616d00001e0286b0c9728ad3ed338eaeea79ab67616d00001e02de1d3e2a7ea73430c2a77555',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Lör',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '371DcQ6pwFUdQPKUK6b9Gy',
+      'public': True,
+      'uri': 'spotify:playlist:371DcQ6pwFUdQPKUK6b9Gy',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/28ZHPQdzIWH5Gjo9xrcnof',
+      }),
+      'images': list([
+      ]),
+      'name': 'Matchpuls Fotboll 2010-05-25 18:00 - Del 3',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '28ZHPQdzIWH5Gjo9xrcnof',
+      'public': True,
+      'uri': 'spotify:playlist:28ZHPQdzIWH5Gjo9xrcnof',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5Q5etdH0vcI1f6rs4wlMnp',
+      }),
+      'images': list([
+      ]),
+      'name': 'Luddes lokala filer',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5Q5etdH0vcI1f6rs4wlMnp',
+      'public': True,
+      'uri': 'spotify:playlist:5Q5etdH0vcI1f6rs4wlMnp',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5vlB64Tw6f6nSq02csVPRB',
+      }),
+      'images': list([
+      ]),
+      'name': 'The Beatles',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5vlB64Tw6f6nSq02csVPRB',
+      'public': True,
+      'uri': 'spotify:playlist:5vlB64Tw6f6nSq02csVPRB',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/5DMhpzQw07N9CxiWxsnZbC',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e024d08fc99eff4ed52dfce91faab67616d00001e02775a6bee6c704ec29aec00f4ab67616d00001e02b0c0201a8796d8a536253a61ab67616d00001e02fd4de9a55521ecf4d768f8f6',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e024d08fc99eff4ed52dfce91faab67616d00001e02775a6bee6c704ec29aec00f4ab67616d00001e02b0c0201a8796d8a536253a61ab67616d00001e02fd4de9a55521ecf4d768f8f6',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e024d08fc99eff4ed52dfce91faab67616d00001e02775a6bee6c704ec29aec00f4ab67616d00001e02b0c0201a8796d8a536253a61ab67616d00001e02fd4de9a55521ecf4d768f8f6',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Sparkling Thursday',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '5DMhpzQw07N9CxiWxsnZbC',
+      'public': True,
+      'uri': 'spotify:playlist:5DMhpzQw07N9CxiWxsnZbC',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/40owuDG2UXz44jNpxcOnHy',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0286b9c2836a00b67081e787a1ab67616d00001e0297d4015428c1ae8409236f69ab67616d00001e02b86f9276199af632c42a90ccab67616d00001e02d7c64e1270057cd9c22556d5',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0286b9c2836a00b67081e787a1ab67616d00001e0297d4015428c1ae8409236f69ab67616d00001e02b86f9276199af632c42a90ccab67616d00001e02d7c64e1270057cd9c22556d5',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0286b9c2836a00b67081e787a1ab67616d00001e0297d4015428c1ae8409236f69ab67616d00001e02b86f9276199af632c42a90ccab67616d00001e02d7c64e1270057cd9c22556d5',
+          'width': 60,
+        }),
+      ]),
+      'name': 'New playlist 2',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '40owuDG2UXz44jNpxcOnHy',
+      'public': True,
+      'uri': 'spotify:playlist:40owuDG2UXz44jNpxcOnHy',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0FcxzfoIXA6fpbP8rkqK5V',
+      }),
+      'images': list([
+      ]),
+      'name': 'regnbågstisdag',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '0FcxzfoIXA6fpbP8rkqK5V',
+      'public': True,
+      'uri': 'spotify:playlist:0FcxzfoIXA6fpbP8rkqK5V',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3fsBfb9u0zXOK6JMEkyzEQ',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e0232416982d2ea14bc8c2fe852',
+          'width': None,
+        }),
+      ]),
+      'name': 'Irina',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3fsBfb9u0zXOK6JMEkyzEQ',
+      'public': True,
+      'uri': 'spotify:playlist:3fsBfb9u0zXOK6JMEkyzEQ',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/02alN0gNaeIYe0k5D7rsrl',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021bf11700ed63196de26563abab67616d00001e021ffe5d4aa25c7bd1b1fc4847ab67616d00001e0250cb0dcd257aea8ae4e44c85ab67616d00001e02f631e275b1f65ce108977e4e',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021bf11700ed63196de26563abab67616d00001e021ffe5d4aa25c7bd1b1fc4847ab67616d00001e0250cb0dcd257aea8ae4e44c85ab67616d00001e02f631e275b1f65ce108977e4e',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021bf11700ed63196de26563abab67616d00001e021ffe5d4aa25c7bd1b1fc4847ab67616d00001e0250cb0dcd257aea8ae4e44c85ab67616d00001e02f631e275b1f65ce108977e4e',
+          'width': 60,
+        }),
+      ]),
+      'name': '010101',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '02alN0gNaeIYe0k5D7rsrl',
+      'public': True,
+      'uri': 'spotify:playlist:02alN0gNaeIYe0k5D7rsrl',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2Q8gqoLDDA4duY4OUFr7Wk',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02c44aa6bac605e42c00234e87ab67616d00001e02cdac19bbaee5cc123edcc26fab67616d00001e02f3aa0e6ca22a382007f61e4dab67616d00001e02f73c1afa6079c9bfb60bd6bc',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02c44aa6bac605e42c00234e87ab67616d00001e02cdac19bbaee5cc123edcc26fab67616d00001e02f3aa0e6ca22a382007f61e4dab67616d00001e02f73c1afa6079c9bfb60bd6bc',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02c44aa6bac605e42c00234e87ab67616d00001e02cdac19bbaee5cc123edcc26fab67616d00001e02f3aa0e6ca22a382007f61e4dab67616d00001e02f73c1afa6079c9bfb60bd6bc',
+          'width': 60,
+        }),
+      ]),
+      'name': 'que',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'nikke',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/nikke',
+        }),
+        'href': 'https://api.spotify.com/v1/users/nikke',
+        'object_type': 'user',
+        'owner_id': 'nikke',
+        'uri': 'spotify:user:nikke',
+      }),
+      'playlist_id': '2Q8gqoLDDA4duY4OUFr7Wk',
+      'public': True,
+      'uri': 'spotify:playlist:2Q8gqoLDDA4duY4OUFr7Wk',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3EkXOXsTGiDP5VKKisVWy0',
+      }),
+      'images': list([
+      ]),
+      'name': 'Anderssons local files',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '3EkXOXsTGiDP5VKKisVWy0',
+      'public': True,
+      'uri': 'spotify:playlist:3EkXOXsTGiDP5VKKisVWy0',
+    }),
+    dict({
+      'collaborative': False,
+      'description': "Hello America. Spotify here. It’s great to know that so many of our US friends are excited to use Spotify. Our staff have made you this playlist as a way of saying 'hey, good to see you!'",
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0yj2GcyN8GkoJ1EZ9ugyl1',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0201ce44a09e4b95fce0ea3a86ab67616d00001e0217e1907923e91181f38290acab67616d00001e028334ce0c1d48edaa184112b2ab67616d00001e02b81d66d1416afa139d12767b',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0201ce44a09e4b95fce0ea3a86ab67616d00001e0217e1907923e91181f38290acab67616d00001e028334ce0c1d48edaa184112b2ab67616d00001e02b81d66d1416afa139d12767b',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0201ce44a09e4b95fce0ea3a86ab67616d00001e0217e1907923e91181f38290acab67616d00001e028334ce0c1d48edaa184112b2ab67616d00001e02b81d66d1416afa139d12767b',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Hello America. Spotify here.',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Spotify',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/spotify',
+        }),
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'object_type': 'user',
+        'owner_id': 'spotify',
+        'uri': 'spotify:user:spotify',
+      }),
+      'playlist_id': '0yj2GcyN8GkoJ1EZ9ugyl1',
+      'public': True,
+      'uri': 'spotify:playlist:0yj2GcyN8GkoJ1EZ9ugyl1',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7ryTdnz3hVBC87NwIlNaEh',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0252e0dcf6bd926c129c092648ab67616d00001e026d8578f3fc52a97c6560e49aab67616d00001e02765b5b2e04bbe8443952d022ab67616d00001e02980caf4dd525a15f08f8cb87',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0252e0dcf6bd926c129c092648ab67616d00001e026d8578f3fc52a97c6560e49aab67616d00001e02765b5b2e04bbe8443952d022ab67616d00001e02980caf4dd525a15f08f8cb87',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0252e0dcf6bd926c129c092648ab67616d00001e026d8578f3fc52a97c6560e49aab67616d00001e02765b5b2e04bbe8443952d022ab67616d00001e02980caf4dd525a15f08f8cb87',
+          'width': 60,
+        }),
+      ]),
+      'name': 'VOXPOP - by ylla',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Ylla Von Malmborg',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/ylla',
+        }),
+        'href': 'https://api.spotify.com/v1/users/ylla',
+        'object_type': 'user',
+        'owner_id': 'ylla',
+        'uri': 'spotify:user:ylla',
+      }),
+      'playlist_id': '7ryTdnz3hVBC87NwIlNaEh',
+      'public': True,
+      'uri': 'spotify:playlist:7ryTdnz3hVBC87NwIlNaEh',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/6dn72TSLbp6JoYSCHi7Sdm',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021323db3fd863ab1b9c668504ab67616d00001e024ca4012b3749d3f4d6e31114ab67616d00001e027a7eef2276e831469d2a97bbab67616d00001e02b047ef469c70ec511bf876f6',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021323db3fd863ab1b9c668504ab67616d00001e024ca4012b3749d3f4d6e31114ab67616d00001e027a7eef2276e831469d2a97bbab67616d00001e02b047ef469c70ec511bf876f6',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021323db3fd863ab1b9c668504ab67616d00001e024ca4012b3749d3f4d6e31114ab67616d00001e027a7eef2276e831469d2a97bbab67616d00001e02b047ef469c70ec511bf876f6',
+          'width': 60,
+        }),
+      ]),
+      'name': "smooth'",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '6dn72TSLbp6JoYSCHi7Sdm',
+      'public': True,
+      'uri': 'spotify:playlist:6dn72TSLbp6JoYSCHi7Sdm',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0dq7cNDG42xYx85RZPola8',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e029b19c107109de740bad72df5',
+          'width': None,
+        }),
+      ]),
+      'name': 'Dr. Dre – 2001',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '0dq7cNDG42xYx85RZPola8',
+      'public': True,
+      'uri': 'spotify:playlist:0dq7cNDG42xYx85RZPola8',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/11ui9npCCW5sOYqSN7Glnv',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022868c4713a3912fd476b42f1ab67616d00001e026b75ccb4474439cbede6623fab67616d00001e02d82cce4af49ab5566ccf88e7ab67616d00001e02e6a0f986b4bb04250cf1d881',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022868c4713a3912fd476b42f1ab67616d00001e026b75ccb4474439cbede6623fab67616d00001e02d82cce4af49ab5566ccf88e7ab67616d00001e02e6a0f986b4bb04250cf1d881',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022868c4713a3912fd476b42f1ab67616d00001e026b75ccb4474439cbede6623fab67616d00001e02d82cce4af49ab5566ccf88e7ab67616d00001e02e6a0f986b4bb04250cf1d881',
+          'width': 60,
+        }),
+      ]),
+      'name': 'ludde_test',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '11ui9npCCW5sOYqSN7Glnv',
+      'public': True,
+      'uri': 'spotify:playlist:11ui9npCCW5sOYqSN7Glnv',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0AqCsfE9B9pKCRtXR7Qcpr',
+      }),
+      'images': list([
+      ]),
+      'name': 'Techno Chicken',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '0AqCsfE9B9pKCRtXR7Qcpr',
+      'public': True,
+      'uri': 'spotify:playlist:0AqCsfE9B9pKCRtXR7Qcpr',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7pnXgdhX1F4QUcwHSku2Vk',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67616d00001e026400fab74f28e90759ac8815',
+          'width': None,
+        }),
+      ]),
+      'name': 'Air – Talkie Walkie',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'smedjan',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/smedjan',
+        }),
+        'href': 'https://api.spotify.com/v1/users/smedjan',
+        'object_type': 'user',
+        'owner_id': 'smedjan',
+        'uri': 'spotify:user:smedjan',
+      }),
+      'playlist_id': '7pnXgdhX1F4QUcwHSku2Vk',
+      'public': True,
+      'uri': 'spotify:playlist:7pnXgdhX1F4QUcwHSku2Vk',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1PDwG4hvy5n2pBf93A8R3r',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e025aa3dcf05b7ce449066b4b06ab67616d00001e0260bf4d4b20eb93075a97cd20ab67616d00001e02a4d5093e91d6b3e7a42eda67ab67616d00001e02bb1f0d801f4c9203f2f4d698',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e025aa3dcf05b7ce449066b4b06ab67616d00001e0260bf4d4b20eb93075a97cd20ab67616d00001e02a4d5093e91d6b3e7a42eda67ab67616d00001e02bb1f0d801f4c9203f2f4d698',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e025aa3dcf05b7ce449066b4b06ab67616d00001e0260bf4d4b20eb93075a97cd20ab67616d00001e02a4d5093e91d6b3e7a42eda67ab67616d00001e02bb1f0d801f4c9203f2f4d698',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Mattias recommends',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Mattias',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/mattias',
+        }),
+        'href': 'https://api.spotify.com/v1/users/mattias',
+        'object_type': 'user',
+        'owner_id': 'mattias',
+        'uri': 'spotify:user:mattias',
+      }),
+      'playlist_id': '1PDwG4hvy5n2pBf93A8R3r',
+      'public': True,
+      'uri': 'spotify:playlist:1PDwG4hvy5n2pBf93A8R3r',
+    }),
+    dict({
+      'collaborative': False,
+      'description': 'most likely stolen from your playlist',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2UuoB7p8ZdlgQT8upXwoMl',
+      }),
+      'images': list([
+        dict({
+          'height': None,
+          'url': 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da846cb1cb6370eb30357eee6760',
+          'width': None,
+        }),
+      ]),
+      'name': 'brokemogul radio',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Scott Vener',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/brokemogul',
+        }),
+        'href': 'https://api.spotify.com/v1/users/brokemogul',
+        'object_type': 'user',
+        'owner_id': 'brokemogul',
+        'uri': 'spotify:user:brokemogul',
+      }),
+      'playlist_id': '2UuoB7p8ZdlgQT8upXwoMl',
+      'public': True,
+      'uri': 'spotify:playlist:2UuoB7p8ZdlgQT8upXwoMl',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/0IMR2RPbwQQKrxCRYUY1o3',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e024e837b06165d5d397e235e5bab67616d00001e026d9f246dfd32200ea17b557bab67616d00001e028b32b139981e79f2ebe005ebab67616d00001e02b4c5982e1b92f97a126fc18c',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e024e837b06165d5d397e235e5bab67616d00001e026d9f246dfd32200ea17b557bab67616d00001e028b32b139981e79f2ebe005ebab67616d00001e02b4c5982e1b92f97a126fc18c',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e024e837b06165d5d397e235e5bab67616d00001e026d9f246dfd32200ea17b557bab67616d00001e028b32b139981e79f2ebe005ebab67616d00001e02b4c5982e1b92f97a126fc18c',
+          'width': 60,
+        }),
+      ]),
+      'name': 'merdalamod',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Pierre Carrier',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/gcarrier',
+        }),
+        'href': 'https://api.spotify.com/v1/users/gcarrier',
+        'object_type': 'user',
+        'owner_id': 'gcarrier',
+        'uri': 'spotify:user:gcarrier',
+      }),
+      'playlist_id': '0IMR2RPbwQQKrxCRYUY1o3',
+      'public': True,
+      'uri': 'spotify:playlist:0IMR2RPbwQQKrxCRYUY1o3',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3NYcibK14Rv9hJ3vFEYmWp',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022b40db2ffe46dae2f8e1f899ab67616d00001e02773a9c3b61b0213bcc6aecedab67616d00001e029c5fa8ff4cc2f973f45e48e0ab67616d00001e02b64d9c842939150eebb1c45b',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022b40db2ffe46dae2f8e1f899ab67616d00001e02773a9c3b61b0213bcc6aecedab67616d00001e029c5fa8ff4cc2f973f45e48e0ab67616d00001e02b64d9c842939150eebb1c45b',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022b40db2ffe46dae2f8e1f899ab67616d00001e02773a9c3b61b0213bcc6aecedab67616d00001e029c5fa8ff4cc2f973f45e48e0ab67616d00001e02b64d9c842939150eebb1c45b',
+          'width': 60,
+        }),
+      ]),
+      'name': 'guitarsongs',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Daniel Ek',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/daniel',
+        }),
+        'href': 'https://api.spotify.com/v1/users/daniel',
+        'object_type': 'user',
+        'owner_id': 'daniel',
+        'uri': 'spotify:user:daniel',
+      }),
+      'playlist_id': '3NYcibK14Rv9hJ3vFEYmWp',
+      'public': True,
+      'uri': 'spotify:playlist:3NYcibK14Rv9hJ3vFEYmWp',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2t5rxiBSC1JGfiZfQW6MmC',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0299cdf1500395fe61d407f4deab67616d00001e02a96ec7834e225bf4817d119cab67616d00001e02ae427f91828f26f16e62a6a1ab67616d00001e02d389877b9ee335f5c5a2fbdb',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0299cdf1500395fe61d407f4deab67616d00001e02a96ec7834e225bf4817d119cab67616d00001e02ae427f91828f26f16e62a6a1ab67616d00001e02d389877b9ee335f5c5a2fbdb',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0299cdf1500395fe61d407f4deab67616d00001e02a96ec7834e225bf4817d119cab67616d00001e02ae427f91828f26f16e62a6a1ab67616d00001e02d389877b9ee335f5c5a2fbdb',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Sweet Swedish',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Daniel Ek',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/daniel',
+        }),
+        'href': 'https://api.spotify.com/v1/users/daniel',
+        'object_type': 'user',
+        'owner_id': 'daniel',
+        'uri': 'spotify:user:daniel',
+      }),
+      'playlist_id': '2t5rxiBSC1JGfiZfQW6MmC',
+      'public': True,
+      'uri': 'spotify:playlist:2t5rxiBSC1JGfiZfQW6MmC',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/780WrURGBymglb9YcJwmkz',
+      }),
+      'images': list([
+      ]),
+      'name': 'Sommar i P1 - Sveriges Radio – Sommar med Daniel Adams-Ray 9 augusti 2011',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Daniel Ek',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/daniel',
+        }),
+        'href': 'https://api.spotify.com/v1/users/daniel',
+        'object_type': 'user',
+        'owner_id': 'daniel',
+        'uri': 'spotify:user:daniel',
+      }),
+      'playlist_id': '780WrURGBymglb9YcJwmkz',
+      'public': True,
+      'uri': 'spotify:playlist:780WrURGBymglb9YcJwmkz',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/59WSqPcX9mTVrUFdpDrhph',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e022c98891a92efa275093bb7d5ab67616d00001e02455d7ca79bfb1bfc01eac9dbab67616d00001e02619f60dd041fcfffbfc2263cab67616d00001e0262b513fa0b5fdef8f6a5e898',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e022c98891a92efa275093bb7d5ab67616d00001e02455d7ca79bfb1bfc01eac9dbab67616d00001e02619f60dd041fcfffbfc2263cab67616d00001e0262b513fa0b5fdef8f6a5e898',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e022c98891a92efa275093bb7d5ab67616d00001e02455d7ca79bfb1bfc01eac9dbab67616d00001e02619f60dd041fcfffbfc2263cab67616d00001e0262b513fa0b5fdef8f6a5e898',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Adjö',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Daniel Ek',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/daniel',
+        }),
+        'href': 'https://api.spotify.com/v1/users/daniel',
+        'object_type': 'user',
+        'owner_id': 'daniel',
+        'uri': 'spotify:user:daniel',
+      }),
+      'playlist_id': '59WSqPcX9mTVrUFdpDrhph',
+      'public': True,
+      'uri': 'spotify:playlist:59WSqPcX9mTVrUFdpDrhph',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2PDLDvW0yaOSd1JF6z7JrC',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e024beb66f56871bbde37f6892dab67616d00001e02588a832e3ff9c8f337daa4f1ab67616d00001e02a0681f41944a502c8f9ae973ab67616d00001e02eeeb755130868683e01a0097',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e024beb66f56871bbde37f6892dab67616d00001e02588a832e3ff9c8f337daa4f1ab67616d00001e02a0681f41944a502c8f9ae973ab67616d00001e02eeeb755130868683e01a0097',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e024beb66f56871bbde37f6892dab67616d00001e02588a832e3ff9c8f337daa4f1ab67616d00001e02a0681f41944a502c8f9ae973ab67616d00001e02eeeb755130868683e01a0097',
+          'width': 60,
+        }),
+      ]),
+      'name': "This isn't mainstream hiphop",
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Aron Levin',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/allacentrum',
+        }),
+        'href': 'https://api.spotify.com/v1/users/allacentrum',
+        'object_type': 'user',
+        'owner_id': 'allacentrum',
+        'uri': 'spotify:user:allacentrum',
+      }),
+      'playlist_id': '2PDLDvW0yaOSd1JF6z7JrC',
+      'public': True,
+      'uri': 'spotify:playlist:2PDLDvW0yaOSd1JF6z7JrC',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/1x2qISkYZCzO7nqCihJphT',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0223ce0637df7ead27b2d31590ab67616d00001e0281b977682d6235fdca1b85daab67616d00001e029e884b7922a905cf2df7db50ab67616d00001e02d0b0110fdfcf5e363db97687',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0223ce0637df7ead27b2d31590ab67616d00001e0281b977682d6235fdca1b85daab67616d00001e029e884b7922a905cf2df7db50ab67616d00001e02d0b0110fdfcf5e363db97687',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0223ce0637df7ead27b2d31590ab67616d00001e0281b977682d6235fdca1b85daab67616d00001e029e884b7922a905cf2df7db50ab67616d00001e02d0b0110fdfcf5e363db97687',
+          'width': 60,
+        }),
+      ]),
+      'name': 'SpotON: Evidence',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Aron Levin',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/allacentrum',
+        }),
+        'href': 'https://api.spotify.com/v1/users/allacentrum',
+        'object_type': 'user',
+        'owner_id': 'allacentrum',
+        'uri': 'spotify:user:allacentrum',
+      }),
+      'playlist_id': '1x2qISkYZCzO7nqCihJphT',
+      'public': True,
+      'uri': 'spotify:playlist:1x2qISkYZCzO7nqCihJphT',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/2yICyZyxaCjorY6wxhKCqx',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e0240eea368f4fb5f5ee6dcd9a8ab67616d00001e025034ef7aee00fd756756d90cab67616d00001e02c18cc9d6fcea1478b1257678ab67616d00001e02ed5ffaf4fbf618c94dd08db0',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e0240eea368f4fb5f5ee6dcd9a8ab67616d00001e025034ef7aee00fd756756d90cab67616d00001e02c18cc9d6fcea1478b1257678ab67616d00001e02ed5ffaf4fbf618c94dd08db0',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e0240eea368f4fb5f5ee6dcd9a8ab67616d00001e025034ef7aee00fd756756d90cab67616d00001e02c18cc9d6fcea1478b1257678ab67616d00001e02ed5ffaf4fbf618c94dd08db0',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Songs from "Super 8"',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'migo',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/migo',
+        }),
+        'href': 'https://api.spotify.com/v1/users/migo',
+        'object_type': 'user',
+        'owner_id': 'migo',
+        'uri': 'spotify:user:migo',
+      }),
+      'playlist_id': '2yICyZyxaCjorY6wxhKCqx',
+      'public': True,
+      'uri': 'spotify:playlist:2yICyZyxaCjorY6wxhKCqx',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/3vxotOnOGDlZXyzJPLFnm2',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e021e1ca90cd8fdbb0ac890a926ab67616d00001e028b04dacf186124a62bc667a7ab67616d00001e02ea1cf454ec02367d76573c4fab67616d00001e02f8553e18a11209d4becd0336',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e021e1ca90cd8fdbb0ac890a926ab67616d00001e028b04dacf186124a62bc667a7ab67616d00001e02ea1cf454ec02367d76573c4fab67616d00001e02f8553e18a11209d4becd0336',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e021e1ca90cd8fdbb0ac890a926ab67616d00001e028b04dacf186124a62bc667a7ab67616d00001e02ea1cf454ec02367d76573c4fab67616d00001e02f8553e18a11209d4becd0336',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Hipster International',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Sean Parker',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/napstersean',
+        }),
+        'href': 'https://api.spotify.com/v1/users/napstersean',
+        'object_type': 'user',
+        'owner_id': 'napstersean',
+        'uri': 'spotify:user:napstersean',
+      }),
+      'playlist_id': '3vxotOnOGDlZXyzJPLFnm2',
+      'public': True,
+      'uri': 'spotify:playlist:3vxotOnOGDlZXyzJPLFnm2',
+    }),
+    dict({
+      'collaborative': False,
+      'description': '',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/playlist/7hHiS4TfO4isJ2cfhIxXkb',
+      }),
+      'images': list([
+        dict({
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/ab67616d00001e02130dcab9b9d160b5d9352c78ab67616d00001e022350e31bc346a6c20e9de166ab67616d00001e02856ed7b94b0859b3e78a3deaab67616d00001e0295bf7f7dac7b61a95d47f07e',
+          'width': 640,
+        }),
+        dict({
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/ab67616d00001e02130dcab9b9d160b5d9352c78ab67616d00001e022350e31bc346a6c20e9de166ab67616d00001e02856ed7b94b0859b3e78a3deaab67616d00001e0295bf7f7dac7b61a95d47f07e',
+          'width': 300,
+        }),
+        dict({
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/ab67616d00001e02130dcab9b9d160b5d9352c78ab67616d00001e022350e31bc346a6c20e9de166ab67616d00001e02856ed7b94b0859b3e78a3deaab67616d00001e0295bf7f7dac7b61a95d47f07e',
+          'width': 60,
+        }),
+      ]),
+      'name': 'Dopest Rap Tracks of All Time',
+      'object_type': 'playlist',
+      'owner': dict({
+        'display_name': 'Alex Norström',
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/alegaa',
+        }),
+        'href': 'https://api.spotify.com/v1/users/alegaa',
+        'object_type': 'user',
+        'owner_id': 'alegaa',
+        'uri': 'spotify:user:alegaa',
+      }),
+      'playlist_id': '7hHiS4TfO4isJ2cfhIxXkb',
+      'public': True,
+      'uri': 'spotify:playlist:7hHiS4TfO4isJ2cfhIxXkb',
+    }),
+  ])
 # ---
 # name: test_get_recently_played_tracks
   list([
