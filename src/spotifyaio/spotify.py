@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING, Any, Callable, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
+from mashumaro.codecs.json import JSONDecoder
 import orjson
 from yarl import URL
 
@@ -38,6 +39,8 @@ from spotifyaio.models import (
     EpisodesResponse,
     FeaturedPlaylistResponse,
     FollowedArtistResponse,
+    Image,
+    ModifyPlaylistResponse,
     NewReleasesResponse,
     NewReleasesResponseInner,
     PlaybackState,
@@ -45,6 +48,8 @@ from spotifyaio.models import (
     PlayedTrackResponse,
     Playlist,
     PlaylistResponse,
+    PlaylistTrack,
+    PlaylistTrackResponse,
     RepeatMode,
     SavedAlbum,
     SavedAlbumResponse,
@@ -442,10 +447,6 @@ class SpotifyClient:
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
         return dict(zip(identifiers, body))
 
-    # Get genre seeds
-
-    # Get available markets
-
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""
         response = await self._get(
@@ -570,13 +571,92 @@ class SpotifyClient:
         )
         return Playlist.from_json(response)
 
-    # Update playlist details
+    async def update_playlist_details(
+        self,
+        playlist_id: str,
+        *,
+        name: str | None = None,
+        description: str | None = None,
+        public: bool | None = None,
+        collaborative: bool | None = None,
+    ) -> None:
+        """Update playlist details."""
+        identifier = get_identifier(playlist_id)
+        data: dict[str, Any] = {}
+        if name:
+            data["name"] = name
+        if description:
+            data["description"] = description
+        if public is not None:
+            data["public"] = public
+        if collaborative is not None:
+            data["collaborative"] = collaborative
+        await self._put(f"v1/playlists/{identifier}", data=data)
 
-    # Get a playlist items
+    async def get_playlist_items(self, playlist_id: str) -> list[PlaylistTrack]:
+        """Get playlist tracks."""
+        identifier = get_identifier(playlist_id)
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get(f"v1/playlists/{identifier}/tracks", params=params)
+        return PlaylistTrackResponse.from_json(response).items
 
-    # Update a playlist items
+    async def update_playlist_items(
+        self,
+        playlist_id: str,
+        uris: list[str],
+        *,
+        range_start: int | None = None,
+        insert_before: int | None = None,
+        range_length: int | None = None,
+        snapshot_id: str | None = None,
+    ) -> str:
+        """Update playlist tracks."""
+        identifier = get_identifier(playlist_id)
+        data: dict[str, Any] = {"uris": uris}
+        if range_start is not None:
+            data["range_start"] = range_start
+        if insert_before is not None:
+            data["insert_before"] = insert_before
+        if range_length is not None:
+            data["range_length"] = range_length
+        if snapshot_id:
+            data["snapshot_id"] = snapshot_id
+        response = await self._put(f"v1/playlists/{identifier}/tracks", data=data)
+        return ModifyPlaylistResponse.from_json(response).snapshot_id
 
-    # Remove a playlist items
+    async def add_playlist_items(
+        self,
+        playlist_id: str,
+        uris: list[str],
+        position: int | None = None,
+    ) -> str:
+        """Add playlist tracks."""
+        if len(uris) > 100:
+            msg = "Maximum of 100 tracks can be added at once"
+            raise ValueError(msg)
+        identifier = get_identifier(playlist_id)
+        data: dict[str, Any] = {"uris": uris}
+        if position is not None:
+            data["position"] = position
+        response = await self._post(f"v1/playlists/{identifier}/tracks", data=data)
+        return ModifyPlaylistResponse.from_json(response).snapshot_id
+
+    async def remove_playlist_items(
+        self,
+        playlist_id: str,
+        uris: list[str],
+        snapshot_id: str | None = None,
+    ) -> str:
+        """Remove playlist tracks."""
+        if len(uris) > 100:
+            msg = "Maximum of 100 tracks can be removed at once"
+            raise ValueError(msg)
+        identifier = get_identifier(playlist_id)
+        data: dict[str, Any] = {"tracks": [{"uri": uri} for uri in uris]}
+        if snapshot_id:
+            data["snapshot_id"] = snapshot_id
+        response = await self._delete(f"v1/playlists/{identifier}/tracks", data=data)
+        return ModifyPlaylistResponse.from_json(response).snapshot_id
 
     async def get_playlists_for_current_user(self) -> list[BasePlaylist]:
         """Get playlists."""
@@ -584,9 +664,33 @@ class SpotifyClient:
         response = await self._get("v1/me/playlists", params=params)
         return PlaylistResponse.from_json(response).items
 
-    # Get users playlists
+    async def get_playlists_for_user(self, user_id: str) -> list[BasePlaylist]:
+        """Get playlists."""
+        identifier = get_identifier(user_id)
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get(f"v1/user/{identifier}/playlists", params=params)
+        return PlaylistResponse.from_json(response).items
 
-    # Create a playlist
+    async def create_playlist(
+        self,
+        user_id: str,
+        name: str,
+        *,
+        description: str | None = None,
+        public: bool | None = None,
+        collaborative: bool | None = None,
+    ) -> Playlist:
+        """Create playlist."""
+        identifier = get_identifier(user_id)
+        data: dict[str, Any] = {"name": name}
+        if description:
+            data["description"] = description
+        if public is not None:
+            data["public"] = public
+        if collaborative is not None:
+            data["collaborative"] = collaborative
+        response = await self._post(f"v1/users/{identifier}/playlists", data=data)
+        return Playlist.from_json(response)
 
     async def get_featured_playlists(self) -> list[BasePlaylist]:
         """Get featured playlists."""
@@ -603,7 +707,11 @@ class SpotifyClient:
         )
         return CategoryPlaylistResponse.from_json(response).playlists.items
 
-    # Get playlist cover image
+    async def get_playlist_cover_image(self, playlist_id: str) -> list[Image]:
+        """Get playlist cover image."""
+        identifier = get_identifier(playlist_id)
+        response = await self._get(f"v1/playlists/{identifier}/images")
+        return JSONDecoder(list[Image]).decode(response)
 
     # Upload a custom playlist cover image
 
