@@ -159,6 +159,62 @@ class SpotifyClient:
         """Handle a DELETE request to Spotify."""
         return await self._request(METH_DELETE, uri, data=data, params=params)
 
+    async def _paginator(
+            self,
+            endpoint: str,
+            params: dict[str, Any] = None,
+            max_items: int = None,
+            limit: int = 48,
+            sub_layer: str = None,
+    ) -> list[dict]:
+        """Get items from a pagination api endpoint
+
+        Args:
+            - endpoint(str): The api endpoint to call
+            - params(dict[str, Any], optional): Parameters to send with
+                each requests
+            - max_items(int, optional): The maximum number of items to
+                retrieve across all requests. If None, retrieves all
+                items
+            - limit(int, optional): The limit of items to retrieve per
+                call. Defaults to 48
+            - sub_layer(str, optional): a sub layer that contains the
+                actual list of items
+
+        Returns:
+            - list[dict]: the list of dictionary items corresponding to
+                the items of a pagination endpoint
+        """
+        items = []
+        total = max_items
+        params = {} if params is None else params
+        params["offset"] = 0
+        params["limit"] = limit
+
+        while total is None or len(items) < total:
+
+            result = await self._get(endpoint, params)
+            result = orjson.loads(result)
+
+            if sub_layer is not None:
+                result = result[sub_layer]
+
+            if total is None or result["total"] < total:
+                total = result["total"]
+
+            current_items = result["items"]
+            delta = total - (len(items) + len(current_items))
+
+            if delta < 0:
+                current_items = current_items[:delta]
+
+            items.extend(current_items)
+            params["offset"] = len(items)
+
+        # filter for potentially non existant items
+        items = [x for x in items if x is not None]
+        return items
+
     async def get_album(self, album_id: str) -> Album:
         """Get album."""
         identifier = get_identifier(album_id)

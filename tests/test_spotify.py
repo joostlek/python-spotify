@@ -204,6 +204,131 @@ async def test_save_no_albums(
     responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
+@pytest.mark.parametrize(
+    "fixture",
+    [
+        "paginator_1.json",
+    ],
+)
+async def test_pagination_request_higher_than_total(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+    fixture: str,
+) -> None:
+
+    responses.get(
+        url=f"{SPOTIFY_URL}/v1/me/playlists?limit=48&offset=0",
+        status=200,
+        body=load_fixture(fixture),
+    )
+
+    result = await authenticated_client._paginator(
+        endpoint="v1/me/playlists",
+        max_items=48,
+    )
+
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/playlists",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "limit": 48,
+            "offset": 0,
+        },
+        json=None,
+
+    )
+
+    assert len(result) == 10
+
+
+@pytest.mark.parametrize(
+    "fixture",
+    [
+        "paginator_1.json",
+    ],
+)
+async def test_pagination_request_single_page(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+    fixture: str,
+) -> None:
+
+    responses.get(
+        url=f"{SPOTIFY_URL}/v1/me/playlists?limit=48&offset=0",
+        status=200,
+        body=load_fixture(fixture),
+    )
+
+    result = await authenticated_client._paginator(
+        endpoint="v1/me/playlists",
+        max_items=5,
+    )
+
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/playlists",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "limit": 48,
+            "offset": 0,
+        },
+        json=None,
+
+    )
+
+    assert len(result) == 5
+
+
+@pytest.mark.parametrize(
+    "fixture",
+    [
+        "paginator_2.json"
+    ],
+)
+async def test_pagination_of_sub_layer(
+    responses: aioresponses,
+    snapshot: SnapshotAssertion,
+    authenticated_client: SpotifyClient,
+    fixture: str,
+) -> None:
+
+    responses.get(
+        url=(
+            f"{SPOTIFY_URL}/v1/search?limit=48&offset=0&q=remaster+track%253ADoxy+artist%253AMiles+Davis&type=album"
+        ),
+        status=200,
+        body=load_fixture(fixture)
+    )
+
+    result = await authenticated_client._paginator(
+        endpoint="v1/search",
+        sub_layer="albums",
+        max_items=10,
+        params={
+            "q": "remaster track:Doxy artist:Miles Davis",
+            "type": "album"
+        }
+    )
+
+    responses.assert_called_with(
+        f"{SPOTIFY_URL}/v1/search",
+        METH_GET,
+        headers=HEADERS,
+        params={
+            "q": "remaster track:Doxy artist:Miles Davis",
+            "type": "album",
+            "limit": 48,
+            "offset": 0
+        },
+        json=None
+    )
+
+    assert len(result) == 10
+
+
 async def test_save_too_many_albums(
     responses: aioresponses,
     authenticated_client: SpotifyClient,
@@ -501,7 +626,8 @@ async def test_get_no_current_playing_state(
             },
         ),
         (
-            {"uris": ["spotify:artist:6cmp7ut7okJAgJOSaMAVf3"], "position_offset": 5},
+            {"uris": ["spotify:artist:6cmp7ut7okJAgJOSaMAVf3"],
+                "position_offset": 5},
             {},
             {
                 "position_ms": 0,
