@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import TYPE_CHECKING, Any, Callable, Self
+from typing import TYPE_CHECKING, Any, Callable, Self, Generator
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
@@ -166,7 +166,7 @@ class SpotifyClient:
             max_items: int = None,
             limit: int = 48,
             sub_layer: str = None,
-    ) -> list[dict]:
+    ) -> Generator[list[dict], None, None]:
         """Get items from a pagination api endpoint
 
         Args:
@@ -185,13 +185,13 @@ class SpotifyClient:
             - list[dict]: the list of dictionary items corresponding to
                 the items of a pagination endpoint
         """
-        items = []
         total = max_items
         params = {} if params is None else params
         params["offset"] = 0
         params["limit"] = limit
+        item_count = 0
 
-        while total is None or len(items) < total:
+        while total is None or item_count < total:
 
             result = await self._get(endpoint, params)
             result = orjson.loads(result)
@@ -202,18 +202,16 @@ class SpotifyClient:
             if total is None or result["total"] < total:
                 total = result["total"]
 
-            current_items = result["items"]
-            delta = total - (len(items) + len(current_items))
+            items = result["items"]
+            delta = total - (item_count + len(items))
 
             if delta < 0:
-                current_items = current_items[:delta]
+                items = items[:delta]
 
-            items.extend(current_items)
-            params["offset"] = len(items)
+            yield [x for x in items if x is not None]
 
-        # filter for potentially non existant items
-        items = [x for x in items if x is not None]
-        return items
+            item_count += len(items)
+            params["offset"] = item_count
 
     async def get_album(self, album_id: str) -> Album:
         """Get album."""
