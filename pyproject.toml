@@ -98,6 +98,7 @@ ignore = [
 [tool.pylint.BASIC]
 good-names = [
   "_",
+  "_P",
   "ex",
   "fp",
   "i",
