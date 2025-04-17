@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  DEFAULT_PYTHON: "3.11"
+  DEFAULT_PYTHON: "3.12"
 
 jobs:
   pytest:
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: ["3.11", "3.12", "3.13"]
+        python: ["3.12", "3.13"]
     steps:
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v4.2.2
@@ -74,7 +74,7 @@ jobs:
           poetry run coverage combine coverage*/.coverage*
           poetry run coverage xml -i
       - name: 🚀 Upload coverage report
-        uses: codecov/codecov-action@v5.4.0
+        uses: codecov/codecov-action@v5.4.2
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
