@@ -1,0 +1,380 @@
+{
+  "href": "https://api.spotify.com/v1/users/darkfulldante/playlists?offset=0&limit=10&locale=en-CA,en-US;q%3D0.7,en;q%3D0.3",
+  "limit": 10,
+  "next": "https://api.spotify.com/v1/users/darkfulldante/playlists?offset=10&limit=10&locale=en-CA,en-US;q%3D0.7,en;q%3D0.3",
+  "offset": 0,
+  "previous": null,
+  "total": 10,
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1607ZWM3U6c1PrWetUnQ2K"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1607ZWM3U6c1PrWetUnQ2K",
+      "id": "1607ZWM3U6c1PrWetUnQ2K",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8478ba2160a3ce2af032edc552",
+          "width": null
+        }
+      ],
+      "name": "Brico - the Ruthless Entrepreneur",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAD0BfNazzx4jPHrH9dRlVo/TohWha",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1607ZWM3U6c1PrWetUnQ2K/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1607ZWM3U6c1PrWetUnQ2K"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1WYGpJbcW7jpejk3pNlxMC"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1WYGpJbcW7jpejk3pNlxMC",
+      "id": "1WYGpJbcW7jpejk3pNlxMC",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84a390c364ac924fef9b64986f",
+          "width": null
+        }
+      ],
+      "name": "Thazirdun - The Chained Oblivion",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAADz23jCbRXkvvolYCAYEkQTM578P3",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1WYGpJbcW7jpejk3pNlxMC/tracks",
+        "total": 13
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1WYGpJbcW7jpejk3pNlxMC"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5qvkeVF3HwKZvf3rbAU8V8"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5qvkeVF3HwKZvf3rbAU8V8",
+      "id": "5qvkeVF3HwKZvf3rbAU8V8",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84c9804fb3d27b22cff7943696",
+          "width": null
+        }
+      ],
+      "name": "Nebeora - The Healing Imposter",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAHSedGq7KHEDBhnRul4i1cv+egwKc",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5qvkeVF3HwKZvf3rbAU8V8/tracks",
+        "total": 27
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5qvkeVF3HwKZvf3rbAU8V8"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0AEGWLkcaMD6a8jsVYYEnM"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0AEGWLkcaMD6a8jsVYYEnM",
+      "id": "0AEGWLkcaMD6a8jsVYYEnM",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84847f6939fac0f27a7ebeedc4",
+          "width": null
+        }
+      ],
+      "name": "Malakis - Master of the Dead",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAIjFHfTX0PgMnolQJFfXMxukQulRN",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0AEGWLkcaMD6a8jsVYYEnM/tracks",
+        "total": 26
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0AEGWLkcaMD6a8jsVYYEnM"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2nH7RWXgD1PfYLwqNPTFuQ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2nH7RWXgD1PfYLwqNPTFuQ",
+      "id": "2nH7RWXgD1PfYLwqNPTFuQ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02337aff67065bb6ddf382f2a7ab67616d00001e0261772df61c28a56bbc4b49b9ab67616d00001e026842c99f481b8560a7db0b35ab67616d00001e02f99289ce5316d234c8b66813",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02337aff67065bb6ddf382f2a7ab67616d00001e0261772df61c28a56bbc4b49b9ab67616d00001e026842c99f481b8560a7db0b35ab67616d00001e02f99289ce5316d234c8b66813",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02337aff67065bb6ddf382f2a7ab67616d00001e0261772df61c28a56bbc4b49b9ab67616d00001e026842c99f481b8560a7db0b35ab67616d00001e02f99289ce5316d234c8b66813",
+          "width": 60
+        }
+      ],
+      "name": "The Grand Design",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAACiX0dIl8mNQCn1bZ860OQGSmIQhR",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2nH7RWXgD1PfYLwqNPTFuQ/tracks",
+        "total": 7
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2nH7RWXgD1PfYLwqNPTFuQ"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1dEUzQKzZNn1MkcPy3OQnC"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1dEUzQKzZNn1MkcPy3OQnC",
+      "id": "1dEUzQKzZNn1MkcPy3OQnC",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84315c4943215fdefa5bc26a53",
+          "width": null
+        }
+      ],
+      "name": "Attack from Within",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAEWeqBf4z9rbffCIakNTLVR5wgMku",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1dEUzQKzZNn1MkcPy3OQnC/tracks",
+        "total": 11
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1dEUzQKzZNn1MkcPy3OQnC"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5oRQrpd6X57xwpXNYipkCQ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5oRQrpd6X57xwpXNYipkCQ",
+      "id": "5oRQrpd6X57xwpXNYipkCQ",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da841c56db6377fa978ff12ed78d",
+          "width": null
+        }
+      ],
+      "name": "Bowles - The Owner of Invention",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAFo77hw0Qx19m7f5/SOpwo+ft0Zx6",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5oRQrpd6X57xwpXNYipkCQ/tracks",
+        "total": 16
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5oRQrpd6X57xwpXNYipkCQ"
+    },
+    {
+      "collaborative": false,
+      "description": "Music to make character get into the grandiosness of the world.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1yzZbKclQ3yeo2rFyvEhgn"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1yzZbKclQ3yeo2rFyvEhgn",
+      "id": "1yzZbKclQ3yeo2rFyvEhgn",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8404bd48401b47979116e00936",
+          "width": null
+        }
+      ],
+      "name": "DND - Epic",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAIFm2qS4MCJqqeC1cPmY3jPzoloVw",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1yzZbKclQ3yeo2rFyvEhgn/tracks",
+        "total": 116
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1yzZbKclQ3yeo2rFyvEhgn"
+    },
+    {
+      "collaborative": false,
+      "description": "Music to set a calm background for the characters",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6YE5v8Xl54zB0ZIKw21oE1"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6YE5v8Xl54zB0ZIKw21oE1",
+      "id": "6YE5v8Xl54zB0ZIKw21oE1",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848bfdeaffcb41354d85c576a3",
+          "width": null
+        }
+      ],
+      "name": "DND - Calm",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAMSWBK/zLDUwaVUWjfwgE4/YiUCTz",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6YE5v8Xl54zB0ZIKw21oE1/tracks",
+        "total": 45
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6YE5v8Xl54zB0ZIKw21oE1"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0Fr1WpNMXsg6WpGDzarslR"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0Fr1WpNMXsg6WpGDzarslR",
+      "id": "0Fr1WpNMXsg6WpGDzarslR",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84dbc0b3b607fe3b446e154c4e",
+          "width": null
+        }
+      ],
+      "name": "DND - Exploration",
+      "owner": {
+        "display_name": "Félix Cusson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/darkfulldante"
+        },
+        "href": "https://api.spotify.com/v1/users/darkfulldante",
+        "id": "darkfulldante",
+        "type": "user",
+        "uri": "spotify:user:darkfulldante"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAADWW7R4DbGPuFAnYVnxpYTXFSwxRs",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0Fr1WpNMXsg6WpGDzarslR/tracks",
+        "total": 297
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0Fr1WpNMXsg6WpGDzarslR"
+    }
+  ]
+}
