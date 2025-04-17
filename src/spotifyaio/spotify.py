@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import TYPE_CHECKING, Any, Callable, Self
+from typing import TYPE_CHECKING, Any, Callable, Concatenate, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
@@ -87,8 +87,8 @@ VERSION = metadata.version(__package__)
 
 
 def catch_json_decode_error[**_P, _R](
-    func: Callable[[_P], _R],
-) -> Callable[[_P], _R]:
+    func: Callable[Concatenate[SpotifyClient, _P], Awaitable[_R]],
+) -> Callable[Concatenate[SpotifyClient, _P], Awaitable[_R]]:
     """Catch JSON decode errors."""
 
     async def wrapper(self: SpotifyClient, *args: _P.args, **kwargs: _P.kwargs) -> _R:
