@@ -253,6 +253,11 @@ class SpotifyClient:
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
         return dict(zip(identifiers, body))
 
+    async def is_album_saved(self, album_id: str) -> bool:
+        """Check if album is saved."""
+        identifier = get_identifier(album_id)
+        return (await self.are_albums_saved([identifier]))[identifier]
+
     async def get_new_releases(self) -> list[SimplifiedAlbum]:
         """Get new releases."""
         params: dict[str, Any] = {"limit": 48}
@@ -449,6 +454,24 @@ class SpotifyClient:
         response = await self._get("v1/me/episodes/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
         return dict(zip(identifiers, body))
+
+    async def is_episode_saved(self, episode_id: str) -> bool:
+        """Check if episode is saved."""
+        identifier = get_identifier(episode_id)
+        return (await self.are_episodes_saved([identifier]))[identifier]
+
+    async def is_added_to_library(self, uri: str) -> bool:
+        """Check if item is added to library."""
+        if uri.startswith("spotify:track:"):
+            return await self.is_track_saved(uri)
+        if uri.startswith("spotify:episode:"):
+            return await self.is_episode_saved(uri)
+        if uri.startswith("spotify:show:"):
+            return await self.is_show_saved(uri)
+        if uri.startswith("spotify:album:"):
+            return await self.is_album_saved(uri)
+        msg = "Invalid URI format"
+        raise ValueError(msg)
 
     async def get_playback(self) -> PlaybackState | None:
         """Get playback state."""
@@ -784,6 +807,11 @@ class SpotifyClient:
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
         return dict(zip(identifiers, body))
 
+    async def is_show_saved(self, show_id: str) -> bool:
+        """Check if show is saved."""
+        identifier = get_identifier(show_id)
+        return (await self.are_shows_saved([identifier]))[identifier]
+
     # Get a track
 
     # Get several tracks
@@ -830,6 +858,11 @@ class SpotifyClient:
         response = await self._get("v1/me/tracks/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
         return dict(zip(identifiers, body))
+
+    async def is_track_saved(self, track_id: str) -> bool:
+        """Check if track is saved."""
+        identifier = get_identifier(track_id)
+        return (await self.are_tracks_saved([identifier]))[identifier]
 
     async def get_audio_features(self, track_id: str) -> AudioFeatures:
         """Get audio features."""
