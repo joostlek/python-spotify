@@ -1873,6 +1873,26 @@ async def test_check_saved_episodes(
     )
 
 
+async def test_check_saved_episode(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved episode."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/episodes/contains?ids=18yVqkdbdRvS24c0Ilj2ci",
+        status=200,
+        body=load_fixture("tracks_saved.json"),
+    )
+    assert await authenticated_client.is_episode_saved("18yVqkdbdRvS24c0Ilj2ci") is True
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/episodes/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "18yVqkdbdRvS24c0Ilj2ci"},
+        json=None,
+    )
+
+
 async def test_check_no_saved_episodes(
     responses: aioresponses,
     authenticated_client: SpotifyClient,
@@ -2468,6 +2488,72 @@ async def test_check_saved_tracks(
         params={"ids": "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ"},
         json=None,
     )
+
+
+async def test_check_saved_track(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved track."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/tracks/contains?ids=18yVqkdbdRvS24c0Ilj2ci",
+        status=200,
+        body=load_fixture("tracks_saved.json"),
+    )
+    assert await authenticated_client.is_track_saved("18yVqkdbdRvS24c0Ilj2ci") is True
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/tracks/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "18yVqkdbdRvS24c0Ilj2ci"},
+        json=None,
+    )
+
+
+@pytest.mark.parametrize(
+    ("prefix", "url_part"),
+    [
+        ("spotify:track:", "tracks"),
+        ("spotify:episode:", "episodes"),
+        ("spotify:show:", "shows"),
+        ("spotify:album:", "albums"),
+    ],
+)
+async def test_check_saved_item(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+    prefix: str,
+    url_part: str,
+) -> None:
+    """Test checking saved track."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/{url_part}/contains?ids=18yVqkdbdRvS24c0Ilj2ci",
+        status=200,
+        body=load_fixture("tracks_saved.json"),
+    )
+    assert (
+        await authenticated_client.is_added_to_library(
+            f"{prefix}18yVqkdbdRvS24c0Ilj2ci"
+        )
+        is True
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/{url_part}/contains",
+        METH_GET,
+        headers=HEADERS,
+        params={"ids": "18yVqkdbdRvS24c0Ilj2ci"},
+        json=None,
+    )
+
+
+async def test_checking_invalid_uri(
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test checking saved track."""
+    with pytest.raises(ValueError, match="Invalid URI format"):
+        await authenticated_client.is_added_to_library(
+            "spotify:new:18yVqkdbdRvS24c0Ilj2ci"
+        )
 
 
 async def test_check_no_saved_tracks(
