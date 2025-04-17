@@ -15,6 +15,7 @@ from spotifyaio import (
     RepeatMode,
     SpotifyClient,
     SpotifyConnectionError,
+    SpotifyError,
     SpotifyNotFoundError,
 )
 from spotifyaio.models import FollowType, SearchType
@@ -61,6 +62,20 @@ async def test_creating_own_session(
     assert not spotify.session.closed
     await spotify.close()
     assert spotify.session.closed
+
+
+async def test_json_decode_error(
+    responses: aioresponses,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test raising a JSON decode error."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
+        status=200,
+        body="<>",
+    )
+    with pytest.raises(SpotifyError):
+        assert await authenticated_client.get_playback()
 
 
 async def test_refresh_token() -> None:
