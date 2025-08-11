@@ -86,12 +86,12 @@ if TYPE_CHECKING:
 VERSION = metadata.version(__package__)
 
 
-def catch_json_decode_error[**_P, _R](
-    func: Callable[Concatenate[SpotifyClient, _P], Awaitable[_R]],
-) -> Callable[Concatenate[SpotifyClient, _P], Awaitable[_R]]:
+def catch_json_decode_error[**P, R](
+    func: Callable[Concatenate[SpotifyClient, P], Awaitable[R]],
+) -> Callable[Concatenate[SpotifyClient, P], Awaitable[R]]:
     """Catch JSON decode errors."""
 
-    async def wrapper(self: SpotifyClient, *args: _P.args, **kwargs: _P.kwargs) -> _R:
+    async def wrapper(self: SpotifyClient, *args: P.args, **kwargs: P.kwargs) -> R:
         try:
             return await func(self, *args, **kwargs)
         except orjson.JSONDecodeError as e:  # pylint: disable=no-member
