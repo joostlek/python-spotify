@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 from importlib import metadata
-from typing import TYPE_CHECKING, Any, Callable, Concatenate, Self
+from typing import TYPE_CHECKING, Any, Concatenate, Self
 
 from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
@@ -79,7 +79,7 @@ from spotifyaio.models import (
 from spotifyaio.util import get_identifier
 
 if TYPE_CHECKING:
-    from collections.abc import Awaitable
+    from collections.abc import Awaitable, Callable
 
     from spotifyaio import SimplifiedAlbum, SimplifiedTrack, Track
 
@@ -275,7 +275,7 @@ class SpotifyClient:
         params: dict[str, Any] = {"ids": ",".join(identifiers)}
         response = await self._get("v1/me/albums/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
-        return dict(zip(identifiers, body))
+        return dict(zip(identifiers, body, strict=False))
 
     async def is_album_saved(self, album_id: str) -> bool:
         """Check if album is saved."""
@@ -395,7 +395,7 @@ class SpotifyClient:
         params: dict[str, Any] = {"ids": ",".join(identifiers)}
         response = await self._get("v1/me/audiobooks/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
-        return dict(zip(identifiers, body))
+        return dict(zip(identifiers, body, strict=False))
 
     @catch_json_decode_error
     async def get_categories(self) -> list[Category]:
@@ -495,7 +495,7 @@ class SpotifyClient:
         params: dict[str, Any] = {"ids": ",".join(identifiers)}
         response = await self._get("v1/me/episodes/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
-        return dict(zip(identifiers, body))
+        return dict(zip(identifiers, body, strict=False))
 
     async def is_episode_saved(self, episode_id: str) -> bool:
         """Check if episode is saved."""
@@ -868,7 +868,7 @@ class SpotifyClient:
         params: dict[str, Any] = {"ids": ",".join(identifiers)}
         response = await self._get("v1/me/shows/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
-        return dict(zip(identifiers, body))
+        return dict(zip(identifiers, body, strict=False))
 
     async def is_show_saved(self, show_id: str) -> bool:
         """Check if show is saved."""
@@ -922,7 +922,7 @@ class SpotifyClient:
         params: dict[str, Any] = {"ids": ",".join(identifiers)}
         response = await self._get("v1/me/tracks/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
-        return dict(zip(identifiers, body))
+        return dict(zip(identifiers, body, strict=False))
 
     async def is_track_saved(self, track_id: str) -> bool:
         """Check if track is saved."""
@@ -1019,7 +1019,7 @@ class SpotifyClient:
         params: dict[str, Any] = {"type": follow_type, "ids": ",".join(identifiers)}
         response = await self._get("v1/me/following/contains", params=params)
         body: list[bool] = orjson.loads(response)  # pylint: disable=no-member
-        return dict(zip(identifiers, body))
+        return dict(zip(identifiers, body, strict=False))
 
     @catch_json_decode_error
     async def is_following_playlist(self, playlist_id: str) -> bool:
