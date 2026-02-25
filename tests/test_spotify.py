@@ -115,58 +115,6 @@ async def test_timeout(
             assert await spotify.get_playback()
 
 
-async def test_get_albums(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving albums."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/albums?ids=3IqzqH6ShrRtie9Yd2ODyG%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
-        status=200,
-        body=load_fixture("albums.json"),
-    )
-    response = await authenticated_client.get_albums(
-        [
-            "spotify:album:3IqzqH6ShrRtie9Yd2ODyG",
-            "1A2GTWGtFfWp7KSQTwWOyo",
-            "2noRn2Aes5aoNVsU6iWTh",
-        ]
-    )
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/albums",
-        METH_GET,
-        headers=HEADERS,
-        params={
-            "ids": "3IqzqH6ShrRtie9Yd2ODyG,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
-        },
-        json=None,
-    )
-
-
-async def test_get_no_albums(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving no albums."""
-    response = await authenticated_client.get_albums([])
-    assert response == []
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_too_many_albums(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving too many albums."""
-    with pytest.raises(
-        ValueError, match="Maximum of 20 albums can be requested at once"
-    ):
-        await authenticated_client.get_albums(["abc"] * 21)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
 async def test_get_album_tracks(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
@@ -328,36 +276,6 @@ async def test_checking_too_many_saved_albums(
     with pytest.raises(ValueError, match="Maximum of 20 albums can be checked at once"):
         await authenticated_client.are_albums_saved(["abc"] * 21)
     responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_audiobooks(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving audiobooks."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/audiobooks?ids=3o0RYoo5iOMKSmEbunsbvW%252C1A2GTWGtFfWp7KSQTwWOyo%252C2noRn2Aes5aoNVsU6iWTh",
-        status=200,
-        body=load_fixture("audiobooks.json"),
-    )
-    response = await authenticated_client.get_audiobooks(
-        [
-            "spotify:episode:3o0RYoo5iOMKSmEbunsbvW",
-            "1A2GTWGtFfWp7KSQTwWOyo",
-            "2noRn2Aes5aoNVsU6iWTh",
-        ]
-    )
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/audiobooks",
-        METH_GET,
-        headers=HEADERS,
-        params={
-            "ids": "3o0RYoo5iOMKSmEbunsbvW,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWTh"
-        },
-        json=None,
-    )
 
 
 @pytest.mark.parametrize(
@@ -959,50 +877,6 @@ async def test_get_playlist_variation(
     )
 
 
-async def test_get_featured_playlists(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving playback state."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/browse/featured-playlists?limit=48",
-        status=200,
-        body=load_fixture("featured_playlists.json"),
-    )
-    response = await authenticated_client.get_featured_playlists()
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/browse/featured-playlists",
-        METH_GET,
-        headers=HEADERS,
-        params={"limit": 48},
-        json=None,
-    )
-
-
-async def test_get_category_playlists(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving playback state."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/browse/categories/rock/playlists?limit=48",
-        status=200,
-        body=load_fixture("category_playlists.json"),
-    )
-    response = await authenticated_client.get_category_playlists("rock")
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/browse/categories/rock/playlists",
-        METH_GET,
-        headers=HEADERS,
-        params={"limit": 48},
-        json=None,
-    )
-
-
 async def test_get_current_user(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
@@ -1018,28 +892,6 @@ async def test_get_current_user(
     assert response == snapshot
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me",
-        METH_GET,
-        headers=HEADERS,
-        params=None,
-        json=None,
-    )
-
-
-async def test_get_user(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving user."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/users/smedjan",
-        status=200,
-        body=load_fixture("user.json"),
-    )
-    response = await authenticated_client.get_user("smedjan")
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/users/smedjan",
         METH_GET,
         headers=HEADERS,
         params=None,
@@ -1245,50 +1097,6 @@ async def test_get_top_tracks(
     )
 
 
-async def test_get_new_releases(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving new releases."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/browse/new-releases?limit=48",
-        status=200,
-        body=load_fixture("new_releases.json"),
-    )
-    response = await authenticated_client.get_new_releases()
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/browse/new-releases",
-        METH_GET,
-        headers=HEADERS,
-        params={"limit": 48},
-        json=None,
-    )
-
-
-async def test_get_category(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving a category."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/browse/categories/dinner",
-        status=200,
-        body=load_fixture("category.json"),
-    )
-    response = await authenticated_client.get_category("dinner")
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/browse/categories/dinner",
-        METH_GET,
-        headers=HEADERS,
-        params=None,
-        json=None,
-    )
-
-
 async def test_get_artist(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
@@ -1311,55 +1119,6 @@ async def test_get_artist(
     )
 
 
-async def test_get_several_artists(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving several artists."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/artists?ids=2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6",
-        status=200,
-        body=load_fixture("artists.json"),
-    )
-    response = await authenticated_client.get_artists(
-        ["2CIMQHirSU0MQqyYHq0eOx", "57dN52uHvrHOxijzpIgu3E", "1vCWHaC5f2uS3yhpwWbIA6"]
-    )
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/artists",
-        METH_GET,
-        headers=HEADERS,
-        params={
-            "ids": "2CIMQHirSU0MQqyYHq0eOx,"
-            "57dN52uHvrHOxijzpIgu3E,"
-            "1vCWHaC5f2uS3yhpwWbIA6"
-        },
-        json=None,
-    )
-
-
-async def test_get_no_artists(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving no artists."""
-    assert await authenticated_client.get_artists([]) == []
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_too_many_artists(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving too many artists."""
-    with pytest.raises(
-        ValueError, match="Maximum of 50 artists can be requested at once"
-    ):
-        await authenticated_client.get_artists(["abc"] * 51)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
 async def test_get_artist_albums(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
@@ -1378,30 +1137,6 @@ async def test_get_artist_albums(
         METH_GET,
         headers=HEADERS,
         params={"limit": 48},
-        json=None,
-    )
-
-
-async def test_get_artist_top_tracks(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving top tracks of an artist."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks",
-        status=200,
-        body=load_fixture("artist_top_tracks.json"),
-    )
-    response = await authenticated_client.get_artist_top_tracks(
-        "0TnOYISbd1XYRBk9myaseg"
-    )
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks",
-        METH_GET,
-        headers=HEADERS,
-        params=None,
         json=None,
     )
 
@@ -1628,28 +1363,6 @@ async def test_get_show_episodes(
     )
 
 
-async def test_get_categories(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving categories."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/browse/categories?limit=48",
-        status=200,
-        body=load_fixture("categories.json"),
-    )
-    response = await authenticated_client.get_categories()
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/browse/categories",
-        METH_GET,
-        headers=HEADERS,
-        params={"limit": 48},
-        json=None,
-    )
-
-
 async def test_get_chapter(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
@@ -1670,96 +1383,6 @@ async def test_get_chapter(
         params=None,
         json=None,
     )
-
-
-async def test_get_several_chapters(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving several chapters."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/chapters?ids=3NW4BmIOG0qzQZgtLgsydR%2C0TnOYISbd1XYRBk9myaseg",
-        status=200,
-        body=load_fixture("chapters.json"),
-    )
-    response = await authenticated_client.get_chapters(
-        ["3NW4BmIOG0qzQZgtLgsydR", "0TnOYISbd1XYRBk9myaseg"]
-    )
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/chapters",
-        METH_GET,
-        headers=HEADERS,
-        params={"ids": "3NW4BmIOG0qzQZgtLgsydR,0TnOYISbd1XYRBk9myaseg"},
-        json=None,
-    )
-
-
-async def test_get_no_chapters(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving no chapters."""
-    assert await authenticated_client.get_chapters([]) == []
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_too_many_chapters(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving too many chapters."""
-    with pytest.raises(
-        ValueError, match="Maximum of 50 chapters can be requested at once"
-    ):
-        await authenticated_client.get_chapters(["abc"] * 51)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_episodes(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving episodes."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/episodes?ids=3o0RYoo5iOMKSmEbunsbvW%2C3o0RYoo5iOMKSmEbunsbvW",
-        status=200,
-        body=load_fixture("episodes.json"),
-    )
-    response = await authenticated_client.get_episodes(
-        ["3o0RYoo5iOMKSmEbunsbvW", "3o0RYoo5iOMKSmEbunsbvW"]
-    )
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/episodes",
-        METH_GET,
-        headers=HEADERS,
-        params={"ids": "3o0RYoo5iOMKSmEbunsbvW,3o0RYoo5iOMKSmEbunsbvW"},
-        json=None,
-    )
-
-
-async def test_get_no_episodes(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving no episodes."""
-    assert await authenticated_client.get_episodes([]) == []
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_too_many_episodes(
-    responses: aioresponses,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving too many episodes."""
-    with pytest.raises(
-        ValueError, match="Maximum of 50 episodes can be requested at once"
-    ):
-        await authenticated_client.get_episodes(["abc"] * 51)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
 
 
 async def test_get_saved_episodes(
@@ -2154,28 +1777,6 @@ async def test_remove_too_many_playlist_items(
             "37i9dQZF1DXcBWIGoYBM5M", uris=["abc"] * 101
         )
     responses.assert_not_called()  # type: ignore[no-untyped-call]
-
-
-async def test_get_playlists_for_user(
-    responses: aioresponses,
-    snapshot: SnapshotAssertion,
-    authenticated_client: SpotifyClient,
-) -> None:
-    """Test retrieving playlists for a user."""
-    responses.get(
-        f"{SPOTIFY_URL}/v1/user/smedjan/playlists?limit=48",
-        status=200,
-        body=load_fixture("user_playlist.json"),
-    )
-    response = await authenticated_client.get_playlists_for_user("smedjan")
-    assert response == snapshot
-    responses.assert_called_once_with(
-        f"{SPOTIFY_URL}/v1/user/smedjan/playlists",
-        METH_GET,
-        headers=HEADERS,
-        params={"limit": 48},
-        json=None,
-    )
 
 
 @pytest.mark.parametrize(

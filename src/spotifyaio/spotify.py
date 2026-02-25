@@ -20,33 +20,21 @@ from spotifyaio.exceptions import (
 )
 from spotifyaio.models import (
     Album,
-    AlbumsResponse,
     AlbumTracksResponse,
     Artist,
-    ArtistResponse,
-    ArtistTopTracksResponse,
     Audiobook,
     AudiobookChapterResponse,
-    AudiobooksResponse,
     AudioFeatures,
     BasePlaylist,
-    BaseUserProfile,
-    CategoriesResponse,
-    Category,
-    CategoryPlaylistResponse,
     Chapter,
-    ChaptersResponse,
     CurrentPlaying,
     Device,
     Devices,
     Episode,
-    EpisodesResponse,
-    FeaturedPlaylistResponse,
     FollowedArtistResponse,
     FollowType,
     Image,
     ModifyPlaylistResponse,
-    NewReleasesResponse,
     NewReleasesResponseInner,
     PlaybackState,
     PlayedTrack,
@@ -211,20 +199,6 @@ class SpotifyClient:
         return Album.from_json(response)
 
     @catch_json_decode_error
-    async def get_albums(self, album_ids: list[str]) -> list[Album]:
-        """Get albums."""
-        if not album_ids:
-            return []
-        if len(album_ids) > 20:
-            msg = "Maximum of 20 albums can be requested at once"
-            raise ValueError(msg)
-        params: dict[str, Any] = {
-            "ids": ",".join([get_identifier(i) for i in album_ids])
-        }
-        response = await self._get("v1/albums", params=params)
-        return AlbumsResponse.from_json(response).albums
-
-    @catch_json_decode_error
     async def get_album_tracks(self, album_id: str) -> list[SimplifiedTrack]:
         """Get album tracks."""
         identifier = get_identifier(album_id)
@@ -283,32 +257,11 @@ class SpotifyClient:
         return (await self.are_albums_saved([identifier]))[identifier]
 
     @catch_json_decode_error
-    async def get_new_releases(self) -> list[SimplifiedAlbum]:
-        """Get new releases."""
-        params: dict[str, Any] = {"limit": 48}
-        response = await self._get("v1/browse/new-releases", params=params)
-        return NewReleasesResponse.from_json(response).albums.items
-
-    @catch_json_decode_error
     async def get_artist(self, artist_id: str) -> Artist:
         """Get artist."""
         identifier = artist_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/artists/{identifier}")
         return Artist.from_json(response)
-
-    @catch_json_decode_error
-    async def get_artists(self, artist_ids: list[str]) -> list[Artist]:
-        """Get several artists."""
-        if not artist_ids:
-            return []
-        if len(artist_ids) > 50:
-            msg = "Maximum of 50 artists can be requested at once"
-            raise ValueError(msg)
-        params: dict[str, Any] = {
-            "ids": ",".join([get_identifier(i) for i in artist_ids])
-        }
-        response = await self._get("v1/artists", params=params)
-        return ArtistResponse.from_json(response).artists
 
     @catch_json_decode_error
     async def get_artist_albums(self, artist_id: str) -> list[SimplifiedAlbum]:
@@ -319,26 +272,11 @@ class SpotifyClient:
         return NewReleasesResponseInner.from_json(response).items
 
     @catch_json_decode_error
-    async def get_artist_top_tracks(self, artist_id: str) -> list[Track]:
-        """Get artist top tracks."""
-        identifier = artist_id.rsplit(":", maxsplit=1)[-1]
-        response = await self._get(f"v1/artists/{identifier}/top-tracks")
-        return ArtistTopTracksResponse.from_json(response).tracks
-
-    @catch_json_decode_error
     async def get_audiobook(self, audiobook_id: str) -> Audiobook:
         """Get audiobook."""
         identifier = get_identifier(audiobook_id)
         response = await self._get(f"v1/audiobooks/{identifier}")
         return Audiobook.from_json(response)
-
-    @catch_json_decode_error
-    async def get_audiobooks(self, audiobook_ids: list[str]) -> list[Audiobook]:
-        """Get audiobooks."""
-        identifiers = [get_identifier(i) for i in audiobook_ids]
-        params: dict[str, Any] = {"ids": ",".join(identifiers)}
-        response = await self._get("v1/audiobooks", params=params)
-        return AudiobooksResponse.from_json(response).audiobooks
 
     @catch_json_decode_error
     async def get_audiobook_chapters(
@@ -398,19 +336,6 @@ class SpotifyClient:
         return dict(zip(identifiers, body, strict=False))
 
     @catch_json_decode_error
-    async def get_categories(self) -> list[Category]:
-        """Get list of categories."""
-        params: dict[str, Any] = {"limit": 48}
-        response = await self._get("v1/browse/categories", params=params)
-        return CategoriesResponse.from_json(response).categories.items
-
-    @catch_json_decode_error
-    async def get_category(self, category_id: str) -> Category:
-        """Get category."""
-        response = await self._get(f"v1/browse/categories/{category_id}")
-        return Category.from_json(response)
-
-    @catch_json_decode_error
     async def get_chapter(self, chapter_id: str) -> Chapter:
         """Get chapter."""
         identifier = chapter_id.rsplit(":", maxsplit=1)[-1]
@@ -418,39 +343,11 @@ class SpotifyClient:
         return Chapter.from_json(response)
 
     @catch_json_decode_error
-    async def get_chapters(self, chapter_ids: list[str]) -> list[Chapter]:
-        """Get chapters."""
-        if not chapter_ids:
-            return []
-        if len(chapter_ids) > 50:
-            msg = "Maximum of 50 chapters can be requested at once"
-            raise ValueError(msg)
-        params: dict[str, Any] = {
-            "ids": ",".join([get_identifier(i) for i in chapter_ids])
-        }
-        response = await self._get("v1/chapters", params=params)
-        return ChaptersResponse.from_json(response).chapters
-
-    @catch_json_decode_error
     async def get_episode(self, episode_id: str) -> Episode:
         """Get episode."""
         identifier = episode_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/episodes/{identifier}")
         return Episode.from_json(response)
-
-    @catch_json_decode_error
-    async def get_episodes(self, episode_ids: list[str]) -> list[Episode]:
-        """Get episodes."""
-        if not episode_ids:
-            return []
-        if len(episode_ids) > 50:
-            msg = "Maximum of 50 episodes can be requested at once"
-            raise ValueError(msg)
-        params: dict[str, Any] = {
-            "ids": ",".join([get_identifier(i) for i in episode_ids])
-        }
-        response = await self._get("v1/episodes", params=params)
-        return EpisodesResponse.from_json(response).episodes
 
     @catch_json_decode_error
     async def get_saved_episodes(self) -> list[SavedEpisode]:
@@ -667,6 +564,13 @@ class SpotifyClient:
         await self._put(f"v1/playlists/{identifier}", data=data)
 
     @catch_json_decode_error
+    async def get_playlists_for_current_user(self) -> list[BasePlaylist]:
+        """Get playlists."""
+        params: dict[str, Any] = {"limit": 48}
+        response = await self._get("v1/me/playlists", params=params)
+        return PlaylistResponse.from_json(response).items
+
+    @catch_json_decode_error
     async def get_playlist_items(self, playlist_id: str) -> list[PlaylistTrack]:
         """Get playlist tracks."""
         identifier = get_identifier(playlist_id)
@@ -736,21 +640,6 @@ class SpotifyClient:
         return ModifyPlaylistResponse.from_json(response).snapshot_id
 
     @catch_json_decode_error
-    async def get_playlists_for_current_user(self) -> list[BasePlaylist]:
-        """Get playlists."""
-        params: dict[str, Any] = {"limit": 48}
-        response = await self._get("v1/me/playlists", params=params)
-        return PlaylistResponse.from_json(response).items
-
-    @catch_json_decode_error
-    async def get_playlists_for_user(self, user_id: str) -> list[BasePlaylist]:
-        """Get playlists."""
-        identifier = get_identifier(user_id)
-        params: dict[str, Any] = {"limit": 48}
-        response = await self._get(f"v1/user/{identifier}/playlists", params=params)
-        return PlaylistResponse.from_json(response).items
-
-    @catch_json_decode_error
     async def create_playlist(
         self,
         user_id: str,
@@ -771,23 +660,6 @@ class SpotifyClient:
             data["collaborative"] = collaborative
         response = await self._post(f"v1/users/{identifier}/playlists", data=data)
         return Playlist.from_json(response)
-
-    @catch_json_decode_error
-    async def get_featured_playlists(self) -> list[BasePlaylist]:
-        """Get featured playlists."""
-        params: dict[str, Any] = {"limit": 48}
-        response = await self._get("v1/browse/featured-playlists", params=params)
-        return FeaturedPlaylistResponse.from_json(response).playlists.items
-
-    @catch_json_decode_error
-    async def get_category_playlists(self, category_id: str) -> list[BasePlaylist]:
-        """Get category playlists."""
-        params: dict[str, Any] = {"limit": 48}
-        response = await self._get(
-            f"v1/browse/categories/{category_id}/playlists",
-            params=params,
-        )
-        return CategoryPlaylistResponse.from_json(response).playlists.items
 
     @catch_json_decode_error
     async def get_playlist_cover_image(self, playlist_id: str) -> list[Image]:
@@ -955,12 +827,6 @@ class SpotifyClient:
         params: dict[str, Any] = {"limit": 48}
         response = await self._get("v1/me/top/tracks", params=params)
         return TopTracksResponse.from_json(response).items
-
-    @catch_json_decode_error
-    async def get_user(self, user_id: str) -> BaseUserProfile:
-        """Get user."""
-        response = await self._get(f"v1/users/{user_id}")
-        return BaseUserProfile.from_json(response)
 
     async def follow_playlist(self, playlist_id: str) -> None:
         """Follow a playlist."""
