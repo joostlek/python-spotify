@@ -1,2274 +1,2274 @@
 {
-    "href": "https://api.spotify.com/v1/users/1112264649/playlists?offset=0&limit=48",
-    "limit": 48,
-    "next": "https://api.spotify.com/v1/users/1112264649/playlists?offset=48&limit=48",
-    "offset": 0,
-    "previous": null,
-    "total": 94,
-    "items": [
+  "href": "https://api.spotify.com/v1/users/1112264649/playlists?offset=0&limit=48",
+  "limit": 48,
+  "next": "https://api.spotify.com/v1/users/1112264649/playlists?offset=48&limit=48",
+  "offset": 0,
+  "previous": null,
+  "total": 94,
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1Cp6VQCKf2VL4sP09jN9oX"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX",
+      "id": "1Cp6VQCKf2VL4sP09jN9oX",
+      "images": [
         {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/1Cp6VQCKf2VL4sP09jN9oX"
-            },
-            "href": "https://api.spotify.com/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX",
-            "id": "1Cp6VQCKf2VL4sP09jN9oX",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e022f41071676f4f50842581fb4",
-                    "width": null
-                }
-            ],
-            "name": "To find",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAAqEcxS92ddZ6R83Q8TWFhYshm18s",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/tracks",
-                "total": 1
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items",
-                "total": 1
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:1Cp6VQCKf2VL4sP09jN9oX"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0Wsgrrb7PCORhHq5L7wF0d"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0Wsgrrb7PCORhHq5L7wF0d",
-            "id": "0Wsgrrb7PCORhHq5L7wF0d",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e0204290e7559226bf75ac34da8",
-                    "width": null
-                }
-            ],
-            "name": "Repeat ones",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAA9Or/3CAEwspEWBNRjmXsGtIRpiq",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0Wsgrrb7PCORhHq5L7wF0d/tracks",
-                "total": 1
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0Wsgrrb7PCORhHq5L7wF0d/items",
-                "total": 1
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0Wsgrrb7PCORhHq5L7wF0d"
-        },
-        {
-            "collaborative": false,
-            "description": "New playlist description",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB",
-            "id": "2dGgoMPWpapXYA6rX7ZbbB",
-            "images": null,
-            "name": "New Playlist",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAAfu2PYguJO6XYV1gFlnjUp0umkry",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB/tracks",
-                "total": 0
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB/items",
-                "total": 0
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB"
-        },
-        {
-            "collaborative": true,
-            "description": "Updated playlist description",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4hQFqB1AtOpzsAv01E8n6c"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4hQFqB1AtOpzsAv01E8n6c",
-            "id": "4hQFqB1AtOpzsAv01E8n6c",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e0206c0d7ebcabad0c39b566983",
-                    "width": null
-                }
-            ],
-            "name": "Updated Playlist Name2",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4hQFqB1AtOpzsAv01E8n6c/tracks",
-                "total": 1
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4hQFqB1AtOpzsAv01E8n6c/items",
-                "total": 1
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4hQFqB1AtOpzsAv01E8n6c"
-        },
-        {
-            "collaborative": false,
-            "description": "A musical time capsule from the past has been unsealed\u2026!",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2G2eo5DxAtxLu7aNGVvNpY"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2G2eo5DxAtxLu7aNGVvNpY",
-            "id": "2G2eo5DxAtxLu7aNGVvNpY",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8416264ef6071da49cbe93a951",
-                    "width": null
-                }
-            ],
-            "name": "My 2024 Playlist in a Bottle",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAA49BO4ePrhQ9Y7ENMXmDik23Vv27",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2G2eo5DxAtxLu7aNGVvNpY/tracks",
-                "total": 3
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2G2eo5DxAtxLu7aNGVvNpY/items",
-                "total": 3
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2G2eo5DxAtxLu7aNGVvNpY"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/5t75uJ5vBvEdbbvs5uIqXJ"
-            },
-            "href": "https://api.spotify.com/v1/playlists/5t75uJ5vBvEdbbvs5uIqXJ",
-            "id": "5t75uJ5vBvEdbbvs5uIqXJ",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e0205c6f48cceeb832778012b21",
-                    "width": null
-                }
-            ],
-            "name": "Sweet",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAABOQvUVBN2G4BB0mGopx4KP5uBnu+",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/5t75uJ5vBvEdbbvs5uIqXJ/tracks",
-                "total": 3
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/5t75uJ5vBvEdbbvs5uIqXJ/items",
-                "total": 3
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:5t75uJ5vBvEdbbvs5uIqXJ"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0pM0KTMXM7K5qr3sL2DPw1"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0pM0KTMXM7K5qr3sL2DPw1",
-            "id": "0pM0KTMXM7K5qr3sL2DPw1",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02991e1b6c088e2abc38f584c8",
-                    "width": null
-                }
-            ],
-            "name": "Pain",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAACAnbhCSBgmOCZb+KmWOAhPdGgQDl",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0pM0KTMXM7K5qr3sL2DPw1/tracks",
-                "total": 3
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0pM0KTMXM7K5qr3sL2DPw1/items",
-                "total": 3
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0pM0KTMXM7K5qr3sL2DPw1"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4WkWJ0EjHEFASDevhM8oPw"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4WkWJ0EjHEFASDevhM8oPw",
-            "id": "4WkWJ0EjHEFASDevhM8oPw",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02d061f5bfae8d38558f3698c1",
-                    "width": null
-                }
-            ],
-            "name": "Hyper",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAA2+SfV6gJVq8OgnZwG0ssjUTdfvu",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4WkWJ0EjHEFASDevhM8oPw/tracks",
-                "total": 1
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4WkWJ0EjHEFASDevhM8oPw/items",
-                "total": 1
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4WkWJ0EjHEFASDevhM8oPw"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/1RHirWgH1weMsBLi4KOK9d"
-            },
-            "href": "https://api.spotify.com/v1/playlists/1RHirWgH1weMsBLi4KOK9d",
-            "id": "1RHirWgH1weMsBLi4KOK9d",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6",
-                    "width": 60
-                }
-            ],
-            "name": "Ain\u2019t got shit on me",
-            "owner": {
-                "display_name": "Rensie",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/317g2sbpe3ccycu45fes6lfr5lpe"
-                },
-                "href": "https://api.spotify.com/v1/users/317g2sbpe3ccycu45fes6lfr5lpe",
-                "id": "317g2sbpe3ccycu45fes6lfr5lpe",
-                "type": "user",
-                "uri": "spotify:user:317g2sbpe3ccycu45fes6lfr5lpe"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAIObZq+YDDwTjnpqp2AjyuHn8az3Z",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/1RHirWgH1weMsBLi4KOK9d/tracks",
-                "total": 30
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/1RHirWgH1weMsBLi4KOK9d/items",
-                "total": 30
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:1RHirWgH1weMsBLi4KOK9d"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2ZfissHhjQnhlmD54h6elH"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2ZfissHhjQnhlmD54h6elH",
-            "id": "2ZfissHhjQnhlmD54h6elH",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0200295a5d7ed6dd3eccb60364ab67616d00001e02723d4df900fd02eff83579d9ab67616d00001e027f8859341a395010424f106bab67616d00001e02c506dbc3f05d3ce4daf355c4",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0200295a5d7ed6dd3eccb60364ab67616d00001e02723d4df900fd02eff83579d9ab67616d00001e027f8859341a395010424f106bab67616d00001e02c506dbc3f05d3ce4daf355c4",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0200295a5d7ed6dd3eccb60364ab67616d00001e02723d4df900fd02eff83579d9ab67616d00001e027f8859341a395010424f106bab67616d00001e02c506dbc3f05d3ce4daf355c4",
-                    "width": 60
-                }
-            ],
-            "name": "Billie (interlude)",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAClUPy5QailhNAJTG2FeUlNQlhCeC",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2ZfissHhjQnhlmD54h6elH/tracks",
-                "total": 7
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2ZfissHhjQnhlmD54h6elH/items",
-                "total": 7
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2ZfissHhjQnhlmD54h6elH"
-        },
-        {
-            "collaborative": false,
-            "description": "Missing: Metrik - Techtonic;  GAJATE - Baile Funk",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/1vOHEgZ5UszkWycPjnG2Uo"
-            },
-            "href": "https://api.spotify.com/v1/playlists/1vOHEgZ5UszkWycPjnG2Uo",
-            "id": "1vOHEgZ5UszkWycPjnG2Uo",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84dce297c9b2a3b46d3c0a41fb",
-                    "width": null
-                }
-            ],
-            "name": "Forza Horizon 5 Bass Arena",
-            "owner": {
-                "display_name": "SylveonTribe",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/rwilming"
-                },
-                "href": "https://api.spotify.com/v1/users/rwilming",
-                "id": "rwilming",
-                "type": "user",
-                "uri": "spotify:user:rwilming"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAGJBy9g8BoxcGY9PlK235g29V5iDv",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/1vOHEgZ5UszkWycPjnG2Uo/tracks",
-                "total": 17
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/1vOHEgZ5UszkWycPjnG2Uo/items",
-                "total": 17
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:1vOHEgZ5UszkWycPjnG2Uo"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0Jgs7FxHX86twpgCDehAHv"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0Jgs7FxHX86twpgCDehAHv",
-            "id": "0Jgs7FxHX86twpgCDehAHv",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e02a056a29ccd190522d6e64114ab67616d00001e02d0e28d91b4de74babd1908a9ab67616d00001e02e729e0662930665af38db5ad",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e02a056a29ccd190522d6e64114ab67616d00001e02d0e28d91b4de74babd1908a9ab67616d00001e02e729e0662930665af38db5ad",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e02a056a29ccd190522d6e64114ab67616d00001e02d0e28d91b4de74babd1908a9ab67616d00001e02e729e0662930665af38db5ad",
-                    "width": 60
-                }
-            ],
-            "name": "Cr\u00e8me",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAB5JoBY6tdwVKDKeugz64oxGvXNX8",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0Jgs7FxHX86twpgCDehAHv/tracks",
-                "total": 6
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0Jgs7FxHX86twpgCDehAHv/items",
-                "total": 6
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0Jgs7FxHX86twpgCDehAHv"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/6fHmmdjd2Urd7DAhb4bqOB"
-            },
-            "href": "https://api.spotify.com/v1/playlists/6fHmmdjd2Urd7DAhb4bqOB",
-            "id": "6fHmmdjd2Urd7DAhb4bqOB",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e025958d5d767c63fcf27c20c9cab67616d00001e0288fed14b936c38007a302413ab67616d00001e02936563d574a962c9e59afda4ab67616d00001e02ab37ab7ce23fb1f13c6c5866",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e025958d5d767c63fcf27c20c9cab67616d00001e0288fed14b936c38007a302413ab67616d00001e02936563d574a962c9e59afda4ab67616d00001e02ab37ab7ce23fb1f13c6c5866",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e025958d5d767c63fcf27c20c9cab67616d00001e0288fed14b936c38007a302413ab67616d00001e02936563d574a962c9e59afda4ab67616d00001e02ab37ab7ce23fb1f13c6c5866",
-                    "width": 60
-                }
-            ],
-            "name": "My Shazam Tracks",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAABWHcOmMJhCMpNqc5zVozVx9Lbcnk4",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/6fHmmdjd2Urd7DAhb4bqOB/tracks",
-                "total": 532
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/6fHmmdjd2Urd7DAhb4bqOB/items",
-                "total": 532
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:6fHmmdjd2Urd7DAhb4bqOB"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/5H2U7tZb9dMSHPwi20XcuD"
-            },
-            "href": "https://api.spotify.com/v1/playlists/5H2U7tZb9dMSHPwi20XcuD",
-            "id": "5H2U7tZb9dMSHPwi20XcuD",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e021c7f9645cc7b97312fe00fb9ab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02f677c5754726a2eb54c807feab67616d00001e02fe8c4d2d61fa92202800947c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e021c7f9645cc7b97312fe00fb9ab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02f677c5754726a2eb54c807feab67616d00001e02fe8c4d2d61fa92202800947c",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e021c7f9645cc7b97312fe00fb9ab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02f677c5754726a2eb54c807feab67616d00001e02fe8c4d2d61fa92202800947c",
-                    "width": 60
-                }
-            ],
-            "name": "Likes",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAJKzTbmZHqmOUqQe1xOWb4eZgf1n/",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/5H2U7tZb9dMSHPwi20XcuD/tracks",
-                "total": 4276
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/5H2U7tZb9dMSHPwi20XcuD/items",
-                "total": 4276
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:5H2U7tZb9dMSHPwi20XcuD"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/709T4OzANnUi2lKQLlVkrE"
-            },
-            "href": "https://api.spotify.com/v1/playlists/709T4OzANnUi2lKQLlVkrE",
-            "id": "709T4OzANnUi2lKQLlVkrE",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0226168325581434cdbfcf0f2aab67616d00001e02336a313426983a122d8ed70cab67616d00001e029b90e4ccf55c0a23a13f4eaeab67616d00001e02d3a20da9371b8e8624fd047b",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0226168325581434cdbfcf0f2aab67616d00001e02336a313426983a122d8ed70cab67616d00001e029b90e4ccf55c0a23a13f4eaeab67616d00001e02d3a20da9371b8e8624fd047b",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0226168325581434cdbfcf0f2aab67616d00001e02336a313426983a122d8ed70cab67616d00001e029b90e4ccf55c0a23a13f4eaeab67616d00001e02d3a20da9371b8e8624fd047b",
-                    "width": 60
-                }
-            ],
-            "name": "March '22",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAABSHXFNYmStGaJrf8U+9GY1WQ0Smd",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/709T4OzANnUi2lKQLlVkrE/tracks",
-                "total": 4
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/709T4OzANnUi2lKQLlVkrE/items",
-                "total": 4
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:709T4OzANnUi2lKQLlVkrE"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/57ZuuAVl0eAZvhisoFP3SC"
-            },
-            "href": "https://api.spotify.com/v1/playlists/57ZuuAVl0eAZvhisoFP3SC",
-            "id": "57ZuuAVl0eAZvhisoFP3SC",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02c70a41a26e020661d61c05be",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02c70a41a26e020661d61c05be",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02c70a41a26e020661d61c05be",
-                    "width": 60
-                }
-            ],
-            "name": "February '22",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAFRabb1cD3tb9R4fPIyRjfbLFQitm",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/57ZuuAVl0eAZvhisoFP3SC/tracks",
-                "total": 20
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/57ZuuAVl0eAZvhisoFP3SC/items",
-                "total": 20
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:57ZuuAVl0eAZvhisoFP3SC"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4OI1xDCLFlEcfgaeyowpEu"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4OI1xDCLFlEcfgaeyowpEu",
-            "id": "4OI1xDCLFlEcfgaeyowpEu",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d",
-                    "width": 60
-                }
-            ],
-            "name": "January '22",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAABfwkH1uXlLrIxVPcZ4jdwbjUlYec",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4OI1xDCLFlEcfgaeyowpEu/tracks",
-                "total": 4
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4OI1xDCLFlEcfgaeyowpEu/items",
-                "total": 4
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4OI1xDCLFlEcfgaeyowpEu"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4NsY2DKzQIjaajal5L25Kt"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4NsY2DKzQIjaajal5L25Kt",
-            "id": "4NsY2DKzQIjaajal5L25Kt",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e0290eb2694488164403ad812e9ab67616d00001e02d2d57ba12d531fc8eaaf49cd",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e0290eb2694488164403ad812e9ab67616d00001e02d2d57ba12d531fc8eaaf49cd",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e0290eb2694488164403ad812e9ab67616d00001e02d2d57ba12d531fc8eaaf49cd",
-                    "width": 60
-                }
-            ],
-            "name": "December '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAACCA8BqKuDt6UH0mCm/3TnfPN9bpw",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4NsY2DKzQIjaajal5L25Kt/tracks",
-                "total": 7
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4NsY2DKzQIjaajal5L25Kt/items",
-                "total": 7
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4NsY2DKzQIjaajal5L25Kt"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/5dV0IeLCysOP6qEDGzhHw0"
-            },
-            "href": "https://api.spotify.com/v1/playlists/5dV0IeLCysOP6qEDGzhHw0",
-            "id": "5dV0IeLCysOP6qEDGzhHw0",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9",
-                    "width": 60
-                }
-            ],
-            "name": "November '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAADrN0arCi4wX8dU6Je1ZYFFG2K4jo",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/5dV0IeLCysOP6qEDGzhHw0/tracks",
-                "total": 13
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/5dV0IeLCysOP6qEDGzhHw0/items",
-                "total": 13
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:5dV0IeLCysOP6qEDGzhHw0"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/40bvnxNQlivxZ02DmDzNxy"
-            },
-            "href": "https://api.spotify.com/v1/playlists/40bvnxNQlivxZ02DmDzNxy",
-            "id": "40bvnxNQlivxZ02DmDzNxy",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e0276fe2ba0664a6f5cce2d0ac6ab67616d00001e02be6df8bb79d67c727d938f4a",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e0276fe2ba0664a6f5cce2d0ac6ab67616d00001e02be6df8bb79d67c727d938f4a",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e0276fe2ba0664a6f5cce2d0ac6ab67616d00001e02be6df8bb79d67c727d938f4a",
-                    "width": 60
-                }
-            ],
-            "name": "October '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAACpp8xX673vpf+VyajcYJdAHUhKQN",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/40bvnxNQlivxZ02DmDzNxy/tracks",
-                "total": 9
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/40bvnxNQlivxZ02DmDzNxy/items",
-                "total": 9
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:40bvnxNQlivxZ02DmDzNxy"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2ExZs1G4AOluuEwg3q5M1v"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2ExZs1G4AOluuEwg3q5M1v",
-            "id": "2ExZs1G4AOluuEwg3q5M1v",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02548f06ce82f36337bac46e21ab67616d00001e02913a6d7587d853e1dd4c1580",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02548f06ce82f36337bac46e21ab67616d00001e02913a6d7587d853e1dd4c1580",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02548f06ce82f36337bac46e21ab67616d00001e02913a6d7587d853e1dd4c1580",
-                    "width": 60
-                }
-            ],
-            "name": "September '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAFDnqOxyK2DMmmbFjt7I5ySII3OnD",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2ExZs1G4AOluuEwg3q5M1v/tracks",
-                "total": 19
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2ExZs1G4AOluuEwg3q5M1v/items",
-                "total": 19
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2ExZs1G4AOluuEwg3q5M1v"
-        },
-        {
-            "collaborative": false,
-            "description": "de soms niet zo casual weird vibe playlist",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4jNUJLnkZJ32nuFE1PjkGu"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4jNUJLnkZJ32nuFE1PjkGu",
-            "id": "4jNUJLnkZJ32nuFE1PjkGu",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e021308d479a61f2a3b088a5708ab67616d00001e022ffc2c580b6595a3e675a730ab67616d00001e02335092e5a1317f2ee9d701d7ab67616d00001e02395ee31df8ad9108f5775b1c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e021308d479a61f2a3b088a5708ab67616d00001e022ffc2c580b6595a3e675a730ab67616d00001e02335092e5a1317f2ee9d701d7ab67616d00001e02395ee31df8ad9108f5775b1c",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e021308d479a61f2a3b088a5708ab67616d00001e022ffc2c580b6595a3e675a730ab67616d00001e02335092e5a1317f2ee9d701d7ab67616d00001e02395ee31df8ad9108f5775b1c",
-                    "width": 60
-                }
-            ],
-            "name": "Slumpm\u00e4ssiga",
-            "owner": {
-                "display_name": "leanne",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/xleanne_"
-                },
-                "href": "https://api.spotify.com/v1/users/xleanne_",
-                "id": "xleanne_",
-                "type": "user",
-                "uri": "spotify:user:xleanne_"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAASAaQ9ZR0Kk0a2GD+NUAP2DfgqTid",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4jNUJLnkZJ32nuFE1PjkGu/tracks",
-                "total": 107
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4jNUJLnkZJ32nuFE1PjkGu/items",
-                "total": 107
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4jNUJLnkZJ32nuFE1PjkGu"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/700dVjBihCDj2HwyhYDTRp"
-            },
-            "href": "https://api.spotify.com/v1/playlists/700dVjBihCDj2HwyhYDTRp",
-            "id": "700dVjBihCDj2HwyhYDTRp",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e02c0545aaaffd1560eec25b5a1ab67616d00001e02f7fb699c69d6529d4495766d",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e02c0545aaaffd1560eec25b5a1ab67616d00001e02f7fb699c69d6529d4495766d",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e02c0545aaaffd1560eec25b5a1ab67616d00001e02f7fb699c69d6529d4495766d",
-                    "width": 60
-                }
-            ],
-            "name": "August '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAIMxOgErYXRNVEEoQQh3RBcMlgpz2",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/700dVjBihCDj2HwyhYDTRp/tracks",
-                "total": 31
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/700dVjBihCDj2HwyhYDTRp/items",
-                "total": 31
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:700dVjBihCDj2HwyhYDTRp"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/6B5dmWX7pK2LHHtS6ph265"
-            },
-            "href": "https://api.spotify.com/v1/playlists/6B5dmWX7pK2LHHtS6ph265",
-            "id": "6B5dmWX7pK2LHHtS6ph265",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02d03de263a7e4554713b9a77fab67616d00001e02ebea6d997f62d17e9c4eab6c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02d03de263a7e4554713b9a77fab67616d00001e02ebea6d997f62d17e9c4eab6c",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02d03de263a7e4554713b9a77fab67616d00001e02ebea6d997f62d17e9c4eab6c",
-                    "width": 60
-                }
-            ],
-            "name": "Discover Weekly Archive",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAFmxwywmKeyw2ykACBaq/XgOpW7eUU",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/6B5dmWX7pK2LHHtS6ph265/tracks",
-                "total": 1434
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/6B5dmWX7pK2LHHtS6ph265/items",
-                "total": 1434
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:6B5dmWX7pK2LHHtS6ph265"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0ISThPpDv4JBNeHdptcK6i"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0ISThPpDv4JBNeHdptcK6i",
-            "id": "0ISThPpDv4JBNeHdptcK6i",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0204983fd825ffccc2828f5f5bab67616d00001e02231b8bf75d17c6a4d6770015ab67616d00001e027a890e1103aa7e8304fc062bab67616d00001e02bffd2fc0fd4c3b09d3cd2616",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0204983fd825ffccc2828f5f5bab67616d00001e02231b8bf75d17c6a4d6770015ab67616d00001e027a890e1103aa7e8304fc062bab67616d00001e02bffd2fc0fd4c3b09d3cd2616",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0204983fd825ffccc2828f5f5bab67616d00001e02231b8bf75d17c6a4d6770015ab67616d00001e027a890e1103aa7e8304fc062bab67616d00001e02bffd2fc0fd4c3b09d3cd2616",
-                    "width": 60
-                }
-            ],
-            "name": "Dance vibes",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAF3xuuTFC2OrUZwYf7K4tnMfsaf0N",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0ISThPpDv4JBNeHdptcK6i/tracks",
-                "total": 20
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0ISThPpDv4JBNeHdptcK6i/items",
-                "total": 20
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0ISThPpDv4JBNeHdptcK6i"
-        },
-        {
-            "collaborative": true,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2ElmM8s9Um1XSP07hADX9s"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2ElmM8s9Um1XSP07hADX9s",
-            "id": "2ElmM8s9Um1XSP07hADX9s",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab",
-                    "width": 60
-                }
-            ],
-            "name": "goeien numertjs",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAQ1YIIUoOxc70iCjAaudAkDDb1p2J",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2ElmM8s9Um1XSP07hADX9s/tracks",
-                "total": 62
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2ElmM8s9Um1XSP07hADX9s/items",
-                "total": 62
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2ElmM8s9Um1XSP07hADX9s"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0DRUBqBUSFJH1a7FvBIsGg"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0DRUBqBUSFJH1a7FvBIsGg",
-            "id": "0DRUBqBUSFJH1a7FvBIsGg",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e02e6d896d0369324af77f47e9a",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e02e6d896d0369324af77f47e9a",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e02e6d896d0369324af77f47e9a",
-                    "width": 60
-                }
-            ],
-            "name": "Summer vibes",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAD9aKoW5FG3O6NM2mBhzMZzcZQhGh",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0DRUBqBUSFJH1a7FvBIsGg/tracks",
-                "total": 13
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0DRUBqBUSFJH1a7FvBIsGg/items",
-                "total": 13
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0DRUBqBUSFJH1a7FvBIsGg"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4PSXSX9WhxdjAzSjU175od"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4PSXSX9WhxdjAzSjU175od",
-            "id": "4PSXSX9WhxdjAzSjU175od",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02dc806722f6802a8ea9953c89ab67616d00001e02fa091c156c618ffd26ed2356",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02dc806722f6802a8ea9953c89ab67616d00001e02fa091c156c618ffd26ed2356",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02dc806722f6802a8ea9953c89ab67616d00001e02fa091c156c618ffd26ed2356",
-                    "width": 60
-                }
-            ],
-            "name": "July '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAIOwMEN9rLgafJ2ndIvaQejmBKzK3",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4PSXSX9WhxdjAzSjU175od/tracks",
-                "total": 31
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4PSXSX9WhxdjAzSjU175od/items",
-                "total": 31
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4PSXSX9WhxdjAzSjU175od"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/1XKSZRcsYP6VTkObunDIjQ"
-            },
-            "href": "https://api.spotify.com/v1/playlists/1XKSZRcsYP6VTkObunDIjQ",
-            "id": "1XKSZRcsYP6VTkObunDIjQ",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8",
-                    "width": 60
-                }
-            ],
-            "name": "June '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAMygu/hHO3ngMmH5s9SWLnjOPaYJZ",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/1XKSZRcsYP6VTkObunDIjQ/tracks",
-                "total": 50
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/1XKSZRcsYP6VTkObunDIjQ/items",
-                "total": 50
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:1XKSZRcsYP6VTkObunDIjQ"
-        },
-        {
-            "collaborative": false,
-            "description": "This is a playlist of some of the songs in the Keinemusik set during the beach party in the Cayo Perico mission in Grand Theft Auto 5 ",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/3uCD1EyW3JRx8SV1QnA3Zm"
-            },
-            "href": "https://api.spotify.com/v1/playlists/3uCD1EyW3JRx8SV1QnA3Zm",
-            "id": "3uCD1EyW3JRx8SV1QnA3Zm",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848e09c57d7b2ef2a17e853d4c",
-                    "width": null
-                }
-            ],
-            "name": "GTA Cayo Perico Beach Party: Keinemusik Set",
-            "owner": {
-                "display_name": "Austin Martinez",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/127651589"
-                },
-                "href": "https://api.spotify.com/v1/users/127651589",
-                "id": "127651589",
-                "type": "user",
-                "uri": "spotify:user:127651589"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAILgHyU8L6YfuRuNeifYpOSFjc6Ay",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/3uCD1EyW3JRx8SV1QnA3Zm/tracks",
-                "total": 26
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/3uCD1EyW3JRx8SV1QnA3Zm/items",
-                "total": 26
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:3uCD1EyW3JRx8SV1QnA3Zm"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/3yPujxZ9OiB4By8COZaxaK"
-            },
-            "href": "https://api.spotify.com/v1/playlists/3yPujxZ9OiB4By8COZaxaK",
-            "id": "3yPujxZ9OiB4By8COZaxaK",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02de26b55f9c67f6728d871406",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02de26b55f9c67f6728d871406",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02de26b55f9c67f6728d871406",
-                    "width": 60
-                }
-            ],
-            "name": "May '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAQQLd3S53NXqTS8ApC2f5BmZX88Ub",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/3yPujxZ9OiB4By8COZaxaK/tracks",
-                "total": 64
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/3yPujxZ9OiB4By8COZaxaK/items",
-                "total": 64
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:3yPujxZ9OiB4By8COZaxaK"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4A31OO75jaLCV2r7bvbQUa"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4A31OO75jaLCV2r7bvbQUa",
-            "id": "4A31OO75jaLCV2r7bvbQUa",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19",
-                    "width": 60
-                }
-            ],
-            "name": "April '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAMkpQmpasdKd7sxVBjwbFfPtlQuCH",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4A31OO75jaLCV2r7bvbQUa/tracks",
-                "total": 49
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4A31OO75jaLCV2r7bvbQUa/items",
-                "total": 49
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4A31OO75jaLCV2r7bvbQUa"
-        },
-        {
-            "collaborative": false,
-            "description": "HYPERTECHNO | TECHNO |  SLAP HOUSE | BRAZILIAN BASS | BASS HOUSE | EDM | BASS BOOSTED CAR MUSIC |  FUTURE HOUSE | FUTURE BOUNCE | GYM MOTIVATION",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/6JbGAAe70bKTA3yfddjWTK"
-            },
-            "href": "https://api.spotify.com/v1/playlists/6JbGAAe70bKTA3yfddjWTK",
-            "id": "6JbGAAe70bKTA3yfddjWTK",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da849fa7c9ddef714003c524c89c",
-                    "width": null
-                }
-            ],
-            "name": "BASS BOOSTED CAR MUSIC 2023",
-            "owner": {
-                "display_name": "LIZOT",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/max.kleinschmidt"
-                },
-                "href": "https://api.spotify.com/v1/users/max.kleinschmidt",
-                "id": "max.kleinschmidt",
-                "type": "user",
-                "uri": "spotify:user:max.kleinschmidt"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAEVKAeUtjFyV4KaDQCfKyokSERMrsh",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/6JbGAAe70bKTA3yfddjWTK/tracks",
-                "total": 47
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/6JbGAAe70bKTA3yfddjWTK/items",
-                "total": 47
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:6JbGAAe70bKTA3yfddjWTK"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/6lVbphMrnxl1vIlfPhdA8i"
-            },
-            "href": "https://api.spotify.com/v1/playlists/6lVbphMrnxl1vIlfPhdA8i",
-            "id": "6lVbphMrnxl1vIlfPhdA8i",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02a8316bd5ce0a8cf6bead17f2ab67616d00001e02cf6a74cdef3c4e0d828c4057",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02a8316bd5ce0a8cf6bead17f2ab67616d00001e02cf6a74cdef3c4e0d828c4057",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02a8316bd5ce0a8cf6bead17f2ab67616d00001e02cf6a74cdef3c4e0d828c4057",
-                    "width": 60
-                }
-            ],
-            "name": "March '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAJZmeXYJPuucIlnmPwNBfWXWUO4dG",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/6lVbphMrnxl1vIlfPhdA8i/tracks",
-                "total": 36
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/6lVbphMrnxl1vIlfPhdA8i/items",
-                "total": 36
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:6lVbphMrnxl1vIlfPhdA8i"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/3l0iA85qv43y9aMWztVIHu"
-            },
-            "href": "https://api.spotify.com/v1/playlists/3l0iA85qv43y9aMWztVIHu",
-            "id": "3l0iA85qv43y9aMWztVIHu",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07",
-                    "width": 60
-                }
-            ],
-            "name": "February '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAHEpGSRJ2tk9XKma5yfU+X0JHBbay",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/3l0iA85qv43y9aMWztVIHu/tracks",
-                "total": 27
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/3l0iA85qv43y9aMWztVIHu/items",
-                "total": 27
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:3l0iA85qv43y9aMWztVIHu"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2jp4GK1k1l7I1X67f2EbmD"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2jp4GK1k1l7I1X67f2EbmD",
-            "id": "2jp4GK1k1l7I1X67f2EbmD",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e02136d46f65c783bd9742dfc6dab67616d00001e0221b704f8cfa87252352a50cbab67616d00001e027506c963b821d3b508fb2261ab67616d00001e02808bcc3151a05dbd4805f340",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e02136d46f65c783bd9742dfc6dab67616d00001e0221b704f8cfa87252352a50cbab67616d00001e027506c963b821d3b508fb2261ab67616d00001e02808bcc3151a05dbd4805f340",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e02136d46f65c783bd9742dfc6dab67616d00001e0221b704f8cfa87252352a50cbab67616d00001e027506c963b821d3b508fb2261ab67616d00001e02808bcc3151a05dbd4805f340",
-                    "width": 60
-                }
-            ],
-            "name": "January '21",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAI2CYzXdTK19s58FVBG+8+tlAqSJ8",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2jp4GK1k1l7I1X67f2EbmD/tracks",
-                "total": 34
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2jp4GK1k1l7I1X67f2EbmD/items",
-                "total": 34
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2jp4GK1k1l7I1X67f2EbmD"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/027kb6scBKg9y9dE5nPPTv"
-            },
-            "href": "https://api.spotify.com/v1/playlists/027kb6scBKg9y9dE5nPPTv",
-            "id": "027kb6scBKg9y9dE5nPPTv",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c",
-                    "width": 60
-                }
-            ],
-            "name": "December '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAHf73XkyYH3mkS+z4ljCb1UDR/guI",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/027kb6scBKg9y9dE5nPPTv/tracks",
-                "total": 28
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/027kb6scBKg9y9dE5nPPTv/items",
-                "total": 28
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:027kb6scBKg9y9dE5nPPTv"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/1lX3M3MvpNmQGzuh7tVi15"
-            },
-            "href": "https://api.spotify.com/v1/playlists/1lX3M3MvpNmQGzuh7tVi15",
-            "id": "1lX3M3MvpNmQGzuh7tVi15",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02adb6e18f5d394f7e5fc1b01dab67616d00001e02d632291b4714c9b1a7ef2d02",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02adb6e18f5d394f7e5fc1b01dab67616d00001e02d632291b4714c9b1a7ef2d02",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02adb6e18f5d394f7e5fc1b01dab67616d00001e02d632291b4714c9b1a7ef2d02",
-                    "width": 60
-                }
-            ],
-            "name": "November '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAIY+yPId2tYordTc1Tly3Db405vMW",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/1lX3M3MvpNmQGzuh7tVi15/tracks",
-                "total": 32
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/1lX3M3MvpNmQGzuh7tVi15/items",
-                "total": 32
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:1lX3M3MvpNmQGzuh7tVi15"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/6qGlky0reWcIeMAz70W8fd"
-            },
-            "href": "https://api.spotify.com/v1/playlists/6qGlky0reWcIeMAz70W8fd",
-            "id": "6qGlky0reWcIeMAz70W8fd",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0205ad046dd5d98362704d5f0dab67616d00001e029e3ffbc9245852e20a4d0c83ab67616d00001e02bb3c162ddba09bfba12199eaab67616d00001e02bcd0dda21a3a319df932d203",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0205ad046dd5d98362704d5f0dab67616d00001e029e3ffbc9245852e20a4d0c83ab67616d00001e02bb3c162ddba09bfba12199eaab67616d00001e02bcd0dda21a3a319df932d203",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0205ad046dd5d98362704d5f0dab67616d00001e029e3ffbc9245852e20a4d0c83ab67616d00001e02bb3c162ddba09bfba12199eaab67616d00001e02bcd0dda21a3a319df932d203",
-                    "width": 60
-                }
-            ],
-            "name": "October '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAJJ6I6Itv30mFoGlx1ZWKc0I40cME",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/6qGlky0reWcIeMAz70W8fd/tracks",
-                "total": 35
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/6qGlky0reWcIeMAz70W8fd/items",
-                "total": 35
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:6qGlky0reWcIeMAz70W8fd"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0RyuPsj7lVf8NTQlLnH3j0"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0RyuPsj7lVf8NTQlLnH3j0",
-            "id": "0RyuPsj7lVf8NTQlLnH3j0",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8412a6b60909be15810cf163c8",
-                    "width": null
-                }
-            ],
-            "name": "Tones and I and I",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAA4LicILuoxQI0vQ3sHt3FqsRHU5+",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0RyuPsj7lVf8NTQlLnH3j0/tracks",
-                "total": 25
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0RyuPsj7lVf8NTQlLnH3j0/items",
-                "total": 25
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0RyuPsj7lVf8NTQlLnH3j0"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/7nXa5Ki4rYpTdkymKP9FaX"
-            },
-            "href": "https://api.spotify.com/v1/playlists/7nXa5Ki4rYpTdkymKP9FaX",
-            "id": "7nXa5Ki4rYpTdkymKP9FaX",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e02093275e675037dda1a37f73aab67616d00001e0245ec1340ea4b91a1f00a40abab67616d00001e025929b628a2e83996c4591519ab67616d00001e02ed4b6d22cb8de1aef4dc1927",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e02093275e675037dda1a37f73aab67616d00001e0245ec1340ea4b91a1f00a40abab67616d00001e025929b628a2e83996c4591519ab67616d00001e02ed4b6d22cb8de1aef4dc1927",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e02093275e675037dda1a37f73aab67616d00001e0245ec1340ea4b91a1f00a40abab67616d00001e025929b628a2e83996c4591519ab67616d00001e02ed4b6d22cb8de1aef4dc1927",
-                    "width": 60
-                }
-            ],
-            "name": "September '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAH8Ic4YdKV/m3GHQ6NR1rA1MmupYc",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/7nXa5Ki4rYpTdkymKP9FaX/tracks",
-                "total": 30
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/7nXa5Ki4rYpTdkymKP9FaX/items",
-                "total": 30
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:7nXa5Ki4rYpTdkymKP9FaX"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/0cr5tOok6jV1LbxRW3Q1N7"
-            },
-            "href": "https://api.spotify.com/v1/playlists/0cr5tOok6jV1LbxRW3Q1N7",
-            "id": "0cr5tOok6jV1LbxRW3Q1N7",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0225180571abce9472f61bd722ab67616d00001e022fdadd6e64e069ee6c13a373ab67616d00001e023e0d8f5017fe3e6d6fb0f776ab67616d00001e02ab6e4b74b1ab1ce2dc6e7ca6",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0225180571abce9472f61bd722ab67616d00001e022fdadd6e64e069ee6c13a373ab67616d00001e023e0d8f5017fe3e6d6fb0f776ab67616d00001e02ab6e4b74b1ab1ce2dc6e7ca6",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0225180571abce9472f61bd722ab67616d00001e022fdadd6e64e069ee6c13a373ab67616d00001e023e0d8f5017fe3e6d6fb0f776ab67616d00001e02ab6e4b74b1ab1ce2dc6e7ca6",
-                    "width": 60
-                }
-            ],
-            "name": "August '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAINvOu3RTd6/L2JNcOmvga6vYW+N6",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/0cr5tOok6jV1LbxRW3Q1N7/tracks",
-                "total": 31
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/0cr5tOok6jV1LbxRW3Q1N7/items",
-                "total": 31
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:0cr5tOok6jV1LbxRW3Q1N7"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2OCmZ2TQS3I1t03liWGkKS"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2OCmZ2TQS3I1t03liWGkKS",
-            "id": "2OCmZ2TQS3I1t03liWGkKS",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0211b32bddec78cb96bcd8154bab67616d00001e0252e99b3edb5e6eee37bb246fab67616d00001e02cf562e0e90b0a28cb571775fab67616d00001e02ec3d15eab5bd77027abc4b23",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0211b32bddec78cb96bcd8154bab67616d00001e0252e99b3edb5e6eee37bb246fab67616d00001e02cf562e0e90b0a28cb571775fab67616d00001e02ec3d15eab5bd77027abc4b23",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0211b32bddec78cb96bcd8154bab67616d00001e0252e99b3edb5e6eee37bb246fab67616d00001e02cf562e0e90b0a28cb571775fab67616d00001e02ec3d15eab5bd77027abc4b23",
-                    "width": 60
-                }
-            ],
-            "name": "July '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAPbe/75GjdiboQ8NQHoSjBc6HWWSy",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2OCmZ2TQS3I1t03liWGkKS/tracks",
-                "total": 60
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2OCmZ2TQS3I1t03liWGkKS/items",
-                "total": 60
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2OCmZ2TQS3I1t03liWGkKS"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/5O4UBQXD3A6FrZ9crDNfiC"
-            },
-            "href": "https://api.spotify.com/v1/playlists/5O4UBQXD3A6FrZ9crDNfiC",
-            "id": "5O4UBQXD3A6FrZ9crDNfiC",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02722206ae6845cdbbb4ed5e44",
-                    "width": null
-                }
-            ],
-            "name": "Juni '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAAn6jyYPE1Rydis2Aw912enTZzyzT",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/5O4UBQXD3A6FrZ9crDNfiC/tracks",
-                "total": 1
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/5O4UBQXD3A6FrZ9crDNfiC/items",
-                "total": 1
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:5O4UBQXD3A6FrZ9crDNfiC"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/4ncsy40OjpUIDhbXzi7BR4"
-            },
-            "href": "https://api.spotify.com/v1/playlists/4ncsy40OjpUIDhbXzi7BR4",
-            "id": "4ncsy40OjpUIDhbXzi7BR4",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0210c7ffb39d047bb532ba4dacab67616d00001e021a4c1c9b3113ee5dedf009c5ab67616d00001e0259d1b5794cefd3e7e86a775dab67616d00001e025cd88ee55eaa0c94f0f5e7c2",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0210c7ffb39d047bb532ba4dacab67616d00001e021a4c1c9b3113ee5dedf009c5ab67616d00001e0259d1b5794cefd3e7e86a775dab67616d00001e025cd88ee55eaa0c94f0f5e7c2",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0210c7ffb39d047bb532ba4dacab67616d00001e021a4c1c9b3113ee5dedf009c5ab67616d00001e0259d1b5794cefd3e7e86a775dab67616d00001e025cd88ee55eaa0c94f0f5e7c2",
-                    "width": 60
-                }
-            ],
-            "name": "June '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAALjpQDG7JUhg4XF64j36IVHVh6DmK",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/4ncsy40OjpUIDhbXzi7BR4/tracks",
-                "total": 45
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/4ncsy40OjpUIDhbXzi7BR4/items",
-                "total": 45
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:4ncsy40OjpUIDhbXzi7BR4"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/6DSDjystyVtnkfdsoANXu0"
-            },
-            "href": "https://api.spotify.com/v1/playlists/6DSDjystyVtnkfdsoANXu0",
-            "id": "6DSDjystyVtnkfdsoANXu0",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e022282cf1bf4b5eb5a6ee67f6eab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e0288baa83a6c7bc59e18b74e79ab67616d00001e02dd03ba4ad12beff6aed2d13c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e022282cf1bf4b5eb5a6ee67f6eab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e0288baa83a6c7bc59e18b74e79ab67616d00001e02dd03ba4ad12beff6aed2d13c",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e022282cf1bf4b5eb5a6ee67f6eab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e0288baa83a6c7bc59e18b74e79ab67616d00001e02dd03ba4ad12beff6aed2d13c",
-                    "width": 60
-                }
-            ],
-            "name": "Disco Vibes",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAACNeSMD6hLdkSArDZihVm9W9X94kw",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/6DSDjystyVtnkfdsoANXu0/tracks",
-                "total": 6
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/6DSDjystyVtnkfdsoANXu0/items",
-                "total": 6
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:6DSDjystyVtnkfdsoANXu0"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/2jvlY5A7LXMtJjQFAZpkER"
-            },
-            "href": "https://api.spotify.com/v1/playlists/2jvlY5A7LXMtJjQFAZpkER",
-            "id": "2jvlY5A7LXMtJjQFAZpkER",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e0203bf634fe9526dfcc79f8526ab67616d00001e027058c5d53a78507ff4a666fbab67616d00001e02d766fd9e96ce4be7776759a4ab67616d00001e02db6219fb4ee7ceceaf41e769",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e0203bf634fe9526dfcc79f8526ab67616d00001e027058c5d53a78507ff4a666fbab67616d00001e02d766fd9e96ce4be7776759a4ab67616d00001e02db6219fb4ee7ceceaf41e769",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e0203bf634fe9526dfcc79f8526ab67616d00001e027058c5d53a78507ff4a666fbab67616d00001e02d766fd9e96ce4be7776759a4ab67616d00001e02db6219fb4ee7ceceaf41e769",
-                    "width": 60
-                }
-            ],
-            "name": "May '20",
-            "owner": {
-                "display_name": "Joost Lekkerkerker",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/1112264649"
-                },
-                "href": "https://api.spotify.com/v1/users/1112264649",
-                "id": "1112264649",
-                "type": "user",
-                "uri": "spotify:user:1112264649"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAALOTM51RP7q2tcb0KZvUn5wBJYing",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/2jvlY5A7LXMtJjQFAZpkER/tracks",
-                "total": 43
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/2jvlY5A7LXMtJjQFAZpkER/items",
-                "total": 43
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:2jvlY5A7LXMtJjQFAZpkER"
-        },
-        {
-            "collaborative": false,
-            "description": "",
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/7j2y0Baus5KEznyrb9P7Hh"
-            },
-            "href": "https://api.spotify.com/v1/playlists/7j2y0Baus5KEznyrb9P7Hh",
-            "id": "7j2y0Baus5KEznyrb9P7Hh",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://mosaic.scdn.co/640/ab67616d00001e02175c577a61aa13d4fb4b6534ab67616d00001e0219842db9fce84f370835265cab67616d00001e022e92f776279eaf45d14a33fdab67616d00001e02ee1ae7d44f10961722736148",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://mosaic.scdn.co/300/ab67616d00001e02175c577a61aa13d4fb4b6534ab67616d00001e0219842db9fce84f370835265cab67616d00001e022e92f776279eaf45d14a33fdab67616d00001e02ee1ae7d44f10961722736148",
-                    "width": 300
-                },
-                {
-                    "height": 60,
-                    "url": "https://mosaic.scdn.co/60/ab67616d00001e02175c577a61aa13d4fb4b6534ab67616d00001e0219842db9fce84f370835265cab67616d00001e022e92f776279eaf45d14a33fdab67616d00001e02ee1ae7d44f10961722736148",
-                    "width": 60
-                }
-            ],
-            "name": "funk wav bounces vol 2",
-            "owner": {
-                "display_name": "angelarbarnes",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/angelarbarnes"
-                },
-                "href": "https://api.spotify.com/v1/users/angelarbarnes",
-                "id": "angelarbarnes",
-                "type": "user",
-                "uri": "spotify:user:angelarbarnes"
-            },
-            "primary_color": null,
-            "public": true,
-            "snapshot_id": "AAAAwnmqbrq34IfUqN5UdZBCYOxnJW9i",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/7j2y0Baus5KEznyrb9P7Hh/tracks",
-                "total": 161
-            },
-            "items": {
-                "href": "https://api.spotify.com/v1/playlists/7j2y0Baus5KEznyrb9P7Hh/items",
-                "total": 161
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:7j2y0Baus5KEznyrb9P7Hh"
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e022f41071676f4f50842581fb4",
+          "width": null
         }
-    ]
+      ],
+      "name": "To find",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAAqEcxS92ddZ6R83Q8TWFhYshm18s",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/tracks",
+        "total": 1
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items",
+        "total": 1
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1Cp6VQCKf2VL4sP09jN9oX"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0Wsgrrb7PCORhHq5L7wF0d"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0Wsgrrb7PCORhHq5L7wF0d",
+      "id": "0Wsgrrb7PCORhHq5L7wF0d",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e0204290e7559226bf75ac34da8",
+          "width": null
+        }
+      ],
+      "name": "Repeat ones",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAA9Or/3CAEwspEWBNRjmXsGtIRpiq",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0Wsgrrb7PCORhHq5L7wF0d/tracks",
+        "total": 1
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0Wsgrrb7PCORhHq5L7wF0d/items",
+        "total": 1
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0Wsgrrb7PCORhHq5L7wF0d"
+    },
+    {
+      "collaborative": false,
+      "description": "New playlist description",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB",
+      "id": "2dGgoMPWpapXYA6rX7ZbbB",
+      "images": null,
+      "name": "New Playlist",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAAfu2PYguJO6XYV1gFlnjUp0umkry",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB/tracks",
+        "total": 0
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB/items",
+        "total": 0
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB"
+    },
+    {
+      "collaborative": true,
+      "description": "Updated playlist description",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4hQFqB1AtOpzsAv01E8n6c"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4hQFqB1AtOpzsAv01E8n6c",
+      "id": "4hQFqB1AtOpzsAv01E8n6c",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e0206c0d7ebcabad0c39b566983",
+          "width": null
+        }
+      ],
+      "name": "Updated Playlist Name2",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4hQFqB1AtOpzsAv01E8n6c/tracks",
+        "total": 1
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4hQFqB1AtOpzsAv01E8n6c/items",
+        "total": 1
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4hQFqB1AtOpzsAv01E8n6c"
+    },
+    {
+      "collaborative": false,
+      "description": "A musical time capsule from the past has been unsealed\u2026!",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2G2eo5DxAtxLu7aNGVvNpY"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2G2eo5DxAtxLu7aNGVvNpY",
+      "id": "2G2eo5DxAtxLu7aNGVvNpY",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8416264ef6071da49cbe93a951",
+          "width": null
+        }
+      ],
+      "name": "My 2024 Playlist in a Bottle",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAA49BO4ePrhQ9Y7ENMXmDik23Vv27",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2G2eo5DxAtxLu7aNGVvNpY/tracks",
+        "total": 3
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2G2eo5DxAtxLu7aNGVvNpY/items",
+        "total": 3
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2G2eo5DxAtxLu7aNGVvNpY"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5t75uJ5vBvEdbbvs5uIqXJ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5t75uJ5vBvEdbbvs5uIqXJ",
+      "id": "5t75uJ5vBvEdbbvs5uIqXJ",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e0205c6f48cceeb832778012b21",
+          "width": null
+        }
+      ],
+      "name": "Sweet",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAABOQvUVBN2G4BB0mGopx4KP5uBnu+",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5t75uJ5vBvEdbbvs5uIqXJ/tracks",
+        "total": 3
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/5t75uJ5vBvEdbbvs5uIqXJ/items",
+        "total": 3
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5t75uJ5vBvEdbbvs5uIqXJ"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0pM0KTMXM7K5qr3sL2DPw1"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0pM0KTMXM7K5qr3sL2DPw1",
+      "id": "0pM0KTMXM7K5qr3sL2DPw1",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e02991e1b6c088e2abc38f584c8",
+          "width": null
+        }
+      ],
+      "name": "Pain",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAACAnbhCSBgmOCZb+KmWOAhPdGgQDl",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0pM0KTMXM7K5qr3sL2DPw1/tracks",
+        "total": 3
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0pM0KTMXM7K5qr3sL2DPw1/items",
+        "total": 3
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0pM0KTMXM7K5qr3sL2DPw1"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4WkWJ0EjHEFASDevhM8oPw"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4WkWJ0EjHEFASDevhM8oPw",
+      "id": "4WkWJ0EjHEFASDevhM8oPw",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d061f5bfae8d38558f3698c1",
+          "width": null
+        }
+      ],
+      "name": "Hyper",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAA2+SfV6gJVq8OgnZwG0ssjUTdfvu",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4WkWJ0EjHEFASDevhM8oPw/tracks",
+        "total": 1
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4WkWJ0EjHEFASDevhM8oPw/items",
+        "total": 1
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4WkWJ0EjHEFASDevhM8oPw"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1RHirWgH1weMsBLi4KOK9d"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1RHirWgH1weMsBLi4KOK9d",
+      "id": "1RHirWgH1weMsBLi4KOK9d",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022f3e58dd611d177973cb3a8cab67616d00001e0245cab965cb4639a4e669564aab67616d00001e029e83c93811be6abfad8649d6ab67616d00001e02e4c03429788f0aff263a5fc6",
+          "width": 60
+        }
+      ],
+      "name": "Ain\u2019t got shit on me",
+      "owner": {
+        "display_name": "Rensie",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/317g2sbpe3ccycu45fes6lfr5lpe"
+        },
+        "href": "https://api.spotify.com/v1/users/317g2sbpe3ccycu45fes6lfr5lpe",
+        "id": "317g2sbpe3ccycu45fes6lfr5lpe",
+        "type": "user",
+        "uri": "spotify:user:317g2sbpe3ccycu45fes6lfr5lpe"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAIObZq+YDDwTjnpqp2AjyuHn8az3Z",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1RHirWgH1weMsBLi4KOK9d/tracks",
+        "total": 30
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/1RHirWgH1weMsBLi4KOK9d/items",
+        "total": 30
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1RHirWgH1weMsBLi4KOK9d"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2ZfissHhjQnhlmD54h6elH"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2ZfissHhjQnhlmD54h6elH",
+      "id": "2ZfissHhjQnhlmD54h6elH",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0200295a5d7ed6dd3eccb60364ab67616d00001e02723d4df900fd02eff83579d9ab67616d00001e027f8859341a395010424f106bab67616d00001e02c506dbc3f05d3ce4daf355c4",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0200295a5d7ed6dd3eccb60364ab67616d00001e02723d4df900fd02eff83579d9ab67616d00001e027f8859341a395010424f106bab67616d00001e02c506dbc3f05d3ce4daf355c4",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0200295a5d7ed6dd3eccb60364ab67616d00001e02723d4df900fd02eff83579d9ab67616d00001e027f8859341a395010424f106bab67616d00001e02c506dbc3f05d3ce4daf355c4",
+          "width": 60
+        }
+      ],
+      "name": "Billie (interlude)",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAClUPy5QailhNAJTG2FeUlNQlhCeC",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2ZfissHhjQnhlmD54h6elH/tracks",
+        "total": 7
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2ZfissHhjQnhlmD54h6elH/items",
+        "total": 7
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2ZfissHhjQnhlmD54h6elH"
+    },
+    {
+      "collaborative": false,
+      "description": "Missing: Metrik - Techtonic;  GAJATE - Baile Funk",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1vOHEgZ5UszkWycPjnG2Uo"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1vOHEgZ5UszkWycPjnG2Uo",
+      "id": "1vOHEgZ5UszkWycPjnG2Uo",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84dce297c9b2a3b46d3c0a41fb",
+          "width": null
+        }
+      ],
+      "name": "Forza Horizon 5 Bass Arena",
+      "owner": {
+        "display_name": "SylveonTribe",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/rwilming"
+        },
+        "href": "https://api.spotify.com/v1/users/rwilming",
+        "id": "rwilming",
+        "type": "user",
+        "uri": "spotify:user:rwilming"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAGJBy9g8BoxcGY9PlK235g29V5iDv",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1vOHEgZ5UszkWycPjnG2Uo/tracks",
+        "total": 17
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/1vOHEgZ5UszkWycPjnG2Uo/items",
+        "total": 17
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1vOHEgZ5UszkWycPjnG2Uo"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0Jgs7FxHX86twpgCDehAHv"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0Jgs7FxHX86twpgCDehAHv",
+      "id": "0Jgs7FxHX86twpgCDehAHv",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e02a056a29ccd190522d6e64114ab67616d00001e02d0e28d91b4de74babd1908a9ab67616d00001e02e729e0662930665af38db5ad",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e02a056a29ccd190522d6e64114ab67616d00001e02d0e28d91b4de74babd1908a9ab67616d00001e02e729e0662930665af38db5ad",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e026c9556ea020144591559e3e3ab67616d00001e02a056a29ccd190522d6e64114ab67616d00001e02d0e28d91b4de74babd1908a9ab67616d00001e02e729e0662930665af38db5ad",
+          "width": 60
+        }
+      ],
+      "name": "Cr\u00e8me",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAB5JoBY6tdwVKDKeugz64oxGvXNX8",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0Jgs7FxHX86twpgCDehAHv/tracks",
+        "total": 6
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0Jgs7FxHX86twpgCDehAHv/items",
+        "total": 6
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0Jgs7FxHX86twpgCDehAHv"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6fHmmdjd2Urd7DAhb4bqOB"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6fHmmdjd2Urd7DAhb4bqOB",
+      "id": "6fHmmdjd2Urd7DAhb4bqOB",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e025958d5d767c63fcf27c20c9cab67616d00001e0288fed14b936c38007a302413ab67616d00001e02936563d574a962c9e59afda4ab67616d00001e02ab37ab7ce23fb1f13c6c5866",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e025958d5d767c63fcf27c20c9cab67616d00001e0288fed14b936c38007a302413ab67616d00001e02936563d574a962c9e59afda4ab67616d00001e02ab37ab7ce23fb1f13c6c5866",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e025958d5d767c63fcf27c20c9cab67616d00001e0288fed14b936c38007a302413ab67616d00001e02936563d574a962c9e59afda4ab67616d00001e02ab37ab7ce23fb1f13c6c5866",
+          "width": 60
+        }
+      ],
+      "name": "My Shazam Tracks",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAABWHcOmMJhCMpNqc5zVozVx9Lbcnk4",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6fHmmdjd2Urd7DAhb4bqOB/tracks",
+        "total": 532
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/6fHmmdjd2Urd7DAhb4bqOB/items",
+        "total": 532
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6fHmmdjd2Urd7DAhb4bqOB"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5H2U7tZb9dMSHPwi20XcuD"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5H2U7tZb9dMSHPwi20XcuD",
+      "id": "5H2U7tZb9dMSHPwi20XcuD",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e021c7f9645cc7b97312fe00fb9ab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02f677c5754726a2eb54c807feab67616d00001e02fe8c4d2d61fa92202800947c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e021c7f9645cc7b97312fe00fb9ab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02f677c5754726a2eb54c807feab67616d00001e02fe8c4d2d61fa92202800947c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e021c7f9645cc7b97312fe00fb9ab67616d00001e02be90598dc5b123eb550c6d51ab67616d00001e02f677c5754726a2eb54c807feab67616d00001e02fe8c4d2d61fa92202800947c",
+          "width": 60
+        }
+      ],
+      "name": "Likes",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAJKzTbmZHqmOUqQe1xOWb4eZgf1n/",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5H2U7tZb9dMSHPwi20XcuD/tracks",
+        "total": 4276
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/5H2U7tZb9dMSHPwi20XcuD/items",
+        "total": 4276
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5H2U7tZb9dMSHPwi20XcuD"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/709T4OzANnUi2lKQLlVkrE"
+      },
+      "href": "https://api.spotify.com/v1/playlists/709T4OzANnUi2lKQLlVkrE",
+      "id": "709T4OzANnUi2lKQLlVkrE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0226168325581434cdbfcf0f2aab67616d00001e02336a313426983a122d8ed70cab67616d00001e029b90e4ccf55c0a23a13f4eaeab67616d00001e02d3a20da9371b8e8624fd047b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0226168325581434cdbfcf0f2aab67616d00001e02336a313426983a122d8ed70cab67616d00001e029b90e4ccf55c0a23a13f4eaeab67616d00001e02d3a20da9371b8e8624fd047b",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0226168325581434cdbfcf0f2aab67616d00001e02336a313426983a122d8ed70cab67616d00001e029b90e4ccf55c0a23a13f4eaeab67616d00001e02d3a20da9371b8e8624fd047b",
+          "width": 60
+        }
+      ],
+      "name": "March '22",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAABSHXFNYmStGaJrf8U+9GY1WQ0Smd",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/709T4OzANnUi2lKQLlVkrE/tracks",
+        "total": 4
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/709T4OzANnUi2lKQLlVkrE/items",
+        "total": 4
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:709T4OzANnUi2lKQLlVkrE"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/57ZuuAVl0eAZvhisoFP3SC"
+      },
+      "href": "https://api.spotify.com/v1/playlists/57ZuuAVl0eAZvhisoFP3SC",
+      "id": "57ZuuAVl0eAZvhisoFP3SC",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02c70a41a26e020661d61c05be",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02c70a41a26e020661d61c05be",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02490a887b85a95378ea66b41dab67616d00001e026bb188bb70c9561e60de61cbab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02c70a41a26e020661d61c05be",
+          "width": 60
+        }
+      ],
+      "name": "February '22",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAFRabb1cD3tb9R4fPIyRjfbLFQitm",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/57ZuuAVl0eAZvhisoFP3SC/tracks",
+        "total": 20
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/57ZuuAVl0eAZvhisoFP3SC/items",
+        "total": 20
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:57ZuuAVl0eAZvhisoFP3SC"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4OI1xDCLFlEcfgaeyowpEu"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4OI1xDCLFlEcfgaeyowpEu",
+      "id": "4OI1xDCLFlEcfgaeyowpEu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0215893afacb5d2604085a9d8eab67616d00001e02356a689446b81073e1071987ab67616d00001e027f86c9158ee0a14faa484d53ab67616d00001e0295da52884fb152645273020d",
+          "width": 60
+        }
+      ],
+      "name": "January '22",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAABfwkH1uXlLrIxVPcZ4jdwbjUlYec",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4OI1xDCLFlEcfgaeyowpEu/tracks",
+        "total": 4
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4OI1xDCLFlEcfgaeyowpEu/items",
+        "total": 4
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4OI1xDCLFlEcfgaeyowpEu"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4NsY2DKzQIjaajal5L25Kt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4NsY2DKzQIjaajal5L25Kt",
+      "id": "4NsY2DKzQIjaajal5L25Kt",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e0290eb2694488164403ad812e9ab67616d00001e02d2d57ba12d531fc8eaaf49cd",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e0290eb2694488164403ad812e9ab67616d00001e02d2d57ba12d531fc8eaaf49cd",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e021bfe2bbcc1f3e104459fef3cab67616d00001e025425fecb078325803cd33dc8ab67616d00001e0290eb2694488164403ad812e9ab67616d00001e02d2d57ba12d531fc8eaaf49cd",
+          "width": 60
+        }
+      ],
+      "name": "December '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAACCA8BqKuDt6UH0mCm/3TnfPN9bpw",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4NsY2DKzQIjaajal5L25Kt/tracks",
+        "total": 7
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4NsY2DKzQIjaajal5L25Kt/items",
+        "total": 7
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4NsY2DKzQIjaajal5L25Kt"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5dV0IeLCysOP6qEDGzhHw0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5dV0IeLCysOP6qEDGzhHw0",
+      "id": "5dV0IeLCysOP6qEDGzhHw0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02014392f7224d7765e698a904ab67616d00001e0217f6a7b8151062c09e7c8a8fab67616d00001e02ec8d2bf88ac5308f8b9b8dc8ab67616d00001e02f4a6ca892c6ed5a8e969e8a9",
+          "width": 60
+        }
+      ],
+      "name": "November '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAADrN0arCi4wX8dU6Je1ZYFFG2K4jo",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5dV0IeLCysOP6qEDGzhHw0/tracks",
+        "total": 13
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/5dV0IeLCysOP6qEDGzhHw0/items",
+        "total": 13
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5dV0IeLCysOP6qEDGzhHw0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/40bvnxNQlivxZ02DmDzNxy"
+      },
+      "href": "https://api.spotify.com/v1/playlists/40bvnxNQlivxZ02DmDzNxy",
+      "id": "40bvnxNQlivxZ02DmDzNxy",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e0276fe2ba0664a6f5cce2d0ac6ab67616d00001e02be6df8bb79d67c727d938f4a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e0276fe2ba0664a6f5cce2d0ac6ab67616d00001e02be6df8bb79d67c727d938f4a",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e021d47ca87b7476af61dd4e502ab67616d00001e023780c2d97ecbd5fc0a4cf107ab67616d00001e0276fe2ba0664a6f5cce2d0ac6ab67616d00001e02be6df8bb79d67c727d938f4a",
+          "width": 60
+        }
+      ],
+      "name": "October '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAACpp8xX673vpf+VyajcYJdAHUhKQN",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/40bvnxNQlivxZ02DmDzNxy/tracks",
+        "total": 9
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/40bvnxNQlivxZ02DmDzNxy/items",
+        "total": 9
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:40bvnxNQlivxZ02DmDzNxy"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2ExZs1G4AOluuEwg3q5M1v"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2ExZs1G4AOluuEwg3q5M1v",
+      "id": "2ExZs1G4AOluuEwg3q5M1v",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02548f06ce82f36337bac46e21ab67616d00001e02913a6d7587d853e1dd4c1580",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02548f06ce82f36337bac46e21ab67616d00001e02913a6d7587d853e1dd4c1580",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022f3a0b652f199fc7b3ff0cabab67616d00001e023c041e53cb5c38b6de03e758ab67616d00001e02548f06ce82f36337bac46e21ab67616d00001e02913a6d7587d853e1dd4c1580",
+          "width": 60
+        }
+      ],
+      "name": "September '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAFDnqOxyK2DMmmbFjt7I5ySII3OnD",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2ExZs1G4AOluuEwg3q5M1v/tracks",
+        "total": 19
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2ExZs1G4AOluuEwg3q5M1v/items",
+        "total": 19
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2ExZs1G4AOluuEwg3q5M1v"
+    },
+    {
+      "collaborative": false,
+      "description": "de soms niet zo casual weird vibe playlist",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4jNUJLnkZJ32nuFE1PjkGu"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4jNUJLnkZJ32nuFE1PjkGu",
+      "id": "4jNUJLnkZJ32nuFE1PjkGu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e021308d479a61f2a3b088a5708ab67616d00001e022ffc2c580b6595a3e675a730ab67616d00001e02335092e5a1317f2ee9d701d7ab67616d00001e02395ee31df8ad9108f5775b1c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e021308d479a61f2a3b088a5708ab67616d00001e022ffc2c580b6595a3e675a730ab67616d00001e02335092e5a1317f2ee9d701d7ab67616d00001e02395ee31df8ad9108f5775b1c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e021308d479a61f2a3b088a5708ab67616d00001e022ffc2c580b6595a3e675a730ab67616d00001e02335092e5a1317f2ee9d701d7ab67616d00001e02395ee31df8ad9108f5775b1c",
+          "width": 60
+        }
+      ],
+      "name": "Slumpm\u00e4ssiga",
+      "owner": {
+        "display_name": "leanne",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/xleanne_"
+        },
+        "href": "https://api.spotify.com/v1/users/xleanne_",
+        "id": "xleanne_",
+        "type": "user",
+        "uri": "spotify:user:xleanne_"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAASAaQ9ZR0Kk0a2GD+NUAP2DfgqTid",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4jNUJLnkZJ32nuFE1PjkGu/tracks",
+        "total": 107
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4jNUJLnkZJ32nuFE1PjkGu/items",
+        "total": 107
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4jNUJLnkZJ32nuFE1PjkGu"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/700dVjBihCDj2HwyhYDTRp"
+      },
+      "href": "https://api.spotify.com/v1/playlists/700dVjBihCDj2HwyhYDTRp",
+      "id": "700dVjBihCDj2HwyhYDTRp",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e02c0545aaaffd1560eec25b5a1ab67616d00001e02f7fb699c69d6529d4495766d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e02c0545aaaffd1560eec25b5a1ab67616d00001e02f7fb699c69d6529d4495766d",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e021d8b02b7c886f34c408f4ca0ab67616d00001e027b85c73badee55bc69c6ce66ab67616d00001e02c0545aaaffd1560eec25b5a1ab67616d00001e02f7fb699c69d6529d4495766d",
+          "width": 60
+        }
+      ],
+      "name": "August '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAIMxOgErYXRNVEEoQQh3RBcMlgpz2",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/700dVjBihCDj2HwyhYDTRp/tracks",
+        "total": 31
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/700dVjBihCDj2HwyhYDTRp/items",
+        "total": 31
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:700dVjBihCDj2HwyhYDTRp"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6B5dmWX7pK2LHHtS6ph265"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6B5dmWX7pK2LHHtS6ph265",
+      "id": "6B5dmWX7pK2LHHtS6ph265",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02d03de263a7e4554713b9a77fab67616d00001e02ebea6d997f62d17e9c4eab6c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02d03de263a7e4554713b9a77fab67616d00001e02ebea6d997f62d17e9c4eab6c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0272a0322c6a1ff584ead1adc5ab67616d00001e02a91f9722dea90b3ac0d725daab67616d00001e02d03de263a7e4554713b9a77fab67616d00001e02ebea6d997f62d17e9c4eab6c",
+          "width": 60
+        }
+      ],
+      "name": "Discover Weekly Archive",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAFmxwywmKeyw2ykACBaq/XgOpW7eUU",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6B5dmWX7pK2LHHtS6ph265/tracks",
+        "total": 1434
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/6B5dmWX7pK2LHHtS6ph265/items",
+        "total": 1434
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6B5dmWX7pK2LHHtS6ph265"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0ISThPpDv4JBNeHdptcK6i"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0ISThPpDv4JBNeHdptcK6i",
+      "id": "0ISThPpDv4JBNeHdptcK6i",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0204983fd825ffccc2828f5f5bab67616d00001e02231b8bf75d17c6a4d6770015ab67616d00001e027a890e1103aa7e8304fc062bab67616d00001e02bffd2fc0fd4c3b09d3cd2616",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0204983fd825ffccc2828f5f5bab67616d00001e02231b8bf75d17c6a4d6770015ab67616d00001e027a890e1103aa7e8304fc062bab67616d00001e02bffd2fc0fd4c3b09d3cd2616",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0204983fd825ffccc2828f5f5bab67616d00001e02231b8bf75d17c6a4d6770015ab67616d00001e027a890e1103aa7e8304fc062bab67616d00001e02bffd2fc0fd4c3b09d3cd2616",
+          "width": 60
+        }
+      ],
+      "name": "Dance vibes",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAF3xuuTFC2OrUZwYf7K4tnMfsaf0N",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0ISThPpDv4JBNeHdptcK6i/tracks",
+        "total": 20
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0ISThPpDv4JBNeHdptcK6i/items",
+        "total": 20
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0ISThPpDv4JBNeHdptcK6i"
+    },
+    {
+      "collaborative": true,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2ElmM8s9Um1XSP07hADX9s"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2ElmM8s9Um1XSP07hADX9s",
+      "id": "2ElmM8s9Um1XSP07hADX9s",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e020f5b85c5d4a8131d01aca941ab67616d00001e0268c13496a915eea4d4325681ab67616d00001e02a91c10fe9472d9bd89802e5aab67616d00001e02c691f9d8b09e963e7935faab",
+          "width": 60
+        }
+      ],
+      "name": "goeien numertjs",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAQ1YIIUoOxc70iCjAaudAkDDb1p2J",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2ElmM8s9Um1XSP07hADX9s/tracks",
+        "total": 62
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2ElmM8s9Um1XSP07hADX9s/items",
+        "total": 62
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2ElmM8s9Um1XSP07hADX9s"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0DRUBqBUSFJH1a7FvBIsGg"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0DRUBqBUSFJH1a7FvBIsGg",
+      "id": "0DRUBqBUSFJH1a7FvBIsGg",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e02e6d896d0369324af77f47e9a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e02e6d896d0369324af77f47e9a",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e025486d91bd83f2c4e0b1669f5ab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e02e6d896d0369324af77f47e9a",
+          "width": 60
+        }
+      ],
+      "name": "Summer vibes",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAD9aKoW5FG3O6NM2mBhzMZzcZQhGh",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0DRUBqBUSFJH1a7FvBIsGg/tracks",
+        "total": 13
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0DRUBqBUSFJH1a7FvBIsGg/items",
+        "total": 13
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0DRUBqBUSFJH1a7FvBIsGg"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4PSXSX9WhxdjAzSjU175od"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4PSXSX9WhxdjAzSjU175od",
+      "id": "4PSXSX9WhxdjAzSjU175od",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02dc806722f6802a8ea9953c89ab67616d00001e02fa091c156c618ffd26ed2356",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02dc806722f6802a8ea9953c89ab67616d00001e02fa091c156c618ffd26ed2356",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e027c33cef24775c3780a9930f4ab67616d00001e029357f6851b075c6fb7b44f41ab67616d00001e02dc806722f6802a8ea9953c89ab67616d00001e02fa091c156c618ffd26ed2356",
+          "width": 60
+        }
+      ],
+      "name": "July '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAIOwMEN9rLgafJ2ndIvaQejmBKzK3",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4PSXSX9WhxdjAzSjU175od/tracks",
+        "total": 31
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4PSXSX9WhxdjAzSjU175od/items",
+        "total": 31
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4PSXSX9WhxdjAzSjU175od"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1XKSZRcsYP6VTkObunDIjQ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1XKSZRcsYP6VTkObunDIjQ",
+      "id": "1XKSZRcsYP6VTkObunDIjQ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e020902cf9a0391c16a5fa4f969ab67616d00001e0234b23957c8bf15277804a2aeab67616d00001e02577dd278fa34655ace27f2c5ab67616d00001e028ff16aeca5722fcced965cb8",
+          "width": 60
+        }
+      ],
+      "name": "June '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAMygu/hHO3ngMmH5s9SWLnjOPaYJZ",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1XKSZRcsYP6VTkObunDIjQ/tracks",
+        "total": 50
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/1XKSZRcsYP6VTkObunDIjQ/items",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1XKSZRcsYP6VTkObunDIjQ"
+    },
+    {
+      "collaborative": false,
+      "description": "This is a playlist of some of the songs in the Keinemusik set during the beach party in the Cayo Perico mission in Grand Theft Auto 5 ",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3uCD1EyW3JRx8SV1QnA3Zm"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3uCD1EyW3JRx8SV1QnA3Zm",
+      "id": "3uCD1EyW3JRx8SV1QnA3Zm",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848e09c57d7b2ef2a17e853d4c",
+          "width": null
+        }
+      ],
+      "name": "GTA Cayo Perico Beach Party: Keinemusik Set",
+      "owner": {
+        "display_name": "Austin Martinez",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/127651589"
+        },
+        "href": "https://api.spotify.com/v1/users/127651589",
+        "id": "127651589",
+        "type": "user",
+        "uri": "spotify:user:127651589"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAILgHyU8L6YfuRuNeifYpOSFjc6Ay",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3uCD1EyW3JRx8SV1QnA3Zm/tracks",
+        "total": 26
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/3uCD1EyW3JRx8SV1QnA3Zm/items",
+        "total": 26
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3uCD1EyW3JRx8SV1QnA3Zm"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3yPujxZ9OiB4By8COZaxaK"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3yPujxZ9OiB4By8COZaxaK",
+      "id": "3yPujxZ9OiB4By8COZaxaK",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02de26b55f9c67f6728d871406",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02de26b55f9c67f6728d871406",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022614c295a38ee782d093aa09ab67616d00001e0236e0535a12c22b83a6a59768ab67616d00001e024e587b1639b57a16e9161883ab67616d00001e02de26b55f9c67f6728d871406",
+          "width": 60
+        }
+      ],
+      "name": "May '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAQQLd3S53NXqTS8ApC2f5BmZX88Ub",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3yPujxZ9OiB4By8COZaxaK/tracks",
+        "total": 64
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/3yPujxZ9OiB4By8COZaxaK/items",
+        "total": 64
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3yPujxZ9OiB4By8COZaxaK"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4A31OO75jaLCV2r7bvbQUa"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4A31OO75jaLCV2r7bvbQUa",
+      "id": "4A31OO75jaLCV2r7bvbQUa",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0204ef796699518264973fee48ab67616d00001e021e2057f92f53ad311ac934ddab67616d00001e0243b45e6fad695fb69d771075ab67616d00001e02ea427780debfc4faf793df19",
+          "width": 60
+        }
+      ],
+      "name": "April '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAMkpQmpasdKd7sxVBjwbFfPtlQuCH",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4A31OO75jaLCV2r7bvbQUa/tracks",
+        "total": 49
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4A31OO75jaLCV2r7bvbQUa/items",
+        "total": 49
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4A31OO75jaLCV2r7bvbQUa"
+    },
+    {
+      "collaborative": false,
+      "description": "HYPERTECHNO | TECHNO |  SLAP HOUSE | BRAZILIAN BASS | BASS HOUSE | EDM | BASS BOOSTED CAR MUSIC |  FUTURE HOUSE | FUTURE BOUNCE | GYM MOTIVATION",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6JbGAAe70bKTA3yfddjWTK"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6JbGAAe70bKTA3yfddjWTK",
+      "id": "6JbGAAe70bKTA3yfddjWTK",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da849fa7c9ddef714003c524c89c",
+          "width": null
+        }
+      ],
+      "name": "BASS BOOSTED CAR MUSIC 2023",
+      "owner": {
+        "display_name": "LIZOT",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/max.kleinschmidt"
+        },
+        "href": "https://api.spotify.com/v1/users/max.kleinschmidt",
+        "id": "max.kleinschmidt",
+        "type": "user",
+        "uri": "spotify:user:max.kleinschmidt"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAEVKAeUtjFyV4KaDQCfKyokSERMrsh",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6JbGAAe70bKTA3yfddjWTK/tracks",
+        "total": 47
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/6JbGAAe70bKTA3yfddjWTK/items",
+        "total": 47
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6JbGAAe70bKTA3yfddjWTK"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6lVbphMrnxl1vIlfPhdA8i"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6lVbphMrnxl1vIlfPhdA8i",
+      "id": "6lVbphMrnxl1vIlfPhdA8i",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02a8316bd5ce0a8cf6bead17f2ab67616d00001e02cf6a74cdef3c4e0d828c4057",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02a8316bd5ce0a8cf6bead17f2ab67616d00001e02cf6a74cdef3c4e0d828c4057",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e020678208f00e4111c88958bb9ab67616d00001e02979ee06e9685aff6ff000417ab67616d00001e02a8316bd5ce0a8cf6bead17f2ab67616d00001e02cf6a74cdef3c4e0d828c4057",
+          "width": 60
+        }
+      ],
+      "name": "March '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAJZmeXYJPuucIlnmPwNBfWXWUO4dG",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6lVbphMrnxl1vIlfPhdA8i/tracks",
+        "total": 36
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/6lVbphMrnxl1vIlfPhdA8i/items",
+        "total": 36
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6lVbphMrnxl1vIlfPhdA8i"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3l0iA85qv43y9aMWztVIHu"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3l0iA85qv43y9aMWztVIHu",
+      "id": "3l0iA85qv43y9aMWztVIHu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0245951a69fe39a6e163122eabab67616d00001e02460771a72003ffccb35a568fab67616d00001e02927a9b11b73b0d238983065cab67616d00001e02fbe46d92ba0d5ca39d419f07",
+          "width": 60
+        }
+      ],
+      "name": "February '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAHEpGSRJ2tk9XKma5yfU+X0JHBbay",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3l0iA85qv43y9aMWztVIHu/tracks",
+        "total": 27
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/3l0iA85qv43y9aMWztVIHu/items",
+        "total": 27
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3l0iA85qv43y9aMWztVIHu"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2jp4GK1k1l7I1X67f2EbmD"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2jp4GK1k1l7I1X67f2EbmD",
+      "id": "2jp4GK1k1l7I1X67f2EbmD",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02136d46f65c783bd9742dfc6dab67616d00001e0221b704f8cfa87252352a50cbab67616d00001e027506c963b821d3b508fb2261ab67616d00001e02808bcc3151a05dbd4805f340",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02136d46f65c783bd9742dfc6dab67616d00001e0221b704f8cfa87252352a50cbab67616d00001e027506c963b821d3b508fb2261ab67616d00001e02808bcc3151a05dbd4805f340",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02136d46f65c783bd9742dfc6dab67616d00001e0221b704f8cfa87252352a50cbab67616d00001e027506c963b821d3b508fb2261ab67616d00001e02808bcc3151a05dbd4805f340",
+          "width": 60
+        }
+      ],
+      "name": "January '21",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAI2CYzXdTK19s58FVBG+8+tlAqSJ8",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2jp4GK1k1l7I1X67f2EbmD/tracks",
+        "total": 34
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2jp4GK1k1l7I1X67f2EbmD/items",
+        "total": 34
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2jp4GK1k1l7I1X67f2EbmD"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/027kb6scBKg9y9dE5nPPTv"
+      },
+      "href": "https://api.spotify.com/v1/playlists/027kb6scBKg9y9dE5nPPTv",
+      "id": "027kb6scBKg9y9dE5nPPTv",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0217cc3111c640c8e15efee21fab67616d00001e021c8cb0a0bc1490aaa287db71ab67616d00001e02e2a6468a88f17315e33274b7ab67616d00001e02f49c98f285a7cebc07fe581c",
+          "width": 60
+        }
+      ],
+      "name": "December '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAHf73XkyYH3mkS+z4ljCb1UDR/guI",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/027kb6scBKg9y9dE5nPPTv/tracks",
+        "total": 28
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/027kb6scBKg9y9dE5nPPTv/items",
+        "total": 28
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:027kb6scBKg9y9dE5nPPTv"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1lX3M3MvpNmQGzuh7tVi15"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1lX3M3MvpNmQGzuh7tVi15",
+      "id": "1lX3M3MvpNmQGzuh7tVi15",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02adb6e18f5d394f7e5fc1b01dab67616d00001e02d632291b4714c9b1a7ef2d02",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02adb6e18f5d394f7e5fc1b01dab67616d00001e02d632291b4714c9b1a7ef2d02",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0229fd157c5178bd374375e34dab67616d00001e024e667c4d363b244d8ec17a9dab67616d00001e02adb6e18f5d394f7e5fc1b01dab67616d00001e02d632291b4714c9b1a7ef2d02",
+          "width": 60
+        }
+      ],
+      "name": "November '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAIY+yPId2tYordTc1Tly3Db405vMW",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1lX3M3MvpNmQGzuh7tVi15/tracks",
+        "total": 32
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/1lX3M3MvpNmQGzuh7tVi15/items",
+        "total": 32
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1lX3M3MvpNmQGzuh7tVi15"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6qGlky0reWcIeMAz70W8fd"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6qGlky0reWcIeMAz70W8fd",
+      "id": "6qGlky0reWcIeMAz70W8fd",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0205ad046dd5d98362704d5f0dab67616d00001e029e3ffbc9245852e20a4d0c83ab67616d00001e02bb3c162ddba09bfba12199eaab67616d00001e02bcd0dda21a3a319df932d203",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0205ad046dd5d98362704d5f0dab67616d00001e029e3ffbc9245852e20a4d0c83ab67616d00001e02bb3c162ddba09bfba12199eaab67616d00001e02bcd0dda21a3a319df932d203",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0205ad046dd5d98362704d5f0dab67616d00001e029e3ffbc9245852e20a4d0c83ab67616d00001e02bb3c162ddba09bfba12199eaab67616d00001e02bcd0dda21a3a319df932d203",
+          "width": 60
+        }
+      ],
+      "name": "October '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAJJ6I6Itv30mFoGlx1ZWKc0I40cME",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6qGlky0reWcIeMAz70W8fd/tracks",
+        "total": 35
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/6qGlky0reWcIeMAz70W8fd/items",
+        "total": 35
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6qGlky0reWcIeMAz70W8fd"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0RyuPsj7lVf8NTQlLnH3j0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0RyuPsj7lVf8NTQlLnH3j0",
+      "id": "0RyuPsj7lVf8NTQlLnH3j0",
+      "images": [
+        {
+          "height": null,
+          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8412a6b60909be15810cf163c8",
+          "width": null
+        }
+      ],
+      "name": "Tones and I and I",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAA4LicILuoxQI0vQ3sHt3FqsRHU5+",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0RyuPsj7lVf8NTQlLnH3j0/tracks",
+        "total": 25
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0RyuPsj7lVf8NTQlLnH3j0/items",
+        "total": 25
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0RyuPsj7lVf8NTQlLnH3j0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7nXa5Ki4rYpTdkymKP9FaX"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7nXa5Ki4rYpTdkymKP9FaX",
+      "id": "7nXa5Ki4rYpTdkymKP9FaX",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02093275e675037dda1a37f73aab67616d00001e0245ec1340ea4b91a1f00a40abab67616d00001e025929b628a2e83996c4591519ab67616d00001e02ed4b6d22cb8de1aef4dc1927",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02093275e675037dda1a37f73aab67616d00001e0245ec1340ea4b91a1f00a40abab67616d00001e025929b628a2e83996c4591519ab67616d00001e02ed4b6d22cb8de1aef4dc1927",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02093275e675037dda1a37f73aab67616d00001e0245ec1340ea4b91a1f00a40abab67616d00001e025929b628a2e83996c4591519ab67616d00001e02ed4b6d22cb8de1aef4dc1927",
+          "width": 60
+        }
+      ],
+      "name": "September '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAH8Ic4YdKV/m3GHQ6NR1rA1MmupYc",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7nXa5Ki4rYpTdkymKP9FaX/tracks",
+        "total": 30
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/7nXa5Ki4rYpTdkymKP9FaX/items",
+        "total": 30
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7nXa5Ki4rYpTdkymKP9FaX"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0cr5tOok6jV1LbxRW3Q1N7"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0cr5tOok6jV1LbxRW3Q1N7",
+      "id": "0cr5tOok6jV1LbxRW3Q1N7",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0225180571abce9472f61bd722ab67616d00001e022fdadd6e64e069ee6c13a373ab67616d00001e023e0d8f5017fe3e6d6fb0f776ab67616d00001e02ab6e4b74b1ab1ce2dc6e7ca6",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0225180571abce9472f61bd722ab67616d00001e022fdadd6e64e069ee6c13a373ab67616d00001e023e0d8f5017fe3e6d6fb0f776ab67616d00001e02ab6e4b74b1ab1ce2dc6e7ca6",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0225180571abce9472f61bd722ab67616d00001e022fdadd6e64e069ee6c13a373ab67616d00001e023e0d8f5017fe3e6d6fb0f776ab67616d00001e02ab6e4b74b1ab1ce2dc6e7ca6",
+          "width": 60
+        }
+      ],
+      "name": "August '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAINvOu3RTd6/L2JNcOmvga6vYW+N6",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0cr5tOok6jV1LbxRW3Q1N7/tracks",
+        "total": 31
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/0cr5tOok6jV1LbxRW3Q1N7/items",
+        "total": 31
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0cr5tOok6jV1LbxRW3Q1N7"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2OCmZ2TQS3I1t03liWGkKS"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2OCmZ2TQS3I1t03liWGkKS",
+      "id": "2OCmZ2TQS3I1t03liWGkKS",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0211b32bddec78cb96bcd8154bab67616d00001e0252e99b3edb5e6eee37bb246fab67616d00001e02cf562e0e90b0a28cb571775fab67616d00001e02ec3d15eab5bd77027abc4b23",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0211b32bddec78cb96bcd8154bab67616d00001e0252e99b3edb5e6eee37bb246fab67616d00001e02cf562e0e90b0a28cb571775fab67616d00001e02ec3d15eab5bd77027abc4b23",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0211b32bddec78cb96bcd8154bab67616d00001e0252e99b3edb5e6eee37bb246fab67616d00001e02cf562e0e90b0a28cb571775fab67616d00001e02ec3d15eab5bd77027abc4b23",
+          "width": 60
+        }
+      ],
+      "name": "July '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAPbe/75GjdiboQ8NQHoSjBc6HWWSy",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2OCmZ2TQS3I1t03liWGkKS/tracks",
+        "total": 60
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2OCmZ2TQS3I1t03liWGkKS/items",
+        "total": 60
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2OCmZ2TQS3I1t03liWGkKS"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5O4UBQXD3A6FrZ9crDNfiC"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5O4UBQXD3A6FrZ9crDNfiC",
+      "id": "5O4UBQXD3A6FrZ9crDNfiC",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67616d00001e02722206ae6845cdbbb4ed5e44",
+          "width": null
+        }
+      ],
+      "name": "Juni '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAAn6jyYPE1Rydis2Aw912enTZzyzT",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5O4UBQXD3A6FrZ9crDNfiC/tracks",
+        "total": 1
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/5O4UBQXD3A6FrZ9crDNfiC/items",
+        "total": 1
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5O4UBQXD3A6FrZ9crDNfiC"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4ncsy40OjpUIDhbXzi7BR4"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4ncsy40OjpUIDhbXzi7BR4",
+      "id": "4ncsy40OjpUIDhbXzi7BR4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0210c7ffb39d047bb532ba4dacab67616d00001e021a4c1c9b3113ee5dedf009c5ab67616d00001e0259d1b5794cefd3e7e86a775dab67616d00001e025cd88ee55eaa0c94f0f5e7c2",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0210c7ffb39d047bb532ba4dacab67616d00001e021a4c1c9b3113ee5dedf009c5ab67616d00001e0259d1b5794cefd3e7e86a775dab67616d00001e025cd88ee55eaa0c94f0f5e7c2",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0210c7ffb39d047bb532ba4dacab67616d00001e021a4c1c9b3113ee5dedf009c5ab67616d00001e0259d1b5794cefd3e7e86a775dab67616d00001e025cd88ee55eaa0c94f0f5e7c2",
+          "width": 60
+        }
+      ],
+      "name": "June '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAALjpQDG7JUhg4XF64j36IVHVh6DmK",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4ncsy40OjpUIDhbXzi7BR4/tracks",
+        "total": 45
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/4ncsy40OjpUIDhbXzi7BR4/items",
+        "total": 45
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4ncsy40OjpUIDhbXzi7BR4"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6DSDjystyVtnkfdsoANXu0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6DSDjystyVtnkfdsoANXu0",
+      "id": "6DSDjystyVtnkfdsoANXu0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e022282cf1bf4b5eb5a6ee67f6eab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e0288baa83a6c7bc59e18b74e79ab67616d00001e02dd03ba4ad12beff6aed2d13c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e022282cf1bf4b5eb5a6ee67f6eab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e0288baa83a6c7bc59e18b74e79ab67616d00001e02dd03ba4ad12beff6aed2d13c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e022282cf1bf4b5eb5a6ee67f6eab67616d00001e0264ff626ae62af9867c4ee2e1ab67616d00001e0288baa83a6c7bc59e18b74e79ab67616d00001e02dd03ba4ad12beff6aed2d13c",
+          "width": 60
+        }
+      ],
+      "name": "Disco Vibes",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAACNeSMD6hLdkSArDZihVm9W9X94kw",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6DSDjystyVtnkfdsoANXu0/tracks",
+        "total": 6
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/6DSDjystyVtnkfdsoANXu0/items",
+        "total": 6
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6DSDjystyVtnkfdsoANXu0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2jvlY5A7LXMtJjQFAZpkER"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2jvlY5A7LXMtJjQFAZpkER",
+      "id": "2jvlY5A7LXMtJjQFAZpkER",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0203bf634fe9526dfcc79f8526ab67616d00001e027058c5d53a78507ff4a666fbab67616d00001e02d766fd9e96ce4be7776759a4ab67616d00001e02db6219fb4ee7ceceaf41e769",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e0203bf634fe9526dfcc79f8526ab67616d00001e027058c5d53a78507ff4a666fbab67616d00001e02d766fd9e96ce4be7776759a4ab67616d00001e02db6219fb4ee7ceceaf41e769",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e0203bf634fe9526dfcc79f8526ab67616d00001e027058c5d53a78507ff4a666fbab67616d00001e02d766fd9e96ce4be7776759a4ab67616d00001e02db6219fb4ee7ceceaf41e769",
+          "width": 60
+        }
+      ],
+      "name": "May '20",
+      "owner": {
+        "display_name": "Joost Lekkerkerker",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1112264649"
+        },
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAALOTM51RP7q2tcb0KZvUn5wBJYing",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2jvlY5A7LXMtJjQFAZpkER/tracks",
+        "total": 43
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/2jvlY5A7LXMtJjQFAZpkER/items",
+        "total": 43
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2jvlY5A7LXMtJjQFAZpkER"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7j2y0Baus5KEznyrb9P7Hh"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7j2y0Baus5KEznyrb9P7Hh",
+      "id": "7j2y0Baus5KEznyrb9P7Hh",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02175c577a61aa13d4fb4b6534ab67616d00001e0219842db9fce84f370835265cab67616d00001e022e92f776279eaf45d14a33fdab67616d00001e02ee1ae7d44f10961722736148",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d00001e02175c577a61aa13d4fb4b6534ab67616d00001e0219842db9fce84f370835265cab67616d00001e022e92f776279eaf45d14a33fdab67616d00001e02ee1ae7d44f10961722736148",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d00001e02175c577a61aa13d4fb4b6534ab67616d00001e0219842db9fce84f370835265cab67616d00001e022e92f776279eaf45d14a33fdab67616d00001e02ee1ae7d44f10961722736148",
+          "width": 60
+        }
+      ],
+      "name": "funk wav bounces vol 2",
+      "owner": {
+        "display_name": "angelarbarnes",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/angelarbarnes"
+        },
+        "href": "https://api.spotify.com/v1/users/angelarbarnes",
+        "id": "angelarbarnes",
+        "type": "user",
+        "uri": "spotify:user:angelarbarnes"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "AAAAwnmqbrq34IfUqN5UdZBCYOxnJW9i",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7j2y0Baus5KEznyrb9P7Hh/tracks",
+        "total": 161
+      },
+      "items": {
+        "href": "https://api.spotify.com/v1/playlists/7j2y0Baus5KEznyrb9P7Hh/items",
+        "total": 161
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7j2y0Baus5KEznyrb9P7Hh"
+    }
+  ]
 }
