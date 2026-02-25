@@ -1,200 +1,200 @@
 {
-  "collaborative": false,
-  "description": "",
-  "external_urls": {
-    "spotify": "https://open.spotify.com/playlist/3toMXYM91T55pKzuysH5Ph"
-  },
-  "followers": {
-    "href": null,
-    "total": 0
-  },
-  "href": "https://api.spotify.com/v1/playlists/3toMXYM91T55pKzuysH5Ph?locale=en-US%2Cen%3Bq%3D0.5",
-  "id": "3toMXYM91T55pKzuysH5Ph",
-  "images": [
-    {
-      "height": null,
-      "url": "https://i.scdn.co/image/ab67616d00001e022f9b47bdc2b1c7cae7b014af",
-      "width": null
-    }
-  ],
-  "name": "Starred",
-  "owner": {
-    "display_name": "chadandcaren",
+    "collaborative": false,
+    "description": "",
     "external_urls": {
-      "spotify": "https://open.spotify.com/user/chadandcaren"
+        "spotify": "https://open.spotify.com/playlist/3toMXYM91T55pKzuysH5Ph"
     },
-    "href": "https://api.spotify.com/v1/users/chadandcaren",
-    "id": "chadandcaren",
-    "type": "user",
-    "uri": "spotify:user:chadandcaren"
-  },
-  "primary_color": null,
-  "public": true,
-  "snapshot_id": "AAAAAoRTkoeSGwZYJQxBuBVJ4+cWjJZf",
-  "tracks": {
-    "href": "https://api.spotify.com/v1/playlists/3toMXYM91T55pKzuysH5Ph/tracks?offset=0&limit=100&locale=en-US,en;q%3D0.5",
-    "items": [
-      {
-        "added_at": "2013-01-19T21:31:09Z",
-        "added_by": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/chadandcaren"
-          },
-          "href": "https://api.spotify.com/v1/users/chadandcaren",
-          "id": "chadandcaren",
-          "type": "user",
-          "uri": "spotify:user:chadandcaren"
-        },
-        "is_local": true,
-        "primary_color": null,
-        "track": {
-          "album": {
-            "album_type": null,
-            "available_markets": [],
-            "external_urls": {},
-            "href": null,
-            "id": null,
-            "images": [],
-            "name": "The Score",
-            "release_date": null,
-            "release_date_precision": null,
-            "type": "album",
-            "uri": null,
-            "artists": []
-          },
-          "artists": [
-            {
-              "external_urls": {},
-              "href": null,
-              "id": null,
-              "name": "Fugees (Refugee Camp)",
-              "type": "artist",
-              "uri": null
-            }
-          ],
-          "available_markets": [],
-          "explicit": false,
-          "preview_url": null,
-          "type": "track",
-          "disc_number": 0,
-          "external_ids": {},
-          "external_urls": {},
-          "href": null,
-          "id": null,
-          "duration_ms": 273000,
-          "name": "No Woman, No Cry",
-          "uri": "spotify:local:Fugees+%28Refugee+Camp%29:The+Score:No+Woman%2C+No+Cry:273",
-          "popularity": 0,
-          "track_number": 0,
-          "is_local": true
-        },
-        "video_thumbnail": {
-          "url": null
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/3toMXYM91T55pKzuysH5Ph?locale=en-US%2Cen%3Bq%3D0.5",
+    "id": "3toMXYM91T55pKzuysH5Ph",
+    "images": [
+        {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67616d00001e022f9b47bdc2b1c7cae7b014af",
+            "width": null
         }
-      },
-      {
-        "added_at": "2013-01-19T22:16:08Z",
-        "added_by": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/chadandcaren"
-          },
-          "href": "https://api.spotify.com/v1/users/chadandcaren",
-          "id": "chadandcaren",
-          "type": "user",
-          "uri": "spotify:user:chadandcaren"
-        },
-        "is_local": false,
-        "primary_color": null,
-        "track": {
-          "preview_url": "https://p.scdn.co/mp3-preview/5327d47d3f8c601cc8e783aaed138669c6331e31?cid=cfe923b2d660439caf2b557b21f31221",
-          "available_markets": [],
-          "explicit": false,
-          "type": "track",
-          "episode": false,
-          "track": true,
-          "album": {
-            "available_markets": [],
-            "type": "album",
-            "album_type": "album",
-            "href": "https://api.spotify.com/v1/albums/3KVfMVtOmoVCgihLE4HoBr",
-            "id": "3KVfMVtOmoVCgihLE4HoBr",
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273866dc0fd5fbfd51fd4c50919",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02866dc0fd5fbfd51fd4c50919",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851866dc0fd5fbfd51fd4c50919",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "name": "Be OK",
-            "release_date": "2008-01-01",
-            "release_date_precision": "day",
-            "uri": "spotify:album:3KVfMVtOmoVCgihLE4HoBr",
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2vm8GdHyrJh2O2MfbQFYG0"
-                },
-                "href": "https://api.spotify.com/v1/artists/2vm8GdHyrJh2O2MfbQFYG0",
-                "id": "2vm8GdHyrJh2O2MfbQFYG0",
-                "name": "Ingrid Michaelson",
-                "type": "artist",
-                "uri": "spotify:artist:2vm8GdHyrJh2O2MfbQFYG0"
-              }
-            ],
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/3KVfMVtOmoVCgihLE4HoBr"
-            },
-            "total_tracks": 11
-          },
-          "artists": [
-            {
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2vm8GdHyrJh2O2MfbQFYG0"
-              },
-              "href": "https://api.spotify.com/v1/artists/2vm8GdHyrJh2O2MfbQFYG0",
-              "id": "2vm8GdHyrJh2O2MfbQFYG0",
-              "name": "Ingrid Michaelson",
-              "type": "artist",
-              "uri": "spotify:artist:2vm8GdHyrJh2O2MfbQFYG0"
-            }
-          ],
-          "disc_number": 1,
-          "track_number": 10,
-          "duration_ms": 148706,
-          "external_ids": {
-            "isrc": "ushm80865849"
-          },
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/4oeRfmp9XpKWym6YD1WvBP"
-          },
-          "href": "https://api.spotify.com/v1/tracks/4oeRfmp9XpKWym6YD1WvBP",
-          "id": "4oeRfmp9XpKWym6YD1WvBP",
-          "name": "You and I",
-          "popularity": 0,
-          "uri": "spotify:track:4oeRfmp9XpKWym6YD1WvBP",
-          "is_local": false
-        },
-        "video_thumbnail": {
-          "url": null
-        }
-      }
     ],
-    "limit": 100,
-    "next": null,
-    "offset": 0,
-    "previous": null,
-    "total": 2
-  },
-  "type": "playlist",
-  "uri": "spotify:playlist:3toMXYM91T55pKzuysH5Ph"
+    "name": "Starred",
+    "owner": {
+        "display_name": "chadandcaren",
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/chadandcaren"
+        },
+        "href": "https://api.spotify.com/v1/users/chadandcaren",
+        "id": "chadandcaren",
+        "type": "user",
+        "uri": "spotify:user:chadandcaren"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "AAAAAoRTkoeSGwZYJQxBuBVJ4+cWjJZf",
+    "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3toMXYM91T55pKzuysH5Ph/tracks?offset=0&limit=100&locale=en-US,en;q%3D0.5",
+        "items": [
+            {
+                "added_at": "2013-01-19T21:31:09Z",
+                "added_by": {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/user/chadandcaren"
+                    },
+                    "href": "https://api.spotify.com/v1/users/chadandcaren",
+                    "id": "chadandcaren",
+                    "type": "user",
+                    "uri": "spotify:user:chadandcaren"
+                },
+                "is_local": true,
+                "primary_color": null,
+                "track": {
+                    "album": {
+                        "album_type": null,
+                        "available_markets": [],
+                        "external_urls": {},
+                        "href": null,
+                        "id": null,
+                        "images": [],
+                        "name": "The Score",
+                        "release_date": null,
+                        "release_date_precision": null,
+                        "type": "album",
+                        "uri": null,
+                        "artists": []
+                    },
+                    "artists": [
+                        {
+                            "external_urls": {},
+                            "href": null,
+                            "id": null,
+                            "name": "Fugees (Refugee Camp)",
+                            "type": "artist",
+                            "uri": null
+                        }
+                    ],
+                    "available_markets": [],
+                    "explicit": false,
+                    "preview_url": null,
+                    "type": "track",
+                    "disc_number": 0,
+                    "external_ids": {},
+                    "external_urls": {},
+                    "href": null,
+                    "id": null,
+                    "duration_ms": 273000,
+                    "name": "No Woman, No Cry",
+                    "uri": "spotify:local:Fugees+%28Refugee+Camp%29:The+Score:No+Woman%2C+No+Cry:273",
+                    "popularity": 0,
+                    "track_number": 0,
+                    "is_local": true
+                },
+                "video_thumbnail": {
+                    "url": null
+                }
+            },
+            {
+                "added_at": "2013-01-19T22:16:08Z",
+                "added_by": {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/user/chadandcaren"
+                    },
+                    "href": "https://api.spotify.com/v1/users/chadandcaren",
+                    "id": "chadandcaren",
+                    "type": "user",
+                    "uri": "spotify:user:chadandcaren"
+                },
+                "is_local": false,
+                "primary_color": null,
+                "track": {
+                    "preview_url": "https://p.scdn.co/mp3-preview/5327d47d3f8c601cc8e783aaed138669c6331e31?cid=cfe923b2d660439caf2b557b21f31221",
+                    "available_markets": [],
+                    "explicit": false,
+                    "type": "track",
+                    "episode": false,
+                    "track": true,
+                    "album": {
+                        "available_markets": [],
+                        "type": "album",
+                        "album_type": "album",
+                        "href": "https://api.spotify.com/v1/albums/3KVfMVtOmoVCgihLE4HoBr",
+                        "id": "3KVfMVtOmoVCgihLE4HoBr",
+                        "images": [
+                            {
+                                "url": "https://i.scdn.co/image/ab67616d0000b273866dc0fd5fbfd51fd4c50919",
+                                "width": 640,
+                                "height": 640
+                            },
+                            {
+                                "url": "https://i.scdn.co/image/ab67616d00001e02866dc0fd5fbfd51fd4c50919",
+                                "width": 300,
+                                "height": 300
+                            },
+                            {
+                                "url": "https://i.scdn.co/image/ab67616d00004851866dc0fd5fbfd51fd4c50919",
+                                "width": 64,
+                                "height": 64
+                            }
+                        ],
+                        "name": "Be OK",
+                        "release_date": "2008-01-01",
+                        "release_date_precision": "day",
+                        "uri": "spotify:album:3KVfMVtOmoVCgihLE4HoBr",
+                        "artists": [
+                            {
+                                "external_urls": {
+                                    "spotify": "https://open.spotify.com/artist/2vm8GdHyrJh2O2MfbQFYG0"
+                                },
+                                "href": "https://api.spotify.com/v1/artists/2vm8GdHyrJh2O2MfbQFYG0",
+                                "id": "2vm8GdHyrJh2O2MfbQFYG0",
+                                "name": "Ingrid Michaelson",
+                                "type": "artist",
+                                "uri": "spotify:artist:2vm8GdHyrJh2O2MfbQFYG0"
+                            }
+                        ],
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/album/3KVfMVtOmoVCgihLE4HoBr"
+                        },
+                        "total_tracks": 11
+                    },
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/2vm8GdHyrJh2O2MfbQFYG0"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/2vm8GdHyrJh2O2MfbQFYG0",
+                            "id": "2vm8GdHyrJh2O2MfbQFYG0",
+                            "name": "Ingrid Michaelson",
+                            "type": "artist",
+                            "uri": "spotify:artist:2vm8GdHyrJh2O2MfbQFYG0"
+                        }
+                    ],
+                    "disc_number": 1,
+                    "track_number": 10,
+                    "duration_ms": 148706,
+                    "external_ids": {
+                        "isrc": "ushm80865849"
+                    },
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/track/4oeRfmp9XpKWym6YD1WvBP"
+                    },
+                    "href": "https://api.spotify.com/v1/tracks/4oeRfmp9XpKWym6YD1WvBP",
+                    "id": "4oeRfmp9XpKWym6YD1WvBP",
+                    "name": "You and I",
+                    "popularity": 0,
+                    "uri": "spotify:track:4oeRfmp9XpKWym6YD1WvBP",
+                    "is_local": false
+                },
+                "video_thumbnail": {
+                    "url": null
+                }
+            }
+        ],
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 2
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:3toMXYM91T55pKzuysH5Ph"
 }

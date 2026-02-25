@@ -1,67 +1,67 @@
 {
-  "device": {
-    "id": "aee274e4bbe6b44cf3b22ad3b68eca3a6954a701",
-    "is_active": true,
-    "is_private_session": false,
-    "is_restricted": false,
-    "name": "Joost’s MacBook Pro",
-    "supports_volume": true,
-    "type": "Computer",
-    "volume_percent": 67
-  },
-  "shuffle_state": false,
-  "smart_shuffle": false,
-  "repeat_state": "off",
-  "timestamp": 1731336494187,
-  "context": null,
-  "progress_ms": 22215,
-  "item": {
-    "album": {
-      "album_type": null,
-      "artists": [],
-      "available_markets": [],
-      "external_urls": {},
-      "href": null,
-      "id": null,
-      "images": [],
-      "name": "",
-      "release_date": null,
-      "release_date_precision": null,
-      "type": "album",
-      "uri": null
+    "device": {
+        "id": "aee274e4bbe6b44cf3b22ad3b68eca3a6954a701",
+        "is_active": true,
+        "is_private_session": false,
+        "is_restricted": false,
+        "name": "Joost’s MacBook Pro",
+        "supports_volume": true,
+        "type": "Computer",
+        "volume_percent": 67
     },
-    "artists": [
-      {
+    "shuffle_state": false,
+    "smart_shuffle": false,
+    "repeat_state": "off",
+    "timestamp": 1731336494187,
+    "context": null,
+    "progress_ms": 22215,
+    "item": {
+        "album": {
+            "album_type": null,
+            "artists": [],
+            "available_markets": [],
+            "external_urls": {},
+            "href": null,
+            "id": null,
+            "images": [],
+            "name": "",
+            "release_date": null,
+            "release_date_precision": null,
+            "type": "album",
+            "uri": null
+        },
+        "artists": [
+            {
+                "external_urls": {},
+                "href": null,
+                "id": null,
+                "name": "Four Tet x Fred again.. x Skrillex",
+                "type": "artist",
+                "uri": null
+            }
+        ],
+        "available_markets": [],
+        "disc_number": 0,
+        "duration_ms": 5432000,
+        "explicit": false,
+        "external_ids": {},
         "external_urls": {},
         "href": null,
         "id": null,
-        "name": "Four Tet x Fred again.. x Skrillex",
-        "type": "artist",
-        "uri": null
-      }
-    ],
-    "available_markets": [],
-    "disc_number": 0,
-    "duration_ms": 5432000,
-    "explicit": false,
-    "external_ids": {},
-    "external_urls": {},
-    "href": null,
-    "id": null,
-    "is_local": true,
-    "name": "Coachella 2023",
-    "popularity": 0,
-    "preview_url": null,
-    "track_number": 0,
-    "type": "track",
-    "uri": "spotify:local:Four+Tet+x+Fred+again..+x+Skrillex::Coachella+2023:5432"
-  },
-  "currently_playing_type": "track",
-  "actions": {
-    "disallows": {
-      "resuming": true,
-      "skipping_prev": true
-    }
-  },
-  "is_playing": true
+        "is_local": true,
+        "name": "Coachella 2023",
+        "popularity": 0,
+        "preview_url": null,
+        "track_number": 0,
+        "type": "track",
+        "uri": "spotify:local:Four+Tet+x+Fred+again..+x+Skrillex::Coachella+2023:5432"
+    },
+    "currently_playing_type": "track",
+    "actions": {
+        "disallows": {
+            "resuming": true,
+            "skipping_prev": true
+        }
+    },
+    "is_playing": true
 }

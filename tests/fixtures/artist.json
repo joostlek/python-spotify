@@ -1,37 +1,30 @@
 {
-  "external_urls": {
-    "spotify": "https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg"
-  },
-  "followers": {
-    "href": null,
-    "total": 10817055
-  },
-  "genres": [
-    "dance pop",
-    "miami hip hop",
-    "pop"
-  ],
-  "href": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg?locale=en-US%2Cen%3Bq%3D0.5",
-  "id": "0TnOYISbd1XYRBk9myaseg",
-  "images": [
-    {
-      "url": "https://i.scdn.co/image/ab6761610000e5ebee07b5820dd91d15d397e29c",
-      "height": 640,
-      "width": 640
+    "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg"
     },
-    {
-      "url": "https://i.scdn.co/image/ab67616100005174ee07b5820dd91d15d397e29c",
-      "height": 320,
-      "width": 320
-    },
-    {
-      "url": "https://i.scdn.co/image/ab6761610000f178ee07b5820dd91d15d397e29c",
-      "height": 160,
-      "width": 160
-    }
-  ],
-  "name": "Pitbull",
-  "popularity": 85,
-  "type": "artist",
-  "uri": "spotify:artist:0TnOYISbd1XYRBk9myaseg"
+    "followers": { "href": null, "total": 12425030 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg",
+    "id": "0TnOYISbd1XYRBk9myaseg",
+    "images": [
+        {
+            "url": "https://i.scdn.co/image/ab6761610000e5eb8d8ac7290d0fe2d12fb6e4d9",
+            "height": 640,
+            "width": 640
+        },
+        {
+            "url": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9",
+            "height": 320,
+            "width": 320
+        },
+        {
+            "url": "https://i.scdn.co/image/ab6761610000f1788d8ac7290d0fe2d12fb6e4d9",
+            "height": 160,
+            "width": 160
+        }
+    ],
+    "name": "Pitbull",
+    "popularity": 85,
+    "type": "artist",
+    "uri": "spotify:artist:0TnOYISbd1XYRBk9myaseg"
 }

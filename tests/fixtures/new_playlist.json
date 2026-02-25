@@ -1,39 +1,39 @@
 {
-  "collaborative": false,
-  "description": "New playlist description",
-  "external_urls": {
-    "spotify": "https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB"
-  },
-  "followers": {
-    "href": null,
-    "total": 0
-  },
-  "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB",
-  "id": "2dGgoMPWpapXYA6rX7ZbbB",
-  "images": [],
-  "primary_color": null,
-  "name": "New Playlist",
-  "type": "playlist",
-  "uri": "spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB",
-  "owner": {
-    "href": "https://api.spotify.com/v1/users/1112264649",
-    "id": "1112264649",
-    "type": "user",
-    "uri": "spotify:user:1112264649",
-    "display_name": null,
+    "collaborative": false,
+    "description": "New playlist description",
     "external_urls": {
-      "spotify": "https://open.spotify.com/user/1112264649"
+        "spotify": "https://open.spotify.com/playlist/2dGgoMPWpapXYA6rX7ZbbB"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB",
+    "id": "2dGgoMPWpapXYA6rX7ZbbB",
+    "images": [],
+    "primary_color": null,
+    "name": "New Playlist",
+    "type": "playlist",
+    "uri": "spotify:playlist:2dGgoMPWpapXYA6rX7ZbbB",
+    "owner": {
+        "href": "https://api.spotify.com/v1/users/1112264649",
+        "id": "1112264649",
+        "type": "user",
+        "uri": "spotify:user:1112264649",
+        "display_name": null,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/1112264649"
+        }
+    },
+    "public": false,
+    "snapshot_id": "AAABRUSqXDRHND7RgBQhEmksjQG8o/A+",
+    "tracks": {
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB/tracks",
+        "total": 0,
+        "items": []
     }
-  },
-  "public": false,
-  "snapshot_id": "AAABRUSqXDRHND7RgBQhEmksjQG8o/A+",
-  "tracks": {
-    "limit": 100,
-    "next": null,
-    "offset": 0,
-    "previous": null,
-    "href": "https://api.spotify.com/v1/playlists/2dGgoMPWpapXYA6rX7ZbbB/tracks",
-    "total": 0,
-    "items": []
-  }
 }
