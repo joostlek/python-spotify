@@ -292,7 +292,7 @@ class SpotifyClient:
     @catch_json_decode_error
     async def get_artist(self, artist_id: str) -> Artist:
         """Get artist."""
-        identifier = artist_id.split(":")[-1]
+        identifier = artist_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/artists/{identifier}")
         return Artist.from_json(response)
 
@@ -314,14 +314,14 @@ class SpotifyClient:
     async def get_artist_albums(self, artist_id: str) -> list[SimplifiedAlbum]:
         """Get artist albums."""
         params: dict[str, Any] = {"limit": 48}
-        identifier = artist_id.split(":")[-1]
+        identifier = artist_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/artists/{identifier}/albums", params=params)
         return NewReleasesResponseInner.from_json(response).items
 
     @catch_json_decode_error
     async def get_artist_top_tracks(self, artist_id: str) -> list[Track]:
         """Get artist top tracks."""
-        identifier = artist_id.split(":")[-1]
+        identifier = artist_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/artists/{identifier}/top-tracks")
         return ArtistTopTracksResponse.from_json(response).tracks
 
@@ -413,7 +413,7 @@ class SpotifyClient:
     @catch_json_decode_error
     async def get_chapter(self, chapter_id: str) -> Chapter:
         """Get chapter."""
-        identifier = chapter_id.split(":")[-1]
+        identifier = chapter_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/chapters/{identifier}")
         return Chapter.from_json(response)
 
@@ -434,7 +434,7 @@ class SpotifyClient:
     @catch_json_decode_error
     async def get_episode(self, episode_id: str) -> Episode:
         """Get episode."""
-        identifier = episode_id.split(":")[-1]
+        identifier = episode_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/episodes/{identifier}")
         return Episode.from_json(response)
 
@@ -638,7 +638,7 @@ class SpotifyClient:
     @catch_json_decode_error
     async def get_playlist(self, playlist_id: str) -> Playlist:
         """Get playlist."""
-        identifier = playlist_id.split(":")[-1]
+        identifier = playlist_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(
             f"v1/playlists/{identifier}", params={"additional_types": "track,episode"}
         )
@@ -810,7 +810,7 @@ class SpotifyClient:
     @catch_json_decode_error
     async def get_show(self, show_id: str) -> Show:
         """Get show."""
-        identifier = show_id.split(":")[-1]
+        identifier = show_id.rsplit(":", maxsplit=1)[-1]
         response = await self._get(f"v1/shows/{identifier}")
         return Show.from_json(response)
 
@@ -819,7 +819,7 @@ class SpotifyClient:
     @catch_json_decode_error
     async def get_show_episodes(self, show_id: str) -> list[SimplifiedEpisode]:
         """Get show episodes."""
-        identifier = show_id.split(":")[-1]
+        identifier = show_id.rsplit(":", maxsplit=1)[-1]
         params: dict[str, Any] = {"limit": 48}
         response = await self._get(f"v1/shows/{identifier}/episodes", params=params)
         return ShowEpisodesResponse.from_json(response).items

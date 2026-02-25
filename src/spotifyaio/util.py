@@ -3,4 +3,4 @@
 
 def get_identifier(identifier: str) -> str:
     """Get the identifier from a Spotify URI."""
-    return identifier.split(":")[-1]
+    return identifier.rsplit(":", maxsplit=1)[-1]
