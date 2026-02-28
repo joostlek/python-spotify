@@ -642,9 +642,7 @@
           ],
           "is_externally_hosted": false,
           "language": "en",
-          "languages": [
-            "en"
-          ],
+          "languages": ["en"],
           "name": "Toni Delivers Semen",
           "release_date": "2024-11-27",
           "release_date_precision": "day",
@@ -1050,9 +1048,7 @@
               }
             ],
             "is_externally_hosted": false,
-            "languages": [
-              "en"
-            ],
+            "languages": ["en"],
             "media_type": "audio",
             "name": "Toni and Ryan",
             "publisher": "Toni Lodge and Ryan Jon",

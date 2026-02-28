@@ -29,16 +29,11 @@
   "is_externally_hosted": false,
   "is_playable": true,
   "language": "en-US",
-  "languages": [
-    "en-US"
-  ],
+  "languages": ["en-US"],
   "name": "My Squirrel Has Brain Damage - Safety Third 119",
   "release_date": "2024-07-26",
   "release_date_precision": "day",
-  "resume_point": {
-    "fully_played": false,
-    "resume_position_ms": 0
-  },
+  "resume_point": { "fully_played": false, "resume_position_ms": 90000 },
   "show": {
     "available_markets": [
       "AR",
@@ -254,13 +249,11 @@
       }
     ],
     "is_externally_hosted": false,
-    "languages": [
-      "en-US"
-    ],
+    "languages": ["en-US"],
     "media_type": "audio",
     "name": "Safety Third",
     "publisher": "Safety Third ",
-    "total_episodes": 120,
+    "total_episodes": 159,
     "type": "show",
     "uri": "spotify:show:1Y9ExMgMxoBVrgrfU7u0nD"
   },

@@ -1,6 +1,6 @@
 {
-  "href": "https://api.spotify.com/v1/me/episodes?offset=0&limit=20&locale=en-US,en;q%3D0.5",
-  "limit": 20,
+  "href": "https://api.spotify.com/v1/me/episodes?offset=0&limit=48",
+  "limit": 48,
   "next": null,
   "offset": 0,
   "previous": null,
@@ -22,9 +22,7 @@
         "images": [],
         "is_externally_hosted": null,
         "language": null,
-        "languages": [
-          null
-        ],
+        "languages": [null],
         "name": null,
         "release_date": "0000",
         "release_date_precision": "year",
@@ -44,9 +42,7 @@
           "id": null,
           "images": [],
           "is_externally_hosted": null,
-          "languages": [
-            null
-          ],
+          "languages": [null],
           "media_type": null,
           "name": null,
           "publisher": null,
@@ -62,14 +58,14 @@
       "added_at": "2021-04-01T23:21:46Z",
       "episode": {
         "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/3MPB6hmgIONz91Em6JfkAK/clip_0_60000.mp3",
-        "description": "This week on the podcast Ed is joined by actor, writer and Series 10 contestant, Katherine Parkinson. As well as discussing the new line up and this week's tasks they go back to Series 10 and talk about Katherine's time on the show - expect chat about clay masks, marble runs, spiders and THAT fart noise. You can watch Series 11 of Taskmaster each Thursday on Channel 4 at 9pm.Watch Taskmaster Bleeped on All 4Get in touch with Ed and future guests:taskmasterpodcast@gmail.com Visit the Taskmaster Youtube channelwww.youtube.com/taskmaster For all your Taskmaster goodies visit www.taskmasterstore.com  Taskmaster the podcast is produced by Daisy Knight for Avalon Television Ltd",
+        "description": "This week on the podcast Ed is joined by actor, writer and Series 10 contestant, Katherine Parkinson. As well as discussing the new line up and this week's tasks they go back to Series 10 and talk about Katherine's time on the show - expect chat about clay masks, marble runs, spiders and THAT fart noise. You can watch Series 11 of Taskmaster each Thursday on Channel 4 at 9pm.Watch Taskmaster Bleeped on All 4Get in touch with Ed and future guests:taskmasterpodcast@gmail.com\u00a0Visit the Taskmaster Youtube channelwww.youtube.com/taskmaster\u00a0For all your Taskmaster goodies visit\u00a0www.taskmasterstore.com\u00a0\u00a0Taskmaster the podcast is produced by Daisy Knight for Avalon Television Ltd",
         "duration_ms": 3724303,
         "explicit": true,
         "external_urls": {
           "spotify": "https://open.spotify.com/episode/0x25dVaCtjWMmcjDJyuMM5"
         },
         "href": "https://api.spotify.com/v1/episodes/0x25dVaCtjWMmcjDJyuMM5",
-        "html_description": "<p>This week on the podcast Ed is joined by actor, writer and Series 10 contestant, Katherine Parkinson. As well as discussing the new line up and this week&#39;s tasks they go back to Series 10 and talk about Katherine&#39;s time on the show - expect chat about clay masks, marble runs, spiders and THAT fart noise. </p><br /><p>You can watch Series 11 of Taskmaster each Thursday on Channel 4 at 9pm.</p><br /><p>Watch Taskmaster Bleeped on All 4</p><br /><p>Get in touch with Ed and future guests:</p><p><a href=\"mailto:thetaskmasterpodcast&#64;gmail.com\" rel=\"nofollow\">taskmasterpodcast&#64;gmail.com</a> </p><br /><p>Visit the Taskmaster Youtube channel</p><p>www.youtube.com/taskmaster </p><br /><p>For all your Taskmaster goodies visit </p><p>www.taskmasterstore.com  </p><br /><p>Taskmaster the podcast is produced by Daisy Knight for Avalon Television Ltd</p>",
+        "html_description": "<p>This week on the podcast Ed is joined by actor, writer and Series 10 contestant, Katherine Parkinson. As well as discussing the new line up and this week&#39;s tasks they go back to Series 10 and talk about Katherine&#39;s time on the show - expect chat about clay masks, marble runs, spiders and THAT fart noise. </p><br /><p>You can watch Series 11 of Taskmaster each Thursday on Channel 4 at 9pm.</p><br /><p>Watch Taskmaster Bleeped on All 4</p><br /><p>Get in touch with Ed and future guests:</p><p><a href=\"mailto:thetaskmasterpodcast&#64;gmail.com\" rel=\"nofollow\">taskmasterpodcast&#64;gmail.com</a>\u00a0</p><br /><p>Visit the Taskmaster Youtube channel</p><p>www.youtube.com/taskmaster\u00a0</p><br /><p>For all your Taskmaster goodies visit\u00a0</p><p>www.taskmasterstore.com\u00a0\u00a0</p><br /><p>Taskmaster the podcast is produced by Daisy Knight for Avalon Television Ltd</p>",
         "id": "0x25dVaCtjWMmcjDJyuMM5",
         "images": [
           {
@@ -91,15 +87,13 @@
         "is_externally_hosted": false,
         "is_playable": true,
         "language": "en",
-        "languages": [
-          "en"
-        ],
+        "languages": ["en"],
         "name": "Ep 26. Katherine Parkinson - S11 Ep.3",
         "release_date": "2021-04-01",
         "release_date_precision": "day",
         "resume_point": {
           "fully_played": true,
-          "resume_position_ms": 301000
+          "resume_position_ms": 20000
         },
         "show": {
           "available_markets": [
@@ -316,13 +310,11 @@
             }
           ],
           "is_externally_hosted": false,
-          "languages": [
-            "en"
-          ],
+          "languages": ["en"],
           "media_type": "audio",
           "name": "Taskmaster The Podcast",
           "publisher": "Avalon ",
-          "total_episodes": 200,
+          "total_episodes": 255,
           "type": "show",
           "uri": "spotify:show:4BZc9sOdNilJJ8irsuOzdg"
         },
