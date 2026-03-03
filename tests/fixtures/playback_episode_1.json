@@ -53,9 +53,7 @@
     "is_externally_hosted": false,
     "is_playable": true,
     "language": "en-US",
-    "languages": [
-      "en-US"
-    ],
+    "languages": ["en-US"],
     "name": "My Squirrel Has Brain Damage - Safety Third 119",
     "release_date": "2024-07-26",
     "release_date_precision": "day",
@@ -278,9 +276,7 @@
         }
       ],
       "is_externally_hosted": false,
-      "languages": [
-        "en-US"
-      ],
+      "languages": ["en-US"],
       "media_type": "audio",
       "name": "Safety Third",
       "publisher": "Safety Third ",

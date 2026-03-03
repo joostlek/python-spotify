@@ -421,7 +421,14 @@ class BasePlaylist(DataClassORJSONMixin):
 class Playlist(BasePlaylist):
     """Playlist model."""
 
-    tracks: PlaylistTracks
+    items: PlaylistTracks
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        if "items" not in d and "tracks" in d:
+            d = {**d, "items": d["tracks"]}
+        return d
 
 
 @dataclass
@@ -518,13 +525,6 @@ class Category(DataClassORJSONMixin):
     icons: list[Image]
 
 
-class ProductType(StrEnum):
-    """Product type."""
-
-    PREMIUM = "premium"
-    FREE = "free"
-
-
 @dataclass
 class BaseUserProfile(DataClassORJSONMixin):
     """Base user profile model."""
@@ -540,9 +540,6 @@ class BaseUserProfile(DataClassORJSONMixin):
 class UserProfile(BaseUserProfile):
     """User profile model."""
 
-    product: ProductType
-    email: str | None = None
-
 
 @dataclass
 class SimplifiedShow(DataClassORJSONMixin):
@@ -554,7 +551,6 @@ class SimplifiedShow(DataClassORJSONMixin):
     images: list[Image]
     external_urls: dict[str, str]
     href: str
-    publisher: str
     description: str
     total_episodes: int | None
 
@@ -877,10 +873,3 @@ class SearchResult(DataClassORJSONMixin):
                 if item is not None
             ],
         }
-
-
-class FollowType(StrEnum):
-    """Follow type."""
-
-    ARTIST = "artist"
-    USER = "user"
