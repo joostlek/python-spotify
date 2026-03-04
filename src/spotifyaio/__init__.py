@@ -4,6 +4,7 @@ from .exceptions import (
     SpotifyAuthenticationFailedError,
     SpotifyConnectionError,
     SpotifyError,
+    SpotifyForbiddenError,
     SpotifyNotFoundError,
     SpotifyRateLimitError,
 )
@@ -66,6 +67,7 @@ __all__ = [
     "SpotifyClient",
     "SpotifyConnectionError",
     "SpotifyError",
+    "SpotifyForbiddenError",
     "SpotifyNotFoundError",
     "SpotifyRateLimitError",
     "Track",

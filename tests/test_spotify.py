@@ -16,6 +16,7 @@ from spotifyaio import (
     SpotifyClient,
     SpotifyConnectionError,
     SpotifyError,
+    SpotifyForbiddenError,
     SpotifyNotFoundError,
 )
 from spotifyaio.models import SearchType
@@ -187,6 +188,30 @@ async def test_get_no_playback_state(
         METH_GET,
         headers=HEADERS,
         params={"additional_types": "track,episode"},
+        json=None,
+    )
+
+
+async def test_user_has_no_access_to_webapi(
+    authenticated_client: SpotifyClient,
+    responses: aioresponses,
+) -> None:
+    """Test that SpotifyForbiddenError is raised if user has no access to WebAPI."""
+    text = (
+        "Check settings on developer.spotify.com/dashboard, "
+        "the user may not be registered."
+    )
+    responses.get(f"{SPOTIFY_URL}/v1/me", status=403, body=text)
+    with pytest.raises(
+        SpotifyForbiddenError,
+        match=text,
+    ):
+        await authenticated_client.get_current_user()
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me",
+        METH_GET,
+        headers=HEADERS,
+        params=None,
         json=None,
     )
 

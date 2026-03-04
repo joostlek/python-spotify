@@ -19,3 +19,7 @@ class SpotifyNotFoundError(SpotifyError):
 
 class SpotifyRateLimitError(SpotifyError):
     """Spotify rate limit exception."""
+
+
+class SpotifyForbiddenError(SpotifyError):
+    """Spotify forbidden (403) exception."""
