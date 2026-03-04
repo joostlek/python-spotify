@@ -4246,6 +4246,7 @@
       }),
     ]),
     'object_type': 'user',
+    'product': <ProductType.PREMIUM: 'premium'>,
     'uri': 'spotify:user:1112264649',
     'user_id': '1112264649',
   })

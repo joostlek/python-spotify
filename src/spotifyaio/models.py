@@ -525,6 +525,13 @@ class Category(DataClassORJSONMixin):
     icons: list[Image]
 
 
+class ProductType(StrEnum):
+    """Product type."""
+
+    PREMIUM = "premium"
+    FREE = "free"
+
+
 @dataclass
 class BaseUserProfile(DataClassORJSONMixin):
     """Base user profile model."""
@@ -539,6 +546,8 @@ class BaseUserProfile(DataClassORJSONMixin):
 @dataclass
 class UserProfile(BaseUserProfile):
     """User profile model."""
+
+    product: ProductType
 
 
 @dataclass
