@@ -197,12 +197,11 @@ async def test_user_has_no_access_to_webapi(
     responses: aioresponses,
 ) -> None:
     """Test that SpotifyForbiddenError is raised if user has no access to WebAPI."""
-    text="Check settings on developer.spotify.com/dashboard, the user may not be registered."
-    responses.get(
-        f"{SPOTIFY_URL}/v1/me/",
-        status=403,
-        body=text
+    text = (
+        "Check settings on developer.spotify.com/dashboard, "
+        "the user may not be registered."
     )
+    responses.get(f"{SPOTIFY_URL}/v1/me", status=403, body=text)
     with pytest.raises(
         SpotifyForbiddenError,
         match=text,
@@ -212,8 +211,10 @@ async def test_user_has_no_access_to_webapi(
         f"{SPOTIFY_URL}/v1/me",
         METH_GET,
         headers=HEADERS,
+        params=None,
         json=None,
     )
+
 
 async def test_transfer_playback(
     authenticated_client: SpotifyClient,
