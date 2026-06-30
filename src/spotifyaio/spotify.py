@@ -434,7 +434,7 @@ class SpotifyClient:
         data: dict[str, str] = {"uri": uri}
         if device_id:
             data["device_id"] = device_id
-        await self._post("v1/me/player/queue", data=data)
+        await self._post("v1/me/player/queue", params=data)
 
     @catch_json_decode_error
     async def get_playlist(self, playlist_id: str) -> Playlist:
