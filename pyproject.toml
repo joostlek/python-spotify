@@ -46,7 +46,7 @@ pytest-cov = "7.1.0"
 ruff = "0.15.22"
 safety = "3.8.1"
 yamllint = "1.38.0"
-syrupy = "5.5.2"
+syrupy = "5.5.3"
 aioresponses = "0.7.9"
 
 [tool.poetry.urls]
