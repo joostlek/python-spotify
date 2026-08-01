@@ -9656,6 +9656,117 @@
     'uri': 'spotify:playlist:0pM0KTMXM7K5qr3sL2DPw1',
   })
 # ---
+# name: test_get_playlist[playlist_4.json]
+  dict({
+    'collaborative': False,
+    'description': '',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/1Cp6VQCKf2VL4sP09jN9oX',
+    }),
+    'images': list([
+      dict({
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67616d00001e022f41071676f4f50842581fb4',
+        'width': None,
+      }),
+    ]),
+    'items': dict({
+      'items': list([
+        dict({
+          'added_at': datetime.datetime(2025, 7, 29, 21, 11, 55, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/1112264649',
+            }),
+            'href': 'https://api.spotify.com/v1/users/1112264649',
+            'uri': 'spotify:user:1112264649',
+            'user_id': '1112264649',
+          }),
+          'track': dict({
+            'album': dict({
+              'album_id': '7cynQpUNbqg7ZqYQu11Yng',
+              'album_type': <AlbumType.SINGLE: 'single'>,
+              'artists': list([
+                dict({
+                  'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+                  'name': 'Maribou State',
+                  'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+                }),
+                dict({
+                  'artist_id': '6SKEuFZYhaTytrhtJjgnO2',
+                  'name': 'Andreya Triana',
+                  'uri': 'spotify:artist:6SKEuFZYhaTytrhtJjgnO2',
+                }),
+              ]),
+              'images': list([
+                dict({
+                  'height': 640,
+                  'url': 'https://i.scdn.co/image/ab67616d0000b2732f41071676f4f50842581fb4',
+                  'width': 640,
+                }),
+                dict({
+                  'height': 300,
+                  'url': 'https://i.scdn.co/image/ab67616d00001e022f41071676f4f50842581fb4',
+                  'width': 300,
+                }),
+                dict({
+                  'height': 64,
+                  'url': 'https://i.scdn.co/image/ab67616d000048512f41071676f4f50842581fb4',
+                  'width': 64,
+                }),
+              ]),
+              'name': 'All I Need',
+              'release_date': '2025-01-13',
+              'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+              'total_tracks': 5,
+              'uri': 'spotify:album:7cynQpUNbqg7ZqYQu11Yng',
+            }),
+            'artists': list([
+              dict({
+                'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+                'name': 'Maribou State',
+                'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+              }),
+              dict({
+                'artist_id': '6SKEuFZYhaTytrhtJjgnO2',
+                'name': 'Andreya Triana',
+                'uri': 'spotify:artist:6SKEuFZYhaTytrhtJjgnO2',
+              }),
+            ]),
+            'disc_number': 1,
+            'duration_ms': 227934,
+            'explicit': False,
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/track/3ZL9gPzeCnKG9l5SB1SlcZ',
+            }),
+            'href': 'https://api.spotify.com/v1/tracks/3ZL9gPzeCnKG9l5SB1SlcZ',
+            'is_local': False,
+            'name': 'All I Need',
+            'track_id': '3ZL9gPzeCnKG9l5SB1SlcZ',
+            'track_number': 1,
+            'type': <ItemType.TRACK: 'track'>,
+            'uri': 'spotify:track:3ZL9gPzeCnKG9l5SB1SlcZ',
+          }),
+        }),
+      ]),
+    }),
+    'name': 'To find',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'Joost Lekkerkerker',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/1112264649',
+      }),
+      'href': 'https://api.spotify.com/v1/users/1112264649',
+      'object_type': 'user',
+      'owner_id': '1112264649',
+      'uri': 'spotify:user:1112264649',
+    }),
+    'playlist_id': '1Cp6VQCKf2VL4sP09jN9oX',
+    'public': True,
+    'uri': 'spotify:playlist:1Cp6VQCKf2VL4sP09jN9oX',
+  })
+# ---
 # name: test_get_playlist_cover_image
   list([
     dict({
@@ -9665,7 +9776,87 @@
     }),
   ])
 # ---
-# name: test_get_playlist_items
+# name: test_get_playlist_items[playlist_items.json]
+  list([
+    dict({
+      'added_at': datetime.datetime(2025, 7, 29, 21, 11, 55, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'uri': 'spotify:user:1112264649',
+        'user_id': '1112264649',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '7cynQpUNbqg7ZqYQu11Yng',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+              'name': 'Maribou State',
+              'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+            }),
+            dict({
+              'artist_id': '6SKEuFZYhaTytrhtJjgnO2',
+              'name': 'Andreya Triana',
+              'uri': 'spotify:artist:6SKEuFZYhaTytrhtJjgnO2',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2732f41071676f4f50842581fb4',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e022f41071676f4f50842581fb4',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048512f41071676f4f50842581fb4',
+              'width': 64,
+            }),
+          ]),
+          'name': 'All I Need',
+          'release_date': '2025-01-13',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 5,
+          'uri': 'spotify:album:7cynQpUNbqg7ZqYQu11Yng',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+            'name': 'Maribou State',
+            'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+          }),
+          dict({
+            'artist_id': '6SKEuFZYhaTytrhtJjgnO2',
+            'name': 'Andreya Triana',
+            'uri': 'spotify:artist:6SKEuFZYhaTytrhtJjgnO2',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 227934,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3ZL9gPzeCnKG9l5SB1SlcZ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3ZL9gPzeCnKG9l5SB1SlcZ',
+        'is_local': False,
+        'name': 'All I Need',
+        'track_id': '3ZL9gPzeCnKG9l5SB1SlcZ',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3ZL9gPzeCnKG9l5SB1SlcZ',
+      }),
+    }),
+  ])
+# ---
+# name: test_get_playlist_items[playlist_items_2.json]
   list([
     dict({
       'added_at': datetime.datetime(2025, 7, 29, 21, 11, 55, tzinfo=datetime.timezone.utc),

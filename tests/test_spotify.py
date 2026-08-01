@@ -660,6 +660,7 @@ async def test_get_album(
         "playlist_1.json",
         "playlist_2.json",
         "playlist_3.json",
+        "playlist_4.json",
     ],
 )
 async def test_get_playlist(
@@ -1197,16 +1198,24 @@ async def test_update_playlist_details(
     )
 
 
+@pytest.mark.parametrize(
+    "fixture",
+    [
+        "playlist_items.json",
+        "playlist_items_2.json",
+    ],
+)
 async def test_get_playlist_items(
     responses: aioresponses,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
+    fixture: str,
 ) -> None:
     """Test retrieving playlist items."""
     responses.get(
         f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
         status=200,
-        body=load_fixture("playlist_items.json"),
+        body=load_fixture(fixture),
     )
     response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
     assert response == snapshot
