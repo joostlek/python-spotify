@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING, Any
 
 import aiohttp
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
-from aioresponses import CallbackResult, aioresponses
+from aiointercept import CallbackResult, aiointercept
 import pytest
 from yarl import URL
 
@@ -29,7 +29,7 @@ if TYPE_CHECKING:
 
 
 async def test_putting_in_own_session(
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test putting in own session."""
     responses.get(
@@ -48,7 +48,7 @@ async def test_putting_in_own_session(
 
 
 async def test_creating_own_session(
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test creating own session."""
     responses.get(
@@ -66,7 +66,7 @@ async def test_creating_own_session(
 
 
 async def test_json_decode_error(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test raising a JSON decode error."""
@@ -97,7 +97,7 @@ async def test_refresh_token() -> None:
 
 
 async def test_timeout(
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test request timeout."""
 
@@ -117,7 +117,7 @@ async def test_timeout(
 
 
 async def test_get_album_tracks(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -133,7 +133,7 @@ async def test_get_album_tracks(
         f"{SPOTIFY_URL}/v1/albums/4aawyAB9vmqN3uQ7FjRGTy/tracks",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
@@ -150,7 +150,7 @@ async def test_get_album_tracks(
     ],
 )
 async def test_get_playback_state(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     playback_fixture: str,
     authenticated_client: SpotifyClient,
@@ -174,7 +174,7 @@ async def test_get_playback_state(
 
 async def test_get_no_playback_state(
     authenticated_client: SpotifyClient,
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test retrieving no playback state."""
     responses.get(
@@ -194,7 +194,7 @@ async def test_get_no_playback_state(
 
 async def test_user_has_no_access_to_webapi(
     authenticated_client: SpotifyClient,
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test that SpotifyForbiddenError is raised if user has no access to WebAPI."""
     text = (
@@ -218,7 +218,7 @@ async def test_user_has_no_access_to_webapi(
 
 async def test_transfer_playback(
     authenticated_client: SpotifyClient,
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test transferring playback."""
     responses.put(
@@ -237,7 +237,7 @@ async def test_transfer_playback(
 async def test_get_devices(
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test retrieving devices."""
     responses.get(
@@ -256,7 +256,7 @@ async def test_get_devices(
 
 
 async def test_get_current_playing(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -277,7 +277,7 @@ async def test_get_current_playing(
 
 
 async def test_get_no_current_playing_state(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving no current playing state."""
@@ -336,7 +336,7 @@ async def test_get_no_current_playing_state(
     ],
 )
 async def test_resume_playback(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -369,7 +369,7 @@ async def test_resume_playback(
     ],
 )
 async def test_pause_playback(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -401,7 +401,7 @@ async def test_pause_playback(
     ],
 )
 async def test_next_track(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -433,7 +433,7 @@ async def test_next_track(
     ],
 )
 async def test_previous_track(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -468,7 +468,7 @@ async def test_previous_track(
     ],
 )
 async def test_seek_track(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -505,7 +505,7 @@ async def test_seek_track(
     ],
 )
 async def test_set_repeat(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -540,7 +540,7 @@ async def test_set_repeat(
     ],
 )
 async def test_set_volume(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -575,7 +575,7 @@ async def test_set_volume(
     ],
 )
 async def test_set_shuffle(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_params: dict[str, Any],
@@ -613,7 +613,7 @@ async def test_set_shuffle(
     ],
 )
 async def test_add_to_queue(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
     expected_data: dict[str, Any],
@@ -633,7 +633,7 @@ async def test_add_to_queue(
 
 
 async def test_get_album(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -663,7 +663,7 @@ async def test_get_album(
     ],
 )
 async def test_get_playlist(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
     fixture: str,
@@ -686,7 +686,7 @@ async def test_get_playlist(
 
 
 async def test_get_not_found_playlist(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test retrieving not found playlist."""
@@ -710,7 +710,7 @@ async def test_get_not_found_playlist(
     ],
 )
 async def test_get_current_users_playlists(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
     fixture: str,
@@ -727,7 +727,7 @@ async def test_get_current_users_playlists(
         f"{SPOTIFY_URL}/v1/me/playlists",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
@@ -741,7 +741,7 @@ async def test_get_current_users_playlists(
     ],
 )
 async def test_get_playlist_variation(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     playlist_id: str,
 ) -> None:
@@ -762,7 +762,7 @@ async def test_get_playlist_variation(
 
 
 async def test_get_current_user(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -784,7 +784,7 @@ async def test_get_current_user(
 
 
 async def test_get_episode(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -806,7 +806,7 @@ async def test_get_episode(
 
 
 async def test_get_show(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -828,7 +828,7 @@ async def test_get_show(
 
 
 async def test_get_following_artists(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -844,13 +844,13 @@ async def test_get_following_artists(
         f"{SPOTIFY_URL}/v1/me/following",
         METH_GET,
         headers=HEADERS,
-        params={"type": "artist", "limit": 48},
+        params={"type": "artist", "limit": "48"},
         json=None,
     )
 
 
 async def test_get_saved_albums(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -866,13 +866,13 @@ async def test_get_saved_albums(
         f"{SPOTIFY_URL}/v1/me/albums",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_saved_tracks(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -888,13 +888,13 @@ async def test_get_saved_tracks(
         f"{SPOTIFY_URL}/v1/me/tracks",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_saved_shows(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -910,13 +910,13 @@ async def test_get_saved_shows(
         f"{SPOTIFY_URL}/v1/me/shows",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_recently_played_tracks(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -932,13 +932,13 @@ async def test_get_recently_played_tracks(
         f"{SPOTIFY_URL}/v1/me/player/recently-played",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_top_artists(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -954,13 +954,13 @@ async def test_get_top_artists(
         f"{SPOTIFY_URL}/v1/me/top/artists",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_top_tracks(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -976,13 +976,13 @@ async def test_get_top_tracks(
         f"{SPOTIFY_URL}/v1/me/top/tracks",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_artist(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1004,7 +1004,7 @@ async def test_get_artist(
 
 
 async def test_get_artist_albums(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1020,13 +1020,13 @@ async def test_get_artist_albums(
         f"{SPOTIFY_URL}/v1/artists/0TnOYISbd1XYRBk9myaseg/albums",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_audiobook(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1048,7 +1048,7 @@ async def test_get_audiobook(
 
 
 async def test_get_audiobook_chapters(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1066,13 +1066,13 @@ async def test_get_audiobook_chapters(
         f"{SPOTIFY_URL}/v1/audiobooks/6SJQ8VzM5PlDy11wMtcD6v/chapters",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 50},
+        params={"limit": "50"},
         json=None,
     )
 
 
 async def test_get_saved_audiobooks(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1088,13 +1088,13 @@ async def test_get_saved_audiobooks(
         f"{SPOTIFY_URL}/v1/me/audiobooks",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_show_episodes(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1110,13 +1110,13 @@ async def test_get_show_episodes(
         f"{SPOTIFY_URL}/v1/shows/0e30iIgSffe6xJhFKe35Db/episodes",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
 
 async def test_get_chapter(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1138,7 +1138,7 @@ async def test_get_chapter(
 
 
 async def test_get_saved_episodes(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1154,7 +1154,7 @@ async def test_get_saved_episodes(
         f"{SPOTIFY_URL}/v1/me/episodes",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
@@ -1175,7 +1175,7 @@ async def test_get_saved_episodes(
     ],
 )
 async def test_update_playlist_details(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     kwargs: dict[str, Any],
 ) -> None:
@@ -1198,7 +1198,7 @@ async def test_update_playlist_details(
 
 
 async def test_get_playlist_items(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1214,7 +1214,7 @@ async def test_get_playlist_items(
         f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items",
         METH_GET,
         headers=HEADERS,
-        params={"limit": 48},
+        params={"limit": "48"},
         json=None,
     )
 
@@ -1244,7 +1244,7 @@ async def test_get_playlist_items(
     ],
 )
 async def test_update_playlist_items(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     kwargs: dict[str, Any],
 ) -> None:
@@ -1283,7 +1283,7 @@ async def test_update_playlist_items(
     ],
 )
 async def test_add_playlist_items(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     kwargs: dict[str, Any],
 ) -> None:
@@ -1309,7 +1309,7 @@ async def test_add_playlist_items(
 
 
 async def test_add_too_many_playlist_items(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test adding too many playlist items."""
@@ -1317,7 +1317,7 @@ async def test_add_too_many_playlist_items(
         await authenticated_client.add_playlist_items(
             "37i9dQZF1DXcBWIGoYBM5M", uris=["abc"] * 101
         )
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 @pytest.mark.parametrize(
@@ -1346,7 +1346,7 @@ async def test_add_too_many_playlist_items(
     ],
 )
 async def test_remove_playlist_items(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     kwargs: dict[str, Any],
     expected_json: dict[str, Any],
@@ -1373,7 +1373,7 @@ async def test_remove_playlist_items(
 
 
 async def test_remove_too_many_playlist_items(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test removing too many playlist items."""
@@ -1383,7 +1383,7 @@ async def test_remove_too_many_playlist_items(
         await authenticated_client.remove_playlist_items(
             "37i9dQZF1DXcBWIGoYBM5M", uris=["abc"] * 101
         )
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 @pytest.mark.parametrize(
@@ -1396,7 +1396,7 @@ async def test_remove_too_many_playlist_items(
     ],
 )
 async def test_create_playlist(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
     snapshot: SnapshotAssertion,
     kwargs: dict[str, Any],
@@ -1420,7 +1420,7 @@ async def test_create_playlist(
 
 
 async def test_get_playlist_cover_image(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1444,7 +1444,7 @@ async def test_get_playlist_cover_image(
 
 
 async def test_search(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1462,13 +1462,13 @@ async def test_search(
         f"{SPOTIFY_URL}/v1/search",
         METH_GET,
         headers=HEADERS,
-        params={"q": "Never Gonna Give You Up", "type": "track", "limit": 5},
+        params={"q": "Never Gonna Give You Up", "type": "track", "limit": "5"},
         json=None,
     )
 
 
 async def test_save_to_library(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test saving items to library."""
@@ -1493,26 +1493,26 @@ async def test_save_to_library(
 
 
 async def test_save_to_library_no_uris(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test saving empty list to library does nothing."""
     await authenticated_client.save_to_library([])
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 async def test_save_to_library_too_many(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test saving too many items to library raises ValueError."""
     with pytest.raises(ValueError, match="Maximum of 40 URIs can be saved at once"):
         await authenticated_client.save_to_library(["spotify:track:abc"] * 41)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 async def test_remove_from_library(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test removing items from library."""
@@ -1537,26 +1537,26 @@ async def test_remove_from_library(
 
 
 async def test_remove_from_library_no_uris(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test removing empty list from library does nothing."""
     await authenticated_client.remove_from_library([])
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 async def test_remove_from_library_too_many(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test removing too many items from library raises ValueError."""
     with pytest.raises(ValueError, match="Maximum of 40 URIs can be removed at once"):
         await authenticated_client.remove_from_library(["spotify:track:abc"] * 41)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 async def test_are_in_library(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
@@ -1583,27 +1583,27 @@ async def test_are_in_library(
 
 
 async def test_are_in_library_no_uris(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test checking empty list returns empty dict."""
     response = await authenticated_client.are_in_library([])
     assert response == {}
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 async def test_are_in_library_too_many(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test checking too many items raises ValueError."""
     with pytest.raises(ValueError, match="Maximum of 40 URIs can be checked at once"):
         await authenticated_client.are_in_library(["spotify:track:abc"] * 41)
-    responses.assert_not_called()  # type: ignore[no-untyped-call]
+    responses.assert_not_called()
 
 
 async def test_is_added_to_library(
-    responses: aioresponses,
+    responses: aiointercept,
     authenticated_client: SpotifyClient,
 ) -> None:
     """Test checking single item in library."""
@@ -1619,7 +1619,7 @@ async def test_is_added_to_library(
 
 
 async def test_get_audio_features(
-    responses: aioresponses,
+    responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
 ) -> None:
