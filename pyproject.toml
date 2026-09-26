@@ -47,7 +47,7 @@ ruff = "0.15.22"
 safety = "3.8.1"
 yamllint = "1.38.0"
 syrupy = "5.5.3"
-aiointercept = "0.1.10"
+aiointercept = "0.1.11"
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/joostlek/python-spotify/issues"
