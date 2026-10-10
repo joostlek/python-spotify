@@ -440,7 +440,7 @@ class PlaylistTracks(DataClassORJSONMixin):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
-        items = [item for item in d["items"] if not item["is_local"]]
+        items = [item for item in (d.get("items") or []) if not item.get("is_local")]
         return {"items": items}
 
 
@@ -451,6 +451,19 @@ class PlaylistTrack(DataClassORJSONMixin):
     added_at: datetime
     added_by: AddedBy
     track: Annotated[Item, Discriminator(field="type", include_subtypes=True)]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook.
+
+        Spotify's February 2026 Web API migration renamed the per-entry track
+        wrapper from "track" to "item". Normalize the new shape back so the
+        legacy "track" field keeps working; the old shape (still sent during
+        the deprecation window) passes through unchanged.
+        """
+        if "track" not in d and "item" in d:
+            return {**d, "track": d["item"]}
+        return d
 
 
 @dataclass
