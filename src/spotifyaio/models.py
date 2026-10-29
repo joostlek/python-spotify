@@ -440,7 +440,11 @@ class PlaylistTracks(DataClassORJSONMixin):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
-        items = [item for item in d["items"] if not item["is_local"]]
+        items = [
+            item
+            for item in d["items"]
+            if not item["is_local"] and item.get("track", item.get("item")) is not None
+        ]
         return {"items": items}
 
 
@@ -458,6 +462,16 @@ class PlaylistTrackResponse(DataClassORJSONMixin):
     """PlaylistTrack response model."""
 
     items: list[PlaylistTrack]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [
+            item
+            for item in d["items"]
+            if item.get("track", item.get("item")) is not None
+        ]
+        return {**d, "items": items}
 
 
 @dataclass
