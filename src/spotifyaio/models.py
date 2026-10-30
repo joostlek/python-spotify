@@ -547,7 +547,7 @@ class BaseUserProfile(DataClassORJSONMixin):
 class UserProfile(BaseUserProfile):
     """User profile model."""
 
-    product: ProductType
+    product: ProductType | None = None
 
 
 @dataclass
@@ -789,9 +789,14 @@ class SimplifiedAudiobook(DataClassORJSONMixin):
     uri: str
     languages: list[str]
     narrators: list[Narrator]
-    publisher: str
+    publisher: str | None
     total_chapters: int
     type: str
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        return {"publisher": None, **d}
 
 
 @dataclass
@@ -803,6 +808,7 @@ class Audiobook(SimplifiedAudiobook):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
+        d = super().__pre_deserialize__(d)
         return {**d, "chapters": d.get("chapters", {}).pop("items", [])}
 
 
