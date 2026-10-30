@@ -703,6 +703,21 @@ async def test_get_not_found_playlist(
         await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
 
 
+async def test_get_playlist_metadata_only(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a playlist not owned by the user, which has no items."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=load_fixture("playlist_metadata_only.json"),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert response.name == "Starred"
+    assert response.items.items == []
+
+
 @pytest.mark.parametrize(
     "fixture",
     [

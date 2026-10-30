@@ -421,7 +421,7 @@ class BasePlaylist(DataClassORJSONMixin):
 class Playlist(BasePlaylist):
     """Playlist model."""
 
-    items: PlaylistTracks
+    items: PlaylistTracks = field(default_factory=lambda: PlaylistTracks([]))
 
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
@@ -440,7 +440,7 @@ class PlaylistTracks(DataClassORJSONMixin):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
-        items = [item for item in d["items"] if not item["is_local"]]
+        items = [item for item in d.get("items") or [] if not item["is_local"]]
         return {"items": items}
 
 
