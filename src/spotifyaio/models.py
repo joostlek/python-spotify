@@ -426,6 +426,7 @@ class Playlist(BasePlaylist):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
+        d = super().__pre_deserialize__(d)
         if "items" not in d and "tracks" in d:
             d = {**d, "items": d["tracks"]}
         return d
