@@ -386,7 +386,7 @@ class PlaylistOwnerType(StrEnum):
 class PlaylistOwner(DataClassORJSONMixin):
     """Playlist owner model."""
 
-    display_name: str
+    display_name: str | None
     external_urls: dict[str, str]
     href: str
     owner_id: str = field(metadata=field_options(alias="id"))
