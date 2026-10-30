@@ -1296,6 +1296,23 @@ async def test_get_playlist_items(
     )
 
 
+async def test_get_playlist_items_with_local_files(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlist items that include local files."""
+    body = json.loads(load_fixture("playlist_2.json"))["tracks"]
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert [item.track.uri for item in response] == [
+        "spotify:track:4oeRfmp9XpKWym6YD1WvBP"
+    ]
+
+
 async def test_get_playlist_items_item_field(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
