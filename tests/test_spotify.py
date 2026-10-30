@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 from typing import TYPE_CHECKING, Any
 
 import aiohttp
@@ -1441,6 +1442,25 @@ async def test_get_playlist_cover_image(
         params=None,
         json=None,
     )
+
+
+async def test_get_playlist_items_without_added_info(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving old playlist items without added_at and added_by."""
+    body = json.loads(load_fixture("playlist_items.json"))
+    for item in body["items"]:
+        item["added_at"] = None
+        item["added_by"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert response[0].added_at is None
+    assert response[0].added_by is None
 
 
 async def test_search(

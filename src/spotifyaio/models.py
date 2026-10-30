@@ -448,8 +448,8 @@ class PlaylistTracks(DataClassORJSONMixin):
 class PlaylistTrack(DataClassORJSONMixin):
     """PlaylistTrack model."""
 
-    added_at: datetime
-    added_by: AddedBy
+    added_at: datetime | None
+    added_by: AddedBy | None
     track: Annotated[Item, Discriminator(field="type", include_subtypes=True)]
 
 
