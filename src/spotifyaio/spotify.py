@@ -577,6 +577,9 @@ class SpotifyClient:
         self, query: str, types: list[SearchType], *, limit: int = 5
     ) -> SearchResult:
         """Search."""
+        if not 1 <= limit <= 10:
+            msg = "Search limit must be between 1 and 10"
+            raise ValueError(msg)
         params: dict[str, Any] = {"q": query, "limit": limit, "type": ",".join(types)}
         response = await self._get("v1/search", params=params)
         return SearchResult.from_json(response)

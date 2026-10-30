@@ -1468,6 +1468,18 @@ async def test_search(
     )
 
 
+@pytest.mark.parametrize("limit", [0, 11])
+async def test_search_invalid_limit(
+    authenticated_client: SpotifyClient,
+    limit: int,
+) -> None:
+    """Test searching with a limit outside of the allowed range."""
+    with pytest.raises(ValueError, match="Search limit must be between 1 and 10"):
+        await authenticated_client.search(
+            "Never Gonna Give You Up", [SearchType.TRACK], limit=limit
+        )
+
+
 async def test_save_to_library(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
