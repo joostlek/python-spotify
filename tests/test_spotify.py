@@ -1418,7 +1418,7 @@ async def test_add_too_many_playlist_items(
     [
         (
             {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]},
-            {"tracks": [{"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]},
+            {"items": [{"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]},
         ),
         (
             {
@@ -1429,7 +1429,7 @@ async def test_add_too_many_playlist_items(
                 "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
             },
             {
-                "tracks": [
+                "items": [
                     {"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"},
                     {"uri": "spotify:track:1301WleyT98MSxVHPZCA6M"},
                 ],
