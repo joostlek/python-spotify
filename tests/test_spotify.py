@@ -685,6 +685,22 @@ async def test_get_playlist(
     )
 
 
+async def test_get_playlist_item_field(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a playlist that only uses the renamed "item" field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=load_fixture("playlist_item_field.json"),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert [item.track.uri for item in response.items.items] == [
+        "spotify:track:4oeRfmp9XpKWym6YD1WvBP"
+    ]
+
+
 async def test_get_not_found_playlist(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
@@ -1217,6 +1233,22 @@ async def test_get_playlist_items(
         params={"limit": "48"},
         json=None,
     )
+
+
+async def test_get_playlist_items_item_field(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlist items that only use the renamed "item" field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=load_fixture("playlist_items_item_field.json"),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert [item.track.uri for item in response] == [
+        "spotify:track:3ZL9gPzeCnKG9l5SB1SlcZ"
+    ]
 
 
 @pytest.mark.parametrize(
