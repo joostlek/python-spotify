@@ -832,6 +832,20 @@ async def test_get_current_user(
     )
 
 
+async def test_get_current_user_without_deprecated_fields(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving current user without the removed product field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me",
+        status=200,
+        body=load_fixture("current_user_without_deprecated_fields.json"),
+    )
+    response = await authenticated_client.get_current_user()
+    assert response.product is None
+
+
 async def test_get_episode(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
@@ -1094,6 +1108,20 @@ async def test_get_audiobook(
         params=None,
         json=None,
     )
+
+
+async def test_get_audiobook_without_publisher(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving audiobook without the removed publisher field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/audiobooks/6SJQ8VzM5PlDy11wMtcD6v",
+        status=200,
+        body=load_fixture("audiobook_without_publisher.json"),
+    )
+    response = await authenticated_client.get_audiobook("6SJQ8VzM5PlDy11wMtcD6v")
+    assert response.publisher is None
 
 
 async def test_get_audiobook_chapters(
