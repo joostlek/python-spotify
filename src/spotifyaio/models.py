@@ -545,7 +545,7 @@ class ProductType(StrEnum):
 class BaseUserProfile(DataClassORJSONMixin):
     """Base user profile model."""
 
-    display_name: str
+    display_name: str | None
     user_id: str = field(metadata=field_options(alias="id"))
     images: list[Image]
     object_type: str = field(metadata=field_options(alias="type"))

@@ -832,6 +832,22 @@ async def test_get_current_user(
     )
 
 
+async def test_get_current_user_without_display_name(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving current user without a display name."""
+    body = json.loads(load_fixture("current_user.json"))
+    body["display_name"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_current_user()
+    assert response.display_name is None
+
+
 async def test_get_current_user_without_deprecated_fields(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
