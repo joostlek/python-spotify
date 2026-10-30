@@ -600,7 +600,7 @@ async def test_set_shuffle(
 
 
 @pytest.mark.parametrize(
-    ("arguments", "expected_data"),
+    ("arguments", "expected_params"),
     [
         (
             {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv"},
@@ -616,19 +616,20 @@ async def test_add_to_queue(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
-    expected_data: dict[str, Any],
+    expected_params: dict[str, Any],
 ) -> None:
     """Test adding to queue."""
     responses.post(
-        f"{SPOTIFY_URL}/v1/me/player/queue", status=200, body="3o0RYoo5iOMKSmEbunsbvW"
+        URL(f"{SPOTIFY_URL}/v1/me/player/queue").with_query(expected_params),
+        status=204,
     )
     await authenticated_client.add_to_queue(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/queue",
         METH_POST,
         headers=HEADERS,
-        params=None,
-        json=expected_data,
+        params=expected_params,
+        json=None,
     )
 
 
