@@ -778,6 +778,22 @@ async def test_get_playlist_variation(
     )
 
 
+async def test_get_playlist_without_images(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a playlist without images."""
+    body = json.loads(load_fixture("playlist_1.json"))
+    body["images"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert response.images == []
+
+
 async def test_get_current_user(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
