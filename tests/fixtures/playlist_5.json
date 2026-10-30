@@ -1,0 +1,36 @@
+{
+  "collaborative": false,
+  "description": "",
+  "external_urls": {
+    "spotify": "https://open.spotify.com/playlist/3toMXYM91T55pKzuysH5Ph"
+  },
+  "followers": {
+    "href": null,
+    "total": 0
+  },
+  "href": "https://api.spotify.com/v1/playlists/3toMXYM91T55pKzuysH5Ph?locale=en-US%2Cen%3Bq%3D0.5",
+  "id": "3toMXYM91T55pKzuysH5Ph",
+  "images": [
+    {
+      "height": null,
+      "url": "https://i.scdn.co/image/ab67616d00001e022f9b47bdc2b1c7cae7b014af",
+      "width": null
+    }
+  ],
+  "name": "Starred",
+  "owner": {
+    "display_name": null,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/user/chadandcaren"
+    },
+    "href": "https://api.spotify.com/v1/users/chadandcaren",
+    "id": "chadandcaren",
+    "type": "user",
+    "uri": "spotify:user:chadandcaren"
+  },
+  "primary_color": null,
+  "public": true,
+  "snapshot_id": "AAAAAoRTkoeSGwZYJQxBuBVJ4+cWjJZf",
+  "type": "playlist",
+  "uri": "spotify:playlist:3toMXYM91T55pKzuysH5Ph"
+}

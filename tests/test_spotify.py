@@ -600,7 +600,7 @@ async def test_set_shuffle(
 
 
 @pytest.mark.parametrize(
-    ("arguments", "expected_data"),
+    ("arguments", "expected_params"),
     [
         (
             {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv"},
@@ -616,19 +616,20 @@ async def test_add_to_queue(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
-    expected_data: dict[str, Any],
+    expected_params: dict[str, Any],
 ) -> None:
     """Test adding to queue."""
     responses.post(
-        f"{SPOTIFY_URL}/v1/me/player/queue", status=200, body="3o0RYoo5iOMKSmEbunsbvW"
+        URL(f"{SPOTIFY_URL}/v1/me/player/queue").with_query(expected_params),
+        status=204,
     )
     await authenticated_client.add_to_queue(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/queue",
         METH_POST,
         headers=HEADERS,
-        params=None,
-        json=expected_data,
+        params=expected_params,
+        json=None,
     )
 
 
@@ -660,6 +661,8 @@ async def test_get_album(
         "playlist_1.json",
         "playlist_2.json",
         "playlist_3.json",
+        "playlist_4.json",
+        "playlist_5.json",
     ],
 )
 async def test_get_playlist(
@@ -761,16 +764,18 @@ async def test_get_playlist_variation(
     )
 
 
+@pytest.mark.parametrize("fixture", ["current_user.json", "current_user_2.json"])
 async def test_get_current_user(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
+    fixture: str,
 ) -> None:
     """Test retrieving current user."""
     responses.get(
         f"{SPOTIFY_URL}/v1/me",
         status=200,
-        body=load_fixture("current_user.json"),
+        body=load_fixture(fixture),
     )
     response = await authenticated_client.get_current_user()
     assert response == snapshot
@@ -1025,16 +1030,18 @@ async def test_get_artist_albums(
     )
 
 
+@pytest.mark.parametrize("fixture", ["audiobook.json", "audiobook_2.json"])
 async def test_get_audiobook(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
+    fixture: str,
 ) -> None:
     """Test retrieving audiobook."""
     responses.get(
         f"{SPOTIFY_URL}/v1/audiobooks/6SJQ8VzM5PlDy11wMtcD6v",
         status=200,
-        body=load_fixture("audiobook.json"),
+        body=load_fixture(fixture),
     )
     response = await authenticated_client.get_audiobook("6SJQ8VzM5PlDy11wMtcD6v")
     assert response == snapshot
@@ -1197,16 +1204,18 @@ async def test_update_playlist_details(
     )
 
 
+@pytest.mark.parametrize("fixture", ["playlist_items.json", "playlist_items_2.json"])
 async def test_get_playlist_items(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
     authenticated_client: SpotifyClient,
+    fixture: str,
 ) -> None:
     """Test retrieving playlist items."""
     responses.get(
         f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
         status=200,
-        body=load_fixture("playlist_items.json"),
+        body=load_fixture(fixture),
     )
     response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
     assert response == snapshot
@@ -1465,6 +1474,18 @@ async def test_search(
         params={"q": "Never Gonna Give You Up", "type": "track", "limit": "5"},
         json=None,
     )
+
+
+@pytest.mark.parametrize("limit", [0, 11])
+async def test_search_invalid_limit(
+    authenticated_client: SpotifyClient,
+    limit: int,
+) -> None:
+    """Test searching with a limit outside of the allowed range."""
+    with pytest.raises(ValueError, match="Search limit must be between 1 and 10"):
+        await authenticated_client.search(
+            "Never Gonna Give You Up", [SearchType.TRACK], limit=limit
+        )
 
 
 async def test_save_to_library(

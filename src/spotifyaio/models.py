@@ -386,7 +386,7 @@ class PlaylistOwnerType(StrEnum):
 class PlaylistOwner(DataClassORJSONMixin):
     """Playlist owner model."""
 
-    display_name: str
+    display_name: str | None
     external_urls: dict[str, str]
     href: str
     owner_id: str = field(metadata=field_options(alias="id"))
@@ -426,8 +426,10 @@ class Playlist(BasePlaylist):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
-        if "items" not in d and "tracks" in d:
-            d = {**d, "items": d["tracks"]}
+        d = super().__pre_deserialize__(d)
+        if "items" not in d:
+            # Playlists not owned by the user only return metadata
+            d = {**d, "items": d.get("tracks") or {"items": []}}
         return d
 
 
@@ -440,7 +442,12 @@ class PlaylistTracks(DataClassORJSONMixin):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
-        items = [item for item in d["items"] if not item["is_local"]]
+        items = [
+            item
+            for item in d.get("items") or []
+            if not item.get("is_local")
+            and (item.get("item") or item.get("track")) is not None
+        ]
         return {"items": items}
 
 
@@ -448,9 +455,17 @@ class PlaylistTracks(DataClassORJSONMixin):
 class PlaylistTrack(DataClassORJSONMixin):
     """PlaylistTrack model."""
 
-    added_at: datetime
-    added_by: AddedBy
+    added_at: datetime | None
+    added_by: AddedBy | None
     track: Annotated[Item, Discriminator(field="type", include_subtypes=True)]
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        if d.get("item") is not None:
+            # Spotify renamed the deprecated "track" field to "item"
+            return {**d, "track": d["item"]}
+        return d
 
 
 @dataclass
@@ -547,7 +562,7 @@ class BaseUserProfile(DataClassORJSONMixin):
 class UserProfile(BaseUserProfile):
     """User profile model."""
 
-    product: ProductType
+    product: ProductType | None = None
 
 
 @dataclass
@@ -789,9 +804,14 @@ class SimplifiedAudiobook(DataClassORJSONMixin):
     uri: str
     languages: list[str]
     narrators: list[Narrator]
-    publisher: str
+    publisher: str | None
     total_chapters: int
     type: str
+
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        return {"publisher": None, **d}
 
 
 @dataclass
@@ -803,6 +823,7 @@ class Audiobook(SimplifiedAudiobook):
     @classmethod
     def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
         """Pre deserialize hook."""
+        d = super().__pre_deserialize__(d)
         return {**d, "chapters": d.get("chapters", {}).pop("items", [])}
 
 

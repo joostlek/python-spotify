@@ -21,7 +21,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -51,7 +51,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -81,7 +81,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -111,7 +111,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -2748,7 +2748,7 @@
     'valence': 0.625,
   })
 # ---
-# name: test_get_audiobook
+# name: test_get_audiobook[audiobook.json]
   dict({
     'audiobook_id': '6SJQ8VzM5PlDy11wMtcD6v',
     'authors': list([
@@ -3432,6 +3432,695 @@
       }),
     ]),
     'publisher': 'J.K. Rowling',
+    'total_chapters': 20,
+    'type': 'audiobook',
+    'uri': 'spotify:show:6SJQ8VzM5PlDy11wMtcD6v',
+  })
+# ---
+# name: test_get_audiobook[audiobook_2.json]
+  dict({
+    'audiobook_id': '6SJQ8VzM5PlDy11wMtcD6v',
+    'authors': list([
+      dict({
+        'name': 'J.K. Rowling',
+      }),
+    ]),
+    'chapters': list([
+      dict({
+        'chapter_id': '0bnJ1qcNgHwwPWbDJAia57',
+        'chapter_number': 0,
+        'duration_ms': 23000,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/0bnJ1qcNgHwwPWbDJAia57',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Opening Credits',
+        'type': 'chapter',
+        'uri': 'spotify:episode:0bnJ1qcNgHwwPWbDJAia57',
+      }),
+      dict({
+        'chapter_id': '3XcHJLv9NVV3lI4ECSNGcl',
+        'chapter_number': 1,
+        'duration_ms': 1901683,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/3XcHJLv9NVV3lI4ECSNGcl',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 1: The Boy Who Lived',
+        'type': 'chapter',
+        'uri': 'spotify:episode:3XcHJLv9NVV3lI4ECSNGcl',
+      }),
+      dict({
+        'chapter_id': '6yXRrpO4DYkPEphS1wApK6',
+        'chapter_number': 2,
+        'duration_ms': 1329841,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/6yXRrpO4DYkPEphS1wApK6',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 2: The Vanishing Glass',
+        'type': 'chapter',
+        'uri': 'spotify:episode:6yXRrpO4DYkPEphS1wApK6',
+      }),
+      dict({
+        'chapter_id': '10fQLdhdGVbBYXvlXRVIPa',
+        'chapter_number': 3,
+        'duration_ms': 1517244,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/10fQLdhdGVbBYXvlXRVIPa',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 3: The Letters from No One',
+        'type': 'chapter',
+        'uri': 'spotify:episode:10fQLdhdGVbBYXvlXRVIPa',
+      }),
+      dict({
+        'chapter_id': '46BVQZ5N2HbrtvO7EesYUY',
+        'chapter_number': 4,
+        'duration_ms': 1470066,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/46BVQZ5N2HbrtvO7EesYUY',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 4: The Keeper of the Keys',
+        'type': 'chapter',
+        'uri': 'spotify:episode:46BVQZ5N2HbrtvO7EesYUY',
+      }),
+      dict({
+        'chapter_id': '4G2TaqHalYmLiL7fvJC75u',
+        'chapter_number': 5,
+        'duration_ms': 2643879,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/4G2TaqHalYmLiL7fvJC75u',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 5: Diagon Alley',
+        'type': 'chapter',
+        'uri': 'spotify:episode:4G2TaqHalYmLiL7fvJC75u',
+      }),
+      dict({
+        'chapter_id': '2F4ricTDPdDT2h2m0mhUbt',
+        'chapter_number': 6,
+        'duration_ms': 2286524,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/2F4ricTDPdDT2h2m0mhUbt',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 6: The Journey from Platform Nine and Three-quarters',
+        'type': 'chapter',
+        'uri': 'spotify:episode:2F4ricTDPdDT2h2m0mhUbt',
+      }),
+      dict({
+        'chapter_id': '2nCrEIRgNfQpR9BUryaiyr',
+        'chapter_number': 7,
+        'duration_ms': 1773949,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/2nCrEIRgNfQpR9BUryaiyr',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 7: The Sorting Hat',
+        'type': 'chapter',
+        'uri': 'spotify:episode:2nCrEIRgNfQpR9BUryaiyr',
+      }),
+      dict({
+        'chapter_id': '4jVigNVaZVhuAOXlf8TDNX',
+        'chapter_number': 8,
+        'duration_ms': 1125799,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/4jVigNVaZVhuAOXlf8TDNX',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 8: The Potions Master',
+        'type': 'chapter',
+        'uri': 'spotify:episode:4jVigNVaZVhuAOXlf8TDNX',
+      }),
+      dict({
+        'chapter_id': '0IHdKlFFno5yhCdmRSip9g',
+        'chapter_number': 9,
+        'duration_ms': 1841528,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/0IHdKlFFno5yhCdmRSip9g',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 9: The Midnight Duel',
+        'type': 'chapter',
+        'uri': 'spotify:episode:0IHdKlFFno5yhCdmRSip9g',
+      }),
+      dict({
+        'chapter_id': '20kk3OD8mjGkpucTvqYa9K',
+        'chapter_number': 10,
+        'duration_ms': 1571735,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/20kk3OD8mjGkpucTvqYa9K',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 10: Halloween',
+        'type': 'chapter',
+        'uri': 'spotify:episode:20kk3OD8mjGkpucTvqYa9K',
+      }),
+      dict({
+        'chapter_id': '7vG172nPGGr3ZXm4YdL1nx',
+        'chapter_number': 11,
+        'duration_ms': 1209887,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/7vG172nPGGr3ZXm4YdL1nx',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 11: Quidditch',
+        'type': 'chapter',
+        'uri': 'spotify:episode:7vG172nPGGr3ZXm4YdL1nx',
+      }),
+      dict({
+        'chapter_id': '1yRfwSOp8Jy1GisI0JIhMK',
+        'chapter_number': 12,
+        'duration_ms': 2066155,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/1yRfwSOp8Jy1GisI0JIhMK',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 12: The Mirror of Erised',
+        'type': 'chapter',
+        'uri': 'spotify:episode:1yRfwSOp8Jy1GisI0JIhMK',
+      }),
+      dict({
+        'chapter_id': '3BKzXnwHwemuVsJC2bSIYA',
+        'chapter_number': 13,
+        'duration_ms': 1219422,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/3BKzXnwHwemuVsJC2bSIYA',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 13: Nicolas Flamel',
+        'type': 'chapter',
+        'uri': 'spotify:episode:3BKzXnwHwemuVsJC2bSIYA',
+      }),
+      dict({
+        'chapter_id': '1wBkAOL29N9vkHTfvaACGv',
+        'chapter_number': 14,
+        'duration_ms': 1280000,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/1wBkAOL29N9vkHTfvaACGv',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 14: Norbert The Norwegian Ridgeback',
+        'type': 'chapter',
+        'uri': 'spotify:episode:1wBkAOL29N9vkHTfvaACGv',
+      }),
+      dict({
+        'chapter_id': '23cBJs22XGN3G7gA2EA0i1',
+        'chapter_number': 15,
+        'duration_ms': 2063306,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/23cBJs22XGN3G7gA2EA0i1',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 15: The Forbidden Forest',
+        'type': 'chapter',
+        'uri': 'spotify:episode:23cBJs22XGN3G7gA2EA0i1',
+      }),
+      dict({
+        'chapter_id': '3K5mu1lHmrHC3CNPWV9r2A',
+        'chapter_number': 16,
+        'duration_ms': 2587167,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/3K5mu1lHmrHC3CNPWV9r2A',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 16: Through the Trapdoor',
+        'type': 'chapter',
+        'uri': 'spotify:episode:3K5mu1lHmrHC3CNPWV9r2A',
+      }),
+      dict({
+        'chapter_id': '0V36QZwEj9VPrEiZF6AWoh',
+        'chapter_number': 17,
+        'duration_ms': 2327308,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/0V36QZwEj9VPrEiZF6AWoh',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Chapter 17: The Man with Two Faces',
+        'type': 'chapter',
+        'uri': 'spotify:episode:0V36QZwEj9VPrEiZF6AWoh',
+      }),
+      dict({
+        'chapter_id': '04xYt1v4vGr7V9lJxl5xwL',
+        'chapter_number': 18,
+        'duration_ms': 95770,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/04xYt1v4vGr7V9lJxl5xwL',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': 'Ending Credits',
+        'type': 'chapter',
+        'uri': 'spotify:episode:04xYt1v4vGr7V9lJxl5xwL',
+      }),
+      dict({
+        'chapter_id': '5q5hnqCbUbgulqlsrnWL7h',
+        'chapter_number': 19,
+        'duration_ms': 300000,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/episode/5q5hnqCbUbgulqlsrnWL7h',
+        }),
+        'images': list([
+          dict({
+            'height': 640,
+            'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+            'width': 640,
+          }),
+          dict({
+            'height': 300,
+            'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+            'width': 300,
+          }),
+          dict({
+            'height': 64,
+            'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+            'width': 64,
+          }),
+        ]),
+        'languages': list([
+          '',
+        ]),
+        'name': "Harry Potter and the Philosopher's Stone",
+        'type': 'chapter',
+        'uri': 'spotify:episode:5q5hnqCbUbgulqlsrnWL7h',
+      }),
+    ]),
+    'description': "Author(s): J.K. Rowling Narrator(s): Stephen Fry Stephen Fry brings the richness of these magical stories to life in the original British recordings.Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'.Treat your ears to a performance so rich and captivating you'll imagine yourself in the halls of Hogwarts. Wherever you listen, the unmistakable voice of Stephen Fry is guaranteed to guide you ever more deeply into this magical story and transport you to the heart of the adventure.Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!Theme music composed by James HanniganHaving become classics of our time, the Harry Potter stories never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new listeners.",
+    'edition': 'Unabridged',
+    'explicit': False,
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/show/6SJQ8VzM5PlDy11wMtcD6v',
+    }),
+    'html_description': 'Author(s): J.K. Rowling<br/>Narrator(s): Stephen Fry<br/>Stephen Fry brings the richness of these magical stories to life in the original British recordings.Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter &#39;H&#39;.Treat your ears to a performance so rich and captivating you&#39;ll imagine yourself in the halls of Hogwarts. Wherever you listen, the unmistakable voice of Stephen Fry is guaranteed to guide you ever more deeply into this magical story and transport you to the heart of the adventure.Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry&#39;s eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!Theme music composed by James HanniganHaving become classics of our time, the Harry Potter stories never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new listeners.',
+    'images': list([
+      dict({
+        'height': 640,
+        'url': 'https://i.scdn.co/image/ab676663000022a86fe12c98e7f447c66626dcb6',
+        'width': 640,
+      }),
+      dict({
+        'height': 300,
+        'url': 'https://i.scdn.co/image/ab6766630000db5b6fe12c98e7f447c66626dcb6',
+        'width': 300,
+      }),
+      dict({
+        'height': 64,
+        'url': 'https://i.scdn.co/image/ab6766630000703b6fe12c98e7f447c66626dcb6',
+        'width': 64,
+      }),
+    ]),
+    'languages': list([
+      'en',
+    ]),
+    'name': "Harry Potter and the Philosopher's Stone",
+    'narrators': list([
+      dict({
+        'name': 'Stephen Fry',
+      }),
+    ]),
+    'publisher': None,
     'total_chapters': 20,
     'type': 'audiobook',
     'uri': 'spotify:show:6SJQ8VzM5PlDy11wMtcD6v',
@@ -4230,7 +4919,7 @@
     'progress_ms': 134749,
   })
 # ---
-# name: test_get_current_user
+# name: test_get_current_user[current_user.json]
   dict({
     'display_name': 'Joost Lekkerkerker',
     'images': list([
@@ -4247,6 +4936,27 @@
     ]),
     'object_type': 'user',
     'product': <ProductType.PREMIUM: 'premium'>,
+    'uri': 'spotify:user:1112264649',
+    'user_id': '1112264649',
+  })
+# ---
+# name: test_get_current_user[current_user_2.json]
+  dict({
+    'display_name': 'Joost Lekkerkerker',
+    'images': list([
+      dict({
+        'height': 300,
+        'url': 'https://i.scdn.co/image/ab6775700000ee8546569a64d252247acb1491bc',
+        'width': 300,
+      }),
+      dict({
+        'height': 64,
+        'url': 'https://i.scdn.co/image/ab67757000003b8246569a64d252247acb1491bc',
+        'width': 64,
+      }),
+    ]),
+    'object_type': 'user',
+    'product': None,
     'uri': 'spotify:user:1112264649',
     'user_id': '1112264649',
   })
@@ -9656,6 +10366,142 @@
     'uri': 'spotify:playlist:0pM0KTMXM7K5qr3sL2DPw1',
   })
 # ---
+# name: test_get_playlist[playlist_4.json]
+  dict({
+    'collaborative': False,
+    'description': '',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/3toMXYM91T55pKzuysH5Ph',
+    }),
+    'images': list([
+      dict({
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67616d00001e022f9b47bdc2b1c7cae7b014af',
+        'width': None,
+      }),
+    ]),
+    'items': dict({
+      'items': list([
+        dict({
+          'added_at': datetime.datetime(2013, 1, 19, 22, 16, 8, tzinfo=datetime.timezone.utc),
+          'added_by': dict({
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/user/chadandcaren',
+            }),
+            'href': 'https://api.spotify.com/v1/users/chadandcaren',
+            'uri': 'spotify:user:chadandcaren',
+            'user_id': 'chadandcaren',
+          }),
+          'track': dict({
+            'album': dict({
+              'album_id': '3KVfMVtOmoVCgihLE4HoBr',
+              'album_type': <AlbumType.ALBUM: 'album'>,
+              'artists': list([
+                dict({
+                  'artist_id': '2vm8GdHyrJh2O2MfbQFYG0',
+                  'name': 'Ingrid Michaelson',
+                  'uri': 'spotify:artist:2vm8GdHyrJh2O2MfbQFYG0',
+                }),
+              ]),
+              'images': list([
+                dict({
+                  'height': 640,
+                  'url': 'https://i.scdn.co/image/ab67616d0000b273866dc0fd5fbfd51fd4c50919',
+                  'width': 640,
+                }),
+                dict({
+                  'height': 300,
+                  'url': 'https://i.scdn.co/image/ab67616d00001e02866dc0fd5fbfd51fd4c50919',
+                  'width': 300,
+                }),
+                dict({
+                  'height': 64,
+                  'url': 'https://i.scdn.co/image/ab67616d00004851866dc0fd5fbfd51fd4c50919',
+                  'width': 64,
+                }),
+              ]),
+              'name': 'Be OK',
+              'release_date': '2008-01-01',
+              'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+              'total_tracks': 11,
+              'uri': 'spotify:album:3KVfMVtOmoVCgihLE4HoBr',
+            }),
+            'artists': list([
+              dict({
+                'artist_id': '2vm8GdHyrJh2O2MfbQFYG0',
+                'name': 'Ingrid Michaelson',
+                'uri': 'spotify:artist:2vm8GdHyrJh2O2MfbQFYG0',
+              }),
+            ]),
+            'disc_number': 1,
+            'duration_ms': 148706,
+            'explicit': False,
+            'external_urls': dict({
+              'spotify': 'https://open.spotify.com/track/4oeRfmp9XpKWym6YD1WvBP',
+            }),
+            'href': 'https://api.spotify.com/v1/tracks/4oeRfmp9XpKWym6YD1WvBP',
+            'is_local': False,
+            'name': 'You and I',
+            'track_id': '4oeRfmp9XpKWym6YD1WvBP',
+            'track_number': 10,
+            'type': <ItemType.TRACK: 'track'>,
+            'uri': 'spotify:track:4oeRfmp9XpKWym6YD1WvBP',
+          }),
+        }),
+      ]),
+    }),
+    'name': 'Starred',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': 'chadandcaren',
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/chadandcaren',
+      }),
+      'href': 'https://api.spotify.com/v1/users/chadandcaren',
+      'object_type': 'user',
+      'owner_id': 'chadandcaren',
+      'uri': 'spotify:user:chadandcaren',
+    }),
+    'playlist_id': '3toMXYM91T55pKzuysH5Ph',
+    'public': True,
+    'uri': 'spotify:playlist:3toMXYM91T55pKzuysH5Ph',
+  })
+# ---
+# name: test_get_playlist[playlist_5.json]
+  dict({
+    'collaborative': False,
+    'description': '',
+    'external_urls': dict({
+      'spotify': 'https://open.spotify.com/playlist/3toMXYM91T55pKzuysH5Ph',
+    }),
+    'images': list([
+      dict({
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67616d00001e022f9b47bdc2b1c7cae7b014af',
+        'width': None,
+      }),
+    ]),
+    'items': dict({
+      'items': list([
+      ]),
+    }),
+    'name': 'Starred',
+    'object_type': 'playlist',
+    'owner': dict({
+      'display_name': None,
+      'external_urls': dict({
+        'spotify': 'https://open.spotify.com/user/chadandcaren',
+      }),
+      'href': 'https://api.spotify.com/v1/users/chadandcaren',
+      'object_type': 'user',
+      'owner_id': 'chadandcaren',
+      'uri': 'spotify:user:chadandcaren',
+    }),
+    'playlist_id': '3toMXYM91T55pKzuysH5Ph',
+    'public': True,
+    'uri': 'spotify:playlist:3toMXYM91T55pKzuysH5Ph',
+  })
+# ---
 # name: test_get_playlist_cover_image
   list([
     dict({
@@ -9665,7 +10511,87 @@
     }),
   ])
 # ---
-# name: test_get_playlist_items
+# name: test_get_playlist_items[playlist_items.json]
+  list([
+    dict({
+      'added_at': datetime.datetime(2025, 7, 29, 21, 11, 55, tzinfo=datetime.timezone.utc),
+      'added_by': dict({
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/user/1112264649',
+        }),
+        'href': 'https://api.spotify.com/v1/users/1112264649',
+        'uri': 'spotify:user:1112264649',
+        'user_id': '1112264649',
+      }),
+      'track': dict({
+        'album': dict({
+          'album_id': '7cynQpUNbqg7ZqYQu11Yng',
+          'album_type': <AlbumType.SINGLE: 'single'>,
+          'artists': list([
+            dict({
+              'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+              'name': 'Maribou State',
+              'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+            }),
+            dict({
+              'artist_id': '6SKEuFZYhaTytrhtJjgnO2',
+              'name': 'Andreya Triana',
+              'uri': 'spotify:artist:6SKEuFZYhaTytrhtJjgnO2',
+            }),
+          ]),
+          'images': list([
+            dict({
+              'height': 640,
+              'url': 'https://i.scdn.co/image/ab67616d0000b2732f41071676f4f50842581fb4',
+              'width': 640,
+            }),
+            dict({
+              'height': 300,
+              'url': 'https://i.scdn.co/image/ab67616d00001e022f41071676f4f50842581fb4',
+              'width': 300,
+            }),
+            dict({
+              'height': 64,
+              'url': 'https://i.scdn.co/image/ab67616d000048512f41071676f4f50842581fb4',
+              'width': 64,
+            }),
+          ]),
+          'name': 'All I Need',
+          'release_date': '2025-01-13',
+          'release_date_precision': <ReleaseDatePrecision.DAY: 'day'>,
+          'total_tracks': 5,
+          'uri': 'spotify:album:7cynQpUNbqg7ZqYQu11Yng',
+        }),
+        'artists': list([
+          dict({
+            'artist_id': '7zrkALJ9ayRjzysp4QYoEg',
+            'name': 'Maribou State',
+            'uri': 'spotify:artist:7zrkALJ9ayRjzysp4QYoEg',
+          }),
+          dict({
+            'artist_id': '6SKEuFZYhaTytrhtJjgnO2',
+            'name': 'Andreya Triana',
+            'uri': 'spotify:artist:6SKEuFZYhaTytrhtJjgnO2',
+          }),
+        ]),
+        'disc_number': 1,
+        'duration_ms': 227934,
+        'explicit': False,
+        'external_urls': dict({
+          'spotify': 'https://open.spotify.com/track/3ZL9gPzeCnKG9l5SB1SlcZ',
+        }),
+        'href': 'https://api.spotify.com/v1/tracks/3ZL9gPzeCnKG9l5SB1SlcZ',
+        'is_local': False,
+        'name': 'All I Need',
+        'track_id': '3ZL9gPzeCnKG9l5SB1SlcZ',
+        'track_number': 1,
+        'type': <ItemType.TRACK: 'track'>,
+        'uri': 'spotify:track:3ZL9gPzeCnKG9l5SB1SlcZ',
+      }),
+    }),
+  ])
+# ---
+# name: test_get_playlist_items[playlist_items_2.json]
   list([
     dict({
       'added_at': datetime.datetime(2025, 7, 29, 21, 11, 55, tzinfo=datetime.timezone.utc),
