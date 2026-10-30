@@ -41,7 +41,7 @@ class Device(DataClassORJSONMixin):
     is_restricted: bool
     name: str
     device_type: DeviceType = field(metadata=field_options(alias="type"))
-    volume_percent: int
+    volume_percent: int | None
     supports_volume: bool = True
 
 
