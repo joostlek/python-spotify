@@ -453,6 +453,14 @@ class PlaylistTrack(DataClassORJSONMixin):
     added_by: AddedBy | None
     track: Annotated[Item, Discriminator(field="type", include_subtypes=True)]
 
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        if d.get("item") is not None:
+            # Spotify renamed the deprecated "track" field to "item"
+            return {**d, "track": d["item"]}
+        return d
+
 
 @dataclass
 class PlaylistTrackResponse(DataClassORJSONMixin):
