@@ -289,6 +289,10 @@ class SpotifyClient:
         params: dict[str, Any] = {"uris": ",".join(uris)}
         await self._put("v1/me/library", params=params)
 
+    async def save_item_to_library(self, uri: str) -> None:
+        """Save item to library."""
+        await self.save_to_library([uri])
+
     async def remove_from_library(self, uris: list[str]) -> None:
         """Remove items from library."""
         if not uris:
@@ -298,6 +302,10 @@ class SpotifyClient:
             raise ValueError(msg)
         params: dict[str, Any] = {"uris": ",".join(uris)}
         await self._delete("v1/me/library", params=params)
+
+    async def remove_item_from_library(self, uri: str) -> None:
+        """Remove item from library."""
+        await self.remove_from_library([uri])
 
     @catch_json_decode_error
     async def are_in_library(self, uris: list[str]) -> dict[str, bool]:
