@@ -1575,6 +1575,28 @@ async def test_save_to_library_too_many(
     responses.assert_not_called()
 
 
+async def test_save_item_to_library(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving a single item to library."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/library?uris=spotify%3Aartist%3A0gxyHStUsqpMadRV0Di1Qt",
+        status=200,
+        body="",
+    )
+    await authenticated_client.save_item_to_library(
+        "spotify:artist:0gxyHStUsqpMadRV0Di1Qt"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/library",
+        METH_PUT,
+        headers=HEADERS,
+        params={"uris": "spotify:artist:0gxyHStUsqpMadRV0Di1Qt"},
+        json=None,
+    )
+
+
 async def test_remove_from_library(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
@@ -1596,6 +1618,28 @@ async def test_remove_from_library(
             "uris": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh,"
             "spotify:album:1uyf3l2d4XYwiEqAb7t7fX"
         },
+        json=None,
+    )
+
+
+async def test_remove_item_from_library(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing a single item from library."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/library?uris=spotify%3Aplaylist%3A37i9dQZF1DXcBWIGoYBM5M",
+        status=200,
+        body="",
+    )
+    await authenticated_client.remove_item_from_library(
+        "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/library",
+        METH_DELETE,
+        headers=HEADERS,
+        params={"uris": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"},
         json=None,
     )
 
