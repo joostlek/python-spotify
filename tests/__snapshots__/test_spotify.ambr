@@ -21,7 +21,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -51,7 +51,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -81,7 +81,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
@@ -111,7 +111,7 @@
     'name': 'New Playlist',
     'object_type': 'playlist',
     'owner': dict({
-      'display_name': 'None',
+      'display_name': None,
       'external_urls': dict({
         'spotify': 'https://open.spotify.com/user/1112264649',
       }),
