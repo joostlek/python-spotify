@@ -14,10 +14,12 @@ import orjson
 from yarl import URL
 
 from spotifyaio.exceptions import (
+    SpotifyAuthenticationFailedError,
     SpotifyConnectionError,
     SpotifyError,
     SpotifyForbiddenError,
     SpotifyNotFoundError,
+    SpotifyRateLimitError,
 )
 from spotifyaio.models import (
     Album,
@@ -154,11 +156,17 @@ class SpotifyClient:
 
         text = await response.text()
 
+        if response.status == 401:
+            raise SpotifyAuthenticationFailedError(text)
+
         if response.status == 403:
             # 403 Forbidden
             raise SpotifyForbiddenError(text)
 
-        if '"status": 404' in text:
+        if response.status == 429:
+            raise SpotifyRateLimitError(text)
+
+        if response.status == 404 or '"status": 404' in text:
             msg = f"Resource not found: {uri}"
             raise SpotifyNotFoundError(msg)
 

@@ -14,11 +14,13 @@ from yarl import URL
 
 from spotifyaio import (
     RepeatMode,
+    SpotifyAuthenticationFailedError,
     SpotifyClient,
     SpotifyConnectionError,
     SpotifyError,
     SpotifyForbiddenError,
     SpotifyNotFoundError,
+    SpotifyRateLimitError,
 )
 from spotifyaio.models import SearchType
 
@@ -215,6 +217,50 @@ async def test_user_has_no_access_to_webapi(
         params=None,
         json=None,
     )
+
+
+async def test_rate_limit_exceeded(
+    authenticated_client: SpotifyClient,
+    responses: aiointercept,
+) -> None:
+    """Test that SpotifyRateLimitError is raised when rate limited."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
+        status=429,
+        body=load_fixture("rate_limit.json"),
+    )
+    with pytest.raises(SpotifyRateLimitError, match="API rate limit exceeded"):
+        await authenticated_client.get_playback()
+
+
+async def test_authentication_failed(
+    authenticated_client: SpotifyClient,
+    responses: aiointercept,
+) -> None:
+    """Test that SpotifyAuthenticationFailedError is raised for an invalid token."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me",
+        status=401,
+        body='{"error": {"status": 401, "message": "The access token expired"}}',
+    )
+    with pytest.raises(
+        SpotifyAuthenticationFailedError, match="The access token expired"
+    ):
+        await authenticated_client.get_current_user()
+
+
+async def test_not_found_status(
+    authenticated_client: SpotifyClient,
+    responses: aiointercept,
+) -> None:
+    """Test that SpotifyNotFoundError is raised for a 404 status."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=404,
+        body="",
+    )
+    with pytest.raises(SpotifyNotFoundError):
+        await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
 
 
 async def test_transfer_playback(
