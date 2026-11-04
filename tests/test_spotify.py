@@ -750,6 +750,23 @@ async def test_get_playlist(
     )
 
 
+async def test_get_playlist_skips_unavailable_tracks(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test playlist entries whose track is no longer available are skipped."""
+    playlist = json.loads(load_fixture("playlist_1.json"))
+    entry = playlist["tracks"]["items"][0]
+    playlist["tracks"]["items"] = [{**entry, "track": None, "item": None}, entry]
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=json.dumps(playlist),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert len(response.items.items) == 1
+
+
 async def test_get_playlist_item_field(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
@@ -1373,6 +1390,23 @@ async def test_get_playlist_items(
         params={"limit": "48"},
         json=None,
     )
+
+
+async def test_get_playlist_items_skips_unavailable_tracks(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test playlist items whose track is no longer available are skipped."""
+    playlist_items = json.loads(load_fixture("playlist_items.json"))
+    entry = playlist_items["items"][0]
+    playlist_items["items"] = [{**entry, "track": None, "item": None}, entry]
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=json.dumps(playlist_items),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert len(response) == 1
 
 
 async def test_get_playlist_items_with_local_files(
