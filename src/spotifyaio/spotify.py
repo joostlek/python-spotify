@@ -545,7 +545,7 @@ class SpotifyClient:
             msg = "Maximum of 100 tracks can be removed at once"
             raise ValueError(msg)
         identifier = get_identifier(playlist_id)
-        data: dict[str, Any] = {"tracks": [{"uri": uri} for uri in uris]}
+        data: dict[str, Any] = {"items": [{"uri": uri} for uri in uris]}
         if snapshot_id:
             data["snapshot_id"] = snapshot_id
         response = await self._delete(f"v1/playlists/{identifier}/items", data=data)
