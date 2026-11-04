@@ -468,6 +468,12 @@ class PlaylistTrackResponse(DataClassORJSONMixin):
 
     items: list[PlaylistTrack]
 
+    @classmethod
+    def __pre_deserialize__(cls, d: dict[str, Any]) -> dict[str, Any]:
+        """Pre deserialize hook."""
+        items = [item for item in d["items"] if not item["is_local"]]
+        return {**d, "items": items}
+
 
 @dataclass
 class ModifyPlaylistResponse(DataClassORJSONMixin):
