@@ -147,7 +147,7 @@ class SpotifyClient:
                     json=data,
                     params=params,
                 )
-        except asyncio.TimeoutError as exception:
+        except TimeoutError as exception:
             msg = "Timeout occurred while connecting to Spotify"
             raise SpotifyConnectionError(msg) from exception
 
