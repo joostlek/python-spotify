@@ -14,10 +14,12 @@ import orjson
 from yarl import URL
 
 from spotifyaio.exceptions import (
+    SpotifyAuthenticationFailedError,
     SpotifyConnectionError,
     SpotifyError,
     SpotifyForbiddenError,
     SpotifyNotFoundError,
+    SpotifyRateLimitError,
 )
 from spotifyaio.models import (
     Album,
@@ -154,11 +156,17 @@ class SpotifyClient:
 
         text = await response.text()
 
+        if response.status == 401:
+            raise SpotifyAuthenticationFailedError(text)
+
         if response.status == 403:
             # 403 Forbidden
             raise SpotifyForbiddenError(text)
 
-        if '"status": 404' in text:
+        if response.status == 429:
+            raise SpotifyRateLimitError(text)
+
+        if response.status == 404 or '"status": 404' in text:
             msg = f"Resource not found: {uri}"
             raise SpotifyNotFoundError(msg)
 
@@ -289,6 +297,10 @@ class SpotifyClient:
         params: dict[str, Any] = {"uris": ",".join(uris)}
         await self._put("v1/me/library", params=params)
 
+    async def save_item_to_library(self, uri: str) -> None:
+        """Save item to library."""
+        await self.save_to_library([uri])
+
     async def remove_from_library(self, uris: list[str]) -> None:
         """Remove items from library."""
         if not uris:
@@ -298,6 +310,10 @@ class SpotifyClient:
             raise ValueError(msg)
         params: dict[str, Any] = {"uris": ",".join(uris)}
         await self._delete("v1/me/library", params=params)
+
+    async def remove_item_from_library(self, uri: str) -> None:
+        """Remove item from library."""
+        await self.remove_from_library([uri])
 
     @catch_json_decode_error
     async def are_in_library(self, uris: list[str]) -> dict[str, bool]:
@@ -431,10 +447,10 @@ class SpotifyClient:
 
     async def add_to_queue(self, uri: str, device_id: str | None = None) -> None:
         """Add to queue."""
-        data: dict[str, str] = {"uri": uri}
+        params: dict[str, str] = {"uri": uri}
         if device_id:
-            data["device_id"] = device_id
-        await self._post("v1/me/player/queue", data=data)
+            params["device_id"] = device_id
+        await self._post("v1/me/player/queue", params=params)
 
     @catch_json_decode_error
     async def get_playlist(self, playlist_id: str) -> Playlist:
@@ -537,7 +553,7 @@ class SpotifyClient:
             msg = "Maximum of 100 tracks can be removed at once"
             raise ValueError(msg)
         identifier = get_identifier(playlist_id)
-        data: dict[str, Any] = {"tracks": [{"uri": uri} for uri in uris]}
+        data: dict[str, Any] = {"items": [{"uri": uri} for uri in uris]}
         if snapshot_id:
             data["snapshot_id"] = snapshot_id
         response = await self._delete(f"v1/playlists/{identifier}/items", data=data)
@@ -577,6 +593,9 @@ class SpotifyClient:
         self, query: str, types: list[SearchType], *, limit: int = 5
     ) -> SearchResult:
         """Search."""
+        if not 1 <= limit <= 10:
+            msg = "Search limit must be between 1 and 10"
+            raise ValueError(msg)
         params: dict[str, Any] = {"q": query, "limit": limit, "type": ",".join(types)}
         response = await self._get("v1/search", params=params)
         return SearchResult.from_json(response)

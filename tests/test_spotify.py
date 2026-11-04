@@ -14,11 +14,13 @@ from yarl import URL
 
 from spotifyaio import (
     RepeatMode,
+    SpotifyAuthenticationFailedError,
     SpotifyClient,
     SpotifyConnectionError,
     SpotifyError,
     SpotifyForbiddenError,
     SpotifyNotFoundError,
+    SpotifyRateLimitError,
 )
 from spotifyaio.models import SearchType
 
@@ -217,6 +219,50 @@ async def test_user_has_no_access_to_webapi(
     )
 
 
+async def test_rate_limit_exceeded(
+    authenticated_client: SpotifyClient,
+    responses: aiointercept,
+) -> None:
+    """Test that SpotifyRateLimitError is raised when rate limited."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player?additional_types=track,episode",
+        status=429,
+        body=load_fixture("rate_limit.json"),
+    )
+    with pytest.raises(SpotifyRateLimitError, match="API rate limit exceeded"):
+        await authenticated_client.get_playback()
+
+
+async def test_authentication_failed(
+    authenticated_client: SpotifyClient,
+    responses: aiointercept,
+) -> None:
+    """Test that SpotifyAuthenticationFailedError is raised for an invalid token."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me",
+        status=401,
+        body='{"error": {"status": 401, "message": "The access token expired"}}',
+    )
+    with pytest.raises(
+        SpotifyAuthenticationFailedError, match="The access token expired"
+    ):
+        await authenticated_client.get_current_user()
+
+
+async def test_not_found_status(
+    authenticated_client: SpotifyClient,
+    responses: aiointercept,
+) -> None:
+    """Test that SpotifyNotFoundError is raised for a 404 status."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=404,
+        body="",
+    )
+    with pytest.raises(SpotifyNotFoundError):
+        await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+
+
 async def test_transfer_playback(
     authenticated_client: SpotifyClient,
     responses: aiointercept,
@@ -254,6 +300,23 @@ async def test_get_devices(
         json=None,
         params=None,
     )
+
+
+async def test_get_devices_without_volume(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving devices that do not report a volume."""
+    body = json.loads(load_fixture("devices.json"))
+    for device in body["devices"]:
+        device["volume_percent"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player/devices",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_devices()
+    assert all(device.volume_percent is None for device in response)
 
 
 async def test_get_current_playing(
@@ -601,7 +664,7 @@ async def test_set_shuffle(
 
 
 @pytest.mark.parametrize(
-    ("arguments", "expected_data"),
+    ("arguments", "expected_params"),
     [
         (
             {"uri": "spotify:track:1FyXbzOlq3dkxaB6iRsETv"},
@@ -617,19 +680,20 @@ async def test_add_to_queue(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
     arguments: dict[str, Any],
-    expected_data: dict[str, Any],
+    expected_params: dict[str, Any],
 ) -> None:
     """Test adding to queue."""
     responses.post(
-        f"{SPOTIFY_URL}/v1/me/player/queue", status=200, body="3o0RYoo5iOMKSmEbunsbvW"
+        URL(f"{SPOTIFY_URL}/v1/me/player/queue").with_query(expected_params),
+        status=204,
     )
     await authenticated_client.add_to_queue(**arguments)
     responses.assert_called_once_with(
         f"{SPOTIFY_URL}/v1/me/player/queue",
         METH_POST,
         headers=HEADERS,
-        params=None,
-        json=expected_data,
+        params=expected_params,
+        json=None,
     )
 
 
@@ -703,6 +767,22 @@ async def test_get_playlist_skips_unavailable_tracks(
     assert len(response.items.items) == 1
 
 
+async def test_get_playlist_item_field(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a playlist that only uses the renamed "item" field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=load_fixture("playlist_item_field.json"),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert [item.track.uri for item in response.items.items] == [
+        "spotify:track:4oeRfmp9XpKWym6YD1WvBP"
+    ]
+
+
 async def test_get_not_found_playlist(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
@@ -718,6 +798,21 @@ async def test_get_not_found_playlist(
         match="Resource not found: v1/playlists/1Cp6VQCKf2VL4sP09jN9oX",
     ):
         await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+
+
+async def test_get_playlist_metadata_only(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a playlist not owned by the user, which has no items."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=load_fixture("playlist_metadata_only.json"),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert response.name == "Starred"
+    assert response.items.items == []
 
 
 @pytest.mark.parametrize(
@@ -779,6 +874,22 @@ async def test_get_playlist_variation(
     )
 
 
+async def test_get_playlist_without_images(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving a playlist without images."""
+    body = json.loads(load_fixture("playlist_1.json"))
+    body["images"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX?additional_types=track,episode",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_playlist("1Cp6VQCKf2VL4sP09jN9oX")
+    assert response.images == []
+
+
 async def test_get_current_user(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
@@ -799,6 +910,36 @@ async def test_get_current_user(
         params=None,
         json=None,
     )
+
+
+async def test_get_current_user_without_display_name(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving current user without a display name."""
+    body = json.loads(load_fixture("current_user.json"))
+    body["display_name"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_current_user()
+    assert response.display_name is None
+
+
+async def test_get_current_user_without_deprecated_fields(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving current user without the removed product field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me",
+        status=200,
+        body=load_fixture("current_user_without_deprecated_fields.json"),
+    )
+    response = await authenticated_client.get_current_user()
+    assert response.product is None
 
 
 async def test_get_episode(
@@ -1065,6 +1206,20 @@ async def test_get_audiobook(
     )
 
 
+async def test_get_audiobook_without_publisher(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving audiobook without the removed publisher field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/audiobooks/6SJQ8VzM5PlDy11wMtcD6v",
+        status=200,
+        body=load_fixture("audiobook_without_publisher.json"),
+    )
+    response = await authenticated_client.get_audiobook("6SJQ8VzM5PlDy11wMtcD6v")
+    assert response.publisher is None
+
+
 async def test_get_audiobook_chapters(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
@@ -1254,6 +1409,39 @@ async def test_get_playlist_items_skips_unavailable_tracks(
     assert len(response) == 1
 
 
+async def test_get_playlist_items_with_local_files(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlist items that include local files."""
+    body = json.loads(load_fixture("playlist_2.json"))["tracks"]
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert [item.track.uri for item in response] == [
+        "spotify:track:4oeRfmp9XpKWym6YD1WvBP"
+    ]
+
+
+async def test_get_playlist_items_item_field(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving playlist items that only use the renamed "item" field."""
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=load_fixture("playlist_items_item_field.json"),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert [item.track.uri for item in response] == [
+        "spotify:track:3ZL9gPzeCnKG9l5SB1SlcZ"
+    ]
+
+
 @pytest.mark.parametrize(
     "kwargs",
     [
@@ -1360,7 +1548,7 @@ async def test_add_too_many_playlist_items(
     [
         (
             {"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]},
-            {"tracks": [{"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]},
+            {"items": [{"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]},
         ),
         (
             {
@@ -1371,7 +1559,7 @@ async def test_add_too_many_playlist_items(
                 "snapshot_id": "AAAACG9jmE4O/USJ4XSA7mfhfXkaxawY",
             },
             {
-                "tracks": [
+                "items": [
                     {"uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh"},
                     {"uri": "spotify:track:1301WleyT98MSxVHPZCA6M"},
                 ],
@@ -1478,6 +1666,25 @@ async def test_get_playlist_cover_image(
     )
 
 
+async def test_get_playlist_items_without_added_info(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving old playlist items without added_at and added_by."""
+    body = json.loads(load_fixture("playlist_items.json"))
+    for item in body["items"]:
+        item["added_at"] = None
+        item["added_by"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/playlists/1Cp6VQCKf2VL4sP09jN9oX/items?limit=48",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_playlist_items("1Cp6VQCKf2VL4sP09jN9oX")
+    assert response[0].added_at is None
+    assert response[0].added_by is None
+
+
 async def test_search(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
@@ -1500,6 +1707,18 @@ async def test_search(
         params={"q": "Never Gonna Give You Up", "type": "track", "limit": "5"},
         json=None,
     )
+
+
+@pytest.mark.parametrize("limit", [0, 11])
+async def test_search_invalid_limit(
+    authenticated_client: SpotifyClient,
+    limit: int,
+) -> None:
+    """Test searching with a limit outside of the allowed range."""
+    with pytest.raises(ValueError, match="Search limit must be between 1 and 10"):
+        await authenticated_client.search(
+            "Never Gonna Give You Up", [SearchType.TRACK], limit=limit
+        )
 
 
 async def test_save_to_library(
@@ -1546,6 +1765,28 @@ async def test_save_to_library_too_many(
     responses.assert_not_called()
 
 
+async def test_save_item_to_library(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test saving a single item to library."""
+    responses.put(
+        f"{SPOTIFY_URL}/v1/me/library?uris=spotify%3Aartist%3A0gxyHStUsqpMadRV0Di1Qt",
+        status=200,
+        body="",
+    )
+    await authenticated_client.save_item_to_library(
+        "spotify:artist:0gxyHStUsqpMadRV0Di1Qt"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/library",
+        METH_PUT,
+        headers=HEADERS,
+        params={"uris": "spotify:artist:0gxyHStUsqpMadRV0Di1Qt"},
+        json=None,
+    )
+
+
 async def test_remove_from_library(
     responses: aiointercept,
     authenticated_client: SpotifyClient,
@@ -1567,6 +1808,28 @@ async def test_remove_from_library(
             "uris": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh,"
             "spotify:album:1uyf3l2d4XYwiEqAb7t7fX"
         },
+        json=None,
+    )
+
+
+async def test_remove_item_from_library(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test removing a single item from library."""
+    responses.delete(
+        f"{SPOTIFY_URL}/v1/me/library?uris=spotify%3Aplaylist%3A37i9dQZF1DXcBWIGoYBM5M",
+        status=200,
+        body="",
+    )
+    await authenticated_client.remove_item_from_library(
+        "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+    )
+    responses.assert_called_once_with(
+        f"{SPOTIFY_URL}/v1/me/library",
+        METH_DELETE,
+        headers=HEADERS,
+        params={"uris": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"},
         json=None,
     )
 
