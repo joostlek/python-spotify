@@ -256,6 +256,23 @@ async def test_get_devices(
     )
 
 
+async def test_get_devices_without_volume(
+    responses: aiointercept,
+    authenticated_client: SpotifyClient,
+) -> None:
+    """Test retrieving devices that do not report a volume."""
+    body = json.loads(load_fixture("devices.json"))
+    for device in body["devices"]:
+        device["volume_percent"] = None
+    responses.get(
+        f"{SPOTIFY_URL}/v1/me/player/devices",
+        status=200,
+        body=json.dumps(body),
+    )
+    response = await authenticated_client.get_devices()
+    assert all(device.volume_percent is None for device in response)
+
+
 async def test_get_current_playing(
     responses: aiointercept,
     snapshot: SnapshotAssertion,
